@@ -1,14 +1,13 @@
 {
   "source": "\u5f85\u673a\u547c\u5438.mp4",
-  "output": "\u5f85\u673a\u547c\u5438.webm",
+  "output": "a001-palette-v2.webm",
   "source_size": [
     1344,
     768
   ],
-  "key_thresholds": [
-    12,
-    110
-  ],
+  "key_thresholds": null,
+  "matte_method": "original_source_temporal_palette_with_unchanged_geometry",
+  "encoding_lossless": true,
   "source_content_union": [
     388,
     16,
@@ -54,9 +53,25 @@
       217,
       60,
       430,
-      329
+      330
     ],
-    "endpoint_rgba_mean_absolute_difference": 5.35688495706983,
-    "transparent_fraction": 0.8143113968460648
+    "audio_streams": 0,
+    "codec": "vp9",
+    "all_frames_have_alpha": true,
+    "endpoint_geometry": {
+      "feet_delta_px": 0,
+      "height_delta_px": -1
+    },
+    "background_clear": true,
+    "endpoint_rgba_mean_absolute_difference": 3.783008214826397,
+    "transparent_fraction": 0.8216754738136574
+  },
+  "temporal_palette": {
+    "anchor": "sourceframe0 exactlyidentity",
+    "source_timing_preserved": true,
+    "geometry_warped": false,
+    "source_alpha_unchanged": true,
+    "white_lace_neutrality": "Remove residual positive G chroma only from brightnearneutralwhitefabric; preserve approximate luminance",
+    "new_model_calls": 0
   }
 }

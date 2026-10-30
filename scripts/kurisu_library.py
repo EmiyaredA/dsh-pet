@@ -10,14 +10,12 @@ from datetime import datetime, timezone
 import hashlib
 import json
 import os
-import io
 from pathlib import Path
 import shutil
 import subprocess
 import sys
 import time
 import numpy as np
-from PIL import Image
 from uuid import uuid4
 from contextlib import contextmanager
 
@@ -151,7 +149,9 @@ retention_analysis:
 detailed_description:
 Match the delicate dark outlines and soft 2D cel shading in <Picture 1>, like a clean game animation sprite. [Shot 1] A single fixed eye-level orthographic full-body view lasts exactly 10 seconds. Keep the character centered with ear tips near 20% frame height and soles near 85%, leaving generous empty margins for hands, hair and props. Maintain the approved large head and short round body. Do not translate the entire figure horizontally, travel toward the camera, zoom, pan, cut, reframe or change body scale. Turning and stepping happen in place around the same body axis; the runtime will move the desktop window separately.
 
-Use FIXED PALETTE COLORS and constant neutral even white frontal illumination in every frame. Chestnut hair, pale skin, neutral white lace, charcoal clothes, pink bows and blue-violet eyes keep their original hues and brightness. Existing painted highlights stay attached to surfaces. No colored illumination, green reflection, moving light, rainbow wash, animated highlights, body glow, lens flare, bokeh, floating hearts, symbols or unsolicited particles. The green background is a digital cutout matte, not a green-lit room or light-emitting environment, and never illuminates the character. No floor, cast shadow, gradient, scenery or background texture.
+BACKGROUND THROUGHOUT [Shot 1], 00:00.000–00:10.000: a perfectly flat, fully saturated digital RGB (0,255,0), #00FF00 chroma-key green matte occupies EVERY background pixel in EVERY frame. Preserve this green behind the figure AND inside all visible negative spaces between hair locks, arms, body, props and skirt. These empty gaps remain green when they open or close. The first frame, all action frames and the final frame have exactly the same green. Never replace it with white, off-white, gray, black, blue, transparency, a checkerboard, a floor or a studio backdrop. No fade, background transition, gradient, cast shadow or background texture. The green is a digital compositing layer; it does not illuminate the subject.
+
+Use FIXED PALETTE COLORS and constant neutral even frontal illumination on the CHARACTER ONLY in every frame. Chestnut hair, pale skin, neutral white lace, charcoal clothes, pink bows and blue-violet eyes keep their original hues and brightness. Existing painted highlights stay attached to surfaces. No colored illumination, green reflection, green edge spill, moving light, rainbow wash, animated highlights, body glow, lens flare, bokeh, floating hearts, symbols or unsolicited particles. White lace remains opaque neutral white and is distinct from the saturated green in the surrounding hair gaps. Neutral subject lighting must never become a white background.
 
 {timing}{direction}
 
@@ -266,6 +266,20 @@ def prepare_result(client, state, action, attempt):
             f'fps=24,select={select},scale=320:-2,tile=4x3:nb_frames=11:padding=4:color=white',
             '-frames:v', '1', str(contact)], check=True)
     attempt['contact'] = str(contact); save(state)
+    # The supplier sometimes substitutes white after an initially green frame.
+    # Inspect every decoded frame BEFORE any conversion or acceptance; never
+    # hide a failed background behind the former white-matte fallback.
+    try:
+        background = source_green_background(raw)
+    except (ValueError, RuntimeError, subprocess.CalledProcessError) as exc:
+        attempt['processing_error'] = 'Green-background validation could not finish: ' + str(exc)
+        action['status'] = 'awaiting_review'; save(state); return
+    attempt['source_background'] = background
+    if not background['passed']:
+        attempt['processing_error'] = ('Source must use uniform saturated green in every frame; '
+            f"background failed on {background['failed_frame_count']} of {background['frames']} frames")
+        action['status'] = 'awaiting_review'; save(state); return
+    attempt.pop('processing_error', None)
     clip = folder / (action['name'] + '.webm')
     if not clip.exists():
         try:
@@ -273,20 +287,6 @@ def prepare_result(client, state, action, attempt):
             attempt['report'] = report
         except (ValueError, RuntimeError, subprocess.CalledProcessError) as exc:
             attempt['processing_error'] = str(exc)
-            # A supplier may return a near-white matte despite the requested green.
-            # Retry local processing only, never generation or visual approval.
-            white_python=Path(os.environ.get('KURISU_MATTE_PYTHON',str(ROOT/'temp/kurisu/video-matte-env/bin/python')))
-            if white_python.is_file() and source_has_keyable_border(raw):
-                command=[str(white_python),str(ROOT/'scripts/repair_kurisu_white.py'),
-                    '--input',str(raw),'--output',str(clip),'--allow-green']
-                if action['group'] in {'余额','碎碎念'}:command.append('--stabilize-standing')
-                result=subprocess.run(command,capture_output=True,text=True)
-                if result.returncode==0:
-                    processed=json.loads(result.stdout)
-                    attempt['report']=processed['report'];attempt['local_edit']=processed['local_edit']
-                    attempt.pop('processing_error',None)
-                else:
-                    attempt['processing_error']+='; white matte: '+result.stderr[-1200:]
     else:
         attempt['report'] = json.loads(clip.with_suffix('.report.json').read_text())
     if clip.exists():
@@ -303,16 +303,37 @@ def write_alpha_contact(action,attempt,clip):
     attempt['alpha_contact']=str(contact)
 
 
-def source_has_keyable_border(raw):
-    """Gate flat green/white matting; every frame is rechecked by the worker."""
-    png=subprocess.check_output(['ffmpeg','-v','error','-i',str(raw),'-frames:v','1','-f','image2pipe','-vcodec','png','-'])
-    rgb=np.asarray(Image.open(io.BytesIO(png)).convert('RGB'),dtype=np.int16)
-    border=np.concatenate([rgb[0],rgb[-1],rgb[:,0],rgb[:,-1]])
-    bg=np.median(border,axis=0)
-    flat=np.max(np.abs(border-bg))<=24
-    white=bg.min()>=220 and np.ptp(bg)<=30
-    green=bg[1]-max(bg[0],bg[2])>24 and bg[1]>180
-    return bool(flat and (white or green))
+def green_background_frames(frames):
+    """Every frame must retain one flat saturated green border, with codec tolerance.
+
+    The reduced outer border is outside the mandated 10% content-safe area.
+    This is a source-background gate, separate from silhouette/edge visual QA.
+    """
+    if frames.ndim != 4 or frames.shape[-1] != 3 or not len(frames):
+        raise ValueError('No complete RGB source frames')
+    rgb=frames.astype(np.int16)
+    border=np.concatenate([rgb[:,0],rgb[:,-1],rgb[:,:,0],rgb[:,:,-1]],axis=1)
+    bg=np.median(border,axis=1)
+    saturated=(border[...,1]>=180)&(border[...,0]<=100)&(border[...,2]<=100)&(
+        border[...,1]-np.maximum(border[...,0],border[...,2])>=100)
+    flat=np.abs(border-bg[:,None,:]).max(axis=(1,2))<=35
+    stable=np.abs(bg-bg[0]).max(axis=1)<=24
+    good=saturated.all(axis=1)&flat&stable
+    bad=np.flatnonzero(~good)
+    return {'method':'all_frame_saturated_green_border_v1','passed':bool(len(frames)==240 and good.all()),
+        'frames':len(frames),'failed_frame_count':len(bad),'failed_frames':bad.tolist(),
+        'background_rgb_min':bg.min(axis=0).tolist(),'background_rgb_max':bg.max(axis=0).tolist(),
+        'expected_frames':240,'expected_background':'#00FF00','white_matte_fallback':False}
+
+
+def source_green_background(raw):
+    # H3 may include a few extra encoder tail frames. Match the existing
+    # converter's first ten seconds, then inspect every one of its 240 frames.
+    data=subprocess.check_output(['ffmpeg','-v','error','-i',str(raw),'-t','10','-an',
+        '-vf','fps=24,scale=64:36:flags=area','-f','rawvideo','-pix_fmt','rgb24','-'])
+    frame_size=64*36*3
+    if not data or len(data)%frame_size:raise ValueError('Incomplete source background scan')
+    return green_background_frames(np.frombuffer(data,np.uint8).reshape(-1,36,64,3))
 
 
 def tick(client, state, submit=True, skip_actions=()):
@@ -346,6 +367,8 @@ def tick(client, state, submit=True, skip_actions=()):
         return
     if not submit:
         return
+    if state.get('production_hold'):
+        raise RuntimeError('Production is held for a recorded quality problem; resolve the hold before new paid submissions')
     if state.get('stage')=='blocked_task_reconciliation':
         raise RuntimeError('Reconcile remote task outcomes and explicitly resume before submitting new work')
     live = client.generation.list_generation_tasks(project_id=pid, page_size=100).items
@@ -394,6 +417,8 @@ def review(state, action_id, verdict, reason):
     attempt['review'] = {'verdict': verdict, 'reason': reason, 'reviewed_at': now()}
     if verdict == 'pass':
         assert attempt.get('candidate_file') and not attempt.get('processing_error')
+        if attempt.get('source_background') is not None:
+            assert attempt['source_background']['passed'], 'Source background failed the all-frame green gate'
         source = PACK / attempt['candidate_file']; target = PACK / 'pet/kurisu-animation' / (a['name'] + '.webm')
         shutil.copy2(source, target); shutil.copy2(source.with_suffix('.report.json'), target.with_suffix('.report.json'))
         a.update({'status': 'approved', 'file': str(target.relative_to(PACK)), 'sha256': hashlib.sha256(target.read_bytes()).hexdigest()})

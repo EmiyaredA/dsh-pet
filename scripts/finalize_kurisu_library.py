@@ -9,7 +9,7 @@ from pet_pack_manifest import animation_names, validate_pack
 ROOT = Path(__file__).resolve().parents[1] / 'pet-packs/kurisu'
 
 
-def full_config(current, groups):
+def full_config(current, groups, library=None):
     config = json.loads(json.dumps(current))
     for pet in config['pets']:
         pet.update(fixedEnabled=False, balanceEnabled=True, workStatusEnabled=True, whisperEnabled=False)
@@ -24,6 +24,11 @@ def full_config(current, groups):
                        for name, weight in [('日常小动作',20), ('研究与玩耍',20), ('饮食',16), ('时节',14), ('吐槽与思考',10)]],
         'events': {'balance': groups['余额'], 'whisper': groups['碎碎念'], 'workStatus': groups['工作状态']}}
     config['animationWeights'] = {'idle': 10, 'turn': 5, 'move': 5}
+    continuous={a['name'] for a in (library or {}).get('actions',[])
+                if a.get('motion_mode')=='continuous-left-profile'}
+    for move in config['animations']['moves']['actions']:
+        if move['name'] in continuous:
+            move['params']={**move.get('params',{}),'leadSec':0,'tailSec':0}
     assert len(animation_names(config)) == 106
     assert sum(x['weight'] for x in config['animations']['categories']) + sum(config['animationWeights'].values()) == 100
     return config
@@ -53,7 +58,8 @@ def main():
     p.add_argument('--promote', action='store_true')
     args = p.parse_args()
     current = json.loads((ROOT / 'pet/kurisu-config.json').read_text())
-    config = full_config(current, json.loads((ROOT / 'action-groups.json').read_text()))
+    library=json.loads((ROOT/'library.json').read_text())
+    config = full_config(current, json.loads((ROOT / 'action-groups.json').read_text()),library)
     target = ROOT / 'kurisu-config.full.json'
     target.write_text(json.dumps(config, ensure_ascii=False, indent=2)+'\n')
     if args.promote:

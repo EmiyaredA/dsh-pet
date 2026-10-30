@@ -1,6 +1,6 @@
 # 红莉栖 106 条动作生产清单
 
-新调用：45 / 130。状态以 library.json 为准。
+新调用：51 / 130。状态以 library.json 为准。
 
 | ID | 分类 | 动作 | 批次 | 状态 | 调用 | 任务 |
 |---|---|---|---|---|---|---|
@@ -13,20 +13,20 @@
 | a007 | 点击回应 | 点击回应-被戳脸鼓腮 | 1 | exhausted | 3 | 6a4d044b-c353-4bf9-9e08-39d159e49a8a<br>46e71cc6-e091-46cc-9a56-acedd65d4ccf<br>3b452a20-4aae-42dd-99c2-c9a8ba153e71 |
 | a008 | 点击回应 | 点击回应-认可点头 | 1 | approved | 1 | 8d7b7120-1948-4764-a732-57b7e55fc908 |
 | a009 | 移动 | 原地轻步行走 | 1 | awaiting_review | 4 | 2982d400-e6d1-44c8-8497-571c820c15c3<br>5dbe4d80-c8ee-41f5-9195-d80b4e8df1c3<br>b0c04e7b-604a-4e1d-a05f-287c1f3ea04e<br>1e8b4134-7901-42b9-a16e-9337b662e90b |
-| a010 | 移动 | 原地小跑 | 1 | approved | 4 | 779de11c-b99e-4b73-b916-01a0b3b1160b<br>0a9b2a51-50a2-4d5d-8d4f-256e5534fda5<br>8f14a3a9-f00c-4b8b-85e0-c6cf4b73c580<br>f934b390-65d1-4f7a-8d7e-d5c16517b9da |
+| a010 | 移动 | 原地小跑 | 1 | awaiting_local_repair | 4 | 779de11c-b99e-4b73-b916-01a0b3b1160b<br>0a9b2a51-50a2-4d5d-8d4f-256e5534fda5<br>8f14a3a9-f00c-4b8b-85e0-c6cf4b73c580<br>f934b390-65d1-4f7a-8d7e-d5c16517b9da |
 | a011 | 移动 | 抱笔记本侧身挪步 | 1 | exhausted | 2 | 0482a9a7-e19f-4f53-8883-d8457cb637e4<br>9d007c8d-397b-40f8-b410-82c370479435 |
 | a012 | 日常小动作 | 伸懒腰 | 3 | approved | 1 | 7e8c3f08-1692-4243-a526-03c0d048d8a0 |
 | a013 | 日常小动作 | 打哈欠 | 3 | approved | 1 | 745157e2-9c2d-4138-8836-aac6b4b284b1 |
-| a014 | 日常小动作 | 原地打盹 | 3 | generating | 1 | 805f176d-ab03-45b5-a02e-a51be545501e |
-| a015 | 日常小动作 | 打盹被惊醒 | 3 | generating | 1 | 5fe54faf-fdd4-464f-b2fd-4bcd235db7d4 |
-| a016 | 日常小动作 | 整理围裙 | 3 | generating | 1 | 1f30e9a6-85e3-4a63-996d-9bbda3827f87 |
-| a017 | 日常小动作 | 整理猫耳发箍 | 3 | generating | 1 | 5fa73cbc-c1f9-4885-8c54-372c4653695c |
-| a018 | 日常小动作 | 梳理长发 | 3 | planned | 0 | 复用 |
-| a019 | 日常小动作 | 照镜子 | 3 | planned | 0 | 复用 |
-| a020 | 日常小动作 | 屈膝女仆礼 | 3 | planned | 0 | 复用 |
-| a021 | 日常小动作 | 擦拭眼镜 | 3 | planned | 0 | 复用 |
-| a022 | 日常小动作 | 抱臂轻哼 | 3 | planned | 0 | 复用 |
-| a023 | 日常小动作 | 歪头疑惑 | 3 | planned | 0 | 复用 |
+| a014 | 日常小动作 | 原地打盹 | 3 | awaiting_review | 1 | 805f176d-ab03-45b5-a02e-a51be545501e |
+| a015 | 日常小动作 | 打盹被惊醒 | 3 | awaiting_review | 1 | 5fe54faf-fdd4-464f-b2fd-4bcd235db7d4 |
+| a016 | 日常小动作 | 整理围裙 | 3 | awaiting_review | 1 | 1f30e9a6-85e3-4a63-996d-9bbda3827f87 |
+| a017 | 日常小动作 | 整理猫耳发箍 | 3 | awaiting_review | 1 | 5fa73cbc-c1f9-4885-8c54-372c4653695c |
+| a018 | 日常小动作 | 梳理长发 | 3 | awaiting_review | 1 | f495c69a-bed9-40da-8683-ff1028169855 |
+| a019 | 日常小动作 | 照镜子 | 3 | awaiting_review | 1 | 96844792-a553-4bc3-94ca-a160c140e9fa |
+| a020 | 日常小动作 | 屈膝女仆礼 | 3 | awaiting_review | 1 | 488a7d36-467a-4915-8c8f-c072c52f27be |
+| a021 | 日常小动作 | 擦拭眼镜 | 3 | awaiting_review | 1 | 1b679bfa-847b-4873-9b9b-b148c84be854 |
+| a022 | 日常小动作 | 抱臂轻哼 | 3 | generating | 1 | 08a62f5e-26aa-477f-9675-7e428a689d62 |
+| a023 | 日常小动作 | 歪头疑惑 | 3 | generating | 1 | a93f1a48-6da4-4889-917d-c677b5d90bc9 |
 | a024 | 日常小动作 | 原地转圈展示 | 4 | planned | 0 | 复用 |
 | a025 | 日常小动作 | 惊讶后整理仪态 | 4 | planned | 0 | 复用 |
 | a026 | 日常小动作 | 晨间刷牙 | 4 | planned | 0 | 复用 |

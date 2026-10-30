@@ -2,9 +2,7 @@ import copy
 from pathlib import Path
 import tempfile
 import unittest
-import io
 import numpy as np
-from PIL import Image
 from unittest.mock import patch
 
 import kurisu_library as lib
@@ -21,14 +19,68 @@ def state(actions):
 
 
 class BudgetTests(unittest.TestCase):
-    def test_flat_matte_gate_accepts_green_and_white_but_rejects_dark_background(self):
-        for color,expected in [((250,250,250),True),((0,255,0),True),((0,0,0),False)]:
+    def test_quality_hold_blocks_new_calls_but_allows_read_only_tick(self):
+        s=state([]);s.update({'project_id':'p','production_hold':{'reason':'white outputs'}})
+        lib.tick(object(),s,submit=False)
+        with self.assertRaisesRegex(RuntimeError,'quality problem'):
+            lib.tick(object(),s,submit=True)
+
+    def test_all_frame_gate_accepts_only_flat_saturated_green(self):
+        for color,expected in [((250,250,250),False),((0,255,0),True),((0,250,12),True),
+                               ((0,0,0),False),((0,0,255),False),((150,230,150),False)]:
             with self.subTest(color=color):
-                rgb=np.full((8,8,3),color,dtype=np.uint8)
-                rgb[2:6,2:6]=(80,40,40)
-                data=io.BytesIO();Image.fromarray(rgb).save(data,format='PNG')
-                with patch.object(lib.subprocess,'check_output',return_value=data.getvalue()):
-                    self.assertEqual(lib.source_has_keyable_border(Path('fixture.mp4')),expected)
+                rgb=np.full((240,8,8,3),color,dtype=np.uint8)
+                rgb[:,2:6,2:6]=(80,40,40)
+                result=lib.green_background_frames(rgb)
+                self.assertEqual(result['passed'],expected)
+                self.assertFalse(result['white_matte_fallback'])
+
+    def test_single_late_white_frame_cannot_pass_initial_green_check(self):
+        rgb=np.full((240,8,8,3),(0,255,0),dtype=np.uint8)
+        rgb[219]=250
+        result=lib.green_background_frames(rgb)
+        self.assertFalse(result['passed'])
+        self.assertEqual(result['failed_frames'],[219])
+        self.assertEqual(result['failed_frame_count'],1)
+        self.assertFalse(lib.green_background_frames(rgb[:239])['passed'])
+
+    def test_green_background_scan_decodes_all_frames_not_only_first_frame(self):
+        rgb=np.full((240,36,64,3),(0,255,0),dtype=np.uint8);rgb[200]=250
+        with patch.object(lib.subprocess,'check_output',return_value=rgb.tobytes()) as run:
+            result=lib.source_green_background(Path('fixture.mp4'))
+        command=run.call_args.args[0]
+        self.assertNotIn('-frames:v',command)
+        self.assertEqual(result['failed_frames'],[200])
+
+    def test_failed_green_background_never_runs_white_conversion_or_resubmits(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root=Path(temp);pack=root/'pack'
+            folder=pack/'source/library/a014/attempt-1';folder.mkdir(parents=True)
+            (folder/'nap.mp4').write_bytes(b'already-downloaded-source')
+            contact=root/'temp/kurisu/library/review/a014-attempt-1.png';contact.parent.mkdir(parents=True);contact.write_bytes(b'contact')
+            attempt={'result_asset_id':'existing-paid-result','task_id':'original-paid-task'}
+            a={'id':'a014','name':'nap','group':'daily','status':'generating','attempts':[attempt]}
+            s=state([a]);failed={'passed':False,'frames':240,'failed_frame_count':239}
+            with patch.object(lib,'ROOT',root),patch.object(lib,'PACK',pack),patch.object(lib,'save'),\
+                 patch.object(lib,'source_green_background',return_value=failed),\
+                 patch.object(lib,'convert') as convert,patch.object(lib.subprocess,'run') as run:
+                # Repeating recovery only rechecks the original result.
+                lib.prepare_result(object(),s,a,attempt)
+                lib.prepare_result(object(),s,a,attempt)
+            convert.assert_not_called();run.assert_not_called()
+            self.assertEqual(lib.calls(s),1)
+            self.assertEqual(attempt['task_id'],'original-paid-task')
+            self.assertEqual(a['status'],'awaiting_review')
+            self.assertIn('uniform saturated green',attempt['processing_error'])
+
+    def test_h3_prompt_separates_solid_green_background_from_neutral_character_lighting(self):
+        prompt=lib.prompt_for({'group':'日常小动作','name':'整理围裙'},'Smooth her apron.',True)
+        sections=['subject_definitions:','summary:','retention_analysis:','detailed_description:','overall_soundscape:','non_diegetic_music:']
+        self.assertEqual([prompt.index(s) for s in sections],sorted(prompt.index(s) for s in sections))
+        self.assertIn('RGB (0,255,0), #00FF00',prompt)
+        self.assertIn('EVERY background pixel in EVERY frame',prompt)
+        self.assertIn('inside all visible negative spaces between hair locks',prompt)
+        self.assertIn('Neutral subject lighting must never become a white background',prompt)
 
     def test_global_cap_includes_every_reserved_submission(self):
         s = state([action(2) for _ in range(65)])

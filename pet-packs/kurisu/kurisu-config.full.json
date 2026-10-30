@@ -49,7 +49,9 @@
           "name": "原地小跑",
           "params": {
             "minDist": 120,
-            "maxDist": 320
+            "maxDist": 320,
+            "leadSec": 0,
+            "tailSec": 0
           }
         },
         {

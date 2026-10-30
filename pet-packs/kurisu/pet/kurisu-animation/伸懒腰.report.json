@@ -63,8 +63,8 @@
       "height_delta_px": 0
     },
     "background_clear": true,
-    "endpoint_rgba_mean_absolute_difference": 5.58706036121673,
-    "transparent_fraction": 0.8170001989293981
+    "endpoint_rgba_mean_absolute_difference": 5.865075739360424,
+    "transparent_fraction": 0.8190467484085648
   },
   "camera_stabilization": {
     "start": {
@@ -90,5 +90,10 @@
       "feet_y": 693
     },
     "method": "linear uniform scale and baseline translation from neutral endpoint poses; intermediate pose motion preserved"
+  },
+  "edge_revision": {
+    "method": "hair_islands_and_boundary_despill_v4",
+    "source_sha256": "cac6de700a25050437baac547942e53945010cab85d28a5a6647c3ca75b16575",
+    "new_model_calls": 0
   }
 }

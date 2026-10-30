@@ -58,8 +58,17 @@
     "audio_streams": 0,
     "codec": "vp9",
     "all_frames_have_alpha": true,
+    "endpoint_geometry": {
+      "feet_delta_px": 0,
+      "height_delta_px": 0
+    },
     "background_clear": true,
-    "endpoint_rgba_mean_absolute_difference": 2.8324071227564027,
-    "transparent_fraction": 0.8138573857060185
+    "endpoint_rgba_mean_absolute_difference": 2.940576610590709,
+    "transparent_fraction": 0.8159245695891204
+  },
+  "edge_revision": {
+    "method": "hair_islands_and_boundary_despill_v4",
+    "source_sha256": "a74bc3a27e9d4087dc19f6a11eeb220dab9f827e7c975e3f440c01831da64120",
+    "new_model_calls": 0
   }
 }

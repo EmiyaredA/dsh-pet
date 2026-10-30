@@ -26,7 +26,10 @@ export function liveConfiguration(full,library,previous={}) {
  a.categories=a.categories.map(c=>({...c,actions:pool(c.actions)})).filter(c=>c.actions.length);
  a.events=Object.fromEntries(Object.entries(a.events).map(([key,slots])=>[key,slots.map(slot=>Array.isArray(slot)?pool(slot):version(slot)).filter(slot=>Array.isArray(slot)?slot.length:slot)]).filter(([,slots])=>slots.length));
  if(!a.events.balance?.length)throw new Error('Live preview needs an approved balance slot for the existing config contract');
- const turn=a.turn.length?10:0,move=a.moves.actions.length?10:0;
+ const hasAutomaticMove=a.moves.actions.some(m=>{
+  const original=cleanAnimationName(m.name);return !available.get(original)?.automatic_playback_hold;
+ });
+ const turn=a.turn.length?10:0,move=hasAutomaticMove?10:0;
  const categoryWeight=a.categories.length?40:0;
  conf.animationWeights={idle:100-turn-move-categoryWeight,turn,move};
  const oldTotal=a.categories.reduce((sum,c)=>sum+c.weight,0);
@@ -56,7 +59,7 @@ async function main() {
  function sync() {
   const library=JSON.parse(readFileSync(join(PACK,'library.json')));
   const approved=library.actions.filter(a=>a.status==='approved');
-  const nextSignature=JSON.stringify(approved.map(a=>[a.id,a.sha256,a.motion_mode]));
+  const nextSignature=JSON.stringify(approved.map(a=>[a.id,a.sha256,a.motion_mode,a.automatic_playback_hold]));
   if(nextSignature===signature)return;
   const previous=existsSync(configPath)?JSON.parse(readFileSync(configPath)):{};
   const full=JSON.parse(readFileSync(join(PACK,'kurisu-config.full.json')));
