@@ -1,5 +1,7 @@
 # dsh-pet 🐾
 
+本分支新增：[红莉栖猫耳女仆独立宠物包](pet-packs/kurisu/README.md)，可与肥鱼并存。106 条动画库正在制作，实时进度见[动作清单](pet-packs/kurisu/ACTIONS.md)；正式安装配置暂保留已验收的待机与点击傲娇两条样片，完整素材通过后再切换。
+
 <p align="center">
   <a href="https://www.npmjs.com/package/dsh-pet"><img alt="npm version" src="https://img.shields.io/npm/v/dsh-pet?label=npm&color=blue"></a>
   <a href="https://www.npmjs.com/package/dsh-pet"><img alt="npm monthly downloads" src="https://img.shields.io/npm/dm/dsh-pet?label=%E6%9C%88%E4%B8%8B%E8%BD%BD&color=brightgreen"></a>

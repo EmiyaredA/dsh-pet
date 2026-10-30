@@ -1,0 +1,19 @@
+{
+  "status": "implemented_and_applied",
+  "backend_targeted_tests": 23,
+  "web_targeted_tests": 30,
+  "concurrent_recovery_tests": 5,
+  "shared_inference_and_architecture_passed": 74,
+  "unrelated_existing_architecture_failures": [
+    "cross-feature imports in HomeHeroPet and VideoDownloaderPage",
+    "workbench.css 803 lines exceeds 800"
+  ],
+  "old_tasks_recovered": [
+    "e991e468-b481-4bf5-b455-ddf3cd34bd43",
+    "a0cddc01-0921-4121-92d5-7aee7556e0a9"
+  ],
+  "old_provider_ids_preserved": true,
+  "new_generation_calls_for_recovery": 0,
+  "new_public_routes": 0,
+  "schema_migrations": 0
+}

@@ -1,0 +1,32 @@
+{
+  "pets": [
+    {
+      "id": "kurisu1",
+      "name": "红莉栖",
+      "size": 462,
+      "balanceEnabled": false,
+      "whisperEnabled": false,
+      "workStatusEnabled": false,
+      "fixedEnabled": true,
+      "display": "both",
+      "position": { "corner": "bottom-right", "marginX": 40, "marginY": 40 }
+    }
+  ],
+  "animations": {
+    "idle": ["待机呼吸"],
+    "turn": [],
+    "drag": ["待机呼吸"],
+    "clicks": ["点击回应-傲娇"],
+    "moves": {
+      "default": { "minDist": 80, "maxDist": 240, "margin": 20, "leadSec": 2, "tailSec": 2 },
+      "actions": []
+    },
+    "categories": [],
+    "events": { "balance": ["点击回应-傲娇"] }
+  },
+  "animationWeights": { "idle": 100, "turn": 0, "move": 0 },
+  "whisperPrompt": "你是牧濑红莉栖，聪明理性、喜欢科学、偶尔嘴硬害羞的桌面小助手，穿着猫耳女仆装。说话简短自然，温柔但有主见，偶尔轻轻吐槽，不自称鱼、蓝发女仆或AI。",
+  "memes": {},
+  "whisperImageEnabled": false,
+  "chatImageEnabled": false
+}

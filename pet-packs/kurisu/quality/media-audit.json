@@ -1,0 +1,952 @@
+{
+  "schema_version": 1,
+  "clips": {
+    "a001": {
+      "sha256": "856c6916d60cb337648969147e99c836b4178c8fe29f630e14322d182d028f68",
+      "file": "pet/kurisu-animation/待机呼吸.webm",
+      "verification": {
+        "width": 640,
+        "height": 360,
+        "fps": 24,
+        "frames": 240,
+        "duration_seconds": 10.0,
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "first_box": [
+          217,
+          59,
+          430,
+          330
+        ],
+        "last_box": [
+          217,
+          60,
+          430,
+          329
+        ],
+        "audio_streams": 0,
+        "codec": "vp9",
+        "all_frames_have_alpha": true,
+        "endpoint_geometry": {
+          "feet_delta_px": -1,
+          "height_delta_px": -2
+        },
+        "background_clear": true,
+        "endpoint_rgba_mean_absolute_difference": 5.35688495706983,
+        "transparent_fraction": 0.8143113968460648
+      },
+      "verifier_version": 3,
+      "verified_at": "2026-10-30T09:00:24.563129+00:00"
+    },
+    "a002": {
+      "sha256": "569ce7f69f8d42ab0a5b0522361d025e8ebd2ddff5c924b90a0f5ccb763a73de",
+      "file": "pet/kurisu-animation/左右张望.webm",
+      "verification": {
+        "width": 640,
+        "height": 360,
+        "fps": 24,
+        "frames": 240,
+        "duration_seconds": 10.0,
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "first_box": [
+          217,
+          60,
+          430,
+          330
+        ],
+        "last_box": [
+          217,
+          60,
+          430,
+          330
+        ],
+        "audio_streams": 0,
+        "codec": "vp9",
+        "all_frames_have_alpha": true,
+        "endpoint_geometry": {
+          "feet_delta_px": 0,
+          "height_delta_px": 0
+        },
+        "background_clear": true,
+        "endpoint_rgba_mean_absolute_difference": 4.196888585268911,
+        "transparent_fraction": 0.8156618923611111
+      },
+      "verifier_version": 3,
+      "verified_at": "2026-10-30T09:00:24.969916+00:00"
+    },
+    "a004": {
+      "sha256": "0b86537c1b1bf6422cbc45e4ac3d2b5c84189519f23131d57e4c7d40b80fc9fe",
+      "file": "pet/kurisu-animation/点击回应-傲娇.webm",
+      "verification": {
+        "width": 640,
+        "height": 360,
+        "fps": 24,
+        "frames": 240,
+        "duration_seconds": 10.0,
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "first_box": [
+          217,
+          60,
+          431,
+          330
+        ],
+        "last_box": [
+          217,
+          60,
+          431,
+          329
+        ],
+        "audio_streams": 0,
+        "codec": "vp9",
+        "all_frames_have_alpha": true,
+        "endpoint_geometry": {
+          "feet_delta_px": -1,
+          "height_delta_px": -1
+        },
+        "background_clear": true,
+        "endpoint_rgba_mean_absolute_difference": 3.529520732498378,
+        "transparent_fraction": 0.8161863245081018
+      },
+      "verifier_version": 3,
+      "verified_at": "2026-10-30T09:00:25.931449+00:00"
+    },
+    "a005": {
+      "sha256": "b39d761726658d76405328beb6a49a8d3c980e74fbd3b403c2339ece80f77bd1",
+      "file": "pet/kurisu-animation/点击回应-开心挥手.webm",
+      "verification": {
+        "width": 640,
+        "height": 360,
+        "fps": 24,
+        "frames": 240,
+        "duration_seconds": 10.0,
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "first_box": [
+          216,
+          58,
+          432,
+          330
+        ],
+        "last_box": [
+          217,
+          60,
+          432,
+          330
+        ],
+        "audio_streams": 0,
+        "codec": "vp9",
+        "all_frames_have_alpha": true,
+        "endpoint_geometry": {
+          "feet_delta_px": 0,
+          "height_delta_px": -2
+        },
+        "background_clear": true,
+        "endpoint_rgba_mean_absolute_difference": 24.098600447664204,
+        "transparent_fraction": 0.8112005027488426
+      },
+      "verifier_version": 3,
+      "verified_at": "2026-10-30T09:00:26.374315+00:00"
+    },
+    "a006": {
+      "sha256": "13220e2eb7f67a3885229bcecf6709d5741360eabaf2014138f1cabef0fe882e",
+      "file": "pet/kurisu-animation/点击回应-害羞捂脸.webm",
+      "verification": {
+        "width": 640,
+        "height": 360,
+        "fps": 24,
+        "frames": 240,
+        "duration_seconds": 10.0,
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "first_box": [
+          217,
+          60,
+          431,
+          330
+        ],
+        "last_box": [
+          217,
+          60,
+          431,
+          330
+        ],
+        "audio_streams": 0,
+        "codec": "vp9",
+        "all_frames_have_alpha": true,
+        "endpoint_geometry": {
+          "feet_delta_px": 0,
+          "height_delta_px": 0
+        },
+        "background_clear": true,
+        "endpoint_rgba_mean_absolute_difference": 3.2546964250541657,
+        "transparent_fraction": 0.8134482964409723
+      },
+      "verifier_version": 3,
+      "verified_at": "2026-10-30T09:00:26.825763+00:00"
+    },
+    "a008": {
+      "sha256": "64e4cbe2991194b2772cb764148f9f83ae16d28046d7316c395ff558ba77c7f2",
+      "file": "pet/kurisu-animation/点击回应-认可点头.webm",
+      "verification": {
+        "width": 640,
+        "height": 360,
+        "fps": 24,
+        "frames": 240,
+        "duration_seconds": 10.0,
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "first_box": [
+          217,
+          60,
+          431,
+          330
+        ],
+        "last_box": [
+          217,
+          60,
+          431,
+          330
+        ],
+        "audio_streams": 0,
+        "codec": "vp9",
+        "all_frames_have_alpha": true,
+        "endpoint_geometry": {
+          "feet_delta_px": 0,
+          "height_delta_px": 0
+        },
+        "background_clear": true,
+        "endpoint_rgba_mean_absolute_difference": 3.3787403325838254,
+        "transparent_fraction": 0.8140229130497685
+      },
+      "verifier_version": 3,
+      "verified_at": "2026-10-30T09:00:27.263190+00:00"
+    },
+    "a009": {
+      "sha256": "6a6879b6c23cfe09c202e9981060f1f52420fc5edfa125206381df153fd7b4ec",
+      "file": "pet/kurisu-animation/原地轻步行走.webm",
+      "verification": {
+        "width": 640,
+        "height": 360,
+        "fps": 24,
+        "frames": 240,
+        "duration_seconds": 10.0,
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "first_box": [
+          214,
+          61,
+          436,
+          330
+        ],
+        "last_box": [
+          214,
+          61,
+          436,
+          330
+        ],
+        "audio_streams": 0,
+        "codec": "vp9",
+        "all_frames_have_alpha": true,
+        "endpoint_geometry": {
+          "feet_delta_px": 0,
+          "height_delta_px": 0
+        },
+        "background_clear": true,
+        "endpoint_rgba_mean_absolute_difference": 3.8609187497035524,
+        "transparent_fraction": 0.8243884367766203
+      },
+      "verifier_version": 3,
+      "verified_at": "2026-10-30T09:00:27.713796+00:00"
+    },
+    "a010": {
+      "sha256": "680fed63ffbb2c1cc12217524bbf250554703cdece4a38ad26e20cb6dff3d980",
+      "file": "pet/kurisu-animation/原地小跑.webm",
+      "verification": {
+        "width": 640,
+        "height": 360,
+        "fps": 24,
+        "frames": 240,
+        "duration_seconds": 10.0,
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "first_box": [
+          214,
+          61,
+          436,
+          330
+        ],
+        "last_box": [
+          213,
+          61,
+          436,
+          330
+        ],
+        "audio_streams": 0,
+        "codec": "vp9",
+        "all_frames_have_alpha": true,
+        "endpoint_geometry": {
+          "feet_delta_px": 0,
+          "height_delta_px": 0
+        },
+        "background_clear": true,
+        "endpoint_rgba_mean_absolute_difference": 2.7718326598526266,
+        "transparent_fraction": 0.8348587782118055
+      },
+      "verifier_version": 3,
+      "verified_at": "2026-10-30T09:00:28.354560+00:00"
+    },
+    "a011": {
+      "sha256": "933a2420a0d6f3edacba23373c277b90bfebedd4fca4ae19dda5d1f775d03cad",
+      "file": "pet/kurisu-animation/抱笔记本侧身挪步.webm",
+      "verification": {
+        "width": 640,
+        "height": 360,
+        "fps": 24,
+        "frames": 240,
+        "duration_seconds": 10.0,
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "first_box": [
+          217,
+          60,
+          431,
+          330
+        ],
+        "last_box": [
+          217,
+          60,
+          431,
+          330
+        ],
+        "audio_streams": 0,
+        "codec": "vp9",
+        "all_frames_have_alpha": true,
+        "background_clear": true,
+        "endpoint_rgba_mean_absolute_difference": 3.2701838280958886,
+        "transparent_fraction": 0.8146745515046296
+      },
+      "verifier_version": 2,
+      "verified_at": "2026-10-30T06:00:44.575823+00:00"
+    },
+    "a103": {
+      "sha256": "615aa8f01c1fb16a5ecae0938a7d27a31caf7b409967f63bf9e4cb6377797072",
+      "file": "pet/kurisu-animation/工作状态-整理实验记录.webm",
+      "verification": {
+        "width": 640,
+        "height": 360,
+        "fps": 24,
+        "frames": 240,
+        "duration_seconds": 10.0,
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "first_box": [
+          217,
+          60,
+          431,
+          330
+        ],
+        "last_box": [
+          217,
+          60,
+          431,
+          330
+        ],
+        "audio_streams": 0,
+        "codec": "vp9",
+        "all_frames_have_alpha": true,
+        "endpoint_geometry": {
+          "feet_delta_px": 0,
+          "height_delta_px": 0
+        },
+        "background_clear": true,
+        "endpoint_rgba_mean_absolute_difference": 2.3536863518678337,
+        "transparent_fraction": 0.81793701171875
+      },
+      "verifier_version": 3,
+      "verified_at": "2026-10-30T09:50:30.659514+00:00"
+    },
+    "a101": {
+      "sha256": "5395f1e4977c15858904b3f75e1bfbc673ffb927e587f1697f4ba21db6046d29",
+      "file": "pet/kurisu-animation/工作状态-托腮推理.webm",
+      "verification": {
+        "width": 640,
+        "height": 360,
+        "fps": 24,
+        "frames": 240,
+        "duration_seconds": 10.0,
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "first_box": [
+          217,
+          60,
+          431,
+          330
+        ],
+        "last_box": [
+          217,
+          60,
+          431,
+          329
+        ],
+        "audio_streams": 0,
+        "codec": "vp9",
+        "all_frames_have_alpha": true,
+        "endpoint_geometry": {
+          "feet_delta_px": -1,
+          "height_delta_px": -1
+        },
+        "background_clear": true,
+        "endpoint_rgba_mean_absolute_difference": 3.4301901037154385,
+        "transparent_fraction": 0.8140265118634259
+      },
+      "verifier_version": 3,
+      "verified_at": "2026-10-30T09:00:28.762893+00:00"
+    },
+    "a102": {
+      "sha256": "cbeb4700d75542322030fac2f88fc8067898d4763cbb2cf13bb3135491219510",
+      "file": "pet/kurisu-animation/工作状态-专注敲键盘.webm",
+      "verification": {
+        "width": 640,
+        "height": 360,
+        "fps": 24,
+        "frames": 240,
+        "duration_seconds": 10.0,
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "first_box": [
+          217,
+          59,
+          431,
+          330
+        ],
+        "last_box": [
+          217,
+          60,
+          431,
+          330
+        ],
+        "audio_streams": 0,
+        "codec": "vp9",
+        "all_frames_have_alpha": true,
+        "endpoint_geometry": {
+          "feet_delta_px": 0,
+          "height_delta_px": -1
+        },
+        "background_clear": true,
+        "endpoint_rgba_mean_absolute_difference": 3.2680956245849626,
+        "transparent_fraction": 0.8145328233506944
+      },
+      "verifier_version": 3,
+      "verified_at": "2026-10-30T09:00:29.166174+00:00"
+    },
+    "a003": {
+      "sha256": "f5668ab37e142b0a8c339421580fda1d148123a9df75dfebef263e5689eaa1ea",
+      "file": "pet/kurisu-animation/被提起悬空.webm",
+      "verification": {
+        "width": 640,
+        "height": 360,
+        "fps": 24,
+        "frames": 240,
+        "duration_seconds": 10.0,
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "first_box": [
+          214,
+          60,
+          436,
+          330
+        ],
+        "last_box": [
+          213,
+          60,
+          436,
+          330
+        ],
+        "audio_streams": 0,
+        "codec": "vp9",
+        "all_frames_have_alpha": true,
+        "endpoint_geometry": {
+          "feet_delta_px": 0,
+          "height_delta_px": 0
+        },
+        "background_clear": true,
+        "endpoint_rgba_mean_absolute_difference": 2.8324071227564027,
+        "transparent_fraction": 0.8138573857060185
+      },
+      "verifier_version": 3,
+      "verified_at": "2026-10-30T09:00:25.529182+00:00"
+    },
+    "a104": {
+      "sha256": "325f32918437e5837df27fd13cc3b0a0e89f0662bf3cc5605324ac40b4a2ad92",
+      "file": "pet/kurisu-animation/工作状态-抱臂等确认.webm",
+      "verification": {
+        "width": 640,
+        "height": 360,
+        "fps": 24,
+        "frames": 240,
+        "duration_seconds": 10.0,
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "first_box": [
+          214,
+          61,
+          435,
+          330
+        ],
+        "last_box": [
+          213,
+          61,
+          435,
+          330
+        ],
+        "audio_streams": 0,
+        "codec": "vp9",
+        "all_frames_have_alpha": true,
+        "endpoint_geometry": {
+          "feet_delta_px": 0,
+          "height_delta_px": 0
+        },
+        "background_clear": true,
+        "endpoint_rgba_mean_absolute_difference": 7.674314808668026,
+        "transparent_fraction": 0.8158321216724537
+      },
+      "verifier_version": 3,
+      "verified_at": "2026-10-30T09:00:30.329337+00:00"
+    },
+    "a105": {
+      "sha256": "74b47ba9bf4d1363993906c3f54e1454bf8c651fbdda295f562d050327bca5e1",
+      "file": "pet/kurisu-animation/工作状态-实验成功庆祝.webm",
+      "verification": {
+        "width": 640,
+        "height": 360,
+        "fps": 24,
+        "frames": 240,
+        "duration_seconds": 10.0,
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "first_box": [
+          213,
+          59,
+          433,
+          329
+        ],
+        "last_box": [
+          213,
+          59,
+          434,
+          330
+        ],
+        "audio_streams": 0,
+        "codec": "vp9",
+        "all_frames_have_alpha": true,
+        "endpoint_geometry": {
+          "feet_delta_px": 1,
+          "height_delta_px": 1
+        },
+        "background_clear": true,
+        "endpoint_rgba_mean_absolute_difference": 8.632493675719536,
+        "transparent_fraction": 0.81640234375
+      },
+      "verifier_version": 3,
+      "verified_at": "2026-10-30T09:00:30.907281+00:00"
+    },
+    "a106": {
+      "sha256": "dae67e68a4b61bbf339f5dde90eb22f8e0e831bd795844a83fcb36575653f5e1",
+      "file": "pet/kurisu-animation/工作状态-实验受挫扶额.webm",
+      "verification": {
+        "width": 640,
+        "height": 360,
+        "fps": 24,
+        "frames": 240,
+        "duration_seconds": 10.0,
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "first_box": [
+          213,
+          60,
+          435,
+          330
+        ],
+        "last_box": [
+          213,
+          60,
+          435,
+          330
+        ],
+        "audio_streams": 0,
+        "codec": "vp9",
+        "all_frames_have_alpha": true,
+        "endpoint_geometry": {
+          "feet_delta_px": 0,
+          "height_delta_px": 0
+        },
+        "background_clear": true,
+        "endpoint_rgba_mean_absolute_difference": 2.944912538865023,
+        "transparent_fraction": 0.8159242078993055
+      },
+      "verifier_version": 3,
+      "verified_at": "2026-10-30T09:00:31.454409+00:00"
+    },
+    "a093": {
+      "sha256": "dee4704a1b8e622e79457b2a40e068983c43a469d06e55675def8bb0ca91263e",
+      "file": "pet/kurisu-animation/余额-经费有余.webm",
+      "verification": {
+        "width": 640,
+        "height": 360,
+        "fps": 24,
+        "frames": 240,
+        "duration_seconds": 10.0,
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "first_box": [
+          213,
+          60,
+          434,
+          329
+        ],
+        "last_box": [
+          213,
+          60,
+          434,
+          329
+        ],
+        "audio_streams": 0,
+        "codec": "vp9",
+        "all_frames_have_alpha": true,
+        "endpoint_geometry": {
+          "feet_delta_px": 0,
+          "height_delta_px": 0
+        },
+        "background_clear": true,
+        "endpoint_rgba_mean_absolute_difference": 5.40405373276272,
+        "transparent_fraction": 0.8156181098090278
+      },
+      "verifier_version": 3,
+      "verified_at": "2026-10-30T09:07:26.129167+00:00"
+    },
+    "a092": {
+      "sha256": "5ad4737b5d55cd056e5da7a4c27faa76082110bc414f42a0b3c36ae9d9855437",
+      "file": "pet/kurisu-animation/余额-预算充足.webm",
+      "verification": {
+        "width": 640,
+        "height": 360,
+        "fps": 24,
+        "frames": 240,
+        "duration_seconds": 10.0,
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "first_box": [
+          214,
+          59,
+          435,
+          329
+        ],
+        "last_box": [
+          214,
+          59,
+          435,
+          329
+        ],
+        "audio_streams": 0,
+        "codec": "vp9",
+        "all_frames_have_alpha": true,
+        "endpoint_geometry": {
+          "feet_delta_px": 0,
+          "height_delta_px": 0
+        },
+        "background_clear": true,
+        "endpoint_rgba_mean_absolute_difference": 5.736237553342817,
+        "transparent_fraction": 0.8158807508680556
+      },
+      "verifier_version": 3,
+      "verified_at": "2026-10-30T09:22:45.341187+00:00"
+    },
+    "a094": {
+      "sha256": "e2ee6eb6e2e1ffb4b7a283a708d45060ceed09ac49f21fb3f58353ab87f5849f",
+      "file": "pet/kurisu-animation/余额-核对账本.webm",
+      "verification": {
+        "width": 640,
+        "height": 360,
+        "fps": 24,
+        "frames": 240,
+        "duration_seconds": 10.0,
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "first_box": [
+          214,
+          61,
+          435,
+          330
+        ],
+        "last_box": [
+          214,
+          61,
+          435,
+          330
+        ],
+        "audio_streams": 0,
+        "codec": "vp9",
+        "all_frames_have_alpha": true,
+        "endpoint_geometry": {
+          "feet_delta_px": 0,
+          "height_delta_px": 0
+        },
+        "background_clear": true,
+        "endpoint_rgba_mean_absolute_difference": 4.831801273338579,
+        "transparent_fraction": 0.8161553638599537
+      },
+      "verifier_version": 3,
+      "verified_at": "2026-10-30T09:22:45.891635+00:00"
+    },
+    "a095": {
+      "sha256": "8d3699a1d405186828986c7ef9f272ee5c6e635cd6ec8a5075a55ff053e4a8f9",
+      "file": "pet/kurisu-animation/余额-精打细算.webm",
+      "verification": {
+        "width": 640,
+        "height": 360,
+        "fps": 24,
+        "frames": 240,
+        "duration_seconds": 10.0,
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "first_box": [
+          214,
+          59,
+          434,
+          329
+        ],
+        "last_box": [
+          214,
+          59,
+          434,
+          329
+        ],
+        "audio_streams": 0,
+        "codec": "vp9",
+        "all_frames_have_alpha": true,
+        "endpoint_geometry": {
+          "feet_delta_px": 0,
+          "height_delta_px": 0
+        },
+        "background_clear": true,
+        "endpoint_rgba_mean_absolute_difference": 5.534869128719971,
+        "transparent_fraction": 0.8162953197337963
+      },
+      "verifier_version": 3,
+      "verified_at": "2026-10-30T09:22:46.421303+00:00"
+    },
+    "a096": {
+      "sha256": "4b08989fe9bea55767bdb03b6d74ec77c1dbfdfd17cba4e7038b6ff6d7f699ef",
+      "file": "pet/kurisu-animation/余额-经费告急.webm",
+      "verification": {
+        "width": 640,
+        "height": 360,
+        "fps": 24,
+        "frames": 240,
+        "duration_seconds": 10.0,
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "first_box": [
+          214,
+          61,
+          435,
+          330
+        ],
+        "last_box": [
+          214,
+          61,
+          435,
+          330
+        ],
+        "audio_streams": 0,
+        "codec": "vp9",
+        "all_frames_have_alpha": true,
+        "endpoint_geometry": {
+          "feet_delta_px": 0,
+          "height_delta_px": 0
+        },
+        "background_clear": true,
+        "endpoint_rgba_mean_absolute_difference": 5.650709346685741,
+        "transparent_fraction": 0.8164171187789352
+      },
+      "verifier_version": 3,
+      "verified_at": "2026-10-30T09:22:46.942523+00:00"
+    },
+    "a098": {
+      "sha256": "6c0bb942202b143dddb6c3d822a1b550b563c1e4512109c2a59bdfbb34cb48d5",
+      "file": "pet/kurisu-animation/碎碎念-整理实验台.webm",
+      "verification": {
+        "width": 640,
+        "height": 360,
+        "fps": 24,
+        "frames": 240,
+        "duration_seconds": 10.0,
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "first_box": [
+          213,
+          60,
+          436,
+          330
+        ],
+        "last_box": [
+          213,
+          60,
+          436,
+          330
+        ],
+        "audio_streams": 0,
+        "codec": "vp9",
+        "all_frames_have_alpha": true,
+        "endpoint_geometry": {
+          "feet_delta_px": 0,
+          "height_delta_px": 0
+        },
+        "background_clear": true,
+        "endpoint_rgba_mean_absolute_difference": 2.316518427402186,
+        "transparent_fraction": 0.813968822337963
+      },
+      "verifier_version": 3,
+      "verified_at": "2026-10-30T09:50:30.163454+00:00"
+    },
+    "a097": {
+      "sha256": "9fcf2caa97c9d53e795514b5764c1e7fab4734291f2ac084139b2aac91e31ef2",
+      "file": "pet/kurisu-animation/余额-空钱包叹气.webm",
+      "verification": {
+        "width": 640,
+        "height": 360,
+        "fps": 24,
+        "frames": 240,
+        "duration_seconds": 10.0,
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "first_box": [
+          213,
+          59,
+          434,
+          329
+        ],
+        "last_box": [
+          213,
+          59,
+          434,
+          329
+        ],
+        "audio_streams": 0,
+        "codec": "vp9",
+        "all_frames_have_alpha": true,
+        "endpoint_geometry": {
+          "feet_delta_px": 0,
+          "height_delta_px": 0
+        },
+        "background_clear": true,
+        "endpoint_rgba_mean_absolute_difference": 4.866265634306135,
+        "transparent_fraction": 0.8144041160300926
+      },
+      "verifier_version": 3,
+      "verified_at": "2026-10-30T09:57:17.860560+00:00"
+    },
+    "a099": {
+      "sha256": "084abd74e1423f599ffeb4cd318c971c94b484b6ca96f5c11688473792df0fe9",
+      "file": "pet/kurisu-animation/碎碎念-对屏轻声解释.webm",
+      "verification": {
+        "width": 640,
+        "height": 360,
+        "fps": 24,
+        "frames": 240,
+        "duration_seconds": 10.0,
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "first_box": [
+          213,
+          60,
+          436,
+          330
+        ],
+        "last_box": [
+          213,
+          60,
+          436,
+          330
+        ],
+        "audio_streams": 0,
+        "codec": "vp9",
+        "all_frames_have_alpha": true,
+        "endpoint_geometry": {
+          "feet_delta_px": 0,
+          "height_delta_px": 0
+        },
+        "background_clear": true,
+        "endpoint_rgba_mean_absolute_difference": 2.33424497318243,
+        "transparent_fraction": 0.8156361942997685
+      },
+      "verifier_version": 3,
+      "verified_at": "2026-10-30T09:57:18.339087+00:00"
+    },
+    "a100": {
+      "sha256": "07539631232c0d7be709c9a21d8bb91195d61ed247ab2d9cebf7904ed774333f",
+      "file": "pet/kurisu-animation/碎碎念-抱笔记本嘀咕.webm",
+      "verification": {
+        "width": 640,
+        "height": 360,
+        "fps": 24,
+        "frames": 240,
+        "duration_seconds": 10.0,
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "first_box": [
+          215,
+          61,
+          434,
+          330
+        ],
+        "last_box": [
+          215,
+          61,
+          434,
+          330
+        ],
+        "audio_streams": 0,
+        "codec": "vp9",
+        "all_frames_have_alpha": true,
+        "endpoint_geometry": {
+          "feet_delta_px": 0,
+          "height_delta_px": 0
+        },
+        "background_clear": true,
+        "endpoint_rgba_mean_absolute_difference": 2.097797833935018,
+        "transparent_fraction": 0.8178405128761574
+      },
+      "verifier_version": 3,
+      "verified_at": "2026-10-30T10:08:48.835945+00:00"
+    }
+  },
+  "current_approved_ids": [
+    "a001",
+    "a002",
+    "a003",
+    "a004",
+    "a005",
+    "a006",
+    "a008",
+    "a009",
+    "a010",
+    "a092",
+    "a093",
+    "a094",
+    "a095",
+    "a096",
+    "a097",
+    "a098",
+    "a099",
+    "a100",
+    "a101",
+    "a102",
+    "a103",
+    "a104",
+    "a105",
+    "a106"
+  ]
+}

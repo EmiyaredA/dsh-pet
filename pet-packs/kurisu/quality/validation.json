@@ -1,0 +1,20 @@
+{
+  "checked_at": "2026-10-30T10:01:40.165701+00:00",
+  "python_tests": 26,
+  "installer_tests": 3,
+  "real_config_loader_tests": 1,
+  "full_config_unique_animations": 106,
+  "full_config_promoted": false,
+  "current_installed_config_actions": 2,
+  "current_approved_media": 23,
+  "current_media_all_frames_decoded": true,
+  "preview_search_and_filters": "verified in in-app browser",
+  "full_106_desktop_runtime_test": "not run: library incomplete",
+  "movement_review": "Left-profile walk and jog accepted after approved padded-reference retries; notebook side gait still exhausted due cropped ears",
+  "generation_blocker": null,
+  "archive_cli_install_update": "passed in isolated temporary DSH directory",
+  "preview_blocker_and_withdrawal_notice": "Current files updated; browser verification unavailable in this session",
+  "fpl_input_hash_verified": true,
+  "current_call_count": 38,
+  "laptop_orientation": "a103 wrong rear-lid UI withdrawn, repaired locally and revalidated; a102 plain back lid confirmed; future laptop prompts explicitly face screen toward character"
+}

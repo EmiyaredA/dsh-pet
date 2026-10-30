@@ -551,6 +551,7 @@ function createPetWindows() {
         query: {
           configUrl,
           bridge: BRIDGE ? '1' : '0',
+          livePreview: process.env.DSH_PET_LIVE_PREVIEW === '1' ? '1' : '0',
           // 工具项「打开网站」的文案按宿主形态自动变（见 sprite.js）：desktop=唤起桌面应用 / site=打开站点
           openTarget: OPEN_TARGET,
           scale: String(scale),

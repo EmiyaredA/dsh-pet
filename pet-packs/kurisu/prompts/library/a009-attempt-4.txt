@@ -1,0 +1,23 @@
+subject_definitions:
+<Subject 1> is the SINGLE approved HUMAN chibi girl Kurisu wearing a maid costume and a detachable cat-ear HEADBAND in <Picture 1>. Her anatomy is entirely HUMAN; the two black fabric triangles with pink interiors are costume accessories on the white lace headband. Preserve her exact large round head, short slightly plump body and limbs, chestnut-auburn long hair, blue-violet eyes, two pink bows, black-and-white frilled maid dress, white puff sleeves and bib, pink neck ribbon and zigzag trim, gray belt and silver buckle, dark stockings and black shoes. The back ends at the skirt and hair. NO animal tail, other appendage or silver hair clips.
+<Picture 1> is the sole identity, costume and body-proportion reference. Use it only to preserve her design. The reference's front-facing pose does not define this animation's facing direction. Keep a wide, steady full-body composition with ample empty margin; never crop ears, hair, hands or shoes.
+
+summary:
+[reference generation] One continuous 10-second 2D desktop-pet sprite animation of <Subject 1>, walking lightly in place. She faces STRICT SCREEN-LEFT SIDE PROFILE from the first frame through the last frame. Keep her face, chest, hips, knees and shoe toes oriented left; show one near eye and naturally occlude the far eye. Maintain this one facing direction for all 10 seconds. Animate only a gentle alternating in-place gait: small alternating steps, slight natural body bob and opposite arm swings, calm expression. Her body stays centered and does not travel. The opening and ending are both the same left-facing profile gait at the same scale and framing; do not turn to a standing front pose at either end. Both hands remain empty. No props, cards, signs, books, notebooks, badges, tools, animals, particles or other objects.
+
+camera and framing:
+One single locked-off eye-level orthographic full-body shot for the entire 10 seconds. Single fixed camera position, single fixed focal length, single unchanged shot size. No orientation snap, no scale pop, no cut, no reframing, no zoom, no sudden rotation. Keep the same facing direction from first frame to last. Keep the character centered at the same screen position; character screen occupancy and apparent body size must vary by no more than 5% from the opening frame. Keep the full figure comfortably inside the frame with stable margins. Motion is limited to the small walking cycle; no camera or composition changes.
+
+visual_style:
+Match the delicate dark outlines and soft 2D cel shading of <Picture 1>, like a clean game animation sprite. Use a fixed palette and constant neutral even white frontal illumination in every frame. Chestnut hair, pale skin, neutral white lace, charcoal clothes, pink bows and blue-violet eyes keep their hues and brightness. Existing painted highlights remain attached to surfaces. The background is a perfectly uniform digital #00FF00 cutout matte, not a green-lit room; it never illuminates the character. No floor, cast shadow, gradient, scenery, texture, colored illumination, green reflection, moving light, rainbow wash, animated highlights, glow, lens flare, bokeh or unsolicited effects. No readable text, labels, digits, logos, captions or watermarks.
+
+motion timing:
+From 00:00.000 to 00:10.000, maintain the exact same strict SCREEN-LEFT side-facing orientation while performing a soft, continuous in-place walk. Begin already facing left; do not pivot into the profile. Keep the gentle alternating steps and opposite arm swings steady and small throughout. Do not stop and turn at the end: finish still walking in the same left-facing profile, at the same screen center, scale, camera framing and focal length as the first frame. No front-facing pose appears at any point.
+
+overall_soundscape:
+Silent. No speech, breath, footsteps, ambient sound or sound effects.
+
+non_diegetic_music:
+N/A. No music.
+
+Additional correction: Attempt 4: keep one strict screen-left profile for the full 10 seconds; remove front-facing opening/ending pose requirements and enforce fixed framing.

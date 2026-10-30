@@ -1,0 +1,27 @@
+subject_definitions:
+<Subject 1> is the SINGLE approved chibi Kurisu cat-maid in <Picture 1>, with the exact large round head, short slightly plump body and limbs, chestnut-auburn long hair, blue-violet eyes, TWO black costume cat ears with pink interiors, white lace headband and two pink bows. Preserve the black-and-white frilled maid dress, white puff sleeves and bib, pink neck ribbon and zigzag trim, gray belt and silver buckle, dark stockings and black shoes. NO silver hair clips and NO tail.
+<Picture 1> is the sole character and body-proportion reference, defining the neutral FRONT standing posture for the beginning and end. Replace the empty surrounding area with a uniform digital #00FF00 matte. Do not reference a character sheet or elongate the body.
+
+summary:
+[reference generation] A single locked-off full-body 10-second 2D desktop-pet sprite shot of <Subject 1>. Show the specified compact action and return to the identical clean front standing pose, with a fixed palette on a solid digital green matte.
+
+retention_analysis:
+<Subject 1> (appears in [Shot 1]): fully_preserved - retain the exact approved identity, rounded squat proportions, hair and eye colors, complete headwear, costume layers and shoes. Only the specified gesture, expression and temporary props change.
+<Picture 1> ([Shot 1] opening and ending pose target): fully_preserved - same neutral front posture, relaxed hands, open eyes and small closed smile, body scale, horizontal center and shoe baseline; replace the empty surroundings with the green matte.
+
+detailed_description:
+Match the delicate dark outlines and soft 2D cel shading in <Picture 1>, like a clean game animation sprite. [Shot 1] A single fixed eye-level orthographic full-body view lasts exactly 10 seconds. Keep the character centered with ear tips near 20% frame height and soles near 85%, leaving generous empty margins for hands, hair and props. Maintain the approved large head and short round body. Do not translate the entire figure horizontally, travel toward the camera, zoom, pan, cut, reframe or change body scale. Turning and stepping happen in place around the same body axis; the runtime will move the desktop window separately.
+
+Use FIXED PALETTE COLORS and constant neutral even white frontal illumination in every frame. Chestnut hair, pale skin, neutral white lace, charcoal clothes, pink bows and blue-violet eyes keep their original hues and brightness. Existing painted highlights stay attached to surfaces. No colored illumination, green reflection, moving light, rainbow wash, animated highlights, body glow, lens flare, bokeh, floating hearts, symbols or unsolicited particles. The green background is a digital cutout matte, not a green-lit room or light-emitting environment, and never illuminates the character. No floor, cast shadow, gradient, scenery or background texture.
+
+From 00:00.000 to 00:01.000 hold the exact calm front standing pose. From 00:01.000 to 00:02.000 prepare the small gesture or take the compact prop from behind the body. From 00:02.000 to 00:07.000 perform this clear action: Act as if gently lifted by an invisible hand: tuck the shoulders slightly, let arms and tiny legs dangle, bend the knees a little so shoes float just above their normal baseline, and wear a puzzled cute expression. Stay centered without traveling, then return to standing.
+
+Optional props and tiny secondary objects must follow the action description exactly. Props use ivory, gray, muted red, pink, amber or blue; never green. Keep them miniature and centered in front of the waist, below the face where possible. The face, both ears and shoes stay visible. Confine any expressly requested spark effect to the tiny prop; it never lights the character. Do not invent other effects, animals or objects.
+
+From 00:07.000 to 00:09.000 smoothly finish the action, put all props away behind the body, remove any explicitly requested secondary object, lower the hands and face forward. For walking, stepping ends by second 8 before the hands and any notebook settle. From 00:09.000 through 00:10.000 hold EXACTLY the opening calm FRONT standing pose: eyes open, tiny closed smile, arms relaxed, hands empty and both shoes level on the original baseline. Hair, frills and headwear settle to their opening outlines. No prop, animal, particle or extra object remains. Use smooth natural easing, structurally correct hands and stable costume details. All content remains inside the central safe area, at least 10% from every frame edge; miniature props never require moving the character aside. Do not draw any readable text, labels, digits, logos, captions or watermarks.
+
+overall_soundscape:
+Silent. No speech, breath, footsteps, ambient sound or sound effects.
+
+non_diegetic_music:
+N/A. No music.

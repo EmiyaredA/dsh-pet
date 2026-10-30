@@ -14,6 +14,7 @@ const CONFIG = {
   scale: Number(params.get('scale') || '1'),
   petIndex: Number(params.get('petIndex') || '0'),
   topInsetRatio: Number(params.get('topInsetRatio') || '0'),
+  livePreview: params.get('livePreview') === '1',
 };
 
 // ---------- 渲染端坐标系统一约定（DESIGN.md §3.5） ----------

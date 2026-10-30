@@ -1,0 +1,27 @@
+subject_definitions:
+<Subject 1> is the SINGLE approved HUMAN chibi girl Kurisu wearing a maid costume and a detachable cat-ear HEADBAND in <Picture 1>. Her anatomy is entirely HUMAN; the two black fabric triangles with pink interiors are costume accessories on the white lace headband, not animal body parts. Preserve the exact large round head, short slightly plump body and limbs, chestnut-auburn long hair, blue-violet eyes and two pink bows. Preserve the black-and-white frilled maid dress, white puff sleeves and bib, pink neck ribbon and zigzag trim, gray belt and silver buckle, dark stockings and black shoes. The back ends at the skirt and hair; NO animal tail or other appendage exists. NO silver hair clips.
+<Picture 1> is the sole character and body-proportion reference, prepared by proportional scaling of the approved original onto a green canvas, without changing any character detail. PRESERVE THIS EXACT WIDE FRAMING: the ear tips are at 20% frame height, the soles at 85%, and the body center at 50% frame width. Keep the broad empty green margins throughout. Do not crop the image, enlarge the figure to fill the frame or elongate the body. The neutral FRONT posture in this image is the beginning and ending pose.
+
+summary:
+[reference generation] A single locked-off full-body 10-second 2D desktop-pet sprite shot of <Subject 1>. The specific action is: Show a brief surprised wide-eyed expression with hands near her chest, then straighten her collar and apron as if recovering her dignity, finally lower hands. Both hands remain EMPTY throughout. There are NO props, cards, signs, books, notebooks, badges, tools or other objects in this shot. Return to the identical clean front standing pose, with a fixed palette on a solid digital green matte.
+
+retention_analysis:
+<Subject 1> (appears in [Shot 1]): fully_preserved - retain the exact approved identity, rounded squat proportions, hair and eye colors, complete headwear, costume layers and shoes. Only the specified gesture, expression and temporary props change.
+<Picture 1> ([Shot 1] opening and ending pose target): fully_preserved - same neutral front posture, relaxed hands, open eyes and small closed smile, and relative body proportions. Place the whole figure at the smaller target scale with ear tips at 20% and soles at 85% of frame height; extend the empty digital green area around it.
+
+detailed_description:
+Match the delicate dark outlines and soft 2D cel shading in <Picture 1>, like a clean game animation sprite. [Shot 1] A single fixed eye-level orthographic full-body view lasts exactly 10 seconds. Keep the character centered with ear tips near 20% frame height and soles near 85%, leaving generous empty margins for hands, hair and props. Maintain the approved large head and short round body. Do not translate the entire figure horizontally, travel toward the camera, zoom, pan, cut, reframe or change body scale. Turning and stepping happen in place around the same body axis; the runtime will move the desktop window separately.
+
+Use FIXED PALETTE COLORS and constant neutral even white frontal illumination in every frame. Chestnut hair, pale skin, neutral white lace, charcoal clothes, pink bows and blue-violet eyes keep their original hues and brightness. Existing painted highlights stay attached to surfaces. No colored illumination, green reflection, moving light, rainbow wash, animated highlights, body glow, lens flare, bokeh, floating hearts, symbols or unsolicited particles. The green background is a digital cutout matte, not a green-lit room or light-emitting environment, and never illuminates the character. No floor, cast shadow, gradient, scenery or background texture.
+
+From 00:00.000 to 00:02.000 hold the neutral empty-handed stance. From 00:02.000 to 00:07.000 perform ONLY this body gesture: Show a brief surprised wide-eyed expression with hands near her chest, then straighten her collar and apron as if recovering her dignity, finally lower hands.
+
+Both hands remain EMPTY throughout. There are NO props, cards, signs, books, notebooks, badges, tools or other objects in this shot.
+
+From 00:07.000 to 00:09.000 smoothly finish the gesture, lower the hands and face forward. Any explicitly requested props are completely stowed; no new object is introduced. From 00:09.000 through 00:10.000 hold EXACTLY the opening calm FRONT standing pose: eyes open, tiny closed smile, arms relaxed, hands empty and both shoes level on the original baseline. Hair, frills and headwear settle to their opening outlines. No prop, animal, particle or extra object remains. Use smooth natural easing, structurally correct hands and stable costume details. All content remains inside the central safe area, at least 10% from every frame edge. Do not draw any readable text, labels, digits, logos, captions or watermarks.
+
+overall_soundscape:
+Silent. No speech, breath, footsteps, ambient sound or sound effects.
+
+non_diegetic_music:
+N/A. No music.

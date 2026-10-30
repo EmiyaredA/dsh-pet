@@ -1673,7 +1673,9 @@ class PetSprite {
     // 某个 owner 只有 1 项时跳过 owner 那层直接平铺（规则见 shared/menu 的 buildMoreBranch）。
     // 放在整棵动作树之后——「更多」是"别的东西"，不插在工具项和动作之间。
     const more = S.buildMoreBranch(this.menuItems);
-    const tree = tools.concat(S.buildMenuTree(this.animations), more ? [more] : []);
+    const actionTree = S.buildMenuTree(this.animations);
+    const visibleTree = CONFIG.livePreview && window.PetLivePreview ? window.PetLivePreview.menuLabels(actionTree) : actionTree;
+    const tree = tools.concat(visibleTree, more ? [more] : []);
     if (!tree.length) return;
     this.menuOpen = true;
     this.setInteractive(true); // 菜单是窗口内 DOM：悬停期间整窗保持可交互，关闭后恢复命中区穿透

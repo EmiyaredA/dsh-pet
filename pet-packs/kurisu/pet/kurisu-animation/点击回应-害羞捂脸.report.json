@@ -1,0 +1,65 @@
+{
+  "source": "\u70b9\u51fb\u56de\u5e94-\u5bb3\u7f9e\u6342\u8138.mp4",
+  "output": "\u70b9\u51fb\u56de\u5e94-\u5bb3\u7f9e\u6342\u8138.webm",
+  "source_size": [
+    1344,
+    768
+  ],
+  "key_thresholds": [
+    12,
+    110
+  ],
+  "source_content_union": [
+    384,
+    8,
+    988,
+    736
+  ],
+  "alignment": {
+    "scaled_size": [
+      506,
+      290
+    ],
+    "offset": [
+      66,
+      52
+    ],
+    "content_box": [
+      210.57142857142856,
+      55.020833333333336,
+      437.9702380952381,
+      329.9166666666667
+    ],
+    "standing_height": 716.0,
+    "standing_center_x": 675.0,
+    "standing_feet_y": 736.0,
+    "target_height": 270,
+    "target_feet_y": 330
+  },
+  "verification": {
+    "width": 640,
+    "height": 360,
+    "fps": 24,
+    "frames": 240,
+    "duration_seconds": 10.0,
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "first_box": [
+      217,
+      60,
+      431,
+      330
+    ],
+    "last_box": [
+      217,
+      60,
+      431,
+      330
+    ],
+    "audio_streams": 0,
+    "codec": "vp9",
+    "all_frames_have_alpha": true,
+    "endpoint_rgba_mean_absolute_difference": 3.2546964250541657,
+    "transparent_fraction": 0.8134482964409723
+  }
+}

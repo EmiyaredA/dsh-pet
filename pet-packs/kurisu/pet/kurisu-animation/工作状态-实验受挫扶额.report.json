@@ -1,0 +1,65 @@
+{
+  "source": "\u5de5\u4f5c\u72b6\u6001-\u5b9e\u9a8c\u53d7\u632b\u6276\u989d.mp4",
+  "output": "\u5de5\u4f5c\u72b6\u6001-\u5b9e\u9a8c\u53d7\u632b\u6276\u989d.webm",
+  "source_size": [
+    1344,
+    768
+  ],
+  "key_thresholds": null,
+  "matte_method": "edge_connected_green_or_white_with_outline_protection",
+  "encoding_lossless": true,
+  "source_content_union": [
+    470,
+    146,
+    912,
+    654
+  ],
+  "alignment": {
+    "scaled_size": [
+      728,
+      416
+    ],
+    "offset": [
+      -52,
+      -24
+    ],
+    "content_box": [
+      202.58333333333331,
+      55.08333333333333,
+      441.99999999999994,
+      330.25
+    ],
+    "standing_height": 498.5,
+    "standing_center_x": 687.0,
+    "standing_feet_y": 653.5,
+    "target_height": 270,
+    "target_feet_y": 330
+  },
+  "verification": {
+    "width": 640,
+    "height": 360,
+    "fps": 24,
+    "frames": 240,
+    "duration_seconds": 10.0,
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "first_box": [
+      213,
+      60,
+      435,
+      330
+    ],
+    "last_box": [
+      213,
+      60,
+      435,
+      330
+    ],
+    "audio_streams": 0,
+    "codec": "vp9",
+    "all_frames_have_alpha": true,
+    "background_clear": true,
+    "endpoint_rgba_mean_absolute_difference": 2.944912538865023,
+    "transparent_fraction": 0.8159242078993055
+  }
+}

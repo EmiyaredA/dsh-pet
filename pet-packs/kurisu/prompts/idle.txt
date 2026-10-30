@@ -1,0 +1,26 @@
+subject_definitions:
+<Subject 1> is the one approved chibi Kurisu cat-maid shown in <Picture 1>: the identical auburn long hair and bangs, blue-violet eyes, oversized head, round short body, two black cat-ear accessories with pink inner triangles, white lace headband and two pink bows, black-and-white frilled maid dress, white puff sleeves, pink neck ribbon and zigzag trim, gray belt with silver buckle, dark stockings and black shoes. There are NO silver hair clips, NO tail, and no other character.
+<Picture 1> is the sole character reference and the neutral front standing pose target for the beginning and end. Use its exact squat head-to-body proportions. Replace the transparent/empty surrounding area with a flat digital #00FF00 matte.
+
+summary:
+[reference generation] Produce a clean, technically neutral 10-second 2D desktop-pet sprite clip of <Subject 1>. One static full-body shot on a uniform pure-green digital matte; exact constant colors and a calm front standing pose at both endpoints.
+
+retention_analysis:
+<Subject 1> (appears in [Shot 1]): fully_preserved - exact approved face, short round body proportions, hair shape and colors, black/pink ears, white headband, pink bows, black/white costume layers and dark shoes.
+<Picture 1> ([Shot 1] opening and ending pose target): fully_preserved - the same front neutral stance, body shape, relaxed arms, head direction, open eyes and tiny closed smile. Only the empty surroundings become the green matte.
+
+detailed_description:
+Match the fine dark outlines and soft 2D cel shading of <Picture 1>. Render like a clean animation-game sprite with FIXED PALETTE COLORS, not a music video, cinematic scene, live stage, or special-effects shot. [Shot 1] A single locked eye-level orthographic camera shows the whole of <Subject 1> for exactly 10 seconds. The pose, scale and neutral white frontal illumination are fixed throughout. The character is horizontally centered. The highest cat-ear tip is near 20% of the frame height and the bottom of both shoes is near 85%, leaving broad empty margins. Feet rest on a single invisible baseline with no full-body sideways drift. Keep the approved large head and compact round short torso and legs; do not elongate her body.
+Lighting is neutral, flat and even from the first frame through the last. The hair remains exactly the same chestnut-red RGB hues, white lace remains neutral white, skin remains pale peach, black clothes remain dark charcoal, and all pink and blue details keep their original colors in EVERY frame. Shadows are painted into the sprite and remain constant. There is no moving illumination, colored lighting, projected light, green light, green reflection, glow, lens flare, sparkle, glint animation, bokeh, chromatic wash, flashing, animated highlight, floating heart, diamond, particle, or visual-effect layer, either on the character or around her. The small painted eye and hair highlights retain their original colors and are stationary relative to the corresponding surface.
+The background is an exact solid digital #00FF00 cutout matte, not a green-lit room and not a light-emitting environment. It does not cast green light onto the subject and does not reflect on her hair, eyes, headband, clothes or shoes. No floor, shadow, gradient, scenery, texture or text is drawn into this matte. One whole character only.
+
+From 00:00.000 to 00:01.000 she is still in the front neutral standing pose, looking at the viewer with a tiny closed smile and relaxed lowered hands. From 00:01.000 to 00:04.000 introduce only very subtle torso breathing with about one percent vertical movement; both feet stay planted. Make one brief natural blink near 00:02.500, then restore the exact open-eye shape. From 00:04.000 to 00:07.000 repeat the small breathing cycle. Only the last few hair tips and lowest skirt frills follow with tiny slow movements; the head does not turn, arms do not lift, ears and headband stay structurally stable, colors and highlights do not animate. Make a second natural blink near 00:05.500. From 00:07.000 to 00:09.000 ease the tiny hair/frill motion back to the starting outlines and settle into the original neutral front stance.
+
+From 00:09.000 through 00:10.000 hold the exact original front neutral standing pose of <Picture 1> with eyes open, small closed smile, hands down, hair and frills settled, and both shoes flat on the opening baseline. The final frame has the SAME palette, brightness, position, proportions, outfit, silhouette and relaxed posture as the first frame. Throughout, preserve clear separate cat ears and headband, correctly connected limbs, both hands, all skirt frills and both shoes. The complete figure stays inside the frame. There are no cuts, zooms or changes of composition.
+
+overall_soundscape:
+Silence. No speech, ambience, breath, effects or other audio.
+
+non_diegetic_music:
+N/A. No music.
+

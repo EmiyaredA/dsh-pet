@@ -6,6 +6,7 @@ step04/
 
 # ── 素材源（托管在 GitHub Releases assets-videos，不入仓库） ──
 video/*.mp4
+pet-packs/kurisu/source/
 
 # ── PR 手工抠像工作数据（本地工作数据，同 step 中间产物，不入库） ──
 #   pr/      PR 导出的透明 .mov（路线 B 的输入）

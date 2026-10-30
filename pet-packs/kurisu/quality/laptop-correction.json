@@ -1,0 +1,21 @@
+{
+  "requested_at": "2026-10-30T09:29:23.626237+00:00",
+  "user_request": "我说的笔记本，是笔记本电脑。。。",
+  "actions": [
+    "a011",
+    "a031",
+    "a056",
+    "a100",
+    "a103"
+  ],
+  "meaning": "A miniature gray laptop computer, never a paper notebook",
+  "status": "ledger and FPL drafts synchronized; original task snapshots retained",
+  "preserve_ids_and_slot_names": true,
+  "extra_generation_authorized": false,
+  "canvas_revision": 130,
+  "applied_at": "2026-10-30T09:39:54.693436+00:00",
+  "new_model_calls": 0,
+  "rear_lid_tracking_file": "quality/a103-rear-lid-tracking.json",
+  "a103_lid_repaired_frames": 140,
+  "a103_new_model_calls": 0
+}

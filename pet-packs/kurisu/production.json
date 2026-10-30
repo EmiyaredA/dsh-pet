@@ -1,0 +1,525 @@
+{
+  "branch": "codex/kurisu-pet",
+  "stage": "blocked_task_reconciliation",
+  "updated_at": "2026-10-30T12:21:27.337981+08:00",
+  "current_candidate": "candidate-maid-cat-ears",
+  "selected_candidate": "candidate-maid-cat-ears",
+  "character": {
+    "name": "牧濑红莉栖",
+    "costume": "黑白女仆装，白色蕾丝发箍与黑外粉内的双猫耳，参考图中的粉色蝴蝶结；无银色发夹",
+    "style": "柔和赛璐璐二维 Q 版，略圆润紧凑的身形"
+  },
+  "image_generation": {
+    "tool": "Codex built-in image_gen",
+    "calls_completed": 7,
+    "history": [
+      "candidate-a",
+      "candidate-b",
+      "candidate-a-plump",
+      "candidate-maid",
+      "candidate-maid-headband",
+      "candidate-maid-cat-ears",
+      "character-sheet"
+    ],
+    "additional_calls_authorized_by": [
+      "用户要求身形更肥一点",
+      "用户改为女仆装并去掉蕾丝发箍",
+      "用户要求加回蕾丝发箍并去掉发夹",
+      "用户补充参考头饰上还有两只猫耳"
+    ]
+  },
+  "assets": {
+    "fish-style-reference": {
+      "file": "references/fish-style-reference.png",
+      "fpl_asset_id": "d0cf02d9-e329-4189-a20d-2dcd6fa9c0e0",
+      "sha256": "d5eb1e01c4cd28fc2bcf8b2ace04748df58e1a7857f080ce1bdf7308704b0f18"
+    },
+    "candidate-a": {
+      "file": "references/candidate-a.png",
+      "fpl_asset_id": "721093c5-5c38-44aa-8804-ad4f5092bd9d",
+      "sha256": "0a599c4f31be29c805d2e07ad7894276b916031cc5950b5738589028a6628b9d"
+    },
+    "candidate-b": {
+      "file": "references/candidate-b.png",
+      "fpl_asset_id": "c484f9cd-37d6-4745-a0ca-5fc492a67afa",
+      "sha256": "98c3b6eed7cb2a6fb599183698b6dd5ff466941daaad5a5ea3153ae3ede73db8"
+    },
+    "candidate-a-plump": {
+      "file": "references/candidate-a-plump.png",
+      "fpl_asset_id": "9521dfbb-84f7-4d53-80f8-194b51c223fb",
+      "sha256": "bc1c32a7d2e0b4c4f6b94d6cb5a08669d6f054b203946c5e94aa4bdffac0ac81"
+    },
+    "candidate-maid": {
+      "file": "references/candidate-maid.png",
+      "fpl_asset_id": "f3034ac7-8db3-4897-a4ea-79c4718c7684",
+      "sha256": "0fc851d7ae508bb3c9b4b221a19847d226056c0bd03ad68edf4e045b8520ab89"
+    },
+    "candidate-maid-headband": {
+      "file": "references/candidate-maid-headband.png",
+      "fpl_asset_id": "ac951b62-e264-4b3c-a019-23ad3e2704b0",
+      "sha256": "d05dd779b6f7274d8787e56820d6dc911609c2d3d300ac717b242133bf26ff5d"
+    },
+    "candidate-maid-cat-ears": {
+      "file": "references/candidate-maid-cat-ears.png",
+      "fpl_asset_id": "972a4ba5-d1e9-4265-a649-7fa5168ebc4b",
+      "sha256": "78e84345c8c876360c628310498484c3146e4da5ceae314b3b87e9de8f4c4725"
+    },
+    "character-sheet": {
+      "file": "references/character-sheet.png",
+      "fpl_asset_id": "2970f054-3f9e-459f-865a-90cf48e5eb88",
+      "sha256": "e51f345d05af037343248983187208bd5e4ce3cdfaa489deb82fa8486292f6db"
+    },
+    "kurisu-green-reference": {
+      "file": "references/kurisu-green-reference.png",
+      "fpl_asset_id": "35db850a-cc14-4aa6-adeb-54744c8748b1",
+      "sha256": "1f9d623114db43dfa49ddd0aa63a2943b2b1971d35e28658c98d8bcbfb6eae06"
+    }
+  },
+  "video_tasks": [
+    {
+      "node_id": "idle",
+      "status": "completed",
+      "submission_started_at": "2026-10-30T11:57:08.672422+08:00",
+      "request": {
+        "kind": "video",
+        "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+        "prompt": "subject_definitions:\n<Subject 1> is the SINGLE approved chibi Kurisu cat-maid defined by <Picture 1>, with exact costume construction further clarified in the turnaround/model sheet <Picture 2>. She has long chestnut-red hair, blue-violet eyes, a large round head and a slightly plump short body, two black cat-ear accessories with pink inner triangles, a white lace headband and two pink bows, NO silver hair clips, a black-and-white frilled maid dress, white puff sleeves and bib, pink neck ribbon and zigzag trim, a gray belt with silver buckle, dark stockings and black Mary Jane shoes.\n<Picture 1> is the precise front standing pose and 16:9 composition target for the opening and ending of the shot; its uniform pure green background is the target background throughout.\n<Picture 2> is a construction reference sheet only, explaining the SAME character from multiple views and expressions. Do not display the sheet, its panels, text, swatches or duplicate people in the video.\n\nsummary:\n[reference generation] A single locked-off full-body chibi desktop-pet animation of <Subject 1> on an unbroken uniform #00FF00 chroma-key background, using <Picture 1> as the standing pose and placement target and <Picture 2> only for appearance consistency. The entire 10-second clip begins and ends in the same calm front-facing standing pose.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - maintain the approved face, round body, hair, two cat ears, lace headband, two pink bows, complete costume layers and shoes, without hair clips or tail.\n<Picture 1> ([Shot 1] opening and ending visual target): fully_preserved - retain front-facing neutral pose, fixed full-body scale, centered horizontal position, ear-tip top near 20% frame height and shoes near 85% frame height, and flat uniform green background.\n<Picture 2> (character construction only): fully_preserved - use the side/back clothing and hair shapes without rendering any sheet layout, lettering or extra figures.\n\ndetailed_description:\nThe entire clip is hand-drawn-looking 2D anime chibi sprite animation with fine dark outlines and soft stable cel shading, exactly matching <Picture 1>, not a 3D render. [Shot 1] One static eye-level orthographic full-body composition lasts for exactly 10 seconds. <Subject 1> stands centered at the same scale as <Picture 1>, with her complete cat ears, headband, long hair, both hands, skirt frills and shoe soles clearly inside the frame. Her feet remain on one fixed baseline and her body has no horizontal travel. There is no camera motion, zoom, pan, reframe, lens change, cut, background change or extra character.\nThe only background is a perfectly flat bright #00FF00 green color, with no shadows, glow, gradient, stage, floor line, checkerboard, scenery or particles. Green is not part of her clothing, eyes or hair. Preserve every costume detail throughout the moving frames, especially the two separate cat ears and white headband, both pink bows, belt buckle and layered white apron frills. Her full figure and all clothing remain visible with at least 10% frame clearance on every side.\nFrom 00:00.000 to 00:01.000 she holds the exact front-facing neutral upright standing pose from <Picture 1>, hands gently relaxed and little shoes planted, looking straight at the viewer with open blue-violet eyes and a tiny warm closed-mouth smile. From 00:01.000 to 00:03.000 introduce a very subtle breathing cycle in her upper torso, with at most a few pixels of vertical movement, while the skirt hem and long hair gently follow. At approximately 00:02.500 she makes one soft, brief natural blink and opens both eyes again without changing eye shape or identity. From 00:03.000 to 00:06.000 continue small calm breathing, with a delicate, slow movement only in the hair tips and a tiny relaxed ear/headband follow-through; she does not turn her head, raise her arms or change the standing silhouette. At approximately 00:05.500 she blinks once more. From 00:06.000 to 00:08.000 keep the quiet breathing and gradually reduce hair movement; both hands stay relaxed and visible. From 00:08.000 to 00:09.000 return all subtle moving elements smoothly to the exact opening neutral pose, keeping the soles and body center stationary.\n\nDuring the final second she holds the same clean front neutral stance as the opening with both hands relaxed at her sides, eyes open, tiny closed smile, feet level and no extra object or visual effect. Hair and skirt settle into their opening outlines, and the final frame matches the opening pose, scale, horizontal center and shoe baseline as closely as possible, ready for a seamless loop and cuts to another animation. Use smooth continuous natural easing with stable lines and proportions; avoid wobbling facial features, multiplying fingers, changing ear count, flickering lace, jelly-body distortion, limb deformation, outfit changes, a tail, hair clips or displaced feet. Nothing appears in the image other than one complete character and flat green.\n\noverall_soundscape:\nSilent. No dialogue, singing, breaths, footsteps, ambient sound or sound effects.\n\nnon_diegetic_music:\nN/A. No music.\n\n",
+        "mode": "reference",
+        "duration": 10,
+        "resolution": "768p",
+        "ratio": "16:9",
+        "reference_asset_ids": [
+          "35db850a-cc14-4aa6-adeb-54744c8748b1",
+          "2970f054-3f9e-459f-865a-90cf48e5eb88"
+        ],
+        "canvas_node_id": "idle",
+        "expected_canvas_revision": 3
+      },
+      "id": "5d95d563-f21b-42fc-8467-a144553f5248",
+      "provider_task_id": "bd46a24a-e8e9-452d-b4ba-f418de3ca42f",
+      "result_asset_id": "3a64c495-f3c6-48e8-bbff-4504ab815395",
+      "error": null,
+      "source_file": "source/待机呼吸.mp4"
+    },
+    {
+      "node_id": "tsundere",
+      "status": "completed",
+      "submission_started_at": "2026-10-30T11:57:08.702340+08:00",
+      "request": {
+        "kind": "video",
+        "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+        "prompt": "subject_definitions:\n<Subject 1> is the SINGLE approved chibi Kurisu cat-maid defined by <Picture 1>, with exact costume construction further clarified in the turnaround/model sheet <Picture 2>. She has long chestnut-red hair, blue-violet eyes, a large round head and a slightly plump short body, two black cat-ear accessories with pink inner triangles, a white lace headband and two pink bows, NO silver hair clips, a black-and-white frilled maid dress, white puff sleeves and bib, pink neck ribbon and zigzag trim, a gray belt with silver buckle, dark stockings and black Mary Jane shoes.\n<Picture 1> is the precise front standing pose and 16:9 composition target for the opening and ending of the shot; its uniform pure green background is the target background throughout.\n<Picture 2> is a construction reference sheet only, explaining the SAME character from multiple views and expressions. Do not display the sheet, its panels, text, swatches or duplicate people in the video.\n\nsummary:\n[reference generation] A single locked-off full-body chibi desktop-pet animation of <Subject 1> on an unbroken uniform #00FF00 chroma-key background, using <Picture 1> as the standing pose and placement target and <Picture 2> only for appearance consistency. The entire 10-second clip begins and ends in the same calm front-facing standing pose.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - maintain the approved face, round body, hair, two cat ears, lace headband, two pink bows, complete costume layers and shoes, without hair clips or tail.\n<Picture 1> ([Shot 1] opening and ending visual target): fully_preserved - retain front-facing neutral pose, fixed full-body scale, centered horizontal position, ear-tip top near 20% frame height and shoes near 85% frame height, and flat uniform green background.\n<Picture 2> (character construction only): fully_preserved - use the side/back clothing and hair shapes without rendering any sheet layout, lettering or extra figures.\n\ndetailed_description:\nThe entire clip is hand-drawn-looking 2D anime chibi sprite animation with fine dark outlines and soft stable cel shading, exactly matching <Picture 1>, not a 3D render. [Shot 1] One static eye-level orthographic full-body composition lasts for exactly 10 seconds. <Subject 1> stands centered at the same scale as <Picture 1>, with her complete cat ears, headband, long hair, both hands, skirt frills and shoe soles clearly inside the frame. Her feet remain on one fixed baseline and her body has no horizontal travel. There is no camera motion, zoom, pan, reframe, lens change, cut, background change or extra character.\nThe only background is a perfectly flat bright #00FF00 green color, with no shadows, glow, gradient, stage, floor line, checkerboard, scenery or particles. Green is not part of her clothing, eyes or hair. Preserve every costume detail throughout the moving frames, especially the two separate cat ears and white headband, both pink bows, belt buckle and layered white apron frills. Her full figure and all clothing remain visible with at least 10% frame clearance on every side.\nFrom 00:00.000 to 00:01.000 she holds the exact front neutral standing pose from <Picture 1>, with eyes open and hands relaxed beside the skirt. From 00:01.000 to 00:03.000 her tiny eyebrows lower very slightly, a small warm blush develops, and she smoothly brings both forearms across the front of her torso into a clear gentle arms-crossed pose, keeping her hands and arms anatomically correct and the waist buckle visible below them. Her expression is cute restrained tsundere embarrassment, never angry aggression. From 00:03.000 to 00:05.000 she pivots around her fixed vertical body axis toward screen-left by approximately 45 to 60 degrees while keeping both shoes planted at the original center. She lifts her chin a little, closes her eyes softly and makes a tiny closed-mouth pout, retaining the exact cat ears, lace headband, pink bows and maid costume. Her long hair and skirt show small physically coherent follow-through without moving her full figure sideways or changing body size. From 00:05.000 to 00:06.500 she holds the charming arms-crossed sideward huff pose, cheeks faintly pink, with a small breath-like settling of the shoulders; there is no speech, text bubble or symbol. From 00:06.500 to 00:08.000 she smoothly pivots back to face straight forward and lowers both arms to their original relaxed positions. From 00:08.000 to 00:09.000 she opens both eyes, relaxes the eyebrows and pout back into the tiny neutral warm smile, allows blush to soften, and settles the hair, skirt and hands into the exact opening silhouette.\n\nDuring the final second she holds the same clean front neutral stance as the opening with both hands relaxed at her sides, eyes open, tiny closed smile, feet level and no extra object or visual effect. Hair and skirt settle into their opening outlines, and the final frame matches the opening pose, scale, horizontal center and shoe baseline as closely as possible, ready for a seamless loop and cuts to another animation. Use smooth continuous natural easing with stable lines and proportions; avoid wobbling facial features, multiplying fingers, changing ear count, flickering lace, jelly-body distortion, limb deformation, outfit changes, a tail, hair clips or displaced feet. Nothing appears in the image other than one complete character and flat green.\n\noverall_soundscape:\nSilent. No dialogue, singing, breaths, footsteps, ambient sound or sound effects.\n\nnon_diegetic_music:\nN/A. No music.\n\n",
+        "mode": "reference",
+        "duration": 10,
+        "resolution": "768p",
+        "ratio": "16:9",
+        "reference_asset_ids": [
+          "35db850a-cc14-4aa6-adeb-54744c8748b1",
+          "2970f054-3f9e-459f-865a-90cf48e5eb88"
+        ],
+        "canvas_node_id": "tsundere",
+        "expected_canvas_revision": 4
+      },
+      "id": "3840e46f-e997-4036-9306-5a0ce0e3abfb",
+      "provider_task_id": "13ff5f10-a909-477e-a644-5d53fc0fd202",
+      "result_asset_id": "9da105bd-63d8-41d6-bd41-5d628743b2d5",
+      "error": null,
+      "source_file": "source/点击回应-傲娇.mp4"
+    }
+  ],
+  "video_settings": {
+    "model_slug": "minimax_h3_zm_nono",
+    "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+    "duration_seconds": 10,
+    "ratio": "16:9",
+    "resolution": "768p",
+    "generate_audio": false,
+    "mode": "reference",
+    "actions": [
+      "待机呼吸",
+      "点击回应-傲娇"
+    ],
+    "requires_character_approval": true,
+    "verified_capabilities": {
+      "audio_only": false,
+      "default_generate_audio": false,
+      "default_ratio": "9:16",
+      "default_resolution": "768p",
+      "duration_label": "时长",
+      "duration_max": 15,
+      "duration_min": 1,
+      "frames_require_adaptive_ratio": false,
+      "max_prompt_length": 20000,
+      "prompt_required": true,
+      "ratios": [
+        "9:16",
+        "16:9"
+      ],
+      "reference_limits": {
+        "image": 9,
+        "audio": 3,
+        "video": 0
+      },
+      "reference_mime_types": {
+        "image": [
+          "image/jpeg",
+          "image/png",
+          "image/webp"
+        ],
+        "audio": [
+          "audio/mpeg",
+          "audio/wav",
+          "audio/x-wav"
+        ],
+        "video": [
+          "video/mp4",
+          "video/webm"
+        ]
+      },
+      "reference_minimums": {
+        "image": 1,
+        "audio": 0,
+        "video": 0
+      },
+      "reference_video_upload_configured": true,
+      "resolution_ratios": {
+        "480p": [
+          "9:16",
+          "16:9"
+        ],
+        "768p": [
+          "9:16",
+          "16:9"
+        ],
+        "960p": [
+          "9:16"
+        ]
+      },
+      "resolutions": [
+        "480p",
+        "768p",
+        "960p"
+      ],
+      "seed_maximum": 999999999999999,
+      "seed_minimum": 0,
+      "supported_modes": [
+        "reference"
+      ],
+      "supports_auto_duration": false,
+      "supports_duration": true,
+      "supports_generate_audio": false,
+      "supports_prompt": true,
+      "supports_ratio": true,
+      "supports_seed": false,
+      "supports_watermark": false
+    }
+  },
+  "fpl": {
+    "project_id": "585ee45b-48a2-4f85-a6d6-3e7ae1002ea9",
+    "project_title": "红莉栖 Q版桌宠 · 样片",
+    "workspace_id": "default",
+    "canvas_request_id": "2dc9d178-1819-44a7-a5f7-1fff1e53f213",
+    "canvas_attempts": [
+      {
+        "request_id": "5c8e8521-454a-4abb-af1f-b0dc03747e08",
+        "outcome": "rejected",
+        "reason": "未声明的分组；画布未修改"
+      }
+    ],
+    "canvas_revision": 17,
+    "archived": true,
+    "headwear_request_id": "a255368e-809a-4adb-819b-317308e47965"
+  },
+  "approval": {
+    "approved_at": "2026-10-30T11:53:15.218358+08:00",
+    "user_message": "可以定稿，继续推进"
+  },
+  "submission_validation_history": [
+    {
+      "node_id": "idle",
+      "submission_started_at": "2026-10-30T11:56:27.457404+08:00",
+      "status": "validation_rejected",
+      "request": {
+        "kind": "video",
+        "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+        "prompt": "subject_definitions:\n<Subject 1> is the SINGLE approved chibi Kurisu cat-maid defined by <Picture 1>, with exact costume construction further clarified in the turnaround/model sheet <Picture 2>. She has long chestnut-red hair, blue-violet eyes, a large round head and a slightly plump short body, two black cat-ear accessories with pink inner triangles, a white lace headband and two pink bows, NO silver hair clips, a black-and-white frilled maid dress, white puff sleeves and bib, pink neck ribbon and zigzag trim, a gray belt with silver buckle, dark stockings and black Mary Jane shoes.\n<Picture 1> is the precise front standing pose and 16:9 composition target for the opening and ending of the shot; its uniform pure green background is the target background throughout.\n<Picture 2> is a construction reference sheet only, explaining the SAME character from multiple views and expressions. Do not display the sheet, its panels, text, swatches or duplicate people in the video.\n\nsummary:\n[reference generation] A single locked-off full-body chibi desktop-pet animation of <Subject 1> on an unbroken uniform #00FF00 chroma-key background, using <Picture 1> as the standing pose and placement target and <Picture 2> only for appearance consistency. The entire 10-second clip begins and ends in the same calm front-facing standing pose.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - maintain the approved face, round body, hair, two cat ears, lace headband, two pink bows, complete costume layers and shoes, without hair clips or tail.\n<Picture 1> ([Shot 1] opening and ending visual target): fully_preserved - retain front-facing neutral pose, fixed full-body scale, centered horizontal position, ear-tip top near 20% frame height and shoes near 85% frame height, and flat uniform green background.\n<Picture 2> (character construction only): fully_preserved - use the side/back clothing and hair shapes without rendering any sheet layout, lettering or extra figures.\n\ndetailed_description:\nThe entire clip is hand-drawn-looking 2D anime chibi sprite animation with fine dark outlines and soft stable cel shading, exactly matching <Picture 1>, not a 3D render. [Shot 1] One static eye-level orthographic full-body composition lasts for exactly 10 seconds. <Subject 1> stands centered at the same scale as <Picture 1>, with her complete cat ears, headband, long hair, both hands, skirt frills and shoe soles clearly inside the frame. Her feet remain on one fixed baseline and her body has no horizontal travel. There is no camera motion, zoom, pan, reframe, lens change, cut, background change or extra character.\nThe only background is a perfectly flat bright #00FF00 green color, with no shadows, glow, gradient, stage, floor line, checkerboard, scenery or particles. Green is not part of her clothing, eyes or hair. Preserve every costume detail throughout the moving frames, especially the two separate cat ears and white headband, both pink bows, belt buckle and layered white apron frills. Her full figure and all clothing remain visible with at least 10% frame clearance on every side.\nFrom 00:00.000 to 00:01.000 she holds the exact front-facing neutral upright standing pose from <Picture 1>, hands gently relaxed and little shoes planted, looking straight at the viewer with open blue-violet eyes and a tiny warm closed-mouth smile. From 00:01.000 to 00:03.000 introduce a very subtle breathing cycle in her upper torso, with at most a few pixels of vertical movement, while the skirt hem and long hair gently follow. At approximately 00:02.500 she makes one soft, brief natural blink and opens both eyes again without changing eye shape or identity. From 00:03.000 to 00:06.000 continue small calm breathing, with a delicate, slow movement only in the hair tips and a tiny relaxed ear/headband follow-through; she does not turn her head, raise her arms or change the standing silhouette. At approximately 00:05.500 she blinks once more. From 00:06.000 to 00:08.000 keep the quiet breathing and gradually reduce hair movement; both hands stay relaxed and visible. From 00:08.000 to 00:09.000 return all subtle moving elements smoothly to the exact opening neutral pose, keeping the soles and body center stationary.\n\nDuring the final second she holds the same clean front neutral stance as the opening with both hands relaxed at her sides, eyes open, tiny closed smile, feet level and no extra object or visual effect. Hair and skirt settle into their opening outlines, and the final frame matches the opening pose, scale, horizontal center and shoe baseline as closely as possible, ready for a seamless loop and cuts to another animation. Use smooth continuous natural easing with stable lines and proportions; avoid wobbling facial features, multiplying fingers, changing ear count, flickering lace, jelly-body distortion, limb deformation, outfit changes, a tail, hair clips or displaced feet. Nothing appears in the image other than one complete character and flat green.\n\noverall_soundscape:\nSilent. No dialogue, singing, breaths, footsteps, ambient sound or sound effects.\n\nnon_diegetic_music:\nN/A. No music.\n\n",
+        "mode": "reference",
+        "duration": 10,
+        "resolution": "768p",
+        "ratio": "16:9",
+        "generate_audio": false,
+        "reference_asset_ids": [
+          "35db850a-cc14-4aa6-adeb-54744c8748b1",
+          "2970f054-3f9e-459f-865a-90cf48e5eb88"
+        ],
+        "canvas_node_id": "idle",
+        "expected_canvas_revision": 3
+      },
+      "error": "AutoDL 工作流不支持显式 generate_audio；无任务创建，无模型调用"
+    }
+  ],
+  "repair_approval": {
+    "user_message": "允许各返修 1 次",
+    "approved_at": "2026-10-30T12:10:45.722564+08:00",
+    "limit_per_action": 1,
+    "reference_policy": "仅定稿正面原图"
+  },
+  "quality_review": {
+    "round_1": "needs_revision",
+    "reason": "模型额外生成彩色光斑和绿光，影响颜色稳定与抠像",
+    "round_2": "passed_visual_sampling_and_decoded_alpha_checks",
+    "canonical_proportions": "references/kurisu-front.png；三视图不作为身形比例基准"
+  },
+  "repair_tasks": [
+    {
+      "node_id": "idle",
+      "status": "completed",
+      "request": {
+        "kind": "video",
+        "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+        "mode": "reference",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "prompt": "subject_definitions:\n<Subject 1> is the one approved chibi Kurisu cat-maid shown in <Picture 1>: the identical auburn long hair and bangs, blue-violet eyes, oversized head, round short body, two black cat-ear accessories with pink inner triangles, white lace headband and two pink bows, black-and-white frilled maid dress, white puff sleeves, pink neck ribbon and zigzag trim, gray belt with silver buckle, dark stockings and black shoes. There are NO silver hair clips, NO tail, and no other character.\n<Picture 1> is the sole character reference and the neutral front standing pose target for the beginning and end. Use its exact squat head-to-body proportions. Replace the transparent/empty surrounding area with a flat digital #00FF00 matte.\n\nsummary:\n[reference generation] Produce a clean, technically neutral 10-second 2D desktop-pet sprite clip of <Subject 1>. One static full-body shot on a uniform pure-green digital matte; exact constant colors and a calm front standing pose at both endpoints.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - exact approved face, short round body proportions, hair shape and colors, black/pink ears, white headband, pink bows, black/white costume layers and dark shoes.\n<Picture 1> ([Shot 1] opening and ending pose target): fully_preserved - the same front neutral stance, body shape, relaxed arms, head direction, open eyes and tiny closed smile. Only the empty surroundings become the green matte.\n\ndetailed_description:\nMatch the fine dark outlines and soft 2D cel shading of <Picture 1>. Render like a clean animation-game sprite with FIXED PALETTE COLORS, not a music video, cinematic scene, live stage, or special-effects shot. [Shot 1] A single locked eye-level orthographic camera shows the whole of <Subject 1> for exactly 10 seconds. The pose, scale and neutral white frontal illumination are fixed throughout. The character is horizontally centered. The highest cat-ear tip is near 20% of the frame height and the bottom of both shoes is near 85%, leaving broad empty margins. Feet rest on a single invisible baseline with no full-body sideways drift. Keep the approved large head and compact round short torso and legs; do not elongate her body.\nLighting is neutral, flat and even from the first frame through the last. The hair remains exactly the same chestnut-red RGB hues, white lace remains neutral white, skin remains pale peach, black clothes remain dark charcoal, and all pink and blue details keep their original colors in EVERY frame. Shadows are painted into the sprite and remain constant. There is no moving illumination, colored lighting, projected light, green light, green reflection, glow, lens flare, sparkle, glint animation, bokeh, chromatic wash, flashing, animated highlight, floating heart, diamond, particle, or visual-effect layer, either on the character or around her. The small painted eye and hair highlights retain their original colors and are stationary relative to the corresponding surface.\nThe background is an exact solid digital #00FF00 cutout matte, not a green-lit room and not a light-emitting environment. It does not cast green light onto the subject and does not reflect on her hair, eyes, headband, clothes or shoes. No floor, shadow, gradient, scenery, texture or text is drawn into this matte. One whole character only.\n\nFrom 00:00.000 to 00:01.000 she is still in the front neutral standing pose, looking at the viewer with a tiny closed smile and relaxed lowered hands. From 00:01.000 to 00:04.000 introduce only very subtle torso breathing with about one percent vertical movement; both feet stay planted. Make one brief natural blink near 00:02.500, then restore the exact open-eye shape. From 00:04.000 to 00:07.000 repeat the small breathing cycle. Only the last few hair tips and lowest skirt frills follow with tiny slow movements; the head does not turn, arms do not lift, ears and headband stay structurally stable, colors and highlights do not animate. Make a second natural blink near 00:05.500. From 00:07.000 to 00:09.000 ease the tiny hair/frill motion back to the starting outlines and settle into the original neutral front stance.\n\nFrom 00:09.000 through 00:10.000 hold the exact original front neutral standing pose of <Picture 1> with eyes open, small closed smile, hands down, hair and frills settled, and both shoes flat on the opening baseline. The final frame has the SAME palette, brightness, position, proportions, outfit, silhouette and relaxed posture as the first frame. Throughout, preserve clear separate cat ears and headband, correctly connected limbs, both hands, all skirt frills and both shoes. The complete figure stays inside the frame. There are no cuts, zooms or changes of composition.\n\noverall_soundscape:\nSilence. No speech, ambience, breath, effects or other audio.\n\nnon_diegetic_music:\nN/A. No music.\n\n",
+        "reference_asset_ids": [
+          "972a4ba5-d1e9-4265-a649-7fa5168ebc4b"
+        ],
+        "canvas_node_id": "idle",
+        "expected_canvas_revision": 9
+      },
+      "id": "ca269af9-e4db-4356-b720-a43df2f4e640",
+      "provider_task_id": "139d5ef1-fdc0-4b71-85e0-a3fc59a48dac",
+      "result_asset_id": "da2e3ea6-158f-4f7a-a843-2dea89a0401f",
+      "error": null,
+      "source_file": "source/round-2/待机呼吸.mp4"
+    },
+    {
+      "node_id": "tsundere",
+      "status": "completed",
+      "request": {
+        "kind": "video",
+        "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+        "mode": "reference",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "prompt": "subject_definitions:\n<Subject 1> is the one approved chibi Kurisu cat-maid shown in <Picture 1>: the identical auburn long hair and bangs, blue-violet eyes, oversized head, round short body, two black cat-ear accessories with pink inner triangles, white lace headband and two pink bows, black-and-white frilled maid dress, white puff sleeves, pink neck ribbon and zigzag trim, gray belt with silver buckle, dark stockings and black shoes. There are NO silver hair clips, NO tail, and no other character.\n<Picture 1> is the sole character reference and the neutral front standing pose target for the beginning and end. Use its exact squat head-to-body proportions. Replace the transparent/empty surrounding area with a flat digital #00FF00 matte.\n\nsummary:\n[reference generation] Produce a clean, technically neutral 10-second 2D desktop-pet sprite clip of <Subject 1>. One static full-body shot on a uniform pure-green digital matte; exact constant colors and a calm front standing pose at both endpoints.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - exact approved face, short round body proportions, hair shape and colors, black/pink ears, white headband, pink bows, black/white costume layers and dark shoes.\n<Picture 1> ([Shot 1] opening and ending pose target): fully_preserved - the same front neutral stance, body shape, relaxed arms, head direction, open eyes and tiny closed smile. Only the empty surroundings become the green matte.\n\ndetailed_description:\nMatch the fine dark outlines and soft 2D cel shading of <Picture 1>. Render like a clean animation-game sprite with FIXED PALETTE COLORS, not a music video, cinematic scene, live stage, or special-effects shot. [Shot 1] A single locked eye-level orthographic camera shows the whole of <Subject 1> for exactly 10 seconds. The pose, scale and neutral white frontal illumination are fixed throughout. The character is horizontally centered. The highest cat-ear tip is near 20% of the frame height and the bottom of both shoes is near 85%, leaving broad empty margins. Feet rest on a single invisible baseline with no full-body sideways drift. Keep the approved large head and compact round short torso and legs; do not elongate her body.\nLighting is neutral, flat and even from the first frame through the last. The hair remains exactly the same chestnut-red RGB hues, white lace remains neutral white, skin remains pale peach, black clothes remain dark charcoal, and all pink and blue details keep their original colors in EVERY frame. Shadows are painted into the sprite and remain constant. There is no moving illumination, colored lighting, projected light, green light, green reflection, glow, lens flare, sparkle, glint animation, bokeh, chromatic wash, flashing, animated highlight, floating heart, diamond, particle, or visual-effect layer, either on the character or around her. The small painted eye and hair highlights retain their original colors and are stationary relative to the corresponding surface.\nThe background is an exact solid digital #00FF00 cutout matte, not a green-lit room and not a light-emitting environment. It does not cast green light onto the subject and does not reflect on her hair, eyes, headband, clothes or shoes. No floor, shadow, gradient, scenery, texture or text is drawn into this matte. One whole character only.\n\nFrom 00:00.000 to 00:01.000 she holds the front neutral stance with eyes open, tiny closed smile, hands down and shoes planted. From 00:01.000 to 00:03.000 she slowly crosses her little arms across her chest, keeping the waist buckle visible. Her eyebrows lower slightly into a cute restrained tsundere expression; cheek blush stays the same painted soft pink as the reference, with no light or color animation. From 00:03.000 to 00:05.000 pivot gently around her fixed body axis toward screen-left by about 45 degrees, lift her chin a little and close her eyes into a tiny closed-mouth pout. There is no sideways travel. Hair and skirt follow the turn with small natural movements and unchanged colors. From 00:05.000 to 00:06.500 hold the arms-crossed sideward huff pose without sound, symbols or effects. From 00:06.500 to 00:08.000 smoothly pivot to the front and lower both arms. From 00:08.000 to 00:09.000 reopen her eyes, relax the eyebrows and restore the original tiny closed smile and neutral posture; settle the hair and skirt to their opening outlines.\n\nFrom 00:09.000 through 00:10.000 hold the exact original front neutral standing pose of <Picture 1> with eyes open, small closed smile, hands down, hair and frills settled, and both shoes flat on the opening baseline. The final frame has the SAME palette, brightness, position, proportions, outfit, silhouette and relaxed posture as the first frame. Throughout, preserve clear separate cat ears and headband, correctly connected limbs, both hands, all skirt frills and both shoes. The complete figure stays inside the frame. There are no cuts, zooms or changes of composition.\n\noverall_soundscape:\nSilence. No speech, ambience, breath, effects or other audio.\n\nnon_diegetic_music:\nN/A. No music.\n\n",
+        "reference_asset_ids": [
+          "972a4ba5-d1e9-4265-a649-7fa5168ebc4b"
+        ],
+        "canvas_node_id": "tsundere",
+        "expected_canvas_revision": 10
+      },
+      "id": "fb882508-e085-4936-8ab2-84b6860ff1ea",
+      "provider_task_id": "42536271-d625-4b37-9d8d-5d32698b5b79",
+      "result_asset_id": "bb834255-522d-44ae-8b55-4931de9e8d26",
+      "error": null,
+      "source_file": "source/round-2/点击回应-傲娇.mp4"
+    }
+  ],
+  "fallback_approval": {
+    "user_message": "除了这边这三个，如果你发现生成效果依然不佳的话，你可以尝试切换别的去生成看看，最多尝试两次。",
+    "maximum_additional_generations_total": 2,
+    "excluded_model_slugs": [
+      "doubao-seedance-2-0-260128",
+      "U17-9图1视频3音频V1-api",
+      "U06-9图3音频-V5"
+    ],
+    "condition": "当前返修仍不合格才尝试其他工作流"
+  },
+  "deliveries": [
+    {
+      "action": "idle",
+      "file": "pet/kurisu-animation/待机呼吸.webm",
+      "sha256": "856c6916d60cb337648969147e99c836b4178c8fe29f630e14322d182d028f68",
+      "fpl_asset_id": "8c4b44b4-e27f-41d6-b873-f2596231c044",
+      "report": {
+        "source": "待机呼吸.mp4",
+        "output": "待机呼吸.webm",
+        "source_size": [
+          1344,
+          768
+        ],
+        "key_thresholds": [
+          12,
+          110
+        ],
+        "source_content_union": [
+          388,
+          16,
+          980,
+          738
+        ],
+        "alignment": {
+          "scaled_size": [
+            506,
+            290
+          ],
+          "offset": [
+            66,
+            51
+          ],
+          "content_box": [
+            212.07738095238096,
+            57.041666666666664,
+            434.9583333333333,
+            329.671875
+          ],
+          "standing_height": 716.0,
+          "standing_center_x": 674.0,
+          "standing_feet_y": 738.0,
+          "target_height": 270,
+          "target_feet_y": 330
+        },
+        "verification": {
+          "width": 640,
+          "height": 360,
+          "fps": 24,
+          "frames": 240,
+          "duration_seconds": 10.0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "first_box": [
+            217,
+            59,
+            430,
+            330
+          ],
+          "last_box": [
+            217,
+            60,
+            430,
+            329
+          ],
+          "endpoint_rgba_mean_absolute_difference": 5.35688495706983,
+          "transparent_fraction": 0.8143113968460648
+        }
+      }
+    },
+    {
+      "action": "tsundere",
+      "file": "pet/kurisu-animation/点击回应-傲娇.webm",
+      "sha256": "0b86537c1b1bf6422cbc45e4ac3d2b5c84189519f23131d57e4c7d40b80fc9fe",
+      "fpl_asset_id": "bfaaac39-1a96-4ce4-8cbe-176aa35077c1",
+      "report": {
+        "source": "点击回应-傲娇.mp4",
+        "output": "点击回应-傲娇.webm",
+        "source_size": [
+          1344,
+          768
+        ],
+        "key_thresholds": [
+          12,
+          110
+        ],
+        "source_content_union": [
+          390,
+          16,
+          998,
+          736
+        ],
+        "alignment": {
+          "scaled_size": [
+            508,
+            290
+          ],
+          "offset": [
+            65,
+            52
+          ],
+          "content_box": [
+            212.41071428571428,
+            58.041666666666664,
+            442.2202380952381,
+            329.9166666666667
+          ],
+          "standing_height": 714.0,
+          "standing_center_x": 675.0,
+          "standing_feet_y": 735.0,
+          "target_height": 270,
+          "target_feet_y": 330
+        },
+        "verification": {
+          "width": 640,
+          "height": 360,
+          "fps": 24,
+          "frames": 240,
+          "duration_seconds": 10.0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "first_box": [
+            217,
+            60,
+            431,
+            330
+          ],
+          "last_box": [
+            217,
+            60,
+            431,
+            329
+          ],
+          "endpoint_rgba_mean_absolute_difference": 3.529520732498378,
+          "transparent_fraction": 0.8161863245081018
+        }
+      }
+    }
+  ],
+  "fallback_tasks": [],
+  "validation": {
+    "node_config_and_picker_tests": {
+      "passed": 137,
+      "failed": 0
+    },
+    "pipeline_unit_tests": {
+      "passed": 4,
+      "failed": 0
+    },
+    "desktop_playback": [
+      {
+        "animation": "点击回应-傲娇",
+        "receipt": {
+          "playbackId": "pb-mvugvnai-3",
+          "petId": "kurisu1",
+          "name": "点击回应-傲娇",
+          "status": "playing",
+          "createdAt": 1793334198186,
+          "updatedAt": 1793334198195,
+          "matched": false
+        }
+      },
+      {
+        "animation": "待机呼吸",
+        "receipt": {
+          "playbackId": "pb-mvugvo2l-4",
+          "petId": "kurisu1",
+          "name": "待机呼吸",
+          "status": "playing",
+          "createdAt": 1793334199197,
+          "updatedAt": 1793334199207,
+          "matched": false
+        }
+      }
+    ],
+    "runtime_layout": "flat pet/kurisu-animation/*.webm",
+    "visual_review": "multiple sampled frames and light/dark/gray backgrounds; no first-round colored effects",
+    "audio_streams": 0,
+    "decoded_output_frames_total": 480,
+    "physical_pointer_drag_test": "not separately automated; existing renderer and physics unchanged"
+  },
+  "archive": "../../temp/kurisu/kurisu-pet-pack.zip",
+  "full_library": {
+    "state_file": "library.json",
+    "target_actions": 106,
+    "new_actions": 104,
+    "call_limit": 130,
+    "approved_actions": 7,
+    "new_campaign_calls": 18,
+    "direction_policy": "Strict screen-left profile treadmill gait, mirrored for right; old front-facing motion withdrawn",
+    "blocker_actions": [
+      "a101",
+      "a102"
+    ]
+  }
+}

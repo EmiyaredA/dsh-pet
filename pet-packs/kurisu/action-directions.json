@@ -1,0 +1,134 @@
+{
+  "待机": [
+    "Breathe very subtly in the neutral stance and blink twice, keeping the feet planted and all painted colors constant."
+  ],
+  "转向": [
+    "Keep her body rooted, look to screen-left with a curious small head turn, then to screen-right, then look directly forward again. This is a gentle looking-around transition, not a walk or a camera turn."
+  ],
+  "拖拽": [
+    "Act as if gently lifted by an invisible hand: tuck the shoulders slightly, let arms and tiny legs dangle, bend the knees a little so shoes float just above their normal baseline, and wear a puzzled cute expression. Stay centered without traveling, then return to standing."
+  ],
+  "点击回应": [
+    "Fold her little arms, make a cute restrained pout, pivot left about 45 degrees, softly close the eyes and lift the chin, then unfold arms and turn forward into the neutral stance.",
+    "Brighten her expression into a closed-mouth happy smile, lift her right hand for three small friendly waves, then lower the hand and relax.",
+    "Make a shy surprised expression with a faint painted pink blush, bring both little hands to her cheeks, briefly peek at the viewer, then lower both hands.",
+    "React to an imaginary gentle cheek poke by puffing her cheeks, placing one hand on that cheek and tilting her head slightly; the other hand stays near her waist. Relax her cheeks and return her head and hands to neutral.",
+    "Give a small approving smile, make two clear gentle nods and a compact thumbs-up close to her chest, then lower the hand and return her gaze forward."
+  ],
+  "移动": [
+    "From seconds 0 to 2 smoothly pivot from the neutral FRONT stance into a strict SCREEN-LEFT SIDE PROFILE. The face, chest, hips, knees and both shoe toes all point left; one near eye is visible and the far eye is naturally occluded. Between seconds 2 and 8 walk LEFT IN PLACE on a treadmill, with small alternating profile steps and opposite arm swings.  Stay at a fixed screen center and fixed scale: this is a 2D SIDE-SCROLLING sprite; the runtime moves the window horizontally and mirrors the same clip to face right. NEVER walk facing the viewer, never move toward or away from the camera, never backpedal, and do not show a front-facing marching gait. By second 8 stop stepping. During seconds 8 to 10 turn back to the original FRONT neutral stance, ending with empty hands and the original shoe baseline.",
+    "From seconds 0 to 2 smoothly pivot from the neutral FRONT stance into a strict SCREEN-LEFT SIDE PROFILE. The face, chest, hips, knees and both shoe toes all point left; one near eye is visible and the far eye is naturally occluded. Between seconds 2 and 8 jog LEFT IN PLACE on a treadmill, with quicker alternating profile steps and small bent-arm swings. Keep the head level without upward bouncing.  Stay at a fixed screen center and fixed scale: this is a 2D SIDE-SCROLLING sprite; the runtime moves the window horizontally and mirrors the same clip to face right. NEVER walk facing the viewer, never move toward or away from the camera, never backpedal, and do not show a front-facing marching gait. By second 8 stop stepping. During seconds 8 to 10 turn back to the original FRONT neutral stance, ending with empty hands and the original shoe baseline.",
+    "From seconds 0 to 2 pivot from the neutral FRONT stance into a strict SCREEN-LEFT SIDE PROFILE. The nose, chest, hips, knees and shoe toes point left; only the near eye is visible. Take a miniature CLOSED SILVER-GRAY LAPTOP COMPUTER with a rigid two-piece metal clamshell, visible rear hinge and thin side vents, and hug it securely against the waist below the chin. It is a computer, never a paper notebook, book or folder. Between seconds 2 and 8 take small LEFTWARD IN-PLACE side-profile steps while holding the closed laptop with both hands. Stay centered with full ears and shoes inside the wide padded framing. Do not travel toward the viewer or march frontally. From seconds 8 to 9 stop, turn to FRONT and completely stow the laptop. By seconds 9 to 10 hold the exact original empty-handed front standing stance. The runtime mirrors this left-facing gait to face right and moves the window only horizontally."
+  ],
+  "日常小动作": [
+    "Lift both arms in a relaxed small stretch, arch shoulders only slightly, close eyes comfortably, then lower arms and settle.",
+    "Cover a tiny yawn with the right hand, close eyes and dip the head a little, then reopen eyes and lower the hand.",
+    "Become sleepy, close her eyes, nod gently twice while standing and briefly doze, then wake gently and restore the neutral gaze. No letters or sleep symbols.",
+    "Nod off with closed eyes, then react to an imagined soft wake-up cue with a small startled shoulder lift and wide eyes. Quickly compose herself and relax.",
+    "Look down briefly, smooth the two white apron panels with both hands, straighten the waist area without changing the costume, then look forward and lower hands.",
+    "Lift both hands to adjust the existing lace headband and cat-ear accessory gently and symmetrically. Do not remove, duplicate or redesign the headwear. Lower hands afterward.",
+    "Take a tiny ivory comb from behind her, carefully comb one lower auburn hair lock without changing hair length or silhouette, then put the comb away.",
+    "Take a small oval gray hand mirror with a short handle. Its reflective FRONT faces HER eyes and its plain gray BACK faces the camera. Look into the mirror and lightly smooth one hair lock, then lower and stow it. Do not show a reflected face, duplicate character, interface or image on the back of the mirror.",
+    "Hold skirt sides modestly and perform a small polite maid curtsey, knees bent slightly and head bowed, keeping the skirt covering the body, then stand upright and release the hem.",
+    "Take a pair of small black-rimmed spectacles and a cream cloth from behind her, gently wipe the lenses with concentration while holding them in front of her chest. Do not put spectacles on her face. Put both away.",
+    "Cross her arms low, turn her eyes slightly aside and make a tiny restrained closed-mouth huff, then soften the expression and uncross the arms without turning the whole body.",
+    "Tilt her head a little left, touch her chin with one finger, blink with curious eyebrows, then straighten the head and lower the hand. No question-mark symbols.",
+    "Make one slow complete in-place 360-degree turn about her own axis, showing consistent back hair and maid costume, with tiny planted pivoting steps; finish exactly facing front. Do not travel or lengthen the body.",
+    "Show a brief surprised wide-eyed expression with hands near her chest, then straighten her collar and apron as if recovering her dignity, finally lower hands.",
+    "Take a small pale-pink toothbrush, make a few gentle brushing motions at her tiny mouth with lips modestly closed around the brush tip, then put it away. No foam or loose objects.",
+    "Take a tiny cream feather duster, dust a compact invisible surface directly in front of her waist with three short strokes, then put the duster away. No dust particles.",
+    "Rest both hands against her cheeks, look slightly thoughtful with one relaxed blink and a tiny sigh-like shoulder motion, then lower the hands.",
+    "Take a small cream notebook and dark pen, look down and make several focused short writing strokes on abstract lines, then close and put away both objects. No readable lettering."
+  ],
+  "研究与玩耍": [
+    "Take a compact cream research-paper booklet, open it at chest height, scan two pages and turn one page, then close and put it away. Pages have simple gray lines, no readable text.",
+    "Bring a tiny neutral-gray LAPTOP COMPUTER into view in front of the waist, with its screen and keyboard facing HER. The viewer sees only the plain matte gray exterior BACK LID and hinge; there is no UI, screen, webcam or keyboard on the back cover. Type focused short bursts with both hands behind the lid, pause to inspect her screen, then close and stow the laptop. Keep the entire device below the chin and the full face and feet visible.",
+    "Take a small transparent test tube containing PALE AMBER liquid, hold it close to eye level without obscuring the face, tilt it gently to inspect, then lower and put it away. No green liquid.",
+    "Take a miniature clear conical flask with muted lavender liquid, gently swirl it at chest level, observe the liquid calmly, then put the sealed flask away. No bubbles, smoke or body glow.",
+    "Take a small ivory pipette and tiny gray sample cup, squeeze one AMBER drop into the cup with concentrated eyes, then put both away. All movement stays close to the body center.",
+    "Set a tiny ivory-and-gray microscope on a miniature compact support in front of her waist, lean her head a little toward the eyepiece to inspect, straighten, then put the compact equipment away.",
+    "Take a small gray toy-sized oscilloscope with a pale blue thin waveform, turn one knob and inspect the waveform, then put it away. The screen casts no light and contains no readable labels.",
+    "Hold a compact gray experiment box at waist height and carefully rotate its small dark knob with one hand, pause to check, then put it away. No electrical sparks.",
+    "Take a shallow cream tray holding two small gray-and-amber laboratory tools, arrange them neatly with precise short movements, then stow the whole tray.",
+    "Take a tiny silver pocket watch on a short chain, look at its face thoughtfully and listen with a slight head tilt, then close it and put it away. The watch has abstract ticks only.",
+    "Hold a small mechanical clock model between her hands, thoughtfully rotate one tiny dial and trace an imagined circular path with a finger, then put the clock away. No portals, glow, particles or extra characters.",
+    "Take a small cream desk clock, turn its back adjustment knob and check the front face, then put it away. No readable numerals are required.",
+    "Take a small cream notepad and pen, draw a simple horizontal line with two arrow marks while thinking, check the sketch, then put both away. No readable text.",
+    "Take two small cream data cards with gray abstract bar charts, compare them side by side, nod slightly when they agree, then stack and put them away.",
+    "Take a compact gray calculator, press several keys with one finger, inspect the result with concentration and a slight satisfied nod, then put it away. No readable digits.",
+    "Open a small cream booklet showing a simple pale-pink schematic brain outline, point to one section while comparing another page, then close and put it away. No clinical detail or lettering.",
+    "Hold a tiny tabletop atom model made of gray rings and red-and-blue beads, turn it gently to inspect its structure, then put it away. No green beads or light effects.",
+    "Take a tiny gray device and two compact parts, fit the parts together carefully, inspect the finished simple toy-sized gadget, then put it away.",
+    "Take a tiny ivory desktop robot with a red indicator dot, adjust a small side screw using a miniature dark tool, then give a pleased nod and put both away. The robot stays still and does not emit light.",
+    "Take a small beige equipment box, open its lid, inspect a neatly packed gray device inside, then close the box and put it away.",
+    "Take a tiny puzzle cube with ivory, red, blue, yellow, pink and charcoal squares, make three clear deliberate twists, inspect it thoughtfully, then put it away. No green faces.",
+    "Take a tiny cream five-in-a-row board, place one black stone with a clever little smile, inspect the board, then stow the board and stones together. No text.",
+    "Take a small gray handheld game console with screen and buttons facing HER, thumbs operating its controls. The viewer sees the plain exterior BACK shell; never show a screen or controls on that back surface. Concentrate with increasingly stubborn eyebrows and a tiny pout after a setback, shake her head very slightly as if refusing to lose, then compose herself and stow the console.",
+    "A tiny calm gray cat walks a very short distance from behind her feet to sit directly in front of her. She bends only a little to stroke its head, then the cat walks back behind her and completely leaves the image. Keep one Kurisu and one small cat only.",
+    "Take one short charcoal pen, deftly roll it once between two fingers near her chest, catch it securely, then put the pen away. Hands remain structurally clear.",
+    "Perform a compact cheerful maid dance in place: two small alternating side-to-side weight shifts, gentle bent-arm gestures and a small polite bow. No travel, high jump, skirt lifting or outfit change.",
+    "Take a miniature CLOSED silver-gray LAPTOP COMPUTER with a rigid two-piece metal clamshell, visible rear hinge, thin side vents and small rubber feet. The closed computer slips only a few centimeters; react with a small surprised expression and catch it with both hands at waist height before it falls. Keep the face and full body clear, put the computer completely away and relax. The outer cover stays plain gray. No paper pages, paper notebook, screen, interface or readable text is visible."
+  ],
+  "饮食": [
+    "Take a small plain dark-red soda can with an ivory panel and no readable logo, open it calmly, take two tiny sips, smile subtly and put the can away.",
+    "Take a small cream cup of coffee, hold it with both hands, take one tiny sip and give a thoughtful contented look, then put it away. No steam particles.",
+    "Take a small pale-pink mug of hot cocoa, warm her hands around it, take one gentle sip, then lower and put it away. No steam or glow.",
+    "Take a small triangular sandwich with cream bread and red-and-beige filling, take one small bite and chew cutely with a closed mouth, then put it away. No green lettuce.",
+    "Take a small cream plate with a buttered piece of toast, eat one small bite with a calm morning expression, then put the plate and toast away.",
+    "Take a compact cream bowl of pale pasta with red tomato sauce, lift a small bite with a short gray fork, eat neatly, then put all tableware away.",
+    "Take a small cream bowl of amber-brown curry and rice with no green garnish, eat one spoonful and look content, then put the bowl and spoon away.",
+    "Take a tiny cream cup of pale-yellow pudding, sneak one small spoonful with a pleased look, suddenly notice the viewer and blush in cute embarrassment, then put the pudding and spoon away.",
+    "Take a small cream plate with a miniature strawberry cake slice, eat one tiny forkful, give a soft pleased smile and put everything away. No green strawberry leaves.",
+    "Take a tiny ivory-and-pink ice-cream cone, taste it, notice a small soft drip and catch it with a cream napkin, then put the cone and napkin away. No mess remains.",
+    "Take a small cream plate of RED apple slices with pale interiors, eat one little slice slowly, smile and put the plate away.",
+    "Take one tiny pink-glazed doughnut, take a neat little bite, chew with a closed mouth and put the remaining doughnut away. No sprinkles escaping into the background."
+  ],
+  "时节": [
+    "Take a small twig with pale-pink spring blossoms, look closely at one petal with scientific curiosity, gently turn the twig and put it away. No green leaves or floating petals.",
+    "Take a miniature red-and-ivory kite on a very short string, let it hover just above and in front of her shoulder while staying well inside the frame, guide it with small hand movements, then reel it in and put it away.",
+    "Take a small cream dish with three pink cherry-blossom rice dumplings without leaves, eat one tiny bite and put the dish away.",
+    "Take a compact cream plate with an already UNWRAPPED beige rice dumpling and a gray fork, eat a small bite, then put everything away. Do not draw green wrapping leaves.",
+    "Take a small ivory folding fan, unfold it, fan herself with three gentle strokes, then fold and put it away.",
+    "Observe two tiny AMBER fireflies hovering close in front of her hands, follow them curiously with her eyes, then allow them to leave completely behind her shoulder. Their light stays confined to the two dots and does not illuminate the character.",
+    "Take a little red-and-cream mooncake gift tin, open it, lift one small mooncake and look upward thoughtfully, then return the cake, close the tin and stow it. No moon or scenery is added to the background.",
+    "A few muted amber and brown autumn leaves flutter down very close around her skirt, forming a tiny pile at her feet; she looks surprised and brushes them neatly behind her until all leaves are gone. No green leaves and no leaf may leave the frame.",
+    "Take a small red-orange maple leaf, turn it to inspect its veins with a curious smile, then put it away.",
+    "Take a small orange pumpkin candy bucket, open it, select one wrapped pink candy and smile shyly, then return the candy and stow the bucket. No glow from the pumpkin.",
+    "Hold a tiny white ghost-shaped hand puppet in front of her chest, make it bob once playfully, then remove and put the puppet away. Kurisu herself never transforms, fades or changes costume.",
+    "Assemble two tiny white snowballs on a miniature cream tray into a small snowman, add a charcoal hat and red scarf, admire it, then put the tray and snowman away. No snowfall, green decorations or separate landscape.",
+    "Take a miniature ivory tabletop Christmas tree with muted red-and-pink ornaments, place one red ornament on it, admire it and stow the tree. No green tree or flashing lights.",
+    "Take a tiny cream Christmas gift box with a red ribbon, untie it, peek inside with a delighted small smile, then close it and put the box and ribbon away.",
+    "Take a small pale-pink scarf, wrap it loosely over the existing maid collar, cup both hands together warmly and smile, then remove and put away the scarf. The original costume stays intact.",
+    "Take a small cream bowl of white rice balls in pale liquid, eat one tiny spoonful, smile softly and put the bowl and spoon away.",
+    "Take a small cream plate with beige dumplings, lift a tiny dumpling with short gray chopsticks, eat neatly and put the plate and chopsticks away.",
+    "Take a small red square of paper and a short dark calligraphy brush, paint a simple festive black abstract motif with two careful strokes, admire it and put the paper and brush away. Do not attempt readable lettering.",
+    "Take a small plain red envelope with a gold circular decorative seal and no lettering, open it, look pleasantly surprised, close it and put it away.",
+    "Take a tiny red toy firework cylinder, produce one very small AMBER-and-WHITE spark pattern directly above the cylinder within the safe area, smile and put the now-inert cylinder away. The localized sparks never light the face, hair or costume and vanish completely before the end.",
+    "Take a miniature warm ivory paper sky lantern with a red rim, let it rise only a few centimeters in front of her shoulder on a short tether, watch it calmly, then draw it back and put it away. No glow or illumination on the character."
+  ],
+  "吐槽与思考": [
+    "Show a tiny deadpan look, place one hand lightly against her forehead in quiet exasperation, glance toward the viewer, then lower the hand and soften her expression. No symbols or text.",
+    "Raise one index finger near her chest and make a compact precise explanatory gesture, nod once with a clever firm expression, then lower the hand and return to a neutral smile. Mouth stays closed, no dialogue or text."
+  ],
+  "余额": [
+    "Take a small gray laboratory budget notebook and a compact beige pouch visibly full of gold-colored coins, inspect both with a confident pleased smile, then put them away. No coin glow or scattering.",
+    "Take a compact beige coin pouch, count three gold coins carefully in her palm, look reassured and put the coins and pouch away.",
+    "Take a small cream account ledger and gray calculator, calmly check abstract rows with one finger and press one key, nod and put both away. No readable numbers.",
+    "Take a small cream ledger and two gold coins, look thoughtful and compare the coins with the page using a calculating little frown, then stow everything.",
+    "Open a small beige wallet showing a SINGLE gold coin, blink with a mildly worried cute expression and gently hold the wallet close, then close and put it away.",
+    "Open an EMPTY beige wallet toward herself, check it twice, let her shoulders droop in a tiny disappointed sigh, then close and put it away. No falling dust or symbols."
+  ],
+  "碎碎念": [
+    "Take a small cream equipment tray holding two gray tools, neatly rearrange them while making very subtle quiet conversational mouth movements toward the viewer, then stow the tray and close her mouth. No audible voice or text.",
+    "Raise a small cream notepad with an abstract diagram, point to it and make gentle short explanatory hand gestures and subtle silent mouth movement, then put it away and return to a closed-mouth neutral smile.",
+    "Take a miniature CLOSED silver-gray LAPTOP COMPUTER with a rigid two-piece metal clamshell, visible rear hinge and thin side vents, and hug it against the waist below the chin. Look thoughtfully aside and make a few subtle silent muttering mouth movements, then look forward, stow the computer completely and return to the empty-handed closed-mouth neutral smile. The outer cover stays plain gray. Never use a paper notebook or book. No visible screen, interface, webcam, glowing logo or readable text."
+  ],
+  "工作状态": [
+    "Rest one hand under her chin and the other near the waist, concentrate with slightly knitted eyebrows, slowly shift her gaze between two imagined ideas, then lower the hand and relax. No floating thought symbols.",
+    "Take a compact neutral-gray laptop, type focused short bursts with both hands and look closely at its unlit screen, then close and put it away. No light from the screen.",
+    "From seconds 0 to 2 take out a miniature gray LAPTOP COMPUTER and folding gray support. Open it below the chin with the screen and keyboard facing HER; the viewer sees ONLY the plain matte gray EXTERIOR BACK LID and rear hinge. No UI, data, screen, webcam or keyboard exists on the outward-facing cover. Between seconds 2 and 7 look at her unseen screen, make two or three short touchpad gestures behind the lid to organize experiment records, pause and nod in confirmation. Do not continuously type. From seconds 7 to 9 close and stow the computer and support entirely. From seconds 9 to 10 hold the exact original empty-handed front standing pose. Keep the face, both ears and shoes unobstructed. No desk, paper or extra object remains.",
+    "Cross her arms gently, hold a patient expectant look toward the viewer, tap one finger on her sleeve twice without moving her feet, then unfold arms and return to neutral.",
+    "Take a tiny closed gray device with one fixed red indicator, inspect it, brighten into a pleased smile and make a small compact fist-pump beside her chest, then stow the device and lower her hand. No confetti or glow.",
+    "Take a small cream notebook, look at one page with a disappointed frown, touch her forehead briefly as if an experiment did not work, then compose herself, close and put away the notebook."
+  ]
+}
