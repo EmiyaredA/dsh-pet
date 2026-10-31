@@ -57,6 +57,16 @@ export const planMove = (o: {
   };
 };
 
+/** Manual playback may turn away from a blocked edge; an explicit facing stays fixed. */
+export const planDirectedMove = (o: Parameters<typeof planMove>[0], allowTurnAround = false) => {
+  const forward = planMove(o);
+  if (forward) return { ...forward, dir: o.dir };
+  if (!allowTurnAround) return null;
+  const dir = o.dir === 1 ? -1 : 1;
+  const reverse = planMove({ ...o, dir });
+  return reverse ? { ...reverse, dir } : null;
+};
+
 /**
  * 角落 + 边距 → 宠物根节点左上角像素坐标。
  * 与浏览器 overlay 的 CSS 角落语义一致：

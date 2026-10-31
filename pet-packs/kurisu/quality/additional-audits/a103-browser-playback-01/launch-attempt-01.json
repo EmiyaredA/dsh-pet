@@ -1,0 +1,11 @@
+{
+  "attempt": 1,
+  "qa_pid": 8648,
+  "qa_only_terminated": true,
+  "main_not_entered_inference": "No output or isolated userData directory was created; entry/bootstrap is being diagnosed, not a media-quality verdict.",
+  "output_directory_created": false,
+  "existing_service_pid": 23711,
+  "existing_live_monitor_pid": 4605,
+  "existing_processes_preserved": true,
+  "new_model_calls": 0
+}

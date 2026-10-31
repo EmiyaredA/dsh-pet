@@ -1,0 +1,868 @@
+{
+  "reviewer": "independent_animation_qa_agent",
+  "status": "completed_independent_additional_visual_review",
+  "source_scope": "4 current approved currentSHA files;40 additionalframes only, notrerun240techverification",
+  "new_model_calls": 0,
+  "ledger_modified": false,
+  "canonical_media_modified": false,
+  "frames_per_clip": [
+    8,
+    32,
+    56,
+    80,
+    104,
+    128,
+    152,
+    176,
+    200,
+    224
+  ],
+  "true_Alpha_decoder": "libvpx-vp9 nativeRGBA",
+  "composite_background_RGB": [
+    0,
+    80,
+    255
+  ],
+  "crop_xyxy_native": [
+    190,
+    45,
+    455,
+    338
+  ],
+  "magnification": 2,
+  "original_crop_not_downscaled_first": true,
+  "records": [
+    {
+      "action_id": "a001",
+      "name": "待机呼吸",
+      "file": "pet/kurisu-animation/待机呼吸.webm",
+      "sha256": "10717cdea36065ed9e6a0360a7174ff1a79b7dea9523939376980b5f74219132",
+      "samples": [
+        {
+          "frame": 8,
+          "native_blue_image": "quality/additional-audits/approved-four-new-times-01/a001-10717cdea360-f8-native640-blue.png",
+          "native_crop_2x_image": "quality/additional-audits/approved-four-new-times-01/a001-10717cdea360-f8-figure-head-hair2x.png",
+          "alpha128_bbox_xyxy": [
+            217,
+            59,
+            430,
+            330
+          ],
+          "height_px": 271,
+          "feet_y_exclusive": 330,
+          "green_opaque_edge_pixels_descriptive": 0,
+          "rgba_sample_sha256": "7040ab100ea3b8cb1a9c85cb3f9e39a669008c0c1150304255932021385be04d"
+        },
+        {
+          "frame": 32,
+          "native_blue_image": "quality/additional-audits/approved-four-new-times-01/a001-10717cdea360-f32-native640-blue.png",
+          "native_crop_2x_image": "quality/additional-audits/approved-four-new-times-01/a001-10717cdea360-f32-figure-head-hair2x.png",
+          "alpha128_bbox_xyxy": [
+            219,
+            66,
+            428,
+            330
+          ],
+          "height_px": 264,
+          "feet_y_exclusive": 330,
+          "green_opaque_edge_pixels_descriptive": 0,
+          "rgba_sample_sha256": "b50e3992c603588e494b6ef2f763cd7961af5f149795db89e25da7ce4af009b0"
+        },
+        {
+          "frame": 56,
+          "native_blue_image": "quality/additional-audits/approved-four-new-times-01/a001-10717cdea360-f56-native640-blue.png",
+          "native_crop_2x_image": "quality/additional-audits/approved-four-new-times-01/a001-10717cdea360-f56-figure-head-hair2x.png",
+          "alpha128_bbox_xyxy": [
+            216,
+            61,
+            432,
+            329
+          ],
+          "height_px": 268,
+          "feet_y_exclusive": 329,
+          "green_opaque_edge_pixels_descriptive": 0,
+          "rgba_sample_sha256": "1696b8bfa888a68c4941b3d56993d676086781ab934f76ce1067fc7a2704c87f"
+        },
+        {
+          "frame": 80,
+          "native_blue_image": "quality/additional-audits/approved-four-new-times-01/a001-10717cdea360-f80-native640-blue.png",
+          "native_crop_2x_image": "quality/additional-audits/approved-four-new-times-01/a001-10717cdea360-f80-figure-head-hair2x.png",
+          "alpha128_bbox_xyxy": [
+            216,
+            58,
+            431,
+            329
+          ],
+          "height_px": 271,
+          "feet_y_exclusive": 329,
+          "green_opaque_edge_pixels_descriptive": 0,
+          "rgba_sample_sha256": "c3c9a42791fcf75b51689c758a8d05f4a9c82d3558cb0659acacda7c19cbb38c"
+        },
+        {
+          "frame": 104,
+          "native_blue_image": "quality/additional-audits/approved-four-new-times-01/a001-10717cdea360-f104-native640-blue.png",
+          "native_crop_2x_image": "quality/additional-audits/approved-four-new-times-01/a001-10717cdea360-f104-figure-head-hair2x.png",
+          "alpha128_bbox_xyxy": [
+            218,
+            58,
+            430,
+            329
+          ],
+          "height_px": 271,
+          "feet_y_exclusive": 329,
+          "green_opaque_edge_pixels_descriptive": 0,
+          "rgba_sample_sha256": "a05888dc4eb03c88f820d649effe32e142e45146a30698b88484b3cabc613837"
+        },
+        {
+          "frame": 128,
+          "native_blue_image": "quality/additional-audits/approved-four-new-times-01/a001-10717cdea360-f128-native640-blue.png",
+          "native_crop_2x_image": "quality/additional-audits/approved-four-new-times-01/a001-10717cdea360-f128-figure-head-hair2x.png",
+          "alpha128_bbox_xyxy": [
+            213,
+            63,
+            434,
+            330
+          ],
+          "height_px": 267,
+          "feet_y_exclusive": 330,
+          "green_opaque_edge_pixels_descriptive": 0,
+          "rgba_sample_sha256": "88ecb1868b93972dc46415c01bc2099f248a415319006fee54d7429872eb2248"
+        },
+        {
+          "frame": 152,
+          "native_blue_image": "quality/additional-audits/approved-four-new-times-01/a001-10717cdea360-f152-native640-blue.png",
+          "native_crop_2x_image": "quality/additional-audits/approved-four-new-times-01/a001-10717cdea360-f152-figure-head-hair2x.png",
+          "alpha128_bbox_xyxy": [
+            222,
+            63,
+            425,
+            330
+          ],
+          "height_px": 267,
+          "feet_y_exclusive": 330,
+          "green_opaque_edge_pixels_descriptive": 0,
+          "rgba_sample_sha256": "22885667016f4572758e014bce7f7348ab5a9180fa95838316177b8b2b0eb8d0"
+        },
+        {
+          "frame": 176,
+          "native_blue_image": "quality/additional-audits/approved-four-new-times-01/a001-10717cdea360-f176-native640-blue.png",
+          "native_crop_2x_image": "quality/additional-audits/approved-four-new-times-01/a001-10717cdea360-f176-figure-head-hair2x.png",
+          "alpha128_bbox_xyxy": [
+            213,
+            59,
+            435,
+            329
+          ],
+          "height_px": 270,
+          "feet_y_exclusive": 329,
+          "green_opaque_edge_pixels_descriptive": 0,
+          "rgba_sample_sha256": "8fb9cd9b85fbbd96a9d11b9fdc8d8006b97ba226828a0e5536efb82b88d1fe1c"
+        },
+        {
+          "frame": 200,
+          "native_blue_image": "quality/additional-audits/approved-four-new-times-01/a001-10717cdea360-f200-native640-blue.png",
+          "native_crop_2x_image": "quality/additional-audits/approved-four-new-times-01/a001-10717cdea360-f200-figure-head-hair2x.png",
+          "alpha128_bbox_xyxy": [
+            217,
+            60,
+            430,
+            329
+          ],
+          "height_px": 269,
+          "feet_y_exclusive": 329,
+          "green_opaque_edge_pixels_descriptive": 0,
+          "rgba_sample_sha256": "4244c4e1bdd3a6fcf60022921facd0800daa8ee887df0aee667cc2ebd79cc954"
+        },
+        {
+          "frame": 224,
+          "native_blue_image": "quality/additional-audits/approved-four-new-times-01/a001-10717cdea360-f224-native640-blue.png",
+          "native_crop_2x_image": "quality/additional-audits/approved-four-new-times-01/a001-10717cdea360-f224-figure-head-hair2x.png",
+          "alpha128_bbox_xyxy": [
+            217,
+            60,
+            430,
+            329
+          ],
+          "height_px": 269,
+          "feet_y_exclusive": 329,
+          "green_opaque_edge_pixels_descriptive": 0,
+          "rgba_sample_sha256": "e8749598ff8e79d149aba15eb0ba62049a029b9d3dce3cdd740f471f55b30e48"
+        }
+      ],
+      "prior_native_blue_f0_120_239_reused": false,
+      "new_frames_only": true,
+      "manual_additional_frames_reviewed": [
+        8,
+        32,
+        56,
+        80,
+        104,
+        128,
+        152,
+        176,
+        200,
+        224
+      ],
+      "all240_visual_or_realtime_playback_performed": false,
+      "hair_face_edge_scope_result": "No opaque white hair-gap island, clear green rim, facial collapse or abnormal proportion was observed in these ten original-pixel blue/2x samples. Fast inter-sample flicker remains outside this sample-only review.",
+      "sampled_feet_y_range": [
+        329,
+        330
+      ],
+      "sampled_height_range": [
+        264,
+        271
+      ],
+      "green_opaque_edge_descriptive_max": 0,
+      "reviewed_page_files": [
+        "quality/additional-audits/approved-four-new-times-01/a001-10717cdea360-review-page1.png",
+        "quality/additional-audits/approved-four-new-times-01/a001-10717cdea360-review-page2.png",
+        "quality/additional-audits/approved-four-new-times-01/a001-10717cdea360-review-page3.png"
+      ],
+      "overall_additional_verdict": "FOREGROUND_APPENDAGE_CONCERN_AWAIT_INDEPENDENT_SECOND_REVIEW",
+      "reason": "A brown-pink rounded projection appears below the right skirt in frames8/56/128/152, absent from the approved reference silhouette. Root assigned a second source-trace review to green_gate; this report does not preempt that anatomical finding or call the clip visually cleared.",
+      "suspicious_appendage_evidence": "quality/additional-audits/approved-four-new-times-01/a001-lower-right-protrusion-8x-diagnostic.png",
+      "final_approval_reaffirmed": false
+    },
+    {
+      "action_id": "a002",
+      "name": "左右张望",
+      "file": "pet/kurisu-animation/左右张望.webm",
+      "sha256": "831d80bef0ff2dd03a35c6490fd67615f3ee99b152efcb00f448c84032f2ed15",
+      "samples": [
+        {
+          "frame": 8,
+          "native_blue_image": "quality/additional-audits/approved-four-new-times-01/a002-831d80bef0ff-f8-native640-blue.png",
+          "native_crop_2x_image": "quality/additional-audits/approved-four-new-times-01/a002-831d80bef0ff-f8-figure-head-hair2x.png",
+          "alpha128_bbox_xyxy": [
+            217,
+            61,
+            430,
+            330
+          ],
+          "height_px": 269,
+          "feet_y_exclusive": 330,
+          "green_opaque_edge_pixels_descriptive": 0,
+          "rgba_sample_sha256": "068895c7b807cfc317f447540c20e1bff1b700b2dc3b3641211dac9cb07fb68e"
+        },
+        {
+          "frame": 32,
+          "native_blue_image": "quality/additional-audits/approved-four-new-times-01/a002-831d80bef0ff-f32-native640-blue.png",
+          "native_crop_2x_image": "quality/additional-audits/approved-four-new-times-01/a002-831d80bef0ff-f32-figure-head-hair2x.png",
+          "alpha128_bbox_xyxy": [
+            217,
+            66,
+            431,
+            330
+          ],
+          "height_px": 264,
+          "feet_y_exclusive": 330,
+          "green_opaque_edge_pixels_descriptive": 0,
+          "rgba_sample_sha256": "a1d9fb0db6f9e7dbb7c35eecff5778ec5af9ec5bcd26537100ea95ad18cbd8f2"
+        },
+        {
+          "frame": 56,
+          "native_blue_image": "quality/additional-audits/approved-four-new-times-01/a002-831d80bef0ff-f56-native640-blue.png",
+          "native_crop_2x_image": "quality/additional-audits/approved-four-new-times-01/a002-831d80bef0ff-f56-figure-head-hair2x.png",
+          "alpha128_bbox_xyxy": [
+            223,
+            60,
+            441,
+            330
+          ],
+          "height_px": 270,
+          "feet_y_exclusive": 330,
+          "green_opaque_edge_pixels_descriptive": 0,
+          "rgba_sample_sha256": "7a17808b940cfc95c942e2ec81e2b572ef3c81ec9f88b50e6c1a7f3e63451afc"
+        },
+        {
+          "frame": 80,
+          "native_blue_image": "quality/additional-audits/approved-four-new-times-01/a002-831d80bef0ff-f80-native640-blue.png",
+          "native_crop_2x_image": "quality/additional-audits/approved-four-new-times-01/a002-831d80bef0ff-f80-figure-head-hair2x.png",
+          "alpha128_bbox_xyxy": [
+            218,
+            55,
+            434,
+            330
+          ],
+          "height_px": 275,
+          "feet_y_exclusive": 330,
+          "green_opaque_edge_pixels_descriptive": 0,
+          "rgba_sample_sha256": "d43ec5d5b26ca6f98201ce1966f26a2e57e9483a85182c90383cb0633d400589"
+        },
+        {
+          "frame": 104,
+          "native_blue_image": "quality/additional-audits/approved-four-new-times-01/a002-831d80bef0ff-f104-native640-blue.png",
+          "native_crop_2x_image": "quality/additional-audits/approved-four-new-times-01/a002-831d80bef0ff-f104-figure-head-hair2x.png",
+          "alpha128_bbox_xyxy": [
+            201,
+            59,
+            412,
+            330
+          ],
+          "height_px": 271,
+          "feet_y_exclusive": 330,
+          "green_opaque_edge_pixels_descriptive": 0,
+          "rgba_sample_sha256": "286d69d5f6ede1466bb13ef181743ed62fa62697dc7a50d50e40540e4c289e8b"
+        },
+        {
+          "frame": 128,
+          "native_blue_image": "quality/additional-audits/approved-four-new-times-01/a002-831d80bef0ff-f128-native640-blue.png",
+          "native_crop_2x_image": "quality/additional-audits/approved-four-new-times-01/a002-831d80bef0ff-f128-figure-head-hair2x.png",
+          "alpha128_bbox_xyxy": [
+            213,
+            63,
+            428,
+            330
+          ],
+          "height_px": 267,
+          "feet_y_exclusive": 330,
+          "green_opaque_edge_pixels_descriptive": 0,
+          "rgba_sample_sha256": "de1db967fa71a85e6c9860890ca4fcc5d9e5510f91431cb7bddf1a9e34451844"
+        },
+        {
+          "frame": 152,
+          "native_blue_image": "quality/additional-audits/approved-four-new-times-01/a002-831d80bef0ff-f152-native640-blue.png",
+          "native_crop_2x_image": "quality/additional-audits/approved-four-new-times-01/a002-831d80bef0ff-f152-figure-head-hair2x.png",
+          "alpha128_bbox_xyxy": [
+            219,
+            57,
+            437,
+            330
+          ],
+          "height_px": 273,
+          "feet_y_exclusive": 330,
+          "green_opaque_edge_pixels_descriptive": 0,
+          "rgba_sample_sha256": "4bd325d80dbbb11575432ce534c19baf9970aa8381a259959ff5b3a6fa65de4c"
+        },
+        {
+          "frame": 176,
+          "native_blue_image": "quality/additional-audits/approved-four-new-times-01/a002-831d80bef0ff-f176-native640-blue.png",
+          "native_crop_2x_image": "quality/additional-audits/approved-four-new-times-01/a002-831d80bef0ff-f176-figure-head-hair2x.png",
+          "alpha128_bbox_xyxy": [
+            206,
+            63,
+            424,
+            330
+          ],
+          "height_px": 267,
+          "feet_y_exclusive": 330,
+          "green_opaque_edge_pixels_descriptive": 0,
+          "rgba_sample_sha256": "617ba6e87124c7643da62e4a46c099c524193fea279d497658c2030cd4b8a348"
+        },
+        {
+          "frame": 200,
+          "native_blue_image": "quality/additional-audits/approved-four-new-times-01/a002-831d80bef0ff-f200-native640-blue.png",
+          "native_crop_2x_image": "quality/additional-audits/approved-four-new-times-01/a002-831d80bef0ff-f200-figure-head-hair2x.png",
+          "alpha128_bbox_xyxy": [
+            212,
+            60,
+            425,
+            330
+          ],
+          "height_px": 270,
+          "feet_y_exclusive": 330,
+          "green_opaque_edge_pixels_descriptive": 0,
+          "rgba_sample_sha256": "2b24847ff9b6258ceb32d0e5633259624db3d28ac2685a3aa5218e977a93b574"
+        },
+        {
+          "frame": 224,
+          "native_blue_image": "quality/additional-audits/approved-four-new-times-01/a002-831d80bef0ff-f224-native640-blue.png",
+          "native_crop_2x_image": "quality/additional-audits/approved-four-new-times-01/a002-831d80bef0ff-f224-figure-head-hair2x.png",
+          "alpha128_bbox_xyxy": [
+            217,
+            60,
+            430,
+            330
+          ],
+          "height_px": 270,
+          "feet_y_exclusive": 330,
+          "green_opaque_edge_pixels_descriptive": 0,
+          "rgba_sample_sha256": "702105c554637a0b956e7bff863c27e6e7ca27bd4ba77d3e942d2b9f36f8fecf"
+        }
+      ],
+      "prior_native_blue_f0_120_239_reused": false,
+      "new_frames_only": true,
+      "manual_additional_frames_reviewed": [
+        8,
+        32,
+        56,
+        80,
+        104,
+        128,
+        152,
+        176,
+        200,
+        224
+      ],
+      "all240_visual_or_realtime_playback_performed": false,
+      "hair_face_edge_scope_result": "No opaque white hair-gap island, clear green rim, facial collapse or abnormal proportion was observed in these ten original-pixel blue/2x samples. Fast inter-sample flicker remains outside this sample-only review.",
+      "sampled_feet_y_range": [
+        330,
+        330
+      ],
+      "sampled_height_range": [
+        264,
+        275
+      ],
+      "green_opaque_edge_descriptive_max": 0,
+      "reviewed_page_files": [
+        "quality/additional-audits/approved-four-new-times-01/a002-831d80bef0ff-review-page1.png",
+        "quality/additional-audits/approved-four-new-times-01/a002-831d80bef0ff-review-page2.png",
+        "quality/additional-audits/approved-four-new-times-01/a002-831d80bef0ff-review-page3.png"
+      ],
+      "overall_additional_verdict": "NO_NEW_DEFECT_OBSERVED_IN_SCOPED_ADDITIONAL_REVIEW",
+      "reason": "Ten new full-figure blue/2x frames and fifteen original RGB lower-body/rear-frill samples showed no matching rounded black/peach appendage. Blue-purple underskirt shadows remain consistent lace shading rather than an independently moving lobe. This is scoped evidence, not all-frame approval.",
+      "source_file": "source/library/a002/attempt-2/左右张望.mp4",
+      "source_sha256": "d59da78241126412e94fb746b347b0fd99104d9847000d4dcf478278769050f4",
+      "source_lower_body_and_rear_frill_frames_reviewed": [
+        0,
+        56,
+        64,
+        72,
+        80,
+        104,
+        120,
+        128,
+        136,
+        144,
+        152,
+        160,
+        176,
+        200,
+        239
+      ],
+      "final_approval_reaffirmed": "No new scoped objection; root retains ownership of complete release status."
+    },
+    {
+      "action_id": "a004",
+      "name": "点击回应-傲娇",
+      "file": "pet/kurisu-animation/点击回应-傲娇.webm",
+      "sha256": "2c3e714a9418d53395de459e89299233f823936a682ff50e64088f63754cb1d8",
+      "samples": [
+        {
+          "frame": 8,
+          "native_blue_image": "quality/additional-audits/approved-four-new-times-01/a004-2c3e714a9418-f8-native640-blue.png",
+          "native_crop_2x_image": "quality/additional-audits/approved-four-new-times-01/a004-2c3e714a9418-f8-figure-head-hair2x.png",
+          "alpha128_bbox_xyxy": [
+            217,
+            60,
+            431,
+            330
+          ],
+          "height_px": 270,
+          "feet_y_exclusive": 330,
+          "green_opaque_edge_pixels_descriptive": 0,
+          "rgba_sample_sha256": "3fe08e603af8be0bd11db5699606d51634b15ae37ef68b4d399e18327dfe82f7"
+        },
+        {
+          "frame": 32,
+          "native_blue_image": "quality/additional-audits/approved-four-new-times-01/a004-2c3e714a9418-f32-native640-blue.png",
+          "native_crop_2x_image": "quality/additional-audits/approved-four-new-times-01/a004-2c3e714a9418-f32-figure-head-hair2x.png",
+          "alpha128_bbox_xyxy": [
+            217,
+            65,
+            432,
+            330
+          ],
+          "height_px": 265,
+          "feet_y_exclusive": 330,
+          "green_opaque_edge_pixels_descriptive": 0,
+          "rgba_sample_sha256": "5b61ab10f8ab36a56b976b6b6fc333c907ab2edca501a21c29c74b2f874feb21"
+        },
+        {
+          "frame": 56,
+          "native_blue_image": "quality/additional-audits/approved-four-new-times-01/a004-2c3e714a9418-f56-native640-blue.png",
+          "native_crop_2x_image": "quality/additional-audits/approved-four-new-times-01/a004-2c3e714a9418-f56-figure-head-hair2x.png",
+          "alpha128_bbox_xyxy": [
+            217,
+            63,
+            431,
+            329
+          ],
+          "height_px": 266,
+          "feet_y_exclusive": 329,
+          "green_opaque_edge_pixels_descriptive": 0,
+          "rgba_sample_sha256": "e26ec7ee4a2ff7c9b573fec8da71c5712e11ecf3172b0d4b4a77ec6ea3a7981e"
+        },
+        {
+          "frame": 80,
+          "native_blue_image": "quality/additional-audits/approved-four-new-times-01/a004-2c3e714a9418-f80-native640-blue.png",
+          "native_crop_2x_image": "quality/additional-audits/approved-four-new-times-01/a004-2c3e714a9418-f80-figure-head-hair2x.png",
+          "alpha128_bbox_xyxy": [
+            217,
+            68,
+            430,
+            329
+          ],
+          "height_px": 261,
+          "feet_y_exclusive": 329,
+          "green_opaque_edge_pixels_descriptive": 0,
+          "rgba_sample_sha256": "8cabad1c92137185250225beae2f47d7160589081917055f8d820d198732ba09"
+        },
+        {
+          "frame": 104,
+          "native_blue_image": "quality/additional-audits/approved-four-new-times-01/a004-2c3e714a9418-f104-native640-blue.png",
+          "native_crop_2x_image": "quality/additional-audits/approved-four-new-times-01/a004-2c3e714a9418-f104-figure-head-hair2x.png",
+          "alpha128_bbox_xyxy": [
+            223,
+            63,
+            435,
+            329
+          ],
+          "height_px": 266,
+          "feet_y_exclusive": 329,
+          "green_opaque_edge_pixels_descriptive": 0,
+          "rgba_sample_sha256": "d929222ce7846858fee0fabce47150209492ec23306347ab5206ffc604252abb"
+        },
+        {
+          "frame": 128,
+          "native_blue_image": "quality/additional-audits/approved-four-new-times-01/a004-2c3e714a9418-f128-native640-blue.png",
+          "native_crop_2x_image": "quality/additional-audits/approved-four-new-times-01/a004-2c3e714a9418-f128-figure-head-hair2x.png",
+          "alpha128_bbox_xyxy": [
+            224,
+            62,
+            432,
+            329
+          ],
+          "height_px": 267,
+          "feet_y_exclusive": 329,
+          "green_opaque_edge_pixels_descriptive": 0,
+          "rgba_sample_sha256": "7254f8a323a72197a3a73b497ef03dd5953959a45dc445d327f946b562009b1f"
+        },
+        {
+          "frame": 152,
+          "native_blue_image": "quality/additional-audits/approved-four-new-times-01/a004-2c3e714a9418-f152-native640-blue.png",
+          "native_crop_2x_image": "quality/additional-audits/approved-four-new-times-01/a004-2c3e714a9418-f152-figure-head-hair2x.png",
+          "alpha128_bbox_xyxy": [
+            223,
+            59,
+            438,
+            329
+          ],
+          "height_px": 270,
+          "feet_y_exclusive": 329,
+          "green_opaque_edge_pixels_descriptive": 0,
+          "rgba_sample_sha256": "539c887e5386ca1b054427bf0312aad12e1ec6fcd37a9baadb00aa25dbc76844"
+        },
+        {
+          "frame": 176,
+          "native_blue_image": "quality/additional-audits/approved-four-new-times-01/a004-2c3e714a9418-f176-native640-blue.png",
+          "native_crop_2x_image": "quality/additional-audits/approved-four-new-times-01/a004-2c3e714a9418-f176-figure-head-hair2x.png",
+          "alpha128_bbox_xyxy": [
+            217,
+            60,
+            426,
+            329
+          ],
+          "height_px": 269,
+          "feet_y_exclusive": 329,
+          "green_opaque_edge_pixels_descriptive": 0,
+          "rgba_sample_sha256": "58fc8e99b6e2d09aaadaada0ffcd33191d3dc770a7012ff3a394b8a5232068e2"
+        },
+        {
+          "frame": 200,
+          "native_blue_image": "quality/additional-audits/approved-four-new-times-01/a004-2c3e714a9418-f200-native640-blue.png",
+          "native_crop_2x_image": "quality/additional-audits/approved-four-new-times-01/a004-2c3e714a9418-f200-figure-head-hair2x.png",
+          "alpha128_bbox_xyxy": [
+            217,
+            60,
+            431,
+            329
+          ],
+          "height_px": 269,
+          "feet_y_exclusive": 329,
+          "green_opaque_edge_pixels_descriptive": 0,
+          "rgba_sample_sha256": "461e5045b0a59e44f938499cae1b648f56ad7e89e581421d5c4c1eb39949338f"
+        },
+        {
+          "frame": 224,
+          "native_blue_image": "quality/additional-audits/approved-four-new-times-01/a004-2c3e714a9418-f224-native640-blue.png",
+          "native_crop_2x_image": "quality/additional-audits/approved-four-new-times-01/a004-2c3e714a9418-f224-figure-head-hair2x.png",
+          "alpha128_bbox_xyxy": [
+            217,
+            60,
+            431,
+            329
+          ],
+          "height_px": 269,
+          "feet_y_exclusive": 329,
+          "green_opaque_edge_pixels_descriptive": 0,
+          "rgba_sample_sha256": "c388c00721db3177d6e80047fb088594112b0a99c783f0637240a71c784b7bcf"
+        }
+      ],
+      "prior_native_blue_f0_120_239_reused": false,
+      "new_frames_only": true,
+      "manual_additional_frames_reviewed": [
+        8,
+        32,
+        56,
+        80,
+        104,
+        128,
+        152,
+        176,
+        200,
+        224
+      ],
+      "all240_visual_or_realtime_playback_performed": false,
+      "hair_face_edge_scope_result": "No opaque white hair-gap island, clear green rim, facial collapse or abnormal proportion was observed in these ten original-pixel blue/2x samples. Fast inter-sample flicker remains outside this sample-only review.",
+      "sampled_feet_y_range": [
+        329,
+        330
+      ],
+      "sampled_height_range": [
+        261,
+        270
+      ],
+      "green_opaque_edge_descriptive_max": 0,
+      "reviewed_page_files": [
+        "quality/additional-audits/approved-four-new-times-01/a004-2c3e714a9418-review-page1.png",
+        "quality/additional-audits/approved-four-new-times-01/a004-2c3e714a9418-review-page2.png",
+        "quality/additional-audits/approved-four-new-times-01/a004-2c3e714a9418-review-page3.png"
+      ],
+      "overall_additional_verdict": "RECOMMEND_WITHDRAW_DO_NOT_RELEASE",
+      "reason": "An independent dark rounded lobe below the right rear frill atframes56/64 becomes a pink elongated projection in120–160. Both real hands are crossed at the chest and both boots remain present. It is not ordinary white lace or the separate auburn hair tip.",
+      "final_approval_reaffirmed": false,
+      "withdrawal_recommendation_file": "quality/additional-audits/approved-four-new-times-01/a004-withdrawal-recommendation.json",
+      "source_file": "source/round-2/点击回应-傲娇.mp4",
+      "source_sha256": "333f1ba6acda858ecc8be5a24630e1d7d414a3988048a49f1ca5e7262dfddee4",
+      "source_trace_frames_personally_reviewed": [
+        0,
+        56,
+        64,
+        72,
+        80,
+        104,
+        120,
+        128,
+        136,
+        144,
+        152,
+        160,
+        176,
+        200,
+        239
+      ]
+    },
+    {
+      "action_id": "a005",
+      "name": "点击回应-开心挥手",
+      "file": "pet/kurisu-animation/点击回应-开心挥手.webm",
+      "sha256": "bdf17c8b2df35991297ae1a998132cd9edaa38c48f9a900fa4e0b3d93c2401d0",
+      "samples": [
+        {
+          "frame": 8,
+          "native_blue_image": "quality/additional-audits/approved-four-new-times-01/a005-bdf17c8b2df3-f8-native640-blue.png",
+          "native_crop_2x_image": "quality/additional-audits/approved-four-new-times-01/a005-bdf17c8b2df3-f8-figure-head-hair2x.png",
+          "alpha128_bbox_xyxy": [
+            216,
+            58,
+            432,
+            330
+          ],
+          "height_px": 272,
+          "feet_y_exclusive": 330,
+          "green_opaque_edge_pixels_descriptive": 0,
+          "rgba_sample_sha256": "208d48f17e4497f6b8abb71a899cacb2b443a4161f2ccee7deb7fba9693ecfce"
+        },
+        {
+          "frame": 32,
+          "native_blue_image": "quality/additional-audits/approved-four-new-times-01/a005-bdf17c8b2df3-f32-native640-blue.png",
+          "native_crop_2x_image": "quality/additional-audits/approved-four-new-times-01/a005-bdf17c8b2df3-f32-figure-head-hair2x.png",
+          "alpha128_bbox_xyxy": [
+            217,
+            63,
+            431,
+            330
+          ],
+          "height_px": 267,
+          "feet_y_exclusive": 330,
+          "green_opaque_edge_pixels_descriptive": 0,
+          "rgba_sample_sha256": "8c4ae6f8cea07673f4db4d2c9a1a8cf7e38256720deb8dd8a731829a985bd572"
+        },
+        {
+          "frame": 56,
+          "native_blue_image": "quality/additional-audits/approved-four-new-times-01/a005-bdf17c8b2df3-f56-native640-blue.png",
+          "native_crop_2x_image": "quality/additional-audits/approved-four-new-times-01/a005-bdf17c8b2df3-f56-figure-head-hair2x.png",
+          "alpha128_bbox_xyxy": [
+            221,
+            52,
+            435,
+            330
+          ],
+          "height_px": 278,
+          "feet_y_exclusive": 330,
+          "green_opaque_edge_pixels_descriptive": 0,
+          "rgba_sample_sha256": "076f7b17b84f18a860b448dd6a1cdea1f57b9a61e95d24bc6019e4e176bbf466"
+        },
+        {
+          "frame": 80,
+          "native_blue_image": "quality/additional-audits/approved-four-new-times-01/a005-bdf17c8b2df3-f80-native640-blue.png",
+          "native_crop_2x_image": "quality/additional-audits/approved-four-new-times-01/a005-bdf17c8b2df3-f80-figure-head-hair2x.png",
+          "alpha128_bbox_xyxy": [
+            219,
+            53,
+            434,
+            330
+          ],
+          "height_px": 277,
+          "feet_y_exclusive": 330,
+          "green_opaque_edge_pixels_descriptive": 0,
+          "rgba_sample_sha256": "9c0b448bb21b01f1c889b2c997c01f79c9db6d4c166b0f25722e97b8821d5736"
+        },
+        {
+          "frame": 104,
+          "native_blue_image": "quality/additional-audits/approved-four-new-times-01/a005-bdf17c8b2df3-f104-native640-blue.png",
+          "native_crop_2x_image": "quality/additional-audits/approved-four-new-times-01/a005-bdf17c8b2df3-f104-figure-head-hair2x.png",
+          "alpha128_bbox_xyxy": [
+            215,
+            57,
+            431,
+            330
+          ],
+          "height_px": 273,
+          "feet_y_exclusive": 330,
+          "green_opaque_edge_pixels_descriptive": 0,
+          "rgba_sample_sha256": "9ddf7238ce75dbc5c024c72ea469ea352926b3c6c62ade230b8a297dd32c52fc"
+        },
+        {
+          "frame": 128,
+          "native_blue_image": "quality/additional-audits/approved-four-new-times-01/a005-bdf17c8b2df3-f128-native640-blue.png",
+          "native_crop_2x_image": "quality/additional-audits/approved-four-new-times-01/a005-bdf17c8b2df3-f128-figure-head-hair2x.png",
+          "alpha128_bbox_xyxy": [
+            220,
+            56,
+            435,
+            330
+          ],
+          "height_px": 274,
+          "feet_y_exclusive": 330,
+          "green_opaque_edge_pixels_descriptive": 0,
+          "rgba_sample_sha256": "153843d43bd86e63f140754f8672b883af8bf7faa9b45a401671010bff2af4d1"
+        },
+        {
+          "frame": 152,
+          "native_blue_image": "quality/additional-audits/approved-four-new-times-01/a005-bdf17c8b2df3-f152-native640-blue.png",
+          "native_crop_2x_image": "quality/additional-audits/approved-four-new-times-01/a005-bdf17c8b2df3-f152-figure-head-hair2x.png",
+          "alpha128_bbox_xyxy": [
+            222,
+            56,
+            436,
+            330
+          ],
+          "height_px": 274,
+          "feet_y_exclusive": 330,
+          "green_opaque_edge_pixels_descriptive": 0,
+          "rgba_sample_sha256": "84350b0cec20bdc8dcdbf5fa639d693a0af286f311504786c7c73563e3d354dd"
+        },
+        {
+          "frame": 176,
+          "native_blue_image": "quality/additional-audits/approved-four-new-times-01/a005-bdf17c8b2df3-f176-native640-blue.png",
+          "native_crop_2x_image": "quality/additional-audits/approved-four-new-times-01/a005-bdf17c8b2df3-f176-figure-head-hair2x.png",
+          "alpha128_bbox_xyxy": [
+            216,
+            58,
+            432,
+            330
+          ],
+          "height_px": 272,
+          "feet_y_exclusive": 330,
+          "green_opaque_edge_pixels_descriptive": 0,
+          "rgba_sample_sha256": "9af8e737b297dc0c6309a483a9b78f110e634b5459b99a88b3e66eb447945c16"
+        },
+        {
+          "frame": 200,
+          "native_blue_image": "quality/additional-audits/approved-four-new-times-01/a005-bdf17c8b2df3-f200-native640-blue.png",
+          "native_crop_2x_image": "quality/additional-audits/approved-four-new-times-01/a005-bdf17c8b2df3-f200-figure-head-hair2x.png",
+          "alpha128_bbox_xyxy": [
+            216,
+            58,
+            432,
+            330
+          ],
+          "height_px": 272,
+          "feet_y_exclusive": 330,
+          "green_opaque_edge_pixels_descriptive": 0,
+          "rgba_sample_sha256": "a22e6a58a694bac172c6dfd7178ab2d11e2851697a4684c14e70c326668189ae"
+        },
+        {
+          "frame": 224,
+          "native_blue_image": "quality/additional-audits/approved-four-new-times-01/a005-bdf17c8b2df3-f224-native640-blue.png",
+          "native_crop_2x_image": "quality/additional-audits/approved-four-new-times-01/a005-bdf17c8b2df3-f224-figure-head-hair2x.png",
+          "alpha128_bbox_xyxy": [
+            217,
+            60,
+            432,
+            330
+          ],
+          "height_px": 270,
+          "feet_y_exclusive": 330,
+          "green_opaque_edge_pixels_descriptive": 0,
+          "rgba_sample_sha256": "232c5c6cc1d7a5dea94b81f31e88385eaf6e327039e5db9e378b846885c1a0c0"
+        }
+      ],
+      "prior_native_blue_f0_120_239_reused": false,
+      "new_frames_only": true,
+      "manual_additional_frames_reviewed": [
+        8,
+        32,
+        56,
+        80,
+        104,
+        128,
+        152,
+        176,
+        200,
+        224
+      ],
+      "all240_visual_or_realtime_playback_performed": false,
+      "hair_face_edge_scope_result": "No opaque white hair-gap island, clear green rim, facial collapse or abnormal proportion was observed in these ten original-pixel blue/2x samples. Fast inter-sample flicker remains outside this sample-only review.",
+      "sampled_feet_y_range": [
+        330,
+        330
+      ],
+      "sampled_height_range": [
+        267,
+        278
+      ],
+      "green_opaque_edge_descriptive_max": 0,
+      "reviewed_page_files": [
+        "quality/additional-audits/approved-four-new-times-01/a005-bdf17c8b2df3-review-page1.png",
+        "quality/additional-audits/approved-four-new-times-01/a005-bdf17c8b2df3-review-page2.png",
+        "quality/additional-audits/approved-four-new-times-01/a005-bdf17c8b2df3-review-page3.png"
+      ],
+      "overall_additional_verdict": "RECOMMEND_WITHDRAW_DO_NOT_RELEASE",
+      "reason": "A flesh-pink rounded extra lobe protrudes below the right rear frill while both hands and both boots are separately visible. It is present in the original generated RGB, not a color/Alpha artifact.",
+      "final_approval_reaffirmed": false,
+      "withdrawal_recommendation_file": "quality/additional-audits/approved-four-new-times-01/a005-withdrawal-recommendation.json",
+      "source_file": "source/library/a005/attempt-2/点击回应-开心挥手.mp4",
+      "source_sha256": "58af767edf36e9811cd4ebf66ab1cc5a5a6672cb96b6acfaf6a110f41ca6dd6b",
+      "source_trace_frames_personally_reviewed": [
+        0,
+        56,
+        64,
+        72,
+        80,
+        104,
+        120,
+        128,
+        136,
+        144,
+        152,
+        160,
+        176,
+        200,
+        239
+      ]
+    }
+  ],
+  "reviewed_at": "2026-10-30T21:29:39.402006+00:00",
+  "visual_review_performed": true,
+  "reason": "Forty additional frames were personally inspected at native blue/2x. No new white-island/green-edge failure was found in these samples, but new foreground appendage concerns invalidate a blanket pass: a004/a005 withdrawal recommended, a001 handed to independent source tracing, a002 has no new scoped objection.",
+  "full240_technical_verification_repeated": false,
+  "continuous_video_playback_performed": false,
+  "technical_metrics_are_not_visual_pass": true,
+  "final_qualified_count_changed_by_this_agent": false,
+  "all_four_passed": false
+}

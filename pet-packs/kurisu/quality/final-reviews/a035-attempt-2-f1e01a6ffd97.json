@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "action_id": "a035",
+  "source_attempt_index": 2,
+  "spec_revision_id": "programmer-research-v2-2026-10-31",
+  "candidate_sha256": "f1e01a6ffd97215bf05734723e5cb94084aa9ea721042782ce87c207045aea30",
+  "source_sha256": "a1f440355ce3ce6df7379ac782437a8f0f5cf01a0e647fccc95eb402f852f513",
+  "candidate_file": "source/library/a035/attempt-2/processing-9d2b8d36-c324-4ba8-b6d4-74dcfd0a9f8b/查看显微镜（沿用原实验室镜头）.webm",
+  "source_task_id": "8d46a986-b1da-409c-8f61-bdd34e543262",
+  "verdict": "pass",
+  "reviewer": "batch30_final_qa_parallel independent agent",
+  "reviewed_at": "2026-10-31T10:51:14.689351+00:00",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "defects": [],
+  "summary": "纠正后新SHA独立最终PASS。原source字节SHA复核相同，未重审/重解码RGB；240帧640x360/24fps/10s/VP9 Alpha/无音轨，逐帧alpha与边界、固定残余背景指标全部通过。640四底和原像素脸发3倍抽样显示显微镜完整在画内、观察动作明确，目镜自然遮单眼而另一眼及口鼻可见，未见绿边/残白/新光斑或裁切；末帧显微镜收回空手。Chrome独立页实际完整10秒播放、同尺寸idle切换已完成，脚位首末1px差。人工抽样与全240指标分别记录。",
+  "reason": "纠正后新SHA独立最终PASS。原source字节SHA复核相同，未重审/重解码RGB；240帧640x360/24fps/10s/VP9 Alpha/无音轨，逐帧alpha与边界、固定残余背景指标全部通过。640四底和原像素脸发3倍抽样显示显微镜完整在画内、观察动作明确，目镜自然遮单眼而另一眼及口鼻可见，未见绿边/残白/新光斑或裁切；末帧显微镜收回空手。Chrome独立页实际完整10秒播放、同尺寸idle切换已完成，脚位首末1px差。人工抽样与全240指标分别记录。",
+  "technical": {
+    "frames": 240,
+    "width": 640,
+    "height": 360,
+    "fps": 24,
+    "duration_seconds": 10.0,
+    "codec": "vp9",
+    "alpha_mode": "1",
+    "audio_streams": 0,
+    "all240_alpha0to255": true,
+    "all240_outer_boundary_alpha_zero": true,
+    "outside6_alpha_gt8_bad_frames": [],
+    "residual_metric_definition": "Alpha >8 pixels outside the 6-pixel square dilation of alpha>127 foreground; fixed screening metric, no matte changes.",
+    "first_bbox_alpha127": [
+      215,
+      60,
+      435,
+      330
+    ],
+    "last_bbox_alpha127": [
+      214,
+      61,
+      434,
+      331
+    ],
+    "feet_delta_px": 1,
+    "minimum_foreground_bottom_clearance_px": 6
+  },
+  "technical_proof": "quality/final-reviews/a035-f1e01a6ffd97/decoded-technical240.json",
+  "frame0_rgba_file": "quality/final-reviews/a035-f1e01a6ffd97/f000-rgba.png",
+  "evidence_directory": "quality/final-reviews/a035-f1e01a6ffd97",
+  "inspection_scope": {
+    "all240_automated_metrics": [
+      "decoded RGBA alpha range",
+      "outermost boundary alpha",
+      "residual-background fixed screening metric",
+      "foreground bounding boxes"
+    ],
+    "manual_native640_four_background_frames": [
+      0,
+      96,
+      168,
+      239
+    ],
+    "manual_native640_additional_blue_frames": [],
+    "manual_face_hair_native640_ROI_nearest3x_frames": [
+      120
+    ],
+    "actual_playback": "quality/final-reviews/a035-f1e01a6ffd97/actual-browser-playback.json",
+    "limits": [
+      "All240 technical coverage is not all240 manual visual coverage.",
+      "Native full-body cells stay640x360; face/hair crops enlarge original decoded pixels with nearest-neighbor; no100px thumbnail conclusion.",
+      "Actual playback completion and sampled human observations are separate evidence.",
+      "Accepted idle is slightly warmer; comparison supports scale/position only, not exact RGB matching."
+    ]
+  },
+  "new_paid_calls": 0,
+  "reviewer_pixel_or_recipe_changes": 0,
+  "approval_or_runtime_mutations": false,
+  "local_correction_execution_proof": "../../temp/kurisu/batch30-local-035-048-corrections-01/a035/execution-audit.json",
+  "original_source_bytes_sha256_reverified": true,
+  "visual_findings": {
+    "instrument_use": "Microscope eyepiece covers one eye naturally during use. Other eye, mouth and nose remain visible. This source-approved instrument use is action-specific.",
+    "endpoint": "Microscope fully absent at f239, hands neutral; first/last standing270px height and feet330/331.",
+    "matte": "Four native640 backgrounds and enlarged face/hair show no conspicuous green edge, residual background, white islands or cropped subject/instrument."
+  }
+}

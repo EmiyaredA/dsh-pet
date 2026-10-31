@@ -1,0 +1,21 @@
+{
+  "browser": "Chrome dedicated a090 final QA tab",
+  "candidate_file": "source/library/a090/attempt-1/processing-39c80bcf-c160-4f11-a452-c1df801f3e8a/扶额无语.webm",
+  "candidate_sha256": "f8fceced7d545f6332d72473f3d164130bd709358ecc49cac64664e2ba740f82",
+  "css_size": [
+    640,
+    360
+  ],
+  "duration": 10,
+  "started_at": "2026-10-31T11:55:01.849Z",
+  "ended_at": "2026-10-31T11:55:11.853Z",
+  "completed_10s": true,
+  "frame_callbacks_before_idle_switch": 238,
+  "first_media_time": 0.042,
+  "last_media_time": 9.958,
+  "idle_switch_performed": true,
+  "paused_after_switch": true,
+  "continuous_human_gaze_claim": false,
+  "observation_scope": "Actual full real-time playback executed; human evidence uses sampled browser screenshots at opening/completion/idle and named native640 stills plus original-pixel enlarged face/hair. No manual all-frame claim.",
+  "dropped_frames": "Not measured; callback count is not dropped-frame count."
+}

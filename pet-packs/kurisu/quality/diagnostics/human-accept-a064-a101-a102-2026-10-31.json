@@ -1,0 +1,140 @@
+{
+  "id": "human-accept-a064-a101-a102-2026-10-31T05-34-07.419426+00-00",
+  "at": "2026-10-31T05:34:07.419426+00:00",
+  "user_quote": "α64 101 102通过。",
+  "decisions": [
+    {
+      "id": "human-accept-a064-a101-a102-2026-10-31T05-34-07.419426+00-00",
+      "source": "user",
+      "user_quote": "α64 101 102通过。",
+      "interpreted_action_id": "a101",
+      "accepted_at": "2026-10-31T05:34:07.419426+00:00",
+      "file": "pet/kurisu-animation/工作状态-托腮推理.webm",
+      "source_archive_file": "source/library/withdrawn/a101/06ebc0e33ac8ecd6/工作状态-托腮推理.webm",
+      "sha256": "06ebc0e33ac8ecd63b407f061e8196442f76eb9f1a583750896e3a81883f4ff4",
+      "basis": "Explicit human acceptance of latest archived preview version; historical visual concerns retained, not relabeled as independent QA pass.",
+      "technical240_verified": true,
+      "new_model_calls": 0,
+      "additional_processing_or_correction": false
+    },
+    {
+      "id": "human-accept-a064-a101-a102-2026-10-31T05-34-07.419426+00-00",
+      "source": "user",
+      "user_quote": "α64 101 102通过。",
+      "interpreted_action_id": "a102",
+      "accepted_at": "2026-10-31T05:34:07.419426+00:00",
+      "file": "pet/kurisu-animation/工作状态-专注敲键盘.webm",
+      "source_archive_file": "source/library/withdrawn/a102/3b890f38928effc3/工作状态-专注敲键盘.webm",
+      "sha256": "3b890f38928effc3b3be0823955daa19332f7f47b7d7bd34ff4d98a0611d494a",
+      "basis": "Explicit human acceptance of latest archived preview version; historical visual concerns retained, not relabeled as independent QA pass.",
+      "technical240_verified": true,
+      "new_model_calls": 0,
+      "additional_processing_or_correction": false
+    },
+    {
+      "id": "human-accept-a064-a101-a102-2026-10-31T05-34-07.419426+00-00",
+      "source": "user",
+      "user_quote": "α64 101 102通过。",
+      "interpreted_action_id": "a064",
+      "accepted_at": "2026-10-31T05:34:07.419426+00:00",
+      "file": "pet/kurisu-animation/偷吃布丁被发现.webm",
+      "sha256": "aa7a60049bb2760e6bbe32d089a1be1d2d77ddd78b8a5d7cc1852baf3337d181",
+      "basis": "Human confirms the same already independently accepted current final; no duplicate action or additional model call.",
+      "technical240_verified": true,
+      "new_model_calls": 0,
+      "additional_processing_or_correction": false
+    }
+  ],
+  "verification": [
+    {
+      "id": "a101",
+      "sha256": "06ebc0e33ac8ecd63b407f061e8196442f76eb9f1a583750896e3a81883f4ff4",
+      "technical": {
+        "width": 640,
+        "height": 360,
+        "fps": 24,
+        "frames": 240,
+        "duration_seconds": 10.0,
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "first_box": [
+          217,
+          60,
+          431,
+          330
+        ],
+        "last_box": [
+          217,
+          60,
+          431,
+          329
+        ],
+        "audio_streams": 0,
+        "codec": "vp9",
+        "all_frames_have_alpha": true,
+        "endpoint_geometry": {
+          "feet_delta_px": -1,
+          "height_delta_px": -1
+        },
+        "background_clear": true,
+        "endpoint_rgba_mean_absolute_difference": 2.1965974353896427,
+        "transparent_fraction": 0.820663646556713
+      }
+    },
+    {
+      "id": "a102",
+      "sha256": "3b890f38928effc3b3be0823955daa19332f7f47b7d7bd34ff4d98a0611d494a",
+      "technical": {
+        "width": 640,
+        "height": 360,
+        "fps": 24,
+        "frames": 240,
+        "duration_seconds": 10.0,
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "first_box": [
+          217,
+          59,
+          431,
+          330
+        ],
+        "last_box": [
+          217,
+          60,
+          431,
+          330
+        ],
+        "audio_streams": 0,
+        "codec": "vp9",
+        "all_frames_have_alpha": true,
+        "endpoint_geometry": {
+          "feet_delta_px": 0,
+          "height_delta_px": -1
+        },
+        "background_clear": true,
+        "endpoint_rgba_mean_absolute_difference": 2.101008362026562,
+        "transparent_fraction": 0.8211237160011574
+      }
+    }
+  ],
+  "approved_ids": [
+    "a001",
+    "a002",
+    "a004",
+    "a005",
+    "a006",
+    "a008",
+    "a064",
+    "a070",
+    "a101",
+    "a102",
+    "a103"
+  ],
+  "calls_unchanged": {
+    "calls": 125,
+    "repairs": 27,
+    "other_model_calls": 32
+  },
+  "a064_already_approved_not_recounted": true,
+  "historical_reviews_preserved": true
+}

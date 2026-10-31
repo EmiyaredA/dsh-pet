@@ -1,0 +1,201 @@
+{
+  "schema_version": 1,
+  "action_id": "a011",
+  "source_attempt_index": 2,
+  "candidate_sha256": "758938975742b90ab855b49c8cecfba43e5aeb8fd8c2021929373684899f0c6b",
+  "source_sha256": "87ca1b756c1a5c2afb7d131e67d25d6c4c7b032626e5b885452d9b83a6a670c3",
+  "candidate_file": "source/library/a011/attempt-2/user-selected-key-0a75d900-0c00-4802-93ce-fc8e238c85eb/unapproved-same-recipe-preview.webm",
+  "verdict": "pass_with_bounded_numeric_exception",
+  "reviewer": "animation_qa independent agent",
+  "reviewed_at": "2026-10-31T06:38:35.088303+00:00",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "approval_mutation_performed": false,
+  "reason": "人类已选第2原片，本次只验其加纯背景留白与普通抠像结果。旧strict背景阈值8确实失败；独立重现为22帧、每帧最多4个、Alpha最多10/255的弱像素。正常640四底及最坏相关帧观察没有可见脏底/白岛/明显绿晕或处理新增主体缺失，允许仅此SHA有记录的数值例外；不是全局门禁通过。",
+  "technical": {
+    "decoded_frames": 240,
+    "width": 640,
+    "height": 360,
+    "fps": 24,
+    "duration_seconds": 10,
+    "codec": "vp9",
+    "audio_streams": 0,
+    "all240_alpha_min0_max255": true,
+    "all240_outer_boundary_alpha_zero": true,
+    "first_bbox_alpha127": [
+      217,
+      60,
+      431,
+      330
+    ],
+    "last_bbox_alpha127": [
+      217,
+      60,
+      431,
+      330
+    ],
+    "endpoint_feet_delta_px": 0,
+    "endpoint_height_delta_px": 0,
+    "background_clear_under_legacy_strict_test": false,
+    "bounded_numeric_exception": {
+      "legacy_strict_background_passed": false,
+      "legacy_alpha_threshold": 8,
+      "independently_reproduced": {
+        "affected_frames": 22,
+        "max_pixels_per_affected_frame": 4,
+        "max_alpha": 10,
+        "frames": [
+          78,
+          80,
+          82,
+          84,
+          85,
+          114,
+          138,
+          139,
+          140,
+          141,
+          142,
+          143,
+          144,
+          146,
+          147,
+          148,
+          149,
+          150,
+          151,
+          152,
+          159,
+          227
+        ]
+      },
+      "all240_outer_boundary_alpha_zero": true,
+      "no_pixels_modified": true
+    },
+    "idle_scale": {
+      "idle_sha256": "10717cdea36065ed9e6a0360a7174ff1a79b7dea9523939376980b5f74219132",
+      "idle_first_bbox_alpha127": [
+        217,
+        59,
+        430,
+        330
+      ],
+      "a011_first_bbox_alpha127": [
+        217,
+        60,
+        431,
+        330
+      ],
+      "a011_last_bbox_alpha127": [
+        217,
+        60,
+        431,
+        330
+      ],
+      "existing_source_note": "Human selected original attempt2 content. Paper book, original ear crop and original rear black curved strip are unaltered source content, not introduced by padding/key. This QA does not reselect or redraw the source."
+    },
+    "technical_proof": "quality/final-reviews/a011-758938975742/decoded-technical240.json"
+  },
+  "bounded_exception_policy": {
+    "scope": "This exact immutable candidate SHA only. Root decides release; this report does not release it.",
+    "old_gate_unchanged": true,
+    "legacy_alpha_threshold": 8,
+    "observed_max_alpha": 10,
+    "observed_max_opacity_percent": 3.9215686274509802,
+    "affected_frame_count": 22,
+    "max_outlier_pixels_per_frame": 4,
+    "visual_basis": "Normal640 frame80 on dark, frame138 on saturated blue, frame144 on light and frame239 on checker were personally viewed. No visible dirt/halo was perceived at the known outlier positions. These sparse <=3.922% opacity pixels are distinct from the opaque dark source strip.",
+    "no_additional_correction_performed": true,
+    "no_global_threshold_relaxation": true
+  },
+  "existing_source_visual_note": {
+    "human_selected_source": true,
+    "accepted_known_source_traits": [
+      "Paper book rather than laptop.",
+      "Original slight ear-tip crop; background padding does not repaint lost source content."
+    ],
+    "rear_black_curved_strip": "Visible in source-selected side views; appearance may resemble a garment band or tail-like structure. This review does not assert a definitive category or erase it. Original RGB preservation proof and unchanged recipe establish it is not an added matte artifact. Under root scope, content selection is retained rather than re-opening source choice.",
+    "scope": "Independent result here evaluates ordinary-key processing fidelity/Alpha/scale/action retention, not a fresh redesign of the human-selected source."
+  },
+  "inspection_scope": {
+    "normal640_final_stills_personally_viewed": [
+      {
+        "frame": 0,
+        "background": "blue"
+      },
+      {
+        "frame": 80,
+        "background": "dark"
+      },
+      {
+        "frame": 138,
+        "background": "blue"
+      },
+      {
+        "frame": 144,
+        "background": "light"
+      },
+      {
+        "frame": 239,
+        "background": "checker"
+      },
+      {
+        "frame": 48,
+        "background": "blue"
+      },
+      {
+        "frame": 96,
+        "background": "dark"
+      },
+      {
+        "frame": 120,
+        "background": "blue"
+      },
+      {
+        "frame": 192,
+        "background": "light"
+      }
+    ],
+    "face_hair_nearest3x_from640_personally_viewed": [
+      0,
+      120,
+      239
+    ],
+    "additional_rear_strip6x_personally_viewed": [
+      80
+    ],
+    "actual_playback_proof": "quality/final-reviews/a011-758938975742/actual-browser-playback.json",
+    "all_frame_coverage": "240 independent technical RGBA frames, not240 manual perceptual frames. Existing all243 raw-center RGB padding proof is copied without claiming it was independently re-decoded here.",
+    "limitations": [
+      "Manual playback viewing is sampled screenshots rather than a full continuous human-perception recording.",
+      "No zero-drop/corrupted frame guarantee.",
+      "No reclassification of accepted source content as newly generated or clean canonical redesign."
+    ]
+  },
+  "visual_findings": {
+    "alpha_and_edges": "Reviewed normal640 samples show transparent hair gaps and no conspicuous white islands, large green halo or detached background patch. Face and white costume details remain recognizable;3x antialiasing alone was not treated as deformation.",
+    "motion": "Source front-to-left side-step movement, held paper book, prop lowering/stow and return to empty front stance remain present. No freeze/phase-loop substitution was performed.",
+    "scale_switch": "Own endpoints identical top60/foot330; accepted idle top59/foot330. The1px top/height difference is not an obvious normal-size scale jump. Actual idle→current source switching used the same640 canvas.",
+    "color": "No moving colored light or strong hue change introduced by processing was seen in reviewed samples. Palette was not globally re-fitted."
+  },
+  "defects": [
+    {
+      "severity": "bounded_numeric_exception",
+      "type": "legacy_low_opacity_background_outliers",
+      "source_of_fact": "Independent240-frame decoded Alpha measurement",
+      "affected_frame_count": 22,
+      "max_pixels_per_frame": 4,
+      "max_alpha": 10,
+      "not_a_legacy_strict_pass": true
+    }
+  ],
+  "copied_evidence": [
+    "quality/final-reviews/a011-758938975742/padding-pixel-proof-original.json",
+    "quality/final-reviews/a011-758938975742/legacy-strict-failure-original.json",
+    "quality/final-reviews/a011-758938975742/worker-report-original.json"
+  ],
+  "evidence_directory": "quality/final-reviews/a011-758938975742",
+  "new_paid_calls": 0,
+  "new_repairs_performed": 0,
+  "ledger_or_runtime_changes": false
+}

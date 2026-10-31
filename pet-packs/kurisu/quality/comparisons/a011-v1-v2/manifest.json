@@ -1,0 +1,29 @@
+{
+  "action_id": "a011",
+  "status": "awaiting_human_version_selection",
+  "sources_unchanged": true,
+  "poster_time_seconds": 4,
+  "versions": [
+    {
+      "version": 1,
+      "title": "第1版：已有透明视频的旧版",
+      "detail": "纸本样道具，偏正面/斜身挪步；640×360透明WebM。",
+      "file": "source/library/withdrawn/a011/933a2420a0d6f3ed/抱笔记本侧身挪步.webm",
+      "sha256": "933a2420a0d6f3edacba23373c277b90bfebedd4fca4ae19dda5d1f775d03cad",
+      "poster": "version-1-at-4s.png",
+      "poster_sha256": "a9e2d57c2f39d93169e2aa2984fcda53c05d8f27f8a8000376f533ee9c647527",
+      "media_url": "../../../source/library/withdrawn/a011/933a2420a0d6f3ed/%E6%8A%B1%E7%AC%94%E8%AE%B0%E6%9C%AC%E4%BE%A7%E8%BA%AB%E6%8C%AA%E6%AD%A5.webm"
+    },
+    {
+      "version": 2,
+      "title": "第2版：向左侧身的新原片",
+      "detail": "向左侧身迈步；带绿底原片，尚未输出透明成片，部分时刻耳尖略裁。",
+      "file": "source/library/a011/attempt-2/抱笔记本侧身挪步.mp4",
+      "sha256": "87ca1b756c1a5c2afb7d131e67d25d6c4c7b032626e5b885452d9b83a6a670c3",
+      "poster": "version-2-at-4s.png",
+      "poster_sha256": "d26b2a18b33b7b97e84fd1b2b820cf4420a2fa915a2edddf7f4db82c4affbe88",
+      "media_url": "../../../source/library/a011/attempt-2/%E6%8A%B1%E7%AC%94%E8%AE%B0%E6%9C%AC%E4%BE%A7%E8%BA%AB%E6%8C%AA%E6%AD%A5.mp4"
+    }
+  ],
+  "new_model_calls": 0
+}

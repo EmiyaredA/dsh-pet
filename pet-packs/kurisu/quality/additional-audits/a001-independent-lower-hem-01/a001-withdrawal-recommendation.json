@@ -1,0 +1,116 @@
+{
+  "action_id": "a001",
+  "canonical_file": "pet/kurisu-animation/待机呼吸.webm",
+  "canonical_sha256": "10717cdea36065ed9e6a0360a7174ff1a79b7dea9523939376980b5f74219132",
+  "raw_source_file": "source/round-2/待机呼吸.mp4",
+  "raw_source_sha256": "52354f1b03a5d287531a2cfa3043a5b198843bb27831c19da635f9cb2ca4e183",
+  "raw_frames": 243,
+  "raw_fps": 24,
+  "roi_source_coordinates": [
+    680,
+    580,
+    870,
+    750
+  ],
+  "all243frames_chronological_contact_pages": [
+    "quality/additional-audits/a001-independent-lower-hem-01/a001-raw-contiguous-0-59.png",
+    "quality/additional-audits/a001-independent-lower-hem-01/a001-raw-contiguous-60-119.png",
+    "quality/additional-audits/a001-independent-lower-hem-01/a001-raw-contiguous-120-179.png",
+    "quality/additional-audits/a001-independent-lower-hem-01/a001-raw-contiguous-180-239.png",
+    "quality/additional-audits/a001-independent-lower-hem-01/a001-raw-contiguous-240-242.png"
+  ],
+  "raw_full_context_frames": [
+    8,
+    56,
+    128,
+    152
+  ],
+  "no_source_changes": true,
+  "no_ledger_changes": true,
+  "framewise_visual_review": "All243 original native-source lower-hem ROI frames inspected in chronological contact pages; native fullbody contexts f8/f56/f128/f152 available, f8/f128 directly inspected. This is framewise chronological visual review, not continuous real-time playback.",
+  "physical_anatomical_subtype": "not_assigned_yet",
+  "source_background_not_used_to_make_candidate": true,
+  "reviewed_at": "2026-10-30T21:26:33.460638+00:00",
+  "reviewer": "green_gate_independent_source_tracking",
+  "classification": "unapproved_foreground_appendage",
+  "anatomical_subtype": "Tail-like or extra body piece; precise anatomy not asserted. Definitely not ordinary reference hair/hand/lace from available original evidence.",
+  "withdraw_recommended": true,
+  "reason": "Original MP4 contains a black-outlined pink/brown rounded extension protruding from behind right skirt/stocking, while both actual hands remain at waist and two normal boots are visible. It extends/sways and retreats behind the hem. Approved character reference has no such feature.",
+  "original_foreground_not_palette_or_key_artifact": true,
+  "raw_sample_pixels": [
+    {
+      "frame": 8,
+      "xy": [
+        740,
+        685
+      ],
+      "rgb": [
+        194,
+        144,
+        123
+      ]
+    },
+    {
+      "frame": 8,
+      "xy": [
+        745,
+        690
+      ],
+      "rgb": [
+        195,
+        141,
+        126
+      ]
+    },
+    {
+      "frame": 8,
+      "xy": [
+        750,
+        690
+      ],
+      "rgb": [
+        197,
+        141,
+        127
+      ]
+    }
+  ],
+  "nearby_raw_green_background": {
+    "frame": 8,
+    "xy": [
+      830,
+      710
+    ],
+    "rgb": [
+      58,
+      233,
+      54
+    ]
+  },
+  "visible_example_intervals_native_frames": [
+    [
+      7,
+      16
+    ],
+    [
+      50,
+      67
+    ],
+    [
+      147,
+      156
+    ]
+  ],
+  "interval_note": "Examples of clearly exposed motion, not a claimed exhaustive binary pixel segmentation of all partly occluded frames.",
+  "context_evidence": [
+    "quality/additional-audits/a001-independent-lower-hem-01/a001-raw-f8-full-native1344.png",
+    "quality/additional-audits/a001-independent-lower-hem-01/a001-source-f8-native-crop.png"
+  ],
+  "approved_reference_sha256": "78e84345c8c876360c628310498484c3146e4da5ceae314b3b87e9de8f4c4725",
+  "no_foreground_erasure_allowed": true,
+  "green_only_local_repair_applicable": false,
+  "canonical_media_modified": false,
+  "ledger_modified": false,
+  "runtime_modified": false,
+  "model_calls": 0
+}

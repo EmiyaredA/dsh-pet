@@ -793,7 +793,7 @@ class PetSprite {
 
   // ---- 漫游（rAF 驱动，动画首尾各 leadSec/tailSec 秒原地不动；几何在 shared/planMove） ----
   // preferredName 传入时固定使用该动画（右键菜单点播移动动画），否则与随机链一致随机选
-  tryMove(preferredName, playbackId) {
+  tryMove(preferredName, playbackId, allowTurnAround = false) {
     if (this.moveRef !== null || this.pendingMove || this.throwRef !== null) return true;
     const moves = this.animations.moves;
     const actions = moves.actions;
@@ -818,21 +818,25 @@ class PetSprite {
     // 与抛掷锁定的差别：抛掷是逐帧物理边界（撞到屏缝会弹回来），漫游是一次性落点规划、没有反弹语义。
     // 宠物被拖到屏外（落在空洞里）时 resolveRect 取最近那块屏，所以锁定态下依然走得动。
     const wanderArea = this.confineToScreen ? S.resolveRect(AREAS, cx, cy) : null;
-    const plan = S.planMove({
-      cx,
-      cy,
-      W,
-      H,
-      dir,
-      minDist: mp.minDist * distScale,
-      maxDist: mp.maxDist * distScale,
-      margin: mp.margin, // 同 position() 的 marginX/marginY：页面级缩放统一放大，配置值不再乘 scale（§3.5）
-      halfW: this.halfW,
-      sideAllow: this.sideAllow,
-      areas: wanderArea ? [wanderArea] : AREAS,
-    });
+    const plan = S.planDirectedMove(
+      {
+        cx,
+        cy,
+        W,
+        H,
+        dir,
+        minDist: mp.minDist * distScale,
+        maxDist: mp.maxDist * distScale,
+        margin: mp.margin, // 同 position() 的 marginX/marginY：页面级缩放统一放大，配置值不再乘 scale（§3.5）
+        halfW: this.halfW,
+        sideAllow: this.sideAllow,
+        areas: wanderArea ? [wanderArea] : AREAS,
+      },
+      Boolean(preferredName && allowTurnAround),
+    );
     if (!plan) return false;
-    this.pendingMove = { ...plan, dir, leadSec: mp.leadSec, tailSec: mp.tailSec };
+    if (plan.dir !== dir) this.facing = plan.dir === 1 ? 'right' : 'left';
+    this.pendingMove = { ...plan, leadSec: mp.leadSec, tailSec: mp.tailSec };
     this.anim = chosen.name;
     this.once = true;
     this.switchTo(chosen.name, true, playbackId);
@@ -1674,7 +1678,8 @@ class PetSprite {
     // 放在整棵动作树之后——「更多」是"别的东西"，不插在工具项和动作之间。
     const more = S.buildMoreBranch(this.menuItems);
     const actionTree = S.buildMenuTree(this.animations);
-    const visibleTree = CONFIG.livePreview && window.PetLivePreview ? window.PetLivePreview.menuLabels(actionTree) : actionTree;
+    const visibleTree =
+      CONFIG.livePreview && window.PetLivePreview ? window.PetLivePreview.menuLabels(actionTree) : actionTree;
     const tree = tools.concat(visibleTree, more ? [more] : []);
     if (!tree.length) return;
     this.menuOpen = true;
@@ -1752,10 +1757,13 @@ class PetSprite {
       this.facing = 'left';
     }
     // 点播移动动画：走真实移动（与随机游走同一套：边界检查 / 随机距离 / leadSec·tailSec / dir），
-    // 仅"选哪个动画"由菜单决定；挪不动（false）退化纯播放
+    // 默认朝向遇到屏幕边缘时转向；显式朝向保留。无法移动时不假装原地跑步。
     if (this.animations.moves.actions.some((a) => a.name === leaf.anim)) {
-      const moved = this.tryMove(leaf.anim, playbackId);
-      if (moved === false) this.playOnce(leaf.anim, playbackId);
+      const moved = this.tryMove(leaf.anim, playbackId, !keepFacing);
+      if (moved === false) {
+        if (playbackId) this.reportPlayback(playbackId, 'failed', 'move-blocked');
+        if (this.animations.idle.length) this.playOnce(S.pick(this.animations.idle, this.anim));
+      }
       // moved === true = 已有移动/抛掷在进行中（tryMove 提前返回，**根本没换源**）：
       // 本段点播不会真的播起来 → 如实回 failed/busy，而不是让调用方干等到 timeout
       else if (moved === true && playbackId) this.reportPlayback(playbackId, 'failed', 'busy');

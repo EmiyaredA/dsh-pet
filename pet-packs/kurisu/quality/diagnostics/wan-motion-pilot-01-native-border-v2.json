@@ -1,0 +1,136 @@
+{
+  "at": "2026-10-30T19:30:42.446792+00:00",
+  "diagnostic_id": "wan-motion-pilot-01",
+  "task_id": "3bf821b0-dbd5-4887-a059-197137e79418",
+  "source_file": "source/diagnostics/wan-motion-pilot-01/original.mp4",
+  "source_sha256": "7f282cb54d6fbf6703cd2695883732e99908914d2483ad109a58464f4ef7d241",
+  "source_probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "width": 832,
+        "height": 464,
+        "avg_frame_rate": "30/1",
+        "nb_frames": "303"
+      }
+    ],
+    "format": {
+      "duration": "10.100000"
+    }
+  },
+  "native_border_v2": {
+    "method": "all_frame_saturated_green_native_border_v2",
+    "passed": true,
+    "frames": 240,
+    "expected_frames": 240,
+    "failed_frame_count": 0,
+    "failed_frames": [],
+    "background_rgb_min": [
+      6.0,
+      246.0,
+      20.0
+    ],
+    "background_rgb_max": [
+      13.0,
+      250.0,
+      36.0
+    ],
+    "maximum_spatial_delta": 27.0,
+    "maximum_temporal_delta": 16.0,
+    "thresholds": {
+      "dominant_min": 180,
+      "other_channels_max": 100,
+      "dominance_min": 100,
+      "spatial_delta_max": 35,
+      "temporal_delta_max": 24
+    },
+    "expected_background": "#00FF00",
+    "white_matte_fallback": false,
+    "visual_foreground_review_required": true,
+    "enclosed_background_and_foreground_verified": false,
+    "native_size": [
+      832,
+      464
+    ],
+    "boundary_pixels_per_frame": 2592,
+    "measurement": "native_one_pixel_outer_boundary_no_spatial_resampling",
+    "sampling": {
+      "duration_seconds": 10,
+      "fps": 24,
+      "expected_frames": 240
+    }
+  },
+  "legacy_proxy_diagnostic": {
+    "method": "all_frame_saturated_green_border_v1",
+    "passed": false,
+    "frames": 240,
+    "expected_frames": 240,
+    "failed_frame_count": 31,
+    "failed_frames": [
+      17,
+      22,
+      23,
+      24,
+      25,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      66,
+      89,
+      90,
+      91,
+      92,
+      153,
+      154,
+      155,
+      156,
+      157,
+      158,
+      159
+    ],
+    "background_rgb_min": [
+      0.0,
+      249.0,
+      15.0
+    ],
+    "background_rgb_max": [
+      6.0,
+      252.0,
+      32.0
+    ],
+    "maximum_spatial_delta": 63.0,
+    "maximum_temporal_delta": 17.0,
+    "thresholds": {
+      "dominant_min": 180,
+      "other_channels_max": 100,
+      "dominance_min": 100,
+      "spatial_delta_max": 35,
+      "temporal_delta_max": 24
+    },
+    "expected_background": "#00FF00",
+    "white_matte_fallback": false,
+    "visual_foreground_review_required": true,
+    "enclosed_background_and_foreground_verified": false,
+    "legacy_proxy_diagnostic_only": true,
+    "production_acceptance_authority": false,
+    "measurement": "downscaled_64x36_area_proxy_boundary_may_mix_nearby_foreground"
+  },
+  "change": "Sample the true decoded outermost row and column at native dimensions before any spatial resampling; all previous color/spatial/temporal thresholds unchanged",
+  "historical_reports_modified": false,
+  "new_model_calls": 0,
+  "production_ledger_modified": false,
+  "final_media_approved": false,
+  "independent_foreground_and_enclosed_gap_review_required": true
+}

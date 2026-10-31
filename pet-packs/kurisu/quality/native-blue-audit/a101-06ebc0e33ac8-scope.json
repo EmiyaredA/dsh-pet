@@ -1,0 +1,158 @@
+{
+  "action_id": "a101",
+  "media_sha256": "06ebc0e33ac8ecd63b407f061e8196442f76eb9f1a583750896e3a81883f4ff4",
+  "source": "pet/kurisu-animation/工作状态-托腮推理.webm",
+  "records": [
+    {
+      "frame": 0,
+      "time_seconds": 0.0,
+      "source_frame_size": [
+        640,
+        360
+      ],
+      "background_rgb": [
+        0,
+        80,
+        255
+      ],
+      "crop_box_at_native640": [
+        212,
+        95,
+        436,
+        294
+      ],
+      "display_magnification": 3,
+      "display_size": [
+        672,
+        597
+      ],
+      "source_was_not_downscaled_before_crop": true,
+      "path": "quality/native-blue-audit/a101-06ebc0e33ac8-f0-hair3x.png"
+    },
+    {
+      "frame": 120,
+      "time_seconds": 5.0,
+      "source_frame_size": [
+        640,
+        360
+      ],
+      "background_rgb": [
+        0,
+        80,
+        255
+      ],
+      "crop_box_at_native640": [
+        217,
+        91,
+        438,
+        293
+      ],
+      "display_magnification": 3,
+      "display_size": [
+        663,
+        606
+      ],
+      "source_was_not_downscaled_before_crop": true,
+      "path": "quality/native-blue-audit/a101-06ebc0e33ac8-f120-hair3x.png"
+    },
+    {
+      "frame": 239,
+      "time_seconds": 9.958333333333334,
+      "source_frame_size": [
+        640,
+        360
+      ],
+      "background_rgb": [
+        0,
+        80,
+        255
+      ],
+      "crop_box_at_native640": [
+        212,
+        94,
+        436,
+        294
+      ],
+      "display_magnification": 3,
+      "display_size": [
+        672,
+        600
+      ],
+      "source_was_not_downscaled_before_crop": true,
+      "path": "quality/native-blue-audit/a101-06ebc0e33ac8-f239-hair3x.png"
+    }
+  ],
+  "visual_verdict": "NO_SAME_OPAQUE_HAIR_ISLAND_OBSERVED_IN_3_NATIVE_BLUE_MAGNIFIED_FRAMES",
+  "native_hair_side_comparison": "quality/native-blue-audit/a101-06ebc0e33ac8-hair-sides3x.png",
+  "side_crop_boxes": [
+    {
+      "frame": 0,
+      "side": "L",
+      "box_at_native640": [
+        215,
+        95,
+        276,
+        294
+      ],
+      "magnification": 3
+    },
+    {
+      "frame": 0,
+      "side": "R",
+      "box_at_native640": [
+        371,
+        95,
+        433,
+        294
+      ],
+      "magnification": 3
+    },
+    {
+      "frame": 120,
+      "side": "L",
+      "box_at_native640": [
+        220,
+        91,
+        281,
+        293
+      ],
+      "magnification": 3
+    },
+    {
+      "frame": 120,
+      "side": "R",
+      "box_at_native640": [
+        373,
+        91,
+        435,
+        293
+      ],
+      "magnification": 3
+    },
+    {
+      "frame": 239,
+      "side": "L",
+      "box_at_native640": [
+        215,
+        94,
+        276,
+        294
+      ],
+      "magnification": 3
+    },
+    {
+      "frame": 239,
+      "side": "R",
+      "box_at_native640": [
+        371,
+        94,
+        433,
+        294
+      ],
+      "magnification": 3
+    }
+  ],
+  "reviewed_at": "2026-10-30T17:52:57.814237+00:00",
+  "reviewer": "independent_animation_qa_agent",
+  "limitations": "Three temporal samples only, not all240frames. Flesh ears, eye whites, lace and intentional hands are not background holes."
+}

@@ -1,0 +1,35 @@
+{
+  "legacy_strict_background_passed": false,
+  "legacy_alpha_threshold": 8,
+  "independently_reproduced": {
+    "affected_frames": 22,
+    "max_pixels_per_affected_frame": 4,
+    "max_alpha": 10,
+    "frames": [
+      78,
+      80,
+      82,
+      84,
+      85,
+      114,
+      138,
+      139,
+      140,
+      141,
+      142,
+      143,
+      144,
+      146,
+      147,
+      148,
+      149,
+      150,
+      151,
+      152,
+      159,
+      227
+    ]
+  },
+  "all240_outer_boundary_alpha_zero": true,
+  "no_pixels_modified": true
+}

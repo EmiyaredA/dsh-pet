@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "action_id": "a052",
+  "source_attempt_index": 3,
+  "spec_revision_id": "programmer-research-v2-2026-10-31",
+  "candidate_file": "source/library/a052/attempt-3/processing-2f8f05e2-cbe3-4ee8-87d6-720dafd182f3/CI 绿灯比耶.webm",
+  "candidate_sha256": "4a364ce1a3fa107730a85aad0a70050cc330dda8a06b7a165ec2190770acdc77",
+  "source_sha256": "0de34e7b955ce395fadcdb21c5432c891357e09f4049f01bf27da9d2a3dc3e7b",
+  "source_task_id": "92035aa3-edfa-4a5e-b19d-5a7ad0ec7e6a",
+  "verdict": "pass_for_human_preview_with_source_concern",
+  "processing_quality_verdict": "pass",
+  "content_approval": "human_sample_gate_pending",
+  "reviewer": "animation_qa independent agent",
+  "reviewed_at": "2026-10-31T08:13:23.904894+00:00",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "approval_mutation_performed": false,
+  "reason": "普通抠像与240帧技术通过，未见新白孔/明显绿晕/强变色。电脑确实偏高，工作阶段遮住口鼻且靠近眼下沿；这是原片已有的展示问题，保留给人类最终判断，不能写成全脸无遮挡。收电脑/架后V手势清楚，首尾空手。",
+  "technical": {
+    "decoded_frames": 240,
+    "width": 640,
+    "height": 360,
+    "fps": 24,
+    "duration_seconds": 10,
+    "codec": "vp9",
+    "audio_streams": 0,
+    "all240_alpha_min0_max255": true,
+    "all240_outer_boundary_alpha_zero": true,
+    "first_bbox_alpha127": [
+      215,
+      60,
+      433,
+      329
+    ],
+    "last_bbox_alpha127": [
+      215,
+      59,
+      433,
+      330
+    ],
+    "feet_delta_px": 1,
+    "height_delta_px": 2,
+    "worker_strict_background_clear": true,
+    "worker_endpoint_rgba_mad": 10.653614165980331,
+    "idle_scale": {
+      "idle_sha256": "10717cdea36065ed9e6a0360a7174ff1a79b7dea9523939376980b5f74219132",
+      "idle_first_bbox_alpha127": [
+        217,
+        59,
+        430,
+        330
+      ],
+      "current_first_bbox_alpha127": [
+        215,
+        60,
+        433,
+        329
+      ],
+      "current_last_bbox_alpha127": [
+        215,
+        59,
+        433,
+        330
+      ]
+    },
+    "technical_proof": "quality/final-reviews/a052-4a364ce1a3fa/decoded-technical240.json"
+  },
+  "inspection_scope": {
+    "normal640_stills_personally_viewed": [
+      {
+        "frame": 0,
+        "background": "blue"
+      },
+      {
+        "frame": 96,
+        "background": "dark"
+      },
+      {
+        "frame": 144,
+        "background": "light"
+      },
+      {
+        "frame": 239,
+        "background": "checker"
+      },
+      {
+        "frame": 192,
+        "background": "blue"
+      },
+      {
+        "frame": 216,
+        "background": "dark"
+      }
+    ],
+    "face_hair_nearest3x_from640_personally_viewed": [
+      0,
+      120,
+      239
+    ],
+    "source_review": "quality/source-reviews/a052-attempt-3.json",
+    "actual_playback_proof": "quality/final-reviews/a052-4a364ce1a3fa/actual-browser-playback.json",
+    "limits": [
+      "All240 technical frames decoded is not all240 manual perceptual review.",
+      "No zero-drop playback assertion.",
+      "No autonomous release or action approval: both new programmer samples are behind the human sample gate."
+    ]
+  },
+  "visual_findings": {
+    "matte_and_color": "Reviewed negative hair spaces reveal each compositing background, without conspicuous white islands or detached background patch. No evident green light wash or new color drift from processing was seen. Ordinary3x AA softness is not counted as body damage.",
+    "face_and_anatomy": "Headwear, eyes, hair, skirt and shoes retain recognizable shape in reviewed samples. No obvious processing-added appendage or punched-out face/costume was seen. Laptop occlusion for a052 is separately retained rather than called a matte deletion.",
+    "action": "Laptop screen faces the character, camera sees plain matte gray lid. The laptop/support are stowed, then a clear V sign is shown at frame216, and the ending is empty-handed. A visible green check is not independently certified from the concealed screen in this review.",
+    "scale_and_seam": "Initial/final feet drift is0–1px, height drift1–2px, consistent with the existing final guard. Same640 idle/current switches were executed. Old accepted idle is a bit warmer in hue; no pixel-identical palette claim.",
+    "source_concern": "Laptop lid covers mouth/nose during the work phase and reaches the lower eye area. See f096-dark-native640, f144-light-native640 and f120-blue-facehair3x. This is not hidden by this pass-for-preview status."
+  },
+  "concerns": [
+    {
+      "severity": "human_review",
+      "type": "source_prop_occlusion",
+      "frames": [
+        96,
+        120,
+        144
+      ],
+      "description": "Plain laptop lid is high enough to conceal the mouth/nose during the computer phase. This existing source presentation concern requires human judgment; no extra repair is proposed."
+    }
+  ],
+  "defects": [],
+  "alignment_correction_note": null,
+  "evidence_directory": "quality/final-reviews/a052-4a364ce1a3fa",
+  "new_paid_calls": 0,
+  "new_local_corrections_by_reviewer": 0,
+  "ledger_or_runtime_changed": false
+}

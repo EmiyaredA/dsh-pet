@@ -2,7 +2,7 @@
   "schema_version": 1,
   "clips": {
     "a001": {
-      "sha256": "856c6916d60cb337648969147e99c836b4178c8fe29f630e14322d182d028f68",
+      "sha256": "10717cdea36065ed9e6a0360a7174ff1a79b7dea9523939376980b5f74219132",
       "file": "pet/kurisu-animation/待机呼吸.webm",
       "verification": {
         "width": 640,
@@ -22,24 +22,24 @@
           217,
           60,
           430,
-          329
+          330
         ],
         "audio_streams": 0,
         "codec": "vp9",
         "all_frames_have_alpha": true,
         "endpoint_geometry": {
-          "feet_delta_px": -1,
-          "height_delta_px": -2
+          "feet_delta_px": 0,
+          "height_delta_px": -1
         },
         "background_clear": true,
-        "endpoint_rgba_mean_absolute_difference": 5.35688495706983,
-        "transparent_fraction": 0.8143113968460648
+        "endpoint_rgba_mean_absolute_difference": 3.801094482912665,
+        "transparent_fraction": 0.8216754738136574
       },
       "verifier_version": 3,
-      "verified_at": "2026-10-30T09:00:24.563129+00:00"
+      "verified_at": "2026-10-30T12:20:17.046316+00:00"
     },
     "a002": {
-      "sha256": "569ce7f69f8d42ab0a5b0522361d025e8ebd2ddff5c924b90a0f5ccb763a73de",
+      "sha256": "831d80bef0ff2dd03a35c6490fd67615f3ee99b152efcb00f448c84032f2ed15",
       "file": "pet/kurisu-animation/左右张望.webm",
       "verification": {
         "width": 640,
@@ -69,14 +69,14 @@
           "height_delta_px": 0
         },
         "background_clear": true,
-        "endpoint_rgba_mean_absolute_difference": 4.196888585268911,
-        "transparent_fraction": 0.8156618923611111
+        "endpoint_rgba_mean_absolute_difference": 3.188470424564629,
+        "transparent_fraction": 0.8231174045138889
       },
       "verifier_version": 3,
-      "verified_at": "2026-10-30T09:00:24.969916+00:00"
+      "verified_at": "2026-10-30T12:20:17.946933+00:00"
     },
     "a004": {
-      "sha256": "0b86537c1b1bf6422cbc45e4ac3d2b5c84189519f23131d57e4c7d40b80fc9fe",
+      "sha256": "2c3e714a9418d53395de459e89299233f823936a682ff50e64088f63754cb1d8",
       "file": "pet/kurisu-animation/点击回应-傲娇.webm",
       "verification": {
         "width": 640,
@@ -106,14 +106,14 @@
           "height_delta_px": -1
         },
         "background_clear": true,
-        "endpoint_rgba_mean_absolute_difference": 3.529520732498378,
-        "transparent_fraction": 0.8161863245081018
+        "endpoint_rgba_mean_absolute_difference": 2.3051112829981535,
+        "transparent_fraction": 0.8230625180844907
       },
       "verifier_version": 3,
-      "verified_at": "2026-10-30T09:00:25.931449+00:00"
+      "verified_at": "2026-10-30T12:20:19.481392+00:00"
     },
     "a005": {
-      "sha256": "b39d761726658d76405328beb6a49a8d3c980e74fbd3b403c2339ece80f77bd1",
+      "sha256": "bdf17c8b2df35991297ae1a998132cd9edaa38c48f9a900fa4e0b3d93c2401d0",
       "file": "pet/kurisu-animation/点击回应-开心挥手.webm",
       "verification": {
         "width": 640,
@@ -143,14 +143,14 @@
           "height_delta_px": -2
         },
         "background_clear": true,
-        "endpoint_rgba_mean_absolute_difference": 24.098600447664204,
-        "transparent_fraction": 0.8112005027488426
+        "endpoint_rgba_mean_absolute_difference": 24.184663056558364,
+        "transparent_fraction": 0.8177575412326389
       },
       "verifier_version": 3,
-      "verified_at": "2026-10-30T09:00:26.374315+00:00"
+      "verified_at": "2026-10-30T12:20:20.155056+00:00"
     },
     "a006": {
-      "sha256": "13220e2eb7f67a3885229bcecf6709d5741360eabaf2014138f1cabef0fe882e",
+      "sha256": "2068984d756db5f177bd209675170168da56ee8c0b37ebbaba88f59c04167bb0",
       "file": "pet/kurisu-animation/点击回应-害羞捂脸.webm",
       "verification": {
         "width": 640,
@@ -180,14 +180,14 @@
           "height_delta_px": 0
         },
         "background_clear": true,
-        "endpoint_rgba_mean_absolute_difference": 3.2546964250541657,
-        "transparent_fraction": 0.8134482964409723
+        "endpoint_rgba_mean_absolute_difference": 2.0981030577576445,
+        "transparent_fraction": 0.820160716869213
       },
       "verifier_version": 3,
-      "verified_at": "2026-10-30T09:00:26.825763+00:00"
+      "verified_at": "2026-10-30T12:20:20.744700+00:00"
     },
     "a008": {
-      "sha256": "64e4cbe2991194b2772cb764148f9f83ae16d28046d7316c395ff558ba77c7f2",
+      "sha256": "b228c8a9a101e4727f0c3c65f1b9b8fb8cf962eff7821e15fde2111879324b82",
       "file": "pet/kurisu-animation/点击回应-认可点头.webm",
       "verification": {
         "width": 640,
@@ -217,11 +217,11 @@
           "height_delta_px": 0
         },
         "background_clear": true,
-        "endpoint_rgba_mean_absolute_difference": 3.3787403325838254,
-        "transparent_fraction": 0.8140229130497685
+        "endpoint_rgba_mean_absolute_difference": 2.189161806859741,
+        "transparent_fraction": 0.8206385633680555
       },
       "verifier_version": 3,
-      "verified_at": "2026-10-30T09:00:27.263190+00:00"
+      "verified_at": "2026-10-30T12:20:21.357286+00:00"
     },
     "a009": {
       "sha256": "6a6879b6c23cfe09c202e9981060f1f52420fc5edfa125206381df153fd7b4ec",
@@ -368,7 +368,7 @@
       "verified_at": "2026-10-30T09:50:30.659514+00:00"
     },
     "a101": {
-      "sha256": "5395f1e4977c15858904b3f75e1bfbc673ffb927e587f1697f4ba21db6046d29",
+      "sha256": "06ebc0e33ac8ecd63b407f061e8196442f76eb9f1a583750896e3a81883f4ff4",
       "file": "pet/kurisu-animation/工作状态-托腮推理.webm",
       "verification": {
         "width": 640,
@@ -398,14 +398,14 @@
           "height_delta_px": -1
         },
         "background_clear": true,
-        "endpoint_rgba_mean_absolute_difference": 3.4301901037154385,
-        "transparent_fraction": 0.8140265118634259
+        "endpoint_rgba_mean_absolute_difference": 2.1965974353896427,
+        "transparent_fraction": 0.820663646556713
       },
       "verifier_version": 3,
-      "verified_at": "2026-10-30T09:00:28.762893+00:00"
+      "verified_at": "2026-10-30T12:20:21.956748+00:00"
     },
     "a102": {
-      "sha256": "cbeb4700d75542322030fac2f88fc8067898d4763cbb2cf13bb3135491219510",
+      "sha256": "3b890f38928effc3b3be0823955daa19332f7f47b7d7bd34ff4d98a0611d494a",
       "file": "pet/kurisu-animation/工作状态-专注敲键盘.webm",
       "verification": {
         "width": 640,
@@ -435,11 +435,11 @@
           "height_delta_px": -1
         },
         "background_clear": true,
-        "endpoint_rgba_mean_absolute_difference": 3.2680956245849626,
-        "transparent_fraction": 0.8145328233506944
+        "endpoint_rgba_mean_absolute_difference": 2.101008362026562,
+        "transparent_fraction": 0.8211237160011574
       },
       "verifier_version": 3,
-      "verified_at": "2026-10-30T09:00:29.166174+00:00"
+      "verified_at": "2026-10-30T12:20:22.574243+00:00"
     },
     "a003": {
       "sha256": "f5668ab37e142b0a8c339421580fda1d148123a9df75dfebef263e5689eaa1ea",
@@ -926,27 +926,14 @@
   "current_approved_ids": [
     "a001",
     "a002",
-    "a003",
     "a004",
     "a005",
     "a006",
     "a008",
-    "a009",
-    "a010",
     "a092",
-    "a093",
-    "a094",
-    "a095",
-    "a096",
-    "a097",
-    "a098",
-    "a099",
-    "a100",
     "a101",
     "a102",
     "a103",
-    "a104",
-    "a105",
-    "a106"
+    "a105"
   ]
 }

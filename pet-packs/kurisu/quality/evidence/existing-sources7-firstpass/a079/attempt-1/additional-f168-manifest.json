@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "action_id": "a079",
+  "attempt_index": 1,
+  "spec_revision_id": null,
+  "source_task_id": "40fd0e68-401f-465f-9dc4-ded385731564",
+  "source_file": "source/library/a079/attempt-1/萌化小幽灵.mp4",
+  "source_sha256": "201be64b8297242ca56c7084e80b2017771f109a78e550b064c1e0155e5a3e54",
+  "created_at": "2026-10-31T12:19:13.867167+00:00",
+  "purpose": "QA-requested f168 additional original frame; primary source packet not modified",
+  "primary_manifest_sha256": "3f7f2db910c85ae09cb5539dc1160eac729d8ae9d04dd251ae457e96274b243f",
+  "frame_index": 168,
+  "timestamp_seconds": 7.0,
+  "decoder_command": [
+    "ffmpeg",
+    "-y",
+    "-v",
+    "error",
+    "-threads",
+    "1",
+    "-i",
+    "/Users/tonghao/Projects/dsh-pet/pet-packs/kurisu/source/library/a079/attempt-1/萌化小幽灵.mp4",
+    "-vf",
+    "select=eq(n\\,168)",
+    "-frames:v",
+    "1",
+    "-fps_mode",
+    "passthrough",
+    "-pix_fmt",
+    "rgb24",
+    "-threads",
+    "1",
+    "/Users/tonghao/Projects/dsh-pet/pet-packs/kurisu/quality/evidence/existing-sources7-firstpass/a079/attempt-1/f168-native.png"
+  ],
+  "face_crop_xyxy": [
+    336,
+    0,
+    1008,
+    499
+  ],
+  "detail_resampler": "nearest_exact_pixel_replication",
+  "files": [
+    {
+      "file": "quality/evidence/existing-sources7-firstpass/a079/attempt-1/f168-native.png",
+      "sha256": "da34002b51ae87b42ba8c5027b34eab3baa0bbafe8af5f9d01c12cdfe36fa480"
+    },
+    {
+      "file": "quality/evidence/existing-sources7-firstpass/a079/attempt-1/f168-face-native2x.png",
+      "sha256": "d9e1841187832da154723794a6c3216f2c4fe58af0f996e26cbf371583fe00d1"
+    }
+  ],
+  "source_modified": false,
+  "new_model_calls": 0
+}

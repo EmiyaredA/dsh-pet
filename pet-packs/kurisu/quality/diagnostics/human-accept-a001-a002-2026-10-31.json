@@ -1,0 +1,92 @@
+{
+  "operation_id": "human-accept-a001-a002-2026-10-31T04-46-51.625595+00-00",
+  "at": "2026-10-31T04:46:51.625595+00:00",
+  "user_quote": "α01和02可以通过",
+  "approval_basis": "human",
+  "actions": [
+    {
+      "id": "a001",
+      "sha256": "10717cdea36065ed9e6a0360a7174ff1a79b7dea9523939376980b5f74219132",
+      "source_file": "source/library/withdrawn/a001/10717cdea36065ed/待机呼吸.webm",
+      "verification": {
+        "width": 640,
+        "height": 360,
+        "fps": 24,
+        "frames": 240,
+        "duration_seconds": 10.0,
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "first_box": [
+          217,
+          59,
+          430,
+          330
+        ],
+        "last_box": [
+          217,
+          60,
+          430,
+          330
+        ],
+        "audio_streams": 0,
+        "codec": "vp9",
+        "all_frames_have_alpha": true,
+        "endpoint_geometry": {
+          "feet_delta_px": 0,
+          "height_delta_px": -1
+        },
+        "background_clear": true,
+        "endpoint_rgba_mean_absolute_difference": 3.801094482912665,
+        "transparent_fraction": 0.8216754738136574
+      }
+    },
+    {
+      "id": "a002",
+      "sha256": "831d80bef0ff2dd03a35c6490fd67615f3ee99b152efcb00f448c84032f2ed15",
+      "source_file": "source/library/quality-recheck-hold/a002/831d80bef0ff2dd0/左右张望.webm",
+      "verification": {
+        "width": 640,
+        "height": 360,
+        "fps": 24,
+        "frames": 240,
+        "duration_seconds": 10.0,
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "first_box": [
+          217,
+          60,
+          430,
+          330
+        ],
+        "last_box": [
+          217,
+          60,
+          430,
+          330
+        ],
+        "audio_streams": 0,
+        "codec": "vp9",
+        "all_frames_have_alpha": true,
+        "endpoint_geometry": {
+          "feet_delta_px": 0,
+          "height_delta_px": 0
+        },
+        "background_clear": true,
+        "endpoint_rgba_mean_absolute_difference": 3.188470424564629,
+        "transparent_fraction": 0.8231174045138889
+      }
+    }
+  ],
+  "calls_unchanged": {
+    "calls": 112,
+    "repairs": 27,
+    "other_model_calls": 19
+  },
+  "approved_ids": [
+    "a001",
+    "a002",
+    "a103"
+  ],
+  "default_restored": "a001",
+  "historical_withdrawals_preserved": true
+}

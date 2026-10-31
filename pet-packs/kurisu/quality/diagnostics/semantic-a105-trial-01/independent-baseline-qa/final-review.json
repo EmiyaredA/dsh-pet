@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "action_id": "a105",
+  "attempt_index": 3,
+  "diagnostic_id": "semantic-a105-trial-01",
+  "variant": "baseline",
+  "source_sha256": "5460f738fa8678600fc5d37fc4334e551deec03c013db41b0242c58059b13aac",
+  "candidate_file": "a105-semantic-isnet-anime.webm",
+  "candidate_sha256": "c96349e8adfce16dfe6ef9f081a88578f3ee3078bf71a38d6f0a2b23fd175320",
+  "candidate_sha256_verified": true,
+  "reviewer": "independent_animation_qa_agent",
+  "reviewed_at": "2026-10-31T01:45:27.959522+00:00",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "decision": "REJECT",
+  "final_media_approved": false,
+  "reason": "可见绿边仍留在猫耳和长发外轮廓，原640深色/蓝底及原像素4倍局部可复现；透明Alpha技术通过不等于桌宠边缘通过。",
+  "defects": [
+    {
+      "severity": "hard",
+      "type": "visible_green_edge_contamination",
+      "frames_verified": [
+        0,
+        24,
+        72,
+        239
+      ],
+      "description": "A green fringe remains around the outer cat ears, headband-adjacent boundary and side hair loops. It is visible after actual Alpha compositing onto a dark background, not merely hidden RGB under zero Alpha. The standard green-alpha intersection reduces part of the outer halo but does not remove this visual defect."
+    },
+    {
+      "severity": "review_limitation",
+      "type": "residual_light_hair_gap_fringe",
+      "frames_verified": [
+        24
+      ],
+      "description": "On the blue background, most of the former white-filled hair gap becomes blue, but a narrow pale gray/white and green edge remains along the right side hair loop. This is described as an edge fringe, not a newly proven solid white island or an anatomical part to erase."
+    }
+  ],
+  "observed_improvement": "The large white/gray source backdrop, green floor oval and most enclosed background areas are removed in the inspected samples; the white headband and visible face are not wholly deleted. This partial improvement is not sufficient for release.",
+  "spec_and_alpha": {
+    "independent_ffprobe": {
+      "codec_name": "vp9",
+      "width": 640,
+      "height": 360,
+      "r_frame_rate": "24/1",
+      "avg_frame_rate": "24/1",
+      "format_duration": "10.000000",
+      "audio_stream_count": 0
+    },
+    "independent_all240_rgba_decode": {
+      "decoder": "libvpx-vp9",
+      "frames": 240,
+      "all_frame_alpha_min": 0,
+      "all_frame_alpha_max": 255,
+      "frames_with_nonzero_boundary": 0,
+      "stats_file": "all240-alpha-screen.json"
+    },
+    "technical_metrics_do_not_imply_visual_pass": true
+  },
+  "inspection_scope": {
+    "native640_composites_prepared_frames": [
+      0,
+      24,
+      72,
+      120,
+      192,
+      239
+    ],
+    "manual_faces_4x_frames_personally_reviewed": [
+      0,
+      24,
+      72,
+      239
+    ],
+    "manual_native640_full_frame_personally_reviewed": [
+      0
+    ],
+    "backgrounds_reviewed": [
+      "dark [15,15,15]",
+      "high contrast blue [0,80,255]"
+    ],
+    "crop_xyxy": [
+      205,
+      50,
+      430,
+      218
+    ],
+    "magnification": 4,
+    "initial_downscale": false,
+    "all240_technical_alpha_decoded": true,
+    "all240_whole_frame_visual_review": false,
+    "all240_face_visual_review": false,
+    "why_visual_scan_stopped": "An edge hard defect was already confirmed at original output resolution and enlarged native crops. The owner requested stopping redundant comprehensive review of rejected variants.",
+    "source_review_reused": "quality/additional-audits/a105-fl3-all-native-lower-body-01/all-native-lower-body-review.json",
+    "source_all243_rescanned": false
+  },
+  "media_mutation_by_reviewer": false,
+  "approval_or_ledger_changes": false,
+  "new_paid_model_calls": 0,
+  "evidence": [
+    "f000-dark-face4x.png",
+    "f000-blue-native640.png",
+    "f024-blue-face4x.png"
+  ],
+  "followup": "Later bounded or physical-matting sample experiments are distinct candidates and do not overwrite this SHA-bound rejection. Any future complete output needs its own independent review.",
+  "actual_playback_evidence": {
+    "independent_browser_ui_observations": {
+      "url": "http://127.0.0.1:8768/quality/diagnostics/semantic-a105-trial-01/preview.html",
+      "candidate_selected": "baseline c963",
+      "native_control_space_started_playback": true,
+      "read_only_currentTime_observations_seconds": [
+        8.433,
+        6.2661
+      ],
+      "loop_wrap_observed": true,
+      "final_currentTime": 6.2752,
+      "final_paused_verified": true,
+      "continuous_human_frame_by_frame_video_viewing_claimed": false
+    },
+    "separate_root_electron_execution": "actual-electron-playback-root.json",
+    "root_playback_quality_delta": {
+      "total": 261,
+      "dropped": 10,
+      "corrupted": 0
+    },
+    "interpretation": "The video genuinely executed at playback speed and looped. Browser execution and selected screenshots are not an uninterrupted visual judgment of every moment. Dropped frames are recorded, not described as zero."
+  }
+}

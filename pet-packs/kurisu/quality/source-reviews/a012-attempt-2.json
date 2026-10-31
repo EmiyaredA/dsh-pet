@@ -1,0 +1,50 @@
+{
+  "action_id": "a012",
+  "attempt_index": 2,
+  "processing_clearance": "allow_mild_color_and_green_key",
+  "summary": "Clear relaxed two-arm stretch, closed comfortable eyes, arms lower and open-eyed empty-handed neutral stance returns. No additional objects, tail, limb anomaly or localized moving light spot found. Broad temporal green/olive wash may undergo bounded global palette correction only, followed by independent final color and Alpha QA.",
+  "defects": [
+    {
+      "severity": "processing_condition",
+      "type": "diffuse_temporal_green_wash",
+      "time_seconds": [
+        1.8,
+        8.8
+      ],
+      "description": "White material median green chroma changes−4 atframe0 to+15 at48; q9543 at48. Diffuse whole-character wash, not isolated circles crossing anatomy. Must remove with bounded global correction; no face patching/white-hole classifier."
+    }
+  ],
+  "evidence": [
+    "temp/kurisu/library/review/a012-attempt-2.png",
+    "temp/kurisu/agent-qa/a012-new-motion-dense.png",
+    "temp/kurisu/agent-qa/a012-green-regen-face-spots.png",
+    "temp/kurisu/agent-qa/a012-green-regen-motion-metrics.json"
+  ],
+  "allowed_processing": [
+    "green_background_key",
+    "bounded_global_palette_correction",
+    "standard_uniform_canvas_alignment"
+  ],
+  "final_checks": [
+    "Skin/eyes/lace/headband/hands remain fully opaque and original hue",
+    "No temporal face/body color flicker after correction",
+    "Full silhouette and both raised hands preserved",
+    "No source scale drift concealed by per-frame body warping",
+    "Neutral emptyhands openeyes first/last; standingheight/feet consistent"
+  ],
+  "schema_version": 1,
+  "source_sha256": "0e9af7b81059a82dae58fd68fbf3c4c34980d4d73f9f2b6b1f6d75edda518d5f",
+  "inspected_source_file": "/Users/tonghao/Projects/dsh-pet/pet-packs/kurisu/source/library/a012/attempt-2/伸懒腰.mp4",
+  "reviewed_at": "2026-10-30T14:15:26.090319+00:00",
+  "reviewer": "independent_animation_qa_agent",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "final_media_approved": false,
+  "new_model_calls": 0,
+  "portable_evidence": [
+    "quality/evidence/a012-latest-qa.png"
+  ],
+  "canonical_source_file": "source/library/a012/attempt-2/伸懒腰.mp4",
+  "source_task_id": "3a10e9f5-9381-495c-aea8-f9823c2a8b8e",
+  "source_result_asset_id": "1d8c9b1a-cbc7-4132-8bad-9e68cb5ee923"
+}

@@ -1,0 +1,65 @@
+{
+  "selection": {
+    "id": "human-a011-version2-green-key-2026-10-31",
+    "source": "user",
+    "user_quote": "α11用第二版去裁",
+    "selected_at": "2026-10-31T05:45:32.342476+00:00",
+    "action_id": "a011",
+    "attempt_index": 2,
+    "source_task_id": "9d007c8d-397b-40f8-b410-82c370479435",
+    "source_file": "source/library/a011/attempt-2/抱笔记本侧身挪步.mp4",
+    "source_sha256": "87ca1b756c1a5c2afb7d131e67d25d6c4c7b032626e5b885452d9b83a6a670c3",
+    "content_accepted": true,
+    "accepted_known_details": [
+      "paper notebook in the explicitly viewed second version",
+      "minor pre-existing ear-tip crop at original source border"
+    ],
+    "permitted_processing": "One ordinary green-key extraction and proportional 640x360 alignment; background-only padding may preserve all original pixels. No redraw, foreground erase, semantic or white-threshold processing.",
+    "final_alpha_review_required": true,
+    "raw_background_metrics_must_be_preserved": true,
+    "new_model_calls": 0
+  },
+  "named_local_processing_exception": {
+    "action_id": "a011",
+    "policy_id": "human-first-pass-one-correction-2026-10-31",
+    "approved": true,
+    "source": "user",
+    "human_named_action": true,
+    "user_quote": "α11用第二版去裁",
+    "authorized_at": "2026-10-31T05:45:32.342476+00:00",
+    "max_corrective_rounds": 2,
+    "authorization_id": "human-a011-version2-green-key-2026-10-31",
+    "permitted_operation": "Exactly one local ordinary green-key and size alignment of the existing selected version2, optional background-only padding; no model generation/no repeated threshold recipes.",
+    "source_sha256": "87ca1b756c1a5c2afb7d131e67d25d6c4c7b032626e5b885452d9b83a6a670c3",
+    "source_task_id": "9d007c8d-397b-40f8-b410-82c370479435",
+    "model_call_allowance_added": 0
+  },
+  "usage_before": {
+    "paid_attempts_including_reused_origins": 2,
+    "paid_corrective_rounds": 1,
+    "historical_local_requests": 0,
+    "historical_local_events": 0,
+    "corrective_rounds_used": 1,
+    "first_pass": false
+  },
+  "local_repair_decision_before_consumption": {
+    "paid_attempts_including_reused_origins": 2,
+    "paid_corrective_rounds": 1,
+    "historical_local_requests": 0,
+    "historical_local_events": 0,
+    "corrective_rounds_used": 1,
+    "first_pass": false,
+    "operation": "local_repair",
+    "allowed": true,
+    "reason": "One shared corrective round remains",
+    "policy_id": "human-first-pass-one-correction-2026-10-31",
+    "corrective_round_limit": 2,
+    "human_named_action_exception": true
+  },
+  "model_counts_unchanged": {
+    "calls": 125,
+    "repairs": 27,
+    "other_model_calls": 32
+  },
+  "request_not_yet_consumed_by_root": true
+}

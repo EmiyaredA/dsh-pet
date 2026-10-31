@@ -1,0 +1,85 @@
+{
+  "task_id": "3a10e9f5-9381-495c-aea8-f9823c2a8b8e",
+  "source_sha256": "0e9af7b81059a82dae58fd68fbf3c4c34980d4d73f9f2b6b1f6d75edda518d5f",
+  "processing_metadata": {
+    "candidate_file": "source/library/a012/attempt-2/伸懒腰.webm",
+    "candidate_sha256": null,
+    "report": {
+      "source": "伸懒腰.mp4",
+      "output": "伸懒腰.webm",
+      "source_size": [
+        1344,
+        768
+      ],
+      "key_thresholds": [
+        12,
+        110
+      ],
+      "matte_method": "green_difference",
+      "encoding_lossless": false,
+      "source_content_union": [
+        468,
+        154,
+        926,
+        656
+      ],
+      "alignment": {
+        "scaled_size": [
+          726,
+          414
+        ],
+        "offset": [
+          -51,
+          -24
+        ],
+        "content_box": [
+          201.80357142857142,
+          59.015625,
+          449.2053571428571,
+          329.625
+        ],
+        "standing_height": 500.0,
+        "standing_center_x": 687.0,
+        "standing_feet_y": 656.0,
+        "target_height": 270,
+        "target_feet_y": 330
+      },
+      "verification": {
+        "width": 640,
+        "height": 360,
+        "fps": 24,
+        "frames": 240,
+        "duration_seconds": 10.0,
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "first_box": [
+          214,
+          60,
+          435,
+          330
+        ],
+        "last_box": [
+          214,
+          60,
+          435,
+          329
+        ],
+        "audio_streams": 0,
+        "codec": "vp9",
+        "all_frames_have_alpha": true,
+        "endpoint_geometry": {
+          "feet_delta_px": -1,
+          "height_delta_px": -1
+        },
+        "background_clear": true,
+        "endpoint_rgba_mean_absolute_difference": 4.85971510109316,
+        "transparent_fraction": 0.8091919668692129
+      }
+    },
+    "alpha_contact": "/Users/tonghao/Projects/dsh-pet/temp/kurisu/library/review/a012-alpha-6ca16ea5bcef.png",
+    "processing_error": "ValueError: Palette correction is not mild at frame 45: p95=21.0, max=33",
+    "processing_method": null,
+    "worker_version": null
+  },
+  "new_model_calls": 0
+}

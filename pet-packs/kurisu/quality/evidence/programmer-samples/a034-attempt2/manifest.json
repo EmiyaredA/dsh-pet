@@ -1,0 +1,33 @@
+{
+  "source_sha256": "52323b20de6ad7c3199df622accc48241110ceeafec16894dacd0eaea9b03c71",
+  "metadata": {
+    "size": [
+      1344,
+      768
+    ],
+    "fps": 24.0,
+    "frames": 243
+  },
+  "frames_extracted": [
+    0,
+    48,
+    72,
+    96,
+    120,
+    144,
+    168,
+    192,
+    239
+  ],
+  "files": [
+    "f000-native.png",
+    "f048-native.png",
+    "f072-native.png",
+    "f096-native.png",
+    "f120-native.png",
+    "f144-native.png",
+    "f168-native.png",
+    "f192-native.png",
+    "f239-native.png"
+  ]
+}

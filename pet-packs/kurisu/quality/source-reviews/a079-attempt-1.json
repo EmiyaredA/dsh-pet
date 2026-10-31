@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "action_id": "a079",
+  "action_name": "萌化小幽灵",
+  "attempt_index": 1,
+  "spec_revision_id": null,
+  "source_file": "source/library/a079/attempt-1/萌化小幽灵.mp4",
+  "source_sha256": "201be64b8297242ca56c7084e80b2017771f109a78e550b064c1e0155e5a3e54",
+  "source_task_id": "40fd0e68-401f-465f-9dc4-ded385731564",
+  "provider_task_id": "76bdd26d-506f-4b76-8a91-4ca8dc57d3a8",
+  "result_asset_id": "193d9f7b-c902-4a1b-a605-41a2052a3b49",
+  "model_slug": "minimax_h3_zm_u24",
+  "reviewer": "existing-sources7-source-qa-parallel independent agent",
+  "reviewed_at": "2026-10-31T12:20:47.009909+00:00",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "processing_clearance": "allow_mild_color_and_green_key",
+  "final_media_approved": false,
+  "summary": "原生0/96/144/168/239及144/168原像素2倍证据显示独立白色幽灵布手偶，角色本人、原女仆服和完整头饰/双鞋保持；puppet从脸侧降至身体旁，末帧完整收回空手。未见抽样白色残块、额外前景/动物尾巴、眼色改变或人物变身。仅准入一次普通绿key；动作bob/摘偶过程和最终透明片仍须完整10秒final验收。",
+  "reason": "原生0/96/144/168/239及144/168原像素2倍证据显示独立白色幽灵布手偶，角色本人、原女仆服和完整头饰/双鞋保持；puppet从脸侧降至身体旁，末帧完整收回空手。未见抽样白色残块、额外前景/动物尾巴、眼色改变或人物变身。仅准入一次普通绿key；动作bob/摘偶过程和最终透明片仍须完整10秒final验收。",
+  "defects": [],
+  "source_background": {
+    "method": "all_frame_saturated_green_native_border_v2",
+    "passed": true,
+    "frames": 240,
+    "expected_frames": 240,
+    "failed_frame_count": 0,
+    "failed_frames": [],
+    "background_rgb_min": [
+      1.0,
+      230.0,
+      6.0
+    ],
+    "background_rgb_max": [
+      2.0,
+      232.0,
+      8.0
+    ],
+    "maximum_spatial_delta": 21.0,
+    "maximum_temporal_delta": 2.0,
+    "thresholds": {
+      "dominant_min": 180,
+      "other_channels_max": 100,
+      "dominance_min": 100,
+      "spatial_delta_max": 35,
+      "temporal_delta_max": 24
+    },
+    "expected_background": "#00FF00",
+    "white_matte_fallback": false,
+    "visual_foreground_review_required": true,
+    "enclosed_background_and_foreground_verified": false,
+    "native_size": [
+      1344,
+      768
+    ],
+    "boundary_pixels_per_frame": 4224,
+    "measurement": "native_one_pixel_outer_boundary_no_spatial_resampling",
+    "sampling": {
+      "duration_seconds": 10,
+      "fps": 24,
+      "expected_frames": 240
+    }
+  },
+  "inspection_scope": {
+    "existing_contact_personally_viewed": true,
+    "contact_only_conclusion": false,
+    "native_original_full_frames_personally_viewed": [
+      0,
+      96,
+      144,
+      168,
+      239
+    ],
+    "native_face_nearest2x_frames_personally_viewed": [
+      144,
+      168
+    ],
+    "native_size": [
+      1344,
+      768
+    ],
+    "prompt_file_read": "prompts/library/a079-attempt-1.txt",
+    "all240_background_metrics_reused": true,
+    "source_background_rescanned": false,
+    "continuous_source_playback_performed": false,
+    "limits": [
+      "Representative original stills and native-pixel magnifications were reviewed; this is not all240 manual visual review.",
+      "Existing all240 GREEN boundary metrics were reused, without another source decode.",
+      "Source ALLOW authorizes one initial ordinary green key only; final transparent animation and full10sec playback remain independently required."
+    ]
+  },
+  "visual_findings": {
+    "action": "Separate white cloth ghost hand puppet appears beside the face/chest, then is lowered to the side and fully stowed at f239. Kurisu herself does not transform or change costume in reviewed stills.",
+    "identity_and_background": "Blue-violet eyes, auburn hair, full headwear and both shoes retained. Original green remains visible through hair/limb gaps. Named white puppet is foreground, not a white-background island.",
+    "final_focus": "Final review must check puppet bob/removal timing and the white-fabric edge/hair gaps on contrasting backgrounds."
+  },
+  "evidence_manifest": "quality/evidence/existing-sources7-firstpass/a079/attempt-1/manifest.json",
+  "evidence_manifest_sha256": "3f7f2db910c85ae09cb5539dc1160eac729d8ae9d04dd251ae457e96274b243f",
+  "additional_evidence_manifest": "quality/evidence/existing-sources7-firstpass/a079/attempt-1/additional-f168-manifest.json",
+  "additional_evidence_manifest_sha256": "872f30283e91d403429e64f9c2eecd537939c7cb57511c35edb752b442d8c096",
+  "new_model_calls": 0,
+  "reviewer_video_decoders_started": 0,
+  "processing_performed": false,
+  "ledger_or_approval_modified": false
+}

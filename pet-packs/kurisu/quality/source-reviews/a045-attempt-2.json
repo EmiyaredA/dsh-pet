@@ -1,0 +1,105 @@
+{
+  "action_id": "a045",
+  "attempt_index": 2,
+  "spec_revision_id": "programmer-research-v2-2026-10-31",
+  "source_file": "source/library/a045/attempt-2/戴耳机写码晃脚.mp4",
+  "source_sha256": "c3b5f6d5ef052c6598e63465f11f2f30af90f754d0783434847f8c5ae1c86d58",
+  "source_task_id": "6ee48e03-a445-4cbe-964f-ce9464ee1053",
+  "schema_version": 1,
+  "reviewer": "batch30_source_qa_parallel independent source visual reviewer",
+  "reviewed_at": "2026-10-31T10:11:42.068609+00:00",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "processing_clearance": "reject",
+  "final_media_approved": false,
+  "summary": "Laptop is already present in the required empty-handed opening frame and its high lid hides the mouth/nose at native frames 0, 96 and 144. The sampled headphones/seated pose is legible and props vanish at frame 239, but those source composition/end-point errors prevent key clearance.",
+  "defects": [
+    {
+      "severity": "hard",
+      "type": "high_laptop_occludes_lower_face",
+      "frames": [
+        0,
+        96,
+        144
+      ],
+      "description": "Gray lid reaches the lower eyes, hiding the mouth/nose instead of maintaining a low waist-height lid and visible face."
+    },
+    {
+      "severity": "hard",
+      "type": "nonempty_initial_endpoint",
+      "frames": [
+        0
+      ],
+      "description": "Laptop is present from frame 0 instead of the specified initial empty-handed reference stance."
+    }
+  ],
+  "inspection_scope": {
+    "source_static_samples_only": true,
+    "native_original_frames_personally_viewed": [
+      0,
+      96,
+      144,
+      239
+    ],
+    "native_size": [
+      1344,
+      768
+    ],
+    "native2x_crops_personally_viewed": [
+      "f000-face-native2x.png",
+      "f144-face-native2x.png",
+      "f144-lower-native2x.png",
+      "f239-lower-native2x.png"
+    ],
+    "prompt_file_read": "prompts/library/a045-programmer-research-v2-firstpass-green-01.txt",
+    "all240_background_metrics_reused": true,
+    "continuous_source_playback_not_performed": true,
+    "final_stage_continuous_review_required": true
+  },
+  "background_proof": {
+    "method": "all_frame_saturated_green_native_border_v2",
+    "passed": true,
+    "frames": 240,
+    "expected_frames": 240,
+    "failed_frame_count": 0,
+    "failed_frames": [],
+    "background_rgb_min": [
+      4.0,
+      233.0,
+      9.0
+    ],
+    "background_rgb_max": [
+      6.0,
+      236.0,
+      10.0
+    ],
+    "maximum_spatial_delta": 14.0,
+    "maximum_temporal_delta": 3.0,
+    "thresholds": {
+      "dominant_min": 180,
+      "other_channels_max": 100,
+      "dominance_min": 100,
+      "spatial_delta_max": 35,
+      "temporal_delta_max": 24
+    },
+    "expected_background": "#00FF00",
+    "white_matte_fallback": false,
+    "visual_foreground_review_required": true,
+    "enclosed_background_and_foreground_verified": false,
+    "native_size": [
+      1344,
+      768
+    ],
+    "boundary_pixels_per_frame": 4224,
+    "measurement": "native_one_pixel_outer_boundary_no_spatial_resampling",
+    "sampling": {
+      "duration_seconds": 10,
+      "fps": 24,
+      "expected_frames": 240
+    }
+  },
+  "evidence_manifest": "quality/evidence/batch30-firstpass/a045/attempt-2/manifest.json",
+  "no_new_paid_calls": true,
+  "no_local_repair": true,
+  "processing_constraint": "Plain green key only; no global palette remapping or semantic pixel repair authorized."
+}

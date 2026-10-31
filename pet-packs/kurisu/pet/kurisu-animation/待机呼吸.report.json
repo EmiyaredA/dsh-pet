@@ -1,6 +1,6 @@
 {
-  "source": "\u5f85\u673a\u547c\u5438.mp4",
-  "output": "a001-palette-v2.webm",
+  "source": "待机呼吸.mp4",
+  "output": "a001-palette.webm",
   "source_size": [
     1344,
     768
@@ -63,7 +63,7 @@
       "height_delta_px": -1
     },
     "background_clear": true,
-    "endpoint_rgba_mean_absolute_difference": 3.783008214826397,
+    "endpoint_rgba_mean_absolute_difference": 3.801094482912665,
     "transparent_fraction": 0.8216754738136574
   },
   "temporal_palette": {
@@ -72,6 +72,16 @@
     "geometry_warped": false,
     "source_alpha_unchanged": true,
     "white_lace_neutrality": "Remove residual positive G chroma only from brightnearneutralwhitefabric; preserve approximate luminance",
+    "new_model_calls": 0
+  },
+  "neutral_material_revision": {
+    "type": "positive_green_neutral_white_and_dark_materials",
+    "input": "pet-packs/kurisu/pet/kurisu-animation/待机呼吸.webm",
+    "input_sha256": "f75e3adf52c9b0421f515b61c4bd20096b38c26466ec14bf0507f1c02d03992a",
+    "algorithm_sha256": "cdf6e639a90e51cc5b6589c33eb81b183e12c903575452facceb6b734299c03c",
+    "changed_rgb_pixels_all_frames": 461315,
+    "decoded_alpha_byte_exact": true,
+    "alpha_encoding": "extract_original_plane_and_alphamerge_after_color_conversion",
     "new_model_calls": 0
   }
 }

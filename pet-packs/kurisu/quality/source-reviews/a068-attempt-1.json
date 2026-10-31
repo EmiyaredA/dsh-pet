@@ -1,0 +1,38 @@
+{
+  "action_id": "a068",
+  "attempt_index": 1,
+  "source_file": "source/library/a068/attempt-1/吃甜甜圈.mp4",
+  "source_sha256": "fd7f01b10b709f1cf5f7303629fe8c5ccc1f725a6a1f12d9519ae9a2fb25eb70",
+  "source_task_id": "ae27a2ff-44df-417b-b26e-bb58ec950404",
+  "reviewer": "independent_source_qa_collaboration",
+  "reviewed_at": "2026-10-31T05:18:39.867157+00:00",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "processing_clearance": "allow_mild_color_and_green_key",
+  "defects": [],
+  "reason": "原生抽样未发现明显前景硬伤，既有240帧原生绿边界指标通过；允许首次普通绿幕及有界轻微色偏处理。",
+  "visual_findings": {
+    "action_and_props": "f48–144可辨粉色甜甜圈、盘和叉，f144圈上出现缺口；f192道具已隐去、双手在身后，f239空手。画面含第二个甜甜圈及叉子，不影响动作辨识，抽帧不能验证全部连续咬食。",
+    "character": "所看样本角色短圆比例、红棕发、蓝眼、女仆服、双猫耳与双鞋可辨；未见明显人物彩色光斑或严重脸眼变形。道具遮挡处无法判断。",
+    "endpoint": "f0与f239均空手正面站姿，尺度大致一致；f239不是243帧源片的最后一帧。"
+  },
+  "inspection_scope": {
+    "native_full_frames": [
+      0,
+      48,
+      96,
+      144,
+      192,
+      239
+    ],
+    "native_face_and_lower_2x": [
+      0,
+      144,
+      239
+    ],
+    "sample_limitation": "仅6个离散时刻、3个头脸和下身放大局部；未看连续播放或逐帧人工视觉审阅，未覆盖遮挡区和剩余帧。",
+    "hash_verification": "源片和12张PNG各自SHA与manifest一致，task ID及源SHA与library一致。",
+    "background": "复用既有240帧1px原生绿边界指标，0失败；未重扫，边框指标不证明内部背景或前景无问题。"
+  },
+  "final_media_approved": false
+}

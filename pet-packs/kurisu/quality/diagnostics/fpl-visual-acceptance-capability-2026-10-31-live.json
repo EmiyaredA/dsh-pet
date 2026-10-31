@@ -1,0 +1,233 @@
+{
+  "catalog": {
+    "items": [
+      {
+        "criteria": [
+          {
+            "id": "specifications",
+            "kinds": [
+              "image",
+              "video"
+            ],
+            "method": "automatic",
+            "reference_asset_ids": [],
+            "reference_label": "",
+            "required": true,
+            "requirement": "文件可解码，并满足配置的尺寸、画幅及时长。",
+            "specifications": {
+              "max_duration": null,
+              "min_duration": null,
+              "min_height": null,
+              "min_width": null,
+              "ratio": null,
+              "require_audio": false
+            },
+            "title": "输出规格"
+          },
+          {
+            "id": "identity",
+            "kinds": [
+              "image",
+              "video"
+            ],
+            "method": "ai",
+            "reference_asset_ids": [],
+            "reference_label": "角色基准图",
+            "required": true,
+            "requirement": "迁移后的角色与角色基准图一致，脸型、发型、服装和配饰保持稳定；遮挡或无法辨认时说明。",
+            "specifications": {
+              "max_duration": null,
+              "min_duration": null,
+              "min_height": null,
+              "min_width": null,
+              "ratio": null,
+              "require_audio": false
+            },
+            "title": "角色外观一致"
+          },
+          {
+            "id": "action",
+            "kinds": [
+              "image",
+              "video"
+            ],
+            "method": "ai",
+            "reference_asset_ids": [],
+            "reference_label": "原动作视频",
+            "required": true,
+            "requirement": "对照原动作视频的参考画面，检查关键姿态、肢体朝向与道具接触；抽样未覆盖或无法判断的动作留待人工确认。",
+            "specifications": {
+              "max_duration": null,
+              "min_duration": null,
+              "min_height": null,
+              "min_width": null,
+              "ratio": null,
+              "require_audio": false
+            },
+            "title": "动作与道具"
+          },
+          {
+            "id": "motion-continuity",
+            "kinds": [
+              "video"
+            ],
+            "method": "manual",
+            "reference_asset_ids": [],
+            "reference_label": "原动作视频",
+            "required": true,
+            "requirement": "完整播放原动作视频与迁移结果，核对动作顺序、速度、停顿和衔接；身体与道具不应无故跳变、穿透或消失。",
+            "specifications": {
+              "max_duration": null,
+              "min_duration": null,
+              "min_height": null,
+              "min_width": null,
+              "ratio": null,
+              "require_audio": false
+            },
+            "title": "动作连贯与节奏"
+          }
+        ],
+        "id": "builtin:motion-transfer",
+        "kinds": [
+          "video"
+        ],
+        "readonly": true,
+        "schemes": [
+          {
+            "available": false,
+            "connection_label": "模型 API 方案",
+            "id": "motion-transfer:api",
+            "input_description": "角色基准图、原动作抽帧、输出抽帧、检查要求",
+            "kind": "model_api",
+            "message": "尚未配置本空间可用的固定视觉模型",
+            "model_slug": "",
+            "output_description": "逐项建议、证据帧、无法判断项",
+            "provider_kind": "",
+            "title": "模型 API 方案",
+            "version": 1
+          },
+          {
+            "available": false,
+            "connection_label": "Codex",
+            "id": "motion-transfer:codex",
+            "input_description": "节点要求、原动作视频、角色参考、当前输出",
+            "kind": "code_agent",
+            "message": "此账号尚未获准使用该固定 Agent 连接",
+            "model_slug": "",
+            "output_description": "验收报告、问题区间、证据附件",
+            "provider_kind": "",
+            "title": "Codex 方案",
+            "version": 1
+          },
+          {
+            "available": false,
+            "connection_label": "Claude Code",
+            "id": "motion-transfer:claude-code",
+            "input_description": "节点要求、原动作视频、角色参考、当前输出",
+            "kind": "code_agent",
+            "message": "此账号尚未获准使用该固定 Agent 连接",
+            "model_slug": "",
+            "output_description": "验收报告、问题区间、证据附件",
+            "provider_kind": "",
+            "title": "Claude Code 方案",
+            "version": 1
+          },
+          {
+            "available": false,
+            "connection_label": "OpenCode",
+            "id": "motion-transfer:opencode",
+            "input_description": "节点要求、原动作视频、角色参考、当前输出",
+            "kind": "code_agent",
+            "message": "此账号尚未获准使用该固定 Agent 连接",
+            "model_slug": "",
+            "output_description": "验收报告、问题区间、证据附件",
+            "provider_kind": "",
+            "title": "OpenCode 方案",
+            "version": 1
+          },
+          {
+            "available": false,
+            "connection_label": "DeepSeek Harness",
+            "id": "motion-transfer:dsh",
+            "input_description": "节点要求、原动作视频、角色参考、当前输出",
+            "kind": "code_agent",
+            "message": "此账号尚未获准使用该固定 Agent 连接",
+            "model_slug": "",
+            "output_description": "验收报告、问题区间、证据附件",
+            "provider_kind": "",
+            "title": "DeepSeek Harness 方案",
+            "version": 1
+          },
+          {
+            "available": false,
+            "connection_label": "Pi",
+            "id": "motion-transfer:pi",
+            "input_description": "节点要求、原动作视频、角色参考、当前输出",
+            "kind": "code_agent",
+            "message": "此账号尚未获准使用该固定 Agent 连接",
+            "model_slug": "",
+            "output_description": "验收报告、问题区间、证据附件",
+            "provider_kind": "",
+            "title": "Pi 方案",
+            "version": 1
+          }
+        ],
+        "title": "动作迁移",
+        "version": 1
+      }
+    ]
+  },
+  "models": {
+    "items": [
+      {
+        "id": "f1000000-0000-4000-8000-000000000002",
+        "label": "SenseAudio VL 1.0",
+        "provider_kind": "openai",
+        "provider_name": "OpenAI 兼容网关",
+        "slug": "senseaudio-vl-1.0-260319"
+      },
+      {
+        "id": "f1000000-0000-4000-8000-000000000008",
+        "label": "SenseAudio VL Lite 1.0",
+        "provider_kind": "openai",
+        "provider_name": "OpenAI 兼容网关",
+        "slug": "senseaudio-vl-lite-1.0-260319"
+      },
+      {
+        "id": "f1000000-0000-4000-8000-000000000012",
+        "label": "Qwen3.6 35B-A3B",
+        "provider_kind": "openai",
+        "provider_name": "OpenAI 兼容网关",
+        "slug": "qwen3.6-35b-a3b"
+      },
+      {
+        "id": "f1000000-0000-4000-8000-000000000013",
+        "label": "Kimi K2.6",
+        "provider_kind": "openai",
+        "provider_name": "OpenAI 兼容网关",
+        "slug": "kimi-k2.6"
+      },
+      {
+        "id": "f1000000-0000-4000-8000-000000000017",
+        "label": "Doubao Seed 2.0 Pro",
+        "provider_kind": "openai",
+        "provider_name": "OpenAI 兼容网关",
+        "slug": "doubao-seed-2-0-pro-260215"
+      },
+      {
+        "id": "f1000000-0000-4000-8000-000000000004",
+        "label": "Claude Haiku 4.5",
+        "provider_kind": "anthropic",
+        "provider_name": "Anthropic",
+        "slug": "claude-haiku-4-5-20251001"
+      },
+      {
+        "id": "f1000000-0000-4000-8000-000000000018",
+        "label": "SenseNova 6.8 Flash-Lite",
+        "provider_kind": "openai",
+        "provider_name": "OpenAI 兼容网关",
+        "slug": "sensenova-6.8-flash-lite"
+      }
+    ]
+  }
+}

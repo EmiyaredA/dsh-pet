@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "action_id": "a034",
+  "attempt_index": 2,
+  "action_name": "报错拍键盘（半身）",
+  "spec_revision_id": "programmer-research-v2-2026-10-31",
+  "source_file": "source/library/a034/attempt-2/报错拍键盘（半身）.mp4",
+  "source_sha256": "52323b20de6ad7c3199df622accc48241110ceeafec16894dacd0eaea9b03c71",
+  "source_task_id": "48326df6-b573-4d1f-94bb-827cce7afcbf",
+  "result_asset_id": "15282e96-6594-416b-9222-2f2b4b47a78f",
+  "model_slug": "minimax_h3_zm_u24",
+  "reference_file": "references/kurisu-front-80-opaque-green.png",
+  "reference_sha256": "259edb632a5cf780e8259f2aac9b1c21fc7b80453708eda56ea2e6eb99501430",
+  "reviewer": "animation_qa independent agent",
+  "reviewed_at": "2026-10-31T07:12:08.747223+00:00",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "processing_clearance": "allow_mild_color_and_green_key",
+  "final_media_approved": false,
+  "reason": "按新程序员规格审本次绝对attempt2：腰前小键盘/折叠托架和静态暗红报错图标可辨，皱眉与短促轻拍动作可辨，脚保持画内，末尾道具收回并恢复空手站姿。原生与640及脸发2×抽查无明显新增结构/人物光斑/强绿染/形变，已实际完整播放10.125秒回环一次。仅准入初次普通U24绿幕处理，成片另验。",
+  "defects": [],
+  "source_background": {
+    "method": "all_frame_saturated_green_native_border_v2",
+    "passed": true,
+    "frames": 240,
+    "expected_frames": 240,
+    "failed_frame_count": 0,
+    "failed_frames": [],
+    "background_rgb_min": [
+      1.0,
+      234.0,
+      5.0
+    ],
+    "background_rgb_max": [
+      3.0,
+      238.0,
+      7.0
+    ],
+    "maximum_spatial_delta": 7.0,
+    "maximum_temporal_delta": 4.0,
+    "thresholds": {
+      "dominant_min": 180,
+      "other_channels_max": 100,
+      "dominance_min": 100,
+      "spatial_delta_max": 35,
+      "temporal_delta_max": 24
+    },
+    "expected_background": "#00FF00",
+    "white_matte_fallback": false,
+    "visual_foreground_review_required": true,
+    "enclosed_background_and_foreground_verified": false,
+    "native_size": [
+      1344,
+      768
+    ],
+    "boundary_pixels_per_frame": 4224,
+    "measurement": "native_one_pixel_outer_boundary_no_spatial_resampling",
+    "sampling": {
+      "duration_seconds": 10,
+      "fps": 24,
+      "expected_frames": 240
+    }
+  },
+  "inspection_scope": {
+    "existing_contact": "Existing11-sample full-body source contact personally viewed.",
+    "native_or640_full_body_samples_personally_viewed": [
+      96,
+      120,
+      144,
+      168,
+      239
+    ],
+    "native_face_crop_nearest2x_personally_viewed": [
+      0,
+      144,
+      239
+    ],
+    "frames_extracted_not_all_claimed_viewed": [
+      0,
+      48,
+      72,
+      96,
+      120,
+      144,
+      168,
+      192,
+      239
+    ],
+    "native_dimensions": [
+      1344,
+      768
+    ],
+    "browser_css_dimensions": [
+      640,
+      360
+    ],
+    "existing_gate": "Reused true nativeGREEN240PASS, spatial7/temporal4. No repeat background scan.",
+    "actual_playback_proof": "quality/evidence/programmer-samples/a034-attempt2/actual-browser-playback.json",
+    "limits": [
+      "No claim of all243 source frames manually inspected.",
+      "One compact down-touch is visible in representative gesture frames; amplitude is restrained, not a dramatic smash.",
+      "No final Alpha/edge/scale approval or additional processing."
+    ]
+  },
+  "visual_findings": {
+    "target_action": "Frown appears while the small static dark-red error icon and gray keyboard are on the waist-height support. Hand approaches/contacts the keyboard and returns; the pose reads as a restrained irritated keyboard tap, with no travel out of frame.",
+    "body_and_camera": "Headwear and both shoes remain visible in reviewed frames. No large camera zoom or new tail/limb was seen in the sampled views; the crossbars belong to the folding support.",
+    "color_and_face": "Pink ear interiors/bows, auburn hair, pale fabric and blue-violet eyes remain coherent in sampled views, with no moving colored light or clear face collapse.",
+    "props_and_endpoint": "Support/keyboard/error icon appear during the action and are all absent by frame239. Empty opening/ending stance is visible.",
+    "new_spec_identity": "This is programmer-research-v2 a034 absoluteattempt2, not the old pipette attempt1."
+  },
+  "evidence_directory": "quality/evidence/programmer-samples/a034-attempt2/",
+  "new_model_calls": 0,
+  "processing_performed": false,
+  "ledger_or_approval_modified": false
+}

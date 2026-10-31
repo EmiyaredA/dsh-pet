@@ -1,0 +1,3078 @@
+{
+  "at": "2026-10-30T20:56:15.788810+00:00",
+  "source": "Official SDK generation_options and original project task list; no direct database/config access",
+  "models": [
+    {
+      "description": "SenseAudio 高清多比例图片生成模型",
+      "id": "f2000000-0000-4000-8000-000000000001",
+      "kind": "image",
+      "label": "SenseAudio Image 2.0",
+      "max_prompt_length": 6000,
+      "max_reference_images": 1,
+      "provider_id": "f0000000-0000-4000-8000-000000000003",
+      "provider_name": "SenseAudio 图片生成",
+      "reference_mime_types": [
+        "image/jpeg",
+        "image/png",
+        "image/webp"
+      ],
+      "sizes": [
+        "1024x1024",
+        "1536x864",
+        "864x1536",
+        "2016x864",
+        "864x2016",
+        "2048x1024",
+        "1024x2048",
+        "2048x1152",
+        "1152x2048",
+        "2688x1152",
+        "1152x2688",
+        "2688x1344",
+        "1344x2688",
+        "3840x1648",
+        "1648x3840",
+        "3840x1920",
+        "1920x3840",
+        "3840x2160",
+        "2160x3840"
+      ],
+      "slug": "senseaudio-image-2.0-260319",
+      "supports_seed": true,
+      "video_capabilities": null,
+      "workflow_capabilities": null
+    },
+    {
+      "description": "高分辨率图片生成模型",
+      "id": "f2000000-0000-4000-8000-000000000003",
+      "kind": "image",
+      "label": "Doubao Seedream 5.0 Lite",
+      "max_prompt_length": 2000,
+      "max_reference_images": 1,
+      "provider_id": "f0000000-0000-4000-8000-000000000003",
+      "provider_name": "SenseAudio 图片生成",
+      "reference_mime_types": [
+        "image/jpeg",
+        "image/png",
+        "image/webp"
+      ],
+      "sizes": [
+        "2304x1728",
+        "1728x2304",
+        "2496x1664",
+        "1664x2496",
+        "2048x2048",
+        "3136x1344",
+        "2848x1600",
+        "1600x2848",
+        "3456x2592",
+        "2592x3456",
+        "2496x3744",
+        "3744x2496",
+        "4096x2304",
+        "2304x4096",
+        "3072x3072",
+        "4704x2016"
+      ],
+      "slug": "doubao-seedream-5-0-260128",
+      "supports_seed": true,
+      "video_capabilities": null,
+      "workflow_capabilities": null
+    },
+    {
+      "description": "面向信息图与高密度版式的图片生成模型",
+      "id": "f2000000-0000-4000-8000-000000000004",
+      "kind": "image",
+      "label": "SenseNova U1 Fast",
+      "max_prompt_length": 2000,
+      "max_reference_images": 1,
+      "provider_id": "f0000000-0000-4000-8000-000000000003",
+      "provider_name": "SenseAudio 图片生成",
+      "reference_mime_types": [
+        "image/jpeg",
+        "image/png",
+        "image/webp"
+      ],
+      "sizes": [
+        "1664x2496",
+        "2496x1664",
+        "1760x2368",
+        "2368x1760",
+        "1824x2272",
+        "2272x1824",
+        "2048x2048",
+        "2752x1536",
+        "1536x2752",
+        "3072x1376",
+        "1344x3136"
+      ],
+      "slug": "sensenova-u1-fast",
+      "supports_seed": true,
+      "video_capabilities": null,
+      "workflow_capabilities": null
+    },
+    {
+      "description": "支持文本、首尾帧与多模态参考素材的视频生成模型",
+      "id": "f2000000-0000-4000-8000-000000000005",
+      "kind": "video",
+      "label": "Doubao Seedance 2.0",
+      "max_prompt_length": 2000,
+      "max_reference_images": 1,
+      "provider_id": "f0000000-0000-4000-8000-000000000004",
+      "provider_name": "SenseAudio 视频生成",
+      "reference_mime_types": [
+        "image/jpeg",
+        "image/png",
+        "image/webp"
+      ],
+      "sizes": [],
+      "slug": "doubao-seedance-2-0-260128",
+      "supports_seed": true,
+      "video_capabilities": null,
+      "workflow_capabilities": null
+    },
+    {
+      "description": "MiniMax H3 多模态视频；最多 9 图、1 视频、3 音频，联合生成音视频。",
+      "id": "06bb5aae-63df-4b4d-ae67-f0a078947879",
+      "kind": "video",
+      "label": "U17-9图1视频3音频V1-api",
+      "max_prompt_length": 6000,
+      "max_reference_images": 9,
+      "provider_id": "107dce9a-e431-47b0-9f8f-9813c980542d",
+      "provider_name": "ZEALMAN H3 视频生成",
+      "reference_mime_types": [
+        "image/jpeg",
+        "image/png",
+        "image/webp"
+      ],
+      "sizes": [],
+      "slug": "U17-9图1视频3音频V1-api",
+      "supports_seed": true,
+      "video_capabilities": null,
+      "workflow_capabilities": {
+        "joint_audio": true,
+        "max_reference_bytes": 47185920,
+        "parameters": {
+          "megapixels": {
+            "default": 0.9,
+            "maximum": 2.0,
+            "minimum": 0.1,
+            "step": 0.1
+          },
+          "upscale_factor": {
+            "default": 1.5,
+            "maximum": 2.0,
+            "minimum": 1.0,
+            "step": 0.1
+          }
+        },
+        "reference_limits": {
+          "image": 9,
+          "audio": 3,
+          "video": 1
+        },
+        "reference_mime_types": {
+          "image": [
+            "image/gif",
+            "image/jpeg",
+            "image/png",
+            "image/webp"
+          ],
+          "audio": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/x-wav"
+          ],
+          "video": [
+            "video/mp4",
+            "video/quicktime"
+          ]
+        },
+        "supports_ratio": true
+      }
+    },
+    {
+      "description": "MiniMax H3 参考视频生成；最多 9 图、3 音频，支持宽高与种子。",
+      "id": "8da77a61-9294-43a1-814d-e9b992897442",
+      "kind": "video",
+      "label": "U06-9图3音频-V5",
+      "max_prompt_length": 6000,
+      "max_reference_images": 9,
+      "provider_id": "107dce9a-e431-47b0-9f8f-9813c980542d",
+      "provider_name": "ZEALMAN H3 视频生成",
+      "reference_mime_types": [
+        "image/jpeg",
+        "image/png",
+        "image/webp"
+      ],
+      "sizes": [],
+      "slug": "U06-9图3音频-V5",
+      "supports_seed": true,
+      "video_capabilities": null,
+      "workflow_capabilities": {
+        "joint_audio": true,
+        "max_reference_bytes": 47185920,
+        "parameters": {
+          "width": {
+            "default": 1344,
+            "maximum": 2048,
+            "minimum": 256,
+            "step": 32
+          },
+          "height": {
+            "default": 768,
+            "maximum": 2048,
+            "minimum": 256,
+            "step": 32
+          },
+          "seed": {
+            "default": null,
+            "maximum": 1125899906842624,
+            "minimum": 0,
+            "step": 1
+          }
+        },
+        "reference_limits": {
+          "image": 9,
+          "audio": 3,
+          "video": 0
+        },
+        "reference_mime_types": {
+          "image": [
+            "image/gif",
+            "image/jpeg",
+            "image/png",
+            "image/webp"
+          ],
+          "audio": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/x-wav"
+          ],
+          "video": [
+            "video/mp4",
+            "video/quicktime"
+          ]
+        },
+        "supports_ratio": false
+      }
+    },
+    {
+      "description": "MiniMax H3多图参考生成视频，最长支持15秒视频",
+      "id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+      "kind": "video",
+      "label": "H3多图多音频生视频(影视画质)",
+      "max_prompt_length": 20000,
+      "max_reference_images": 9,
+      "provider_id": "e15cb496-2bf9-4e65-ae3f-92831f80d0d8",
+      "provider_name": "AutoDL zealman 视频生成",
+      "reference_mime_types": [
+        "image/jpeg",
+        "image/png",
+        "image/webp"
+      ],
+      "sizes": [],
+      "slug": "minimax_h3_zm_nono",
+      "supports_seed": true,
+      "video_capabilities": {
+        "audio_only": false,
+        "default_generate_audio": false,
+        "default_ratio": "9:16",
+        "default_resolution": "768p",
+        "duration_label": "时长",
+        "duration_max": 15,
+        "duration_min": 1,
+        "frames_require_adaptive_ratio": false,
+        "max_prompt_length": 20000,
+        "prompt_required": true,
+        "ratios": [
+          "9:16",
+          "16:9"
+        ],
+        "reference_limits": {
+          "image": 9,
+          "audio": 3,
+          "video": 0
+        },
+        "reference_mime_types": {
+          "image": [
+            "image/jpeg",
+            "image/png",
+            "image/webp"
+          ],
+          "audio": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/x-wav"
+          ],
+          "video": [
+            "video/mp4",
+            "video/webm"
+          ]
+        },
+        "reference_minimums": {
+          "image": 1,
+          "audio": 0,
+          "video": 0
+        },
+        "reference_video_upload_configured": true,
+        "resolution_ratios": {
+          "480p": [
+            "9:16",
+            "16:9"
+          ],
+          "768p": [
+            "9:16",
+            "16:9"
+          ],
+          "960p": [
+            "9:16"
+          ]
+        },
+        "resolutions": [
+          "480p",
+          "768p",
+          "960p"
+        ],
+        "seed_maximum": 999999999999999,
+        "seed_minimum": 0,
+        "supported_modes": [
+          "reference"
+        ],
+        "supports_auto_duration": false,
+        "supports_duration": true,
+        "supports_generate_audio": false,
+        "supports_prompt": true,
+        "supports_ratio": true,
+        "supports_seed": false,
+        "supports_watermark": false
+      },
+      "workflow_capabilities": null
+    },
+    {
+      "description": "MiniMax H3多图参考生成视频，最长支持15秒视频",
+      "id": "7bb7016d-288b-42be-886b-d650e5ed9b5d",
+      "kind": "video",
+      "label": "H3多图多音频生视频(超清画质)",
+      "max_prompt_length": 20000,
+      "max_reference_images": 9,
+      "provider_id": "e15cb496-2bf9-4e65-ae3f-92831f80d0d8",
+      "provider_name": "AutoDL zealman 视频生成",
+      "reference_mime_types": [
+        "image/jpeg",
+        "image/png",
+        "image/webp"
+      ],
+      "sizes": [],
+      "slug": "minimax_h3_zm_u30",
+      "supports_seed": true,
+      "video_capabilities": {
+        "audio_only": false,
+        "default_generate_audio": false,
+        "default_ratio": "9:16",
+        "default_resolution": "768p",
+        "duration_label": "时长",
+        "duration_max": 15,
+        "duration_min": 1,
+        "frames_require_adaptive_ratio": false,
+        "max_prompt_length": 20000,
+        "prompt_required": true,
+        "ratios": [
+          "9:16",
+          "16:9"
+        ],
+        "reference_limits": {
+          "image": 9,
+          "audio": 3,
+          "video": 0
+        },
+        "reference_mime_types": {
+          "image": [
+            "image/jpeg",
+            "image/png",
+            "image/webp"
+          ],
+          "audio": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/x-wav",
+            "audio/flac",
+            "audio/x-flac"
+          ],
+          "video": [
+            "video/mp4",
+            "video/webm"
+          ]
+        },
+        "reference_minimums": {
+          "image": 1,
+          "audio": 0,
+          "video": 0
+        },
+        "reference_video_upload_configured": true,
+        "resolution_ratios": {
+          "480p": [
+            "9:16",
+            "16:9"
+          ],
+          "768p": [
+            "9:16",
+            "16:9"
+          ],
+          "960p": [
+            "9:16"
+          ]
+        },
+        "resolutions": [
+          "480p",
+          "768p",
+          "960p"
+        ],
+        "seed_maximum": 999999999999999,
+        "seed_minimum": 0,
+        "supported_modes": [
+          "reference"
+        ],
+        "supports_auto_duration": false,
+        "supports_duration": true,
+        "supports_generate_audio": false,
+        "supports_prompt": true,
+        "supports_ratio": true,
+        "supports_seed": true,
+        "supports_watermark": false
+      },
+      "workflow_capabilities": null
+    },
+    {
+      "description": "MiniMax H3多图参考生成视频，最长支持15秒视频",
+      "id": "418c676d-1a59-4b3e-a716-b99de8038c71",
+      "kind": "video",
+      "label": "H3多图多音频生视频(升级画质)",
+      "max_prompt_length": 20000,
+      "max_reference_images": 9,
+      "provider_id": "e15cb496-2bf9-4e65-ae3f-92831f80d0d8",
+      "provider_name": "AutoDL zealman 视频生成",
+      "reference_mime_types": [
+        "image/jpeg",
+        "image/png",
+        "image/webp"
+      ],
+      "sizes": [],
+      "slug": "minimax_h3_zm_u24",
+      "supports_seed": true,
+      "video_capabilities": {
+        "audio_only": false,
+        "default_generate_audio": false,
+        "default_ratio": "9:16",
+        "default_resolution": "768p",
+        "duration_label": "时长",
+        "duration_max": 15,
+        "duration_min": 1,
+        "frames_require_adaptive_ratio": false,
+        "max_prompt_length": 20000,
+        "prompt_required": true,
+        "ratios": [
+          "9:16",
+          "16:9",
+          "1:1"
+        ],
+        "reference_limits": {
+          "image": 9,
+          "audio": 3,
+          "video": 0
+        },
+        "reference_mime_types": {
+          "image": [
+            "image/jpeg",
+            "image/png",
+            "image/webp"
+          ],
+          "audio": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/x-wav",
+            "audio/flac",
+            "audio/x-flac"
+          ],
+          "video": [
+            "video/mp4",
+            "video/webm"
+          ]
+        },
+        "reference_minimums": {
+          "image": 1,
+          "audio": 0,
+          "video": 0
+        },
+        "reference_video_upload_configured": true,
+        "resolution_ratios": {
+          "480p": [
+            "9:16",
+            "16:9",
+            "1:1"
+          ],
+          "768p": [
+            "9:16",
+            "16:9",
+            "1:1"
+          ]
+        },
+        "resolutions": [
+          "480p",
+          "768p"
+        ],
+        "seed_maximum": 999999999999999,
+        "seed_minimum": 0,
+        "supported_modes": [
+          "reference"
+        ],
+        "supports_auto_duration": false,
+        "supports_duration": true,
+        "supports_generate_audio": false,
+        "supports_prompt": true,
+        "supports_ratio": true,
+        "supports_seed": true,
+        "supports_watermark": false
+      },
+      "workflow_capabilities": null
+    },
+    {
+      "description": "MiniMax H3多图参考生成视频，最长支持15秒视频",
+      "id": "d136ba40-d7ef-4314-8453-c2610777ea1f",
+      "kind": "video",
+      "label": "H3多图多音频生视频(高速版)",
+      "max_prompt_length": 20000,
+      "max_reference_images": 9,
+      "provider_id": "e15cb496-2bf9-4e65-ae3f-92831f80d0d8",
+      "provider_name": "AutoDL zealman 视频生成",
+      "reference_mime_types": [
+        "image/jpeg",
+        "image/png",
+        "image/webp"
+      ],
+      "sizes": [],
+      "slug": "minimax_h3_zm_u08",
+      "supports_seed": true,
+      "video_capabilities": {
+        "audio_only": false,
+        "default_generate_audio": false,
+        "default_ratio": "9:16",
+        "default_resolution": "768p",
+        "duration_label": "时长",
+        "duration_max": 15,
+        "duration_min": 1,
+        "frames_require_adaptive_ratio": false,
+        "max_prompt_length": 20000,
+        "prompt_required": true,
+        "ratios": [
+          "9:16",
+          "16:9",
+          "1:1"
+        ],
+        "reference_limits": {
+          "image": 9,
+          "audio": 3,
+          "video": 0
+        },
+        "reference_mime_types": {
+          "image": [
+            "image/jpeg",
+            "image/png",
+            "image/webp"
+          ],
+          "audio": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/x-wav",
+            "audio/flac",
+            "audio/x-flac"
+          ],
+          "video": [
+            "video/mp4",
+            "video/webm"
+          ]
+        },
+        "reference_minimums": {
+          "image": 1,
+          "audio": 0,
+          "video": 0
+        },
+        "reference_video_upload_configured": true,
+        "resolution_ratios": {
+          "480p": [
+            "9:16",
+            "16:9",
+            "1:1"
+          ],
+          "768p": [
+            "9:16",
+            "16:9",
+            "1:1"
+          ]
+        },
+        "resolutions": [
+          "480p",
+          "768p"
+        ],
+        "seed_maximum": 999999999999999,
+        "seed_minimum": 0,
+        "supported_modes": [
+          "reference"
+        ],
+        "supports_auto_duration": false,
+        "supports_duration": true,
+        "supports_generate_audio": false,
+        "supports_prompt": true,
+        "supports_ratio": true,
+        "supports_seed": true,
+        "supports_watermark": false
+      },
+      "workflow_capabilities": null
+    },
+    {
+      "description": "MiniMax H3多图多音频参考生视频，最长支持15秒视频，该工作流未做任何包装门槛较高，需精确控制提示词来使用",
+      "id": "bda66d26-457c-4c3b-bd13-3f7cf674686c",
+      "kind": "video",
+      "label": "H3多图多音频生视频15秒",
+      "max_prompt_length": 20000,
+      "max_reference_images": 9,
+      "provider_id": "e15cb496-2bf9-4e65-ae3f-92831f80d0d8",
+      "provider_name": "AutoDL zealman 视频生成",
+      "reference_mime_types": [
+        "image/jpeg",
+        "image/png",
+        "image/webp"
+      ],
+      "sizes": [],
+      "slug": "minimax_h3_image_audio_to_video_v2_15s",
+      "supports_seed": true,
+      "video_capabilities": {
+        "audio_only": true,
+        "default_generate_audio": false,
+        "default_ratio": "9:16",
+        "default_resolution": "768p",
+        "duration_label": "时长",
+        "duration_max": 15,
+        "duration_min": 1,
+        "frames_require_adaptive_ratio": false,
+        "max_prompt_length": 20000,
+        "prompt_required": true,
+        "ratios": [
+          "9:16",
+          "16:9"
+        ],
+        "reference_limits": {
+          "image": 9,
+          "audio": 3,
+          "video": 0
+        },
+        "reference_mime_types": {
+          "image": [
+            "image/jpeg",
+            "image/png",
+            "image/webp"
+          ],
+          "audio": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/x-wav",
+            "audio/flac",
+            "audio/x-flac"
+          ],
+          "video": [
+            "video/mp4",
+            "video/webm"
+          ]
+        },
+        "reference_minimums": {
+          "image": 0,
+          "audio": 0,
+          "video": 0
+        },
+        "reference_video_upload_configured": true,
+        "resolution_ratios": {
+          "480p": [
+            "9:16",
+            "16:9"
+          ],
+          "768p": [
+            "9:16",
+            "16:9"
+          ]
+        },
+        "resolutions": [
+          "480p",
+          "768p"
+        ],
+        "seed_maximum": 999999999999999,
+        "seed_minimum": 1,
+        "supported_modes": [
+          "text",
+          "reference"
+        ],
+        "supports_auto_duration": false,
+        "supports_duration": true,
+        "supports_generate_audio": false,
+        "supports_prompt": true,
+        "supports_ratio": true,
+        "supports_seed": true,
+        "supports_watermark": false
+      },
+      "workflow_capabilities": null
+    },
+    {
+      "description": "MiniMax H3多图参考生成视频，最长支持15秒视频",
+      "id": "a449f2e3-3a28-41d7-b802-d969f20eabc1",
+      "kind": "video",
+      "label": "H3多图生视频15秒",
+      "max_prompt_length": 20000,
+      "max_reference_images": 9,
+      "provider_id": "e15cb496-2bf9-4e65-ae3f-92831f80d0d8",
+      "provider_name": "AutoDL zealman 视频生成",
+      "reference_mime_types": [
+        "image/jpeg",
+        "image/png",
+        "image/webp"
+      ],
+      "sizes": [],
+      "slug": "minimax_h3_lightx2v_v5_15s",
+      "supports_seed": true,
+      "video_capabilities": {
+        "audio_only": false,
+        "default_generate_audio": false,
+        "default_ratio": "9:16",
+        "default_resolution": "768p",
+        "duration_label": "时长",
+        "duration_max": 15,
+        "duration_min": 1,
+        "frames_require_adaptive_ratio": false,
+        "max_prompt_length": 20000,
+        "prompt_required": true,
+        "ratios": [
+          "9:16",
+          "16:9",
+          "1:1"
+        ],
+        "reference_limits": {
+          "image": 9,
+          "audio": 0,
+          "video": 0
+        },
+        "reference_mime_types": {
+          "image": [
+            "image/jpeg",
+            "image/png",
+            "image/webp"
+          ],
+          "audio": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/x-wav",
+            "audio/flac",
+            "audio/x-flac"
+          ],
+          "video": [
+            "video/mp4",
+            "video/webm"
+          ]
+        },
+        "reference_minimums": {
+          "image": 1,
+          "audio": 0,
+          "video": 0
+        },
+        "reference_video_upload_configured": true,
+        "resolution_ratios": {
+          "480p": [
+            "9:16",
+            "16:9",
+            "1:1"
+          ],
+          "768p": [
+            "9:16",
+            "16:9",
+            "1:1"
+          ]
+        },
+        "resolutions": [
+          "480p",
+          "768p"
+        ],
+        "seed_maximum": 999999999999999,
+        "seed_minimum": 1,
+        "supported_modes": [
+          "reference"
+        ],
+        "supports_auto_duration": false,
+        "supports_duration": true,
+        "supports_generate_audio": false,
+        "supports_prompt": true,
+        "supports_ratio": true,
+        "supports_seed": true,
+        "supports_watermark": false
+      },
+      "workflow_capabilities": null
+    },
+    {
+      "description": "MiniMax H3多图多音频参考生视频，该工作流未做任何包装门槛较高，需精确控制提示词来使用",
+      "id": "44fa0e72-df87-4c52-9f29-8cf99a3e5c19",
+      "kind": "video",
+      "label": "H3多图多音频生视频",
+      "max_prompt_length": 20000,
+      "max_reference_images": 9,
+      "provider_id": "e15cb496-2bf9-4e65-ae3f-92831f80d0d8",
+      "provider_name": "AutoDL zealman 视频生成",
+      "reference_mime_types": [
+        "image/jpeg",
+        "image/png",
+        "image/webp"
+      ],
+      "sizes": [],
+      "slug": "minimax_h3_image_audio_to_video_v2",
+      "supports_seed": true,
+      "video_capabilities": {
+        "audio_only": true,
+        "default_generate_audio": false,
+        "default_ratio": "9:16",
+        "default_resolution": "768p",
+        "duration_label": "时长",
+        "duration_max": 10,
+        "duration_min": 1,
+        "frames_require_adaptive_ratio": false,
+        "max_prompt_length": 20000,
+        "prompt_required": true,
+        "ratios": [
+          "9:16",
+          "16:9"
+        ],
+        "reference_limits": {
+          "image": 9,
+          "audio": 3,
+          "video": 0
+        },
+        "reference_mime_types": {
+          "image": [
+            "image/jpeg",
+            "image/png",
+            "image/webp"
+          ],
+          "audio": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/x-wav",
+            "audio/flac",
+            "audio/x-flac"
+          ],
+          "video": [
+            "video/mp4",
+            "video/webm"
+          ]
+        },
+        "reference_minimums": {
+          "image": 0,
+          "audio": 0,
+          "video": 0
+        },
+        "reference_video_upload_configured": true,
+        "resolution_ratios": {
+          "480p": [
+            "9:16",
+            "16:9"
+          ],
+          "768p": [
+            "9:16",
+            "16:9"
+          ],
+          "1080p": [
+            "9:16",
+            "16:9"
+          ]
+        },
+        "resolutions": [
+          "480p",
+          "768p",
+          "1080p"
+        ],
+        "seed_maximum": 999999999999999,
+        "seed_minimum": 1,
+        "supported_modes": [
+          "text",
+          "reference"
+        ],
+        "supports_auto_duration": false,
+        "supports_duration": true,
+        "supports_generate_audio": false,
+        "supports_prompt": true,
+        "supports_ratio": true,
+        "supports_seed": true,
+        "supports_watermark": false
+      },
+      "workflow_capabilities": null
+    },
+    {
+      "description": "MiniMax H3图生视频-音频同步",
+      "id": "4524ace0-4658-4e2c-84ad-e6e9dda3aa46",
+      "kind": "video",
+      "label": "H3图生视频-音频同步(自动对口型)",
+      "max_prompt_length": 20000,
+      "max_reference_images": 9,
+      "provider_id": "e15cb496-2bf9-4e65-ae3f-92831f80d0d8",
+      "provider_name": "AutoDL zealman 视频生成",
+      "reference_mime_types": [
+        "image/jpeg",
+        "image/png",
+        "image/webp"
+      ],
+      "sizes": [],
+      "slug": "minimax_h3_image_audio_to_video",
+      "supports_seed": true,
+      "video_capabilities": {
+        "audio_only": false,
+        "default_generate_audio": false,
+        "default_ratio": "9:16",
+        "default_resolution": "768p",
+        "duration_label": "音频截取时长",
+        "duration_max": 15,
+        "duration_min": 1,
+        "frames_require_adaptive_ratio": false,
+        "max_prompt_length": 20000,
+        "prompt_required": false,
+        "ratios": [
+          "9:16",
+          "16:9"
+        ],
+        "reference_limits": {
+          "image": 1,
+          "audio": 1,
+          "video": 0
+        },
+        "reference_mime_types": {
+          "image": [
+            "image/jpeg",
+            "image/png",
+            "image/webp"
+          ],
+          "audio": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/x-wav",
+            "audio/flac",
+            "audio/x-flac"
+          ],
+          "video": [
+            "video/mp4",
+            "video/webm"
+          ]
+        },
+        "reference_minimums": {
+          "image": 1,
+          "audio": 1,
+          "video": 0
+        },
+        "reference_video_upload_configured": true,
+        "resolution_ratios": {
+          "480p": [
+            "9:16",
+            "16:9"
+          ],
+          "768p": [
+            "9:16",
+            "16:9"
+          ],
+          "1080p": [
+            "9:16",
+            "16:9"
+          ]
+        },
+        "resolutions": [
+          "480p",
+          "768p",
+          "1080p"
+        ],
+        "seed_maximum": 999999999999999,
+        "seed_minimum": 0,
+        "supported_modes": [
+          "reference"
+        ],
+        "supports_auto_duration": false,
+        "supports_duration": true,
+        "supports_generate_audio": false,
+        "supports_prompt": false,
+        "supports_ratio": true,
+        "supports_seed": false,
+        "supports_watermark": false
+      },
+      "workflow_capabilities": null
+    },
+    {
+      "description": "MiniMax H3多图参考生成视频",
+      "id": "fcd7c573-a208-411a-8636-80e2658919c0",
+      "kind": "video",
+      "label": "H3多图参考生视频",
+      "max_prompt_length": 20000,
+      "max_reference_images": 9,
+      "provider_id": "e15cb496-2bf9-4e65-ae3f-92831f80d0d8",
+      "provider_name": "AutoDL zealman 视频生成",
+      "reference_mime_types": [
+        "image/jpeg",
+        "image/png",
+        "image/webp"
+      ],
+      "sizes": [],
+      "slug": "minimax_h3_lightx2v_v5",
+      "supports_seed": true,
+      "video_capabilities": {
+        "audio_only": false,
+        "default_generate_audio": false,
+        "default_ratio": "9:16",
+        "default_resolution": "768p",
+        "duration_label": "时长",
+        "duration_max": 10,
+        "duration_min": 1,
+        "frames_require_adaptive_ratio": false,
+        "max_prompt_length": 20000,
+        "prompt_required": true,
+        "ratios": [
+          "9:16",
+          "16:9",
+          "1:1"
+        ],
+        "reference_limits": {
+          "image": 9,
+          "audio": 0,
+          "video": 0
+        },
+        "reference_mime_types": {
+          "image": [
+            "image/jpeg",
+            "image/png",
+            "image/webp"
+          ],
+          "audio": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/x-wav",
+            "audio/flac",
+            "audio/x-flac"
+          ],
+          "video": [
+            "video/mp4",
+            "video/webm"
+          ]
+        },
+        "reference_minimums": {
+          "image": 1,
+          "audio": 0,
+          "video": 0
+        },
+        "reference_video_upload_configured": true,
+        "resolution_ratios": {
+          "480p": [
+            "9:16",
+            "16:9",
+            "1:1"
+          ],
+          "768p": [
+            "9:16",
+            "16:9",
+            "1:1"
+          ],
+          "1080p": [
+            "9:16",
+            "16:9",
+            "1:1"
+          ]
+        },
+        "resolutions": [
+          "480p",
+          "768p",
+          "1080p"
+        ],
+        "seed_maximum": 999999999999999,
+        "seed_minimum": 1,
+        "supported_modes": [
+          "reference"
+        ],
+        "supports_auto_duration": false,
+        "supports_duration": true,
+        "supports_generate_audio": false,
+        "supports_prompt": true,
+        "supports_ratio": true,
+        "supports_seed": true,
+        "supports_watermark": false
+      },
+      "workflow_capabilities": null
+    },
+    {
+      "description": "MiniMax H3文生视频",
+      "id": "7e807b82-ced1-4c2a-b62f-52001f206314",
+      "kind": "video",
+      "label": "H3文生视频",
+      "max_prompt_length": 20000,
+      "max_reference_images": 9,
+      "provider_id": "e15cb496-2bf9-4e65-ae3f-92831f80d0d8",
+      "provider_name": "AutoDL zealman 视频生成",
+      "reference_mime_types": [
+        "image/jpeg",
+        "image/png",
+        "image/webp"
+      ],
+      "sizes": [],
+      "slug": "minimax_h3_lightx2v_no_pic",
+      "supports_seed": true,
+      "video_capabilities": {
+        "audio_only": true,
+        "default_generate_audio": false,
+        "default_ratio": "9:16",
+        "default_resolution": "768p",
+        "duration_label": "时长",
+        "duration_max": 15,
+        "duration_min": 1,
+        "frames_require_adaptive_ratio": false,
+        "max_prompt_length": 20000,
+        "prompt_required": true,
+        "ratios": [
+          "9:16",
+          "16:9",
+          "1:1"
+        ],
+        "reference_limits": {
+          "image": 0,
+          "audio": 0,
+          "video": 0
+        },
+        "reference_mime_types": {
+          "image": [
+            "image/jpeg",
+            "image/png",
+            "image/webp"
+          ],
+          "audio": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/x-wav",
+            "audio/flac",
+            "audio/x-flac"
+          ],
+          "video": [
+            "video/mp4",
+            "video/webm"
+          ]
+        },
+        "reference_minimums": {
+          "image": 0,
+          "audio": 0,
+          "video": 0
+        },
+        "reference_video_upload_configured": true,
+        "resolution_ratios": {
+          "480p": [
+            "9:16",
+            "16:9",
+            "1:1"
+          ],
+          "768p": [
+            "9:16",
+            "16:9",
+            "1:1"
+          ]
+        },
+        "resolutions": [
+          "480p",
+          "768p"
+        ],
+        "seed_maximum": 999999999999999,
+        "seed_minimum": 1,
+        "supported_modes": [
+          "text"
+        ],
+        "supports_auto_duration": false,
+        "supports_duration": true,
+        "supports_generate_audio": false,
+        "supports_prompt": true,
+        "supports_ratio": true,
+        "supports_seed": true,
+        "supports_watermark": false
+      },
+      "workflow_capabilities": null
+    },
+    {
+      "description": "MiniMax H3首尾帧生视频",
+      "id": "5a785fa2-385f-45a0-a62b-d955b6dd72af",
+      "kind": "video",
+      "label": "H3首尾帧生成视频",
+      "max_prompt_length": 20000,
+      "max_reference_images": 9,
+      "provider_id": "e15cb496-2bf9-4e65-ae3f-92831f80d0d8",
+      "provider_name": "AutoDL zealman 视频生成",
+      "reference_mime_types": [
+        "image/jpeg",
+        "image/png",
+        "image/webp"
+      ],
+      "sizes": [],
+      "slug": "minimax_h3_lightx2v",
+      "supports_seed": true,
+      "video_capabilities": {
+        "audio_only": false,
+        "default_generate_audio": false,
+        "default_ratio": "9:16",
+        "default_resolution": "768p",
+        "duration_label": "时长",
+        "duration_max": 15,
+        "duration_min": 1,
+        "frames_require_adaptive_ratio": false,
+        "max_prompt_length": 20000,
+        "prompt_required": true,
+        "ratios": [
+          "9:16",
+          "16:9",
+          "1:1"
+        ],
+        "reference_limits": {
+          "image": 2,
+          "audio": 0,
+          "video": 0
+        },
+        "reference_mime_types": {
+          "image": [
+            "image/jpeg",
+            "image/png",
+            "image/webp"
+          ],
+          "audio": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/x-wav",
+            "audio/flac",
+            "audio/x-flac"
+          ],
+          "video": [
+            "video/mp4",
+            "video/webm"
+          ]
+        },
+        "reference_minimums": {
+          "image": 2,
+          "audio": 0,
+          "video": 0
+        },
+        "reference_video_upload_configured": true,
+        "resolution_ratios": {
+          "480p": [
+            "9:16",
+            "16:9",
+            "1:1"
+          ],
+          "768p": [
+            "9:16",
+            "16:9",
+            "1:1"
+          ]
+        },
+        "resolutions": [
+          "480p",
+          "768p"
+        ],
+        "seed_maximum": 999999999999999,
+        "seed_minimum": 1,
+        "supported_modes": [
+          "frames"
+        ],
+        "supports_auto_duration": false,
+        "supports_duration": true,
+        "supports_generate_audio": false,
+        "supports_prompt": true,
+        "supports_ratio": true,
+        "supports_seed": true,
+        "supports_watermark": false
+      },
+      "workflow_capabilities": null
+    },
+    {
+      "description": "动作迁移",
+      "id": "b217e3cd-884d-4015-a3fa-98ab7608a67e",
+      "kind": "video",
+      "label": "动作迁移",
+      "max_prompt_length": 20000,
+      "max_reference_images": 9,
+      "provider_id": "e15cb496-2bf9-4e65-ae3f-92831f80d0d8",
+      "provider_name": "AutoDL zealman 视频生成",
+      "reference_mime_types": [
+        "image/jpeg",
+        "image/png",
+        "image/webp"
+      ],
+      "sizes": [],
+      "slug": "wan2.2animate-v4-motion_retargeting",
+      "supports_seed": true,
+      "video_capabilities": {
+        "audio_only": false,
+        "default_generate_audio": false,
+        "default_ratio": null,
+        "default_resolution": "464x832",
+        "duration_label": "时长",
+        "duration_max": 15,
+        "duration_min": 1,
+        "frames_require_adaptive_ratio": false,
+        "max_prompt_length": 20000,
+        "prompt_required": false,
+        "ratios": [],
+        "reference_limits": {
+          "image": 1,
+          "audio": 0,
+          "video": 1
+        },
+        "reference_mime_types": {
+          "image": [
+            "image/jpeg",
+            "image/png",
+            "image/webp"
+          ],
+          "audio": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/x-wav",
+            "audio/flac",
+            "audio/x-flac"
+          ],
+          "video": [
+            "video/mp4",
+            "video/webm"
+          ]
+        },
+        "reference_minimums": {
+          "image": 1,
+          "audio": 0,
+          "video": 1
+        },
+        "reference_video_upload_configured": true,
+        "resolution_ratios": {},
+        "resolutions": [
+          "464x832",
+          "832x464"
+        ],
+        "seed_maximum": 999999999999999,
+        "seed_minimum": 1,
+        "supported_modes": [
+          "reference"
+        ],
+        "supports_auto_duration": false,
+        "supports_duration": false,
+        "supports_generate_audio": false,
+        "supports_prompt": false,
+        "supports_ratio": false,
+        "supports_seed": true,
+        "supports_watermark": false
+      },
+      "workflow_capabilities": null
+    }
+  ],
+  "project_task_history": [
+    {
+      "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+      "model_slug": "minimax_h3_zm_nono",
+      "status": "completed",
+      "id": "02b23232-08ba-488d-a72c-e098ed9881ef",
+      "created_at": "2026-10-30T20:41:11.153349Z",
+      "error_message": null,
+      "canvas_node_id": "kurisu-a016",
+      "result_asset_id": "4a2fe741-f092-4334-ab51-3260f4ff43a1",
+      "request_summary": {
+        "mode": "reference",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "reference_asset_ids": [
+          "31857508-4eca-4ef3-9d42-a8fd52c37cc3"
+        ],
+        "video_asset_ids": [],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    },
+    {
+      "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+      "model_slug": "minimax_h3_zm_nono",
+      "status": "completed",
+      "id": "d73b665f-bf92-4cf6-adde-9677602e4471",
+      "created_at": "2026-10-30T20:41:11.060456Z",
+      "error_message": null,
+      "canvas_node_id": "kurisu-a012",
+      "result_asset_id": "0b970e6e-9e3f-4761-aa99-ac8f462dc005",
+      "request_summary": {
+        "mode": "reference",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "reference_asset_ids": [
+          "31857508-4eca-4ef3-9d42-a8fd52c37cc3"
+        ],
+        "video_asset_ids": [],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    },
+    {
+      "model_id": "b217e3cd-884d-4015-a3fa-98ab7608a67e",
+      "model_slug": "wan2.2animate-v4-motion_retargeting",
+      "status": "completed",
+      "id": "17928a55-b940-4695-a393-937fcb6b2384",
+      "created_at": "2026-10-30T20:04:02.336200Z",
+      "error_message": null,
+      "canvas_node_id": "kurisu-a026-wan-production-01",
+      "result_asset_id": "efb65b1c-6b57-4ed4-b21d-08536de6beb0",
+      "request_summary": {
+        "mode": "reference",
+        "duration": null,
+        "ratio": null,
+        "resolution": "832x464",
+        "reference_asset_ids": [
+          "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+        ],
+        "video_asset_ids": [
+          "e6198899-3f88-46c0-b8cb-d9fe349b989e"
+        ],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    },
+    {
+      "model_id": "b217e3cd-884d-4015-a3fa-98ab7608a67e",
+      "model_slug": "wan2.2animate-v4-motion_retargeting",
+      "status": "completed",
+      "id": "6ef2258b-5e4f-49a6-8129-420f88ec9e83",
+      "created_at": "2026-10-30T20:04:02.250068Z",
+      "error_message": null,
+      "canvas_node_id": "kurisu-a105-wan-production-01",
+      "result_asset_id": "6578fd11-b6ac-4bcf-b512-5fa0c49f457d",
+      "request_summary": {
+        "mode": "reference",
+        "duration": null,
+        "ratio": null,
+        "resolution": "832x464",
+        "reference_asset_ids": [
+          "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+        ],
+        "video_asset_ids": [
+          "4d89f9c7-a53a-4462-adf2-4aa00902d02b"
+        ],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    },
+    {
+      "model_id": "5a785fa2-385f-45a0-a62b-d955b6dd72af",
+      "model_slug": "minimax_h3_lightx2v",
+      "status": "completed",
+      "id": "791f2f42-8d0c-4f5e-96e1-6daebb3f4930",
+      "created_at": "2026-10-30T19:07:52.043123Z",
+      "error_message": null,
+      "canvas_node_id": "kurisu-a105",
+      "result_asset_id": "4d89f9c7-a53a-4462-adf2-4aa00902d02b",
+      "request_summary": {
+        "mode": "frames",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "reference_asset_ids": [],
+        "video_asset_ids": [],
+        "first_frame_asset_id": "c8e65934-8da3-4756-bfb4-ec41f8dde710",
+        "last_frame_asset_id": "50152800-55d4-4226-a6a3-52014843fcad"
+      }
+    },
+    {
+      "model_id": "b217e3cd-884d-4015-a3fa-98ab7608a67e",
+      "model_slug": "wan2.2animate-v4-motion_retargeting",
+      "status": "completed",
+      "id": "3bf821b0-dbd5-4887-a059-197137e79418",
+      "created_at": "2026-10-30T19:05:05.339143Z",
+      "error_message": null,
+      "canvas_node_id": "kurisu-diagnostic-wan-motion-pilot-01",
+      "result_asset_id": "a1b09aab-cdf1-41ad-a6f4-f0e0d335ef3a",
+      "request_summary": {
+        "mode": "reference",
+        "duration": null,
+        "ratio": null,
+        "resolution": "832x464",
+        "reference_asset_ids": [
+          "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+        ],
+        "video_asset_ids": [
+          "da2e3ea6-158f-4f7a-a843-2dea89a0401f"
+        ],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    },
+    {
+      "model_id": "5a785fa2-385f-45a0-a62b-d955b6dd72af",
+      "model_slug": "minimax_h3_lightx2v",
+      "status": "completed",
+      "id": "102e598c-5065-4482-ba68-0f03d53582bf",
+      "created_at": "2026-10-30T18:42:29.482698Z",
+      "error_message": null,
+      "canvas_node_id": "kurisu-a092",
+      "result_asset_id": "073e59eb-5838-4fc4-be20-5dd0aad9107c",
+      "request_summary": {
+        "mode": "frames",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "reference_asset_ids": [],
+        "video_asset_ids": [],
+        "first_frame_asset_id": "c8e65934-8da3-4756-bfb4-ec41f8dde710",
+        "last_frame_asset_id": "50152800-55d4-4226-a6a3-52014843fcad"
+      }
+    },
+    {
+      "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+      "model_slug": "minimax_h3_zm_nono",
+      "status": "completed",
+      "id": "3cbf9545-fb69-45ee-b6c8-9743ecf85181",
+      "created_at": "2026-10-30T17:21:45.901575Z",
+      "error_message": null,
+      "canvas_node_id": "kurisu-a092",
+      "result_asset_id": "1d94dc43-ee9f-4a92-92cf-8cefc81b3d30",
+      "request_summary": {
+        "mode": "reference",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "reference_asset_ids": [
+          "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+        ],
+        "video_asset_ids": [],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    },
+    {
+      "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+      "model_slug": "minimax_h3_zm_nono",
+      "status": "completed",
+      "id": "b3e9757f-19cd-4f6d-bf77-b238e73ef2eb",
+      "created_at": "2026-10-30T17:21:45.798806Z",
+      "error_message": null,
+      "canvas_node_id": "kurisu-a105",
+      "result_asset_id": "34d70e41-fc4c-40e9-ab16-af35edf2c0cf",
+      "request_summary": {
+        "mode": "reference",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "reference_asset_ids": [
+          "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+        ],
+        "video_asset_ids": [],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    },
+    {
+      "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+      "model_slug": "minimax_h3_zm_nono",
+      "status": "completed",
+      "id": "97044106-c67b-4600-9520-a31ec1082a56",
+      "created_at": "2026-10-30T15:28:40.146863Z",
+      "error_message": null,
+      "canvas_node_id": "kurisu-a030",
+      "result_asset_id": "3aceabbc-cbc0-4a68-90e2-c964c552416f",
+      "request_summary": {
+        "mode": "reference",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "reference_asset_ids": [
+          "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+        ],
+        "video_asset_ids": [],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    },
+    {
+      "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+      "model_slug": "minimax_h3_zm_nono",
+      "status": "completed",
+      "id": "355d81a3-9673-4c08-a199-079d8d6b88ea",
+      "created_at": "2026-10-30T15:28:40.066844Z",
+      "error_message": null,
+      "canvas_node_id": "kurisu-a029",
+      "result_asset_id": "f4a7012b-eda6-4f49-9fc2-0e8499d41c7e",
+      "request_summary": {
+        "mode": "reference",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "reference_asset_ids": [
+          "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+        ],
+        "video_asset_ids": [],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    },
+    {
+      "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+      "model_slug": "minimax_h3_zm_nono",
+      "status": "completed",
+      "id": "5678e777-8a56-4382-a8c0-46835240ec15",
+      "created_at": "2026-10-30T12:27:54.101018Z",
+      "error_message": null,
+      "canvas_node_id": "kurisu-a028",
+      "result_asset_id": "0d50647f-acab-4841-93e0-7188b15fa97e",
+      "request_summary": {
+        "mode": "reference",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "reference_asset_ids": [
+          "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+        ],
+        "video_asset_ids": [],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    },
+    {
+      "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+      "model_slug": "minimax_h3_zm_nono",
+      "status": "completed",
+      "id": "8adef38a-a703-48db-873f-b1ff2ddba6b5",
+      "created_at": "2026-10-30T12:27:54.033520Z",
+      "error_message": null,
+      "canvas_node_id": "kurisu-a027",
+      "result_asset_id": "791341d6-4b5d-4794-9ac8-2a93b4f23e4c",
+      "request_summary": {
+        "mode": "reference",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "reference_asset_ids": [
+          "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+        ],
+        "video_asset_ids": [],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    },
+    {
+      "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+      "model_slug": "minimax_h3_zm_nono",
+      "status": "completed",
+      "id": "466c39c3-25c4-4fb0-a65e-c0f2742f763c",
+      "created_at": "2026-10-30T12:27:53.970063Z",
+      "error_message": null,
+      "canvas_node_id": "kurisu-a026",
+      "result_asset_id": "e6198899-3f88-46c0-b8cb-d9fe349b989e",
+      "request_summary": {
+        "mode": "reference",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "reference_asset_ids": [
+          "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+        ],
+        "video_asset_ids": [],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    },
+    {
+      "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+      "model_slug": "minimax_h3_zm_nono",
+      "status": "completed",
+      "id": "3a10e9f5-9381-495c-aea8-f9823c2a8b8e",
+      "created_at": "2026-10-30T12:17:45.535397Z",
+      "error_message": null,
+      "canvas_node_id": "kurisu-a012",
+      "result_asset_id": "1d8c9b1a-cbc7-4132-8bad-9e68cb5ee923",
+      "request_summary": {
+        "mode": "reference",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "reference_asset_ids": [
+          "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+        ],
+        "video_asset_ids": [],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    },
+    {
+      "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+      "model_slug": "minimax_h3_zm_nono",
+      "status": "completed",
+      "id": "59d7a170-e514-4646-998a-80bdefa5f70d",
+      "created_at": "2026-10-30T12:17:44.901563Z",
+      "error_message": null,
+      "canvas_node_id": "kurisu-a010",
+      "result_asset_id": "23e10214-91aa-484b-905b-33298eca721e",
+      "request_summary": {
+        "mode": "reference",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "reference_asset_ids": [
+          "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+        ],
+        "video_asset_ids": [],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    },
+    {
+      "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+      "model_slug": "minimax_h3_zm_nono",
+      "status": "completed",
+      "id": "15553ffe-a0f7-49b7-8cc9-2fed7162d9cf",
+      "created_at": "2026-10-30T12:17:44.174403Z",
+      "error_message": null,
+      "canvas_node_id": "kurisu-a003",
+      "result_asset_id": "8cbe6ee0-48c8-4bdf-a4a3-c5a318de48fb",
+      "request_summary": {
+        "mode": "reference",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "reference_asset_ids": [
+          "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+        ],
+        "video_asset_ids": [],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    },
+    {
+      "model_id": "fcd7c573-a208-411a-8636-80e2658919c0",
+      "model_slug": "minimax_h3_lightx2v_v5",
+      "status": "completed",
+      "id": "63a83349-6f23-4ac6-bca7-ea0083565b21",
+      "created_at": "2026-10-30T12:05:23.644951Z",
+      "error_message": null,
+      "canvas_node_id": "kurisu-a025",
+      "result_asset_id": "fc786071-4b7e-4391-8004-41a9df710b02",
+      "request_summary": {
+        "mode": "reference",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "reference_asset_ids": [
+          "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+        ],
+        "video_asset_ids": [],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    },
+    {
+      "model_id": "44fa0e72-df87-4c52-9f29-8cf99a3e5c19",
+      "model_slug": "minimax_h3_image_audio_to_video_v2",
+      "status": "completed",
+      "id": "5f741b0c-d1e0-4ae9-99d6-e70bf58bb0ba",
+      "created_at": "2026-10-30T12:05:23.584779Z",
+      "error_message": null,
+      "canvas_node_id": "kurisu-a024",
+      "result_asset_id": "8f749a5b-0c07-4ba2-85f4-c53a1c2ec815",
+      "request_summary": {
+        "mode": "reference",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "reference_asset_ids": [
+          "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+        ],
+        "video_asset_ids": [],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    },
+    {
+      "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+      "model_slug": "minimax_h3_zm_nono",
+      "status": "completed",
+      "id": "a93f1a48-6da4-4889-917d-c677b5d90bc9",
+      "created_at": "2026-10-30T11:47:27.050317Z",
+      "error_message": null,
+      "canvas_node_id": "kurisu-a023",
+      "result_asset_id": "6ba1a188-a12f-4b15-95fd-2b5fd9f3da4f",
+      "request_summary": {
+        "mode": "reference",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "reference_asset_ids": [
+          "962864a7-1782-4342-aa8a-85a9c08990ca"
+        ],
+        "video_asset_ids": [],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    },
+    {
+      "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+      "model_slug": "minimax_h3_zm_nono",
+      "status": "completed",
+      "id": "08a62f5e-26aa-477f-9675-7e428a689d62",
+      "created_at": "2026-10-30T11:47:26.874475Z",
+      "error_message": null,
+      "canvas_node_id": "kurisu-a022",
+      "result_asset_id": "9d0841b6-970d-4dfa-93a9-b0a69c59694d",
+      "request_summary": {
+        "mode": "reference",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "reference_asset_ids": [
+          "962864a7-1782-4342-aa8a-85a9c08990ca"
+        ],
+        "video_asset_ids": [],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    },
+    {
+      "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+      "model_slug": "minimax_h3_zm_nono",
+      "status": "completed",
+      "id": "1b679bfa-847b-4873-9b9b-b148c84be854",
+      "created_at": "2026-10-30T11:17:35.008329Z",
+      "error_message": null,
+      "canvas_node_id": "kurisu-a021",
+      "result_asset_id": "9a12e7d4-387d-4c35-aa14-d58662fa33e6",
+      "request_summary": {
+        "mode": "reference",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "reference_asset_ids": [
+          "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+        ],
+        "video_asset_ids": [],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    },
+    {
+      "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+      "model_slug": "minimax_h3_zm_nono",
+      "status": "completed",
+      "id": "488a7d36-467a-4915-8c8f-c072c52f27be",
+      "created_at": "2026-10-30T11:17:34.947188Z",
+      "error_message": null,
+      "canvas_node_id": "kurisu-a020",
+      "result_asset_id": "22dd1937-0758-4ca1-b2cb-6d5ed191db9e",
+      "request_summary": {
+        "mode": "reference",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "reference_asset_ids": [
+          "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+        ],
+        "video_asset_ids": [],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    },
+    {
+      "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+      "model_slug": "minimax_h3_zm_nono",
+      "status": "completed",
+      "id": "96844792-a553-4bc3-94ca-a160c140e9fa",
+      "created_at": "2026-10-30T11:17:34.879067Z",
+      "error_message": null,
+      "canvas_node_id": "kurisu-a019",
+      "result_asset_id": "a83dcbc5-c369-4399-8b37-758ba1efd5f4",
+      "request_summary": {
+        "mode": "reference",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "reference_asset_ids": [
+          "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+        ],
+        "video_asset_ids": [],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    },
+    {
+      "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+      "model_slug": "minimax_h3_zm_nono",
+      "status": "completed",
+      "id": "f495c69a-bed9-40da-8683-ff1028169855",
+      "created_at": "2026-10-30T11:17:34.813995Z",
+      "error_message": null,
+      "canvas_node_id": "kurisu-a018",
+      "result_asset_id": "855eb3f3-7936-4e6c-8c8f-22e9718ea400",
+      "request_summary": {
+        "mode": "reference",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "reference_asset_ids": [
+          "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+        ],
+        "video_asset_ids": [],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    },
+    {
+      "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+      "model_slug": "minimax_h3_zm_nono",
+      "status": "completed",
+      "id": "5fa73cbc-c1f9-4885-8c54-372c4653695c",
+      "created_at": "2026-10-30T10:49:22.152854Z",
+      "error_message": null,
+      "canvas_node_id": "kurisu-a017",
+      "result_asset_id": "177801c3-f8ec-4831-a8a7-ee8e87b4c5a5",
+      "request_summary": {
+        "mode": "reference",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "reference_asset_ids": [
+          "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+        ],
+        "video_asset_ids": [],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    },
+    {
+      "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+      "model_slug": "minimax_h3_zm_nono",
+      "status": "completed",
+      "id": "1f30e9a6-85e3-4a63-996d-9bbda3827f87",
+      "created_at": "2026-10-30T10:49:22.063106Z",
+      "error_message": null,
+      "canvas_node_id": "kurisu-a016",
+      "result_asset_id": "e6ba36b0-c056-4cf3-b485-29b5723b4615",
+      "request_summary": {
+        "mode": "reference",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "reference_asset_ids": [
+          "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+        ],
+        "video_asset_ids": [],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    },
+    {
+      "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+      "model_slug": "minimax_h3_zm_nono",
+      "status": "completed",
+      "id": "5fe54faf-fdd4-464f-b2fd-4bcd235db7d4",
+      "created_at": "2026-10-30T10:49:22.001758Z",
+      "error_message": null,
+      "canvas_node_id": "kurisu-a015",
+      "result_asset_id": "7afca48e-e5bc-449e-becc-098ac4aaeec0",
+      "request_summary": {
+        "mode": "reference",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "reference_asset_ids": [
+          "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+        ],
+        "video_asset_ids": [],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    },
+    {
+      "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+      "model_slug": "minimax_h3_zm_nono",
+      "status": "completed",
+      "id": "805f176d-ab03-45b5-a02e-a51be545501e",
+      "created_at": "2026-10-30T10:49:21.932017Z",
+      "error_message": null,
+      "canvas_node_id": "kurisu-a014",
+      "result_asset_id": "6bc116db-463a-4fe0-a1f7-157816e4dbc9",
+      "request_summary": {
+        "mode": "reference",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "reference_asset_ids": [
+          "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+        ],
+        "video_asset_ids": [],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    },
+    {
+      "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+      "model_slug": "minimax_h3_zm_nono",
+      "status": "completed",
+      "id": "1e8b4134-7901-42b9-a16e-9337b662e90b",
+      "created_at": "2026-10-30T10:12:37.632072Z",
+      "error_message": null,
+      "canvas_node_id": "kurisu-a009",
+      "result_asset_id": "49c9ada1-74e0-4b3a-85c7-32c9dbe66307",
+      "request_summary": {
+        "mode": "reference",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "reference_asset_ids": [
+          "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+        ],
+        "video_asset_ids": [],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    },
+    {
+      "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+      "model_slug": "minimax_h3_zm_nono",
+      "status": "completed",
+      "id": "745157e2-9c2d-4138-8836-aac6b4b284b1",
+      "created_at": "2026-10-30T10:05:34.095020Z",
+      "error_message": null,
+      "canvas_node_id": "kurisu-a013",
+      "result_asset_id": "b82b3b2f-3685-4d05-a0d7-4d2d4deb50b9",
+      "request_summary": {
+        "mode": "reference",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "reference_asset_ids": [
+          "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+        ],
+        "video_asset_ids": [],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    },
+    {
+      "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+      "model_slug": "minimax_h3_zm_nono",
+      "status": "completed",
+      "id": "7e8c3f08-1692-4243-a526-03c0d048d8a0",
+      "created_at": "2026-10-30T10:05:34.029123Z",
+      "error_message": null,
+      "canvas_node_id": "kurisu-a012",
+      "result_asset_id": "f914717d-aadc-4028-b13e-e392472f26ac",
+      "request_summary": {
+        "mode": "reference",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "reference_asset_ids": [
+          "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+        ],
+        "video_asset_ids": [],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    },
+    {
+      "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+      "model_slug": "minimax_h3_zm_nono",
+      "status": "completed",
+      "id": "e937e6b0-922e-4f92-8e94-9d562598241f",
+      "created_at": "2026-10-30T09:53:09.656734Z",
+      "error_message": null,
+      "canvas_node_id": "kurisu-a100",
+      "result_asset_id": "2e7d9592-04b3-4faf-8af1-a117cf62c021",
+      "request_summary": {
+        "mode": "reference",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "reference_asset_ids": [
+          "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+        ],
+        "video_asset_ids": [],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    },
+    {
+      "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+      "model_slug": "minimax_h3_zm_nono",
+      "status": "completed",
+      "id": "3769356e-b002-4268-8d2b-03448e458abb",
+      "created_at": "2026-10-30T09:32:00.042166Z",
+      "error_message": null,
+      "canvas_node_id": "kurisu-a099",
+      "result_asset_id": "e3b7d8e1-801b-404f-886a-43981fdafaa3",
+      "request_summary": {
+        "mode": "reference",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "reference_asset_ids": [
+          "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+        ],
+        "video_asset_ids": [],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    },
+    {
+      "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+      "model_slug": "minimax_h3_zm_nono",
+      "status": "completed",
+      "id": "b65a4100-359d-4104-ab0b-a0b9778111d1",
+      "created_at": "2026-10-30T09:19:41.118306Z",
+      "error_message": null,
+      "canvas_node_id": "kurisu-a098",
+      "result_asset_id": "69f4cc40-49d0-415c-b19f-126fe36ed976",
+      "request_summary": {
+        "mode": "reference",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "reference_asset_ids": [
+          "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+        ],
+        "video_asset_ids": [],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    },
+    {
+      "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+      "model_slug": "minimax_h3_zm_nono",
+      "status": "completed",
+      "id": "9c344423-408d-41b6-9c1c-2919cb85ef5a",
+      "created_at": "2026-10-30T09:19:41.032009Z",
+      "error_message": null,
+      "canvas_node_id": "kurisu-a097",
+      "result_asset_id": "247fe931-5014-4351-8359-09e03182db78",
+      "request_summary": {
+        "mode": "reference",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "reference_asset_ids": [
+          "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+        ],
+        "video_asset_ids": [],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    },
+    {
+      "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+      "model_slug": "minimax_h3_zm_nono",
+      "status": "completed",
+      "id": "58c4b1ba-aa2b-42e5-a284-009e9b09155b",
+      "created_at": "2026-10-30T09:13:49.340330Z",
+      "error_message": null,
+      "canvas_node_id": "kurisu-a096",
+      "result_asset_id": "63f5500c-7b00-4ce9-8690-fbfbe4b3a00c",
+      "request_summary": {
+        "mode": "reference",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "reference_asset_ids": [
+          "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+        ],
+        "video_asset_ids": [],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    },
+    {
+      "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+      "model_slug": "minimax_h3_zm_nono",
+      "status": "completed",
+      "id": "070b33c5-57a2-4442-9808-3a469d2c9e52",
+      "created_at": "2026-10-30T09:09:35.573284Z",
+      "error_message": null,
+      "canvas_node_id": "kurisu-a095",
+      "result_asset_id": "10f5e093-7c1a-498d-885c-ebb0a2868ac6",
+      "request_summary": {
+        "mode": "reference",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "reference_asset_ids": [
+          "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+        ],
+        "video_asset_ids": [],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    },
+    {
+      "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+      "model_slug": "minimax_h3_zm_nono",
+      "status": "completed",
+      "id": "b767c8f0-ee1a-4273-ac07-dde450d56a70",
+      "created_at": "2026-10-30T09:02:49.191197Z",
+      "error_message": null,
+      "canvas_node_id": "kurisu-a094",
+      "result_asset_id": "ce3565de-fcb3-47bd-b9db-90dd4a562277",
+      "request_summary": {
+        "mode": "reference",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "reference_asset_ids": [
+          "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+        ],
+        "video_asset_ids": [],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    },
+    {
+      "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+      "model_slug": "minimax_h3_zm_nono",
+      "status": "completed",
+      "id": "b949f39e-020b-413e-8c00-9ed52d3353b1",
+      "created_at": "2026-10-30T08:55:56.231034Z",
+      "error_message": null,
+      "canvas_node_id": "kurisu-a093",
+      "result_asset_id": "4726cea9-c89b-4e09-a402-30bfb3758728",
+      "request_summary": {
+        "mode": "reference",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "reference_asset_ids": [
+          "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+        ],
+        "video_asset_ids": [],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    },
+    {
+      "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+      "model_slug": "minimax_h3_zm_nono",
+      "status": "completed",
+      "id": "c94d7c62-5e84-4a21-b1a8-ca6f2b0b28fb",
+      "created_at": "2026-10-30T08:55:56.176818Z",
+      "error_message": null,
+      "canvas_node_id": "kurisu-a092",
+      "result_asset_id": "e6b423ea-60c5-4155-b832-6901d351de75",
+      "request_summary": {
+        "mode": "reference",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "reference_asset_ids": [
+          "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+        ],
+        "video_asset_ids": [],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    },
+    {
+      "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+      "model_slug": "minimax_h3_zm_nono",
+      "status": "completed",
+      "id": "2079c277-9cb4-4146-85cb-87406a2c949d",
+      "created_at": "2026-10-30T08:45:49.943747Z",
+      "error_message": null,
+      "canvas_node_id": "kurisu-a106",
+      "result_asset_id": "51f48dca-a353-465e-a214-841c40a733e8",
+      "request_summary": {
+        "mode": "reference",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "reference_asset_ids": [
+          "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+        ],
+        "video_asset_ids": [],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    },
+    {
+      "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+      "model_slug": "minimax_h3_zm_nono",
+      "status": "completed",
+      "id": "8b8d3846-94b9-4a96-88aa-534a4d12500b",
+      "created_at": "2026-10-30T08:37:15.989599Z",
+      "error_message": null,
+      "canvas_node_id": "kurisu-a105",
+      "result_asset_id": "3c73b8ba-655a-417a-9738-cdb98bcfa8bd",
+      "request_summary": {
+        "mode": "reference",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "reference_asset_ids": [
+          "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+        ],
+        "video_asset_ids": [],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    },
+    {
+      "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+      "model_slug": "minimax_h3_zm_nono",
+      "status": "completed",
+      "id": "47d38f76-5c2f-4457-a1de-291a7be464ca",
+      "created_at": "2026-10-30T08:37:15.928745Z",
+      "error_message": null,
+      "canvas_node_id": "kurisu-a104",
+      "result_asset_id": "799df0fc-a0cb-4289-a375-daf3c4d3c08f",
+      "request_summary": {
+        "mode": "reference",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "reference_asset_ids": [
+          "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+        ],
+        "video_asset_ids": [],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    },
+    {
+      "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+      "model_slug": "minimax_h3_zm_nono",
+      "status": "completed",
+      "id": "3b452a20-4aae-42dd-99c2-c9a8ba153e71",
+      "created_at": "2026-10-30T08:18:09.763356Z",
+      "error_message": null,
+      "canvas_node_id": "kurisu-a007",
+      "result_asset_id": "d9c70faa-845d-48ab-a048-93a5b8c84f7a",
+      "request_summary": {
+        "mode": "reference",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "reference_asset_ids": [
+          "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+        ],
+        "video_asset_ids": [],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    },
+    {
+      "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+      "model_slug": "minimax_h3_zm_nono",
+      "status": "completed",
+      "id": "24f1cda6-abc0-4520-8e44-48a005c3c68f",
+      "created_at": "2026-10-30T08:18:09.708521Z",
+      "error_message": null,
+      "canvas_node_id": "kurisu-a003",
+      "result_asset_id": "8a03987d-f1c9-46db-987a-865e76fb6cbf",
+      "request_summary": {
+        "mode": "reference",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "reference_asset_ids": [
+          "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+        ],
+        "video_asset_ids": [],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    },
+    {
+      "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+      "model_slug": "minimax_h3_zm_nono",
+      "status": "completed",
+      "id": "f934b390-65d1-4f7a-8d7e-d5c16517b9da",
+      "created_at": "2026-10-30T07:32:35.753646Z",
+      "error_message": null,
+      "canvas_node_id": "kurisu-a010",
+      "result_asset_id": "f2405bec-20fb-431a-b010-6ebb527a334d",
+      "request_summary": {
+        "mode": "reference",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "reference_asset_ids": [
+          "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+        ],
+        "video_asset_ids": [],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    },
+    {
+      "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+      "model_slug": "minimax_h3_zm_nono",
+      "status": "completed",
+      "id": "b0c04e7b-604a-4e1d-a05f-287c1f3ea04e",
+      "created_at": "2026-10-30T07:32:35.691217Z",
+      "error_message": null,
+      "canvas_node_id": "kurisu-a009",
+      "result_asset_id": "2c113109-8001-4810-8cf5-02ebc2fb2de2",
+      "request_summary": {
+        "mode": "reference",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "reference_asset_ids": [
+          "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+        ],
+        "video_asset_ids": [],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    },
+    {
+      "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+      "model_slug": "minimax_h3_zm_nono",
+      "status": "completed",
+      "id": "05c6d0e9-9869-4e4e-a845-8ff2c09f1e4a",
+      "created_at": "2026-10-30T07:03:01.674089Z",
+      "error_message": null,
+      "canvas_node_id": "kurisu-a103",
+      "result_asset_id": "fac734be-3400-4bd5-bab8-876d749bbe41",
+      "request_summary": {
+        "mode": "reference",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "reference_asset_ids": [
+          "972a4ba5-d1e9-4265-a649-7fa5168ebc4b"
+        ],
+        "video_asset_ids": [],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    },
+    {
+      "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+      "model_slug": "minimax_h3_zm_nono",
+      "status": "completed",
+      "id": "9d007c8d-397b-40f8-b410-82c370479435",
+      "created_at": "2026-10-30T07:03:01.617597Z",
+      "error_message": null,
+      "canvas_node_id": "kurisu-a011",
+      "result_asset_id": "32a3795a-ec61-49fc-8320-5c6d9fb15054",
+      "request_summary": {
+        "mode": "reference",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "reference_asset_ids": [
+          "972a4ba5-d1e9-4265-a649-7fa5168ebc4b"
+        ],
+        "video_asset_ids": [],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    },
+    {
+      "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+      "model_slug": "minimax_h3_zm_nono",
+      "status": "completed",
+      "id": "8f14a3a9-f00c-4b8b-85e0-c6cf4b73c580",
+      "created_at": "2026-10-30T06:57:25.727600Z",
+      "error_message": null,
+      "canvas_node_id": "kurisu-a010",
+      "result_asset_id": "ce967555-09b0-40ed-ba5f-c8a56152363d",
+      "request_summary": {
+        "mode": "reference",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "reference_asset_ids": [
+          "972a4ba5-d1e9-4265-a649-7fa5168ebc4b"
+        ],
+        "video_asset_ids": [],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    },
+    {
+      "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+      "model_slug": "minimax_h3_zm_nono",
+      "status": "completed",
+      "id": "5dbe4d80-c8ee-41f5-9195-d80b4e8df1c3",
+      "created_at": "2026-10-30T06:57:25.666316Z",
+      "error_message": null,
+      "canvas_node_id": "kurisu-a009",
+      "result_asset_id": "55b12471-fbfe-403b-879d-501152b7ef9e",
+      "request_summary": {
+        "mode": "reference",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "reference_asset_ids": [
+          "972a4ba5-d1e9-4265-a649-7fa5168ebc4b"
+        ],
+        "video_asset_ids": [],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    },
+    {
+      "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+      "model_slug": "minimax_h3_zm_nono",
+      "status": "completed",
+      "id": "dd336108-9eee-4e80-8e86-66dc434929c8",
+      "created_at": "2026-10-30T06:00:43.569584Z",
+      "error_message": null,
+      "canvas_node_id": "kurisu-a103",
+      "result_asset_id": "cde30073-ccc3-410c-a45b-9b45d6f3486d",
+      "request_summary": {
+        "mode": "reference",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "reference_asset_ids": [
+          "972a4ba5-d1e9-4265-a649-7fa5168ebc4b"
+        ],
+        "video_asset_ids": [],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    },
+    {
+      "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+      "model_slug": "minimax_h3_zm_nono",
+      "status": "completed",
+      "id": "a0cddc01-0921-4121-92d5-7aee7556e0a9",
+      "created_at": "2026-10-30T05:41:49.214396Z",
+      "error_message": null,
+      "canvas_node_id": "kurisu-a102",
+      "result_asset_id": "bea78083-c583-40fa-8999-4197ad1bc3c9",
+      "request_summary": {
+        "mode": "reference",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "reference_asset_ids": [
+          "972a4ba5-d1e9-4265-a649-7fa5168ebc4b"
+        ],
+        "video_asset_ids": [],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    },
+    {
+      "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+      "model_slug": "minimax_h3_zm_nono",
+      "status": "completed",
+      "id": "e991e468-b481-4bf5-b455-ddf3cd34bd43",
+      "created_at": "2026-10-30T05:41:49.165305Z",
+      "error_message": null,
+      "canvas_node_id": "kurisu-a101",
+      "result_asset_id": "1bf98b30-cacb-4834-bde4-e4045e768fa3",
+      "request_summary": {
+        "mode": "reference",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "reference_asset_ids": [
+          "972a4ba5-d1e9-4265-a649-7fa5168ebc4b"
+        ],
+        "video_asset_ids": [],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    },
+    {
+      "model_id": "418c676d-1a59-4b3e-a716-b99de8038c71",
+      "model_slug": "minimax_h3_zm_u24",
+      "status": "completed",
+      "id": "0a9b2a51-50a2-4d5d-8d4f-256e5534fda5",
+      "created_at": "2026-10-30T05:36:17.432809Z",
+      "error_message": null,
+      "canvas_node_id": "kurisu-a010",
+      "result_asset_id": "45af13a5-4a48-43e9-b8ab-93cd1518d6ca",
+      "request_summary": {
+        "mode": "reference",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "reference_asset_ids": [
+          "972a4ba5-d1e9-4265-a649-7fa5168ebc4b"
+        ],
+        "video_asset_ids": [],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    },
+    {
+      "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+      "model_slug": "minimax_h3_zm_nono",
+      "status": "completed",
+      "id": "0482a9a7-e19f-4f53-8883-d8457cb637e4",
+      "created_at": "2026-10-30T05:31:39.686756Z",
+      "error_message": null,
+      "canvas_node_id": "kurisu-a011",
+      "result_asset_id": "795218ac-37b2-49e9-aacc-a70f2e11bfc7",
+      "request_summary": {
+        "mode": "reference",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "reference_asset_ids": [
+          "972a4ba5-d1e9-4265-a649-7fa5168ebc4b"
+        ],
+        "video_asset_ids": [],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    },
+    {
+      "model_id": "7bb7016d-288b-42be-886b-d650e5ed9b5d",
+      "model_slug": "minimax_h3_zm_u30",
+      "status": "completed",
+      "id": "46e71cc6-e091-46cc-9a56-acedd65d4ccf",
+      "created_at": "2026-10-30T05:31:39.619947Z",
+      "error_message": null,
+      "canvas_node_id": "kurisu-a007",
+      "result_asset_id": "12db4861-6187-48e8-8550-4b0e16995397",
+      "request_summary": {
+        "mode": "reference",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "reference_asset_ids": [
+          "972a4ba5-d1e9-4265-a649-7fa5168ebc4b"
+        ],
+        "video_asset_ids": [],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    },
+    {
+      "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+      "model_slug": "minimax_h3_zm_nono",
+      "status": "completed",
+      "id": "779de11c-b99e-4b73-b916-01a0b3b1160b",
+      "created_at": "2026-10-30T05:26:22.416260Z",
+      "error_message": null,
+      "canvas_node_id": "kurisu-a010",
+      "result_asset_id": "ff11fc8c-5028-4e39-81ba-0f5d0e22b25c",
+      "request_summary": {
+        "mode": "reference",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "reference_asset_ids": [
+          "972a4ba5-d1e9-4265-a649-7fa5168ebc4b"
+        ],
+        "video_asset_ids": [],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    },
+    {
+      "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+      "model_slug": "minimax_h3_zm_nono",
+      "status": "completed",
+      "id": "2982d400-e6d1-44c8-8497-571c820c15c3",
+      "created_at": "2026-10-30T05:26:22.361072Z",
+      "error_message": null,
+      "canvas_node_id": "kurisu-a009",
+      "result_asset_id": "99601bed-a6c6-46b7-bef1-d811b7e2affb",
+      "request_summary": {
+        "mode": "reference",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "reference_asset_ids": [
+          "972a4ba5-d1e9-4265-a649-7fa5168ebc4b"
+        ],
+        "video_asset_ids": [],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    },
+    {
+      "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+      "model_slug": "minimax_h3_zm_nono",
+      "status": "completed",
+      "id": "8d7b7120-1948-4764-a732-57b7e55fc908",
+      "created_at": "2026-10-30T05:21:06.916425Z",
+      "error_message": null,
+      "canvas_node_id": "kurisu-a008",
+      "result_asset_id": "e9e75d9a-955f-4668-b1f8-2bbda9b61466",
+      "request_summary": {
+        "mode": "reference",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "reference_asset_ids": [
+          "972a4ba5-d1e9-4265-a649-7fa5168ebc4b"
+        ],
+        "video_asset_ids": [],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    },
+    {
+      "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+      "model_slug": "minimax_h3_zm_nono",
+      "status": "completed",
+      "id": "6a4d044b-c353-4bf9-9e08-39d159e49a8a",
+      "created_at": "2026-10-30T05:21:06.854155Z",
+      "error_message": null,
+      "canvas_node_id": "kurisu-a007",
+      "result_asset_id": "dabdfd40-9e6c-4858-85b4-9e481618e6b7",
+      "request_summary": {
+        "mode": "reference",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "reference_asset_ids": [
+          "972a4ba5-d1e9-4265-a649-7fa5168ebc4b"
+        ],
+        "video_asset_ids": [],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    },
+    {
+      "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+      "model_slug": "minimax_h3_zm_nono",
+      "status": "completed",
+      "id": "81e1946b-fe84-43cc-88e3-8b6dc470d47c",
+      "created_at": "2026-10-30T05:13:05.945586Z",
+      "error_message": null,
+      "canvas_node_id": "kurisu-a006",
+      "result_asset_id": "8b47fbb4-c6b4-42a3-b96a-5544d8dbce9f",
+      "request_summary": {
+        "mode": "reference",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "reference_asset_ids": [
+          "972a4ba5-d1e9-4265-a649-7fa5168ebc4b"
+        ],
+        "video_asset_ids": [],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    },
+    {
+      "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+      "model_slug": "minimax_h3_zm_nono",
+      "status": "completed",
+      "id": "59ebf94c-9d94-4b1d-9079-e787022daf38",
+      "created_at": "2026-10-30T05:13:05.894636Z",
+      "error_message": null,
+      "canvas_node_id": "kurisu-a005",
+      "result_asset_id": "98d2c1ed-9419-44a9-af14-4aa05776bdc0",
+      "request_summary": {
+        "mode": "reference",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "reference_asset_ids": [
+          "972a4ba5-d1e9-4265-a649-7fa5168ebc4b"
+        ],
+        "video_asset_ids": [],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    },
+    {
+      "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+      "model_slug": "minimax_h3_zm_nono",
+      "status": "completed",
+      "id": "fa6f9e8f-dbc5-456b-89f2-835644370ec6",
+      "created_at": "2026-10-30T05:04:44.579350Z",
+      "error_message": null,
+      "canvas_node_id": "kurisu-a003",
+      "result_asset_id": "f35f749d-add5-41a8-ba59-3a7bc3e17e38",
+      "request_summary": {
+        "mode": "reference",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "reference_asset_ids": [
+          "972a4ba5-d1e9-4265-a649-7fa5168ebc4b"
+        ],
+        "video_asset_ids": [],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    },
+    {
+      "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+      "model_slug": "minimax_h3_zm_nono",
+      "status": "completed",
+      "id": "674602a3-db0a-41f2-a967-cf704f8dfb14",
+      "created_at": "2026-10-30T05:04:44.483982Z",
+      "error_message": null,
+      "canvas_node_id": "kurisu-a002",
+      "result_asset_id": "30a4871e-ea81-4a37-97eb-2933af576097",
+      "request_summary": {
+        "mode": "reference",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "reference_asset_ids": [
+          "972a4ba5-d1e9-4265-a649-7fa5168ebc4b"
+        ],
+        "video_asset_ids": [],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    },
+    {
+      "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+      "model_slug": "minimax_h3_zm_nono",
+      "status": "completed",
+      "id": "d82864c8-addb-4941-bd1e-375c3d07d1bb",
+      "created_at": "2026-10-30T04:56:25.805392Z",
+      "error_message": null,
+      "canvas_node_id": "kurisu-a006",
+      "result_asset_id": "c67118a8-8546-45f5-89f6-c320dde121df",
+      "request_summary": {
+        "mode": "reference",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "reference_asset_ids": [
+          "972a4ba5-d1e9-4265-a649-7fa5168ebc4b"
+        ],
+        "video_asset_ids": [],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    },
+    {
+      "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+      "model_slug": "minimax_h3_zm_nono",
+      "status": "completed",
+      "id": "9bc87c9a-158c-482c-bca9-3b65aabf87dc",
+      "created_at": "2026-10-30T04:56:25.744131Z",
+      "error_message": null,
+      "canvas_node_id": "kurisu-a005",
+      "result_asset_id": "6d85f930-83c6-47c1-8a90-66b55118f74d",
+      "request_summary": {
+        "mode": "reference",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "reference_asset_ids": [
+          "972a4ba5-d1e9-4265-a649-7fa5168ebc4b"
+        ],
+        "video_asset_ids": [],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    },
+    {
+      "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+      "model_slug": "minimax_h3_zm_nono",
+      "status": "completed",
+      "id": "acc4ab64-25bd-402c-9614-6ec06603d54d",
+      "created_at": "2026-10-30T04:51:12.846952Z",
+      "error_message": null,
+      "canvas_node_id": "kurisu-a003",
+      "result_asset_id": "ed0e68f2-a30e-4590-9692-48fc4631df03",
+      "request_summary": {
+        "mode": "reference",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "reference_asset_ids": [
+          "972a4ba5-d1e9-4265-a649-7fa5168ebc4b"
+        ],
+        "video_asset_ids": [],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    },
+    {
+      "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+      "model_slug": "minimax_h3_zm_nono",
+      "status": "completed",
+      "id": "5de954b0-6b3b-4fdb-b43b-5459db7926aa",
+      "created_at": "2026-10-30T04:51:12.802804Z",
+      "error_message": null,
+      "canvas_node_id": "kurisu-a002",
+      "result_asset_id": "63aa6dc1-70f8-4bae-b399-668e814cb2a2",
+      "request_summary": {
+        "mode": "reference",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "reference_asset_ids": [
+          "972a4ba5-d1e9-4265-a649-7fa5168ebc4b"
+        ],
+        "video_asset_ids": [],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    },
+    {
+      "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+      "model_slug": "minimax_h3_zm_nono",
+      "status": "completed",
+      "id": "fb882508-e085-4936-8ab2-84b6860ff1ea",
+      "created_at": "2026-10-30T04:10:46.078585Z",
+      "error_message": null,
+      "canvas_node_id": "tsundere",
+      "result_asset_id": "bb834255-522d-44ae-8b55-4931de9e8d26",
+      "request_summary": {
+        "mode": "reference",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "reference_asset_ids": [
+          "972a4ba5-d1e9-4265-a649-7fa5168ebc4b"
+        ],
+        "video_asset_ids": [],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    },
+    {
+      "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+      "model_slug": "minimax_h3_zm_nono",
+      "status": "completed",
+      "id": "ca269af9-e4db-4356-b720-a43df2f4e640",
+      "created_at": "2026-10-30T04:10:45.984618Z",
+      "error_message": null,
+      "canvas_node_id": "idle",
+      "result_asset_id": "da2e3ea6-158f-4f7a-a843-2dea89a0401f",
+      "request_summary": {
+        "mode": "reference",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "reference_asset_ids": [
+          "972a4ba5-d1e9-4265-a649-7fa5168ebc4b"
+        ],
+        "video_asset_ids": [],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    },
+    {
+      "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+      "model_slug": "minimax_h3_zm_nono",
+      "status": "completed",
+      "id": "3840e46f-e997-4036-9306-5a0ce0e3abfb",
+      "created_at": "2026-10-30T03:57:08.712769Z",
+      "error_message": null,
+      "canvas_node_id": "tsundere",
+      "result_asset_id": "9da105bd-63d8-41d6-bd41-5d628743b2d5",
+      "request_summary": {
+        "mode": "reference",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "reference_asset_ids": [
+          "35db850a-cc14-4aa6-adeb-54744c8748b1",
+          "2970f054-3f9e-459f-865a-90cf48e5eb88"
+        ],
+        "video_asset_ids": [],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    },
+    {
+      "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+      "model_slug": "minimax_h3_zm_nono",
+      "status": "completed",
+      "id": "5d95d563-f21b-42fc-8467-a144553f5248",
+      "created_at": "2026-10-30T03:57:08.682208Z",
+      "error_message": null,
+      "canvas_node_id": "idle",
+      "result_asset_id": "3a64c495-f3c6-48e8-bbff-4504ab815395",
+      "request_summary": {
+        "mode": "reference",
+        "duration": 10,
+        "ratio": "16:9",
+        "resolution": "768p",
+        "reference_asset_ids": [
+          "35db850a-cc14-4aa6-adeb-54744c8748b1",
+          "2970f054-3f9e-459f-865a-90cf48e5eb88"
+        ],
+        "video_asset_ids": [],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null
+      }
+    }
+  ],
+  "model_calls_added": 0,
+  "ledger_modified": false,
+  "eligibility": {
+    "live_video_options": 15,
+    "excluded_models": [
+      {
+        "id": "f2000000-0000-4000-8000-000000000005",
+        "slug": "doubao-seedance-2-0-260128"
+      },
+      {
+        "id": "06bb5aae-63df-4b4d-ae67-f0a078947879",
+        "slug": "U17-9图1视频3音频V1-api"
+      },
+      {
+        "id": "8da77a61-9294-43a1-814d-e9b992897442",
+        "slug": "U06-9图3音频-V5"
+      }
+    ],
+    "h3_workflow_variant_count": 11,
+    "wan_motion_only_count": 1,
+    "eligible_new_architecture_models": [],
+    "project_history_model_counts": {
+      "minimax_h3_zm_nono": 65,
+      "wan2.2animate-v4-motion_retargeting": 3,
+      "minimax_h3_lightx2v": 2,
+      "minimax_h3_lightx2v_v5": 1,
+      "minimax_h3_image_audio_to_video_v2": 1,
+      "minimax_h3_zm_u24": 1,
+      "minimax_h3_zm_u30": 1
+    },
+    "conclusion": "No new executable video architecture remains in the connected visual-workshop options after excluding H3, Wan motion retargeting, Seedance2.0, U17 and U06. There is no eligible new ID/slug/schema to recommend or submit."
+  },
+  "enabled_evidence": {
+    "official_options_filter": "VisualGeneration.options selects ModelProvider.enabled=True and ModelEntry.enabled=True, and filters by registered executable workflow slug allowlists.",
+    "source_file": "/Users/tonghao/Projects/Future-Props-Lab/backend/app/apps/visual_workshop/generation.py",
+    "source_sha256": "0e923aa536c2e9ee43168c227cb1f7547661709b7f52afe495dea9690efd4c7d",
+    "provider_admin_inventory": "Read-only list_providers returned ApiError Forbidden for the paired scope; not retried and no credential/scope bypass attempted. The already successful workshop options and its enabled/workflow filters provide the connected-workshop inventory.",
+    "no_provider_urls_or_api_key_hints_saved": true,
+    "health_caveat": "Listed executable/registered does not prove an untested remote generation will succeed; no paid health probes performed."
+  },
+  "known_route_outcomes": {
+    "qualified_animation_count": 9,
+    "wan_diagnostic": "Native green retained, but proportion/endpoint/clothing issues; diagnostic only, not a106 slot.",
+    "wan_production": "a026attempt2 lost brushing props; a105attempt4 performed wrong gestures and mismatched endpoints; both independently rejected.",
+    "latest_h3_transparent_reference": "a012attempt3 moving green illumination hard reject; a016attempt2 pale green gradient reject, per independent QA.",
+    "new_alternative_model_previous_results": [],
+    "excluded_models_were_not_retested": true
+  },
+  "mutation_boundary": {
+    "new_generation_calls": 0,
+    "uploads": 0,
+    "production_ledger_writes": 0,
+    "semantic_model_downloads_or_processing": 0
+  },
+  "campaign_accounting": {
+    "counts": {
+      "calls": 70,
+      "repairs": 26,
+      "other_model_calls": 9
+    },
+    "model_counts": {
+      "minimax_h3_zm_nono": 61,
+      "minimax_h3_zm_u30": 1,
+      "minimax_h3_zm_u24": 1,
+      "minimax_h3_image_audio_to_video_v2": 1,
+      "minimax_h3_lightx2v_v5": 1,
+      "wan2.2animate-v4-motion_retargeting": 3,
+      "minimax_h3_lightx2v": 2
+    },
+    "project_task_count": 74,
+    "pre_campaign_sample_tasks_not_in_campaign_budget": 4,
+    "preflight_rejections_excluded_from_actual_calls": 1
+  }
+}

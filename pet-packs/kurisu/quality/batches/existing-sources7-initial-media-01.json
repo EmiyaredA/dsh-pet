@@ -1,0 +1,79 @@
+{
+  "scope_id": "existing-sources7-initial-media-01",
+  "at": "2026-10-31T12:40:22.506130+00:00",
+  "total": 7,
+  "passed": 3,
+  "failed": 4,
+  "awaiting_review": 0,
+  "in_progress": 0,
+  "not_submitted": 0,
+  "source_received": 7,
+  "rows": [
+    {
+      "id": "a084",
+      "name": "吃汤圆",
+      "phase": "passed",
+      "status": "approved",
+      "source_sha256": "3c6cefcdbfc04d9bd42b977edb3809926d144a21c702e6334c210c7a0a1325ee",
+      "candidate_sha256": "6da9e9593d8d50f6c66399e6ba44df150788854848bb43807a4ac9b7c3485c8d"
+    },
+    {
+      "id": "a073",
+      "name": "摇扇纳凉",
+      "phase": "failed",
+      "status": "rejected",
+      "source_sha256": "1db27fdae1e75e8b1da776ddbc49f0dcba8ccbb587a544e4a00faabc8f77df66",
+      "candidate_sha256": null
+    },
+    {
+      "id": "a075",
+      "name": "中秋赏月吃月饼",
+      "phase": "passed",
+      "status": "approved",
+      "source_sha256": "d031873ecbc863114f419cee6c5158b7680205641a946fb8cb2dcc2251e7ecbe",
+      "candidate_sha256": "c563488bc139c8c4cd8fab58ab9ac00c2361fde4071e3289ad9c60e2a3eabc50"
+    },
+    {
+      "id": "a077",
+      "name": "秋日捡枫叶",
+      "phase": "failed",
+      "status": "rejected",
+      "source_sha256": "d0b93cd82c2409f54d72f171483fbc5216466f9c20679e046107ef245e535dc3",
+      "candidate_sha256": null
+    },
+    {
+      "id": "a078",
+      "name": "讨糖南瓜灯",
+      "phase": "failed",
+      "status": "exhausted",
+      "source_sha256": "4c2759f07b7f94af5271bf52fc19a43a3608a82a1257b610e4c3c4397e976c71",
+      "candidate_sha256": "0a65d14733808ac88e68c518a67a094f165aba363a62a7fde8853e1f0cf20c57"
+    },
+    {
+      "id": "a079",
+      "name": "萌化小幽灵",
+      "phase": "passed",
+      "status": "approved",
+      "source_sha256": "201be64b8297242ca56c7084e80b2017771f109a78e550b064c1e0155e5a3e54",
+      "candidate_sha256": "896fcd6d6378f8ee5c1585c60c8bf00ef0f0e51353f0f4ae897e5f2efd53fc93"
+    },
+    {
+      "id": "a082",
+      "name": "拆圣诞礼物",
+      "phase": "failed",
+      "status": "rejected",
+      "source_sha256": "2b4db4250555900cc21ad9f2eb396e18c5a90cd12281247689643446daa9f096",
+      "candidate_sha256": null
+    }
+  ],
+  "new_model_calls": 0,
+  "extra_local_corrections": 0,
+  "calls": {
+    "calls": 172,
+    "repairs": 67,
+    "other_model_calls": 79
+  },
+  "all_approved": 29,
+  "paid_submission_clarification_pending": true,
+  "a011_pending": true
+}

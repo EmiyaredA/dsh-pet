@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "action_id": "a040",
+  "action_name": "合并冲突抱头",
+  "source_attempt_index": 2,
+  "spec_revision_id": "programmer-research-v2-2026-10-31",
+  "source_sha256": "a7f5a4cc5269600e79da54b7d5e6c228c94f240360e660df2326ab1186c327fc",
+  "source_task_id": "0049c014-4b6e-4108-93ec-ecc505045979",
+  "candidate_file": "source/library/a040/attempt-2/processing-7966f942-dcc2-4f12-91b7-bafe37e667a7/合并冲突抱头.webm",
+  "candidate_sha256": "1d39624aab6fee9ced1b907cf049425237f0d74bfd4d09b5cf405888a1d0b53d",
+  "verdict": "pass",
+  "reviewer": "animation_qa independent agent",
+  "reviewed_at": "2026-10-31T10:37:48.439673+00:00",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "defects": [],
+  "reason": "独立240帧技术通过；正常640四底、原640脸发2×及实际完整10秒回环/待机切换抽查未见明显残白、绿晕、人物缺失或新动光。目标动作及道具收回可辨，仅对绑定SHA给出质量结论。",
+  "technical": {
+    "frames": 240,
+    "width": 640,
+    "height": 360,
+    "fps": 24,
+    "duration_seconds": 10,
+    "codec": "vp9",
+    "audio_streams": 0,
+    "all240_alpha0to255": true,
+    "all240_outer_boundary_alpha_zero": true,
+    "outside6_alpha_gt8_bad_frames": [],
+    "first_bbox_alpha127": [
+      217,
+      60,
+      432,
+      330
+    ],
+    "last_bbox_alpha127": [
+      217,
+      61,
+      432,
+      330
+    ],
+    "feet_delta_px": 0,
+    "height_delta_px": -1
+  },
+  "technical_proof": "quality/final-reviews/a040-1d39624aab6f/decoded-technical240.json",
+  "frame0_rgba_file": "quality/final-reviews/a040-1d39624aab6f/f000-rgba.png",
+  "evidence_directory": "quality/final-reviews/a040-1d39624aab6f",
+  "inspection_scope": {
+    "normal640_four_backgrounds": [
+      {
+        "frame": 0,
+        "background": "blue"
+      },
+      {
+        "frame": 96,
+        "background": "dark"
+      },
+      {
+        "frame": 144,
+        "background": "light"
+      },
+      {
+        "frame": 239,
+        "background": "checker"
+      }
+    ],
+    "face_hair_native640_ROI_nearest2x_frames": [
+      0,
+      120,
+      239
+    ],
+    "grid_resolution_note": "Each full-body cell remains640x360 in1280x760 layout; face cells are original240x220 pixels expanded nearest2x. No100px thumbnails were used for this conclusion.",
+    "actual_playback": "quality/final-reviews/a040-1d39624aab6f/actual-browser-playback.json",
+    "limits": [
+      "All240 technical coverage is not all240 manual visual coverage.",
+      "Actual playback ran a full10sec loop; human observations are intermittent screenshots and selected stills, not an exhaustive continuous gaze claim.",
+      "Older accepted idle is somewhat warmer; scale comparison does not claim pixel-identical RGB."
+    ]
+  },
+  "visual_findings": {
+    "action": "Two small gray cards carry distinct amber and dark-red conflict marks. Exasperated frown and hands-to-head pose are recognizable; cards and support are completely stowed, ending empty-handed.",
+    "matte_face_color": "Reviewed normal640 composites and2x face/hair show background through hair gaps, no conspicuous white island/green halo, no obvious face collapse or added limb/tail. OrdinaryAA at2x is not treated as deformation.",
+    "additional": "Head, hands and both shoes remain intact in normal640 samples. Eyelid closure in the exasperated pose is a normal expression, not an eye geometry defect.",
+    "scale_switch": "Actual same640 idle switch performed. Endpoints remain close to target270px height/foot330; quantitative values retained above. No obvious normal-size scale snap was perceived."
+  },
+  "new_paid_calls": 0,
+  "reviewer_pixel_or_recipe_changes": 0,
+  "approval_or_runtime_mutations": false
+}

@@ -1,0 +1,150 @@
+{
+  "audited_at": "2026-10-31T00:42:34.184065+00:00",
+  "paid_campaign_tasks_checked": 71,
+  "existing_project_tasks_read": 75,
+  "new_model_calls": 0,
+  "sdk_write_calls": 0,
+  "scope_note": "Original existing task request_payloads were read once; following root scope reduction only the2knownblue records and existing reference/scan records were inspected. No source video decode/rescan or model submission.",
+  "blue_reference": {
+    "asset_id": "962864a7-1782-4342-aa8a-85a9c08990ca",
+    "file": "references/kurisu-front-safe-blue.png",
+    "sha256": "ced8fc6f188f6188a7d30af251cc9a19b433dfcf0507d24bfe02825d5d6aeb19",
+    "recorded_sha_matches": true,
+    "actual_mode": "RGB",
+    "size": [
+      1280,
+      720
+    ],
+    "all_native1px_edge_rgb": [
+      [
+        0,
+        0,
+        255
+      ]
+    ],
+    "pure0000FF_pixel_count": 795663,
+    "total_pixels": 921600
+  },
+  "trials": [
+    {
+      "action_id": "a022",
+      "name": "抱臂轻哼",
+      "task_id": "08a62f5e-26aa-477f-9675-7e428a689d62",
+      "provider_task_id": "519eca50-8740-4209-b7a7-a96a1bcd8ece",
+      "source_file": "source/library/a022/attempt-1/抱臂轻哼.mp4",
+      "source_sha256": "843bc6a0bbe6f5fe764710550cca54c8b7fea65e15266ebe1a728ecd4a355269",
+      "actual_remote_request": {
+        "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+        "kind": "video",
+        "mode": "reference",
+        "reference_asset_ids": [
+          "962864a7-1782-4342-aa8a-85a9c08990ca"
+        ],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null,
+        "video_asset_ids": [],
+        "audio_asset_ids": [],
+        "resolution": "768p",
+        "ratio": "16:9",
+        "duration": 10,
+        "workflow_parameters": {}
+      },
+      "remote_prompt_sha256": "07d96b4bce16d6bd0374811bb8114adf16f820dfe4a4fd376a89842c00ec96f4",
+      "immutable_prompt_file": "prompts/library/a022-attempt-1.txt",
+      "file_sha256": "8e62bcde523ebffcb6257589597e5cd1221411215c08724fc9c3b6c494a46ad2",
+      "remote_equals_immutable_prompt_after_strip": true,
+      "blue_background_requirement_excerpt": "BACKGROUND THROUGHOUT [Shot 1], 00:00.000–00:10.000: a perfectly flat, fully saturated digital RGB (0,0,255), #0000FF chroma-key blue matte occupies EVERY background pixel in EVERY frame. Preserve this blue behind the figure AND inside all visible negative spaces between hair locks, arms, body, props and skirt. These empty gaps remain blue when they open or close. The first frame, all action frames and the final frame have exactly the same blue. Never replace it with white, off-white, gray, black, green, transparency, a checkerboard, a floor or a studio backdrop. No fade, background transition, gradient, cast shadow or background texture. The blue is a digital compositing layer; it does not illuminate the subject.",
+      "historical_source_gate": {
+        "method": "all_frame_saturated_blue_border_v1",
+        "passed": false,
+        "frames": 240,
+        "failed_frame_count": 239,
+        "background_rgb_min": [
+          0.0,
+          2.0,
+          242.0
+        ],
+        "background_rgb_max": [
+          253.0,
+          253.0,
+          253.0
+        ],
+        "expected_background": "#0000FF"
+      },
+      "historical_result": "Frame0 blue; subsequent239/240 fail blue border and recorded near-white background. No acceptable sustained-blue source was obtained.",
+      "ordinary_blue_chroma_key_executed": false,
+      "key_not_executed_reason": "Rejected at source background gate before conversion. No fallback keying of near-white background as if blue."
+    },
+    {
+      "action_id": "a023",
+      "name": "歪头疑惑",
+      "task_id": "a93f1a48-6da4-4889-917d-c677b5d90bc9",
+      "provider_task_id": "283d5552-b32b-41d5-b9b5-f0ad3a8c20ff",
+      "source_file": "source/library/a023/attempt-1/歪头疑惑.mp4",
+      "source_sha256": "ec739012cbf3af9d8a23e85c8ca248f6bd3c3b4b8e0cf6112a0898d89136532b",
+      "actual_remote_request": {
+        "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+        "kind": "video",
+        "mode": "reference",
+        "reference_asset_ids": [
+          "962864a7-1782-4342-aa8a-85a9c08990ca"
+        ],
+        "first_frame_asset_id": null,
+        "last_frame_asset_id": null,
+        "video_asset_ids": [],
+        "audio_asset_ids": [],
+        "resolution": "768p",
+        "ratio": "16:9",
+        "duration": 10,
+        "workflow_parameters": {}
+      },
+      "remote_prompt_sha256": "72f291adac20af1b339494917c3fcd845da3dc317a3433d58698d9341b5073bf",
+      "immutable_prompt_file": "prompts/library/a023-attempt-1.txt",
+      "file_sha256": "ad25e09477cd16acbf355a456a0d61ab55b5f852af78549040c4554ba050882c",
+      "remote_equals_immutable_prompt_after_strip": true,
+      "blue_background_requirement_excerpt": "BACKGROUND THROUGHOUT [Shot 1], 00:00.000–00:10.000: a perfectly flat, fully saturated digital RGB (0,0,255), #0000FF chroma-key blue matte occupies EVERY background pixel in EVERY frame. Preserve this blue behind the figure AND inside all visible negative spaces between hair locks, arms, body, props and skirt. These empty gaps remain blue when they open or close. The first frame, all action frames and the final frame have exactly the same blue. Never replace it with white, off-white, gray, black, green, transparency, a checkerboard, a floor or a studio backdrop. No fade, background transition, gradient, cast shadow or background texture. The blue is a digital compositing layer; it does not illuminate the subject.",
+      "historical_source_gate": {
+        "method": "all_frame_saturated_blue_border_v1",
+        "passed": false,
+        "frames": 240,
+        "failed_frame_count": 239,
+        "background_rgb_min": [
+          0.0,
+          2.0,
+          240.0
+        ],
+        "background_rgb_max": [
+          253.0,
+          253.0,
+          253.0
+        ],
+        "expected_background": "#0000FF"
+      },
+      "historical_result": "Frame0 blue; subsequent239/240 fail blue border and recorded near-white background. No acceptable sustained-blue source was obtained.",
+      "ordinary_blue_chroma_key_executed": false,
+      "key_not_executed_reason": "Rejected at source background gate before conversion. No fallback keying of near-white background as if blue."
+    }
+  ],
+  "conclusion": {
+    "blue_reference_plus_explicit_blue_hold_actually_tried": true,
+    "count": 2,
+    "only_model": "minimax_h3_zm_nono (default H3film)",
+    "only_mode": "reference singleimage,10s16:9768p",
+    "successful_blue_source_with_acceptable_actor_found": false,
+    "ordinary_blue_key_completed": false,
+    "is_same_blue_generation_recipe_a_new_hypothesis": false,
+    "why": "Both actual requests used the pure-blue formal image and an explicit all-frameRGB0,0,255/backgroundnegative-space requirement; model discardedblue aftertheopening. A blue key cannot remove the resulting near-white islands.",
+    "untested_distinctions": "No paid blue80% framing, blue FL2VA pairedframes or blue Wan driver experiment recorded in these71 requests. These would be different compound hypotheses, not evidence that ordinary blue key alone fixes the failure. No such new experiment authorized/performed by this audit."
+  },
+  "processing_code_evidence": {
+    "file": "scripts/kurisu_library.py",
+    "source_gate_before_conversion_lines": [
+      204,
+      216
+    ],
+    "explicit_blue_branch": "After a hypothetical blue-source pass, current code raises a dedicated eye-preserving blue-matte review requirement instead of running green-key conversion. Both actualblue tasks failed earlier."
+  },
+  "actual_paid_request_summary_file": "temp/kurisu/blue-route-readonly-audit-01/actual-paid-requests.json",
+  "ledger_modified": false,
+  "recipe_modified": false
+}

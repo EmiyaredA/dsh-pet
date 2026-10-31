@@ -1,0 +1,271 @@
+{
+  "prepared_at": "2026-10-31T05:02:13.986191+00:00",
+  "action_id": "a067",
+  "attempt_index": 1,
+  "task_id": "b7d0fe44-3f51-4113-b824-f798a9d589de",
+  "result_asset_id": "8eded695-5e47-4d93-a002-adb3cb64e229",
+  "model_id": "418c676d-1a59-4b3e-a716-b99de8038c71",
+  "model_slug": "minimax_h3_zm_u24",
+  "source_file": "source/library/a067/attempt-1/吃红色苹果片.mp4",
+  "source_sha256": "66ae186206167b4dfb94a0f9e43936e81b5d78437733313d77c9dd6c84d961e5",
+  "source_video_probe": {
+    "codec_name": "h264",
+    "width": 1344,
+    "height": 768,
+    "r_frame_rate": "24/1",
+    "avg_frame_rate": "24/1",
+    "duration": "10.125000",
+    "nb_frames": "243"
+  },
+  "native_frame_indices": [
+    0,
+    48,
+    96,
+    144,
+    192,
+    239
+  ],
+  "native_detail_frame_indices": [
+    0,
+    144,
+    239
+  ],
+  "pngs": [
+    {
+      "kind": "native_full_frame",
+      "native_frame_index": 0,
+      "file": "quality/evidence/u24-green80-firstpass/a067/attempt-1/f000-native.png",
+      "sha256": "a1167ce93a48bf409eccb8bb932fd157640000a9d77ea89ddbca322a8853b00e",
+      "size": [
+        1344,
+        768
+      ]
+    },
+    {
+      "kind": "face_native_pixels_2x",
+      "native_frame_index": 0,
+      "file": "quality/evidence/u24-green80-firstpass/a067/attempt-1/f000-face-native2x.png",
+      "sha256": "f934ab6c4eb34be7987f9d898a20efc3252e288660ff58e69f3ad005f6efee41",
+      "source_crop_xyxy": [
+        336,
+        0,
+        1008,
+        499
+      ],
+      "size": [
+        1344,
+        998
+      ],
+      "resampler": "NEAREST exact2x repeated source pixels"
+    },
+    {
+      "kind": "lower_native_pixels_2x",
+      "native_frame_index": 0,
+      "file": "quality/evidence/u24-green80-firstpass/a067/attempt-1/f000-lower-native2x.png",
+      "sha256": "6a3c547be52f55192f57131799e2cdb50d7448bb82af687bd13b661d692d0cb6",
+      "source_crop_xyxy": [
+        336,
+        346,
+        1008,
+        768
+      ],
+      "size": [
+        1344,
+        844
+      ],
+      "resampler": "NEAREST exact2x repeated source pixels"
+    },
+    {
+      "kind": "native_full_frame",
+      "native_frame_index": 48,
+      "file": "quality/evidence/u24-green80-firstpass/a067/attempt-1/f048-native.png",
+      "sha256": "1f2a0584a1ae146d21f7e8cd188e1bade9e46be310da56a08475ead1815dd434",
+      "size": [
+        1344,
+        768
+      ]
+    },
+    {
+      "kind": "native_full_frame",
+      "native_frame_index": 96,
+      "file": "quality/evidence/u24-green80-firstpass/a067/attempt-1/f096-native.png",
+      "sha256": "99173d6e88179d0c05bdfb0f2b236597c6a21e4b85905349e4d93245f68c89fa",
+      "size": [
+        1344,
+        768
+      ]
+    },
+    {
+      "kind": "native_full_frame",
+      "native_frame_index": 144,
+      "file": "quality/evidence/u24-green80-firstpass/a067/attempt-1/f144-native.png",
+      "sha256": "e388fc72422f1925c49369859e4c692afa74f708ba97a70a102bc904085257a8",
+      "size": [
+        1344,
+        768
+      ]
+    },
+    {
+      "kind": "face_native_pixels_2x",
+      "native_frame_index": 144,
+      "file": "quality/evidence/u24-green80-firstpass/a067/attempt-1/f144-face-native2x.png",
+      "sha256": "373d29acd8bcc351df8d55625bbb334faea2ae07134212d9803a76e4a09a9580",
+      "source_crop_xyxy": [
+        336,
+        0,
+        1008,
+        499
+      ],
+      "size": [
+        1344,
+        998
+      ],
+      "resampler": "NEAREST exact2x repeated source pixels"
+    },
+    {
+      "kind": "lower_native_pixels_2x",
+      "native_frame_index": 144,
+      "file": "quality/evidence/u24-green80-firstpass/a067/attempt-1/f144-lower-native2x.png",
+      "sha256": "ac24d9c0cd5b44210052f64c0d6a34ed59170bf092478627c63e57bb7fd9828c",
+      "source_crop_xyxy": [
+        336,
+        346,
+        1008,
+        768
+      ],
+      "size": [
+        1344,
+        844
+      ],
+      "resampler": "NEAREST exact2x repeated source pixels"
+    },
+    {
+      "kind": "native_full_frame",
+      "native_frame_index": 192,
+      "file": "quality/evidence/u24-green80-firstpass/a067/attempt-1/f192-native.png",
+      "sha256": "c65e58f92d3ca21dfb1236e1adf6e5f4452b9f2a8941c57cd8fe59a056177aeb",
+      "size": [
+        1344,
+        768
+      ]
+    },
+    {
+      "kind": "native_full_frame",
+      "native_frame_index": 239,
+      "file": "quality/evidence/u24-green80-firstpass/a067/attempt-1/f239-native.png",
+      "sha256": "83161f0535406cc61696ab2f8b6a59320854e4ebd23630a76727eaac811f72d1",
+      "size": [
+        1344,
+        768
+      ]
+    },
+    {
+      "kind": "face_native_pixels_2x",
+      "native_frame_index": 239,
+      "file": "quality/evidence/u24-green80-firstpass/a067/attempt-1/f239-face-native2x.png",
+      "sha256": "6ade33388cca3be0d3a2c1ae3718da38aa25b0ccd7c1db0279672878a1257cff",
+      "source_crop_xyxy": [
+        336,
+        0,
+        1008,
+        499
+      ],
+      "size": [
+        1344,
+        998
+      ],
+      "resampler": "NEAREST exact2x repeated source pixels"
+    },
+    {
+      "kind": "lower_native_pixels_2x",
+      "native_frame_index": 239,
+      "file": "quality/evidence/u24-green80-firstpass/a067/attempt-1/f239-lower-native2x.png",
+      "sha256": "89498bf4a1b530c603ca14ff97258d6906cf8778fa54c1fb9fa1e8d564b3636e",
+      "source_crop_xyxy": [
+        336,
+        346,
+        1008,
+        768
+      ],
+      "size": [
+        1344,
+        844
+      ],
+      "resampler": "NEAREST exact2x repeated source pixels"
+    }
+  ],
+  "existing_source_background": {
+    "method": "all_frame_saturated_green_native_border_v2",
+    "passed": true,
+    "frames": 240,
+    "expected_frames": 240,
+    "failed_frame_count": 0,
+    "failed_frames": [],
+    "background_rgb_min": [
+      2.0,
+      231.0,
+      6.0
+    ],
+    "background_rgb_max": [
+      4.0,
+      235.0,
+      8.0
+    ],
+    "maximum_spatial_delta": 15.0,
+    "maximum_temporal_delta": 3.0,
+    "thresholds": {
+      "dominant_min": 180,
+      "other_channels_max": 100,
+      "dominance_min": 100,
+      "spatial_delta_max": 35,
+      "temporal_delta_max": 24
+    },
+    "expected_background": "#00FF00",
+    "white_matte_fallback": false,
+    "visual_foreground_review_required": true,
+    "enclosed_background_and_foreground_verified": false,
+    "native_size": [
+      1344,
+      768
+    ],
+    "boundary_pixels_per_frame": 4224,
+    "measurement": "native_one_pixel_outer_boundary_no_spatial_resampling",
+    "sampling": {
+      "duration_seconds": 10,
+      "fps": 24,
+      "expected_frames": 240
+    }
+  },
+  "background_metric_reused_not_rerun": true,
+  "extraction_command": [
+    "ffmpeg",
+    "-y",
+    "-v",
+    "error",
+    "-threads",
+    "1",
+    "-i",
+    "/Users/tonghao/Projects/dsh-pet/pet-packs/kurisu/source/library/a067/attempt-1/吃红色苹果片.mp4",
+    "-map",
+    "0:v:0",
+    "-vf",
+    "select=eq(n\\,0)+eq(n\\,48)+eq(n\\,96)+eq(n\\,144)+eq(n\\,192)+eq(n\\,239)",
+    "-frames:v",
+    "6",
+    "-fps_mode",
+    "passthrough",
+    "-pix_fmt",
+    "rgb24",
+    "-threads",
+    "1",
+    "-start_number",
+    "0",
+    "/Users/tonghao/Projects/dsh-pet/pet-packs/kurisu/quality/evidence/u24-green80-firstpass/a067/attempt-1/staging/frame-%02d.png"
+  ],
+  "source_RGB_unmodified": true,
+  "evidence_only_not_media_processing": true,
+  "color_or_alpha_repair_performed": false,
+  "new_model_calls": 0,
+  "final_media_approved": false,
+  "script_sha256": "1258a774d97f549a672874adb09f6d2c75c7032a059fe665154cde01b07c04b3"
+}

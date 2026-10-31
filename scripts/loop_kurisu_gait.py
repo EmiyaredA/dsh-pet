@@ -25,13 +25,17 @@ def phase_indices(start,count,repeats,total_frames):
 
 def decoded_frames(path,ffmpeg):
     process=subprocess.Popen([ffmpeg,'-v','error','-c:v','libvpx-vp9','-i',str(path),'-an','-f','rawvideo','-pix_fmt','rgba','-'],stdout=subprocess.PIPE)
+    finished=False
     try:
         while data:=read_frame(process.stdout,WIDTH*HEIGHT*4):
             yield np.frombuffer(data,np.uint8).reshape(HEIGHT,WIDTH,4)
+        finished=True
     finally:
+        if not finished and process.poll() is None:
+            process.terminate()
         process.stdout.close()
         rc=process.wait()
-        if rc:raise RuntimeError('Failed to decode RGBA input')
+        if finished and rc:raise RuntimeError('Failed to decode RGBA input')
 
 
 def frame_box(frame):

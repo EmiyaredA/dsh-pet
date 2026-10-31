@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "action_id": "a084",
+  "attempt_index": 1,
+  "action_name": "吃汤圆",
+  "source_file": "source/library/a084/attempt-1/吃汤圆.mp4",
+  "source_sha256": "3c6cefcdbfc04d9bd42b977edb3809926d144a21c702e6334c210c7a0a1325ee",
+  "source_task_id": "0a4e0672-65ee-4362-aab1-751587a1aa63",
+  "result_asset_id": "77e531a0-c7c5-41b6-8f8c-7fd9f57c42dd",
+  "model_slug": "minimax_h3_zm_u24",
+  "reference_file": "references/kurisu-front-80-opaque-green.png",
+  "reference_sha256": "259edb632a5cf780e8259f2aac9b1c21fc7b80453708eda56ea2e6eb99501430",
+  "reference_asset_id": "b7b8ee8c-df7c-4cd9-91ab-176b1094f7c6",
+  "reviewer": "green_gate independent source visual reviewer",
+  "reviewed_at": "2026-10-31T06:19:55.759815+00:00",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "processing_clearance": "allow_mild_color_and_green_key",
+  "final_media_approved": false,
+  "source_background": {
+    "method": "all_frame_saturated_green_native_border_v2",
+    "passed": true,
+    "frames": 240,
+    "expected_frames": 240,
+    "failed_frame_count": 0,
+    "failed_frames": [],
+    "background_rgb_min": [
+      3.0,
+      235.0,
+      5.0
+    ],
+    "background_rgb_max": [
+      4.0,
+      237.0,
+      7.0
+    ],
+    "maximum_spatial_delta": 7.0,
+    "maximum_temporal_delta": 2.0,
+    "thresholds": {
+      "dominant_min": 180,
+      "other_channels_max": 100,
+      "dominance_min": 100,
+      "spatial_delta_max": 35,
+      "temporal_delta_max": 24
+    },
+    "expected_background": "#00FF00",
+    "white_matte_fallback": false,
+    "visual_foreground_review_required": true,
+    "enclosed_background_and_foreground_verified": false,
+    "native_size": [
+      1344,
+      768
+    ],
+    "boundary_pixels_per_frame": 4224,
+    "measurement": "native_one_pixel_outer_boundary_no_spatial_resampling",
+    "sampling": {
+      "duration_seconds": 10,
+      "fps": 24,
+      "expected_frames": 240
+    }
+  },
+  "inspection_scope": {
+    "native_full_frames_personally_viewed": [
+      0,
+      72,
+      144,
+      239
+    ],
+    "native_nearest2x_detail_frames_personally_viewed": {
+      "face": [
+        144,
+        239
+      ],
+      "lower": [
+        0,
+        239
+      ]
+    },
+    "native_size": [
+      1344,
+      768
+    ],
+    "technical_scope": "Reused existing native first10s 240-frame GREEN background gate; not rescanned. Source SHA and evidence PNG hashes verified.",
+    "limitations": [
+      "Representative still inspection, not all243-frame manual visual review.",
+      "No continuous source playback performed.",
+      "Transparent output color edges/specifications/endpoint geometry have not been tested."
+    ]
+  },
+  "evidence_manifest": "quality/evidence/u24-green80-firstpass/a084/attempt-1/manifest.json",
+  "evidence_manifest_sha256": "24bbcc92be47e8d0f1829733254eecbeba19126aa54983a8ee3e74556f0a1459",
+  "processing_performed": false,
+  "new_model_calls": 0,
+  "ledger_or_approval_modified": false,
+  "reason": "原生抽样显示平滑白色汤圆、碗勺和舀食动作正确；人物完整、配色无明显强绿光，未确认额外肢尾。仅允许一次初次普通绿幕处理；末尾双手置于身后而非开场两侧的轻微手位差异必须保留给成片首尾验收，非最终批准。",
+  "defects": [
+    {
+      "severity": "note",
+      "kind": "endpoint_hand_pose_variation",
+      "frames": [
+        0,
+        239
+      ],
+      "description": "Opening hands are beside the skirt; final arms/hands are held behind the hips after prop stow. Bowl and spoon are absent. The whole standing body is recovered, but exact hand pose is not identical; independently evaluate the resulting switch/loop before final approval."
+    },
+    {
+      "severity": "note",
+      "kind": "partly_occluded_wrist_or_cuff",
+      "frames": [
+        239
+      ],
+      "description": "Small pale/gray contour below image-left hem coincides with hands now hidden behind the skirt; enlarged still is compatible with a partly occluded cuff/hand, but anatomy cannot be established in the hidden region. Not classified as a tail or confirmed extra appendage."
+    }
+  ],
+  "visual_findings": {
+    "action_and_props": "f72 shows smooth round white dumplings in a small cream bowl and a gray spoon; f144 brings spoon toward mouth. f0 and f239 have no bowl/spoon. Food is tangyuan-like round dumplings, not the pointed steamed bun defect seen in another action.",
+    "identity_color_anatomy": "Two ears/lace/pink bows, auburn hair, blue-violet eyes and maid outfit are preserved in the reviewed stills. Two hands visibly hold bowl/spoon in the middle; final hands are occluded behind skirt. No definite added limb or animal tail identified. Native enlarged face does not show strong green wash or facial collapse.",
+    "camera_and_scale": "Reviewed full-body frames show complete ear tips/shoes and similar overall scale; final alignment and per-frame bounds require actual transparent media verification."
+  },
+  "next_step": "Only root-authorized initial ordinary U24 green-key processing, no palette/semantic/threshold repair; final transparent media must independently review hand-pose transition, hem detail and all technical checks."
+}

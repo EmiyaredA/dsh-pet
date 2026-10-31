@@ -1,0 +1,48 @@
+{
+  "action_id": "a028",
+  "attempt_index": 1,
+  "processing_clearance": "reject",
+  "summary": "Localized moving green light bubbles cross the face/irises and hair. This is a source identity/appearance defect rather than removable background or diffuse illumination. Do not transcode or locally repair anatomy.",
+  "defects": [
+    {
+      "severity": "hard",
+      "type": "localized_moving_green_face_light",
+      "time_seconds": [
+        2.25,
+        8.2
+      ],
+      "source_frames": [
+        57,
+        58,
+        68,
+        69,
+        72,
+        106,
+        107,
+        135
+      ],
+      "description": "Bright green bubbles pass over forehead and eye surfaces; headcore442green-dominant pixels atframe58,276at72,248at106 at672pxanalysiswidth. Green key would erase or alter facial features."
+    }
+  ],
+  "evidence": [
+    "/private/tmp/kurisu-plan-inspection/a028.png",
+    "temp/kurisu/agent-qa/a028-green-regen-face-spots.png",
+    "temp/kurisu/agent-qa/a028-green-regen-motion-metrics.json"
+  ],
+  "allowed_processing": [],
+  "schema_version": 1,
+  "source_sha256": "acc113bc707e5e3ed523a43a1d069942749ad33917085ffa1dbaf3bd564e0ec7",
+  "inspected_source_file": "/private/tmp/kurisu-plan-inspection/a028.mp4",
+  "reviewed_at": "2026-10-30T14:15:26.094420+00:00",
+  "reviewer": "independent_animation_qa_agent",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "final_media_approved": false,
+  "new_model_calls": 0,
+  "portable_evidence": [
+    "quality/evidence/a028-latest-qa.png"
+  ],
+  "canonical_source_file": "source/library/a028/attempt-1/捧脸发呆.mp4",
+  "source_task_id": "5678e777-8a56-4382-a8c0-46835240ec15",
+  "source_result_asset_id": "0d50647f-acab-4841-93e0-7188b15fa97e"
+}

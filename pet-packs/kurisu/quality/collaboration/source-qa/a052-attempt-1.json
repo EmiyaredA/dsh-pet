@@ -1,0 +1,50 @@
+{
+  "action_id": "a052",
+  "action_name": "玩掌机不服输",
+  "attempt": 1,
+  "source_file": "source/library/a052/attempt-1/玩掌机不服输.mp4",
+  "source_sha256": "34421c3eeca92bb984856b9385673c31d5c564fec2c254fe1d1f61ae092dc1ef",
+  "task_id": "96da35bd-9a35-4a8e-9100-1fbdfba6b49c",
+  "manifest": "quality/evidence/first-pass-native/a052/attempt-1/manifest.json",
+  "source_and_png_sha256_verified": true,
+  "actual_visual_frames": [
+    0,
+    12,
+    24,
+    48,
+    72,
+    96,
+    120,
+    144,
+    168,
+    192,
+    216,
+    239
+  ],
+  "inspection": "查看12张原生PNG按原像素裁切人物区域并拼排；对a056 f144另查看完整原生画面。",
+  "background": {
+    "result": "fail",
+    "method": "all_frame_saturated_blue_native_border_v2",
+    "failed_frame_count": 239,
+    "frames": 240,
+    "source": "library.json 中既有 native BLUE 边框指标；未重新扫描"
+  },
+  "foreground": {
+    "action_props": "f72–192掌机及不服输表情可辨，但屏幕和按键朝向观众，角色在背面无法正常观看和操作；f216掌机不见，f239空手。",
+    "anatomy": "抽样中角色、短圆比例、双猫耳和可见双鞋保留；未见明确额外人体肢体或尾巴、明显脸眼扭曲、人物明显彩色光斑。道具与身体重叠或遮挡处、抽样之外时刻无法判定。",
+    "endpoint": "f0与f239均为大致相同正面站姿及尺度，f239空手；f239是否源片最终帧未验证。",
+    "assessment": "有明显道具/动作问题",
+    "evidence_frames": [
+      72,
+      120,
+      144,
+      168,
+      192,
+      239
+    ]
+  },
+  "verdict": "reject_source",
+  "reason": "既有蓝幕边界指标 239/240 帧失败；另有前景道具或动作明显问题。",
+  "limitations": "12帧离散样本，未做全时刻人工观察或连续播放；画面裁切拼排之外、道具遮挡区域及未抽样帧未验证；未审透明成片或安装表现。",
+  "reviewed_at": "2026-10-31T04:17:02.233503+00:00"
+}

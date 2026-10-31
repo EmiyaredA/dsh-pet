@@ -1,0 +1,922 @@
+{
+  "at": "2026-10-30T20:31:42.638810+00:00",
+  "official_live_models": [
+    {
+      "id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+      "slug": "minimax_h3_zm_nono",
+      "label": "H3多图多音频生视频(影视画质)",
+      "provider_name": "AutoDL zealman 视频生成",
+      "video_capabilities": {
+        "audio_only": false,
+        "default_generate_audio": false,
+        "default_ratio": "9:16",
+        "default_resolution": "768p",
+        "duration_label": "时长",
+        "duration_max": 15,
+        "duration_min": 1,
+        "frames_require_adaptive_ratio": false,
+        "max_prompt_length": 20000,
+        "prompt_required": true,
+        "ratios": [
+          "9:16",
+          "16:9"
+        ],
+        "reference_limits": {
+          "image": 9,
+          "audio": 3,
+          "video": 0
+        },
+        "reference_mime_types": {
+          "image": [
+            "image/jpeg",
+            "image/png",
+            "image/webp"
+          ],
+          "audio": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/x-wav"
+          ],
+          "video": [
+            "video/mp4",
+            "video/webm"
+          ]
+        },
+        "reference_minimums": {
+          "image": 1,
+          "audio": 0,
+          "video": 0
+        },
+        "reference_video_upload_configured": true,
+        "resolution_ratios": {
+          "480p": [
+            "9:16",
+            "16:9"
+          ],
+          "768p": [
+            "9:16",
+            "16:9"
+          ],
+          "960p": [
+            "9:16"
+          ]
+        },
+        "resolutions": [
+          "480p",
+          "768p",
+          "960p"
+        ],
+        "seed_maximum": 999999999999999,
+        "seed_minimum": 0,
+        "supported_modes": [
+          "reference"
+        ],
+        "supports_auto_duration": false,
+        "supports_duration": true,
+        "supports_generate_audio": false,
+        "supports_prompt": true,
+        "supports_ratio": true,
+        "supports_seed": false,
+        "supports_watermark": false
+      }
+    },
+    {
+      "id": "7bb7016d-288b-42be-886b-d650e5ed9b5d",
+      "slug": "minimax_h3_zm_u30",
+      "label": "H3多图多音频生视频(超清画质)",
+      "provider_name": "AutoDL zealman 视频生成",
+      "video_capabilities": {
+        "audio_only": false,
+        "default_generate_audio": false,
+        "default_ratio": "9:16",
+        "default_resolution": "768p",
+        "duration_label": "时长",
+        "duration_max": 15,
+        "duration_min": 1,
+        "frames_require_adaptive_ratio": false,
+        "max_prompt_length": 20000,
+        "prompt_required": true,
+        "ratios": [
+          "9:16",
+          "16:9"
+        ],
+        "reference_limits": {
+          "image": 9,
+          "audio": 3,
+          "video": 0
+        },
+        "reference_mime_types": {
+          "image": [
+            "image/jpeg",
+            "image/png",
+            "image/webp"
+          ],
+          "audio": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/x-wav",
+            "audio/flac",
+            "audio/x-flac"
+          ],
+          "video": [
+            "video/mp4",
+            "video/webm"
+          ]
+        },
+        "reference_minimums": {
+          "image": 1,
+          "audio": 0,
+          "video": 0
+        },
+        "reference_video_upload_configured": true,
+        "resolution_ratios": {
+          "480p": [
+            "9:16",
+            "16:9"
+          ],
+          "768p": [
+            "9:16",
+            "16:9"
+          ],
+          "960p": [
+            "9:16"
+          ]
+        },
+        "resolutions": [
+          "480p",
+          "768p",
+          "960p"
+        ],
+        "seed_maximum": 999999999999999,
+        "seed_minimum": 0,
+        "supported_modes": [
+          "reference"
+        ],
+        "supports_auto_duration": false,
+        "supports_duration": true,
+        "supports_generate_audio": false,
+        "supports_prompt": true,
+        "supports_ratio": true,
+        "supports_seed": true,
+        "supports_watermark": false
+      }
+    },
+    {
+      "id": "418c676d-1a59-4b3e-a716-b99de8038c71",
+      "slug": "minimax_h3_zm_u24",
+      "label": "H3多图多音频生视频(升级画质)",
+      "provider_name": "AutoDL zealman 视频生成",
+      "video_capabilities": {
+        "audio_only": false,
+        "default_generate_audio": false,
+        "default_ratio": "9:16",
+        "default_resolution": "768p",
+        "duration_label": "时长",
+        "duration_max": 15,
+        "duration_min": 1,
+        "frames_require_adaptive_ratio": false,
+        "max_prompt_length": 20000,
+        "prompt_required": true,
+        "ratios": [
+          "9:16",
+          "16:9",
+          "1:1"
+        ],
+        "reference_limits": {
+          "image": 9,
+          "audio": 3,
+          "video": 0
+        },
+        "reference_mime_types": {
+          "image": [
+            "image/jpeg",
+            "image/png",
+            "image/webp"
+          ],
+          "audio": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/x-wav",
+            "audio/flac",
+            "audio/x-flac"
+          ],
+          "video": [
+            "video/mp4",
+            "video/webm"
+          ]
+        },
+        "reference_minimums": {
+          "image": 1,
+          "audio": 0,
+          "video": 0
+        },
+        "reference_video_upload_configured": true,
+        "resolution_ratios": {
+          "480p": [
+            "9:16",
+            "16:9",
+            "1:1"
+          ],
+          "768p": [
+            "9:16",
+            "16:9",
+            "1:1"
+          ]
+        },
+        "resolutions": [
+          "480p",
+          "768p"
+        ],
+        "seed_maximum": 999999999999999,
+        "seed_minimum": 0,
+        "supported_modes": [
+          "reference"
+        ],
+        "supports_auto_duration": false,
+        "supports_duration": true,
+        "supports_generate_audio": false,
+        "supports_prompt": true,
+        "supports_ratio": true,
+        "supports_seed": true,
+        "supports_watermark": false
+      }
+    },
+    {
+      "id": "d136ba40-d7ef-4314-8453-c2610777ea1f",
+      "slug": "minimax_h3_zm_u08",
+      "label": "H3多图多音频生视频(高速版)",
+      "provider_name": "AutoDL zealman 视频生成",
+      "video_capabilities": {
+        "audio_only": false,
+        "default_generate_audio": false,
+        "default_ratio": "9:16",
+        "default_resolution": "768p",
+        "duration_label": "时长",
+        "duration_max": 15,
+        "duration_min": 1,
+        "frames_require_adaptive_ratio": false,
+        "max_prompt_length": 20000,
+        "prompt_required": true,
+        "ratios": [
+          "9:16",
+          "16:9",
+          "1:1"
+        ],
+        "reference_limits": {
+          "image": 9,
+          "audio": 3,
+          "video": 0
+        },
+        "reference_mime_types": {
+          "image": [
+            "image/jpeg",
+            "image/png",
+            "image/webp"
+          ],
+          "audio": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/x-wav",
+            "audio/flac",
+            "audio/x-flac"
+          ],
+          "video": [
+            "video/mp4",
+            "video/webm"
+          ]
+        },
+        "reference_minimums": {
+          "image": 1,
+          "audio": 0,
+          "video": 0
+        },
+        "reference_video_upload_configured": true,
+        "resolution_ratios": {
+          "480p": [
+            "9:16",
+            "16:9",
+            "1:1"
+          ],
+          "768p": [
+            "9:16",
+            "16:9",
+            "1:1"
+          ]
+        },
+        "resolutions": [
+          "480p",
+          "768p"
+        ],
+        "seed_maximum": 999999999999999,
+        "seed_minimum": 0,
+        "supported_modes": [
+          "reference"
+        ],
+        "supports_auto_duration": false,
+        "supports_duration": true,
+        "supports_generate_audio": false,
+        "supports_prompt": true,
+        "supports_ratio": true,
+        "supports_seed": true,
+        "supports_watermark": false
+      }
+    },
+    {
+      "id": "bda66d26-457c-4c3b-bd13-3f7cf674686c",
+      "slug": "minimax_h3_image_audio_to_video_v2_15s",
+      "label": "H3多图多音频生视频15秒",
+      "provider_name": "AutoDL zealman 视频生成",
+      "video_capabilities": {
+        "audio_only": true,
+        "default_generate_audio": false,
+        "default_ratio": "9:16",
+        "default_resolution": "768p",
+        "duration_label": "时长",
+        "duration_max": 15,
+        "duration_min": 1,
+        "frames_require_adaptive_ratio": false,
+        "max_prompt_length": 20000,
+        "prompt_required": true,
+        "ratios": [
+          "9:16",
+          "16:9"
+        ],
+        "reference_limits": {
+          "image": 9,
+          "audio": 3,
+          "video": 0
+        },
+        "reference_mime_types": {
+          "image": [
+            "image/jpeg",
+            "image/png",
+            "image/webp"
+          ],
+          "audio": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/x-wav",
+            "audio/flac",
+            "audio/x-flac"
+          ],
+          "video": [
+            "video/mp4",
+            "video/webm"
+          ]
+        },
+        "reference_minimums": {
+          "image": 0,
+          "audio": 0,
+          "video": 0
+        },
+        "reference_video_upload_configured": true,
+        "resolution_ratios": {
+          "480p": [
+            "9:16",
+            "16:9"
+          ],
+          "768p": [
+            "9:16",
+            "16:9"
+          ]
+        },
+        "resolutions": [
+          "480p",
+          "768p"
+        ],
+        "seed_maximum": 999999999999999,
+        "seed_minimum": 1,
+        "supported_modes": [
+          "text",
+          "reference"
+        ],
+        "supports_auto_duration": false,
+        "supports_duration": true,
+        "supports_generate_audio": false,
+        "supports_prompt": true,
+        "supports_ratio": true,
+        "supports_seed": true,
+        "supports_watermark": false
+      }
+    },
+    {
+      "id": "a449f2e3-3a28-41d7-b802-d969f20eabc1",
+      "slug": "minimax_h3_lightx2v_v5_15s",
+      "label": "H3多图生视频15秒",
+      "provider_name": "AutoDL zealman 视频生成",
+      "video_capabilities": {
+        "audio_only": false,
+        "default_generate_audio": false,
+        "default_ratio": "9:16",
+        "default_resolution": "768p",
+        "duration_label": "时长",
+        "duration_max": 15,
+        "duration_min": 1,
+        "frames_require_adaptive_ratio": false,
+        "max_prompt_length": 20000,
+        "prompt_required": true,
+        "ratios": [
+          "9:16",
+          "16:9",
+          "1:1"
+        ],
+        "reference_limits": {
+          "image": 9,
+          "audio": 0,
+          "video": 0
+        },
+        "reference_mime_types": {
+          "image": [
+            "image/jpeg",
+            "image/png",
+            "image/webp"
+          ],
+          "audio": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/x-wav",
+            "audio/flac",
+            "audio/x-flac"
+          ],
+          "video": [
+            "video/mp4",
+            "video/webm"
+          ]
+        },
+        "reference_minimums": {
+          "image": 1,
+          "audio": 0,
+          "video": 0
+        },
+        "reference_video_upload_configured": true,
+        "resolution_ratios": {
+          "480p": [
+            "9:16",
+            "16:9",
+            "1:1"
+          ],
+          "768p": [
+            "9:16",
+            "16:9",
+            "1:1"
+          ]
+        },
+        "resolutions": [
+          "480p",
+          "768p"
+        ],
+        "seed_maximum": 999999999999999,
+        "seed_minimum": 1,
+        "supported_modes": [
+          "reference"
+        ],
+        "supports_auto_duration": false,
+        "supports_duration": true,
+        "supports_generate_audio": false,
+        "supports_prompt": true,
+        "supports_ratio": true,
+        "supports_seed": true,
+        "supports_watermark": false
+      }
+    },
+    {
+      "id": "44fa0e72-df87-4c52-9f29-8cf99a3e5c19",
+      "slug": "minimax_h3_image_audio_to_video_v2",
+      "label": "H3多图多音频生视频",
+      "provider_name": "AutoDL zealman 视频生成",
+      "video_capabilities": {
+        "audio_only": true,
+        "default_generate_audio": false,
+        "default_ratio": "9:16",
+        "default_resolution": "768p",
+        "duration_label": "时长",
+        "duration_max": 10,
+        "duration_min": 1,
+        "frames_require_adaptive_ratio": false,
+        "max_prompt_length": 20000,
+        "prompt_required": true,
+        "ratios": [
+          "9:16",
+          "16:9"
+        ],
+        "reference_limits": {
+          "image": 9,
+          "audio": 3,
+          "video": 0
+        },
+        "reference_mime_types": {
+          "image": [
+            "image/jpeg",
+            "image/png",
+            "image/webp"
+          ],
+          "audio": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/x-wav",
+            "audio/flac",
+            "audio/x-flac"
+          ],
+          "video": [
+            "video/mp4",
+            "video/webm"
+          ]
+        },
+        "reference_minimums": {
+          "image": 0,
+          "audio": 0,
+          "video": 0
+        },
+        "reference_video_upload_configured": true,
+        "resolution_ratios": {
+          "480p": [
+            "9:16",
+            "16:9"
+          ],
+          "768p": [
+            "9:16",
+            "16:9"
+          ],
+          "1080p": [
+            "9:16",
+            "16:9"
+          ]
+        },
+        "resolutions": [
+          "480p",
+          "768p",
+          "1080p"
+        ],
+        "seed_maximum": 999999999999999,
+        "seed_minimum": 1,
+        "supported_modes": [
+          "text",
+          "reference"
+        ],
+        "supports_auto_duration": false,
+        "supports_duration": true,
+        "supports_generate_audio": false,
+        "supports_prompt": true,
+        "supports_ratio": true,
+        "supports_seed": true,
+        "supports_watermark": false
+      }
+    },
+    {
+      "id": "4524ace0-4658-4e2c-84ad-e6e9dda3aa46",
+      "slug": "minimax_h3_image_audio_to_video",
+      "label": "H3图生视频-音频同步(自动对口型)",
+      "provider_name": "AutoDL zealman 视频生成",
+      "video_capabilities": {
+        "audio_only": false,
+        "default_generate_audio": false,
+        "default_ratio": "9:16",
+        "default_resolution": "768p",
+        "duration_label": "音频截取时长",
+        "duration_max": 15,
+        "duration_min": 1,
+        "frames_require_adaptive_ratio": false,
+        "max_prompt_length": 20000,
+        "prompt_required": false,
+        "ratios": [
+          "9:16",
+          "16:9"
+        ],
+        "reference_limits": {
+          "image": 1,
+          "audio": 1,
+          "video": 0
+        },
+        "reference_mime_types": {
+          "image": [
+            "image/jpeg",
+            "image/png",
+            "image/webp"
+          ],
+          "audio": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/x-wav",
+            "audio/flac",
+            "audio/x-flac"
+          ],
+          "video": [
+            "video/mp4",
+            "video/webm"
+          ]
+        },
+        "reference_minimums": {
+          "image": 1,
+          "audio": 1,
+          "video": 0
+        },
+        "reference_video_upload_configured": true,
+        "resolution_ratios": {
+          "480p": [
+            "9:16",
+            "16:9"
+          ],
+          "768p": [
+            "9:16",
+            "16:9"
+          ],
+          "1080p": [
+            "9:16",
+            "16:9"
+          ]
+        },
+        "resolutions": [
+          "480p",
+          "768p",
+          "1080p"
+        ],
+        "seed_maximum": 999999999999999,
+        "seed_minimum": 0,
+        "supported_modes": [
+          "reference"
+        ],
+        "supports_auto_duration": false,
+        "supports_duration": true,
+        "supports_generate_audio": false,
+        "supports_prompt": false,
+        "supports_ratio": true,
+        "supports_seed": false,
+        "supports_watermark": false
+      }
+    },
+    {
+      "id": "fcd7c573-a208-411a-8636-80e2658919c0",
+      "slug": "minimax_h3_lightx2v_v5",
+      "label": "H3多图参考生视频",
+      "provider_name": "AutoDL zealman 视频生成",
+      "video_capabilities": {
+        "audio_only": false,
+        "default_generate_audio": false,
+        "default_ratio": "9:16",
+        "default_resolution": "768p",
+        "duration_label": "时长",
+        "duration_max": 10,
+        "duration_min": 1,
+        "frames_require_adaptive_ratio": false,
+        "max_prompt_length": 20000,
+        "prompt_required": true,
+        "ratios": [
+          "9:16",
+          "16:9",
+          "1:1"
+        ],
+        "reference_limits": {
+          "image": 9,
+          "audio": 0,
+          "video": 0
+        },
+        "reference_mime_types": {
+          "image": [
+            "image/jpeg",
+            "image/png",
+            "image/webp"
+          ],
+          "audio": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/x-wav",
+            "audio/flac",
+            "audio/x-flac"
+          ],
+          "video": [
+            "video/mp4",
+            "video/webm"
+          ]
+        },
+        "reference_minimums": {
+          "image": 1,
+          "audio": 0,
+          "video": 0
+        },
+        "reference_video_upload_configured": true,
+        "resolution_ratios": {
+          "480p": [
+            "9:16",
+            "16:9",
+            "1:1"
+          ],
+          "768p": [
+            "9:16",
+            "16:9",
+            "1:1"
+          ],
+          "1080p": [
+            "9:16",
+            "16:9",
+            "1:1"
+          ]
+        },
+        "resolutions": [
+          "480p",
+          "768p",
+          "1080p"
+        ],
+        "seed_maximum": 999999999999999,
+        "seed_minimum": 1,
+        "supported_modes": [
+          "reference"
+        ],
+        "supports_auto_duration": false,
+        "supports_duration": true,
+        "supports_generate_audio": false,
+        "supports_prompt": true,
+        "supports_ratio": true,
+        "supports_seed": true,
+        "supports_watermark": false
+      }
+    },
+    {
+      "id": "7e807b82-ced1-4c2a-b62f-52001f206314",
+      "slug": "minimax_h3_lightx2v_no_pic",
+      "label": "H3文生视频",
+      "provider_name": "AutoDL zealman 视频生成",
+      "video_capabilities": {
+        "audio_only": true,
+        "default_generate_audio": false,
+        "default_ratio": "9:16",
+        "default_resolution": "768p",
+        "duration_label": "时长",
+        "duration_max": 15,
+        "duration_min": 1,
+        "frames_require_adaptive_ratio": false,
+        "max_prompt_length": 20000,
+        "prompt_required": true,
+        "ratios": [
+          "9:16",
+          "16:9",
+          "1:1"
+        ],
+        "reference_limits": {
+          "image": 0,
+          "audio": 0,
+          "video": 0
+        },
+        "reference_mime_types": {
+          "image": [
+            "image/jpeg",
+            "image/png",
+            "image/webp"
+          ],
+          "audio": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/x-wav",
+            "audio/flac",
+            "audio/x-flac"
+          ],
+          "video": [
+            "video/mp4",
+            "video/webm"
+          ]
+        },
+        "reference_minimums": {
+          "image": 0,
+          "audio": 0,
+          "video": 0
+        },
+        "reference_video_upload_configured": true,
+        "resolution_ratios": {
+          "480p": [
+            "9:16",
+            "16:9",
+            "1:1"
+          ],
+          "768p": [
+            "9:16",
+            "16:9",
+            "1:1"
+          ]
+        },
+        "resolutions": [
+          "480p",
+          "768p"
+        ],
+        "seed_maximum": 999999999999999,
+        "seed_minimum": 1,
+        "supported_modes": [
+          "text"
+        ],
+        "supports_auto_duration": false,
+        "supports_duration": true,
+        "supports_generate_audio": false,
+        "supports_prompt": true,
+        "supports_ratio": true,
+        "supports_seed": true,
+        "supports_watermark": false
+      }
+    },
+    {
+      "id": "5a785fa2-385f-45a0-a62b-d955b6dd72af",
+      "slug": "minimax_h3_lightx2v",
+      "label": "H3首尾帧生成视频",
+      "provider_name": "AutoDL zealman 视频生成",
+      "video_capabilities": {
+        "audio_only": false,
+        "default_generate_audio": false,
+        "default_ratio": "9:16",
+        "default_resolution": "768p",
+        "duration_label": "时长",
+        "duration_max": 15,
+        "duration_min": 1,
+        "frames_require_adaptive_ratio": false,
+        "max_prompt_length": 20000,
+        "prompt_required": true,
+        "ratios": [
+          "9:16",
+          "16:9",
+          "1:1"
+        ],
+        "reference_limits": {
+          "image": 2,
+          "audio": 0,
+          "video": 0
+        },
+        "reference_mime_types": {
+          "image": [
+            "image/jpeg",
+            "image/png",
+            "image/webp"
+          ],
+          "audio": [
+            "audio/mpeg",
+            "audio/wav",
+            "audio/x-wav",
+            "audio/flac",
+            "audio/x-flac"
+          ],
+          "video": [
+            "video/mp4",
+            "video/webm"
+          ]
+        },
+        "reference_minimums": {
+          "image": 2,
+          "audio": 0,
+          "video": 0
+        },
+        "reference_video_upload_configured": true,
+        "resolution_ratios": {
+          "480p": [
+            "9:16",
+            "16:9",
+            "1:1"
+          ],
+          "768p": [
+            "9:16",
+            "16:9",
+            "1:1"
+          ]
+        },
+        "resolutions": [
+          "480p",
+          "768p"
+        ],
+        "seed_maximum": 999999999999999,
+        "seed_minimum": 1,
+        "supported_modes": [
+          "frames"
+        ],
+        "supports_auto_duration": false,
+        "supports_duration": true,
+        "supports_generate_audio": false,
+        "supports_prompt": true,
+        "supports_ratio": true,
+        "supports_seed": true,
+        "supports_watermark": false
+      }
+    }
+  ],
+  "generation_requests": 0,
+  "purpose": "Read-only inspect legal first-frame-only I2V mode; catalog alone does not prove optional last-frame semantics",
+  "offline_official_validation": {
+    "single_first_frame_negative": {
+      "accepted": false,
+      "message": "当前 AutoDL 工作流需要 2 至 2 个图片",
+      "only_first_frame": true
+    },
+    "paired_first_last_positive": {
+      "accepted": true,
+      "mode": "frames"
+    },
+    "source_file": "/Users/tonghao/Projects/Future-Props-Lab/backend/app/llm/providers/autodl_workflows.py",
+    "source_sha256": "edc2ff424609a60b5fe25e45faaa66f89c4f0835fc8cdb29eeb541d0b693cd63",
+    "source_rules": [
+      "lightx2v Workflow images_min=2,images_max=2,mode=frames",
+      "normalize_request requires both first_frame_asset_id and last_frame_asset_id"
+    ],
+    "no_network_generation_request": true,
+    "module_loaded_without_provider_package_runtime_or_database": true
+  },
+  "conclusion": {
+    "true_first_frame_only_i2v_available": false,
+    "basis": "Among the11 live H3 entries, only minimax_h3_lightx2v exposes frames; its pinned official normalizer requires exactly2images and explicit first+last. Other image-based H3 entries expose reference, which does not make the image an exact first frame.",
+    "image_reference_modes_available": true,
+    "new_mode_implemented": false,
+    "model_calls": 0
+  }
+}

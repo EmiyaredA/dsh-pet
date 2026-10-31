@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "action_id": "a082",
+  "attempt_index": 1,
+  "spec_revision_id": null,
+  "source_task_id": "4cc70f8e-159a-4b72-ae2a-de5a710d0215",
+  "source_file": "source/library/a082/attempt-1/拆圣诞礼物.mp4",
+  "source_sha256": "2b4db4250555900cc21ad9f2eb396e18c5a90cd12281247689643446daa9f096",
+  "created_at": "2026-10-31T12:19:14.316494+00:00",
+  "purpose": "QA-requested f168 additional original frame; primary source packet not modified",
+  "primary_manifest_sha256": "c034adc1fe25744d25b4a27cf935d06dd7a1339751750de135a5476168bf7296",
+  "frame_index": 168,
+  "timestamp_seconds": 7.0,
+  "decoder_command": [
+    "ffmpeg",
+    "-y",
+    "-v",
+    "error",
+    "-threads",
+    "1",
+    "-i",
+    "/Users/tonghao/Projects/dsh-pet/pet-packs/kurisu/source/library/a082/attempt-1/拆圣诞礼物.mp4",
+    "-vf",
+    "select=eq(n\\,168)",
+    "-frames:v",
+    "1",
+    "-fps_mode",
+    "passthrough",
+    "-pix_fmt",
+    "rgb24",
+    "-threads",
+    "1",
+    "/Users/tonghao/Projects/dsh-pet/pet-packs/kurisu/quality/evidence/existing-sources7-firstpass/a082/attempt-1/f168-native.png"
+  ],
+  "face_crop_xyxy": [
+    336,
+    0,
+    1008,
+    499
+  ],
+  "detail_resampler": "nearest_exact_pixel_replication",
+  "files": [
+    {
+      "file": "quality/evidence/existing-sources7-firstpass/a082/attempt-1/f168-native.png",
+      "sha256": "6094f75f09a102a2fdc4d8089aca660d5a3e0e183332a8f6a24412291f77bac5"
+    },
+    {
+      "file": "quality/evidence/existing-sources7-firstpass/a082/attempt-1/f168-face-native2x.png",
+      "sha256": "545e98fe3d8005cee0f09fcba53270cb720a53580839a8e7058b9948c499a0cc"
+    }
+  ],
+  "source_modified": false,
+  "new_model_calls": 0
+}

@@ -1,0 +1,208 @@
+{
+  "reference_safe_file": "references/kurisu-front-safe.png",
+  "reference_safe_sha256": "f3be325cb0fa1f5afdab90d5615487a3a92401eed054fc3d465f32cebd79ea22",
+  "reference_original_file": "references/kurisu-front.png",
+  "reference_original_sha256": "78e84345c8c876360c628310498484c3146e4da5ceae314b3b87e9de8f4c4725",
+  "conclusion": "The corresponding OUTER hair negative spaces are neartransparent inoriginalRGBA and saturatedgreen inapprovedsafecomposite. They are not opaque whiteentities. Pale flesh ears, eye whites and lace are differentanatomical/costume regions and are not classifiedas background. No reference modification performed.",
+  "exact_samples": [
+    {
+      "safe_xy": [
+        480,
+        330
+      ],
+      "safe_rgba": [
+        0,
+        254,
+        0,
+        255
+      ],
+      "mapped_original_xy": [
+        554,
+        372
+      ],
+      "original_rgba": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "mapping_note": "Approved original scaled894x503 atoffset184,131 on1280x720safe; nearestpixel mapping only."
+    },
+    {
+      "safe_xy": [
+        481,
+        334
+      ],
+      "safe_rgba": [
+        0,
+        255,
+        0,
+        255
+      ],
+      "mapped_original_xy": [
+        555,
+        380
+      ],
+      "original_rgba": [
+        127,
+        0,
+        0,
+        4
+      ],
+      "mapping_note": "Approved original scaled894x503 atoffset184,131 on1280x720safe; nearestpixel mapping only."
+    },
+    {
+      "safe_xy": [
+        774,
+        335
+      ],
+      "safe_rgba": [
+        0,
+        255,
+        0,
+        255
+      ],
+      "mapped_original_xy": [
+        1103,
+        382
+      ],
+      "original_rgba": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mapping_note": "Approved original scaled894x503 atoffset184,131 on1280x720safe; nearestpixel mapping only."
+    },
+    {
+      "safe_xy": [
+        791,
+        421
+      ],
+      "safe_rgba": [
+        0,
+        255,
+        0,
+        255
+      ],
+      "mapped_original_xy": [
+        1135,
+        543
+      ],
+      "original_rgba": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mapping_note": "Approved original scaled894x503 atoffset184,131 on1280x720safe; nearestpixel mapping only."
+    }
+  ],
+  "green_negative_space_components": [
+    {
+      "box_xywh_area": [
+        478,
+        293,
+        14,
+        48,
+        195
+      ],
+      "center": [
+        482.5846153846154,
+        317.9179487179487
+      ]
+    },
+    {
+      "box_xywh_area": [
+        772,
+        312,
+        6,
+        42,
+        121
+      ],
+      "center": [
+        774.4380165289256,
+        334.8512396694215
+      ]
+    },
+    {
+      "box_xywh_area": [
+        495,
+        358,
+        5,
+        18,
+        48
+      ],
+      "center": [
+        497.0625,
+        367.1666666666667
+      ]
+    },
+    {
+      "box_xywh_area": [
+        778,
+        402,
+        22,
+        37,
+        275
+      ],
+      "center": [
+        790.1418181818182,
+        420.4290909090909
+      ]
+    },
+    {
+      "box_xywh_area": [
+        482,
+        418,
+        18,
+        24,
+        119
+      ],
+      "center": [
+        489.5042016806723,
+        429.7563025210084
+      ]
+    },
+    {
+      "box_xywh_area": [
+        800,
+        471,
+        9,
+        33,
+        136
+      ],
+      "center": [
+        804.4411764705883,
+        488.9264705882353
+      ]
+    },
+    {
+      "box_xywh_area": [
+        468,
+        479,
+        7,
+        28,
+        86
+      ],
+      "center": [
+        471.2093023255814,
+        493.0
+      ]
+    },
+    {
+      "box_xywh_area": [
+        506,
+        502,
+        11,
+        26,
+        109
+      ],
+      "center": [
+        510.3119266055046,
+        517.3119266055046
+      ]
+    }
+  ],
+  "reference_modified": false
+}

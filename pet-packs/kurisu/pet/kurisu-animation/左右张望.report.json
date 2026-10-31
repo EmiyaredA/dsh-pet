@@ -1,14 +1,13 @@
 {
-  "source": "\u5de6\u53f3\u5f20\u671b.mp4",
-  "output": "\u5de6\u53f3\u5f20\u671b.webm",
+  "source": "左右张望.mp4",
+  "output": "a002-palette.webm",
   "source_size": [
     1344,
     768
   ],
-  "key_thresholds": [
-    12,
-    110
-  ],
+  "key_thresholds": null,
+  "matte_method": "original_source_temporal_palette_with_unchanged_geometry",
+  "encoding_lossless": true,
   "source_content_union": [
     360,
     2,
@@ -56,7 +55,40 @@
       430,
       330
     ],
-    "endpoint_rgba_mean_absolute_difference": 4.196888585268911,
-    "transparent_fraction": 0.8156618923611111
+    "audio_streams": 0,
+    "codec": "vp9",
+    "all_frames_have_alpha": true,
+    "endpoint_geometry": {
+      "feet_delta_px": 0,
+      "height_delta_px": 0
+    },
+    "background_clear": true,
+    "endpoint_rgba_mean_absolute_difference": 3.188470424564629,
+    "transparent_fraction": 0.8231174045138889
+  },
+  "temporal_palette": {
+    "anchor": "first clean source frame (a005 preserves existing clean-opening hold)",
+    "source_timing_preserved": true,
+    "geometry_warped": false,
+    "source_alpha_unchanged": true,
+    "new_model_calls": 0,
+    "neutral_white_even_identity": true,
+    "algorithm_sha256": {
+      "repair_kurisu_palette.py": "1d8c4e72e4704ed9d5a0fe158ef30b8618e09765326763e91a10cf9a5c34385f",
+      "build_pet_pack.py": "20cb11cbde7b2a207f0630d326bb5a7221d6de232bbf97acc608478f77886083",
+      "kurisu_hair_matte.py": "87a366bcfdb368c5e2528cc7c76fbd835a7eb2bc62380a2140f852433484d493"
+    },
+    "input_source": "pet-packs/kurisu/source/library/a002/attempt-2/左右张望.mp4",
+    "input_sha256": "d59da78241126412e94fb746b347b0fd99104d9847000d4dcf478278769050f4"
+  },
+  "neutral_material_revision": {
+    "type": "positive_green_neutral_white_and_dark_materials",
+    "input": "temp/kurisu/agent-palette-batch/neutral-v2/a002-palette.webm",
+    "input_sha256": "6a5a702c7a841f04da89914613fa3b38eb7c240eecb29ce4c90e93e501dbc382",
+    "algorithm_sha256": "cdf6e639a90e51cc5b6589c33eb81b183e12c903575452facceb6b734299c03c",
+    "changed_rgb_pixels_all_frames": 436472,
+    "decoded_alpha_byte_exact": true,
+    "alpha_encoding": "extract_original_plane_and_alphamerge_after_color_conversion",
+    "new_model_calls": 0
   }
 }

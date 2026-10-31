@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>红莉栖 · 程序员动作样片</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f7f3ee;color:#382d28;font:16px/1.65 system-ui,sans-serif}main{max-width:1080px;margin:36px auto;padding:0 24px}h1{font-size:27px;margin:0 0 6px}p{margin:6px 0 18px}.muted{color:#746b65;font-size:14px}.actions{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:24px 0}.action{background:#fff;border:1px solid #d9cfc5;border-radius:14px;padding:20px;text-align:left;cursor:pointer;font:inherit;color:inherit}.action[aria-pressed=true]{outline:2px solid #ad563a}.action strong{display:block;font-size:19px}.state{display:block;color:#746b65;font-size:14px;margin-top:5px}.stage{border:1px solid #d9cfc5;background-color:#ececec;background-image:conic-gradient(#fff 25%,transparent 0 50%,#fff 0 75%,transparent 0);background-size:24px 24px;border-radius:16px;overflow:hidden;display:flex;justify-content:center}video{display:block;width:100%;max-width:960px;aspect-ratio:16/9;object-fit:contain}nav{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin:14px 0}select,button{font:inherit;padding:6px 12px;border-radius:7px;border:1px solid #cec3b9;background:#fff;color:inherit}a{color:#944b34}#message{min-height:28px}#file{overflow-wrap:anywhere}@media(max-width:620px){main{padding:0 16px;margin-top:24px}.actions{grid-template-columns:1fr}h1{font-size:23px}}
+</style>
+<main>
+<h1>红莉栖 · 程序员动作样片</h1>
+<p id="intro">先看这两条。确认后，再制作这一组的其余 25 条。</p>
+<div class="actions" id="actions"></div>
+<h2 id="title" style="font-size:20px"></h2>
+<div class="stage" id="stage"><video id="video" controls playsinline preload="none"></video></div>
+<nav><label>版本 <select id="version"></select></label><label>透明预览底色 <select id="background"><option value="checker">棋盘</option><option value="#181818">深色</option><option value="#f8f8f8">浅色</option><option value="#164cff">蓝色</option></select></label></nav>
+<p id="message"></p>
+<p id="file" class="muted"></p>
+<p class="muted" id="review-instruction">视频按需加载，一次播放一条。原片保留生成背景，只有透明候选会透出所选底色。</p>
+<nav><a href="../../preview.html">已通过动画画廊</a><a href="../../history.html">全部历史版本</a><a href="../../ACTIONS.md">106 条动作清单</a></nav>
+</main>
+<script>
+const root=new URL('../../',location.href),ids=['a034','a052'];
+const video=document.querySelector('#video'),version=document.querySelector('#version');
+let library,selected='a034',playingFile='',choices=[];
+const pathUrl=p=>new URL(p.split('/').map(encodeURIComponent).join('/'),root).href;
+function versions(a){
+ const attempts=a.attempts.map((t,i)=>({...t,index:i+1})).filter(t=>t.spec_revision_id===a.spec_revision_id).reverse(),out=[];
+ for(const t of attempts){
+  const suffix=attempts.length>1?' · 当前规格第 '+(attempts.length-attempts.indexOf(t))+' 版':'';
+  if(t.candidate_file)out.push({file:t.candidate_file,label:'透明候选'+suffix,sha:t.candidate_sha256,raw:false,attempt:t});
+  if(t.source_file)out.push({file:t.source_file,label:'原始视频'+suffix,sha:t.source_sha256,raw:true,attempt:t});
+ }
+ return out;
+}
+function playChoice(){
+ const a=library.actions.find(a=>a.id===selected),choice=choices[Number(version.value)||0];
+ if(!choice){video.pause();video.removeAttribute('src');video.load();playingFile='';document.querySelector('#message').textContent='正在生成或回收，结果保存后此页会自动更新。';document.querySelector('#file').textContent='';return;}
+ if(playingFile!==choice.file){video.pause();video.src=pathUrl(choice.file)+'?v='+encodeURIComponent(choice.sha||'');video.load();playingFile=choice.file;}
+ const failed=choice.attempt.source_quality?.processing_clearance==='reject'||choice.attempt.source_background?.passed===false;
+ const old=choice.attempt.index!==a.attempts.length;
+ document.querySelector('#message').textContent=failed?'这版存在问题，仅供对照；未作为合格素材发布。':choice.raw?'原片查看：透明候选可在版本菜单中选择。':a.status==='approved'?'已通过，可检查播放与切换。':choice.attempt.independent_final_review?'透明及播放检查已完成，等待你的确认。':'透明候选：等待最终检查及你的确认。';
+ if(choice.attempt.source_quality?.defects?.some(d=>d.type==='laptop_height_composition_concern'))document.querySelector('#message').textContent+=a.human_content_acceptance?.sha256===choice.sha?' 电脑偏高遮口鼻为人类已看过并接受的原片构图。':' 这版电脑位置偏高，短时挡住嘴部，请一并确认。';
+ if(old)document.querySelector('#message').textContent+=' 当前新版本仍在制作，请勿把这一版当作最新结果。';
+ document.querySelector('#file').textContent=(choice.raw?'原片':'透明候选')+' · '+choice.file;
+}
+function render(){
+ const currentSpec=library.actions.find(a=>a.id==='a034')?.spec_revision_id,released=library.spec_batch_gates?.[currentSpec]?.batch_released;
+ document.querySelector('#intro').textContent=released?'两条样片均已由人类确认通过，剩余 25 条已放行按编号制作。':'先看这两条。确认后，再制作这一组的其余 25 条。';
+ document.querySelector('#review-instruction').textContent='视频按需加载，一次播放一条。原片保留生成背景，只有透明候选会透出所选底色。'+(released?'这两条的批准已绑定当前版本，保留此页便于回看。':'看完后可在聊天中说明 a034、a052 是否通过。');
+ const wrap=document.querySelector('#actions');wrap.replaceChildren();
+ for(const id of ids){const a=library.actions.find(a=>a.id===id),button=document.createElement('button');button.className='action';button.setAttribute('aria-pressed',String(selected===id));const title=document.createElement('strong');title.textContent=id+' · '+a.name;const state=document.createElement('span');state.className='state';
+  const labels={generating:'生成中',local_processing:'透明处理中',awaiting_processing:'等待处理',awaiting_source_review:'原片已回收，检查中',awaiting_review:'透明候选已完成，检查中',processing_failed:'已有问题记录',rejected:'暂未通过',exhausted:'暂未通过',approved:'已通过',planned:'排队中'};state.textContent=a.status==='awaiting_review'&&a.attempts.at(-1)?.independent_final_review?'播放及透明检查完成，待你确认':labels[a.status]||'等待检查';button.append(title,state);button.onclick=()=>{selected=id;playingFile='';render()};wrap.append(button);
+ }
+ const a=library.actions.find(a=>a.id===selected),previous=choices[Number(version.value)||0]?.file;choices=versions(a);version.replaceChildren();for(let i=0;i<choices.length;i++){const o=document.createElement('option');o.value=String(i);o.textContent=choices[i].label;version.append(o);}const retained=choices.findIndex(c=>c.file===previous);if(retained>=0&&video.currentTime>0&&!video.paused)version.value=String(retained);document.querySelector('#title').textContent=a.name;playChoice();
+}
+version.onchange=playChoice;
+document.querySelector('#background').onchange=e=>{const stage=document.querySelector('#stage');stage.style.backgroundImage=e.target.value==='checker'?'':'none';stage.style.backgroundColor=e.target.value==='checker'?'#ececec':e.target.value;};
+async function refresh(){try{const r=await fetch(new URL('library.json',root),{cache:'no-store'});if(!r.ok)throw Error();const next=await r.json();if(!library||library.updated_at!==next.updated_at){library=next;render();}}catch{document.querySelector('#message').textContent='制作记录暂时不可读取，请稍后刷新。';}}
+refresh();setInterval(refresh,15000);
+</script>
+</html>

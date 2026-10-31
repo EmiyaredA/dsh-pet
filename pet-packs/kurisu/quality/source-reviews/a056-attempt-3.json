@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "action_id": "a056",
+  "attempt_index": 3,
+  "action_name": "瘫着怀疑人生",
+  "spec_revision_id": "programmer-research-v2-2026-10-31",
+  "source_file": "source/library/a056/attempt-3/瘫着怀疑人生.mp4",
+  "source_sha256": "42972446b750c37bea7d798fa5c506a2b1c456175a04779089de80f1caf3818f",
+  "source_task_id": "329d65d3-eabd-4063-ad73-7204fc22d045",
+  "result_asset_id": "5be09b98-bf32-42c4-b6d2-b9008fd07d7f",
+  "model_slug": "minimax_h3_zm_u24",
+  "reviewer": "animation_qa independent agent",
+  "reviewed_at": "2026-10-31T13:44:19.066723+00:00",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "processing_clearance": "reject",
+  "final_media_approved": false,
+  "reason": "The chair/deadpan action adds unrequested headphones with a boom microphone on the head plus a second large headset on the ground. Both remain in the final baseline, although frame0 contains only the unchanged character. This violates the original chair-only props and complete stowage requirements.",
+  "defects": [
+    {
+      "severity": "hard",
+      "type": "unrequested_prop_and_endpoint_mismatch",
+      "frames": [
+        96,
+        144,
+        239
+      ],
+      "description": "A microphone headset is worn and another complete headset lies on the ground; neither is a named chair-only prop and both remain at frame239."
+    }
+  ],
+  "source_background": {
+    "method": "all_frame_saturated_green_native_border_v2",
+    "passed": true,
+    "frames": 240,
+    "expected_frames": 240,
+    "failed_frame_count": 0,
+    "failed_frames": [],
+    "background_rgb_min": [
+      2.0,
+      229.0,
+      4.0
+    ],
+    "background_rgb_max": [
+      3.0,
+      231.0,
+      6.0
+    ],
+    "maximum_spatial_delta": 8.0,
+    "maximum_temporal_delta": 2.0,
+    "thresholds": {
+      "dominant_min": 180,
+      "other_channels_max": 100,
+      "dominance_min": 100,
+      "spatial_delta_max": 35,
+      "temporal_delta_max": 24
+    },
+    "expected_background": "#00FF00",
+    "white_matte_fallback": false,
+    "visual_foreground_review_required": true,
+    "enclosed_background_and_foreground_verified": false,
+    "native_size": [
+      1344,
+      768
+    ],
+    "boundary_pixels_per_frame": 4224,
+    "measurement": "native_one_pixel_outer_boundary_no_spatial_resampling",
+    "sampling": {
+      "duration_seconds": 10,
+      "fps": 24,
+      "expected_frames": 240
+    }
+  },
+  "inspection_scope": {
+    "existing_contact_personally_viewed": false,
+    "native_full_frames_personally_viewed": [
+      0,
+      96,
+      144,
+      239
+    ],
+    "native_face_nearest2x_frames_personally_viewed": [],
+    "native_size": null,
+    "technical_scope": "Existing native240 boundary gate reused, not rerun. Source and evidence manifest are SHA-bound.",
+    "limits": [
+      "Representative source stills only, not all243 manually inspected.",
+      "No continuous source video playback in this source stage; complete10s playback is reserved for final candidate QA.",
+      "No automatic final-media approval or repair."
+    ]
+  },
+  "visual_findings": [
+    "The character is seated on an actual chair in the middle samples, rather than slumped onto the floor. This does not compensate for the new extra-headset defect.",
+    "The final chair is stowed but the head-worn microphone headset and ground headset remain.",
+    "No ordinary key or additional repair/retry is authorized by this source review."
+  ],
+  "evidence_manifest": "quality/evidence/user240-retry-wave01/a056/attempt-3/manifest.json",
+  "evidence_manifest_sha256": "acaa94571c1ce34803d7cfdc1d4fb66f10830ddd8c250dd7b50c5720775e2c03",
+  "new_model_calls": 0,
+  "processing_performed": false,
+  "ledger_or_approval_modified": false
+}

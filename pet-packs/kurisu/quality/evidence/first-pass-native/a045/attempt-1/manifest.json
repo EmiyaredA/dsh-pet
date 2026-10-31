@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "status": "complete",
+  "action_id": "a045",
+  "attempt_index": 1,
+  "action_name": "比对脑科学示意图",
+  "source_file": "source/library/a045/attempt-1/比对脑科学示意图.mp4",
+  "source_sha256": "073e9ac2e36b98188711a83cdcceb67d797c295b4c5f02e7343e9b3a4e4a9fbc",
+  "task_id": "c4592fea-1c7f-484a-bbc5-e796af602478",
+  "native_dimensions": [
+    1344,
+    768
+  ],
+  "frames": [
+    {
+      "frame_index": 0,
+      "file": "f000-native.png",
+      "sha256": "ad7e0d0e180ba3bdbef3edaa1203338fa124dfb30d715f15dca7c022a7b90a62"
+    },
+    {
+      "frame_index": 12,
+      "file": "f012-native.png",
+      "sha256": "bad933a99c83c8dfd7ae4a3add3a243885e78d5cd984ba472e75829bdef68d09"
+    },
+    {
+      "frame_index": 24,
+      "file": "f024-native.png",
+      "sha256": "ea32ac22c7f4e0da77174227fe11e4f063785e49994038d95fdf1952fdca844d"
+    },
+    {
+      "frame_index": 48,
+      "file": "f048-native.png",
+      "sha256": "a9df79ce15cdb60cc7bfc98610b5b8a6456a98180a85523520218d7860aa5181"
+    },
+    {
+      "frame_index": 72,
+      "file": "f072-native.png",
+      "sha256": "b593aec4b08182fcb585b0b6514f6b11bb62694d3b3ba595ed08681360ed09eb"
+    },
+    {
+      "frame_index": 96,
+      "file": "f096-native.png",
+      "sha256": "5010c4b23eb7711c793009270f2a7c3c507ad8c301e330904de89b3d21931261"
+    },
+    {
+      "frame_index": 120,
+      "file": "f120-native.png",
+      "sha256": "13768acec7a861f8b4636e2330987aeb31841f8c27762ad0034fc76c8b80f0b2"
+    },
+    {
+      "frame_index": 144,
+      "file": "f144-native.png",
+      "sha256": "8a998206b80f50bed2091f19d0d76dca87f57c388b1115791888ccbdeb792646"
+    },
+    {
+      "frame_index": 168,
+      "file": "f168-native.png",
+      "sha256": "3958faeca8c20aff4ed7215394ef7003a064b06da18bb4c98d98cc445d332ca1"
+    },
+    {
+      "frame_index": 192,
+      "file": "f192-native.png",
+      "sha256": "5b8fb18f64ea81e49e926f7d10b168636b111a70ff8a8a60a10a2bc8fb854459"
+    },
+    {
+      "frame_index": 216,
+      "file": "f216-native.png",
+      "sha256": "a59950998201bb8c34b837b6810d4786e20c0b160c5e5f26ec07fc82ea069d93"
+    },
+    {
+      "frame_index": 239,
+      "file": "f239-native.png",
+      "sha256": "2583228a318949ecad0495bce7afdc11a0eae5a5a7635e3fd09640efe43cd289"
+    }
+  ],
+  "decoder": "single ffmpeg, native size, RGB PNG; no scaling",
+  "created_at": "2026-10-31T03:53:33.180683+00:00"
+}

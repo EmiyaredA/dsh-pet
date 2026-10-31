@@ -1,0 +1,23 @@
+{
+  "browser": "Codex in-app browser",
+  "canvas_size": [
+    640,
+    360
+  ],
+  "before_source_switch": {
+    "time": 0.0074,
+    "duration": 10,
+    "paused": true,
+    "loops": 1,
+    "callbacks": 242
+  },
+  "idle_switch_then_return": true,
+  "final_pause": {
+    "time": 0.0028,
+    "paused": true
+  },
+  "one_loop_auto_pause": true,
+  "quality_counts": "Not obtained; no zero-drop claim.",
+  "coverage": "Actual continuous playback occurred. Manual visual observations are representative browser screenshots/native stills and face crops, not manual viewing of all240 frames.",
+  "tab_and_decoder_closed": true
+}

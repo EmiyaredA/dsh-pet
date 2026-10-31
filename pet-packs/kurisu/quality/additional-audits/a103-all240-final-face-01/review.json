@@ -1,0 +1,1360 @@
+{
+  "action_id": "a103",
+  "canonical_file": "pet/kurisu-animation/工作状态-整理实验记录.webm",
+  "canonical_sha256": "615aa8f01c1fb16a5ecae0938a7d27a31caf7b409967f63bf9e4cb6377797072",
+  "frames_prepared": 240,
+  "status": "completed_no_new_hard_defect_in_reviewed_face_head_region",
+  "crop_xyxy": [
+    220,
+    45,
+    415,
+    225
+  ],
+  "magnification": 2,
+  "initial_downscale": false,
+  "composition_background_rgb": [
+    0,
+    80,
+    255
+  ],
+  "frames_per_sheet": 16,
+  "sheets": 15,
+  "adjacent_head_difference_descriptive_only": [
+    {
+      "frame": 30,
+      "head_premult_rgb_MAD": 21.713356870193476
+    },
+    {
+      "frame": 181,
+      "head_premult_rgb_MAD": 21.303073608550733
+    },
+    {
+      "frame": 194,
+      "head_premult_rgb_MAD": 20.607967971994118
+    },
+    {
+      "frame": 182,
+      "head_premult_rgb_MAD": 19.260501163808353
+    },
+    {
+      "frame": 29,
+      "head_premult_rgb_MAD": 17.77671683146193
+    },
+    {
+      "frame": 46,
+      "head_premult_rgb_MAD": 17.608587639424243
+    },
+    {
+      "frame": 178,
+      "head_premult_rgb_MAD": 17.286731095097107
+    },
+    {
+      "frame": 26,
+      "head_premult_rgb_MAD": 17.170740777982612
+    },
+    {
+      "frame": 18,
+      "head_premult_rgb_MAD": 17.080351004599372
+    },
+    {
+      "frame": 198,
+      "head_premult_rgb_MAD": 16.436171126380273
+    },
+    {
+      "frame": 195,
+      "head_premult_rgb_MAD": 15.386781297134238
+    },
+    {
+      "frame": 196,
+      "head_premult_rgb_MAD": 14.930120738133809
+    },
+    {
+      "frame": 28,
+      "head_premult_rgb_MAD": 14.853605906560155
+    },
+    {
+      "frame": 179,
+      "head_premult_rgb_MAD": 14.784792804871238
+    },
+    {
+      "frame": 14,
+      "head_premult_rgb_MAD": 14.489864216151798
+    },
+    {
+      "frame": 45,
+      "head_premult_rgb_MAD": 14.400150568869524
+    }
+  ],
+  "all_adjacent_head_difference": [
+    {
+      "frame": 1,
+      "head_premult_rgb_MAD": 0.7648104202744727
+    },
+    {
+      "frame": 2,
+      "head_premult_rgb_MAD": 0.3591449639684934
+    },
+    {
+      "frame": 3,
+      "head_premult_rgb_MAD": 0.31142722008081475
+    },
+    {
+      "frame": 4,
+      "head_premult_rgb_MAD": 0.6062022978232129
+    },
+    {
+      "frame": 5,
+      "head_premult_rgb_MAD": 2.4256037465318507
+    },
+    {
+      "frame": 6,
+      "head_premult_rgb_MAD": 3.2454470699960893
+    },
+    {
+      "frame": 7,
+      "head_premult_rgb_MAD": 5.4595683667579085
+    },
+    {
+      "frame": 8,
+      "head_premult_rgb_MAD": 8.367237882427425
+    },
+    {
+      "frame": 9,
+      "head_premult_rgb_MAD": 9.561816546561644
+    },
+    {
+      "frame": 10,
+      "head_premult_rgb_MAD": 11.667704001638642
+    },
+    {
+      "frame": 11,
+      "head_premult_rgb_MAD": 3.911617265329684
+    },
+    {
+      "frame": 12,
+      "head_premult_rgb_MAD": 1.9052319982123902
+    },
+    {
+      "frame": 13,
+      "head_premult_rgb_MAD": 5.438691916652701
+    },
+    {
+      "frame": 14,
+      "head_premult_rgb_MAD": 14.489864216151798
+    },
+    {
+      "frame": 15,
+      "head_premult_rgb_MAD": 12.973049662030055
+    },
+    {
+      "frame": 16,
+      "head_premult_rgb_MAD": 12.38591054503473
+    },
+    {
+      "frame": 17,
+      "head_premult_rgb_MAD": 12.869927825261158
+    },
+    {
+      "frame": 18,
+      "head_premult_rgb_MAD": 17.080351004599372
+    },
+    {
+      "frame": 19,
+      "head_premult_rgb_MAD": 10.537050332383666
+    },
+    {
+      "frame": 20,
+      "head_premult_rgb_MAD": 8.479493659572091
+    },
+    {
+      "frame": 21,
+      "head_premult_rgb_MAD": 4.947517159190362
+    },
+    {
+      "frame": 22,
+      "head_premult_rgb_MAD": 7.23010718209411
+    },
+    {
+      "frame": 23,
+      "head_premult_rgb_MAD": 5.926840399977654
+    },
+    {
+      "frame": 24,
+      "head_premult_rgb_MAD": 7.477274118764315
+    },
+    {
+      "frame": 25,
+      "head_premult_rgb_MAD": 10.171740051766195
+    },
+    {
+      "frame": 26,
+      "head_premult_rgb_MAD": 17.170740777982612
+    },
+    {
+      "frame": 27,
+      "head_premult_rgb_MAD": 7.337903543563675
+    },
+    {
+      "frame": 28,
+      "head_premult_rgb_MAD": 14.853605906560155
+    },
+    {
+      "frame": 29,
+      "head_premult_rgb_MAD": 17.77671683146193
+    },
+    {
+      "frame": 30,
+      "head_premult_rgb_MAD": 21.713356870193476
+    },
+    {
+      "frame": 31,
+      "head_premult_rgb_MAD": 11.97622684021377
+    },
+    {
+      "frame": 32,
+      "head_premult_rgb_MAD": 10.084507718377
+    },
+    {
+      "frame": 33,
+      "head_premult_rgb_MAD": 9.132517103327562
+    },
+    {
+      "frame": 34,
+      "head_premult_rgb_MAD": 9.238157756549914
+    },
+    {
+      "frame": 35,
+      "head_premult_rgb_MAD": 2.3830612070089194
+    },
+    {
+      "frame": 36,
+      "head_premult_rgb_MAD": 2.7019855873973517
+    },
+    {
+      "frame": 37,
+      "head_premult_rgb_MAD": 3.466334059549746
+    },
+    {
+      "frame": 38,
+      "head_premult_rgb_MAD": 5.117655177550602
+    },
+    {
+      "frame": 39,
+      "head_premult_rgb_MAD": 5.610609984544625
+    },
+    {
+      "frame": 40,
+      "head_premult_rgb_MAD": 5.7709418468242
+    },
+    {
+      "frame": 41,
+      "head_premult_rgb_MAD": 7.357348230080257
+    },
+    {
+      "frame": 42,
+      "head_premult_rgb_MAD": 11.054246615645308
+    },
+    {
+      "frame": 43,
+      "head_premult_rgb_MAD": 10.031189840418598
+    },
+    {
+      "frame": 44,
+      "head_premult_rgb_MAD": 12.411717632162077
+    },
+    {
+      "frame": 45,
+      "head_premult_rgb_MAD": 14.400150568869524
+    },
+    {
+      "frame": 46,
+      "head_premult_rgb_MAD": 17.608587639424243
+    },
+    {
+      "frame": 47,
+      "head_premult_rgb_MAD": 8.58577472394466
+    },
+    {
+      "frame": 48,
+      "head_premult_rgb_MAD": 6.756497029961082
+    },
+    {
+      "frame": 49,
+      "head_premult_rgb_MAD": 5.72428352233581
+    },
+    {
+      "frame": 50,
+      "head_premult_rgb_MAD": 3.0538262666890112
+    },
+    {
+      "frame": 51,
+      "head_premult_rgb_MAD": 1.1125564307394373
+    },
+    {
+      "frame": 52,
+      "head_premult_rgb_MAD": 0.7150384149861273
+    },
+    {
+      "frame": 53,
+      "head_premult_rgb_MAD": 1.1023223283615442
+    },
+    {
+      "frame": 54,
+      "head_premult_rgb_MAD": 1.1302835223358099
+    },
+    {
+      "frame": 55,
+      "head_premult_rgb_MAD": 1.629893339292032
+    },
+    {
+      "frame": 56,
+      "head_premult_rgb_MAD": 3.2907656183081015
+    },
+    {
+      "frame": 57,
+      "head_premult_rgb_MAD": 4.420563916354766
+    },
+    {
+      "frame": 58,
+      "head_premult_rgb_MAD": 9.21092289071374
+    },
+    {
+      "frame": 59,
+      "head_premult_rgb_MAD": 5.213712976928663
+    },
+    {
+      "frame": 60,
+      "head_premult_rgb_MAD": 3.5101101986853624
+    },
+    {
+      "frame": 61,
+      "head_premult_rgb_MAD": 1.9448821108690388
+    },
+    {
+      "frame": 62,
+      "head_premult_rgb_MAD": 0.7301103104109641
+    },
+    {
+      "frame": 63,
+      "head_premult_rgb_MAD": 1.2298732286836862
+    },
+    {
+      "frame": 64,
+      "head_premult_rgb_MAD": 3.3466340427909054
+    },
+    {
+      "frame": 65,
+      "head_premult_rgb_MAD": 4.550616464629536
+    },
+    {
+      "frame": 66,
+      "head_premult_rgb_MAD": 9.632457814274808
+    },
+    {
+      "frame": 67,
+      "head_premult_rgb_MAD": 5.636944304787441
+    },
+    {
+      "frame": 68,
+      "head_premult_rgb_MAD": 5.608805206413049
+    },
+    {
+      "frame": 69,
+      "head_premult_rgb_MAD": 4.619638455952182
+    },
+    {
+      "frame": 70,
+      "head_premult_rgb_MAD": 3.4871168836005437
+    },
+    {
+      "frame": 71,
+      "head_premult_rgb_MAD": 1.3263545425767649
+    },
+    {
+      "frame": 72,
+      "head_premult_rgb_MAD": 0.7319515855725006
+    },
+    {
+      "frame": 73,
+      "head_premult_rgb_MAD": 0.9314882222594641
+    },
+    {
+      "frame": 74,
+      "head_premult_rgb_MAD": 0.4062261698601568
+    },
+    {
+      "frame": 75,
+      "head_premult_rgb_MAD": 0.27040053628288924
+    },
+    {
+      "frame": 76,
+      "head_premult_rgb_MAD": 0.26451155428933204
+    },
+    {
+      "frame": 77,
+      "head_premult_rgb_MAD": 1.3390918198238462
+    },
+    {
+      "frame": 78,
+      "head_premult_rgb_MAD": 0.9569473958624285
+    },
+    {
+      "frame": 79,
+      "head_premult_rgb_MAD": 0.17053579874494906
+    },
+    {
+      "frame": 80,
+      "head_premult_rgb_MAD": 0.21669232631324134
+    },
+    {
+      "frame": 81,
+      "head_premult_rgb_MAD": 0.48471061207008914
+    },
+    {
+      "frame": 82,
+      "head_premult_rgb_MAD": 0.23193128875481817
+    },
+    {
+      "frame": 83,
+      "head_premult_rgb_MAD": 0.2944312608234177
+    },
+    {
+      "frame": 84,
+      "head_premult_rgb_MAD": 1.2952846582127628
+    },
+    {
+      "frame": 85,
+      "head_premult_rgb_MAD": 3.204075563748767
+    },
+    {
+      "frame": 86,
+      "head_premult_rgb_MAD": 5.51336353648772
+    },
+    {
+      "frame": 87,
+      "head_premult_rgb_MAD": 3.7454183565163954
+    },
+    {
+      "frame": 88,
+      "head_premult_rgb_MAD": 3.026900396625887
+    },
+    {
+      "frame": 89,
+      "head_premult_rgb_MAD": 4.2612305085376985
+    },
+    {
+      "frame": 90,
+      "head_premult_rgb_MAD": 10.410079064484295
+    },
+    {
+      "frame": 91,
+      "head_premult_rgb_MAD": 6.859557641100124
+    },
+    {
+      "frame": 92,
+      "head_premult_rgb_MAD": 6.287034728041263
+    },
+    {
+      "frame": 93,
+      "head_premult_rgb_MAD": 4.447714839022029
+    },
+    {
+      "frame": 94,
+      "head_premult_rgb_MAD": 4.380656350669423
+    },
+    {
+      "frame": 95,
+      "head_premult_rgb_MAD": 1.307575740647636
+    },
+    {
+      "frame": 96,
+      "head_premult_rgb_MAD": 0.7849212893134461
+    },
+    {
+      "frame": 97,
+      "head_premult_rgb_MAD": 0.6990676870938307
+    },
+    {
+      "frame": 98,
+      "head_premult_rgb_MAD": 0.5903218442172691
+    },
+    {
+      "frame": 99,
+      "head_premult_rgb_MAD": 0.21686848034560452
+    },
+    {
+      "frame": 100,
+      "head_premult_rgb_MAD": 0.20501249464648158
+    },
+    {
+      "frame": 101,
+      "head_premult_rgb_MAD": 0.3499378060815969
+    },
+    {
+      "frame": 102,
+      "head_premult_rgb_MAD": 0.7022502281064373
+    },
+    {
+      "frame": 103,
+      "head_premult_rgb_MAD": 0.8407947786902035
+    },
+    {
+      "frame": 104,
+      "head_premult_rgb_MAD": 0.5548384261586875
+    },
+    {
+      "frame": 105,
+      "head_premult_rgb_MAD": 0.505204439230583
+    },
+    {
+      "frame": 106,
+      "head_premult_rgb_MAD": 0.5816346572817161
+    },
+    {
+      "frame": 107,
+      "head_premult_rgb_MAD": 1.5425274938085396
+    },
+    {
+      "frame": 108,
+      "head_premult_rgb_MAD": 1.882604770683202
+    },
+    {
+      "frame": 109,
+      "head_premult_rgb_MAD": 2.48947887455077
+    },
+    {
+      "frame": 110,
+      "head_premult_rgb_MAD": 6.5304782228180915
+    },
+    {
+      "frame": 111,
+      "head_premult_rgb_MAD": 5.764593784332347
+    },
+    {
+      "frame": 112,
+      "head_premult_rgb_MAD": 4.94053162765581
+    },
+    {
+      "frame": 113,
+      "head_premult_rgb_MAD": 5.22466219764259
+    },
+    {
+      "frame": 114,
+      "head_premult_rgb_MAD": 6.288814442396141
+    },
+    {
+      "frame": 115,
+      "head_premult_rgb_MAD": 1.5773470010986348
+    },
+    {
+      "frame": 116,
+      "head_premult_rgb_MAD": 0.4994999162057986
+    },
+    {
+      "frame": 117,
+      "head_premult_rgb_MAD": 0.5046118838798578
+    },
+    {
+      "frame": 118,
+      "head_premult_rgb_MAD": 0.4577647431242202
+    },
+    {
+      "frame": 119,
+      "head_premult_rgb_MAD": 0.6288834888181294
+    },
+    {
+      "frame": 120,
+      "head_premult_rgb_MAD": 0.6450688043498501
+    },
+    {
+      "frame": 121,
+      "head_premult_rgb_MAD": 0.5413781352997039
+    },
+    {
+      "frame": 122,
+      "head_premult_rgb_MAD": 0.33587687838668223
+    },
+    {
+      "frame": 123,
+      "head_premult_rgb_MAD": 0.38705003444872726
+    },
+    {
+      "frame": 124,
+      "head_premult_rgb_MAD": 0.6193250656387912
+    },
+    {
+      "frame": 125,
+      "head_premult_rgb_MAD": 0.2889759976165205
+    },
+    {
+      "frame": 126,
+      "head_premult_rgb_MAD": 0.19881555965216097
+    },
+    {
+      "frame": 127,
+      "head_premult_rgb_MAD": 0.20618568795039385
+    },
+    {
+      "frame": 128,
+      "head_premult_rgb_MAD": 0.4217098113699421
+    },
+    {
+      "frame": 129,
+      "head_premult_rgb_MAD": 0.2510879094277787
+    },
+    {
+      "frame": 130,
+      "head_premult_rgb_MAD": 0.17739120719512874
+    },
+    {
+      "frame": 131,
+      "head_premult_rgb_MAD": 0.16360974247248758
+    },
+    {
+      "frame": 132,
+      "head_premult_rgb_MAD": 0.710833510232203
+    },
+    {
+      "frame": 133,
+      "head_premult_rgb_MAD": 1.6753355306035043
+    },
+    {
+      "frame": 134,
+      "head_premult_rgb_MAD": 3.298135485913263
+    },
+    {
+      "frame": 135,
+      "head_premult_rgb_MAD": 1.0009655326518072
+    },
+    {
+      "frame": 136,
+      "head_premult_rgb_MAD": 0.8157386365752378
+    },
+    {
+      "frame": 137,
+      "head_premult_rgb_MAD": 0.830126659590712
+    },
+    {
+      "frame": 138,
+      "head_premult_rgb_MAD": 0.6231346107293819
+    },
+    {
+      "frame": 139,
+      "head_premult_rgb_MAD": 0.5191724112246988
+    },
+    {
+      "frame": 140,
+      "head_premult_rgb_MAD": 1.6993509114947023
+    },
+    {
+      "frame": 141,
+      "head_premult_rgb_MAD": 1.9974820401094915
+    },
+    {
+      "frame": 142,
+      "head_premult_rgb_MAD": 2.4083764780366086
+    },
+    {
+      "frame": 143,
+      "head_premult_rgb_MAD": 1.901860938867475
+    },
+    {
+      "frame": 144,
+      "head_premult_rgb_MAD": 0.9596430739437275
+    },
+    {
+      "frame": 145,
+      "head_premult_rgb_MAD": 0.7430617656369289
+    },
+    {
+      "frame": 146,
+      "head_premult_rgb_MAD": 0.16476982663910766
+    },
+    {
+      "frame": 147,
+      "head_premult_rgb_MAD": 0.28889961454667334
+    },
+    {
+      "frame": 148,
+      "head_premult_rgb_MAD": 0.3262500418971007
+    },
+    {
+      "frame": 149,
+      "head_premult_rgb_MAD": 0.6372104724130868
+    },
+    {
+      "frame": 150,
+      "head_premult_rgb_MAD": 0.887071932666704
+    },
+    {
+      "frame": 151,
+      "head_premult_rgb_MAD": 1.9885980299052195
+    },
+    {
+      "frame": 152,
+      "head_premult_rgb_MAD": 3.8570974805876763
+    },
+    {
+      "frame": 153,
+      "head_premult_rgb_MAD": 5.042140439081616
+    },
+    {
+      "frame": 154,
+      "head_premult_rgb_MAD": 6.988107777963988
+    },
+    {
+      "frame": 155,
+      "head_premult_rgb_MAD": 4.146006629052381
+    },
+    {
+      "frame": 156,
+      "head_premult_rgb_MAD": 3.1569104519300595
+    },
+    {
+      "frame": 157,
+      "head_premult_rgb_MAD": 1.7742491480922855
+    },
+    {
+      "frame": 158,
+      "head_premult_rgb_MAD": 9.066657169990503
+    },
+    {
+      "frame": 159,
+      "head_premult_rgb_MAD": 9.295027801053944
+    },
+    {
+      "frame": 160,
+      "head_premult_rgb_MAD": 12.652353946706887
+    },
+    {
+      "frame": 161,
+      "head_premult_rgb_MAD": 10.690530361432323
+    },
+    {
+      "frame": 162,
+      "head_premult_rgb_MAD": 11.515456566672254
+    },
+    {
+      "frame": 163,
+      "head_premult_rgb_MAD": 4.759853341526544
+    },
+    {
+      "frame": 164,
+      "head_premult_rgb_MAD": 2.121870882446046
+    },
+    {
+      "frame": 165,
+      "head_premult_rgb_MAD": 0.6905471947563451
+    },
+    {
+      "frame": 166,
+      "head_premult_rgb_MAD": 1.1714548163044896
+    },
+    {
+      "frame": 167,
+      "head_premult_rgb_MAD": 0.2924209075843063
+    },
+    {
+      "frame": 168,
+      "head_premult_rgb_MAD": 0.37841736960691214
+    },
+    {
+      "frame": 169,
+      "head_premult_rgb_MAD": 0.5116045658529319
+    },
+    {
+      "frame": 170,
+      "head_premult_rgb_MAD": 1.6128921661732118
+    },
+    {
+      "frame": 171,
+      "head_premult_rgb_MAD": 0.9379421261382045
+    },
+    {
+      "frame": 172,
+      "head_premult_rgb_MAD": 1.414766698322254
+    },
+    {
+      "frame": 173,
+      "head_premult_rgb_MAD": 2.6044444444444443
+    },
+    {
+      "frame": 174,
+      "head_premult_rgb_MAD": 5.4395279593318815
+    },
+    {
+      "frame": 175,
+      "head_premult_rgb_MAD": 3.8799289425171777
+    },
+    {
+      "frame": 176,
+      "head_premult_rgb_MAD": 2.4582824795635254
+    },
+    {
+      "frame": 177,
+      "head_premult_rgb_MAD": 5.0737883544680935
+    },
+    {
+      "frame": 178,
+      "head_premult_rgb_MAD": 17.286731095097107
+    },
+    {
+      "frame": 179,
+      "head_premult_rgb_MAD": 14.784792804871238
+    },
+    {
+      "frame": 180,
+      "head_premult_rgb_MAD": 4.89203429975979
+    },
+    {
+      "frame": 181,
+      "head_premult_rgb_MAD": 21.303073608550733
+    },
+    {
+      "frame": 182,
+      "head_premult_rgb_MAD": 19.260501163808353
+    },
+    {
+      "frame": 183,
+      "head_premult_rgb_MAD": 12.142917341675512
+    },
+    {
+      "frame": 184,
+      "head_premult_rgb_MAD": 9.429155615142545
+    },
+    {
+      "frame": 185,
+      "head_premult_rgb_MAD": 8.017885667467366
+    },
+    {
+      "frame": 186,
+      "head_premult_rgb_MAD": 9.639665940450255
+    },
+    {
+      "frame": 187,
+      "head_premult_rgb_MAD": 3.577498389289239
+    },
+    {
+      "frame": 188,
+      "head_premult_rgb_MAD": 3.044378191162505
+    },
+    {
+      "frame": 189,
+      "head_premult_rgb_MAD": 3.886774481872521
+    },
+    {
+      "frame": 190,
+      "head_premult_rgb_MAD": 9.89024840325494
+    },
+    {
+      "frame": 191,
+      "head_premult_rgb_MAD": 9.045105673798483
+    },
+    {
+      "frame": 192,
+      "head_premult_rgb_MAD": 11.57283287712046
+    },
+    {
+      "frame": 193,
+      "head_premult_rgb_MAD": 11.242253617116361
+    },
+    {
+      "frame": 194,
+      "head_premult_rgb_MAD": 20.607967971994118
+    },
+    {
+      "frame": 195,
+      "head_premult_rgb_MAD": 15.386781297134238
+    },
+    {
+      "frame": 196,
+      "head_premult_rgb_MAD": 14.930120738133809
+    },
+    {
+      "frame": 197,
+      "head_premult_rgb_MAD": 12.872344896933134
+    },
+    {
+      "frame": 198,
+      "head_premult_rgb_MAD": 16.436171126380273
+    },
+    {
+      "frame": 199,
+      "head_premult_rgb_MAD": 6.3483815429305634
+    },
+    {
+      "frame": 200,
+      "head_premult_rgb_MAD": 1.627609444537549
+    },
+    {
+      "frame": 201,
+      "head_premult_rgb_MAD": 0.5157689886970933
+    },
+    {
+      "frame": 202,
+      "head_premult_rgb_MAD": 0.5534768634899354
+    },
+    {
+      "frame": 203,
+      "head_premult_rgb_MAD": 0.5102341396197606
+    },
+    {
+      "frame": 204,
+      "head_premult_rgb_MAD": 0.9702793512466714
+    },
+    {
+      "frame": 205,
+      "head_premult_rgb_MAD": 0.8946931456343221
+    },
+    {
+      "frame": 206,
+      "head_premult_rgb_MAD": 0.8232656648604361
+    },
+    {
+      "frame": 207,
+      "head_premult_rgb_MAD": 0.43453792153138565
+    },
+    {
+      "frame": 208,
+      "head_premult_rgb_MAD": 0.4106506526637246
+    },
+    {
+      "frame": 209,
+      "head_premult_rgb_MAD": 0.7721101614434948
+    },
+    {
+      "frame": 210,
+      "head_premult_rgb_MAD": 0.17677787088244604
+    },
+    {
+      "frame": 211,
+      "head_premult_rgb_MAD": 0.11722745470457889
+    },
+    {
+      "frame": 212,
+      "head_premult_rgb_MAD": 0.1320293093495708
+    },
+    {
+      "frame": 213,
+      "head_premult_rgb_MAD": 0.5630270562165987
+    },
+    {
+      "frame": 214,
+      "head_premult_rgb_MAD": 0.20159197810178203
+    },
+    {
+      "frame": 215,
+      "head_premult_rgb_MAD": 0.1357443718228032
+    },
+    {
+      "frame": 216,
+      "head_premult_rgb_MAD": 0.15179353108764873
+    },
+    {
+      "frame": 217,
+      "head_premult_rgb_MAD": 0.41538487607768654
+    },
+    {
+      "frame": 218,
+      "head_premult_rgb_MAD": 0.1736086252164683
+    },
+    {
+      "frame": 219,
+      "head_premult_rgb_MAD": 0.11583073571308863
+    },
+    {
+      "frame": 220,
+      "head_premult_rgb_MAD": 0.1638026181032717
+    },
+    {
+      "frame": 221,
+      "head_premult_rgb_MAD": 0.5921612945273077
+    },
+    {
+      "frame": 222,
+      "head_premult_rgb_MAD": 0.5757866413421968
+    },
+    {
+      "frame": 223,
+      "head_premult_rgb_MAD": 0.3168765245889429
+    },
+    {
+      "frame": 224,
+      "head_premult_rgb_MAD": 0.2648501573468894
+    },
+    {
+      "frame": 225,
+      "head_premult_rgb_MAD": 0.36627208908254655
+    },
+    {
+      "frame": 226,
+      "head_premult_rgb_MAD": 0.5925404167364952
+    },
+    {
+      "frame": 227,
+      "head_premult_rgb_MAD": 0.1655636742826285
+    },
+    {
+      "frame": 228,
+      "head_premult_rgb_MAD": 0.16270308921289314
+    },
+    {
+      "frame": 229,
+      "head_premult_rgb_MAD": 0.23602152579930358
+    },
+    {
+      "frame": 230,
+      "head_premult_rgb_MAD": 0.4165116287730667
+    },
+    {
+      "frame": 231,
+      "head_premult_rgb_MAD": 0.15804483920823792
+    },
+    {
+      "frame": 232,
+      "head_premult_rgb_MAD": 0.13835625570266094
+    },
+    {
+      "frame": 233,
+      "head_premult_rgb_MAD": 0.1790825838407538
+    },
+    {
+      "frame": 234,
+      "head_premult_rgb_MAD": 0.26364784090274285
+    },
+    {
+      "frame": 235,
+      "head_premult_rgb_MAD": 0.11639763141723926
+    },
+    {
+      "frame": 236,
+      "head_premult_rgb_MAD": 0.13988477366255142
+    },
+    {
+      "frame": 237,
+      "head_premult_rgb_MAD": 0.2220561979777666
+    },
+    {
+      "frame": 238,
+      "head_premult_rgb_MAD": 0.4299651788540677
+    },
+    {
+      "frame": 239,
+      "head_premult_rgb_MAD": 0.41492695007727687
+    }
+  ],
+  "new_technical_format_audit": false,
+  "no_media_mutation": true,
+  "reviewer": "independent_animation_qa_agent",
+  "reviewed_at": "2026-10-30T23:15:50.310605+00:00",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "frames_personally_reviewed": 240,
+  "frame_indices_personally_reviewed": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239
+  ],
+  "native_decode": "libvpx-vp9 RGBA at 640x360; actual Alpha used for blue compositing.",
+  "review_scope": {
+    "manual": "All 240 final encoded frames, head/face fixed native ROI [220,45,415,225], including both headband ears, forehead, brows, eyes, cheeks and chin, reviewed chronologically on 15 contact pages of 16 frames. Each native 195x180 crop enlarged 2x nearest-neighbor without initial downscaling. Stored and tool-viewed pages are 1560x1560; this is not a whole-character 100px thumbnail.",
+    "body_not_reinspected": "This audit does not repeat the prior 243-frame original lower-body review, and does not extend all-frame final visual coverage to the hands, computer, torso, hem or boots outside this ROI.",
+    "playback": "No real-time continuous video playback was performed. Chronological frame inspection can identify per-frame geometry and color errors but cannot certify how every user will perceive temporal cadence at playback speed.",
+    "technical": "No fresh format/size/fps/audio/full-frame Alpha validation was requested or performed. Existing technical reports remain separate evidence, not visual approval."
+  },
+  "findings": [
+    {
+      "type": "normal_blink_sequences",
+      "frame_ranges_inclusive": [
+        [
+          39,
+          46
+        ],
+        [
+          85,
+          91
+        ],
+        [
+          153,
+          161
+        ],
+        [
+          191,
+          197
+        ]
+      ],
+      "description": "Both eyelids progressively close and reopen together. Intermediate narrow iris slivers occur during these closures; they do not show an eye changing into a different colored pupil, a duplicated eye or a twisting facial structure."
+    },
+    {
+      "type": "no_new_eye_face_hard_defect_observed",
+      "description": "Across the inspected 240 final head/face crops, the irises remain within the established blue-violet palette. No obvious isolated eye twist, facial collapse, missing skin Alpha patch, new white background island inside the reviewed hair gaps, extra headband ear or colored light spot crossing the face was observed."
+    },
+    {
+      "type": "headband_palette_consistency",
+      "description": "The white lace headband retains pale neutral/lavender shading, pink bows and pink inner ears throughout the reviewed sequence. The hair remains auburn. No obvious sudden green/olive flash like the rejected a016 probe was seen. This is a visual finding at final output resolution, not a formal proof that every pixel has constant RGB."
+    },
+    {
+      "type": "head_motion_not_palette_flicker",
+      "description": "During putting out and stowing the computer, the entire head translates and tilts over successive frames. The largest unregistered adjacent-frame ROI differences coincide with these movements and blinks; they must not be treated as a color-flicker threshold or automatic proof of a defect. No new hard discontinuity was identified by this chronological crop review."
+    }
+  ],
+  "recommendation": "No withdrawal is recommended from this additional face/head scope. Keep the existing approval decision separate; this report neither re-approves the whole clip nor changes any production count, canonical asset or ledger.",
+  "approval_or_ledger_changed": false,
+  "source_or_canonical_modified": false,
+  "new_model_calls": 0,
+  "semantic_processing_or_model_download_performed": false,
+  "evidence_sheets": [
+    "head-face-f000-015.png",
+    "head-face-f016-031.png",
+    "head-face-f032-047.png",
+    "head-face-f048-063.png",
+    "head-face-f064-079.png",
+    "head-face-f080-095.png",
+    "head-face-f096-111.png",
+    "head-face-f112-127.png",
+    "head-face-f128-143.png",
+    "head-face-f144-159.png",
+    "head-face-f160-175.png",
+    "head-face-f176-191.png",
+    "head-face-f192-207.png",
+    "head-face-f208-223.png",
+    "head-face-f224-239.png"
+  ]
+}

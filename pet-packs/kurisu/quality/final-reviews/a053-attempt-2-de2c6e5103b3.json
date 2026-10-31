@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "action_id": "a053",
+  "source_attempt_index": 2,
+  "spec_revision_id": "programmer-research-v2-2026-10-31",
+  "candidate_sha256": "de2c6e5103b33487174bb57c026c84ccb5b77462b73fdb60a16b7b1db6fe843a",
+  "source_sha256": "0b4338f3e5a8c4b585de34285c7da679e2b817de893c25ba29d0d9f13d3dd185",
+  "candidate_file": "source/library/a053/attempt-2/processing-bb47db5d-554b-4118-82e1-c469feb94d95/CI 红了瘫椅子.webm",
+  "source_task_id": "56750231-eca2-4cec-b321-d45943b6a759",
+  "verdict": "reject",
+  "reviewer": "batch30_final_qa_parallel independent agent",
+  "reviewed_at": "2026-10-31T10:38:50.029569+00:00",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "defects": [
+    {
+      "severity": "major",
+      "type": "wrong_action",
+      "frame": 168,
+      "evidence": "quality/final-reviews/a053-de2c6e5103b3/f168-four-native640.png",
+      "detail": "Sits/slumps on floor beside the unused chair; library direction requires sitting on compact gray chair."
+    }
+  ],
+  "summary": "技术240帧真实alpha和边界通过，f80的outside6命中经640核实为椅子淡入半透明结构，并非残余背景。最终动作不符：f168坐在地上，灰椅始终在右边未被使用；library direction明确要求sit briefly on a compact gray chair，动作名也为瘫椅子。卡和椅最终收回，10秒播放/idle切换完成，但不能以生成prompt遗漏on chair为最终动作验收例外。",
+  "reason": "技术240帧真实alpha和边界通过，f80的outside6命中经640核实为椅子淡入半透明结构，并非残余背景。最终动作不符：f168坐在地上，灰椅始终在右边未被使用；library direction明确要求sit briefly on a compact gray chair，动作名也为瘫椅子。卡和椅最终收回，10秒播放/idle切换完成，但不能以生成prompt遗漏on chair为最终动作验收例外。",
+  "technical": {
+    "frames": 240,
+    "width": 640,
+    "height": 360,
+    "fps": "24/1",
+    "duration_seconds": 10.0,
+    "codec": "vp9",
+    "alpha_mode": "1",
+    "audio_streams": 0,
+    "all240_alpha0to255": true,
+    "all240_outer_boundary_alpha_zero": true,
+    "outside6_alpha_gt8_bad_frames": [
+      80
+    ],
+    "residual_metric_definition": "Alpha >8 pixels outside the 6-pixel square dilation of alpha>127 foreground; fixed screening metric, no matte changes.",
+    "first_bbox_alpha127": [
+      216,
+      60,
+      434,
+      331
+    ],
+    "last_bbox_alpha127": [
+      216,
+      60,
+      434,
+      331
+    ],
+    "feet_delta_px": 0
+  },
+  "technical_proof": "quality/final-reviews/a053-de2c6e5103b3/decoded-technical240.json",
+  "frame0_rgba_file": "quality/final-reviews/a053-de2c6e5103b3/f000-rgba.png",
+  "evidence_directory": "quality/final-reviews/a053-de2c6e5103b3",
+  "inspection_scope": {
+    "all240_automated_metrics": [
+      "decoded RGBA alpha range",
+      "outermost boundary alpha",
+      "residual-background fixed screening metric",
+      "foreground bounding boxes"
+    ],
+    "manual_native640_four_background_frames": [
+      0,
+      96,
+      168,
+      239
+    ],
+    "manual_native640_additional_blue_frames": [],
+    "manual_face_hair_native640_ROI_nearest3x_frames": [
+      120
+    ],
+    "actual_playback": "quality/final-reviews/a053-de2c6e5103b3/actual-browser-playback.json",
+    "limits": [
+      "All240 technical coverage is not all240 manual visual coverage.",
+      "Native full-body cells stay640x360; face/hair crops enlarge original decoded pixels with nearest-neighbor; no100px thumbnail conclusion.",
+      "Actual playback completion and sampled human observations are separate evidence.",
+      "Accepted idle is slightly warmer; comparison supports scale/position only, not exact RGB matching."
+    ]
+  },
+  "new_paid_calls": 0,
+  "reviewer_pixel_or_recipe_changes": 0,
+  "approval_or_runtime_mutations": false
+}

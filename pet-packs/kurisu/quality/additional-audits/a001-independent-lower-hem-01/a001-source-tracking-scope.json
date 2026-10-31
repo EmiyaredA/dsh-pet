@@ -1,0 +1,33 @@
+{
+  "action_id": "a001",
+  "canonical_file": "pet/kurisu-animation/待机呼吸.webm",
+  "canonical_sha256": "10717cdea36065ed9e6a0360a7174ff1a79b7dea9523939376980b5f74219132",
+  "raw_source_file": "source/round-2/待机呼吸.mp4",
+  "raw_source_sha256": "52354f1b03a5d287531a2cfa3043a5b198843bb27831c19da635f9cb2ca4e183",
+  "raw_frames": 243,
+  "raw_fps": 24,
+  "roi_source_coordinates": [
+    680,
+    580,
+    870,
+    750
+  ],
+  "all243frames_chronological_contact_pages": [
+    "quality/additional-audits/a001-independent-lower-hem-01/a001-raw-contiguous-0-59.png",
+    "quality/additional-audits/a001-independent-lower-hem-01/a001-raw-contiguous-60-119.png",
+    "quality/additional-audits/a001-independent-lower-hem-01/a001-raw-contiguous-120-179.png",
+    "quality/additional-audits/a001-independent-lower-hem-01/a001-raw-contiguous-180-239.png",
+    "quality/additional-audits/a001-independent-lower-hem-01/a001-raw-contiguous-240-242.png"
+  ],
+  "raw_full_context_frames": [
+    8,
+    56,
+    128,
+    152
+  ],
+  "no_source_changes": true,
+  "no_ledger_changes": true,
+  "framewise_visual_review": "pending",
+  "physical_anatomical_subtype": "not_assigned_yet",
+  "source_background_not_used_to_make_candidate": true
+}

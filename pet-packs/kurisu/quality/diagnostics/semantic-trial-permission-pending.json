@@ -1,0 +1,23 @@
+{
+  "recorded_at": "2026-10-30T20:55:12.547740+00:00",
+  "status": "authorized_trial_in_progress",
+  "reason": "Original plan explicitly permits only green-screen keying and bounded mild color correction. Semantic segmentation is a method change requiring clarification.",
+  "question_sent_in_current_chat": true,
+  "scope_proposed": "One local a105 FL3 source trial, preserving original RGB, using semantic alpha only; no white threshold excavation or face repainting. No expansion before quality review.",
+  "source_file": "source/library/a105/attempt-3/工作状态-实验成功庆祝.mp4",
+  "source_sha256": "5460f738fa8678600fc5d37fc4334e551deec03c013db41b0242c58059b13aac",
+  "primary_documentation": "https://github.com/danielgatis/rembg",
+  "authorization_received": true,
+  "semantic_model_download_started": true,
+  "semantic_inference_started": true,
+  "independent_green_workflow_continues": true,
+  "qualified_at_question": 9,
+  "qualified_animations_current": 1,
+  "candidate_additional_anatomy_review": "quality/additional-audits/a105-fl3-all-native-lower-body-01/all-native-lower-body-review.json",
+  "latest_independent_green_probe_status": "a016 attempt3 80pct+human prompt completed; green border passed, character color failed. No repeat identical paid recipe.",
+  "authorized_at": "2026-10-31T01:04:29.419143+00:00",
+  "user_reply": "允许先做1条小样",
+  "scope_authorized": "Only existing a105 FL3 source; semantic alpha; preserve source RGB; no white threshold/face repaint; no expansion or approval before independent review",
+  "native_frames_completed": 240,
+  "paid_generation_calls_added": 0
+}

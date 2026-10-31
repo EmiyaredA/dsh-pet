@@ -1,0 +1,36 @@
+{
+  "sha256": "5ad4737b5d55cd056e5da7a4c27faa76082110bc414f42a0b3c36ae9d9855437",
+  "file": "pet/kurisu-animation/\u4f59\u989d-\u9884\u7b97\u5145\u8db3.webm",
+  "verified_at": "2026-10-30T16:45:28.297277+00:00",
+  "verification": {
+    "width": 640,
+    "height": 360,
+    "fps": 24,
+    "frames": 240,
+    "duration_seconds": 10.0,
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "first_box": [
+      214,
+      59,
+      435,
+      329
+    ],
+    "last_box": [
+      214,
+      59,
+      435,
+      329
+    ],
+    "audio_streams": 0,
+    "codec": "vp9",
+    "all_frames_have_alpha": true,
+    "endpoint_geometry": {
+      "feet_delta_px": 0,
+      "height_delta_px": 0
+    },
+    "background_clear": true,
+    "endpoint_rgba_mean_absolute_difference": 5.736237553342817,
+    "transparent_fraction": 0.8158807508680556
+  }
+}

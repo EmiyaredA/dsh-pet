@@ -1,0 +1,299 @@
+{
+  "schema_version": 1,
+  "audited_at": "2026-10-30T23:46:07.225676+00:00",
+  "scope": "Official SDK read-only GET catalog/model list + local SDK/backend source inspection. No model inference, configuration writes, tasks, uploads or acceptance starts.",
+  "verdict": "Implemented AI-assisted sampled-image visual acceptance exists. No currently available configured node reviewer in this account/workspace. No native continuous-video understanding or full-frame semantic QA route found in these implementations.",
+  "live_status": {
+    "catalog_read_success": true,
+    "eligible_chat_vision_model_count": 7,
+    "node_schemes": [
+      {
+        "available": false,
+        "connection_label": "模型 API 方案",
+        "id": "motion-transfer:api",
+        "input_description": "角色基准图、原动作抽帧、输出抽帧、检查要求",
+        "kind": "model_api",
+        "message": "尚未配置本空间可用的固定视觉模型",
+        "model_slug": "",
+        "output_description": "逐项建议、证据帧、无法判断项",
+        "provider_kind": "",
+        "title": "模型 API 方案",
+        "version": 1
+      },
+      {
+        "available": false,
+        "connection_label": "Codex",
+        "id": "motion-transfer:codex",
+        "input_description": "节点要求、原动作视频、角色参考、当前输出",
+        "kind": "code_agent",
+        "message": "此账号尚未获准使用该固定 Agent 连接",
+        "model_slug": "",
+        "output_description": "验收报告、问题区间、证据附件",
+        "provider_kind": "",
+        "title": "Codex 方案",
+        "version": 1
+      },
+      {
+        "available": false,
+        "connection_label": "Claude Code",
+        "id": "motion-transfer:claude-code",
+        "input_description": "节点要求、原动作视频、角色参考、当前输出",
+        "kind": "code_agent",
+        "message": "此账号尚未获准使用该固定 Agent 连接",
+        "model_slug": "",
+        "output_description": "验收报告、问题区间、证据附件",
+        "provider_kind": "",
+        "title": "Claude Code 方案",
+        "version": 1
+      },
+      {
+        "available": false,
+        "connection_label": "OpenCode",
+        "id": "motion-transfer:opencode",
+        "input_description": "节点要求、原动作视频、角色参考、当前输出",
+        "kind": "code_agent",
+        "message": "此账号尚未获准使用该固定 Agent 连接",
+        "model_slug": "",
+        "output_description": "验收报告、问题区间、证据附件",
+        "provider_kind": "",
+        "title": "OpenCode 方案",
+        "version": 1
+      },
+      {
+        "available": false,
+        "connection_label": "DeepSeek Harness",
+        "id": "motion-transfer:dsh",
+        "input_description": "节点要求、原动作视频、角色参考、当前输出",
+        "kind": "code_agent",
+        "message": "此账号尚未获准使用该固定 Agent 连接",
+        "model_slug": "",
+        "output_description": "验收报告、问题区间、证据附件",
+        "provider_kind": "",
+        "title": "DeepSeek Harness 方案",
+        "version": 1
+      },
+      {
+        "available": false,
+        "connection_label": "Pi",
+        "id": "motion-transfer:pi",
+        "input_description": "节点要求、原动作视频、角色参考、当前输出",
+        "kind": "code_agent",
+        "message": "此账号尚未获准使用该固定 Agent 连接",
+        "model_slug": "",
+        "output_description": "验收报告、问题区间、证据附件",
+        "provider_kind": "",
+        "title": "Pi 方案",
+        "version": 1
+      }
+    ],
+    "eligible_models": [
+      {
+        "id": "f1000000-0000-4000-8000-000000000002",
+        "label": "SenseAudio VL 1.0",
+        "provider_kind": "openai",
+        "provider_name": "OpenAI 兼容网关",
+        "slug": "senseaudio-vl-1.0-260319"
+      },
+      {
+        "id": "f1000000-0000-4000-8000-000000000008",
+        "label": "SenseAudio VL Lite 1.0",
+        "provider_kind": "openai",
+        "provider_name": "OpenAI 兼容网关",
+        "slug": "senseaudio-vl-lite-1.0-260319"
+      },
+      {
+        "id": "f1000000-0000-4000-8000-000000000012",
+        "label": "Qwen3.6 35B-A3B",
+        "provider_kind": "openai",
+        "provider_name": "OpenAI 兼容网关",
+        "slug": "qwen3.6-35b-a3b"
+      },
+      {
+        "id": "f1000000-0000-4000-8000-000000000013",
+        "label": "Kimi K2.6",
+        "provider_kind": "openai",
+        "provider_name": "OpenAI 兼容网关",
+        "slug": "kimi-k2.6"
+      },
+      {
+        "id": "f1000000-0000-4000-8000-000000000017",
+        "label": "Doubao Seed 2.0 Pro",
+        "provider_kind": "openai",
+        "provider_name": "OpenAI 兼容网关",
+        "slug": "doubao-seed-2-0-pro-260215"
+      },
+      {
+        "id": "f1000000-0000-4000-8000-000000000004",
+        "label": "Claude Haiku 4.5",
+        "provider_kind": "anthropic",
+        "provider_name": "Anthropic",
+        "slug": "claude-haiku-4-5-20251001"
+      },
+      {
+        "id": "f1000000-0000-4000-8000-000000000018",
+        "label": "SenseNova 6.8 Flash-Lite",
+        "provider_kind": "openai",
+        "provider_name": "OpenAI 兼容网关",
+        "slug": "sensenova-6.8-flash-lite"
+      }
+    ],
+    "raw_safe_result_file": "quality/diagnostics/fpl-visual-acceptance-capability-2026-10-31-live.json"
+  },
+  "official_interfaces": [
+    {
+      "methods": [
+        "client.visual.acceptance_catalog()",
+        "client.visual.list_acceptance_models(project_id=...)",
+        "client.visual.get_node_acceptance(project_id,node_id,output_id=...)"
+      ],
+      "effect": "GET only, metadata and runtime availability; no model call."
+    },
+    {
+      "methods": [
+        "client.visual.select_node_acceptance(project_id,node_id,body={expected_revision,scheme_id})",
+        "client.visual.start_node_acceptance(project_id,node_id,body={expected_revision,expected_canvas_revision,context_fingerprint,output_id,request_id})"
+      ],
+      "effect": "Selection writes binding; start creates paid API/Agent-assisted acceptance run. Fixed configured scheme authorization required. NOT invoked.",
+      "current_start_available": false
+    },
+    {
+      "methods": [
+        "client.visual.get_acceptance_run(project_id,run_id)",
+        "client.visual.list_acceptance_runs(project_id,node_id=...)"
+      ],
+      "effect": "Read results, sampled evidence, suggestions, execution limitations; no automatic approval."
+    },
+    {
+      "methods": [
+        "client.visual.sample_acceptance_video(project_id,run_id,body={expected_revision,start_ms,end_ms})"
+      ],
+      "effect": "Writes additional interval samples for completed nonlegacy video review; 12 positions per interval, evidence bound by run revision. Does not itself prove continuous review. NOT invoked."
+    },
+    {
+      "methods": [
+        "client.visual.decide_acceptance_run(project_id,run_id,body={expected_revision,...,finalize})"
+      ],
+      "effect": "Explicit human decision/finalize, separate from AI suggestions. NOT invoked."
+    },
+    {
+      "methods": [
+        "client.visual.start_acceptance_runs(...)",
+        "client.visual.save_acceptance_standard(...)",
+        "client.visual.create_acceptance_template(...)"
+      ],
+      "effect": "SDK names remain generated but current backend returns410/read-only/replaced; not a workaround for unavailable fixed node schemes. Verified from source only; no POST tried."
+    },
+    {
+      "methods": [
+        "client.inference.generate_text(body=...)",
+        "client.inference.stream_text(body=...)"
+      ],
+      "effect": "Direct model inference with text + images, not node acceptance. No video asset allowed, each image<=8MiB, <=5image asset IDs/message, model needs vision. NOT invoked."
+    }
+  ],
+  "api_visual_input": {
+    "underlying_request": "ChatMessageInput(role=user,text=json(criteria,evidence,coverage,prompt),images=tuple(evidence_images))",
+    "video_bytes_forwarded": false,
+    "output_video_positions": "12 evenly distributed source-frame times across0..duration_ms-1",
+    "reference_video_positions": "0 and duration_ms//2 only",
+    "reference_images": "All criteria-linked reference images",
+    "image_conversion": "thumbnail <=1024x1024; RGB JPEG quality85",
+    "full_frame_semantic_coverage": false,
+    "ten_second24fps_example": "12 sampled positions out of approximately240 frames; not continuous playback or proof all frames inspected.",
+    "audio_analyzed": false
+  },
+  "agent_visual_input": {
+    "implementation": "Configured/authorized CLI execution with credential-free acceptance_task.manifest/image/sample MCP tools. Media copied into isolated task folder with SHAs, actual image-read receipts required.",
+    "tools": [
+      "manifest",
+      "image(evidence_id)",
+      "sample(media_id,start_ms,end_ms,count=6)"
+    ],
+    "per_sample_max_frames": 12,
+    "total_extra_frames_max": 24,
+    "native_video_player_tool": false,
+    "continuous_video_claim_allowed": false,
+    "manual_continuity_required": true,
+    "current_all_authorized": false
+  },
+  "builtin_checks": {
+    "automatic": [
+      "Decodability",
+      "Configured size/aspect/duration/audio presence only"
+    ],
+    "ai": [
+      "Identity/appearance consistency",
+      "Key pose/direction/prop contact versus sampled reference"
+    ],
+    "manual": [
+      "Full playback: order/speed/stops/transitions, body/prop jumps, occlusion/disappearance"
+    ]
+  },
+  "defect_coverage_limits": {
+    "action": "Sampled key-pose triage, not full sequence/tempo proof. Reference video0+midpoint can omit key actions.",
+    "palette": "Can suggest a visible cast in supplied frames, but RGB/JPEG/resized evidence is not exact per-pixel palette/Alpha measurement.",
+    "tail_appendage": "May detect clear protrusion if sampled and visible; cannot certify absence in unprovided frames or occluded skirt region.",
+    "flicker": "Transient moving lighting or single-frame artifact may fall between12samples; keep all-frame numeric gates and real playback/targeted independent QA."
+  },
+  "assistant_attachment_caveat": "Visual assistant accepts video/audio assets for reference metadata, but _message_input explicitly does not parse/transcribe their contents; only image assets enter actual vision inputs.",
+  "recommended_use_without_claiming_full_acceptance": "Once an authorized fixed reviewer exists, use sampled AI results as triage to prioritize failed/pending IDs and targeted source-frame intervals. Preserve independent SHA-bound source anatomy review, all-frame alpha/background tests, and actual continuous-playback instrumentation/manual continuity checks. This audit did not authorize or activate such a reviewer.",
+  "source_evidence": {
+    "sdk_visual": {
+      "path": "/Users/tonghao/Projects/Future-Props-Lab/sdk/python/src/future_props_lab/generated/resources/visual.py",
+      "sha256": "fb3db8d9858ed764a679a783c5eb3fd0e8b6a2b19285039b2bb36adbb949a485"
+    },
+    "sdk_inference": {
+      "path": "/Users/tonghao/Projects/Future-Props-Lab/sdk/python/src/future_props_lab/generated/resources/inference.py",
+      "sha256": "5a62172912996d99ead50f36bad05dcfede6bda92a5d1d01da12be7009e750c7"
+    },
+    "acceptance_catalog": {
+      "path": "/Users/tonghao/Projects/Future-Props-Lab/backend/app/apps/visual_workshop/acceptance/catalog.py",
+      "sha256": "0ea3f5c4b0ae2840c02f7d10bd9ae235c2bb5d21f1ff027989a0535845b2171e"
+    },
+    "acceptance_nodes": {
+      "path": "/Users/tonghao/Projects/Future-Props-Lab/backend/app/apps/visual_workshop/acceptance/nodes.py",
+      "sha256": "64c7ad2ad5ff47d6dd7d9a6bd8e2c35866abd027d2157b6d3c47bfee0fc49394"
+    },
+    "acceptance_routes": {
+      "path": "/Users/tonghao/Projects/Future-Props-Lab/backend/app/apps/visual_workshop/acceptance/routes.py",
+      "sha256": "2f37047545aeb653afbdd7e99104f7ad59acae5d577a18c6f8f424cb1a1e2282"
+    },
+    "acceptance_runner": {
+      "path": "/Users/tonghao/Projects/Future-Props-Lab/backend/app/apps/visual_workshop/acceptance/runner.py",
+      "sha256": "36075a624bdc188bb7bf6c57988d0e031bfc41e738f24bb5d1f16e9a86c78785"
+    },
+    "sampling": {
+      "path": "/Users/tonghao/Projects/Future-Props-Lab/backend/app/apps/visual_workshop/acceptance/media.py",
+      "sha256": "f7f88385fbf8e84bcf441a210104b1c38f10bbb4afccecb6f890e61264116181"
+    },
+    "agent_execution": {
+      "path": "/Users/tonghao/Projects/Future-Props-Lab/backend/app/apps/visual_workshop/acceptance/execution/agents.py",
+      "sha256": "2bf7bba8c8038d4dc156f6b1d646b627ba124368a5b000a323fde48d059cfe65"
+    },
+    "agent_media_tools": {
+      "path": "/Users/tonghao/Projects/Future-Props-Lab/backend/app/apps/visual_workshop/acceptance/execution/task_tools.py",
+      "sha256": "62f4f522646962ecc1d6e5df1e2eb808b50ec7bce013ce43b705be78f29c64b8"
+    },
+    "builtin_criteria": {
+      "path": "/Users/tonghao/Projects/Future-Props-Lab/backend/app/apps/visual_workshop/acceptance/templates.py",
+      "sha256": "eeeb549235cef07a2396e0b9addc8852fe05dc9882c1efc0e80dc8e6d7a118cd"
+    },
+    "chat_attachments": {
+      "path": "/Users/tonghao/Projects/Future-Props-Lab/backend/app/apps/visual_workshop/assistant/attachments.py",
+      "sha256": "426fe89f358008662e7a225a02cad4c54718f74c64128c3d47bfde98a4482642"
+    },
+    "inference_text": {
+      "path": "/Users/tonghao/Projects/Future-Props-Lab/backend/app/llm/inference/text.py",
+      "sha256": "ec3d677fddf255d3d4108df6fca7201476eb76e7bf90120de8776c2999e039b0"
+    },
+    "inference_schema": {
+      "path": "/Users/tonghao/Projects/Future-Props-Lab/backend/app/llm/schemas/model_inference.py",
+      "sha256": "8e3c42232a3fc5fe61a5decdd84f9d3d54924848b6981ecc6b8e2d2ef9c8a072"
+    }
+  },
+  "model_calls": 0,
+  "sdk_write_calls": 0,
+  "fpl_repo_modified": false,
+  "ledger_modified": false,
+  "semantic_matting_permission_used": false
+}

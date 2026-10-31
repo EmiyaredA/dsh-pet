@@ -16,11 +16,11 @@ from build_pet_pack import read_frame,verify_output
 from kurisu_hair_matte import clear_hair_islands,despill_boundary
 from kurisu_library import ROOT,PACK,load,save,now,production_lock,write_alpha_contact
 
-VERSION='hair_islands_and_boundary_despill_v4'
+VERSION='hair_islands_and_boundary_despill_v5'
 ALGORITHM_SHA=hashlib.sha256((ROOT/'scripts/kurisu_hair_matte.py').read_bytes()).hexdigest()
 
 
-def prepare(action):
+def prepare(action,source_override=None):
     source=PACK/action['file'];before=hashlib.sha256(source.read_bytes()).hexdigest()
     assert before==action['sha256']
     # Rebuild a newer edge algorithm from its pre-repair original, never from
@@ -29,6 +29,7 @@ def prepare(action):
     for revision in reversed(revisions):
         if '/edge-repair/' not in revision.get('candidate',''):break
         source=PACK/revision['archive_file']
+    if source_override is not None:source=Path(source_override)
     folder=ROOT/'temp/kurisu/edge-repair'/action['id']/before[:12]/VERSION
     folder.mkdir(parents=True,exist_ok=True)
     output=folder/source.name

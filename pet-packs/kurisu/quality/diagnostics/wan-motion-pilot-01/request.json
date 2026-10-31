@@ -1,0 +1,16 @@
+{
+  "kind": "video",
+  "model_id": "b217e3cd-884d-4015-a3fa-98ab7608a67e",
+  "mode": "reference",
+  "resolution": "832x464",
+  "reference_asset_ids": [
+    "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+  ],
+  "video_asset_ids": [
+    "da2e3ea6-158f-4f7a-a843-2dea89a0401f"
+  ],
+  "audio_asset_ids": [],
+  "workflow_parameters": {
+    "seed": 314159
+  }
+}

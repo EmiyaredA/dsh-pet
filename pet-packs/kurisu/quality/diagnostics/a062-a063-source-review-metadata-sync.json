@@ -1,0 +1,35 @@
+{
+  "recorded_at": "2026-10-31T04:23:57.858269+00:00",
+  "updated": [
+    {
+      "action_id": "a062",
+      "review_status": "reviewed",
+      "processing_clearance": "reject",
+      "hard_defect_types_added": [
+        "nonconstant_background_segments"
+      ],
+      "original_background_unchanged": true,
+      "action_status_unchanged": true
+    },
+    {
+      "action_id": "a063",
+      "review_status": "reviewed",
+      "processing_clearance": "reject",
+      "hard_defect_types_added": [
+        "camera_zoom_subject_crop",
+        "foreground_green_lighting"
+      ],
+      "original_background_unchanged": true,
+      "action_status_unchanged": true
+    }
+  ],
+  "calls_unchanged": 106,
+  "approved_ids_unchanged": [
+    "a103"
+  ],
+  "source_of_staleness": "This checkout has no refresh_source_reviews function. local_ready only revisits awaiting_processing/awaiting_source_review; a background-gate failure exits as processing_failed while source review is missing, so later files are not automatically loaded.",
+  "scope": "a062/a063 exact first-attempt source/task/SHA only; source_quality/fingerprint/hard-defect metadata, no approval/background/media changes",
+  "new_model_calls": 0,
+  "decode_or_transform": false,
+  "future_fix_suggestion": "A source-review metadata-only refresher may CAS-read changed review fingerprints for failed sources without reclaiming a media worker or resetting quality status."
+}

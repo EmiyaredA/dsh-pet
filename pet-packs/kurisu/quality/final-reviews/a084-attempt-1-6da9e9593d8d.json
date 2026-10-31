@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "action_id": "a084",
+  "action_name": "吃汤圆",
+  "source_attempt_index": 1,
+  "spec_revision_id": null,
+  "scope_id": "existing-sources7-initial-media-01",
+  "scope_manifest_sha256": "d5b053f0ae6deb1ecf0218e8a48a7d259cbe76832c1598c2440053afa3d7e61c",
+  "source_sha256": "3c6cefcdbfc04d9bd42b977edb3809926d144a21c702e6334c210c7a0a1325ee",
+  "source_task_id": "0a4e0672-65ee-4362-aab1-751587a1aa63",
+  "source_review_file": "quality/source-reviews/a084-attempt-1.json",
+  "source_review_sha256": "5d58d9f4526aaab868b4bad6919ee86fccad63b68071e5d1015a2a0849a36c8f",
+  "candidate_file": "source/library/a084/attempt-1/processing-11626464-bb27-465b-a742-a9b50d5d43e8/吃汤圆.webm",
+  "candidate_sha256": "6da9e9593d8d50f6c66399e6ba44df150788854848bb43807a4ac9b7c3485c8d",
+  "verdict": "pass",
+  "reviewer": "existing-sources7-final-qa-parallel independent final QA agent",
+  "reviewed_at": "2026-10-31T12:35:59.080572+00:00",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "defects": [],
+  "summary": "独立最终PASS：原specNone/绝对attempt1及源/候选SHA绑定，240帧640×360/24fps/10秒VP9 Alpha无音轨、透明边界与固定残余背景筛查通过。原640四底和脸发3倍抽样可辨奶油小碗与白汤圆，勺送一口到嘴、随后勺中汤圆消失并微笑，碗始终低于下巴，9秒及末帧碗勺完全收回。未见眼色改变、白块绿边、额外前景/光斑、明显脸手变形或头脚裁切。实际完整10秒播放及同尺寸idle切换完成，首末脚位330、整体高度仅1px差；人工抽样与240技术指标分别记录。",
+  "reason": "独立最终PASS：原specNone/绝对attempt1及源/候选SHA绑定，240帧640×360/24fps/10秒VP9 Alpha无音轨、透明边界与固定残余背景筛查通过。原640四底和脸发3倍抽样可辨奶油小碗与白汤圆，勺送一口到嘴、随后勺中汤圆消失并微笑，碗始终低于下巴，9秒及末帧碗勺完全收回。未见眼色改变、白块绿边、额外前景/光斑、明显脸手变形或头脚裁切。实际完整10秒播放及同尺寸idle切换完成，首末脚位330、整体高度仅1px差；人工抽样与240技术指标分别记录。",
+  "technical": {
+    "frames": 240,
+    "width": 640,
+    "height": 360,
+    "fps": 24,
+    "duration_seconds": 10.0,
+    "codec": "vp9",
+    "alpha_mode": "1",
+    "audio_streams": 0,
+    "all240_alpha0to255": true,
+    "all240_outer_boundary_alpha_zero": true,
+    "outside6_alpha_gt8_bad_frames": [],
+    "residual_metric_definition": "Alpha >8 pixels outside a fixed six-pixel square dilation of alpha>127 foreground; screening only, no matte changes.",
+    "first_bbox_alpha127": [
+      218,
+      59,
+      431,
+      330
+    ],
+    "last_bbox_alpha127": [
+      218,
+      60,
+      431,
+      330
+    ],
+    "feet_delta_px": 0,
+    "height_delta_px": -1
+  },
+  "technical_proof": "quality/final-reviews/a084-6da9e9593d8d/decoded-technical240.json",
+  "frame0_rgba_file": "quality/final-reviews/a084-6da9e9593d8d/f000-rgba.png",
+  "evidence_directory": "quality/final-reviews/a084-6da9e9593d8d",
+  "inspection_scope": {
+    "all240_automated_metrics": [
+      "decoded RGBA alpha range",
+      "outermost boundary alpha",
+      "fixed residual-background screening",
+      "foreground bounding boxes"
+    ],
+    "manual_native640_four_background_frames": [
+      0,
+      96,
+      168,
+      239
+    ],
+    "manual_additional_native640_blue_frames": [
+      72,
+      144,
+      192,
+      216
+    ],
+    "manual_face_hair_native640_ROI_nearest3x_frames": [
+      120,
+      216
+    ],
+    "actual_playback": "quality/final-reviews/a084-6da9e9593d8d/actual-browser-playback.json",
+    "limits": [
+      "All240 technical coverage is not all240 manual visual coverage.",
+      "Native full-body cells remain640x360. Enlarged face/hair uses original decoded pixels with nearest-neighbor; no100px thumbnail conclusion.",
+      "Actual full10sec execution and sampled visual perception are separate evidence.",
+      "Idle comparison supports scale/position; old accepted idle is slightly warmer, no exact RGB match claim."
+    ]
+  },
+  "visual_findings": {
+    "action": "A small spoon raises one white tangyuan to the mouth at f096/f120. Spoon is empty near the mouth by f144; the character smiles and stows bowl/spoon, fully absent by f216/f239.",
+    "prop_use_and_face": "Bowl stays below chin. Spoon/food necessarily reaches the mouth for the named bite while eyes and nose remain visible; no inappropriate large-prop face occlusion was observed.",
+    "identity_and_matte": "Full headwear/shoes retained; sampled eyes remain blue-violet and hair auburn. Native640 blue/dark/light/checker and3x face/hair show no conspicuous residual white island, green fringe, extra particle or missing painted region.",
+    "idle_switch": "Actual full10sec at640 CSS size followed by idle switch. Sole line330 at both endpoints; alpha127 height271→270, without an obvious normal-size scale snap."
+  },
+  "new_paid_calls": 0,
+  "reviewer_pixel_or_recipe_changes": 0,
+  "approval_or_runtime_mutations": false,
+  "scope_manifest_file": "temp/kurisu/existing-sources7-initial-media-01/media/manifest.json"
+}

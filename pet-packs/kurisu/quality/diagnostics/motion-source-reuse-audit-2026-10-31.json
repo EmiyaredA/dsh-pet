@@ -1,0 +1,152 @@
+{
+  "schema_version": 1,
+  "audited_at": "2026-10-30T23:02:57.709479+00:00",
+  "mode": "local_read_only_source_reuse_audit_no_sdk_calls",
+  "source": {
+    "action_id": "a001",
+    "source_file": "source/round-2/待机呼吸.mp4",
+    "source_sha256": "52354f1b03a5d287531a2cfa3043a5b198843bb27831c19da635f9cb2ca4e183",
+    "asset_id": "da2e3ea6-158f-4f7a-a843-2dea89a0401f",
+    "source_bytes_verified": true,
+    "foreground_review_file": "quality/additional-audits/a001-independent-lower-hem-01/a001-withdrawal-recommendation.json",
+    "foreground_review_sha256": "7dd8a07d2a4ee3317cfec040248cb8d954207a6cbe84d5c593637988a347a68b"
+  },
+  "original_task_records": [
+    {
+      "record_path": "/repair_tasks/0",
+      "record": {
+        "node_id": "idle",
+        "status": "completed",
+        "request": {
+          "kind": "video",
+          "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+          "mode": "reference",
+          "duration": 10,
+          "ratio": "16:9",
+          "resolution": "768p",
+          "prompt": "subject_definitions:\n<Subject 1> is the one approved chibi Kurisu cat-maid shown in <Picture 1>: the identical auburn long hair and bangs, blue-violet eyes, oversized head, round short body, two black cat-ear accessories with pink inner triangles, white lace headband and two pink bows, black-and-white frilled maid dress, white puff sleeves, pink neck ribbon and zigzag trim, gray belt with silver buckle, dark stockings and black shoes. There are NO silver hair clips, NO tail, and no other character.\n<Picture 1> is the sole character reference and the neutral front standing pose target for the beginning and end. Use its exact squat head-to-body proportions. Replace the transparent/empty surrounding area with a flat digital #00FF00 matte.\n\nsummary:\n[reference generation] Produce a clean, technically neutral 10-second 2D desktop-pet sprite clip of <Subject 1>. One static full-body shot on a uniform pure-green digital matte; exact constant colors and a calm front standing pose at both endpoints.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - exact approved face, short round body proportions, hair shape and colors, black/pink ears, white headband, pink bows, black/white costume layers and dark shoes.\n<Picture 1> ([Shot 1] opening and ending pose target): fully_preserved - the same front neutral stance, body shape, relaxed arms, head direction, open eyes and tiny closed smile. Only the empty surroundings become the green matte.\n\ndetailed_description:\nMatch the fine dark outlines and soft 2D cel shading of <Picture 1>. Render like a clean animation-game sprite with FIXED PALETTE COLORS, not a music video, cinematic scene, live stage, or special-effects shot. [Shot 1] A single locked eye-level orthographic camera shows the whole of <Subject 1> for exactly 10 seconds. The pose, scale and neutral white frontal illumination are fixed throughout. The character is horizontally centered. The highest cat-ear tip is near 20% of the frame height and the bottom of both shoes is near 85%, leaving broad empty margins. Feet rest on a single invisible baseline with no full-body sideways drift. Keep the approved large head and compact round short torso and legs; do not elongate her body.\nLighting is neutral, flat and even from the first frame through the last. The hair remains exactly the same chestnut-red RGB hues, white lace remains neutral white, skin remains pale peach, black clothes remain dark charcoal, and all pink and blue details keep their original colors in EVERY frame. Shadows are painted into the sprite and remain constant. There is no moving illumination, colored lighting, projected light, green light, green reflection, glow, lens flare, sparkle, glint animation, bokeh, chromatic wash, flashing, animated highlight, floating heart, diamond, particle, or visual-effect layer, either on the character or around her. The small painted eye and hair highlights retain their original colors and are stationary relative to the corresponding surface.\nThe background is an exact solid digital #00FF00 cutout matte, not a green-lit room and not a light-emitting environment. It does not cast green light onto the subject and does not reflect on her hair, eyes, headband, clothes or shoes. No floor, shadow, gradient, scenery, texture or text is drawn into this matte. One whole character only.\n\nFrom 00:00.000 to 00:01.000 she is still in the front neutral standing pose, looking at the viewer with a tiny closed smile and relaxed lowered hands. From 00:01.000 to 00:04.000 introduce only very subtle torso breathing with about one percent vertical movement; both feet stay planted. Make one brief natural blink near 00:02.500, then restore the exact open-eye shape. From 00:04.000 to 00:07.000 repeat the small breathing cycle. Only the last few hair tips and lowest skirt frills follow with tiny slow movements; the head does not turn, arms do not lift, ears and headband stay structurally stable, colors and highlights do not animate. Make a second natural blink near 00:05.500. From 00:07.000 to 00:09.000 ease the tiny hair/frill motion back to the starting outlines and settle into the original neutral front stance.\n\nFrom 00:09.000 through 00:10.000 hold the exact original front neutral standing pose of <Picture 1> with eyes open, small closed smile, hands down, hair and frills settled, and both shoes flat on the opening baseline. The final frame has the SAME palette, brightness, position, proportions, outfit, silhouette and relaxed posture as the first frame. Throughout, preserve clear separate cat ears and headband, correctly connected limbs, both hands, all skirt frills and both shoes. The complete figure stays inside the frame. There are no cuts, zooms or changes of composition.\n\noverall_soundscape:\nSilence. No speech, ambience, breath, effects or other audio.\n\nnon_diegetic_music:\nN/A. No music.\n\n",
+          "reference_asset_ids": [
+            "972a4ba5-d1e9-4265-a649-7fa5168ebc4b"
+          ],
+          "canvas_node_id": "idle",
+          "expected_canvas_revision": 9
+        },
+        "id": "ca269af9-e4db-4356-b720-a43df2f4e640",
+        "provider_task_id": "139d5ef1-fdc0-4b71-85e0-a3fc59a48dac",
+        "result_asset_id": "da2e3ea6-158f-4f7a-a843-2dea89a0401f",
+        "error": null,
+        "source_file": "source/round-2/待机呼吸.mp4"
+      }
+    }
+  ],
+  "existing_diagnostic_relationship": {
+    "diagnostic_id": "wan-motion-pilot-01",
+    "status": "completed",
+    "task_id": "3bf821b0-dbd5-4887-a059-197137e79418",
+    "provider_task_id": "684b8afe-f6d4-439f-bf79-2233277b6b3e",
+    "result_asset_id": "a1b09aab-cdf1-41ad-a6f4-f0e0d335ef3a",
+    "source_file": "source/diagnostics/wan-motion-pilot-01/original.mp4",
+    "source_sha256": "7f282cb54d6fbf6703cd2695883732e99908914d2483ad109a58464f4ef7d241"
+  },
+  "historical_prepared_entry": "library.prepared_diagnostics.wan-motion-pilot-01",
+  "historical_prepared_wording_is_not_current_motion_permission": true,
+  "future_reuse_checks": [
+    {
+      "label": "Old Wan idle driver",
+      "source_sha256": "52354f1b03a5d287531a2cfa3043a5b198843bb27831c19da635f9cb2ca4e183",
+      "asset_id": "da2e3ea6-158f-4f7a-a843-2dea89a0401f",
+      "historical_clearance": "read_only_plan_ready_not_submitted",
+      "file": "temp/kurisu/wan-motion-pilot-01/manifest.json",
+      "reuse_verdict": "hold_future_motion_reuse",
+      "reason": "Motion source is anatomy-withdrawn; a historical motion allow cannot override quality/additional-audits/a001-independent-lower-hem-01/a001-withdrawal-recommendation.json"
+    },
+    {
+      "label": "Completed diagnostic output wan-motion-pilot-01",
+      "source_sha256": "7f282cb54d6fbf6703cd2695883732e99908914d2483ad109a58464f4ef7d241",
+      "asset_id": "a1b09aab-cdf1-41ad-a6f4-f0e0d335ef3a",
+      "historical_clearance": "allow_diagnostic_green_key_only",
+      "file": "quality/diagnostics/wan-motion-pilot-01-source.json",
+      "reuse_verdict": "hold_future_motion_reuse",
+      "reason": "Motion source is anatomy-withdrawn; a historical motion allow cannot override quality/additional-audits/a001-independent-lower-hem-01/a001-withdrawal-recommendation.json"
+    },
+    {
+      "label": "Motion-only a105",
+      "source_sha256": "5460f738fa8678600fc5d37fc4334e551deec03c013db41b0242c58059b13aac",
+      "asset_id": "4d89f9c7-a53a-4462-adf2-4aa00902d02b",
+      "historical_clearance": "allow_motion_transfer_only",
+      "file": "quality/motion-drivers/a105-fl2va3.json",
+      "reuse_verdict": "not_blocked_by_this_a001_anatomy_revocation",
+      "reason": "No matching SHA-bound withdrawn anatomy proof in the recorded lineage; all other independent input and paid gates still apply."
+    },
+    {
+      "label": "Motion-only a026",
+      "source_sha256": "368a0fc8d7940b3b937405b1cf0d9f127f30d70a7abefd4cd0c7e71d45c32ecb",
+      "asset_id": "e6198899-3f88-46c0-b8cb-d9fe349b989e",
+      "historical_clearance": "allow_motion_transfer_only",
+      "file": "quality/motion-drivers/a026-original1.json",
+      "reuse_verdict": "not_blocked_by_this_a001_anatomy_revocation",
+      "reason": "No matching SHA-bound withdrawn anatomy proof in the recorded lineage; all other independent input and paid gates still apply."
+    }
+  ],
+  "motion_driver_bank": {
+    "file": "temp/kurisu/motion-driver-bank-01/inventory.json",
+    "rows": 6,
+    "formal_ALLOW_count": 0,
+    "all_clearances": [
+      "not_formally_reviewed_initial_screen_only"
+    ]
+  },
+  "gate": {
+    "module": "scripts/kurisu_motion_reuse.py",
+    "authority": "Only current ledger-linked review records with fixed review SHA, explicit anatomy classification and withdraw_recommended=true; original source SHA or explicitly recorded motion lineage.",
+    "entry_points": [
+      "kurisu_wan_diagnostic.manifest_plan",
+      "kurisu_wan_diagnostic.preflight",
+      "kurisu_wan_diagnostic.prepare fresh CAS",
+      "kurisu_wan_diagnostic.submit reservation CAS",
+      "kurisu_queue.wan_generation_plan preflight and reservation CAS"
+    ],
+    "background_only_motion_permit_preserved": true,
+    "completed_recovery_not_gated_or_relabelled": true,
+    "bad_sha_or_malformed_evidence": "fail_closed_needs_reconciliation"
+  },
+  "tests": {
+    "passed": 34,
+    "command": "PYTHONPATH=scripts temp/kurisu/video-matte-env/bin/python -m unittest scripts/test_kurisu_motion_reuse.py scripts/test_kurisu_wan_production.py scripts/test_kurisu_wan_diagnostic.py",
+    "broader_queue_reference_wan_regression_passed": 83
+  },
+  "changes": {
+    "ledger_modified": false,
+    "remote_tasks_modified": false,
+    "model_calls": 0,
+    "paid_history_preserved": true,
+    "old_manifests_and_proofs_preserved": true,
+    "canonical_or_runtime_modified": false
+  },
+  "existing_original_source_task": {
+    "task_id": "ca269af9-e4db-4356-b720-a43df2f4e640",
+    "provider_task_id": "139d5ef1-fdc0-4b71-85e0-a3fc59a48dac",
+    "status": "completed",
+    "result_asset_id": "da2e3ea6-158f-4f7a-a843-2dea89a0401f",
+    "relationship": "This original idle task output became the Wan diagnostic motion input; source anatomy review applies to exact output bytes."
+  },
+  "followup_hold_recommendations": [
+    {
+      "record": "temp/kurisu/wan-motion-pilot-01/manifest.json and library.prepared_diagnostics.wan-motion-pilot-01",
+      "recommendation": "Retain historical ready wording as evidence, but do not create a new diagnostic ID or reprepare any action with this driver SHA/asset; new preflight enforces hold."
+    },
+    {
+      "record": "quality/diagnostics/wan-motion-pilot-01-source.json",
+      "recommendation": "Retain historical allow_diagnostic_green_key_only and completed remote status. This is no final-media approval and no future motion reuse clearance. Subsequent local experiment/production processing needs a fresh explicit anatomy-aware decision; recorded descendant cannot become a new paid motion input."
+    },
+    {
+      "record": "quality/motion-drivers/a105-fl2va3.json; quality/motion-drivers/a026-original1.json",
+      "recommendation": "No a001-lineage match. Keep motion-only permits scoped to their own exact bytes/reference/action. Original final BG rejections and generated Wan output semantic rejections remain; these are not automatic paid authorizations."
+    }
+  ],
+  "code_sha256": {
+    "scripts/kurisu_motion_reuse.py": "2864167011b835bf42b60e079faa73f13d0591d90919793f53f5360c855292df",
+    "scripts/kurisu_wan_diagnostic.py": "f3b2b6cecf7091d401affec86d0d5fedcda53b3aee72c5c6901e519c0d221e8f",
+    "scripts/kurisu_queue.py": "8725a93b0bac11b7a92e833fa2826d850511e488182df61512958aa48f6a94f5"
+  }
+}

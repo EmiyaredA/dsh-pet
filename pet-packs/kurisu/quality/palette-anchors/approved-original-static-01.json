@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "anchor_kind": "approved_original_static_palette_reference",
+  "purpose": "palette_reference_only",
+  "counts_toward_106": false,
+  "final_animation_approved": false,
+  "source_file": "references/kurisu-front.png",
+  "source_sha256": "78e84345c8c876360c628310498484c3146e4da5ceae314b3b87e9de8f4c4725",
+  "asset_file": "previews/static-preview/静态定稿占位_不计106.webm",
+  "asset_sha256": "fb91cd81f82eef4e7a8f97a245f98ad61b7f1a56f541983fd7b9f23f99836d31",
+  "reference_frame": 0,
+  "technical_report_file": "previews/static-preview/静态定稿占位_不计106.report.json",
+  "technical_report_sha256": "6c218242769dc9aa635871d1d6fdb0520b0f23b42bc2e4508211f29ff184afe4",
+  "independent_review_file": "quality/final-reviews/static-reference-preview-fb91cd81f82e.json",
+  "independent_review_sha256": "14f5bddc39fc6e0286fca6fe9ffceb7db2347b0f53473d65ae4b2e71a830097b"
+}

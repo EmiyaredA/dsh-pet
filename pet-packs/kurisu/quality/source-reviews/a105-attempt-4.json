@@ -1,0 +1,205 @@
+{
+  "schema_version": 1,
+  "action_id": "a105",
+  "attempt_index": 4,
+  "source_sha256": "65fb61833a3ca628a2b2d2a7c6220eba305b1290e1ab84b9246fed00ba3136fc",
+  "source_task_id": "6ef2258b-5e4f-49a6-8129-420f88ec9e83",
+  "source_result_asset_id": "6578fd11-b6ac-4bcf-b512-5fa0c49f457d",
+  "canonical_source_file": "source/library/a105/attempt-4/工作状态-实验成功庆祝.mp4",
+  "inspected_source_file": "/Users/tonghao/Projects/dsh-pet/pet-packs/kurisu/source/library/a105/attempt-4/工作状态-实验成功庆祝.mp4",
+  "model_slug": "wan2.2animate-v4-motion_retargeting",
+  "reviewed_at": "2026-10-30T20:20:33.837569+00:00",
+  "reviewer": "independent_animation_qa_agent",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "processing_clearance": "reject",
+  "final_media_approved": false,
+  "summary": "HARD REJECT for motion/endpoints: output openswithahighopenhandwaveandopenmouth, thenclasping/bowinggestures, ratherthanreference-neutralstartandtwosmallchest-levelcelebratoryfistpumps. Nativef299haswideopenmouth; finalf302settlesmouth/lowershandsbutstilldoesnotmatchtheopeningraisedwavepose. Strictnativeflatgatealsofails3framesonlyfordarkgreenuniformity; thisisNOTwhite/blackbackgroundreplacementandisnotclaimedunkeyable.",
+  "defects": [
+    {
+      "severity": "hard",
+      "type": "required_motion_and_neutral_endpoints_mismatch",
+      "source_frames": [
+        0,
+        30,
+        60,
+        90,
+        120,
+        150,
+        210,
+        299,
+        302
+      ],
+      "description": "Beginsalreadywavingoneopenhandhighwithwideopenmouth; middleshowshandsclasp/bow. Latef299stillhaswideopenmouth, nativefinalf302loweredhandsandsmallmouthmark; openingraisedwaveandendingloweredhandsdiffer. Thisdoesnotretainthespecifiedneutral0–2sstandardstartorsamefirstlastpose anddoesnotclearlydepicttherequiredtwosmallbelowchinfistpumps. Do notrenameunrelatedwaveasthisaction."
+    }
+  ],
+  "background_gate": {
+    "method": "all_frame_saturated_green_native_border_v2",
+    "passed": false,
+    "frames": 240,
+    "expected_frames": 240,
+    "failed_frame_count": 3,
+    "failed_frames": [
+      0,
+      1,
+      2
+    ],
+    "background_rgb_min": [
+      8.0,
+      244.0,
+      19.0
+    ],
+    "background_rgb_max": [
+      15.0,
+      249.0,
+      37.0
+    ],
+    "maximum_spatial_delta": 39.0,
+    "maximum_temporal_delta": 18.0,
+    "thresholds": {
+      "dominant_min": 180,
+      "other_channels_max": 100,
+      "dominance_min": 100,
+      "spatial_delta_max": 35,
+      "temporal_delta_max": 24
+    },
+    "expected_background": "#00FF00",
+    "white_matte_fallback": false,
+    "visual_foreground_review_required": true,
+    "enclosed_background_and_foreground_verified": false,
+    "native_size": [
+      832,
+      464
+    ],
+    "boundary_pixels_per_frame": 2592,
+    "measurement": "native_one_pixel_outer_boundary_no_spatial_resampling",
+    "sampling": {
+      "duration_seconds": 10,
+      "fps": 24,
+      "expected_frames": 240
+    }
+  },
+  "background_interpretation": "Alltrueboundarypixelsaresaturatedgreen. Onlyfirst3framesleftuppercornerG209/208/211 causespatial37/39/36vs35. Maintainrawflat=false; ordinarygreenkeymaymathematicallyremoveit. Foregroundmotion/endpointsfailindependently, sowithholdprocessing. DoNOTlabelthisaswhite/blackorunkeyablechroma.",
+  "other_visual_observations": {
+    "identity": "Shortchibiwithauburnhair,bluevioleteyesandtwoheadbandearsretainedinsamples; noobviousa092pinkextraearoranimaltailwasobserved. Notanallframeanatomyapproval.",
+    "costume": "Blackforearm/sleeveareasandruffleinterpretationvaryfromcanonical. Nativefullbodyfirst/lastalso showpale bareupperleg/kneebandsaboveshoeswherecanonicalrefhasdarkstockings. Notclearedhere; coremotionfailurealreadydecisive.",
+    "palette": "No localizedmovinggreenlightspotobservedinthesampledhead/torsoimages; nocanonicalpalette/finaledgeapprovalbecauseprocessingisstopped.",
+    "first_last_standard_pose_same": false
+  },
+  "descriptive_geometry_samples": [
+    {
+      "frame": 0,
+      "native_xywh": [
+        284,
+        64,
+        261,
+        331
+      ],
+      "feet_y_exclusive": 395,
+      "height_px": 331,
+      "descriptive_only": true
+    },
+    {
+      "frame": 90,
+      "native_xywh": [
+        287,
+        84,
+        258,
+        312
+      ],
+      "feet_y_exclusive": 396,
+      "height_px": 312,
+      "descriptive_only": true
+    },
+    {
+      "frame": 120,
+      "native_xywh": [
+        290,
+        88,
+        256,
+        306
+      ],
+      "feet_y_exclusive": 394,
+      "height_px": 306,
+      "descriptive_only": true
+    },
+    {
+      "frame": 299,
+      "native_xywh": [
+        288,
+        72,
+        252,
+        322
+      ],
+      "feet_y_exclusive": 394,
+      "height_px": 322,
+      "descriptive_only": true
+    },
+    {
+      "frame": 302,
+      "native_xywh": [
+        289,
+        72,
+        251,
+        322
+      ],
+      "feet_y_exclusive": 394,
+      "height_px": 322,
+      "descriptive_only": true
+    }
+  ],
+  "source_metadata": {
+    "size": [
+      832,
+      464
+    ],
+    "fps": 30,
+    "native_frames": 303,
+    "duration_seconds": 10.1,
+    "audio_present": true
+  },
+  "portable_evidence": [
+    "quality/evidence/a105-wan-attempt4-upper-body-native2x.png",
+    "quality/evidence/a105-wan-attempt4-source-contact.png",
+    "quality/evidence/a105-wan-attempt4-first-last-native.png"
+  ],
+  "inspection_scope": {
+    "source_sha_verified": true,
+    "source_contact_frames_24fps_sampling": [
+      0,
+      24,
+      48,
+      72,
+      96,
+      120,
+      144,
+      168,
+      192,
+      216,
+      239
+    ],
+    "native_upper_body_crops2x_frames": [
+      0,
+      30,
+      60,
+      90,
+      120,
+      150,
+      210,
+      299
+    ],
+    "native_first_last_fullframe": [
+      0,
+      302
+    ],
+    "all303frames_visual": false,
+    "background_gate_first10seconds_frames": 240,
+    "new_model_calls": 0,
+    "ledger_modified": false,
+    "source_modified": false,
+    "candidate_generated": false,
+    "color_or_matte_repair_performed": false
+  },
+  "allowed_processing": [],
+  "new_model_calls": 0
+}

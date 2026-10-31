@@ -1,0 +1,50 @@
+{
+  "verified_at": "2026-10-30T17:55:17.753Z",
+  "zip": "temp/kurisu/kurisu-pet-partial-2026-10-31.zip",
+  "zip_hash_binding": false,
+  "verification_scope": "Final partial archive; bind runtime files and installer/config, allow append-only QA records in later repack",
+  "extracted_installer_sha256": "efdf1f218119771b6ad13142020c4cc02a2dc0e3fdfe39b8dc199098d37c2f78",
+  "config_sha256": "f90400ed93fdea10b700c0741c0b835bcb234c74377cd3bac01767104639cc54",
+  "runtime_webm_sha256": {
+    "工作状态-专注敲键盘.webm": "3b890f38928effc3b3be0823955daa19332f7f47b7d7bd34ff4d98a0611d494a",
+    "工作状态-托腮推理.webm": "06ebc0e33ac8ecd63b407f061e8196442f76eb9f1a583750896e3a81883f4ff4",
+    "工作状态-整理实验记录.webm": "615aa8f01c1fb16a5ecae0938a7d27a31caf7b409967f63bf9e4cb6377797072",
+    "左右张望.webm": "831d80bef0ff2dd03a35c6490fd67615f3ee99b152efcb00f448c84032f2ed15",
+    "待机呼吸.webm": "10717cdea36065ed9e6a0360a7174ff1a79b7dea9523939376980b5f74219132",
+    "点击回应-傲娇.webm": "2c3e714a9418d53395de459e89299233f823936a682ff50e64088f63754cb1d8",
+    "点击回应-害羞捂脸.webm": "2068984d756db5f177bd209675170168da56ee8c0b37ebbaba88f59c04167bb0",
+    "点击回应-开心挥手.webm": "bdf17c8b2df35991297ae1a998132cd9edaa38c48f9a900fa4e0b3d93c2401d0",
+    "点击回应-认可点头.webm": "b228c8a9a101e4727f0c3c65f1b9b8fb8cf962eff7821e15fde2111879324b82"
+  },
+  "configured_animation_count": 2,
+  "shipped_webm_count": 9,
+  "approved_animation_count": 9,
+  "backup_count": 2,
+  "old_config_backup_byte_exact": true,
+  "old_animation_backups_hash_exact": true,
+  "preserved_instance_fields": [
+    "id",
+    "name",
+    "size",
+    "position",
+    "display",
+    "whisperPrompt",
+    "existing raw facing metadata"
+  ],
+  "preserved_display_preferences": [
+    "font",
+    "confineToScreen"
+  ],
+  "hot_update_preserved_facing_and_actual_position": true,
+  "cold_restart_facing_persistence_supported": false,
+  "main_fish_and_global_settings_untouched": true,
+  "missing_media_update_rejected_before_mutation": true,
+  "model_calls": 0,
+  "live_8770_accessed": false,
+  "production_ledger_modified": false,
+  "isolated_data": "/Users/tonghao/Projects/dsh-pet/temp/kurisu/install-verification-final9-2026-10-31/isolated-dsh",
+  "first_update_stdout": "红莉栖宠物包已安装到 /Users/tonghao/Projects/dsh-pet/temp/kurisu/install-verification-final9-2026-10-31/isolated-dsh/dsh-pet/pet\n旧包备份：/Users/tonghao/Projects/dsh-pet/temp/kurisu/install-verification-final9-2026-10-31/isolated-dsh/dsh-pet/pet/backups/kurisu-2026-10-30T17-55-17-564Z-324abed8\n刷新 DSH 网页，或重载桌宠配置即可加载；肥鱼和全局设置保留。\n",
+  "current_release_status": "superseded_do_not_release",
+  "superseded_by": "quality/LATEST_QUALITY_STATUS.json",
+  "superseded_reason": "Later original-source lower-hem review found unauthorized foreground appendages; old ZIP quarantined. Existing numeric/test observations retained as historical scope only."
+}

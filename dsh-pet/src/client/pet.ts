@@ -13,7 +13,7 @@ import {
   poolIncludes,
   nextWorkStatusAnim,
 } from '../shared/pickers';
-import { planMove } from '../shared/motion';
+import { planDirectedMove } from '../shared/motion';
 import { flattenConfigPets, isWebVisible } from '../shared/config';
 import {
   balanceEventIndex,
@@ -1222,7 +1222,7 @@ export function makePetUI(rt: {
 
     /** 尝试发起一次移动：占用中返回 true（不重播），无法移动返回 false，成功返回动作名（供日志显示具体动作）。
      *  preferredName 传入时固定使用该动画（右键菜单点播移动动画），否则与随机链一致随机从 moves.actions 选。 */
-    const tryMove = (preferredName?: string): boolean | string => {
+    const tryMove = (preferredName?: string, allowTurnAround = false): boolean | string => {
       if (moveRef.current !== null || pendingMoveRef.current || throwRef.current !== null) return true;
       const moves = petAnims.moves;
       const actions = moves.actions;
@@ -1242,22 +1242,29 @@ export function makePetUI(rt: {
       // 移动距离随宠物缩放：config 的 minDist/maxDist 是基准尺寸（462px 宽）下的 px，
       // 按 实际size/基准 等比缩放 —— 小宠物挪小步、大宠物挪大步，与人物自身大小匹配
       const distScale = size / PET_REF_WIDTH;
-      const plan = planMove({
-        cx: currentCenterX(),
-        cy: currentCenterY(),
-        W,
-        H: window.innerHeight,
-        dir,
-        minDist: mp.minDist * distScale,
-        maxDist: mp.maxDist * distScale,
-        margin: mp.margin,
-        halfW,
-        sideAllow,
-      });
+      const plan = planDirectedMove(
+        {
+          cx: currentCenterX(),
+          cy: currentCenterY(),
+          W,
+          H: window.innerHeight,
+          dir,
+          minDist: mp.minDist * distScale,
+          maxDist: mp.maxDist * distScale,
+          margin: mp.margin,
+          halfW,
+          sideAllow,
+        },
+        Boolean(preferredName && allowTurnAround),
+      );
       if (!plan) return false;
+      if (plan.dir !== dir) {
+        const nextFacing = plan.dir === 1 ? 'right' : 'left';
+        facingRef.current = nextFacing;
+        setFacing(nextFacing);
+      }
       pendingMoveRef.current = {
         ...plan,
-        dir,
         leadSec: mp.leadSec,
         tailSec: mp.tailSec,
       };
@@ -2080,18 +2087,20 @@ export function makePetUI(rt: {
         setFacing('left');
       }
       // 点播移动动画：走真实移动（与随机移动同一套：边界检查 / 随机距离 / leadSec·tailSec 时段 / dir 计算），
-      // 仅"选哪个动画"由菜单决定；边界内挪不动（false）退化为纯播放，仍能看到该动画
+      // 菜单默认朝向遇到边界可以转向；无法移动时保留待机，不原地播放跑步。
       if (petAnims.moves.actions.some((a) => a.name === leaf.anim)) {
-        if (tryMove(leaf.anim) === false) {
+        const moved = tryMove(leaf.anim, !keepFacing);
+        if (moved === false) {
           stopMove();
           setOnce(true);
-          setAnim(leaf.anim);
-          setCuePlayback(cuePlaybackId);
-        } else if (cuePlaybackId !== null) {
+          if (petAnims.idle.length) setAnim(pick(petAnims.idle));
+          setCuePlayback(null);
+          if (cuePlaybackId !== null) reportPlayback(cuePlaybackId, 'failed', 'move-blocked');
+        } else if (moved === true && cuePlaybackId !== null) {
           // 移动系统接管：这条路径**不换视频源**（宠物走真实位移），本段点播不会真的播起来。
           // 如实回 failed/busy，而不是让调用方干等到 timeout。
           reportPlayback(cuePlaybackId, 'failed', 'busy');
-        }
+        } else if (typeof moved === 'string') setCuePlayback(cuePlaybackId);
         return;
       }
       stopMove();

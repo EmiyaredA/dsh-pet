@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "action_id": "a091",
+  "action_name": "认真反驳",
+  "source_attempt_index": 1,
+  "spec_revision_id": null,
+  "source_sha256": "587ce2b442ddc8aa4d503ce5b767c877974c5adad84c003bf39b10b924438d8a",
+  "source_task_id": "1e5fc728-6516-4289-ad49-01d7107c28d3",
+  "candidate_file": "source/library/a091/attempt-1/processing-1855fcdf-b906-4e2e-aba0-6d2a8782a718/认真反驳.webm",
+  "candidate_sha256": "0a71470a93e09f80cbc8d6daa092147930b841a938975da5cc46edfb2a293f89",
+  "verdict": "pass",
+  "reviewer": "animation_qa independent agent",
+  "reviewed_at": "2026-10-31T12:02:37.839056+00:00",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "defects": [],
+  "reason": "独立240帧技术通过；正常640四底、原640脸发2×及实际完整10秒回环/待机切换抽查未见明显残白、绿晕、人物缺失或新动光。目标动作及道具收回可辨，仅对绑定SHA给出质量结论。",
+  "technical": {
+    "frames": 240,
+    "width": 640,
+    "height": 360,
+    "fps": 24,
+    "duration_seconds": 10,
+    "codec": "vp9",
+    "audio_streams": 0,
+    "all240_alpha0to255": true,
+    "all240_outer_boundary_alpha_zero": true,
+    "outside6_alpha_gt8_bad_frames": [],
+    "first_bbox_alpha127": [
+      218,
+      60,
+      430,
+      330
+    ],
+    "last_bbox_alpha127": [
+      218,
+      60,
+      430,
+      330
+    ],
+    "feet_delta_px": 0,
+    "height_delta_px": 0,
+    "metadata_verified_from_actual_candidate": true
+  },
+  "technical_proof": "quality/final-reviews/a091-0a71470a93e0/decoded-technical240.json",
+  "frame0_rgba_file": "quality/final-reviews/a091-0a71470a93e0/f000-rgba.png",
+  "evidence_directory": "quality/final-reviews/a091-0a71470a93e0",
+  "inspection_scope": {
+    "normal640_four_backgrounds": [
+      {
+        "frame": 0,
+        "background": "blue"
+      },
+      {
+        "frame": 96,
+        "background": "dark"
+      },
+      {
+        "frame": 144,
+        "background": "light"
+      },
+      {
+        "frame": 239,
+        "background": "checker"
+      }
+    ],
+    "face_hair_native640_ROI_nearest2x_frames": [
+      0,
+      120,
+      239
+    ],
+    "grid_resolution_note": "Each full-body cell remains640x360 in1280x760 layout; face cells are original240x220 pixels expanded nearest2x. No100px thumbnails were used for this conclusion.",
+    "actual_playback": "quality/final-reviews/a091-0a71470a93e0/actual-browser-playback.json",
+    "limits": [
+      "All240 technical coverage is not all240 manual visual coverage.",
+      "Actual playback ran a full10sec loop; human observations are intermittent screenshots and selected stills, not an exhaustive continuous gaze claim.",
+      "Older accepted idle is somewhat warmer; scale comparison does not claim pixel-identical RGB."
+    ],
+    "actual_browser_fact_note": "Candidate executed one full10sec loop and auto-paused at wrap,241 callbacks. Idle comparison separately played3 loops before pause; no claim of continuous all-frame human gaze or zero dropped frames."
+  },
+  "visual_findings": {
+    "action": "A single empty-handed index-finger explanatory gesture is recognizable, followed by return to the shared neutral stance; there are no captions or extra props.",
+    "matte_face_color": "Reviewed normal640 composites and2x face/hair show background through hair gaps, no conspicuous white island/green halo, no obvious face collapse or added limb/tail. OrdinaryAA at2x is not treated as deformation.",
+    "additional": "Normal-size four-background composites and nearest2x face/hair show clean negative spaces and stable eyes. The inherited human-approved idle is warmer; the scale/foot comparison is not a color-identity claim.",
+    "scale_switch": "Actual same640 idle switch performed. Endpoints remain close to target270px height/foot330; quantitative values retained above. No obvious normal-size scale snap was perceived."
+  },
+  "new_paid_calls": 0,
+  "reviewer_pixel_or_recipe_changes": 0,
+  "approval_or_runtime_mutations": false
+}

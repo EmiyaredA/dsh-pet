@@ -1,0 +1,20 @@
+subject_definitions:
+<Subject 1> is the human chibi Kurisu maid in <Picture 1>. Preserve her auburn hair, blue-violet eyes, fabric cat-ear headband, costume, large round head and short plump body.
+
+summary:
+[reference generation] One 10-second full-body animation of <Subject 1> against a flat saturated GREEN chroma plane, RGB(0,255,0).
+
+retention_analysis:
+<Subject 1> ([Shot 1]): fully_preserved identity, proportions and painted palette.
+<Picture 1> ([Shot 1]): fully_preserved character, wide framing, opening and ending posture.
+
+detailed_description:
+[Shot 1] 00:00.000 to 00:10.000. Fixed eye-level orthographic camera. Keep the complete figure centered at the reference scale: ear tips near 20% frame height and standing soles at 85%. Constant neutral frontal light preserves the painted colors. Every background pixel remains the SAME flat saturated GREEN RGB(0,255,0) throughout all ten seconds, including the spaces between flowing hair locks, under the arms and around both shoes. Broad green margins surround the entire figure. The digital green plane stays uniform while the character moves. Preserve the delicate outlines and soft 2D cel shading. Her compact ivory and pink tools stay below eye level during use.
+
+00:00.000 to 00:02.000: begin in the reference stance and take a miniature ivory toothbrush and pink cup from behind her body. 00:02.000 to 00:07.000: brush gently with small clear hand strokes at her mouth, eyes visible and expression calm. The cup stays at waist height. 00:07.000 to 00:09.000: lower and stow both items behind her body. 00:09.000 to 00:10.000: hold the reference standing pose with empty hands.
+
+overall_soundscape:
+Silence.
+
+non_diegetic_music:
+N/A.

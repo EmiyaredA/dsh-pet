@@ -1,0 +1,225 @@
+{
+  "schema_version": 1,
+  "action_id": "a016",
+  "attempt_index": 3,
+  "source_sha256": "80541adeae4a4404bbdf1062d2eb64580f47fcd3beba92f52efb999f453e0a3f",
+  "source_task_id": "0705116a-ce63-4181-9d60-b27168351133",
+  "canonical_source_file": "source/library/a016/attempt-3/整理围裙.mp4",
+  "inspected_source_file": "/Users/tonghao/Projects/dsh-pet/pet-packs/kurisu/source/library/a016/attempt-3/整理围裙.mp4",
+  "model_slug": "minimax_h3_zm_nono",
+  "source_generation_mode": "reference",
+  "reference_asset_id": "19637694-92f8-4109-b08a-20a52d6850b6",
+  "reference_sha256": "5bd754ab2df7c59fff6ebde7158781b3be8ce6670b1c48f16957dc6e05dc71c1",
+  "reference_file": "references/kurisu-front-80-transparent.png",
+  "conditioning_experiment": "Same approved character enlarged to 80 percent framing, transparent RGBA reference, positive human/body constraints.",
+  "reviewed_at": "2026-10-30T22:30:53.966859+00:00",
+  "reviewer": "independent_animation_qa_agent",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "processing_clearance": "reject",
+  "final_media_approved": false,
+  "reason": "原生240帧绿边框通过，但角色本体强绿染：定稿粉色耳内在原片变米黄橄榄色，白发箍、墨线和鞋袜也偏绿；同姿态时仍随时间加重，不满足仅轻微色偏的处理准入。",
+  "summary": "Reject for strong foreground palette contamination, despite a genuinely green background plate. The approved pink inner ears become tan/olive, while headband whites, dark ear outlines and lower costume lines carry a visible green wash. This is not a white-background failure and not an assertion of circular green spots. The source is not cleared for normal green-key plus only mild bounded color correction.",
+  "defects": [
+    {
+      "severity": "hard",
+      "type": "foreground_color_contamination",
+      "frames_verified": [
+        0,
+        48,
+        120,
+        239
+      ],
+      "description": "The source materially changes the approved inner-ear color from pink to tan/olive, with green-tinted white headband and dark outlines. The visible coloration changes even between frames 0 and 48 with almost the same pose. This exceeds the source-review category of a constant mild cast.",
+      "material_comparison": [
+        {
+          "material": "left inner ear",
+          "label": "reference",
+          "native_roi_xyxy": [
+            490,
+            106,
+            505,
+            121
+          ],
+          "median_rgb": [
+            197.0,
+            110.0,
+            130.0
+          ]
+        },
+        {
+          "material": "left inner ear",
+          "label": "source f0",
+          "native_roi_xyxy": [
+            518,
+            115,
+            533,
+            130
+          ],
+          "median_rgb": [
+            181.0,
+            150.0,
+            123.0
+          ]
+        },
+        {
+          "material": "left inner ear",
+          "label": "source f48",
+          "native_roi_xyxy": [
+            518,
+            115,
+            533,
+            130
+          ],
+          "median_rgb": [
+            175.0,
+            174.0,
+            120.0
+          ]
+        },
+        {
+          "material": "left inner ear",
+          "label": "source f120",
+          "native_roi_xyxy": [
+            518,
+            115,
+            533,
+            130
+          ],
+          "median_rgb": [
+            176.0,
+            174.0,
+            120.0
+          ]
+        },
+        {
+          "material": "left inner ear",
+          "label": "source f239",
+          "native_roi_xyxy": [
+            518,
+            115,
+            533,
+            130
+          ],
+          "median_rgb": [
+            175.0,
+            173.0,
+            120.0
+          ]
+        }
+      ],
+      "bounded_correction_interpretation": "Representative native material medians are reference [197,110,130], source frame 48 [175,174,120]. Matching this pink material would require about -64 in green, beyond the allowed final per-channel max 40 correction. This is a selected-material visual/color comparison, not an all-frame registered fit or a claim that arbitrary repainting is impossible. Clamping to 40 would not itself prove visual recovery."
+    }
+  ],
+  "background_gate": {
+    "method": "all_frame_saturated_green_native_border_v2",
+    "passed": true,
+    "frames": 240,
+    "expected_frames": 240,
+    "failed_frame_count": 0,
+    "failed_frames": [],
+    "background_rgb_min": [
+      81.0,
+      244.0,
+      88.0
+    ],
+    "background_rgb_max": [
+      85.0,
+      246.0,
+      90.0
+    ],
+    "maximum_spatial_delta": 7.0,
+    "maximum_temporal_delta": 4.0,
+    "thresholds": {
+      "dominant_min": 180,
+      "other_channels_max": 100,
+      "dominance_min": 100,
+      "spatial_delta_max": 35,
+      "temporal_delta_max": 24
+    },
+    "expected_background": "#00FF00",
+    "white_matte_fallback": false,
+    "visual_foreground_review_required": true,
+    "enclosed_background_and_foreground_verified": false,
+    "native_size": [
+      1344,
+      768
+    ],
+    "boundary_pixels_per_frame": 4224,
+    "measurement": "native_one_pixel_outer_boundary_no_spatial_resampling",
+    "sampling": {
+      "duration_seconds": 10,
+      "fps": 24,
+      "expected_frames": 240
+    }
+  },
+  "background_gate_not_visual_approval": true,
+  "background_gate_interpretation": "All 240 native one-pixel border samples pass. The background is genuinely saturated green; it must not be described as white or unkeyable merely because the foreground fails.",
+  "visual_action_notes": {
+    "action": "Apron-touching and smoothing is recognizable in the sampled contact frames.",
+    "subject_complete_in_native_samples": true,
+    "ears_cropped_in_native_samples": false,
+    "obvious_extra_ear_tail_or_limb_observed_in_native_samples": false,
+    "round_moving_green_spots_crossing_face_confirmed": false,
+    "strong_diffuse_green_wash_observed": true,
+    "full_native_lower_body_visual_scan_performed": false,
+    "why_stopped_before_all243_lower_body": "A foreground palette hard defect was established during native face/body screening, so the conditional full lower-body review was not expanded and no processing was requested."
+  },
+  "inspection_scope": {
+    "source_native_dimensions": [
+      1344,
+      768
+    ],
+    "source_frames_total": 243,
+    "background_metric_frames": 240,
+    "source_contact_frames": [
+      0,
+      24,
+      48,
+      72,
+      96,
+      120,
+      144,
+      168,
+      192,
+      216,
+      239
+    ],
+    "native_full_frames_personally_reviewed": [
+      0,
+      48,
+      120
+    ],
+    "native_face_2x_personally_reviewed": [
+      0,
+      48,
+      120
+    ],
+    "native_inner_ear_material_crops_personally_reviewed": [
+      0,
+      48,
+      120,
+      239
+    ],
+    "all_native_frames_visual": false,
+    "finished_transparent_video_playback_performed": false,
+    "source_real_time_playback_performed": false,
+    "source_sha_verified": true,
+    "manual_visual_scope": "Listed original 1344x768 frames and original-pixel face/upper-body crops enlarged 2x, plus the selected native inner-ear material crops enlarged 12x. No all-frame whole-body or real-time playback claim.",
+    "technical_metrics_do_not_imply_visual_approval": true,
+    "new_model_calls": 0,
+    "ledger_modified": false,
+    "source_modified": false,
+    "candidate_generated": false,
+    "green_key_or_colour_processing_performed": false,
+    "semantic_processing_or_model_download_performed": false
+  },
+  "portable_evidence": [
+    "quality/evidence/a016-framing80-attempt3-f000-native.png",
+    "quality/evidence/a016-framing80-attempt3-f048-native.png",
+    "quality/evidence/a016-framing80-attempt3-f120-native.png",
+    "quality/evidence/a016-framing80-attempt3-inner-ear-source-vs-reference-native12x.png"
+  ],
+  "allowed_processing": [],
+  "new_model_calls": 0
+}

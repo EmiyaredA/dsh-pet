@@ -1,0 +1,86 @@
+{
+  "action_id": "a053",
+  "attempt_index": 2,
+  "spec_revision_id": "programmer-research-v2-2026-10-31",
+  "source_file": "source/library/a053/attempt-2/CI 红了瘫椅子.mp4",
+  "source_sha256": "0b4338f3e5a8c4b585de34285c7da679e2b817de893c25ba29d0d9f13d3dd185",
+  "source_task_id": "56750231-eca2-4cec-b321-d45943b6a759",
+  "schema_version": 1,
+  "reviewer": "batch30_source_qa_parallel independent source visual reviewer",
+  "reviewed_at": "2026-10-31T10:14:52.203280+00:00",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "processing_clearance": "allow_mild_color_and_green_key",
+  "final_media_approved": false,
+  "summary": "Native source samples show the specified charcoal red-cross card and compact chair, with a clear disappointed floor-sitting/slumped pose at frame 144 and both shoes visible. Face/headwear remain complete and all props vanish at frame 239. No sampled white islands, extra foreground or material light/palette change. Allow plain green key only; final continuous review must assess sit/stand/composure timing. Chair remains beside her rather than being sat on; source prompt asks to sit briefly but does not explicitly require sitting on the chair.",
+  "defects": [],
+  "inspection_scope": {
+    "source_static_samples_only": true,
+    "native_original_frames_personally_viewed": [
+      0,
+      96,
+      144,
+      239
+    ],
+    "native_size": [
+      1344,
+      768
+    ],
+    "native2x_crops_personally_viewed": [
+      "f000-face-native2x.png",
+      "f144-face-native2x.png",
+      "f144-lower-native2x.png",
+      "f239-lower-native2x.png"
+    ],
+    "prompt_file_read": "prompts/library/a053-programmer-research-v2-firstpass-green-01.txt",
+    "all240_background_metrics_reused": true,
+    "continuous_source_playback_not_performed": true,
+    "final_stage_continuous_review_required": true
+  },
+  "background_proof": {
+    "method": "all_frame_saturated_green_native_border_v2",
+    "passed": true,
+    "frames": 240,
+    "expected_frames": 240,
+    "failed_frame_count": 0,
+    "failed_frames": [],
+    "background_rgb_min": [
+      4.0,
+      234.0,
+      5.0
+    ],
+    "background_rgb_max": [
+      5.0,
+      235.0,
+      7.0
+    ],
+    "maximum_spatial_delta": 10.0,
+    "maximum_temporal_delta": 1.0,
+    "thresholds": {
+      "dominant_min": 180,
+      "other_channels_max": 100,
+      "dominance_min": 100,
+      "spatial_delta_max": 35,
+      "temporal_delta_max": 24
+    },
+    "expected_background": "#00FF00",
+    "white_matte_fallback": false,
+    "visual_foreground_review_required": true,
+    "enclosed_background_and_foreground_verified": false,
+    "native_size": [
+      1344,
+      768
+    ],
+    "boundary_pixels_per_frame": 4224,
+    "measurement": "native_one_pixel_outer_boundary_no_spatial_resampling",
+    "sampling": {
+      "duration_seconds": 10,
+      "fps": 24,
+      "expected_frames": 240
+    }
+  },
+  "evidence_manifest": "quality/evidence/batch30-firstpass/a053/attempt-2/manifest.json",
+  "no_new_paid_calls": true,
+  "no_local_repair": true,
+  "processing_constraint": "Plain green key only; no global palette remapping or semantic pixel repair authorized."
+}

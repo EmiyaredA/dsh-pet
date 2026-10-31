@@ -1,0 +1,31 @@
+{
+  "browser": "Codex in-app browser",
+  "video_css_size": [
+    640,
+    360
+  ],
+  "initial_kite_source": "../../../source/library/a070/attempt-1/processing-53c9ab03-ac43-47ba-81a4-9d975424f1bc/放风筝.webm",
+  "kite_start": {
+    "time": 0.0405,
+    "paused": false,
+    "loops": 0,
+    "callbacks": 3
+  },
+  "kite_before_source_switch": {
+    "time": 8.7692,
+    "duration": 10,
+    "paused": false,
+    "loops": 8,
+    "callbacks": 2132
+  },
+  "switch_sequence": [
+    "kite playing >=8 complete loops",
+    "Idle button: a001 same640 canvas, screenshot at0.143s",
+    "Kite button: same640 canvas, screenshot at0.193s",
+    "Pause at0.3462s, then close tab"
+  ],
+  "loop_counter_limitation": "Counters after source switching are not counted as clean kite loop totals; loading a different source can also increment the counter. The 8 recorded kite loops were before any source switch.",
+  "quality_counts": "Dropped/corrupted frame counts not obtained; no zero-drop claim.",
+  "visual_coverage_limitation": "Actual continuous playback occurred, but manual visual observations are intermittent native-size screenshots and detailed still samples, not full240 manual frames.",
+  "decoder_and_tab_closed": true
+}

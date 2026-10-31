@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "action_id": "a091",
+  "attempt_index": 1,
+  "action_name": "认真反驳",
+  "spec_revision_id": null,
+  "source_file": "source/library/a091/attempt-1/认真反驳.mp4",
+  "source_sha256": "587ce2b442ddc8aa4d503ce5b767c877974c5adad84c003bf39b10b924438d8a",
+  "source_task_id": "1e5fc728-6516-4289-ad49-01d7107c28d3",
+  "result_asset_id": "c4ff6d6e-cab0-428c-b113-ee0cf3cabbc7",
+  "model_slug": "minimax_h3_zm_u24",
+  "reviewer": "animation_qa independent agent",
+  "reviewed_at": "2026-10-31T11:52:54.599437+00:00",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "processing_clearance": "allow_mild_color_and_green_key",
+  "final_media_approved": false,
+  "reason": "Representative native frames show the compact raised-index-finger explanation gesture with a closed-mouth confident expression, complete headwear/shoes and no props. First and last frames restore the empty-handed reference stance. Cleared only for initial ordinary green key.",
+  "defects": [],
+  "source_background": {
+    "method": "all_frame_saturated_green_native_border_v2",
+    "passed": true,
+    "frames": 240,
+    "expected_frames": 240,
+    "failed_frame_count": 0,
+    "failed_frames": [],
+    "background_rgb_min": [
+      2.0,
+      232.0,
+      5.0
+    ],
+    "background_rgb_max": [
+      3.0,
+      234.0,
+      6.0
+    ],
+    "maximum_spatial_delta": 27.0,
+    "maximum_temporal_delta": 2.0,
+    "thresholds": {
+      "dominant_min": 180,
+      "other_channels_max": 100,
+      "dominance_min": 100,
+      "spatial_delta_max": 35,
+      "temporal_delta_max": 24
+    },
+    "expected_background": "#00FF00",
+    "white_matte_fallback": false,
+    "visual_foreground_review_required": true,
+    "enclosed_background_and_foreground_verified": false,
+    "native_size": [
+      1344,
+      768
+    ],
+    "boundary_pixels_per_frame": 4224,
+    "measurement": "native_one_pixel_outer_boundary_no_spatial_resampling",
+    "sampling": {
+      "duration_seconds": 10,
+      "fps": 24,
+      "expected_frames": 240
+    }
+  },
+  "inspection_scope": {
+    "existing_contact_personally_viewed": false,
+    "native_full_frames_personally_viewed": [
+      0,
+      96,
+      144,
+      239
+    ],
+    "native_face_nearest2x_frames_personally_viewed": [
+      144
+    ],
+    "native_size": [
+      1344,
+      768
+    ],
+    "technical_scope": "Existing native240 boundary gate reused, not rerun. Source and evidence manifest are SHA-bound.",
+    "limits": [
+      "Representative source stills only, not all243 manually inspected.",
+      "No continuous source video playback in this source stage; complete10s playback is reserved for final candidate QA.",
+      "No automatic final-media approval or repair."
+    ]
+  },
+  "visual_findings": [
+    "The single raised index finger at frame96 matches the named reasoning/rebuttal action without generated captions or symbols.",
+    "Frame144 has returned to a neutral stance. No extra arm, foreground appendage, moving colored light or white hair-gap island was identified in the listed samples.",
+    "Final continuous-motion, four-background edge and technical alpha review remains necessary; this source review is not a final approval."
+  ],
+  "evidence_manifest": "quality/evidence/remaining-original-firstpass/a091/attempt-1/manifest.json",
+  "evidence_manifest_sha256": "6fb10fa7c55229cb57d767d0364264e2a96316ed1821f16ed14753d8eb7b021f",
+  "new_model_calls": 0,
+  "processing_performed": false,
+  "ledger_or_approval_modified": false
+}

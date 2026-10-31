@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "action_id": "a070",
+  "source_attempt_index": 1,
+  "verdict": "pass",
+  "candidate_file": "source/library/a070/attempt-1/processing-53c9ab03-ac43-47ba-81a4-9d975424f1bc/放风筝.webm",
+  "candidate_sha256": "daa0b46e2c98cd9a7df34684bec3aaee73250c0ecc7be98ec2530da27b068752",
+  "source_sha256": "a451aa895538db56422b566cb817e82f382674358cd4d8b1d65dacddb307c3fb",
+  "source_task_id": "75d4bdcb-20f3-4bea-b66c-744d1721b93d",
+  "reviewer": "animation_qa independent agent",
+  "reviewed_at": "2026-10-31T05:23:21.295929+00:00",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "approval_mutation_performed": false,
+  "reason": "正常640四底与原尺寸脸发放大抽查未见明显残白、绿晕、主体缺失或新增附肢；风筝牵线动作可辨、末尾完整收回。实际10秒视频回环及待机切换已执行，首尾与待机高度/脚底相同，未观察到明显尺度跳动。此PASS仅绑定当前SHA，不声称240帧人工逐像素审阅。",
+  "technical": {
+    "decoded_frames": 240,
+    "size": [
+      640,
+      360
+    ],
+    "fps": 24,
+    "duration_seconds": 10,
+    "codec": "VP9",
+    "audio_streams": 0,
+    "all240_alpha_min0_max255": true,
+    "all240_outer_boundary_alpha_zero": true,
+    "first_bbox_alpha127": [
+      218,
+      59,
+      430,
+      330
+    ],
+    "last_bbox_alpha127": [
+      218,
+      59,
+      430,
+      330
+    ],
+    "endpoint_feet_delta_px": 0,
+    "endpoint_height_delta_px": 0,
+    "worker_endpoint_rgba_mad": 6.951040734109221,
+    "idle_switch": {
+      "idle_sha256": "10717cdea36065ed9e6a0360a7174ff1a79b7dea9523939376980b5f74219132",
+      "idle_first_bbox_alpha127": [
+        217,
+        59,
+        430,
+        330
+      ],
+      "a070_first_bbox_alpha127": [
+        218,
+        59,
+        430,
+        330
+      ],
+      "scope": "First frames only, same native640 canvas, no spatial modification."
+    }
+  },
+  "inspection_scope": {
+    "normal640_final_stills_personally_viewed": [
+      {
+        "frame": 0,
+        "background": "blue"
+      },
+      {
+        "frame": 96,
+        "background": "dark"
+      },
+      {
+        "frame": 144,
+        "background": "light"
+      },
+      {
+        "frame": 239,
+        "background": "checker"
+      }
+    ],
+    "final640_face_hair_crop_nearest3x_personally_viewed": [
+      {
+        "frame": 0,
+        "background": "dark"
+      },
+      {
+        "frame": 120,
+        "background": "blue"
+      },
+      {
+        "frame": 239,
+        "background": "dark"
+      }
+    ],
+    "source_review": "quality/source-reviews/a070-attempt-1.json",
+    "actual_playback": "quality/final-reviews/a070-daa0b46e2c98/actual-browser-playback.json",
+    "technical_all_frame_coverage": "Independent RGBA decode of all240 frames; sizes/alpha/bounds measured, not all240 manually viewed.",
+    "limitations": [
+      "Manual playback observations are intermittent screenshots, not a continuous perceptual recording.",
+      "No zero dropped/corrupted frame assertion.",
+      "No public approval, ledger, canonical/runtime asset or configuration mutation."
+    ]
+  },
+  "visual_findings": {
+    "matte": "Hair gaps show the selected background, rather than white islands; no conspicuous green halo or detached background graphics appeared in reviewed normal640 samples. Normal antialiasing is visible at3x and was not counted as body deformation.",
+    "face_palette_anatomy": "Cat ears, pink bows, lace headband, auburn hair and blue-violet eyes remain coherent; no obvious eye collapse, moving colored light or extra limb/tail was seen in sampled final and source views. a001 accepted idle is somewhat warmer in hue than this new clip; scale comparison does not claim RGB identity.",
+    "action_props": "The small red/cream kite stays beside the head rather than masking the eyes, the string connects to the hand, and it is lowered/stowed by the empty-hand ending. Kite/string edges remain visible in the reviewed composited frames.",
+    "scale_endpoints": "Independent first/last output boxes are identical. The accepted idle first box differs only1px horizontally; both top59 and feet330, so both heights271px by alpha127 bounds. Actual idle→kite switch on the same640 canvas showed no apparent size or foot-position snap.",
+    "seam": "The empty-hand opening/ending match in body scale and pose. The worker endpoint RGBA MAD6.951 reflects small artwork/pose differences; no obvious normal-size looping discontinuity was observed in the sampled playback views."
+  },
+  "defects": [],
+  "evidence_directory": "quality/final-reviews/a070-daa0b46e2c98/",
+  "processing_reviewed": "One initial ordinary U24 green key, no palette fit, semantic segmentation, white-pixel classifier, face painting, phase loop or extra model calls."
+}

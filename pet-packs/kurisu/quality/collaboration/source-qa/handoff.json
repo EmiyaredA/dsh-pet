@@ -1,0 +1,182 @@
+{
+  "updated_at": "2026-10-31T04:17:02.233503+00:00",
+  "reviewed": [
+    {
+      "action_id": "a033",
+      "source_sha256": "20a14421866b8b4ddc7cbb93c2b341f2cac0ed209d20b2ea8c57b5a54b1b5394",
+      "report": "quality/collaboration/source-qa/a033-attempt-1.json",
+      "verdict": "reject_source"
+    },
+    {
+      "action_id": "a034",
+      "source_sha256": "2a8ed92f799e22d53081eb48dfef2601819a7a8d27aceb29c54bef3c89b8eb39",
+      "report": "quality/collaboration/source-qa/a034-attempt-1.json",
+      "verdict": "reject_source"
+    },
+    {
+      "action_id": "a035",
+      "source_sha256": "2815edee587a336329d1388843c05edaf842e8fd75f602d771e95f7f3e6ede98",
+      "report": "quality/collaboration/source-qa/a035-attempt-1.json",
+      "verdict": "reject_source"
+    },
+    {
+      "action_id": "a036",
+      "source_sha256": "ea65664346f8cbe41162aa288d880fffd1ce6785b74b54ad5d59678227c29cca",
+      "report": "quality/collaboration/source-qa/a036-attempt-1.json",
+      "verdict": "reject_source"
+    },
+    {
+      "action_id": "a037",
+      "source_sha256": "bfff7824a0c2e6111c064b4176e6df7a63bf8b53853fc1691350694498206c5f",
+      "report": "quality/collaboration/source-qa/a037-attempt-1.json",
+      "verdict": "reject_source"
+    },
+    {
+      "action_id": "a038",
+      "source_sha256": "255d19af7791f1388eb271fc40038ba66830496913c0811f216719ba4ad180b2",
+      "report": "quality/collaboration/source-qa/a038-attempt-1.json",
+      "verdict": "reject_source"
+    },
+    {
+      "action_id": "a039",
+      "source_sha256": "89fe8dcb4d679276d29255920fdbfa1a9b92311c9ce0717bb8c5fc2c30ac476d",
+      "report": "quality/collaboration/source-qa/a039-attempt-1.json",
+      "verdict": "reject_source"
+    },
+    {
+      "action_id": "a040",
+      "source_sha256": "2affb565707cb468abe1dd2f3442ff0a00655aabdf762dc9a81f72121e9aa86e",
+      "report": "quality/collaboration/source-qa/a040-attempt-1.json",
+      "verdict": "reject_source"
+    },
+    {
+      "action_id": "a041",
+      "source_sha256": "b4dc44893e29834745227f35b55e05f0c4cac11b3d6fce2cd800043567a1cf2e",
+      "report": "quality/collaboration/source-qa/a041-attempt-1.json",
+      "verdict": "reject_source"
+    },
+    {
+      "action_id": "a042",
+      "source_sha256": "7d15b79bd770b9a53ee53244bbc0307f9c78abf24218f89519ec6b8dabd238e8",
+      "report": "quality/collaboration/source-qa/a042-attempt-1.json",
+      "verdict": "reject_source"
+    },
+    {
+      "action_id": "a043",
+      "source_sha256": "42f569a6f7c272d8c9e6505e68f2d0c06ed72d713ca0b262c101f8d3db6eef0f",
+      "report": "quality/collaboration/source-qa/a043-attempt-1.json",
+      "verdict": "reject_source"
+    },
+    {
+      "action_id": "a044",
+      "source_sha256": "00f91674fa66baf2804abdc2d9ffcf271d8d05790c94a0334da71b6727a74800",
+      "report": "quality/collaboration/source-qa/a044-attempt-1.json",
+      "verdict": "reject_source"
+    },
+    {
+      "action_id": "a045",
+      "source_sha256": "073e9ac2e36b98188711a83cdcceb67d797c295b4c5f02e7343e9b3a4e4a9fbc",
+      "report": "quality/collaboration/source-qa/a045-attempt-1.json",
+      "verdict": "reject_source"
+    },
+    {
+      "action_id": "a046",
+      "source_sha256": "8cf8d5b7aa14fd624840f686780ae6c0557fdf57e02da65c32e63ed2637e95ed",
+      "report": "quality/collaboration/source-qa/a046-attempt-1.json",
+      "verdict": "reject_source"
+    },
+    {
+      "action_id": "a047",
+      "source_sha256": "c67dc0254146cf40dd6dd59a9723ede9084fde65db620dfd3475e08c14d46fd7",
+      "report": "quality/collaboration/source-qa/a047-attempt-1.json",
+      "verdict": "reject_source"
+    },
+    {
+      "action_id": "a048",
+      "source_sha256": "a4fbd0a02e0a4affe99ffeb07f2d64249c3bd18ee42a2159bd87fee994d01dd6",
+      "report": "quality/collaboration/source-qa/a048-attempt-1.json",
+      "verdict": "reject_source"
+    },
+    {
+      "action_id": "a049",
+      "source_sha256": "9befc94d0e4e5d49e4e86b2c3fa22d5ecb43b221cfc95b76fbdfbbc3fb309a98",
+      "report": "quality/collaboration/source-qa/a049-attempt-1.json",
+      "verdict": "reject_source"
+    },
+    {
+      "action_id": "a050",
+      "source_sha256": "7914d90ba196c5505f2d6faa27313a714def74a2eb9f7688fd7952a5817a08e3",
+      "report": "quality/collaboration/source-qa/a050-attempt-1.json",
+      "verdict": "reject_source"
+    },
+    {
+      "action_id": "a051",
+      "source_sha256": "e718bf6de24e2b900a56f6d5e86510f3ed9a850cd0a9c2b743f3dfe3ed6b97ab",
+      "report": "quality/collaboration/source-qa/a051-attempt-1.json",
+      "verdict": "reject_source"
+    },
+    {
+      "action_id": "a052",
+      "source_sha256": "34421c3eeca92bb984856b9385673c31d5c564fec2c254fe1d1f61ae092dc1ef",
+      "report": "quality/collaboration/source-qa/a052-attempt-1.json",
+      "verdict": "reject_source"
+    },
+    {
+      "action_id": "a053",
+      "source_sha256": "89169467bd127003a190c15ec9872bbdf63c26ee596421eaa72a5e963f1b80ca",
+      "report": "quality/collaboration/source-qa/a053-attempt-1.json",
+      "verdict": "reject_source"
+    },
+    {
+      "action_id": "a054",
+      "source_sha256": "1b05ba85967b5d3cf7556f2d41b60baa526ebd4cc718b97e7ad74c808c4c01e2",
+      "report": "quality/collaboration/source-qa/a054-attempt-1.json",
+      "verdict": "reject_source"
+    },
+    {
+      "action_id": "a055",
+      "source_sha256": "726a7d34042e63dbce0af9fee3b79d77889b0527d92716b054faeaeca084d25d",
+      "report": "quality/collaboration/source-qa/a055-attempt-1.json",
+      "verdict": "reject_source"
+    },
+    {
+      "action_id": "a056",
+      "source_sha256": "39c54e140f4aa38be49f985db67195ee04f3c42e776871691a78dc88732530df",
+      "report": "quality/collaboration/source-qa/a056-attempt-1.json",
+      "verdict": "reject_source"
+    },
+    {
+      "action_id": "a057",
+      "source_sha256": "8cb5facb8e21a5e2f73863c2bfe8b2228486ad1f14411dd1c8c8d26ca9420dac",
+      "report": "quality/collaboration/source-qa/a057-attempt-1.json",
+      "verdict": "reject_source"
+    },
+    {
+      "action_id": "a058",
+      "source_sha256": "ed43bfc91e5d89ff68bea727589f922245cb62fcb279bfb32ed23599c488fe8a",
+      "report": "quality/collaboration/source-qa/a058-attempt-1.json",
+      "verdict": "reject_source"
+    },
+    {
+      "action_id": "a059",
+      "source_sha256": "daa631be6582c3101584a7b1f36523e786065d3ac35eae2ea8bdf6c9d1941129",
+      "report": "quality/collaboration/source-qa/a059-attempt-1.json",
+      "verdict": "reject_source"
+    },
+    {
+      "action_id": "a060",
+      "source_sha256": "d9a4797c0892681edaffa49296439f7c4e0c00cd434ad43a4d19f8175db363f0",
+      "report": "quality/collaboration/source-qa/a060-attempt-1.json",
+      "verdict": "reject_source"
+    },
+    {
+      "action_id": "a061",
+      "source_sha256": "37e4a133bd92ccebc0cc16d72e59fe040917f2cea9082fa16efca44141b4e3dd",
+      "report": "quality/collaboration/source-qa/a061-attempt-1.json",
+      "verdict": "reject_source"
+    }
+  ],
+  "needs_evidence": [],
+  "reviewed_scope": "a033–a061；a062/a063由主聊天审阅",
+  "limitations": "每条12帧抽样，未连续播放、全时刻审阅或成片验收"
+}

@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "status": "complete",
+  "action_id": "a038",
+  "attempt_index": 1,
+  "action_name": "整理实验器材",
+  "source_file": "source/library/a038/attempt-1/整理实验器材.mp4",
+  "source_sha256": "255d19af7791f1388eb271fc40038ba66830496913c0811f216719ba4ad180b2",
+  "task_id": "b7a45ff4-8456-4b09-8415-bd7e369072ee",
+  "native_dimensions": [
+    1344,
+    768
+  ],
+  "frames": [
+    {
+      "frame_index": 0,
+      "file": "f000-native.png",
+      "sha256": "6333d9b4d16dccfd5f3094c82290a5c6679f7733175f3060c865eaff5ca31e3c"
+    },
+    {
+      "frame_index": 12,
+      "file": "f012-native.png",
+      "sha256": "e079061ef2f49eb3242e29b3f633f81d4916c73b55dd67e24e16dc55789dd1b2"
+    },
+    {
+      "frame_index": 24,
+      "file": "f024-native.png",
+      "sha256": "7cd23395b4970b00a7bff8df4d859ad56e20e56c5c77621cb8cb9ecfc8abe82a"
+    },
+    {
+      "frame_index": 48,
+      "file": "f048-native.png",
+      "sha256": "138b0e6c72de063f47b8007080a5c1eed0a8eabf8ac944f765caf305b66513cc"
+    },
+    {
+      "frame_index": 72,
+      "file": "f072-native.png",
+      "sha256": "66db4d94646c42adfc15bbcc9d5f42ef60877d0e4dea5476123206d5c189f0b6"
+    },
+    {
+      "frame_index": 96,
+      "file": "f096-native.png",
+      "sha256": "77b47c686869155f5ab4145842eb1db4b87f569d2d359688af8d3b8d7792f166"
+    },
+    {
+      "frame_index": 120,
+      "file": "f120-native.png",
+      "sha256": "1a721e2918a393982050f3b3dfa4ce4428a2638bc91d3d5a710e2c62fed5c9b4"
+    },
+    {
+      "frame_index": 144,
+      "file": "f144-native.png",
+      "sha256": "6a0306bdaa7e83cedc40cc331523caa98273ca1b9590737c53c4670fc6dc7d01"
+    },
+    {
+      "frame_index": 168,
+      "file": "f168-native.png",
+      "sha256": "2148d2d386511ec3315971fea1bb56057a7b8242218eda37c0cea1971f3b5ba8"
+    },
+    {
+      "frame_index": 192,
+      "file": "f192-native.png",
+      "sha256": "3e4d8edc42ba9e197c16028535f40e6e05f672bbc881b701fdb3554eba98af69"
+    },
+    {
+      "frame_index": 216,
+      "file": "f216-native.png",
+      "sha256": "067d59d67e9783726086581fc705e3f6786c7e438ec3764b60f71df160f4fb8e"
+    },
+    {
+      "frame_index": 239,
+      "file": "f239-native.png",
+      "sha256": "51580a48766d2fbbf2c01988e27c8f988b94627cdd2705ccb6e725231da25be4"
+    }
+  ],
+  "decoder": "single ffmpeg, native size, RGB PNG; no scaling",
+  "created_at": "2026-10-31T03:53:30.058936+00:00"
+}

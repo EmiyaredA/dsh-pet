@@ -1,0 +1,136 @@
+{
+  "created_at": "2026-10-31T02:05:54.957371+00:00",
+  "scope": "same a105 authorized sample, six frames only",
+  "source_sha256": "5460f738fa8678600fc5d37fc4334e551deec03c013db41b0242c58059b13aac",
+  "parent_candidate_sha256": "f30d57062c1aa627d55a3f3585c8fd66b5f9c577d8d1eba6f780f314dd7c9b4f",
+  "method": "one3x3 grayscale Alpha minimum filter, radius1nativeL-infinity, once; no spatial/anatomical ROI; generic depth>2 &Alpha>=250 interior restored unchanged to protect opaque confidence",
+  "max_native_spatial_stencil_radius": 1,
+  "approx_output_pixel_choke": 0.5410821643286573,
+  "RGB_exact_original": true,
+  "deep_opaque_RGBA_exact": true,
+  "no_new_inference_or_RGB_threshold_or_manual_erasure": true,
+  "records": [
+    {
+      "frame": 0,
+      "native_RGB_exact": true,
+      "generic_deep_opaque_core_RGBA_exact": true,
+      "protected_core_pixels": 129224,
+      "Alpha_only_decreases": true,
+      "alpha_changed_pixels": 9194,
+      "alpha_gt127_removed_pixels": 3273,
+      "alpha127_foreground_area_ratio": 0.9760242614256518,
+      "max_alpha_reduction": 255
+    },
+    {
+      "frame": 24,
+      "native_RGB_exact": true,
+      "generic_deep_opaque_core_RGBA_exact": true,
+      "protected_core_pixels": 130977,
+      "Alpha_only_decreases": true,
+      "alpha_changed_pixels": 15113,
+      "alpha_gt127_removed_pixels": 3136,
+      "alpha127_foreground_area_ratio": 0.9773642649882346,
+      "max_alpha_reduction": 202
+    },
+    {
+      "frame": 72,
+      "native_RGB_exact": true,
+      "generic_deep_opaque_core_RGBA_exact": true,
+      "protected_core_pixels": 132637,
+      "Alpha_only_decreases": true,
+      "alpha_changed_pixels": 15632,
+      "alpha_gt127_removed_pixels": 3224,
+      "alpha127_foreground_area_ratio": 0.9770736147457049,
+      "max_alpha_reduction": 247
+    },
+    {
+      "frame": 120,
+      "native_RGB_exact": true,
+      "generic_deep_opaque_core_RGBA_exact": true,
+      "protected_core_pixels": 130796,
+      "Alpha_only_decreases": true,
+      "alpha_changed_pixels": 16034,
+      "alpha_gt127_removed_pixels": 3222,
+      "alpha127_foreground_area_ratio": 0.97681130215118,
+      "max_alpha_reduction": 250
+    },
+    {
+      "frame": 192,
+      "native_RGB_exact": true,
+      "generic_deep_opaque_core_RGBA_exact": true,
+      "protected_core_pixels": 132055,
+      "Alpha_only_decreases": true,
+      "alpha_changed_pixels": 16130,
+      "alpha_gt127_removed_pixels": 3251,
+      "alpha127_foreground_area_ratio": 0.9767740921463425,
+      "max_alpha_reduction": 251
+    },
+    {
+      "frame": 239,
+      "native_RGB_exact": true,
+      "generic_deep_opaque_core_RGBA_exact": true,
+      "protected_core_pixels": 131947,
+      "Alpha_only_decreases": true,
+      "alpha_changed_pixels": 16704,
+      "alpha_gt127_removed_pixels": 3286,
+      "alpha127_foreground_area_ratio": 0.9765121299195151,
+      "max_alpha_reduction": 251
+    }
+  ],
+  "status": "SAMPLES_EDGE_IMPROVED_BUT_NOT_VISUALLY_CLEAN_AWAIT_INDEPENDENT_QA",
+  "final_media_approved": false,
+  "counts_toward_106": false,
+  "full240_created": false,
+  "script_sha256": "3967517686fafce5dd3ba00dcbe1348d1a5e372dee7d77b7efb1d2054063bdf7",
+  "human_visual_review": {
+    "frames": [
+      0,
+      24,
+      72,
+      120,
+      192,
+      239
+    ],
+    "views": "all six original640 comparisons, f0blue body nearest4x",
+    "findings": [
+      "One native pixel choke reduces some green outline.",
+      "No large-scale body/face/white-clothing loss in the sampled views.",
+      "f0 outer dark hair ink line weakens and lower hair tips still show thin olive-tinted boundary at4x; cannot claim user-visible edge issue resolved."
+    ],
+    "full240_not_started": true
+  },
+  "remaining_green_diagnostics": [
+    {
+      "frame": 0,
+      "remaining_opaque_green_dominance_diagnostic_pixels": 398,
+      "diagnostic_only_not_output_predicate": true
+    },
+    {
+      "frame": 24,
+      "remaining_opaque_green_dominance_diagnostic_pixels": 188,
+      "diagnostic_only_not_output_predicate": true
+    },
+    {
+      "frame": 72,
+      "remaining_opaque_green_dominance_diagnostic_pixels": 60,
+      "diagnostic_only_not_output_predicate": true
+    },
+    {
+      "frame": 120,
+      "remaining_opaque_green_dominance_diagnostic_pixels": 51,
+      "diagnostic_only_not_output_predicate": true
+    },
+    {
+      "frame": 192,
+      "remaining_opaque_green_dominance_diagnostic_pixels": 167,
+      "diagnostic_only_not_output_predicate": true
+    },
+    {
+      "frame": 239,
+      "remaining_opaque_green_dominance_diagnostic_pixels": 218,
+      "diagnostic_only_not_output_predicate": true
+    }
+  ],
+  "decode_slot_released": true,
+  "completed_at": "2026-10-31T02:10:14.513747+00:00"
+}

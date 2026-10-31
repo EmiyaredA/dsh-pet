@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "action_id": "a105",
+  "source_attempt_index": 3,
+  "source_sha256": "5460f738fa8678600fc5d37fc4334e551deec03c013db41b0242c58059b13aac",
+  "source_file": "source/library/a105/attempt-3/工作状态-实验成功庆祝.mp4",
+  "candidate_file": "quality/diagnostics/semantic-a105-trial-01/a105-semantic-green-choke1.webm",
+  "candidate_sha256": "8a4544e966d926c5a435f66f145d1fea1189262486e9023d516bf0c9b2a70b1e",
+  "reviewer": "independent_animation_qa_agent",
+  "reviewed_at": "2026-10-31T02:40:54.866929+00:00",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "verdict": "reject",
+  "final_media_approved": false,
+  "counts_toward_106": false,
+  "reason": "正常640显示在f36–38左侧出现独立浅粉白色长弯条（f37约15×123像素、1126个不透明主体像素），是语义误留原片背景图案并短暂闪现；不属于亚像素描边取舍，不能发布。",
+  "technical_findings": {
+    "independent_ffprobe": {
+      "codec_name": "vp9",
+      "width": 640,
+      "height": 360,
+      "frame_rate": "24/1",
+      "format_duration": "10.000000",
+      "audio_stream_count": 0
+    },
+    "independent_rgba_decode": {
+      "decoder": "libvpx-vp9",
+      "frames": 240,
+      "all_frames_alpha_min": 0,
+      "all_frames_alpha_max": 255,
+      "frames_with_nonzero_outer_boundary": 0,
+      "all240_stats_file": "all240-alpha-motion.json",
+      "technical_metrics_not_visual_approval": true
+    }
+  },
+  "visual_findings": [
+    {
+      "severity": "hard",
+      "type": "detached_background_pattern_retained",
+      "frame_range_inclusive": [
+        36,
+        38
+      ],
+      "time_range_seconds": [
+        1.5,
+        1.583333
+      ],
+      "worst_frame": 37,
+      "component_bbox_xywh_native_output": [
+        190,
+        80,
+        15,
+        123
+      ],
+      "component_alpha_gt127_area": 1126,
+      "description": "A tall pale pink/white curved strip appears to the left of the character, separated from the main character silhouette. Frame 35 has no strip, frames 36–38 retain it, and frame 39 loses that large strip. This is a visible pop-in/out of a source background circle or streak, preserved as foreground by semantic Alpha. It remains conspicuous at actual 640x360 output size."
+    },
+    {
+      "severity": "improvement_not_failure",
+      "type": "normal_size_edge_improvement",
+      "description": "The one-native-pixel choke visibly reduces the earlier green ring in the inspected normal-size frames. No clear hand, foot or white-lace body-part loss was identified in the reviewed samples. Slight outline/antialias changes are treated as a quality tradeoff, not automatically as anatomical deformation. The rejection is based on the large retained background strip, not pixel-perfect equality."
+    },
+    {
+      "severity": "scope_note",
+      "type": "face_and_action_samples",
+      "description": "The inspected whole-character frames preserve the recognizable small-fist celebration, two boots and white costume, with no newly confirmed extra limb. Existing source review of all 243 lower-body frames is reused. No full-240 final face review is claimed because the hard background artifact already decides this candidate."
+    }
+  ],
+  "inspection_scope": {
+    "all240_final_rgba_technical_decode": true,
+    "all240_final_face_or_body_manual_review": false,
+    "manual_normal640_full_frames": [
+      0,
+      24,
+      35,
+      36,
+      37,
+      38,
+      39,
+      120,
+      239
+    ],
+    "manual_backgrounds": [
+      "dark [15,15,15]",
+      "high contrast blue [0,80,255]"
+    ],
+    "enlarged_artifact_crop": "Frame 37 native ROI [180,70,215,210] enlarged 4x nearest-neighbor, without initial downscaling.",
+    "source_prior_review_reused": "quality/additional-audits/a105-fl3-all-native-lower-body-01/all-native-lower-body-review.json",
+    "source_all243_not_rescanned": true,
+    "why_stopped": "User requested stopping repeated repairs of this same action. A clear normal-size hard defect was confirmed, so no redundant full face audit or further correction is requested."
+  },
+  "actual_playback_evidence": {
+    "browser_url": "http://127.0.0.1:8768/quality/diagnostics/semantic-a105-trial-01/preview.html",
+    "selected_version_id": "choke",
+    "actual_currentSrc": "http://127.0.0.1:8768/quality/diagnostics/semantic-a105-trial-01/a105-semantic-green-choke1.webm",
+    "native_control_space_started_playback": true,
+    "currentTime_observations": [
+      0.298,
+      4.3995
+    ],
+    "duration": 10,
+    "paused_was_false_during_actual_execution": true,
+    "pause_action_performed_after_inspection": true,
+    "complete_continuous_human_motion_review_claimed": false,
+    "interpretation": "The specific new candidate genuinely executed in the browser rather than being replaced by contact sheets; however the time observations and snapshots are not an uninterrupted visual review of every moment. Dense original-frame evidence establishes the short retained-background flash."
+  },
+  "evidence": [
+    "f035-blue-native640.png",
+    "f036-blue-native640.png",
+    "f037-blue-native640.png",
+    "f038-blue-native640.png",
+    "f039-blue-native640.png",
+    "f037-detached-background-strip4x.png",
+    "f000-dark-native640.png",
+    "f024-blue-native640.png",
+    "f120-dark-native640.png",
+    "f239-dark-native640.png"
+  ],
+  "owner_action_required": "Keep this derived candidate unapproved and move to new actions under the latest human policy; no further a105 repair is requested by this reviewer.",
+  "reviewer_modified_rgb_alpha_or_approval": false,
+  "ledger_changed": false,
+  "new_paid_model_calls": 0
+}

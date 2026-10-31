@@ -1,0 +1,49 @@
+{
+  "action_id": "a026",
+  "attempt_index": 1,
+  "processing_clearance": "allow_mild_color_and_green_key",
+  "summary": "Brushing with the expressly permitted ivory toothbrush and pink cup is recognizable; props stay controlled and are stowed. No localized light spots, eye identity changes or anatomy defects found. Diffuse olive/green cast may receive bounded global palette correction before green keying, with final independent color/Alpha review.",
+  "defects": [
+    {
+      "severity": "processing_condition",
+      "type": "diffuse_global_color_cast",
+      "time_seconds": [
+        0,
+        10
+      ],
+      "description": "Near-neutral material green chroma median11.5 atframe0,17.5 at48,12.5 at239; broad cast rather than moving localized spots. Must match approved palette after bounded global correction."
+    }
+  ],
+  "evidence": [
+    "/private/tmp/kurisu-plan-inspection/a026.png",
+    "temp/kurisu/agent-qa/a026-new-motion-dense.png",
+    "temp/kurisu/agent-qa/a026-green-regen-motion-metrics.json"
+  ],
+  "allowed_processing": [
+    "green_background_key",
+    "bounded_global_palette_correction",
+    "standard_uniform_canvas_alignment"
+  ],
+  "final_checks": [
+    "No green rim or face/eye color shift",
+    "No alpha loss in skin, lace, eyes, hands, toothbrush or cup",
+    "Mouth/brush motion stays legible",
+    "Both props fully stowed; neutral first/last stance",
+    "Standing height and feet align with pack"
+  ],
+  "schema_version": 1,
+  "source_sha256": "368a0fc8d7940b3b937405b1cf0d9f127f30d70a7abefd4cd0c7e71d45c32ecb",
+  "inspected_source_file": "/private/tmp/kurisu-plan-inspection/a026.mp4",
+  "reviewed_at": "2026-10-30T14:02:25.083717+00:00",
+  "reviewer": "independent_animation_qa_agent",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "final_media_approved": false,
+  "new_model_calls": 0,
+  "portable_evidence": [
+    "quality/evidence/a026-latest-qa.png"
+  ],
+  "canonical_source_file": "source/library/a026/attempt-1/晨间刷牙.mp4",
+  "source_task_id": "466c39c3-25c4-4fb0-a65e-c0f2742f763c",
+  "source_result_asset_id": "e6198899-3f88-46c0-b8cb-d9fe349b989e"
+}

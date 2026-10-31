@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "status": "complete",
+  "action_id": "a043",
+  "attempt_index": 1,
+  "action_name": "核对实验数据",
+  "source_file": "source/library/a043/attempt-1/核对实验数据.mp4",
+  "source_sha256": "42f569a6f7c272d8c9e6505e68f2d0c06ed72d713ca0b262c101f8d3db6eef0f",
+  "task_id": "f39c7501-d982-4e8c-8c6a-1be4d12133f7",
+  "native_dimensions": [
+    1344,
+    768
+  ],
+  "frames": [
+    {
+      "frame_index": 0,
+      "file": "f000-native.png",
+      "sha256": "7f8764a5629ea697815062221472708b6248fb38da4cbb011113f0f70f7587e1"
+    },
+    {
+      "frame_index": 12,
+      "file": "f012-native.png",
+      "sha256": "4b72ac4d707efc834d176b5214b27fefa17c339fcfb367bcc8fae38e285b852b"
+    },
+    {
+      "frame_index": 24,
+      "file": "f024-native.png",
+      "sha256": "0ea8892d2abbf397a2d106aad8250110d1c9cbc084d747be8b9c4e818be777bb"
+    },
+    {
+      "frame_index": 48,
+      "file": "f048-native.png",
+      "sha256": "b02f6154383a349e77845e869f52d54d725e82314760ac16ea014d3ae8963bf6"
+    },
+    {
+      "frame_index": 72,
+      "file": "f072-native.png",
+      "sha256": "5759730dc8328ee6ed245771715101680cdc40c456849e1e59784bff33d56308"
+    },
+    {
+      "frame_index": 96,
+      "file": "f096-native.png",
+      "sha256": "ceb977cae6ecbc036843c6b5d07ef28669e1a7056164bfe1abf5b37a18db499b"
+    },
+    {
+      "frame_index": 120,
+      "file": "f120-native.png",
+      "sha256": "6947671d4c50e695ab51ad80c92a66937a848dd22c890b9ff1ef035023a5f989"
+    },
+    {
+      "frame_index": 144,
+      "file": "f144-native.png",
+      "sha256": "89cecb93253a6cdb07f121021a6e499fa60c1fe983b9867dc5ef658b30a36d4c"
+    },
+    {
+      "frame_index": 168,
+      "file": "f168-native.png",
+      "sha256": "83813e8e1cdd0f95aaaabd388f06d9d8e93d618435d76f8b538935226c1c8e02"
+    },
+    {
+      "frame_index": 192,
+      "file": "f192-native.png",
+      "sha256": "d5b13c3ce20731b48e634bee0051ae7e15ab1d5973f87b6ca4dbdaa936b93258"
+    },
+    {
+      "frame_index": 216,
+      "file": "f216-native.png",
+      "sha256": "001048b81d9c6136a9e84e9ee5d7eb85dd0af1c771534cc4dec8e4afeedd1659"
+    },
+    {
+      "frame_index": 239,
+      "file": "f239-native.png",
+      "sha256": "a1a956c6bb097bf849bbefc134d4badc6164fabd7e60a148f1eacf7966cacfcb"
+    }
+  ],
+  "decoder": "single ffmpeg, native size, RGB PNG; no scaling",
+  "created_at": "2026-10-31T03:53:32.260591+00:00"
+}

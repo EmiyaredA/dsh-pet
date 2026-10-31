@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "status": "complete",
+  "action_id": "a051",
+  "attempt_index": 1,
+  "action_name": "下五子棋",
+  "source_file": "source/library/a051/attempt-1/下五子棋.mp4",
+  "source_sha256": "e718bf6de24e2b900a56f6d5e86510f3ed9a850cd0a9c2b743f3dfe3ed6b97ab",
+  "task_id": "7a17780b-1f5e-4cc6-b36e-babeeb133369",
+  "native_dimensions": [
+    1344,
+    768
+  ],
+  "frames": [
+    {
+      "frame_index": 0,
+      "file": "f000-native.png",
+      "sha256": "42ca9d03106ee662c3b06157b435cbf132510555f5050be422698d5267c349b1"
+    },
+    {
+      "frame_index": 12,
+      "file": "f012-native.png",
+      "sha256": "59e87dc7f9e4fc3fea1afc1e1496ff007cdad55833e7f8e1d450efaed93935c3"
+    },
+    {
+      "frame_index": 24,
+      "file": "f024-native.png",
+      "sha256": "884f8a669bd752f40c0d6cb4ee98dbfb1912bdf46946bf084ca842fafd493b96"
+    },
+    {
+      "frame_index": 48,
+      "file": "f048-native.png",
+      "sha256": "ea6f05cf1ce897086da6f51766e96c3c5827ee910bf58683ea9f55f604c582f5"
+    },
+    {
+      "frame_index": 72,
+      "file": "f072-native.png",
+      "sha256": "6d8a5658d2edd85f3e0291353f7f818f9c649b5b7c8c8181c1b419ecb59c747b"
+    },
+    {
+      "frame_index": 96,
+      "file": "f096-native.png",
+      "sha256": "bdaf37de8bf05de506243f2aae5a0a1c83b389cf6b674d5cab597ba47d00b7aa"
+    },
+    {
+      "frame_index": 120,
+      "file": "f120-native.png",
+      "sha256": "a93aad2086777c40fd53f29e7e5335b743fb3f5e2b157f4fd0d6566e795b120d"
+    },
+    {
+      "frame_index": 144,
+      "file": "f144-native.png",
+      "sha256": "392ccb49b1897691ff2be699b574d7de3e51b3668fcc9b8c00c6b06f39e08bbd"
+    },
+    {
+      "frame_index": 168,
+      "file": "f168-native.png",
+      "sha256": "3c295793ec42c7fa532a088449d314406d24bd8689417eaaf5c3445662d3444f"
+    },
+    {
+      "frame_index": 192,
+      "file": "f192-native.png",
+      "sha256": "48d61413122897bba17924e741a1b9515f22a42fa35f122b273ddc76d1200593"
+    },
+    {
+      "frame_index": 216,
+      "file": "f216-native.png",
+      "sha256": "6969ec3f9708b90870080947b89b693ec2e7c0bdda67449831e80bbe7dc948c0"
+    },
+    {
+      "frame_index": 239,
+      "file": "f239-native.png",
+      "sha256": "a7e35947a4787483266543454755116daedf284600bc83c0e4cc01109595f191"
+    }
+  ],
+  "decoder": "single ffmpeg, native size, RGB PNG; no scaling",
+  "created_at": "2026-10-31T03:53:35.747187+00:00"
+}

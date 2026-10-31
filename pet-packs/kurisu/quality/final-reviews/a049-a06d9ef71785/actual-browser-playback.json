@@ -1,0 +1,21 @@
+{
+  "browser": "Codex in-app browser",
+  "candidate_file": "source/library/a049/attempt-2/processing-4babbfec-d2b7-46c0-8528-81b9f7ac8005/转笔想方案.webm",
+  "candidate_sha256": "a06d9ef717858f9343740d6ae4339b6621b0bdf1c31f911612430d051838a824",
+  "css_size": [
+    640,
+    360
+  ],
+  "duration": 10,
+  "started_at": "2026-10-31T10:36:23.220Z",
+  "ended_at": "2026-10-31T10:36:33.223Z",
+  "completed_10s": true,
+  "frame_callbacks_before_idle_switch": 239,
+  "first_media_time": 0.042,
+  "last_media_time": 9.958,
+  "idle_switch_performed": true,
+  "paused_after_switch": true,
+  "continuous_human_gaze_claim": false,
+  "observation_scope": "Actual real-time complete playback executed; visual perception uses sampled browser screenshots plus named native640 frames and enlarged face/hair. No all-frame manual inspection claim.",
+  "dropped_frames": "Not measured; callback count is not dropped-frame count."
+}

@@ -1,0 +1,25 @@
+{
+  "reviewed_at": "2026-10-31T01:59:43.346263+00:00",
+  "results": [
+    {
+      "action_id": "a022",
+      "report_file": "quality/foreground-reviews/a022-attempt-1.json",
+      "source_sha256": "843bc6a0bbe6f5fe764710550cca54c8b7fea65e15266ebe1a728ecd4a355269",
+      "verdict": "no_hard_foreground_defect_observed_in_reviewed_samples",
+      "source_approved": false,
+      "background_still_rejected": true
+    },
+    {
+      "action_id": "a023",
+      "report_file": "quality/foreground-reviews/a023-attempt-1.json",
+      "source_sha256": "ec739012cbf3af9d8a23e85c8ca248f6bd3c3b4b8e0cf6112a0898d89136532b",
+      "verdict": "no_hard_foreground_defect_observed_in_reviewed_samples",
+      "source_approved": false,
+      "background_still_rejected": true
+    }
+  ],
+  "new_model_calls": 0,
+  "all_frames_inspected": false,
+  "actual_native_representative_and_dense_roi_review": true,
+  "no_semantic_processing_or_approval": true
+}

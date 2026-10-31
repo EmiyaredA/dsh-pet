@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "action_id": "a027",
+  "attempt_index": 1,
+  "source_sha256": "081a2da669bb85d8bed267fbb5d9ab2a16916fef7b7b335c5a505cab6f9618c6",
+  "inspected_source_file": "/private/tmp/kurisu-plan-inspection/a027.mp4",
+  "reviewed_at": "2026-10-30T15:10:03.851191+00:00",
+  "reviewer": "independent_animation_qa_agent",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "processing_clearance": "reject",
+  "final_media_approved": false,
+  "summary": "Dusting and prop stowing are recognizable, but the duster crosses and fully occludes the left eye around2.6s, contrary to the submitted facevisibility requirement. Background floor halo may be normallykeyable, but ordinary processing cannot correct the actual prop occlusion.",
+  "defects": [
+    {
+      "severity": "hard",
+      "type": "unrequested_face_eye_prop_occlusion",
+      "time_seconds": [
+        2.5,
+        2.67
+      ],
+      "source_frames": [
+        60,
+        61,
+        62,
+        63,
+        64
+      ],
+      "description": "Pink-and-white feather head rises in front of the left eye, covering it aroundframe63. Submitted direction requires tools below eyelevel and face fullyvisible."
+    },
+    {
+      "severity": "processing_condition",
+      "type": "background_floor_light_halo",
+      "time_seconds": [
+        2.0,
+        8.0
+      ],
+      "description": "Unrequested pale-green floor ellipse. Separate background analysis found G-dominant pixels and suggests normalconnectedgreen key could remove it, but this does not waive the nonremovable facial prop occlusion."
+    }
+  ],
+  "evidence": [
+    "/private/tmp/kurisu-plan-inspection/a027.png",
+    "temp/kurisu/agent-qa/a027-face-prop-dense.png",
+    "temp/kurisu/agent-qa/a027-new-motion-dense.png",
+    "temp/kurisu/agent-qa/a027-green-regen-motion-metrics.json"
+  ],
+  "allowed_processing": [],
+  "new_model_calls": 0,
+  "portable_evidence": [
+    "quality/evidence/a027-latest-qa.png"
+  ],
+  "canonical_source_file": "source/library/a027/attempt-1/给桌面除尘.mp4",
+  "source_task_id": "8adef38a-a703-48db-873f-b1ff2ddba6b5",
+  "source_result_asset_id": "791341d6-4b5d-4794-9ac8-2a93b4f23e4c"
+}

@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "action_id": "a101",
+  "name": "工作状态-托腮推理",
+  "reviewer": "independent_animation_qa_agent",
+  "reviewed_at": "2026-10-30T21:20:42.729306+00:00",
+  "candidate_file": "pet/kurisu-animation/工作状态-托腮推理.webm",
+  "candidate_sha256": "06ebc0e33ac8ecd63b407f061e8196442f76eb9f1a583750896e3a81883f4ff4",
+  "source_file": "source/library/a101/attempt-1/工作状态-托腮推理.mp4",
+  "source_sha256": "a3b3fe86f1d5edd85b8fa4ce0f24efaff506d65aa684e5d98737188bdd9ba3e7",
+  "visual_review_performed": true,
+  "recommendation": "WITHDRAW_DO_NOT_RELEASE",
+  "final_media_approved": false,
+  "reason": "A separate dark rounded appendage repeatedly protrudes and swings behind the right skirt while both legitimate hands and both shoes remain visibly present. The structure already exists in the original generated RGB frames. It is not part of the approved reference silhouette and cannot be excused by valid Alpha or clean edges.",
+  "defects": [
+    {
+      "severity": "hard",
+      "type": "unapproved_foreground_appendage",
+      "candidate_example_frame": 128,
+      "candidate_example_roi_xyxy": [
+        380,
+        289,
+        398,
+        301
+      ],
+      "source_trace_frames": [
+        80,
+        88,
+        96,
+        104,
+        112,
+        120,
+        128,
+        136,
+        144,
+        152,
+        160,
+        168,
+        176,
+        180
+      ],
+      "source_trace_seconds": [
+        3.3333333333333335,
+        7.5
+      ],
+      "description": "The dark piece emerges from behind the rear-right skirt, changes from a short downward lobe to a longer horizontal rounded strip, then curves behind the hair and disappears. Frames120/128 show the clearest elongated rounded form. Both hands are occupied at the chin/chest and both boots remain at the normal baseline, excluding a legitimate third shoe/hand. It has a separate dark outline/color from auburn hair and is not white lace or an ordinary pointed skirt hem.",
+      "semantic_classification": "Consistent with an invented swinging tail or extra appendage. Its hidden root prevents a strict anatomical naming claim, but the unauthorized foreground structure is clear enough to reject. No assertion that every black bow/cloth fold is a tail.",
+      "reference_comparison": "The approved front reference contains long auburn hair, white frills and a dark skirt, with two normal dark legs/boots. It has no separate rounded dark strip below the rear-right frill. Absence alone is not the only evidence; the independent rounded swinging trajectory and simultaneous normal limbs support rejection."
+    }
+  ],
+  "source_origin_confirmation": "The appendage is visible in unmodified original MP4 frames; it was not introduced by this review or by final Alpha composition. Existing palette edits preserve its geometry and do not justify it.",
+  "inspection_scope": {
+    "original_source_frames_personally_reviewed": [
+      0,
+      80,
+      88,
+      96,
+      104,
+      112,
+      120,
+      128,
+      136,
+      144,
+      152,
+      160,
+      168,
+      176,
+      180,
+      239
+    ],
+    "native_ROI_xyxy": [
+      795,
+      585,
+      895,
+      685
+    ],
+    "native_ROI_magnification": 4,
+    "full_native_RGB_frame_reviewed": [
+      128
+    ],
+    "full_native_RGBA_blue_frame_reused_from_green_agent": 128,
+    "all240_frame_playback_performed": false,
+    "all240_technical_checks_repeated": false,
+    "new_model_calls": 0,
+    "ledger_modified": false,
+    "canonical_modified": false,
+    "source_modified": false,
+    "appendage_removed": false
+  },
+  "evidence_directory": "quality/additional-audits/a101-appendage-trace-01",
+  "portable_evidence": [
+    "quality/additional-audits/a101-appendage-trace-01/raw-f128-native.png",
+    "quality/additional-audits/a101-appendage-trace-01/appendage-native4x-page1.png",
+    "quality/additional-audits/a101-appendage-trace-01/appendage-native4x-page2.png",
+    "quality/additional-audits/a101-appendage-trace-01/appendage-native4x-page3.png",
+    "quality/additional-audits/a101-appendage-trace-01/appendage-native4x-page4.png",
+    "quality/additional-audits/a101-appendage-trace-01/body-context-page1.png",
+    "quality/additional-audits/a101-appendage-trace-01/body-context-page2.png",
+    "quality/additional-audits/a101-appendage-trace-01/body-context-page3.png",
+    "quality/additional-audits/a101-appendage-trace-01/body-context-page4.png"
+  ],
+  "recommended_operator_action": "Root should withdraw this SHA from live/package references with a recorded decision. Do not erase the appendage, fabricate missing pixels or keep this as a qualified animation. Root owns ledger/runtime changes."
+}

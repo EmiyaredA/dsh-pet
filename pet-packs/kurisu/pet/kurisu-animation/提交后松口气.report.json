@@ -1,0 +1,95 @@
+{
+  "source": "\u63d0\u4ea4\u540e\u677e\u53e3\u6c14.mp4",
+  "output": "\u63d0\u4ea4\u540e\u677e\u53e3\u6c14.webm",
+  "source_size": [
+    1344,
+    768
+  ],
+  "key_thresholds": [
+    12,
+    110
+  ],
+  "matte_method": "green_difference",
+  "encoding_lossless": true,
+  "source_content_union": [
+    418,
+    73,
+    920,
+    724
+  ],
+  "alignment": {
+    "scaled_size": [
+      596,
+      342
+    ],
+    "offset": [
+      26,
+      23
+    ],
+    "content_box": [
+      211.36309523809524,
+      55.5078125,
+      433.9761904761905,
+      345.40625
+    ],
+    "standing_height": 608.0,
+    "standing_center_x": 663.0,
+    "standing_feet_y": 690.0,
+    "target_height": 270,
+    "target_feet_y": 330
+  },
+  "verification": {
+    "width": 640,
+    "height": 360,
+    "fps": 24,
+    "frames": 240,
+    "duration_seconds": 10.0,
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "first_box": [
+      218,
+      60,
+      430,
+      330
+    ],
+    "last_box": [
+      218,
+      59,
+      430,
+      330
+    ],
+    "audio_streams": 0,
+    "codec": "vp9",
+    "all_frames_have_alpha": true,
+    "endpoint_geometry": {
+      "feet_delta_px": 0,
+      "height_delta_px": 1
+    },
+    "background_clear": true,
+    "endpoint_rgba_mean_absolute_difference": 6.522294098693831,
+    "transparent_fraction": 0.8190621202256945
+  },
+  "green_source_processing": {
+    "worker_version": "h3_u24_normal_green_key_no_palette_v1",
+    "processing_profile": "h3_u24_normal_green_key_no_palette",
+    "model_id": "418c676d-1a59-4b3e-a716-b99de8038c71",
+    "model_slug": "minimax_h3_zm_u24",
+    "source_sha256": "455adca3c1773c4278bdc6fce7ebf013a240b00b542b83bc4031a3492120cd13",
+    "source_timing": {
+      "video_duration_seconds": 10.125,
+      "duration_basis": "video_stream_duration",
+      "short_source_policy": "reject_no_repeat_or_time_stretch",
+      "normalize_first_seconds": 10,
+      "target_fps": 24,
+      "target_frames": 240
+    },
+    "global_palette_fitting": false,
+    "white_classifier_used": false,
+    "semantic_segmentation_used": false,
+    "individual_skin_eye_edits": false,
+    "geometry_warped": false,
+    "short_phase_loop_used": false,
+    "new_model_calls": 0,
+    "final_visual_review_required": true
+  }
+}

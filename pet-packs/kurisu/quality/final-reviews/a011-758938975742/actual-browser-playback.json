@@ -1,0 +1,31 @@
+{
+  "browser": "Codex in-app browser",
+  "video_css_size": [
+    640,
+    360
+  ],
+  "candidate_source": "../../../source/library/a011/attempt-2/user-selected-key-0a75d900-0c00-4802-93ce-fc8e238c85eb/unapproved-same-recipe-preview.webm",
+  "initial": {
+    "time": 0.1141,
+    "duration": 10,
+    "paused": false,
+    "loops": 0,
+    "callbacks": 4
+  },
+  "after_exact_one_video_wrap": {
+    "time": 0.0147,
+    "duration": 10,
+    "paused": true,
+    "loops": 1,
+    "callbacks": 242
+  },
+  "auto_pause": "QA-only HTML pauses on the first mediaTime wrap; candidate bytes are unchanged.",
+  "source_switches": "After the full loop, Idle then Current buttons used the same640 canvas. This resets mediaTime and is excluded from the loop count.",
+  "final_candidate_pause": {
+    "time": 0.0054,
+    "paused": true
+  },
+  "quality": "No dropped/corrupted counts obtained; no zero-drop claim.",
+  "scope": "Actual continuous playback for one full10-second loop; manual visual observation via sampled rendered screenshots, native frames and enlarged crops, not every rendered frame.",
+  "tab_closed_and_decoder_released": true
+}

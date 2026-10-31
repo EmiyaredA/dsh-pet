@@ -1,0 +1,103 @@
+{
+  "at": "2026-10-30T19:53:05.519569+00:00",
+  "action_id": "a105",
+  "attempt_index": 4,
+  "reservation_token": "bcaebd2a-e421-442e-ad2b-0b03210c48a4",
+  "started_at": "2026-10-30T19:50:22.777736+00:00",
+  "request_sha256": "2cdc8e6fa7b6e8ede4f3df933d8d04c2542fafd376ae7cc46d93201fdac9aa86",
+  "canvas_revision": 221,
+  "node_tasks": [
+    {
+      "id": "791f2f42-8d0c-4f5e-96e1-6daebb3f4930",
+      "status": "completed",
+      "canvas_node_id": "kurisu-a105",
+      "created_at": "2026-10-30T19:07:52.043123Z",
+      "provider_task_id": "83bada61-b42e-40c1-8ffb-38850fe7aedf",
+      "result_asset_id": "4d89f9c7-a53a-4462-adf2-4aa00902d02b"
+    },
+    {
+      "id": "b3e9757f-19cd-4f6d-bf77-b238e73ef2eb",
+      "status": "completed",
+      "canvas_node_id": "kurisu-a105",
+      "created_at": "2026-10-30T17:21:45.798806Z",
+      "provider_task_id": "a60cf16d-b501-4c17-984c-b1f034066c23",
+      "result_asset_id": "34d70e41-fc4c-40e9-ab16-af35edf2c0cf"
+    },
+    {
+      "id": "8b8d3846-94b9-4a96-88aa-534a4d12500b",
+      "status": "completed",
+      "canvas_node_id": "kurisu-a105",
+      "created_at": "2026-10-30T08:37:15.989599Z",
+      "provider_task_id": "80d161e0-c45d-4a5c-9085-1a79c43c716e",
+      "result_asset_id": "3c73b8ba-655a-417a-9738-cdb98bcfa8bd"
+    }
+  ],
+  "project_total": 70,
+  "project_statuses": {
+    "completed": 70
+  },
+  "matching_new_tasks": [],
+  "tasks_created_since_reservation": [],
+  "node_draft": {
+    "model_id": "e4940af9-574e-4696-ae71-7527cfb0e30d",
+    "mode": "reference",
+    "first_frame_asset_id": null,
+    "last_frame_asset_id": null,
+    "reference_asset_ids": [
+      "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+    ],
+    "video_asset_ids": [],
+    "workflow_parameters": null,
+    "duration": 10,
+    "ratio": "16:9",
+    "resolution": "768p"
+  },
+  "node_prompt_length": 5075,
+  "new_model_calls": 0,
+  "ledger_modified": false,
+  "node_own_asset_check": [
+    {
+      "node_id": "kurisu-a026",
+      "asset_id": "e6198899-3f88-46c0-b8cb-d9fe349b989e",
+      "generation_task_id": "466c39c3-25c4-4fb0-a65e-c0f2742f763c",
+      "final_output_id": "6ca9cb48-c2a8-4a84-9834-4dd7140ab80e",
+      "incoming_edges": []
+    },
+    {
+      "node_id": "kurisu-a105",
+      "asset_id": "4d89f9c7-a53a-4462-adf2-4aa00902d02b",
+      "generation_task_id": "791f2f42-8d0c-4f5e-96e1-6daebb3f4930",
+      "final_output_id": "ceccbac0-30b4-4b62-a28c-448a25107a05",
+      "incoming_edges": []
+    }
+  ],
+  "source_check_at": "2026-10-30T19:54:47.483040+00:00",
+  "offline_official_resolver_reproduction": {
+    "actual_node": {
+      "code": "self_asset_reference",
+      "http_status_mapped_by_route": 422,
+      "message": "素材不能引用自身",
+      "fake_session_get_calls": 1,
+      "no_database_or_network": true
+    },
+    "fresh_node_control": {
+      "fresh_empty_node_resolver_passes": true,
+      "first_frame_asset_id": null,
+      "last_frame_asset_id": null,
+      "prompt_length": 0,
+      "mode": "reference"
+    },
+    "source_file": "/Users/tonghao/Projects/Future-Props-Lab/backend/app/apps/visual_workshop/outputs/references.py",
+    "source_sha256": "bd1ec5f94038bedfb3255ae9a494a53f29450c73496471edd92389efda89c613",
+    "cause": "Own node current asset equals requested motion-driver asset, triggering self_asset_reference before prepare_create can insert or enqueue a task",
+    "original_http_error_captured": false,
+    "original_error_note": "Original SDK ApiError fields were discarded by previous queue handler; this is a deterministic official-code reproduction, not a recovered original HTTP response"
+  },
+  "final_read_only_reconciliation": {
+    "at": "2026-10-30T20:04:02.001773+00:00",
+    "project_remote_tasks": 70,
+    "matching_new_tasks": [],
+    "active_tasks": [],
+    "no_new_enqueue": true
+  }
+}

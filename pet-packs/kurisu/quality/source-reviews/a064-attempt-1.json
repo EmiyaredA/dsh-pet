@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "action_id": "a064",
+  "attempt_index": 1,
+  "source_file": "source/library/a064/attempt-1/偷吃布丁被发现.mp4",
+  "source_sha256": "a07cb39966908122079a6193f5ec6393ea4df06e58834d6a49669a00bf48309c",
+  "source_task_id": "09bbe2ff-f888-4ecf-8445-9b58700322c3",
+  "result_asset_id": "33b4c788-af18-4316-9b58-56f15cad3809",
+  "model_slug": "minimax_h3_zm_u24",
+  "reference_file": "references/kurisu-front-80-opaque-green.png",
+  "reference_sha256": "259edb632a5cf780e8259f2aac9b1c21fc7b80453708eda56ea2e6eb99501430",
+  "reference_asset_id": "b7b8ee8c-df7c-4cd9-91ab-176b1094f7c6",
+  "reviewer": "animation_qa independent agent",
+  "reviewed_at": "2026-10-31T04:34:52.803944+00:00",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "processing_clearance": "allow_mild_color_and_green_key",
+  "final_media_approved": false,
+  "reason": "原生全身与脸、发丝、裙下抽查未发现裁切、追加肢体、移动光斑或明显强绿染；布丁和勺子动作可辨，结束已收回。许可初次普通绿幕处理，成片仍需独立验收。",
+  "defects": [],
+  "source_background": {
+    "method": "all_frame_saturated_green_native_border_v2",
+    "passed": true,
+    "frames": 240,
+    "expected_frames": 240,
+    "failed_frame_count": 0,
+    "failed_frames": [],
+    "background_rgb_min": [
+      2.0,
+      234.0,
+      4.0
+    ],
+    "background_rgb_max": [
+      3.0,
+      236.0,
+      5.0
+    ],
+    "maximum_spatial_delta": 7.0,
+    "maximum_temporal_delta": 2.0,
+    "thresholds": {
+      "dominant_min": 180,
+      "other_channels_max": 100,
+      "dominance_min": 100,
+      "spatial_delta_max": 35,
+      "temporal_delta_max": 24
+    },
+    "expected_background": "#00FF00",
+    "white_matte_fallback": false,
+    "visual_foreground_review_required": true,
+    "enclosed_background_and_foreground_verified": false,
+    "native_size": [
+      1344,
+      768
+    ],
+    "boundary_pixels_per_frame": 4224,
+    "measurement": "native_one_pixel_outer_boundary_no_spatial_resampling",
+    "sampling": {
+      "duration_seconds": 10,
+      "fps": 24,
+      "expected_frames": 240
+    }
+  },
+  "inspection_scope": {
+    "source_contact": "11 sampled full-body frames from the existing source contact sheet, not continuous playback",
+    "full_native_frames_personally_viewed": [
+      0,
+      72,
+      120,
+      239
+    ],
+    "native_face_crop_nearest_2x_personally_viewed": [
+      0,
+      120,
+      216
+    ],
+    "native_lower_body_crop_nearest_2x_personally_viewed": [
+      0,
+      24,
+      48,
+      72,
+      96,
+      120,
+      144,
+      168,
+      192,
+      216,
+      239,
+      242
+    ],
+    "source_dimensions": [
+      1344,
+      768
+    ],
+    "technical_background_scope": "Reused existing native boundary metrics for the first 10 seconds / 240 frames; no repeat scan",
+    "limitations": [
+      "No claim of all 243 frames manually inspected.",
+      "No real-time full video playback was performed in this source review.",
+      "Source review does not certify final matte edges, Alpha, output scale or seam continuity."
+    ]
+  },
+  "visual_findings": {
+    "identity": "Two cat ears, lace headband, pink bows, auburn long hair and black/white maid outfit remain recognizable in sampled native views.",
+    "body_and_camera": "Full head, both shoes and the whole character remain in frame in sampled full-body views. No apparent large zoom or added tail/limb was seen in the 12 lower-body samples.",
+    "motion": "Plate and spoon appear, pudding eating is recognizable; blush and caught/shy expression are present. By frame 216 props are absent; frames 239 and 242 show empty hands and front standing posture.",
+    "color_and_negative_spaces": "Sampled ear interiors remain pink, whites remain pale neutral/lavender, and hair gaps are green rather than white islands. No moving colored spots or strong green wash was observed in the reviewed samples.",
+    "endpoint": "Front empty-hand posture is visually restored at frame 239; this is not a quantitative final output endpoint proof."
+  },
+  "allowed_processing": [
+    "Initial ordinary green chroma key.",
+    "Only mild bounded color correction if actually necessary and within existing limits."
+  ],
+  "prohibited_inference": "This report is not final media approval, semantic-processing authorization or permission to repaint faces, erase foreground appendages or conceal defects.",
+  "evidence": [
+    "quality/evidence/a064-attempt1-native/f000-native.png",
+    "quality/evidence/a064-attempt1-native/f072-native.png",
+    "quality/evidence/a064-attempt1-native/f120-native.png",
+    "quality/evidence/a064-attempt1-native/f239-native.png",
+    "quality/evidence/a064-attempt1-native/f000-face2x.png",
+    "quality/evidence/a064-attempt1-native/f120-face2x.png",
+    "quality/evidence/a064-attempt1-native/f216-face2x.png",
+    "quality/evidence/a064-attempt1-native/lower-native2x-page1.png",
+    "quality/evidence/a064-attempt1-native/lower-native2x-page2.png"
+  ]
+}

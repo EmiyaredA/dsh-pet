@@ -1,0 +1,21 @@
+{
+  "browser": "Chrome dedicated existing7 final QA tab",
+  "candidate_file": "source/library/a084/attempt-1/processing-11626464-bb27-465b-a742-a9b50d5d43e8/吃汤圆.webm",
+  "candidate_sha256": "6da9e9593d8d50f6c66399e6ba44df150788854848bb43807a4ac9b7c3485c8d",
+  "css_size": [
+    640,
+    360
+  ],
+  "duration": 10,
+  "started_at": "2026-10-31T12:32:49.071Z",
+  "ended_at": "2026-10-31T12:32:59.074Z",
+  "completed_10s": true,
+  "frame_callbacks_before_idle_switch": 239,
+  "first_media_time": 0.042,
+  "last_media_time": 9.958,
+  "idle_switch_performed": true,
+  "paused_after_switch": true,
+  "continuous_human_gaze_claim": false,
+  "observation_scope": "Actual real-time complete playback executed; human evidence consists of sampled browser screenshots plus named native640 stills/enlarged original-pixel face/hair. No manual all240-frame claim.",
+  "dropped_frames": "Not measured; callback count is not dropped-frame count."
+}

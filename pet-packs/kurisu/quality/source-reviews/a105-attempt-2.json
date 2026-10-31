@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "action_id": "a105",
+  "attempt_index": 2,
+  "source_sha256": "865c0f2fdedc846dd2fd0201f1801fbe8812e9669c2297beeb794e02b870be9a",
+  "source_task_id": "b3e9757f-19cd-4f6d-bf77-b238e73ef2eb",
+  "source_result_asset_id": "34d70e41-fc4c-40e9-ab16-af35edf2c0cf",
+  "canonical_source_file": "source/library/a105/attempt-2/工作状态-实验成功庆祝.mp4",
+  "inspected_source_file": "/Users/tonghao/Projects/dsh-pet/pet-packs/kurisu/source/library/a105/attempt-2/工作状态-实验成功庆祝.mp4",
+  "reviewed_at": "2026-10-30T17:48:21.587486+00:00",
+  "reviewer": "independent_green_gate_agent",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "processing_clearance": "reject",
+  "final_media_approved": false,
+  "summary": "Rejected after personally inspecting all eleven source-contact samples: large animated white and green circles/bokeh replace the required flat green plate. The backdrop changes spatially over the shot, and all 240 frames fail the source-background gate.",
+  "defects": [
+    {
+      "severity": "hard",
+      "type": "animated_nonuniform_background_with_white_green_circles",
+      "time_seconds": [
+        0,
+        10
+      ],
+      "source_frames": [
+        0,
+        24,
+        48,
+        72,
+        96,
+        120,
+        144,
+        168,
+        192,
+        216,
+        239
+      ],
+      "description": "Small circles are already visible at the opening; subsequent samples contain very large pale/white circular disks, overlapping rings and moving green/white bubbles behind and around the character. These are unsolicited visual effects rather than a flat key plate."
+    },
+    {
+      "severity": "hard",
+      "type": "unsaturated_nonuniform_green_background",
+      "time_seconds": [
+        0,
+        10
+      ],
+      "description": "All240frames fail the mandatory backdrop gate. Recorded border RGB spans [130..134.5,250..252,129..140]; the white circles also create non-green background areas inside the frame."
+    }
+  ],
+  "background_gate": {
+    "method": "all_frame_saturated_green_border_v1",
+    "passed": false,
+    "frames": 240,
+    "expected_frames": 240,
+    "failed_frame_count": 240,
+    "background_rgb_min": [
+      130.0,
+      250.0,
+      129.0
+    ],
+    "background_rgb_max": [
+      134.5,
+      252.0,
+      140.0
+    ]
+  },
+  "background_metrics_origin": "source-only queue report; independently verified source SHA and visually inspected contact samples",
+  "evidence": [
+    "quality/evidence/a105-limited-repair-attempt2-source.png"
+  ],
+  "portable_evidence": [
+    "quality/evidence/a105-limited-repair-attempt2-source.png"
+  ],
+  "inspection_scope": {
+    "contact_frames": [
+      0,
+      24,
+      48,
+      72,
+      96,
+      120,
+      144,
+      168,
+      192,
+      216,
+      239
+    ],
+    "source_sha_verified": true,
+    "new_model_calls": 0,
+    "video_transcode_performed": false,
+    "color_or_matte_repair_performed": false,
+    "ledger_modified": false
+  },
+  "allowed_processing": [],
+  "new_model_calls": 0
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "id": "a075",
+    "name": "中秋赏月吃月饼",
+    "attempt": 1,
+    "source_sha256": "d031873ecbc863114f419cee6c5158b7680205641a946fb8cb2dcc2251e7ecbe",
+    "candidate_file": "source/library/a075/attempt-1/processing-e22188d9-25ad-463d-bd07-e0e7a8b295d4/中秋赏月吃月饼.webm",
+    "candidate_sha256": "c563488bc139c8c4cd8fab58ab9ac00c2361fde4071e3289ad9c60e2a3eabc50",
+    "evidence_dir": "quality/final-reviews/a075-c563488bc139"
+  },
+  {
+    "id": "a078",
+    "name": "讨糖南瓜灯",
+    "attempt": 1,
+    "source_sha256": "4c2759f07b7f94af5271bf52fc19a43a3608a82a1257b610e4c3c4397e976c71",
+    "candidate_file": "source/library/a078/attempt-1/processing-2ce8cc88-1cc0-4f2c-9be6-1baabc32b819/讨糖南瓜灯.webm",
+    "candidate_sha256": "0a65d14733808ac88e68c518a67a094f165aba363a62a7fde8853e1f0cf20c57",
+    "evidence_dir": "quality/final-reviews/a078-0a65d1473380"
+  }
+]

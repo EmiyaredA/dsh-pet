@@ -1,0 +1,60 @@
+{
+  "action_id": "a036",
+  "action_name": "调整迷你示波器",
+  "attempt": 1,
+  "source_file": "source/library/a036/attempt-1/调整迷你示波器.mp4",
+  "source_sha256": "ea65664346f8cbe41162aa288d880fffd1ce6785b74b54ad5d59678227c29cca",
+  "task_id": "74e27792-9c39-48e8-927e-269e260443e2",
+  "manifest": "quality/evidence/first-pass-native/a036/attempt-1/manifest.json",
+  "source_and_all_png_hashes_verified": true,
+  "actual_visual_frames": [
+    0,
+    12,
+    24,
+    48,
+    72,
+    96,
+    120,
+    144,
+    168,
+    192,
+    216,
+    239
+  ],
+  "inspection": "人工查看由原生PNG以原像素裁切、拼排的角色区域及该区域背景；未看完整画面外侧、连续播放或逐帧人工验收。",
+  "background": {
+    "result": "fail",
+    "method": "all_frame_saturated_blue_native_border_v2",
+    "failed_frame_count": 240,
+    "frames": 240,
+    "source": "library.json attempt.source_background，既有指标，未重跑",
+    "visual": "f0为蓝色但非合格纯蓝背景；f12起抽样大部近白。"
+  },
+  "foreground": {
+    "action": "f48–168可辨示波器，f96/120手位于旋钮上、f144/168屏幕出现波形，调整动作可辨。屏幕和旋钮始终朝观众，角色在仪器背后操作，难以合理观察屏幕；f192仪器移向一侧，f216/239不见且双手空手。",
+    "anatomy": "抽样中人物短圆比例、猫耳、双鞋保留；示波器遮住身体和部分手。未见明确额外肢体/尾巴、明显脸眼扭曲或人物彩色光斑；不能推断遮挡部位和其他时刻。",
+    "evidence_frames": [
+      48,
+      96,
+      120,
+      144,
+      168,
+      192,
+      239
+    ],
+    "foreground_assessment": "动作可辨，但设备正面朝外、角色在背后调整，使用方向存疑。"
+  },
+  "verdict": "reject_source",
+  "reason": "已有原生蓝幕边界指标240/240帧失败。前景抽样观察不改变背景拒收。",
+  "limitations": "仅12个离散帧；未验证243源帧中其余时刻、连续动作、透明成片、全部被遮挡区域或安装表现。f239并非243帧源文件的最后一帧。",
+  "reviewed_at": "2026-10-31T03:12:13.225506+00:00",
+  "evidence_files": [
+    "quality/evidence/first-pass-native/a036/attempt-1/f048-native.png",
+    "quality/evidence/first-pass-native/a036/attempt-1/f096-native.png",
+    "quality/evidence/first-pass-native/a036/attempt-1/f120-native.png",
+    "quality/evidence/first-pass-native/a036/attempt-1/f144-native.png",
+    "quality/evidence/first-pass-native/a036/attempt-1/f168-native.png",
+    "quality/evidence/first-pass-native/a036/attempt-1/f192-native.png",
+    "quality/evidence/first-pass-native/a036/attempt-1/f239-native.png"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "a075": {
+    "duration": 10,
+    "completedLoops": 1,
+    "callbacks": 241,
+    "paused": true
+  },
+  "a078": {
+    "duration": 10,
+    "completedLoops": 1,
+    "callbacks": 241,
+    "paused": true
+  },
+  "idle_switch_between_clips": true,
+  "tab_closed": true,
+  "no_all_frame_manual_visual_claim": true,
+  "dropped_frames_not_measured": true
+}

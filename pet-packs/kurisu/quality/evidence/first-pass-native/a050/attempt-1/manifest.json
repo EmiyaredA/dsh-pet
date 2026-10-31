@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "status": "complete",
+  "action_id": "a050",
+  "attempt_index": 1,
+  "action_name": "专心玩魔方",
+  "source_file": "source/library/a050/attempt-1/专心玩魔方.mp4",
+  "source_sha256": "7914d90ba196c5505f2d6faa27313a714def74a2eb9f7688fd7952a5817a08e3",
+  "task_id": "202df56b-6558-4bd5-9c5f-26c73b195279",
+  "native_dimensions": [
+    1344,
+    768
+  ],
+  "frames": [
+    {
+      "frame_index": 0,
+      "file": "f000-native.png",
+      "sha256": "63ce004191873a986168ca528d364a20655bbd0a86ec6b076cf6988036f1b568"
+    },
+    {
+      "frame_index": 12,
+      "file": "f012-native.png",
+      "sha256": "9b2c2cb9610fce3ab28959d5da278c7ca1f537b19091a69924b01574398dd82f"
+    },
+    {
+      "frame_index": 24,
+      "file": "f024-native.png",
+      "sha256": "d31cfb942023ba7bb6db76599140305769decf682d62cc2520153b7fe82cf325"
+    },
+    {
+      "frame_index": 48,
+      "file": "f048-native.png",
+      "sha256": "ddce1970a37b1b270a28af71189cb83a17dcbfadf02edbf4593a062ee1bfda5b"
+    },
+    {
+      "frame_index": 72,
+      "file": "f072-native.png",
+      "sha256": "420f5f927bacd7b16bc18f3d9f1d1874b89ba7dfca49984a17153bbc6c1b8333"
+    },
+    {
+      "frame_index": 96,
+      "file": "f096-native.png",
+      "sha256": "5003a60687f1eaecbf6126083454ea30d68398a1cebf54da9f9976e88c284d77"
+    },
+    {
+      "frame_index": 120,
+      "file": "f120-native.png",
+      "sha256": "fcde3acbbbb89e744f6f65c99aa72abb7566c075df29351415695b7508f191e1"
+    },
+    {
+      "frame_index": 144,
+      "file": "f144-native.png",
+      "sha256": "6b0a628dae39969ea02a67fded0420eff0315725153a672bb2582990ff315b66"
+    },
+    {
+      "frame_index": 168,
+      "file": "f168-native.png",
+      "sha256": "66578ef32e8f8983c7869e88af53d8dcf5f0ce9bd89d9c83cdf9157abf8e1c41"
+    },
+    {
+      "frame_index": 192,
+      "file": "f192-native.png",
+      "sha256": "1a856f538190218f2c0ed9cf7805ad25b1708e2cc44d2340cde3a5940484666a"
+    },
+    {
+      "frame_index": 216,
+      "file": "f216-native.png",
+      "sha256": "60a55dc56f461f719c43404d270fc225a9ba3f566d3d1b7f052e27904b0525d6"
+    },
+    {
+      "frame_index": 239,
+      "file": "f239-native.png",
+      "sha256": "161682dbfdf7fd5052a294dc562122e0ebdd52b09d5ed806a7103efc411fe3dc"
+    }
+  ],
+  "decoder": "single ffmpeg, native size, RGB PNG; no scaling",
+  "created_at": "2026-10-31T03:53:35.328235+00:00"
+}

@@ -1,0 +1,21 @@
+subject_definitions:
+<Subject 1> is the single human chibi Kurisu maid in <Picture 1>, with two arms and two legs. Two black triangular fabric ornaments with pink lining and bows are sewn to her white lace headband. Her rear silhouette consists solely of long hair and skirt.
+<Picture 1> is the sole approved 80% opaque GREEN front-view character and full-body composition reference, including her short plump proportions and neutral stance.
+
+summary:
+[reference generation] One 10-second 16:9 768p 2D desktop-pet shot of <Subject 1> eating tangyuan, on a flat GREEN digital matte, RGB(0,255,0).
+
+retention_analysis:
+<Subject 1> ([Shot 1]): fully_preserved - human identity, costume and reference painted colors.
+<Picture 1> ([Shot 1] composition): fully_preserved - compact proportions, figure scale and neutral opening/ending stance.
+
+detailed_description:
+[Shot 1] 00:00.000 to 00:10.000. Fixed eye-level orthographic camera, one centered complete figure. Keep ear tips at 10% and standing soles at 90% of frame height. Maintain the reference auburn hair, blue-violet eyes and costume colors under constant neutral illumination; painted highlights stay fixed. A separate flat GREEN RGB(0,255,0) digital matte fills every background space throughout, including gaps between hair locks, arms and skirt. The green belongs only to the background. Preserve delicate outlines and soft cel shading. Only the named human gesture and miniature props move. Bowl stays below chin; spoon approaches mouth only for the bite. She stands centered in front of a seamless, evenly lit solid GREEN chroma-key backdrop. This one plain color fills the whole image and all visible hair/limb gaps, including beneath her feet, unchanged for the full 10 seconds; no gradient, circular spotlight, shadows or reflected green light on her.
+
+00:00.000 to 00:02.000: hold the empty-handed reference front stance. 00:02.000 to 00:07.000: Hold a small cream bowl of white rice balls in pale liquid at waist height. Lift one tiny spoonful with a short spoon, eat it neatly and lower the spoon with a soft smile. 00:07.000 to 00:09.000: lower and stow every prop behind her hip; any transient effect is completely gone. 00:09.000 to 00:10.000: hold the same empty-handed reference front stance.
+
+overall_soundscape:
+Silence.
+
+non_diegetic_music:
+N/A.

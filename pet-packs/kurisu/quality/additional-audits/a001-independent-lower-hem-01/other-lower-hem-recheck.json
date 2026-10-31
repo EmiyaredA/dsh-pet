@@ -1,0 +1,156 @@
+{
+  "source_scope": "Independent read-only targeted followup, not a media patch",
+  "items": [
+    {
+      "action_id": "a006",
+      "canonical_file": "pet/kurisu-animation/点击回应-害羞捂脸.webm",
+      "canonical_sha256": "2068984d756db5f177bd209675170168da56ee8c0b37ebbaba88f59c04167bb0",
+      "source_file": "source/library/a006/attempt-2/点击回应-害羞捂脸.mp4",
+      "source_sha256": "978a89da4563883bbb2bb7cd1ab7c2f286f622a97a1e65937fb3e6942ad611d3",
+      "reviewed_at": "2026-10-30T21:29:10.114639+00:00",
+      "reviewer": "green_gate_independent_lower_hem_recheck",
+      "canonical_native_samples": [
+        8,
+        32,
+        56,
+        80,
+        104,
+        128,
+        152,
+        176,
+        200,
+        224
+      ],
+      "scope": "Additional targeted8x lower-right hem crops made from original native640 blue evidence; not continuous fullclip playback",
+      "source_media_modified": false,
+      "ledger_modified": false,
+      "new_model_calls": 0,
+      "lower_hem_evidence": "quality/additional-audits/a001-independent-lower-hem-01/a006-lower-right10-native8x.png",
+      "classification": "unapproved_foreground_appendage",
+      "withdraw_recommended": true,
+      "original_source_defect_confirmed": true,
+      "source_native_frames_reviewed": [
+        56
+      ],
+      "reason": "A separate black-outlined rounded appendage is present below the right skirt edge in the original MP4, as well as the canonical output. It is not a green-background/palette artifact and is absent from approved character reference.",
+      "raw_native_crop": "quality/additional-audits/a001-independent-lower-hem-01/a006-raw-f56-native-crop.png",
+      "canonical_defect_frames": [
+        56,
+        152
+      ],
+      "green_background_only_fix_allowed": false,
+      "anatomical_subtype_not_asserted": true
+    },
+    {
+      "action_id": "a008",
+      "canonical_file": "pet/kurisu-animation/点击回应-认可点头.webm",
+      "canonical_sha256": "b228c8a9a101e4727f0c3c65f1b9b8fb8cf962eff7821e15fde2111879324b82",
+      "source_file": "source/library/a008/attempt-1/点击回应-认可点头.mp4",
+      "source_sha256": "2c96f29067a251e606e0b7349f1442e2353b7787fe2652c5212da5707945cf08",
+      "reviewed_at": "2026-10-30T21:29:10.120687+00:00",
+      "reviewer": "green_gate_independent_lower_hem_recheck",
+      "canonical_native_samples": [
+        8,
+        32,
+        56,
+        80,
+        104,
+        128,
+        152,
+        176,
+        200,
+        224
+      ],
+      "scope": "Additional targeted8x lower-right hem crops made from original native640 blue evidence; not continuous fullclip playback",
+      "source_media_modified": false,
+      "ledger_modified": false,
+      "new_model_calls": 0,
+      "lower_hem_evidence": "quality/additional-audits/a001-independent-lower-hem-01/a008-lower-right10-native8x.png",
+      "classification": "unapproved_foreground_appendage",
+      "withdraw_recommended": true,
+      "original_source_defect_confirmed": true,
+      "source_native_frames_reviewed": [
+        56
+      ],
+      "reason": "A separate black-outlined rounded appendage is present below the right skirt edge in the original MP4, as well as the canonical output. It is not a green-background/palette artifact and is absent from approved character reference.",
+      "raw_native_crop": "quality/additional-audits/a001-independent-lower-hem-01/a008-raw-f56-native-crop.png",
+      "canonical_defect_frames": [
+        56,
+        152
+      ],
+      "green_background_only_fix_allowed": false,
+      "anatomical_subtype_not_asserted": true
+    },
+    {
+      "action_id": "a102",
+      "canonical_file": "pet/kurisu-animation/工作状态-专注敲键盘.webm",
+      "canonical_sha256": "3b890f38928effc3b3be0823955daa19332f7f47b7d7bd34ff4d98a0611d494a",
+      "source_file": "source/library/a102/attempt-1/工作状态-专注敲键盘.mp4",
+      "source_sha256": "d3bc712a24dc0c600508de50450513177aff96d360e5de787750e23dc69aa5ec",
+      "reviewed_at": "2026-10-30T21:29:10.126265+00:00",
+      "reviewer": "green_gate_independent_lower_hem_recheck",
+      "canonical_native_samples": [
+        8,
+        32,
+        56,
+        80,
+        104,
+        128,
+        152,
+        176,
+        200,
+        224
+      ],
+      "scope": "Additional targeted8x lower-right hem crops made from original native640 blue evidence; not continuous fullclip playback",
+      "source_media_modified": false,
+      "ledger_modified": false,
+      "new_model_calls": 0,
+      "lower_hem_evidence": "quality/additional-audits/a001-independent-lower-hem-01/a102-lower-right10-native8x.png",
+      "classification": "unapproved_foreground_appendage",
+      "withdraw_recommended": true,
+      "original_source_defect_confirmed": true,
+      "source_native_frames_reviewed": [
+        56
+      ],
+      "reason": "A separate black-outlined rounded appendage is present below the right skirt edge in the original MP4, as well as the canonical output. It is not a green-background/palette artifact and is absent from approved character reference.",
+      "raw_native_crop": "quality/additional-audits/a001-independent-lower-hem-01/a102-raw-f56-native-crop.png",
+      "canonical_defect_frames": [
+        56,
+        152
+      ],
+      "green_background_only_fix_allowed": false,
+      "anatomical_subtype_not_asserted": true
+    },
+    {
+      "action_id": "a103",
+      "canonical_file": "pet/kurisu-animation/工作状态-整理实验记录.webm",
+      "canonical_sha256": "615aa8f01c1fb16a5ecae0938a7d27a31caf7b409967f63bf9e4cb6377797072",
+      "source_file": "source/library/a103/attempt-2/工作状态-整理实验记录.mp4",
+      "source_sha256": "d960b0af0314a2746ddf04f4eb720ac3aea215a856a471db55e89fed446ffe94",
+      "reviewed_at": "2026-10-30T21:29:10.132973+00:00",
+      "reviewer": "green_gate_independent_lower_hem_recheck",
+      "canonical_native_samples": [
+        8,
+        32,
+        56,
+        80,
+        104,
+        128,
+        152,
+        176,
+        200,
+        224
+      ],
+      "scope": "Additional targeted8x lower-right hem crops made from original native640 blue evidence; not continuous fullclip playback",
+      "source_media_modified": false,
+      "ledger_modified": false,
+      "new_model_calls": 0,
+      "lower_hem_evidence": "quality/additional-audits/a001-independent-lower-hem-01/a103-lower-right10-native8x.png",
+      "classification": "not_established_in_10_lower_hem_samples",
+      "withdraw_recommended": null,
+      "original_source_defect_confirmed": false,
+      "reason": "No clear same appendage in these10samples, but the computer stand overlaps the region in intermediate frames; sparse samples do not prove fullclip clean and do not approve it as an idle fallback.",
+      "safe_idle_fallback_certified": false
+    }
+  ]
+}

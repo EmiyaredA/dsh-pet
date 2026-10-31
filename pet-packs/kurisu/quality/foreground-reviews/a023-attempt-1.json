@@ -1,0 +1,174 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-10-31T01:59:43.346119+00:00",
+  "reviewer": "production_queue_independent_foreground_source_review",
+  "action_id": "a023",
+  "name": "歪头疑惑",
+  "attempt_index": 1,
+  "source_file": "source/library/a023/attempt-1/歪头疑惑.mp4",
+  "source_sha256": "ec739012cbf3af9d8a23e85c8ca248f6bd3c3b4b8e0cf6112a0898d89136532b",
+  "source_task_id": "a93f1a48-6da4-4889-917d-c677b5d90bc9",
+  "source_provider_task_id": "283d5552-b32b-41d5-b9b5-f0ad3a8c20ff",
+  "source_result_asset_id": "6ba1a188-a12f-4b15-95fd-2b5fd9f3da4f",
+  "review_scope": "foreground_only_native_representative_frames_plus_denser_lower_body_ROI",
+  "foreground_review_verdict": "no_hard_foreground_defect_observed_in_reviewed_samples",
+  "full_source_approved": false,
+  "final_media_approved": false,
+  "counts_toward_106": false,
+  "semantic_processing_authorized": false,
+  "processing_clearance": "not_authorized_by_foreground_only_review",
+  "raw_background_rejection_unchanged": true,
+  "existing_background_gate_summary": {
+    "method": "all_frame_saturated_blue_border_v1",
+    "passed": false,
+    "frames": 240,
+    "failed_frame_count": 239,
+    "expected_background": "#0000FF"
+  },
+  "observations": {
+    "character_completeness": "Both fabric headband ears, whole hair/skirt silhouette, two ordinary stockings/boots and attached arms/hands are visible in the native full-body representative frames. No frame-edge crop observed in these samples; descriptive dark/color bbox remains within raw margins.",
+    "appendages": "No distinct added tail/limb found in reviewed body and denser skirt/leg samples. A small right lower auburn curl is present already in the canonical safe blue reference and frame0; its visible continuity with long hair distinguishes it from the unauthorized appendages in rejected a001/a101. This is not a claim that all future black/brown skirt projections are legitimate hair.",
+    "face_and_color": "Blue-violet eyes, auburn hair, pink headband bows/inner fabric ears and black/white maid costume remain recognizable. No localized moving green light/extra eye, duplicated facial feature or gross face warp seen in the provided native sample sequence. Intentional brow/eye/mouth expression changes and a023 head tilt are visible. No exact full-frame palette or temporal flicker pass is asserted.",
+    "action": "Starts empty-handed neutral; tilts head and raises one hand/finger to chin/mouth aroundf72–128, then returns head/hand to standard stance byf144–168. No question mark or invented object. Curious pose is recognizable, although closed-eye smilingf72/96 is more playful than strictly doubtful.",
+    "endpoints": "First frame0 and first10s endpoint239 are empty-handed front standing with ordinary two boots and relaxed arms; native last242 also reviewed. Same semantic stance, not byte-identical endpoint claim.",
+    "proportions": "Large chibi head and short compact body remain in sampled frames; a023 tilt changes the outline legitimately. No observed whole-figure zoom/crop. Descriptive foot anchor varies0–1 nativepx in12samples, not an optical-flow or all-frame pose proof."
+  },
+  "descriptive_geometry": {
+    "method": "Existing12nativePNG samples only; non-white/non-saturated-blue dark/color support gives descriptive bbox, not segmentation or anatomy proof.",
+    "first": {
+      "frame": 0,
+      "descriptive_colored_dark_bbox_xyxy": [
+        490,
+        156,
+        900,
+        653
+      ],
+      "feet_y_exclusive": 653,
+      "edge_foreground_pixels": 0
+    },
+    "first10s_last": {
+      "frame": 239,
+      "descriptive_colored_dark_bbox_xyxy": [
+        490,
+        155,
+        900,
+        653
+      ],
+      "feet_y_exclusive": 653,
+      "edge_foreground_pixels": 0
+    },
+    "feet_y_range": [
+      653,
+      653
+    ],
+    "all12_samples_boundary_hits": 0
+  },
+  "hard_foreground_defects": [],
+  "inspection_coverage": {
+    "native_source_size": [
+      1344,
+      768
+    ],
+    "full_body_native_frames": [
+      0,
+      24,
+      48,
+      72,
+      96,
+      120,
+      144,
+      168,
+      192,
+      216,
+      239,
+      242
+    ],
+    "full_body_crop_xyxy": [
+      440,
+      90,
+      900,
+      660
+    ],
+    "full_native_images_available_in_work": "temp/kurisu/agent-blue-foreground-qa-01/a023",
+    "right_hem_roi_xyxy": [
+      725,
+      480,
+      905,
+      655
+    ],
+    "right_hem_frames": [
+      0,
+      24,
+      48,
+      72,
+      96,
+      120,
+      144,
+      168,
+      192,
+      216,
+      239,
+      242
+    ],
+    "dense_lower_roi_xyxy": [
+      440,
+      440,
+      910,
+      680
+    ],
+    "dense_lower_frames": [
+      32,
+      64,
+      88,
+      104,
+      128,
+      152
+    ],
+    "dense_pixel_scale": 2,
+    "source_frame_numbers_deduplicated": [
+      0,
+      24,
+      32,
+      48,
+      64,
+      72,
+      88,
+      96,
+      104,
+      120,
+      128,
+      144,
+      152,
+      168,
+      192,
+      216,
+      239,
+      242
+    ],
+    "total_distinct_times_reviewed": 18,
+    "all243_frames_visual_reviewed": false,
+    "continuous_video_playback_performed": false,
+    "native_pixel_evidence_used": true,
+    "background_full_frame_rescan_performed": false,
+    "maximum_concurrent_decoders": 1,
+    "input_video_decode_processes_sequential": true
+  },
+  "evidence": [
+    "quality/foreground-reviews/evidence/a023/body-native-samples-0.png",
+    "quality/foreground-reviews/evidence/a023/body-native-samples-6.png",
+    "quality/foreground-reviews/evidence/a023/right-hem-native2x.png",
+    "quality/foreground-reviews/evidence/a023/dense-lower-native2x.png",
+    "quality/foreground-reviews/evidence/reference-right-hair-curl-comparison.png"
+  ],
+  "remaining_limits": [
+    "Sparse visual coverage can miss brief appendages or single-frame lighting; no full temporal guarantee.",
+    "White background and hair negative spaces remain technically rejected, so this report does not approve full source or authorize semantic processing.",
+    "A105-only semantic trial permission does not cover these two actions; reuse only after root authorizes a proven route and independent matte/foreground preservation tests."
+  ],
+  "followup_value": "Retain exact source bytes as potential future zero-new-generation foreground candidate if a105 semantic route qualifies and scope expands; no need to regenerate solely based on foreground hard defects observed here.",
+  "new_model_calls": 0,
+  "ledger_modified": false,
+  "runtime_modified": false,
+  "source_modified": false,
+  "alpha_or_rgb_repair_performed": false
+}

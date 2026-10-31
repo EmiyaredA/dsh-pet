@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "action_id": "a005",
+  "reviewed_at": "2026-10-30T21:29:39.402006+00:00",
+  "reviewer": "independent_animation_qa_agent",
+  "candidate_file": "pet/kurisu-animation/点击回应-开心挥手.webm",
+  "candidate_sha256": "bdf17c8b2df35991297ae1a998132cd9edaa38c48f9a900fa4e0b3d93c2401d0",
+  "candidate_present_when_finalized": true,
+  "source_file": "source/library/a005/attempt-2/点击回应-开心挥手.mp4",
+  "source_sha256": "58af767edf36e9811cd4ebf66ab1cc5a5a6672cb96b6acfaf6a110f41ca6dd6b",
+  "recommendation": "WITHDRAW_DO_NOT_RELEASE",
+  "final_media_approved": false,
+  "reason": "A flesh-pink rounded extra lobe protrudes below the right rear frill while both hands and both boots are separately visible. It is present in the original generated RGB, not a color/Alpha artifact.",
+  "defects": [
+    {
+      "severity": "hard",
+      "type": "unapproved_foreground_appendage",
+      "source_examples": [
+        56,
+        64,
+        72,
+        80,
+        136,
+        144,
+        152
+      ],
+      "description": "The rounded appendage changes length/angle independently beneath the rear-right skirt. The approved reference has no matching projection. Same-frame hands and normal legs/boots rule out an intended hand or third shoe; different color/outline rules out the visible auburn hair tip. Its hidden root prevents a strict tail-versus-extra-limb label, but that uncertainty does not make the unauthorized foreground geometry acceptable."
+    }
+  ],
+  "original_source_confirmation": true,
+  "original_source_trace_frames_personally_reviewed": [
+    0,
+    56,
+    64,
+    72,
+    80,
+    104,
+    120,
+    128,
+    136,
+    144,
+    152,
+    160,
+    176,
+    200,
+    239
+  ],
+  "original_native_ROI_xyxy": [
+    725,
+    595,
+    860,
+    715
+  ],
+  "original_native_ROI_magnification": 3,
+  "whole_body_context_inspected": true,
+  "no_black_or_pink_piece_removed": true,
+  "all240_playback_performed": false,
+  "no_full_technical_rerun": true,
+  "new_model_calls": 0,
+  "ledger_modified": false,
+  "source_or_canonical_modified": false,
+  "portable_evidence": [
+    "quality/additional-audits/approved-four-new-times-01/a005-source-rear-skirt3x-page1.png",
+    "quality/additional-audits/approved-four-new-times-01/a005-source-rear-skirt3x-page2.png",
+    "quality/additional-audits/approved-four-new-times-01/a005-source-rear-skirt3x-page3.png",
+    "quality/additional-audits/approved-four-new-times-01/a005-source-lower-body-page1.png",
+    "quality/additional-audits/approved-four-new-times-01/a005-source-lower-body-page2.png",
+    "quality/additional-audits/approved-four-new-times-01/a005-source-lower-body-page3.png",
+    "quality/additional-audits/approved-four-new-times-01/a005-source-f56-native.png"
+  ],
+  "operator_action": "Root should record withdrawal of the bound SHA and remove live/package references safely. Do not erase the projection, fabricate replacement pixels or silently keep the clip in the qualified count."
+}

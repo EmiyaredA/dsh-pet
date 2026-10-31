@@ -1,0 +1,113 @@
+{
+  "task_id": "466c39c3-25c4-4fb0-a65e-c0f2742f763c",
+  "source_sha256": "368a0fc8d7940b3b937405b1cf0d9f127f30d70a7abefd4cd0c7e71d45c32ecb",
+  "processing_metadata": {
+    "candidate_file": "source/library/a026/attempt-1/processing-500b896f-7305-46c6-b725-becc82d62139/晨间刷牙.webm",
+    "candidate_sha256": "ce7d64d4db8fd9a9e725dc78f8a99997a080e013bfd901004c05d0b4b9dea228",
+    "report": {
+      "source": "晨间刷牙.mp4",
+      "output": "晨间刷牙.webm",
+      "source_size": [
+        1344,
+        768
+      ],
+      "key_thresholds": null,
+      "matte_method": "bounded_prekey_palette_and_connected_green_background_v1",
+      "encoding_lossless": true,
+      "source_content_union": [
+        474,
+        150,
+        910,
+        654
+      ],
+      "alignment": {
+        "scaled_size": [
+          730,
+          418
+        ],
+        "offset": [
+          -53,
+          -26
+        ],
+        "content_box": [
+          204.4553571428571,
+          55.640625,
+          441.2708333333333,
+          329.953125
+        ],
+        "standing_height": 497.0,
+        "standing_center_x": 686.0,
+        "standing_feet_y": 654.0,
+        "target_height": 270,
+        "target_feet_y": 330
+      },
+      "verification": {
+        "width": 640,
+        "height": 360,
+        "fps": 24,
+        "frames": 240,
+        "duration_seconds": 10.0,
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "first_box": [
+          213,
+          60,
+          435,
+          330
+        ],
+        "last_box": [
+          213,
+          60,
+          435,
+          330
+        ],
+        "audio_streams": 0,
+        "codec": "vp9",
+        "all_frames_have_alpha": true,
+        "endpoint_geometry": {
+          "feet_delta_px": 0,
+          "height_delta_px": 0
+        },
+        "background_clear": true,
+        "endpoint_rgba_mean_absolute_difference": 3.1419097180200897,
+        "transparent_fraction": 0.8168752893518518
+      },
+      "neutral_material_revision": {
+        "type": "positive_green_neutral_white_and_dark_materials",
+        "input": "/Users/tonghao/Projects/dsh-pet/pet-packs/kurisu/source/library/a026/attempt-1/processing-500b896f-7305-46c6-b725-becc82d62139/work/green-matte.webm",
+        "input_sha256": "0923f0828a7730c960df07cc24e72c74bdf9e79d68ec622203fa50b0e5272c10",
+        "algorithm_sha256": "cdf6e639a90e51cc5b6589c33eb81b183e12c903575452facceb6b734299c03c",
+        "changed_rgb_pixels_all_frames": 375326,
+        "decoded_alpha_byte_exact": true,
+        "alpha_encoding": "extract_original_plane_and_alphamerge_after_color_conversion",
+        "new_model_calls": 0
+      },
+      "green_source_processing": {
+        "source_sha256": "368a0fc8d7940b3b937405b1cf0d9f127f30d70a7abefd4cd0c7e71d45c32ecb",
+        "white_classifier_used": false,
+        "source_timing_preserved": true,
+        "short_phase_loop_used": false,
+        "geometry_warped": false,
+        "individual_skin_eye_edits": false,
+        "key_after_palette": true,
+        "new_model_calls": 0,
+        "palette_safety": {
+          "max_foreground_rgb_delta_p95": 8.0,
+          "max_foreground_rgb_delta": 28,
+          "matrix_deviation_limit": 0.65,
+          "offset_limit": 0.1,
+          "rgb_p95_limit": 20,
+          "rgb_max_limit": 40,
+          "geometry_warped": false,
+          "individual_face_skin_eye_edits": false
+        },
+        "final_visual_review_required": true
+      }
+    },
+    "alpha_contact": "/Users/tonghao/Projects/dsh-pet/pet-packs/kurisu/source/library/a026/attempt-1/processing-500b896f-7305-46c6-b725-becc82d62139/alpha-three-backgrounds.png",
+    "processing_error": null,
+    "processing_method": "green_only_bounded_palette_v1",
+    "worker_version": null
+  },
+  "new_model_calls": 0
+}

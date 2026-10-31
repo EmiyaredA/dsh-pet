@@ -1,0 +1,39 @@
+{
+  "browser": "Codex in-app browser",
+  "candidate_source_attribute": "../../../source/library/a064/attempt-1/processing-f4285ab5-729e-4fe0-bc9b-16c4e97a6652/偷吃布丁被发现.webm",
+  "html_video_css_size": [
+    640,
+    360
+  ],
+  "observed_after_start": {
+    "time": 0.0698,
+    "paused": false,
+    "loops": 0,
+    "callbacks": 3
+  },
+  "observed_dark": {
+    "time": 0.7514,
+    "loops": 2,
+    "callbacks": 500
+  },
+  "observed_light": {
+    "time": 6.9434,
+    "loops": 3,
+    "callbacks": 888
+  },
+  "observed_checker": {
+    "time": 9.8279,
+    "loops": 5,
+    "callbacks": 1438
+  },
+  "final_pause": {
+    "time": 1.605,
+    "duration": 10,
+    "paused": true,
+    "loops": 8,
+    "callbacks": 1960
+  },
+  "dropped_or_corrupted_frame_counts": "Not collected. DOM read-only video wrapper did not expose getVideoPlaybackQuality; no zero-drop claim.",
+  "scope": "Actual continuous video playback and looping occurred. Human visual observations were sampled rendered screenshots, not an assertion of manual inspection of each displayed frame.",
+  "decoder_released": true
+}

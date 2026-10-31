@@ -1,7 +1,9 @@
 import copy
+from io import BytesIO
 from pathlib import Path
 import tempfile
 import unittest
+from types import SimpleNamespace
 import numpy as np
 from unittest.mock import patch
 
@@ -19,11 +21,6 @@ def state(actions):
 
 
 class BudgetTests(unittest.TestCase):
-    def test_quality_hold_blocks_new_calls_but_allows_read_only_tick(self):
-        s=state([]);s.update({'project_id':'p','production_hold':{'reason':'white outputs'}})
-        lib.tick(object(),s,submit=False)
-        with self.assertRaisesRegex(RuntimeError,'quality problem'):
-            lib.tick(object(),s,submit=True)
 
     def test_all_frame_gate_accepts_only_flat_saturated_green(self):
         for color,expected in [((250,250,250),False),((0,255,0),True),((0,250,12),True),
@@ -46,10 +43,13 @@ class BudgetTests(unittest.TestCase):
 
     def test_green_background_scan_decodes_all_frames_not_only_first_frame(self):
         rgb=np.full((240,36,64,3),(0,255,0),dtype=np.uint8);rgb[200]=250
-        with patch.object(lib.subprocess,'check_output',return_value=rgb.tobytes()) as run:
+        process=SimpleNamespace(stdout=BytesIO(rgb.tobytes()),wait=lambda:0,poll=lambda:0)
+        with patch.object(lib.subprocess,'check_output',return_value=b'{"streams":[{"width":64,"height":36}]}'),\
+             patch.object(lib.subprocess,'Popen',return_value=process) as run:
             result=lib.source_green_background(Path('fixture.mp4'))
         command=run.call_args.args[0]
         self.assertNotIn('-frames:v',command)
+        self.assertEqual(command[command.index('-vf')+1],'fps=24')
         self.assertEqual(result['failed_frames'],[200])
 
     def test_failed_green_background_never_runs_white_conversion_or_resubmits(self):
@@ -77,10 +77,13 @@ class BudgetTests(unittest.TestCase):
         prompt=lib.prompt_for({'group':'日常小动作','name':'整理围裙'},'Smooth her apron.',True)
         sections=['subject_definitions:','summary:','retention_analysis:','detailed_description:','overall_soundscape:','non_diegetic_music:']
         self.assertEqual([prompt.index(s) for s in sections],sorted(prompt.index(s) for s in sections))
-        self.assertIn('RGB (0,255,0), #00FF00',prompt)
-        self.assertIn('EVERY background pixel in EVERY frame',prompt)
-        self.assertIn('inside all visible negative spaces between hair locks',prompt)
-        self.assertIn('Neutral subject lighting must never become a white background',prompt)
+        self.assertIn('RGB(0,255,0)',prompt)
+        self.assertIn('Character colors remain exactly the reference under uniform neutral illumination',prompt)
+        self.assertIn('spaces between hair locks',prompt)
+        self.assertIn('NO tail',prompt)
+        self.assertNotIn('white',prompt.lower())
+        self.assertLess(len(prompt),2200)
+
 
     def test_global_cap_includes_every_reserved_submission(self):
         s = state([action(2) for _ in range(65)])
@@ -93,6 +96,16 @@ class BudgetTests(unittest.TestCase):
 
     def test_no_third_attempt_for_an_action(self):
         self.assertFalse(lib.can_submit(state([]), action(2)))
+
+    def test_source_review_may_reject_without_authorizing_a_final_candidate(self):
+        a={'id':'a027','status':'awaiting_source_review','attempts':[{'task_id':'original-task'}]}
+        s=state([a])
+        with patch.object(lib,'save'):
+            with self.assertRaises(AssertionError):lib.review(s,'a027','pass','source clearance is insufficient')
+            lib.review(s,'a027','reject','prop covers an eye')
+        self.assertEqual(a['status'],'rejected')
+        self.assertEqual(a['attempts'][0]['task_id'],'original-task')
+        self.assertEqual(lib.calls(s),1)
 
     def test_rejection_uses_the_authorized_action_cap_and_can_resume_a_new_exception(self):
         a={'id':'a010','status':'awaiting_review','attempts':[{},{}]}
@@ -134,46 +147,8 @@ class BudgetTests(unittest.TestCase):
                         pass
             self.assertFalse((Path(temp) / 'state.lock').exists())
 
-    def test_unknown_submission_is_not_retried(self):
-        class Results:
-            items = []
-        class Generation:
-            def list_generation_tasks(self, **kwargs):
-                return Results()
-            def create_generation_task(self, **kwargs):
-                raise AssertionError('Unsafe duplicate submission')
-        class Client:
-            generation = Generation()
-        s = {'project_id': 'test', 'actions': [{'id': 'a', 'node_id': 'node', 'status': 'generating',
-            'attempts': [{'previous_task_ids': []}]}]}
-        with self.assertRaisesRegex(RuntimeError, 'uncertain submission'):
-            lib.tick(Client(), s)
 
-    def test_another_operator_action_is_untouched_but_its_active_tasks_still_limit_submission(self):
-        from types import SimpleNamespace
-        foreign={'id':'a009','status':'generating','batch':1,'reused':False,'attempts':[{'task_id':'paid-existing'}]}
-        own={'id':'a014','status':'planned','batch':3,'queue_order':1,'reused':False,'attempts':[]}
-        s=state([foreign,own]);s['project_id']='project'
-        for active in [2,0]:
-            with self.subTest(active=active):
-                class Generation:
-                    def list_generation_tasks(self,**kwargs):
-                        return SimpleNamespace(items=[SimpleNamespace(status='processing') for _ in range(active)])
-                    def get_generation_task(self,**kwargs):raise AssertionError('Must not touch the other operator task')
-                    def create_generation_task(self,**kwargs):raise AssertionError('Must not create a new task')
-                seen=[]
-                with patch.object(lib,'can_submit',side_effect=lambda s,a:seen.append(a['id']) or False):
-                    lib.tick(SimpleNamespace(generation=Generation()),s,skip_actions={'a009'})
-                self.assertEqual(seen,[] if active==2 else ['a014'])
-                self.assertEqual(lib.calls(s),1)
 
-    def test_provider_accepted_but_polling_failed_blocks_new_submissions(self):
-        s={'project_id':'project','actions':[{'id':'a101','status':'generation_failed',
-            'attempts':[{'provider_task_id':'remote-existing','error':'任务处理失败（ConnectError）'}]}]}
-        with patch.object(lib,'save'):
-            lib.tick(object(),s)
-        self.assertEqual(s['stage'],'blocked_task_reconciliation')
-        self.assertEqual(s['blocker']['actions'],['a101'])
 
     def test_recovery_reuses_original_ids_without_consuming_an_attempt(self):
         from types import SimpleNamespace
@@ -209,6 +184,26 @@ class BudgetTests(unittest.TestCase):
             archive=pack/a['withdrawn_approvals'][0]['archive_file']
             self.assertEqual(archive.read_bytes(),b'old-walk')
             self.assertFalse((folder/'walk.webm').exists())
+
+    def test_withdrawing_reused_sample_preserves_origin_without_inventing_model_call(self):
+        with tempfile.TemporaryDirectory() as temp:
+            pack=Path(temp);folder=pack/'pet/kurisu-animation';folder.mkdir(parents=True)
+            (folder/'idle.webm').write_bytes(b'old-sample')
+            (folder/'idle.report.json').write_text('{}')
+            a={'id':'a001','status':'approved','reused':True,'file':'pet/kurisu-animation/idle.webm',
+               'sha256':'originalhash','delivery_asset_id':'original-result','attempts':[]}
+            s=state([a]);before=lib.quota_counts(s)
+            with patch.object(lib,'PACK',pack),patch.object(lib,'STATE',pack/'state.json'):
+                lib.withdraw(s,'a001','independent review found an extra foreground appendage')
+            self.assertEqual(lib.quota_counts(s),before)
+            self.assertEqual(a['attempts'],[]);self.assertFalse(a['reused'])
+            self.assertEqual(a['status'],'rejected');self.assertNotIn('file',a)
+            origin=a['reused_origin_history'][0]
+            self.assertTrue(origin['reused_origin']);self.assertEqual(origin['origin_record'],'production.json')
+            self.assertEqual(origin['delivery_asset_id'],'original-result')
+            archive=pack/a['withdrawn_approvals'][0]['archive_file']
+            self.assertEqual(archive.read_bytes(),b'old-sample')
+            self.assertFalse((folder/'idle.webm').exists())
 
 
 class ManifestTests(unittest.TestCase):

@@ -1,0 +1,1461 @@
+{
+  "at": "2026-10-30T21:37:42.096330+00:00",
+  "ledger_updated_at": "2026-10-30T21:22:12.974539+00:00",
+  "model_calls_added": 0,
+  "uploads": 0,
+  "production_ledger_writes": 0,
+  "source_task_inventory": "quality/diagnostics/non-h3-video-workflow-catalog-2026-10-31.json",
+  "input_geometry": {
+    "972a4ba5-d1e9-4265-a649-7fa5168ebc4b": {
+      "file": "references/kurisu-front.png",
+      "sha256": "78e84345c8c876360c628310498484c3146e4da5ceae314b3b87e9de8f4c4725",
+      "size": [
+        1672,
+        941
+      ],
+      "bbox_xyxy_exclusive": [
+        499,
+        25,
+        1206,
+        900
+      ],
+      "height_fraction": 0.9298618490967057,
+      "top_fraction": 0.026567481402763018,
+      "feet_fraction": 0.9564293304994687,
+      "measurement": "actual_alpha_at_least_128"
+    },
+    "35db850a-cc14-4aa6-adeb-54744c8748b1": {
+      "file": "references/kurisu-green-reference.png",
+      "sha256": "1f9d623114db43dfa49ddd0aa63a2943b2b1971d35e28658c98d8bcbfb6eae06",
+      "size": [
+        1280,
+        720
+      ],
+      "bbox_xyxy_exclusive": [
+        450,
+        144,
+        830,
+        612
+      ],
+      "height_fraction": 0.65,
+      "top_fraction": 0.2,
+      "feet_fraction": 0.85,
+      "measurement": "non_saturated_green_pixels"
+    },
+    "c8e65934-8da3-4756-bfb4-ec41f8dde710": {
+      "file": "references/kurisu-front-safe.png",
+      "sha256": "f3be325cb0fa1f5afdab90d5615487a3a92401eed054fc3d465f32cebd79ea22",
+      "size": [
+        1280,
+        720
+      ],
+      "bbox_xyxy_exclusive": [
+        450,
+        144,
+        829,
+        612
+      ],
+      "height_fraction": 0.65,
+      "top_fraction": 0.2,
+      "feet_fraction": 0.85,
+      "measurement": "non_saturated_green_pixels"
+    },
+    "962864a7-1782-4342-aa8a-85a9c08990ca": {
+      "file": "references/kurisu-front-safe-blue.png",
+      "sha256": "ced8fc6f188f6188a7d30af251cc9a19b433dfcf0507d24bfe02825d5d6aeb19",
+      "size": [
+        1280,
+        720
+      ],
+      "bbox_xyxy_exclusive": [
+        450,
+        144,
+        829,
+        612
+      ],
+      "height_fraction": 0.65,
+      "top_fraction": 0.2,
+      "feet_fraction": 0.85,
+      "measurement": "non_saturated_blue_pixels"
+    },
+    "31857508-4eca-4ef3-9d42-a8fd52c37cc3": {
+      "file": "references/kurisu-front-safe-transparent.png",
+      "sha256": "13c6f712b98a45637e2b5f34aad4dc6c506538229771ce9bc034b61611583340",
+      "size": [
+        1280,
+        720
+      ],
+      "bbox_xyxy_exclusive": [
+        451,
+        144,
+        829,
+        612
+      ],
+      "height_fraction": 0.65,
+      "top_fraction": 0.2,
+      "feet_fraction": 0.85,
+      "measurement": "actual_alpha_at_least_128"
+    },
+    "50152800-55d4-4226-a6a3-52014843fcad": {
+      "file": "references/kurisu-front-safe.png",
+      "sha256": "f3be325cb0fa1f5afdab90d5615487a3a92401eed054fc3d465f32cebd79ea22",
+      "size": [
+        1280,
+        720
+      ],
+      "bbox_xyxy_exclusive": [
+        450,
+        144,
+        829,
+        612
+      ],
+      "height_fraction": 0.65,
+      "top_fraction": 0.2,
+      "feet_fraction": 0.85,
+      "measurement": "non_saturated_green_pixels"
+    }
+  },
+  "cohorts": {
+    "31857508-4eca-4ef3-9d42-a8fd52c37cc3": {
+      "geometry": {
+        "file": "references/kurisu-front-safe-transparent.png",
+        "sha256": "13c6f712b98a45637e2b5f34aad4dc6c506538229771ce9bc034b61611583340",
+        "size": [
+          1280,
+          720
+        ],
+        "bbox_xyxy_exclusive": [
+          451,
+          144,
+          829,
+          612
+        ],
+        "height_fraction": 0.65,
+        "top_fraction": 0.2,
+        "feet_fraction": 0.85,
+        "measurement": "actual_alpha_at_least_128"
+      },
+      "project_model_calls": 2,
+      "model_counts": {
+        "minimax_h3_zm_nono": 2
+      },
+      "recorded_attempt_review_values": {
+        "reject": 2
+      },
+      "current_approved_latest_campaign_actions_at_snapshot": [],
+      "rows": [
+        {
+          "task_id": "02b23232-08ba-488d-a72c-e098ed9881ef",
+          "model_slug": "minimax_h3_zm_nono",
+          "reference_asset_ids": [
+            "31857508-4eca-4ef3-9d42-a8fd52c37cc3"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": "a016",
+          "campaign_attempt": 2,
+          "recorded_review_verdict": "reject",
+          "current_action_status_at_snapshot": "exhausted",
+          "is_latest_action_attempt": true,
+          "note": null
+        },
+        {
+          "task_id": "d73b665f-bf92-4cf6-adde-9677602e4471",
+          "model_slug": "minimax_h3_zm_nono",
+          "reference_asset_ids": [
+            "31857508-4eca-4ef3-9d42-a8fd52c37cc3"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": "a012",
+          "campaign_attempt": 3,
+          "recorded_review_verdict": "reject",
+          "current_action_status_at_snapshot": "exhausted",
+          "is_latest_action_attempt": true,
+          "note": null
+        }
+      ]
+    },
+    "c8e65934-8da3-4756-bfb4-ec41f8dde710": {
+      "geometry": {
+        "file": "references/kurisu-front-safe.png",
+        "sha256": "f3be325cb0fa1f5afdab90d5615487a3a92401eed054fc3d465f32cebd79ea22",
+        "size": [
+          1280,
+          720
+        ],
+        "bbox_xyxy_exclusive": [
+          450,
+          144,
+          829,
+          612
+        ],
+        "height_fraction": 0.65,
+        "top_fraction": 0.2,
+        "feet_fraction": 0.85,
+        "measurement": "non_saturated_green_pixels"
+      },
+      "project_model_calls": 44,
+      "model_counts": {
+        "wan2.2animate-v4-motion_retargeting": 3,
+        "minimax_h3_lightx2v": 2,
+        "minimax_h3_zm_nono": 37,
+        "minimax_h3_lightx2v_v5": 1,
+        "minimax_h3_image_audio_to_video_v2": 1
+      },
+      "recorded_attempt_review_values": {
+        "reject": 26,
+        "not_in_campaign_attempt_review": 1,
+        "withdrawn": 14,
+        "pass": 3
+      },
+      "current_approved_latest_campaign_actions_at_snapshot": [],
+      "rows": [
+        {
+          "task_id": "17928a55-b940-4695-a393-937fcb6b2384",
+          "model_slug": "wan2.2animate-v4-motion_retargeting",
+          "reference_asset_ids": [
+            "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": "a026",
+          "campaign_attempt": 2,
+          "recorded_review_verdict": "reject",
+          "current_action_status_at_snapshot": "exhausted",
+          "is_latest_action_attempt": true,
+          "note": null
+        },
+        {
+          "task_id": "6ef2258b-5e4f-49a6-8129-420f88ec9e83",
+          "model_slug": "wan2.2animate-v4-motion_retargeting",
+          "reference_asset_ids": [
+            "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": "a105",
+          "campaign_attempt": 4,
+          "recorded_review_verdict": "reject",
+          "current_action_status_at_snapshot": "exhausted",
+          "is_latest_action_attempt": true,
+          "note": null
+        },
+        {
+          "task_id": "791f2f42-8d0c-4f5e-96e1-6daebb3f4930",
+          "model_slug": "minimax_h3_lightx2v",
+          "reference_asset_ids": [
+            "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+          ],
+          "last_frame_asset_id": "50152800-55d4-4226-a6a3-52014843fcad",
+          "supplier_status": "completed",
+          "campaign_action_id": "a105",
+          "campaign_attempt": 3,
+          "recorded_review_verdict": "reject",
+          "current_action_status_at_snapshot": "exhausted",
+          "is_latest_action_attempt": false,
+          "note": null
+        },
+        {
+          "task_id": "3bf821b0-dbd5-4887-a059-197137e79418",
+          "model_slug": "wan2.2animate-v4-motion_retargeting",
+          "reference_asset_ids": [
+            "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": null,
+          "campaign_attempt": null,
+          "recorded_review_verdict": null,
+          "current_action_status_at_snapshot": null,
+          "is_latest_action_attempt": false,
+          "note": "Initial pre-campaign sample or independent diagnostic"
+        },
+        {
+          "task_id": "102e598c-5065-4482-ba68-0f03d53582bf",
+          "model_slug": "minimax_h3_lightx2v",
+          "reference_asset_ids": [
+            "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+          ],
+          "last_frame_asset_id": "50152800-55d4-4226-a6a3-52014843fcad",
+          "supplier_status": "completed",
+          "campaign_action_id": "a092",
+          "campaign_attempt": 3,
+          "recorded_review_verdict": "reject",
+          "current_action_status_at_snapshot": "exhausted",
+          "is_latest_action_attempt": true,
+          "note": null
+        },
+        {
+          "task_id": "3cbf9545-fb69-45ee-b6c8-9743ecf85181",
+          "model_slug": "minimax_h3_zm_nono",
+          "reference_asset_ids": [
+            "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": "a092",
+          "campaign_attempt": 2,
+          "recorded_review_verdict": "reject",
+          "current_action_status_at_snapshot": "exhausted",
+          "is_latest_action_attempt": false,
+          "note": null
+        },
+        {
+          "task_id": "b3e9757f-19cd-4f6d-bf77-b238e73ef2eb",
+          "model_slug": "minimax_h3_zm_nono",
+          "reference_asset_ids": [
+            "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": "a105",
+          "campaign_attempt": 2,
+          "recorded_review_verdict": "reject",
+          "current_action_status_at_snapshot": "exhausted",
+          "is_latest_action_attempt": false,
+          "note": null
+        },
+        {
+          "task_id": "97044106-c67b-4600-9520-a31ec1082a56",
+          "model_slug": "minimax_h3_zm_nono",
+          "reference_asset_ids": [
+            "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": "a030",
+          "campaign_attempt": 1,
+          "recorded_review_verdict": "reject",
+          "current_action_status_at_snapshot": "rejected",
+          "is_latest_action_attempt": true,
+          "note": null
+        },
+        {
+          "task_id": "355d81a3-9673-4c08-a199-079d8d6b88ea",
+          "model_slug": "minimax_h3_zm_nono",
+          "reference_asset_ids": [
+            "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": "a029",
+          "campaign_attempt": 1,
+          "recorded_review_verdict": "reject",
+          "current_action_status_at_snapshot": "rejected",
+          "is_latest_action_attempt": true,
+          "note": null
+        },
+        {
+          "task_id": "5678e777-8a56-4382-a8c0-46835240ec15",
+          "model_slug": "minimax_h3_zm_nono",
+          "reference_asset_ids": [
+            "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": "a028",
+          "campaign_attempt": 1,
+          "recorded_review_verdict": "reject",
+          "current_action_status_at_snapshot": "rejected",
+          "is_latest_action_attempt": true,
+          "note": null
+        },
+        {
+          "task_id": "8adef38a-a703-48db-873f-b1ff2ddba6b5",
+          "model_slug": "minimax_h3_zm_nono",
+          "reference_asset_ids": [
+            "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": "a027",
+          "campaign_attempt": 1,
+          "recorded_review_verdict": "reject",
+          "current_action_status_at_snapshot": "rejected",
+          "is_latest_action_attempt": true,
+          "note": null
+        },
+        {
+          "task_id": "466c39c3-25c4-4fb0-a65e-c0f2742f763c",
+          "model_slug": "minimax_h3_zm_nono",
+          "reference_asset_ids": [
+            "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": "a026",
+          "campaign_attempt": 1,
+          "recorded_review_verdict": "reject",
+          "current_action_status_at_snapshot": "exhausted",
+          "is_latest_action_attempt": false,
+          "note": null
+        },
+        {
+          "task_id": "3a10e9f5-9381-495c-aea8-f9823c2a8b8e",
+          "model_slug": "minimax_h3_zm_nono",
+          "reference_asset_ids": [
+            "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": "a012",
+          "campaign_attempt": 2,
+          "recorded_review_verdict": "reject",
+          "current_action_status_at_snapshot": "exhausted",
+          "is_latest_action_attempt": false,
+          "note": null
+        },
+        {
+          "task_id": "59d7a170-e514-4646-998a-80bdefa5f70d",
+          "model_slug": "minimax_h3_zm_nono",
+          "reference_asset_ids": [
+            "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": "a010",
+          "campaign_attempt": 5,
+          "recorded_review_verdict": "reject",
+          "current_action_status_at_snapshot": "exhausted",
+          "is_latest_action_attempt": true,
+          "note": null
+        },
+        {
+          "task_id": "15553ffe-a0f7-49b7-8cc9-2fed7162d9cf",
+          "model_slug": "minimax_h3_zm_nono",
+          "reference_asset_ids": [
+            "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": "a003",
+          "campaign_attempt": 4,
+          "recorded_review_verdict": "reject",
+          "current_action_status_at_snapshot": "exhausted",
+          "is_latest_action_attempt": true,
+          "note": null
+        },
+        {
+          "task_id": "63a83349-6f23-4ac6-bca7-ea0083565b21",
+          "model_slug": "minimax_h3_lightx2v_v5",
+          "reference_asset_ids": [
+            "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": "a025",
+          "campaign_attempt": 1,
+          "recorded_review_verdict": "reject",
+          "current_action_status_at_snapshot": "exhausted",
+          "is_latest_action_attempt": true,
+          "note": null
+        },
+        {
+          "task_id": "5f741b0c-d1e0-4ae9-99d6-e70bf58bb0ba",
+          "model_slug": "minimax_h3_image_audio_to_video_v2",
+          "reference_asset_ids": [
+            "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": "a024",
+          "campaign_attempt": 1,
+          "recorded_review_verdict": "reject",
+          "current_action_status_at_snapshot": "exhausted",
+          "is_latest_action_attempt": true,
+          "note": null
+        },
+        {
+          "task_id": "1b679bfa-847b-4873-9b9b-b148c84be854",
+          "model_slug": "minimax_h3_zm_nono",
+          "reference_asset_ids": [
+            "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": "a021",
+          "campaign_attempt": 1,
+          "recorded_review_verdict": "reject",
+          "current_action_status_at_snapshot": "rejected",
+          "is_latest_action_attempt": true,
+          "note": null
+        },
+        {
+          "task_id": "488a7d36-467a-4915-8c8f-c072c52f27be",
+          "model_slug": "minimax_h3_zm_nono",
+          "reference_asset_ids": [
+            "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": "a020",
+          "campaign_attempt": 1,
+          "recorded_review_verdict": "reject",
+          "current_action_status_at_snapshot": "rejected",
+          "is_latest_action_attempt": true,
+          "note": null
+        },
+        {
+          "task_id": "96844792-a553-4bc3-94ca-a160c140e9fa",
+          "model_slug": "minimax_h3_zm_nono",
+          "reference_asset_ids": [
+            "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": "a019",
+          "campaign_attempt": 1,
+          "recorded_review_verdict": "reject",
+          "current_action_status_at_snapshot": "rejected",
+          "is_latest_action_attempt": true,
+          "note": null
+        },
+        {
+          "task_id": "f495c69a-bed9-40da-8683-ff1028169855",
+          "model_slug": "minimax_h3_zm_nono",
+          "reference_asset_ids": [
+            "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": "a018",
+          "campaign_attempt": 1,
+          "recorded_review_verdict": "reject",
+          "current_action_status_at_snapshot": "rejected",
+          "is_latest_action_attempt": true,
+          "note": null
+        },
+        {
+          "task_id": "5fa73cbc-c1f9-4885-8c54-372c4653695c",
+          "model_slug": "minimax_h3_zm_nono",
+          "reference_asset_ids": [
+            "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": "a017",
+          "campaign_attempt": 1,
+          "recorded_review_verdict": "reject",
+          "current_action_status_at_snapshot": "rejected",
+          "is_latest_action_attempt": true,
+          "note": null
+        },
+        {
+          "task_id": "1f30e9a6-85e3-4a63-996d-9bbda3827f87",
+          "model_slug": "minimax_h3_zm_nono",
+          "reference_asset_ids": [
+            "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": "a016",
+          "campaign_attempt": 1,
+          "recorded_review_verdict": "reject",
+          "current_action_status_at_snapshot": "exhausted",
+          "is_latest_action_attempt": false,
+          "note": null
+        },
+        {
+          "task_id": "5fe54faf-fdd4-464f-b2fd-4bcd235db7d4",
+          "model_slug": "minimax_h3_zm_nono",
+          "reference_asset_ids": [
+            "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": "a015",
+          "campaign_attempt": 1,
+          "recorded_review_verdict": "reject",
+          "current_action_status_at_snapshot": "rejected",
+          "is_latest_action_attempt": true,
+          "note": null
+        },
+        {
+          "task_id": "805f176d-ab03-45b5-a02e-a51be545501e",
+          "model_slug": "minimax_h3_zm_nono",
+          "reference_asset_ids": [
+            "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": "a014",
+          "campaign_attempt": 1,
+          "recorded_review_verdict": "reject",
+          "current_action_status_at_snapshot": "rejected",
+          "is_latest_action_attempt": true,
+          "note": null
+        },
+        {
+          "task_id": "1e8b4134-7901-42b9-a16e-9337b662e90b",
+          "model_slug": "minimax_h3_zm_nono",
+          "reference_asset_ids": [
+            "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": "a009",
+          "campaign_attempt": 4,
+          "recorded_review_verdict": "reject",
+          "current_action_status_at_snapshot": "exhausted",
+          "is_latest_action_attempt": true,
+          "note": null
+        },
+        {
+          "task_id": "745157e2-9c2d-4138-8836-aac6b4b284b1",
+          "model_slug": "minimax_h3_zm_nono",
+          "reference_asset_ids": [
+            "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": "a013",
+          "campaign_attempt": 1,
+          "recorded_review_verdict": "withdrawn",
+          "current_action_status_at_snapshot": "quality_withdrawn",
+          "is_latest_action_attempt": true,
+          "note": null
+        },
+        {
+          "task_id": "7e8c3f08-1692-4243-a526-03c0d048d8a0",
+          "model_slug": "minimax_h3_zm_nono",
+          "reference_asset_ids": [
+            "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": "a012",
+          "campaign_attempt": 1,
+          "recorded_review_verdict": "pass",
+          "current_action_status_at_snapshot": "exhausted",
+          "is_latest_action_attempt": false,
+          "note": null
+        },
+        {
+          "task_id": "e937e6b0-922e-4f92-8e94-9d562598241f",
+          "model_slug": "minimax_h3_zm_nono",
+          "reference_asset_ids": [
+            "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": "a100",
+          "campaign_attempt": 1,
+          "recorded_review_verdict": "withdrawn",
+          "current_action_status_at_snapshot": "quality_withdrawn",
+          "is_latest_action_attempt": true,
+          "note": null
+        },
+        {
+          "task_id": "3769356e-b002-4268-8d2b-03448e458abb",
+          "model_slug": "minimax_h3_zm_nono",
+          "reference_asset_ids": [
+            "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": "a099",
+          "campaign_attempt": 1,
+          "recorded_review_verdict": "withdrawn",
+          "current_action_status_at_snapshot": "quality_withdrawn",
+          "is_latest_action_attempt": true,
+          "note": null
+        },
+        {
+          "task_id": "b65a4100-359d-4104-ab0b-a0b9778111d1",
+          "model_slug": "minimax_h3_zm_nono",
+          "reference_asset_ids": [
+            "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": "a098",
+          "campaign_attempt": 1,
+          "recorded_review_verdict": "withdrawn",
+          "current_action_status_at_snapshot": "quality_withdrawn",
+          "is_latest_action_attempt": true,
+          "note": null
+        },
+        {
+          "task_id": "9c344423-408d-41b6-9c1c-2919cb85ef5a",
+          "model_slug": "minimax_h3_zm_nono",
+          "reference_asset_ids": [
+            "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": "a097",
+          "campaign_attempt": 1,
+          "recorded_review_verdict": "withdrawn",
+          "current_action_status_at_snapshot": "quality_withdrawn",
+          "is_latest_action_attempt": true,
+          "note": null
+        },
+        {
+          "task_id": "58c4b1ba-aa2b-42e5-a284-009e9b09155b",
+          "model_slug": "minimax_h3_zm_nono",
+          "reference_asset_ids": [
+            "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": "a096",
+          "campaign_attempt": 1,
+          "recorded_review_verdict": "withdrawn",
+          "current_action_status_at_snapshot": "quality_withdrawn",
+          "is_latest_action_attempt": true,
+          "note": null
+        },
+        {
+          "task_id": "070b33c5-57a2-4442-9808-3a469d2c9e52",
+          "model_slug": "minimax_h3_zm_nono",
+          "reference_asset_ids": [
+            "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": "a095",
+          "campaign_attempt": 1,
+          "recorded_review_verdict": "withdrawn",
+          "current_action_status_at_snapshot": "quality_withdrawn",
+          "is_latest_action_attempt": true,
+          "note": null
+        },
+        {
+          "task_id": "b767c8f0-ee1a-4273-ac07-dde450d56a70",
+          "model_slug": "minimax_h3_zm_nono",
+          "reference_asset_ids": [
+            "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": "a094",
+          "campaign_attempt": 1,
+          "recorded_review_verdict": "withdrawn",
+          "current_action_status_at_snapshot": "quality_withdrawn",
+          "is_latest_action_attempt": true,
+          "note": null
+        },
+        {
+          "task_id": "b949f39e-020b-413e-8c00-9ed52d3353b1",
+          "model_slug": "minimax_h3_zm_nono",
+          "reference_asset_ids": [
+            "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": "a093",
+          "campaign_attempt": 1,
+          "recorded_review_verdict": "withdrawn",
+          "current_action_status_at_snapshot": "quality_withdrawn",
+          "is_latest_action_attempt": true,
+          "note": null
+        },
+        {
+          "task_id": "c94d7c62-5e84-4a21-b1a8-ca6f2b0b28fb",
+          "model_slug": "minimax_h3_zm_nono",
+          "reference_asset_ids": [
+            "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": "a092",
+          "campaign_attempt": 1,
+          "recorded_review_verdict": "withdrawn",
+          "current_action_status_at_snapshot": "exhausted",
+          "is_latest_action_attempt": false,
+          "note": null
+        },
+        {
+          "task_id": "2079c277-9cb4-4146-85cb-87406a2c949d",
+          "model_slug": "minimax_h3_zm_nono",
+          "reference_asset_ids": [
+            "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": "a106",
+          "campaign_attempt": 1,
+          "recorded_review_verdict": "withdrawn",
+          "current_action_status_at_snapshot": "quality_withdrawn",
+          "is_latest_action_attempt": true,
+          "note": null
+        },
+        {
+          "task_id": "8b8d3846-94b9-4a96-88aa-534a4d12500b",
+          "model_slug": "minimax_h3_zm_nono",
+          "reference_asset_ids": [
+            "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": "a105",
+          "campaign_attempt": 1,
+          "recorded_review_verdict": "withdrawn",
+          "current_action_status_at_snapshot": "exhausted",
+          "is_latest_action_attempt": false,
+          "note": null
+        },
+        {
+          "task_id": "47d38f76-5c2f-4457-a1de-291a7be464ca",
+          "model_slug": "minimax_h3_zm_nono",
+          "reference_asset_ids": [
+            "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": "a104",
+          "campaign_attempt": 1,
+          "recorded_review_verdict": "withdrawn",
+          "current_action_status_at_snapshot": "quality_withdrawn",
+          "is_latest_action_attempt": true,
+          "note": null
+        },
+        {
+          "task_id": "3b452a20-4aae-42dd-99c2-c9a8ba153e71",
+          "model_slug": "minimax_h3_zm_nono",
+          "reference_asset_ids": [
+            "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": "a007",
+          "campaign_attempt": 3,
+          "recorded_review_verdict": "reject",
+          "current_action_status_at_snapshot": "exhausted",
+          "is_latest_action_attempt": true,
+          "note": null
+        },
+        {
+          "task_id": "24f1cda6-abc0-4520-8e44-48a005c3c68f",
+          "model_slug": "minimax_h3_zm_nono",
+          "reference_asset_ids": [
+            "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": "a003",
+          "campaign_attempt": 3,
+          "recorded_review_verdict": "pass",
+          "current_action_status_at_snapshot": "exhausted",
+          "is_latest_action_attempt": false,
+          "note": null
+        },
+        {
+          "task_id": "f934b390-65d1-4f7a-8d7e-d5c16517b9da",
+          "model_slug": "minimax_h3_zm_nono",
+          "reference_asset_ids": [
+            "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": "a010",
+          "campaign_attempt": 4,
+          "recorded_review_verdict": "pass",
+          "current_action_status_at_snapshot": "exhausted",
+          "is_latest_action_attempt": false,
+          "note": null
+        },
+        {
+          "task_id": "b0c04e7b-604a-4e1d-a05f-287c1f3ea04e",
+          "model_slug": "minimax_h3_zm_nono",
+          "reference_asset_ids": [
+            "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": "a009",
+          "campaign_attempt": 3,
+          "recorded_review_verdict": "withdrawn",
+          "current_action_status_at_snapshot": "exhausted",
+          "is_latest_action_attempt": false,
+          "note": null
+        }
+      ]
+    },
+    "962864a7-1782-4342-aa8a-85a9c08990ca": {
+      "geometry": {
+        "file": "references/kurisu-front-safe-blue.png",
+        "sha256": "ced8fc6f188f6188a7d30af251cc9a19b433dfcf0507d24bfe02825d5d6aeb19",
+        "size": [
+          1280,
+          720
+        ],
+        "bbox_xyxy_exclusive": [
+          450,
+          144,
+          829,
+          612
+        ],
+        "height_fraction": 0.65,
+        "top_fraction": 0.2,
+        "feet_fraction": 0.85,
+        "measurement": "non_saturated_blue_pixels"
+      },
+      "project_model_calls": 2,
+      "model_counts": {
+        "minimax_h3_zm_nono": 2
+      },
+      "recorded_attempt_review_values": {
+        "reject": 2
+      },
+      "current_approved_latest_campaign_actions_at_snapshot": [],
+      "rows": [
+        {
+          "task_id": "a93f1a48-6da4-4889-917d-c677b5d90bc9",
+          "model_slug": "minimax_h3_zm_nono",
+          "reference_asset_ids": [
+            "962864a7-1782-4342-aa8a-85a9c08990ca"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": "a023",
+          "campaign_attempt": 1,
+          "recorded_review_verdict": "reject",
+          "current_action_status_at_snapshot": "rejected",
+          "is_latest_action_attempt": true,
+          "note": null
+        },
+        {
+          "task_id": "08a62f5e-26aa-477f-9675-7e428a689d62",
+          "model_slug": "minimax_h3_zm_nono",
+          "reference_asset_ids": [
+            "962864a7-1782-4342-aa8a-85a9c08990ca"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": "a022",
+          "campaign_attempt": 1,
+          "recorded_review_verdict": "reject",
+          "current_action_status_at_snapshot": "rejected",
+          "is_latest_action_attempt": true,
+          "note": null
+        }
+      ]
+    },
+    "972a4ba5-d1e9-4265-a649-7fa5168ebc4b": {
+      "geometry": {
+        "file": "references/kurisu-front.png",
+        "sha256": "78e84345c8c876360c628310498484c3146e4da5ceae314b3b87e9de8f4c4725",
+        "size": [
+          1672,
+          941
+        ],
+        "bbox_xyxy_exclusive": [
+          499,
+          25,
+          1206,
+          900
+        ],
+        "height_fraction": 0.9298618490967057,
+        "top_fraction": 0.026567481402763018,
+        "feet_fraction": 0.9564293304994687,
+        "measurement": "actual_alpha_at_least_128"
+      },
+      "project_model_calls": 24,
+      "model_counts": {
+        "minimax_h3_zm_nono": 22,
+        "minimax_h3_zm_u24": 1,
+        "minimax_h3_zm_u30": 1
+      },
+      "recorded_attempt_review_values": {
+        "pass": 6,
+        "reject": 11,
+        "withdrawn": 5,
+        "not_in_campaign_attempt_review": 2
+      },
+      "current_approved_latest_campaign_actions_at_snapshot": [
+        "a103",
+        "a102",
+        "a008",
+        "a006",
+        "a005",
+        "a002"
+      ],
+      "rows": [
+        {
+          "task_id": "05c6d0e9-9869-4e4e-a845-8ff2c09f1e4a",
+          "model_slug": "minimax_h3_zm_nono",
+          "reference_asset_ids": [
+            "972a4ba5-d1e9-4265-a649-7fa5168ebc4b"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": "a103",
+          "campaign_attempt": 2,
+          "recorded_review_verdict": "pass",
+          "current_action_status_at_snapshot": "approved",
+          "is_latest_action_attempt": true,
+          "note": null
+        },
+        {
+          "task_id": "9d007c8d-397b-40f8-b410-82c370479435",
+          "model_slug": "minimax_h3_zm_nono",
+          "reference_asset_ids": [
+            "972a4ba5-d1e9-4265-a649-7fa5168ebc4b"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": "a011",
+          "campaign_attempt": 2,
+          "recorded_review_verdict": "reject",
+          "current_action_status_at_snapshot": "exhausted",
+          "is_latest_action_attempt": true,
+          "note": null
+        },
+        {
+          "task_id": "8f14a3a9-f00c-4b8b-85e0-c6cf4b73c580",
+          "model_slug": "minimax_h3_zm_nono",
+          "reference_asset_ids": [
+            "972a4ba5-d1e9-4265-a649-7fa5168ebc4b"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": "a010",
+          "campaign_attempt": 3,
+          "recorded_review_verdict": "reject",
+          "current_action_status_at_snapshot": "exhausted",
+          "is_latest_action_attempt": false,
+          "note": null
+        },
+        {
+          "task_id": "5dbe4d80-c8ee-41f5-9195-d80b4e8df1c3",
+          "model_slug": "minimax_h3_zm_nono",
+          "reference_asset_ids": [
+            "972a4ba5-d1e9-4265-a649-7fa5168ebc4b"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": "a009",
+          "campaign_attempt": 2,
+          "recorded_review_verdict": "reject",
+          "current_action_status_at_snapshot": "exhausted",
+          "is_latest_action_attempt": false,
+          "note": null
+        },
+        {
+          "task_id": "dd336108-9eee-4e80-8e86-66dc434929c8",
+          "model_slug": "minimax_h3_zm_nono",
+          "reference_asset_ids": [
+            "972a4ba5-d1e9-4265-a649-7fa5168ebc4b"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": "a103",
+          "campaign_attempt": 1,
+          "recorded_review_verdict": "withdrawn",
+          "current_action_status_at_snapshot": "approved",
+          "is_latest_action_attempt": false,
+          "note": null
+        },
+        {
+          "task_id": "a0cddc01-0921-4121-92d5-7aee7556e0a9",
+          "model_slug": "minimax_h3_zm_nono",
+          "reference_asset_ids": [
+            "972a4ba5-d1e9-4265-a649-7fa5168ebc4b"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": "a102",
+          "campaign_attempt": 1,
+          "recorded_review_verdict": "pass",
+          "current_action_status_at_snapshot": "approved",
+          "is_latest_action_attempt": true,
+          "note": null
+        },
+        {
+          "task_id": "e991e468-b481-4bf5-b455-ddf3cd34bd43",
+          "model_slug": "minimax_h3_zm_nono",
+          "reference_asset_ids": [
+            "972a4ba5-d1e9-4265-a649-7fa5168ebc4b"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": "a101",
+          "campaign_attempt": 1,
+          "recorded_review_verdict": "withdrawn",
+          "current_action_status_at_snapshot": "exhausted",
+          "is_latest_action_attempt": true,
+          "note": null
+        },
+        {
+          "task_id": "0a9b2a51-50a2-4d5d-8d4f-256e5534fda5",
+          "model_slug": "minimax_h3_zm_u24",
+          "reference_asset_ids": [
+            "972a4ba5-d1e9-4265-a649-7fa5168ebc4b"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": "a010",
+          "campaign_attempt": 2,
+          "recorded_review_verdict": "withdrawn",
+          "current_action_status_at_snapshot": "exhausted",
+          "is_latest_action_attempt": false,
+          "note": null
+        },
+        {
+          "task_id": "0482a9a7-e19f-4f53-8883-d8457cb637e4",
+          "model_slug": "minimax_h3_zm_nono",
+          "reference_asset_ids": [
+            "972a4ba5-d1e9-4265-a649-7fa5168ebc4b"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": "a011",
+          "campaign_attempt": 1,
+          "recorded_review_verdict": "withdrawn",
+          "current_action_status_at_snapshot": "exhausted",
+          "is_latest_action_attempt": false,
+          "note": null
+        },
+        {
+          "task_id": "46e71cc6-e091-46cc-9a56-acedd65d4ccf",
+          "model_slug": "minimax_h3_zm_u30",
+          "reference_asset_ids": [
+            "972a4ba5-d1e9-4265-a649-7fa5168ebc4b"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": "a007",
+          "campaign_attempt": 2,
+          "recorded_review_verdict": "reject",
+          "current_action_status_at_snapshot": "exhausted",
+          "is_latest_action_attempt": false,
+          "note": null
+        },
+        {
+          "task_id": "779de11c-b99e-4b73-b916-01a0b3b1160b",
+          "model_slug": "minimax_h3_zm_nono",
+          "reference_asset_ids": [
+            "972a4ba5-d1e9-4265-a649-7fa5168ebc4b"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": "a010",
+          "campaign_attempt": 1,
+          "recorded_review_verdict": "reject",
+          "current_action_status_at_snapshot": "exhausted",
+          "is_latest_action_attempt": false,
+          "note": null
+        },
+        {
+          "task_id": "2982d400-e6d1-44c8-8497-571c820c15c3",
+          "model_slug": "minimax_h3_zm_nono",
+          "reference_asset_ids": [
+            "972a4ba5-d1e9-4265-a649-7fa5168ebc4b"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": "a009",
+          "campaign_attempt": 1,
+          "recorded_review_verdict": "withdrawn",
+          "current_action_status_at_snapshot": "exhausted",
+          "is_latest_action_attempt": false,
+          "note": null
+        },
+        {
+          "task_id": "8d7b7120-1948-4764-a732-57b7e55fc908",
+          "model_slug": "minimax_h3_zm_nono",
+          "reference_asset_ids": [
+            "972a4ba5-d1e9-4265-a649-7fa5168ebc4b"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": "a008",
+          "campaign_attempt": 1,
+          "recorded_review_verdict": "pass",
+          "current_action_status_at_snapshot": "approved",
+          "is_latest_action_attempt": true,
+          "note": null
+        },
+        {
+          "task_id": "6a4d044b-c353-4bf9-9e08-39d159e49a8a",
+          "model_slug": "minimax_h3_zm_nono",
+          "reference_asset_ids": [
+            "972a4ba5-d1e9-4265-a649-7fa5168ebc4b"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": "a007",
+          "campaign_attempt": 1,
+          "recorded_review_verdict": "reject",
+          "current_action_status_at_snapshot": "exhausted",
+          "is_latest_action_attempt": false,
+          "note": null
+        },
+        {
+          "task_id": "81e1946b-fe84-43cc-88e3-8b6dc470d47c",
+          "model_slug": "minimax_h3_zm_nono",
+          "reference_asset_ids": [
+            "972a4ba5-d1e9-4265-a649-7fa5168ebc4b"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": "a006",
+          "campaign_attempt": 2,
+          "recorded_review_verdict": "pass",
+          "current_action_status_at_snapshot": "approved",
+          "is_latest_action_attempt": true,
+          "note": null
+        },
+        {
+          "task_id": "59ebf94c-9d94-4b1d-9079-e787022daf38",
+          "model_slug": "minimax_h3_zm_nono",
+          "reference_asset_ids": [
+            "972a4ba5-d1e9-4265-a649-7fa5168ebc4b"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": "a005",
+          "campaign_attempt": 2,
+          "recorded_review_verdict": "pass",
+          "current_action_status_at_snapshot": "approved",
+          "is_latest_action_attempt": true,
+          "note": null
+        },
+        {
+          "task_id": "fa6f9e8f-dbc5-456b-89f2-835644370ec6",
+          "model_slug": "minimax_h3_zm_nono",
+          "reference_asset_ids": [
+            "972a4ba5-d1e9-4265-a649-7fa5168ebc4b"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": "a003",
+          "campaign_attempt": 2,
+          "recorded_review_verdict": "reject",
+          "current_action_status_at_snapshot": "exhausted",
+          "is_latest_action_attempt": false,
+          "note": null
+        },
+        {
+          "task_id": "674602a3-db0a-41f2-a967-cf704f8dfb14",
+          "model_slug": "minimax_h3_zm_nono",
+          "reference_asset_ids": [
+            "972a4ba5-d1e9-4265-a649-7fa5168ebc4b"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": "a002",
+          "campaign_attempt": 2,
+          "recorded_review_verdict": "pass",
+          "current_action_status_at_snapshot": "approved",
+          "is_latest_action_attempt": true,
+          "note": null
+        },
+        {
+          "task_id": "d82864c8-addb-4941-bd1e-375c3d07d1bb",
+          "model_slug": "minimax_h3_zm_nono",
+          "reference_asset_ids": [
+            "972a4ba5-d1e9-4265-a649-7fa5168ebc4b"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": "a006",
+          "campaign_attempt": 1,
+          "recorded_review_verdict": "reject",
+          "current_action_status_at_snapshot": "approved",
+          "is_latest_action_attempt": false,
+          "note": null
+        },
+        {
+          "task_id": "9bc87c9a-158c-482c-bca9-3b65aabf87dc",
+          "model_slug": "minimax_h3_zm_nono",
+          "reference_asset_ids": [
+            "972a4ba5-d1e9-4265-a649-7fa5168ebc4b"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": "a005",
+          "campaign_attempt": 1,
+          "recorded_review_verdict": "reject",
+          "current_action_status_at_snapshot": "approved",
+          "is_latest_action_attempt": false,
+          "note": null
+        },
+        {
+          "task_id": "acc4ab64-25bd-402c-9614-6ec06603d54d",
+          "model_slug": "minimax_h3_zm_nono",
+          "reference_asset_ids": [
+            "972a4ba5-d1e9-4265-a649-7fa5168ebc4b"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": "a003",
+          "campaign_attempt": 1,
+          "recorded_review_verdict": "reject",
+          "current_action_status_at_snapshot": "exhausted",
+          "is_latest_action_attempt": false,
+          "note": null
+        },
+        {
+          "task_id": "5de954b0-6b3b-4fdb-b43b-5459db7926aa",
+          "model_slug": "minimax_h3_zm_nono",
+          "reference_asset_ids": [
+            "972a4ba5-d1e9-4265-a649-7fa5168ebc4b"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": "a002",
+          "campaign_attempt": 1,
+          "recorded_review_verdict": "reject",
+          "current_action_status_at_snapshot": "approved",
+          "is_latest_action_attempt": false,
+          "note": null
+        },
+        {
+          "task_id": "fb882508-e085-4936-8ab2-84b6860ff1ea",
+          "model_slug": "minimax_h3_zm_nono",
+          "reference_asset_ids": [
+            "972a4ba5-d1e9-4265-a649-7fa5168ebc4b"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": null,
+          "campaign_attempt": null,
+          "recorded_review_verdict": null,
+          "current_action_status_at_snapshot": null,
+          "is_latest_action_attempt": false,
+          "note": "Initial pre-campaign sample or independent diagnostic"
+        },
+        {
+          "task_id": "ca269af9-e4db-4356-b720-a43df2f4e640",
+          "model_slug": "minimax_h3_zm_nono",
+          "reference_asset_ids": [
+            "972a4ba5-d1e9-4265-a649-7fa5168ebc4b"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": null,
+          "campaign_attempt": null,
+          "recorded_review_verdict": null,
+          "current_action_status_at_snapshot": null,
+          "is_latest_action_attempt": false,
+          "note": "Initial pre-campaign sample or independent diagnostic"
+        }
+      ]
+    },
+    "35db850a-cc14-4aa6-adeb-54744c8748b1": {
+      "geometry": {
+        "file": "references/kurisu-green-reference.png",
+        "sha256": "1f9d623114db43dfa49ddd0aa63a2943b2b1971d35e28658c98d8bcbfb6eae06",
+        "size": [
+          1280,
+          720
+        ],
+        "bbox_xyxy_exclusive": [
+          450,
+          144,
+          830,
+          612
+        ],
+        "height_fraction": 0.65,
+        "top_fraction": 0.2,
+        "feet_fraction": 0.85,
+        "measurement": "non_saturated_green_pixels"
+      },
+      "project_model_calls": 2,
+      "model_counts": {
+        "minimax_h3_zm_nono": 2
+      },
+      "recorded_attempt_review_values": {
+        "not_in_campaign_attempt_review": 2
+      },
+      "current_approved_latest_campaign_actions_at_snapshot": [],
+      "rows": [
+        {
+          "task_id": "3840e46f-e997-4036-9306-5a0ce0e3abfb",
+          "model_slug": "minimax_h3_zm_nono",
+          "reference_asset_ids": [
+            "35db850a-cc14-4aa6-adeb-54744c8748b1",
+            "2970f054-3f9e-459f-865a-90cf48e5eb88"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": null,
+          "campaign_attempt": null,
+          "recorded_review_verdict": null,
+          "current_action_status_at_snapshot": null,
+          "is_latest_action_attempt": false,
+          "note": "Initial pre-campaign sample or independent diagnostic"
+        },
+        {
+          "task_id": "5d95d563-f21b-42fc-8467-a144553f5248",
+          "model_slug": "minimax_h3_zm_nono",
+          "reference_asset_ids": [
+            "35db850a-cc14-4aa6-adeb-54744c8748b1",
+            "2970f054-3f9e-459f-865a-90cf48e5eb88"
+          ],
+          "last_frame_asset_id": null,
+          "supplier_status": "completed",
+          "campaign_action_id": null,
+          "campaign_attempt": null,
+          "recorded_review_verdict": null,
+          "current_action_status_at_snapshot": null,
+          "is_latest_action_attempt": false,
+          "note": "Initial pre-campaign sample or independent diagnostic"
+        }
+      ]
+    }
+  },
+  "unclassified_reference_assets": [],
+  "additional_reference_note": "The initial two green65% samples additionally used a multi-view sheet; that is not a single-character80% test.",
+  "finding": {
+    "submitted_same_original_80_percent_test_found": false,
+    "submitted_geometry_range_75_to85_percent_found": false,
+    "original_rgba_height_percent": 92.986,
+    "original_rgba_feet_percent": 95.643,
+    "other_single_original_derivatives_height_percent": 65,
+    "campaign_actual_counts": {
+      "calls": 70,
+      "repairs": 26,
+      "other_model_calls": 9
+    },
+    "project_tasks_including_four_precampaign_samples": 74,
+    "current_approved_ids_at_ledger_snapshot": [
+      "a001",
+      "a002",
+      "a004",
+      "a005",
+      "a006",
+      "a008",
+      "a102",
+      "a103"
+    ],
+    "root_reported_reinspection_targets_not_assumed_already_withdrawn": [
+      "a001",
+      "a004",
+      "a005",
+      "a006",
+      "a008",
+      "a101",
+      "a102"
+    ],
+    "important": "Review pass/withdrawn are historical ledger values, not a current clean-source success estimate. Root is independently rechecking extra foreground appendages; no pending withdrawal is executed or silently counted as complete here."
+  },
+  "candidate_read_only_design": {
+    "action_id": "a016",
+    "action": "整理围裙",
+    "reason": "Unqualified action with small waist-level empty-hand movement; no raised arms, jump, travel or large props. Does not replace currently retained or under-review default candidates; this audit does not declare those candidates conclusively safe.",
+    "reference_source": "Same approved original RGBA, no redraw or anatomy edit",
+    "target_canvas": [
+      1280,
+      720
+    ],
+    "target_opaque_height_px": 576,
+    "height_fraction": 0.8,
+    "target_feet_y_px": 648,
+    "feet_fraction": 0.9,
+    "target_ear_top_y_px": 72,
+    "format": "RGBA PNG retaining original transparency; compare with prior transparent65% probe",
+    "model_and_historical_prompt": "Keep the main H3 model and the original a016 historical prompt unchanged if testing input-geometry sensitivity only",
+    "prompt_coordinate_conflict": "Historical prompt still explicitly says ear20% and feet85%; an80% reference implies ear10% and feet90%. Record this constant text/reference conflict, and do not interpret outcome as proof of correct requested framing.",
+    "sampling": "One explicitly scoped pilot at most, not a blind refill; no submission or image derivative created by this audit"
+  },
+  "causality_limits": [
+    "No controlled80% generation exists in the74-task inventory.",
+    "Original93% reference also produced rejected and later-withdrawn results; previously accepted clips now contain newly detected appendages.",
+    "Model, prompt length, actions, backdrop format, extra multi-view references, source processing and evolving QA criteria varied across cohorts. Their raw acceptance rates do not establish geometry as the cause.",
+    "A genuinely different geometry pilot may test the remaining conditioning hypothesis while keeping only-green output acceptance; it does not require semantic matting permission."
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "action_id": "a069",
+  "attempt_index": 1,
+  "action_name": "春日观察花瓣",
+  "source_file": "source/library/a069/attempt-1/春日观察花瓣.mp4",
+  "source_sha256": "8adb414b47985b6caffb401140e55b3b4a9a66709d53790cfeb6392fa1bac24a",
+  "source_task_id": "d292db15-e6b8-48f7-bb20-a3cffc8f5156",
+  "result_asset_id": "832ccfeb-529c-4b0e-ac7b-a66896b9548b",
+  "model_slug": "minimax_h3_zm_u24",
+  "reference_file": "references/kurisu-front-80-opaque-green.png",
+  "reference_sha256": "259edb632a5cf780e8259f2aac9b1c21fc7b80453708eda56ea2e6eb99501430",
+  "reference_asset_id": "b7b8ee8c-df7c-4cd9-91ab-176b1094f7c6",
+  "reviewer": "animation_qa independent agent",
+  "reviewed_at": "2026-10-31T05:09:53.098843+00:00",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "processing_clearance": "reject",
+  "final_media_approved": false,
+  "reason": "原生首帧脚边已有完整花枝，末帧花枝已消失，首尾不是同一无道具基准站姿。角色和绿色背景抽查无明显硬伤，但不能把开始就存在的花枝当作空手标准开场。",
+  "defects": [
+    {
+      "severity": "hard",
+      "type": "endpoint_prop_mismatch",
+      "frames": [
+        0,
+        239
+      ],
+      "description": "The first native frame already contains a large flowering branch on the ground beside and below the shoes; the last reviewed frame has no branch. Initial and final foreground prop states do not match the empty standard stance."
+    }
+  ],
+  "source_background": {
+    "method": "all_frame_saturated_green_native_border_v2",
+    "passed": true,
+    "frames": 240,
+    "expected_frames": 240,
+    "failed_frame_count": 0,
+    "failed_frames": [],
+    "background_rgb_min": [
+      2.0,
+      232.0,
+      4.0
+    ],
+    "background_rgb_max": [
+      3.0,
+      233.0,
+      6.0
+    ],
+    "maximum_spatial_delta": 16.0,
+    "maximum_temporal_delta": 1.0,
+    "thresholds": {
+      "dominant_min": 180,
+      "other_channels_max": 100,
+      "dominance_min": 100,
+      "spatial_delta_max": 35,
+      "temporal_delta_max": 24
+    },
+    "expected_background": "#00FF00",
+    "white_matte_fallback": false,
+    "visual_foreground_review_required": true,
+    "enclosed_background_and_foreground_verified": false,
+    "native_size": [
+      1344,
+      768
+    ],
+    "boundary_pixels_per_frame": 4224,
+    "measurement": "native_one_pixel_outer_boundary_no_spatial_resampling",
+    "sampling": {
+      "duration_seconds": 10,
+      "fps": 24,
+      "expected_frames": 240
+    }
+  },
+  "inspection_scope": {
+    "existing_contact": "Existing 11-sample full-body contact personally viewed.",
+    "native_full_frames_personally_viewed": [
+      0,
+      239
+    ],
+    "native_nearest2x_detail_frames_personally_viewed": {
+      "face": [
+        144
+      ],
+      "lower": []
+    },
+    "native_size": [
+      1344,
+      768
+    ],
+    "technical_scope": "Existing native first-10-second 240-frame green boundary gate reused; not rescanned. Source and all evidence PNG hashes verified.",
+    "limitations": [
+      "Representative source still review only; no all-243-frame manual visual claim.",
+      "No real-time source playback performed.",
+      "No alpha/output-edge/spec/final-media review yet."
+    ]
+  },
+  "visual_findings": {
+    "action_and_props": "Holds and observes the flowering branch during the action; stows it before the end. The opening branch remains the blocking discrepancy.",
+    "identity_color_anatomy": "Reviewed native views preserve two cat ears, lace headband, pink bows, auburn hair and the black/white maid outfit. No obvious added limb/tail, eye collapse, strong green wash or moving colored light was seen in these limited samples. This is not a claim of exhaustive full-frame temporal inspection.",
+    "camera_and_scale": "Whole character is visible in the reviewed full-body frames with no obvious large camera zoom/crop. Final key scale and endpoint metrics are untested."
+  },
+  "evidence_manifest": "quality/evidence/u24-green80-firstpass/a069/attempt-1/manifest.json",
+  "evidence_manifest_sha256": "e22b71313171a931932461597ebd2ed5116b1cf5fc4c78233a0dce525a92cda3",
+  "processing_performed": false,
+  "new_model_calls": 0,
+  "ledger_or_approval_modified": false,
+  "next_step": "Retain this first-attempt failure and move on. No automatic repair or re-generation."
+}

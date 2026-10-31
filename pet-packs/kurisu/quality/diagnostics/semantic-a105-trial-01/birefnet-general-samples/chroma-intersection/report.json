@@ -1,0 +1,71 @@
+{
+  "created_at": "2026-10-31T02:03:03.654060+00:00",
+  "scope": "six cached additional-model frames plus same already-validated green Alpha, no new inference",
+  "source_sha256": "5460f738fa8678600fc5d37fc4334e551deec03c013db41b0242c58059b13aac",
+  "method": "min(BiRefNet-general raw semanticAlpha, key_green(originalRGB,12,110).Alpha); no returned green RGB used",
+  "nativeRGB_unchanged": true,
+  "no_new_inference_or_color_or_threshold_changes": true,
+  "records": [
+    {
+      "frame": 0,
+      "native_RGB_exact_original": true,
+      "originalRGB_opaque_green_dominance_pixels": 1056,
+      "green_alpha_low": 12,
+      "green_alpha_high": 110
+    },
+    {
+      "frame": 24,
+      "native_RGB_exact_original": true,
+      "originalRGB_opaque_green_dominance_pixels": 1047,
+      "green_alpha_low": 12,
+      "green_alpha_high": 110
+    },
+    {
+      "frame": 72,
+      "native_RGB_exact_original": true,
+      "originalRGB_opaque_green_dominance_pixels": 854,
+      "green_alpha_low": 12,
+      "green_alpha_high": 110
+    },
+    {
+      "frame": 120,
+      "native_RGB_exact_original": true,
+      "originalRGB_opaque_green_dominance_pixels": 829,
+      "green_alpha_low": 12,
+      "green_alpha_high": 110
+    },
+    {
+      "frame": 192,
+      "native_RGB_exact_original": true,
+      "originalRGB_opaque_green_dominance_pixels": 1296,
+      "green_alpha_low": 12,
+      "green_alpha_high": 110
+    },
+    {
+      "frame": 239,
+      "native_RGB_exact_original": true,
+      "originalRGB_opaque_green_dominance_pixels": 1565,
+      "green_alpha_low": 12,
+      "green_alpha_high": 110
+    }
+  ],
+  "status": "STOP_NO_EDGE_IMPROVEMENT_AND_GROUND_HALO",
+  "full240_created": false,
+  "final_media_approved": false,
+  "counts_toward_106": false,
+  "script_sha256": "00fd99bfdf3a468a9ec5f1f9eadd47f56406b4d256e9a98e5ff211672596ae3f",
+  "visual_review": {
+    "frames": [
+      0,
+      120
+    ],
+    "views": "f0native640dark, f120native640blue",
+    "findings": [
+      "Same existing12/110 green Alpha removes saturated floor interior, but leaves pale-gray oval outline below shoes atf120.",
+      "f0 ear/hair green rim remains and is not visibly better than isnet intersection."
+    ],
+    "full240_allowed": false
+  },
+  "decode_slot_released": true,
+  "completed_at": "2026-10-31T02:04:31.981860+00:00"
+}

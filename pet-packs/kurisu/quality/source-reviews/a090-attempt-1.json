@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "action_id": "a090",
+  "attempt_index": 1,
+  "action_name": "扶额无语",
+  "spec_revision_id": null,
+  "source_file": "source/library/a090/attempt-1/扶额无语.mp4",
+  "source_sha256": "6923afe0a2baaecdcad52700321e3ccb5d215bf8005cc1f441206738561bd4d2",
+  "source_task_id": "e0c548de-702c-41eb-b5da-358f14b2bb18",
+  "result_asset_id": "e3502272-add9-4283-8d52-0410dd13e776",
+  "model_slug": "minimax_h3_zm_u24",
+  "reviewer": "animation_qa independent agent",
+  "reviewed_at": "2026-10-31T11:50:19.123181+00:00",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "processing_clearance": "allow_mild_color_and_green_key",
+  "final_media_approved": false,
+  "reason": "Representative native source frames show a recognizable compact facepalm gesture and return to the same empty-handed stance; complete headwear/shoes and stable character palette are retained. Cleared only for initial ordinary green-key processing.",
+  "defects": [],
+  "source_background": {
+    "method": "all_frame_saturated_green_native_border_v2",
+    "passed": true,
+    "frames": 240,
+    "expected_frames": 240,
+    "failed_frame_count": 0,
+    "failed_frames": [],
+    "background_rgb_min": [
+      1.0,
+      234.0,
+      5.0
+    ],
+    "background_rgb_max": [
+      3.0,
+      237.0,
+      7.0
+    ],
+    "maximum_spatial_delta": 6.0,
+    "maximum_temporal_delta": 3.0,
+    "thresholds": {
+      "dominant_min": 180,
+      "other_channels_max": 100,
+      "dominance_min": 100,
+      "spatial_delta_max": 35,
+      "temporal_delta_max": 24
+    },
+    "expected_background": "#00FF00",
+    "white_matte_fallback": false,
+    "visual_foreground_review_required": true,
+    "enclosed_background_and_foreground_verified": false,
+    "native_size": [
+      1344,
+      768
+    ],
+    "boundary_pixels_per_frame": 4224,
+    "measurement": "native_one_pixel_outer_boundary_no_spatial_resampling",
+    "sampling": {
+      "duration_seconds": 10,
+      "fps": 24,
+      "expected_frames": 240
+    }
+  },
+  "inspection_scope": {
+    "existing_contact_personally_viewed": false,
+    "native_full_frames_personally_viewed": [
+      0,
+      96,
+      144,
+      239
+    ],
+    "native_face_nearest2x_frames_personally_viewed": [
+      144
+    ],
+    "native_size": [
+      1344,
+      768
+    ],
+    "technical_scope": "Existing native240 boundary gate reused, not rerun. Source and evidence manifest are SHA-bound.",
+    "limits": [
+      "Representative source stills only, not all243 manually inspected.",
+      "No continuous source video playback in this source stage; complete10s playback is reserved for final candidate QA.",
+      "No automatic final-media approval or repair."
+    ]
+  },
+  "visual_findings": [
+    "The raised hand at the forehead is the named facepalm, not an unwanted prop or extra arm.",
+    "The gesture has already settled by frame144; f0 and f239 are compatible neutral baselines.",
+    "No extra foreground appendage, moving colored light or white hair-gap island was identified in the listed source samples. Final continuous and alpha review remains required."
+  ],
+  "evidence_manifest": "quality/evidence/remaining-original-firstpass/a090/attempt-1/manifest.json",
+  "evidence_manifest_sha256": "66c401f817b41d8669cd5779f712c1810c26638a644d3d472f6156c7b9b00231",
+  "new_model_calls": 0,
+  "processing_performed": false,
+  "ledger_or_approval_modified": false
+}

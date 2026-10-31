@@ -1,0 +1,21 @@
+{
+  "browser": "Chrome dedicated existing7 final QA tab",
+  "candidate_file": "source/library/a079/attempt-1/processing-5a1030ce-0eca-4ae7-a53d-87a367e2e286/萌化小幽灵.webm",
+  "candidate_sha256": "896fcd6d6378f8ee5c1585c60c8bf00ef0f0e51353f0f4ae897e5f2efd53fc93",
+  "css_size": [
+    640,
+    360
+  ],
+  "duration": 10,
+  "started_at": "2026-10-31T12:29:45.479Z",
+  "ended_at": "2026-10-31T12:29:55.482Z",
+  "completed_10s": true,
+  "frame_callbacks_before_idle_switch": 239,
+  "first_media_time": 0.042,
+  "last_media_time": 9.958,
+  "idle_switch_performed": true,
+  "paused_after_switch": true,
+  "continuous_human_gaze_claim": false,
+  "observation_scope": "Actual real-time complete playback executed; human evidence consists of sampled browser screenshots and selected native640 stills/enlarged original-pixel face/hair. No manual all240-frame claim.",
+  "dropped_frames": "Not measured; callback count is not dropped-frame count."
+}

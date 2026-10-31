@@ -1,0 +1,271 @@
+{
+  "prepared_at": "2026-10-31T05:02:15.510331+00:00",
+  "action_id": "a069",
+  "attempt_index": 1,
+  "task_id": "d292db15-e6b8-48f7-bb20-a3cffc8f5156",
+  "result_asset_id": "832ccfeb-529c-4b0e-ac7b-a66896b9548b",
+  "model_id": "418c676d-1a59-4b3e-a716-b99de8038c71",
+  "model_slug": "minimax_h3_zm_u24",
+  "source_file": "source/library/a069/attempt-1/春日观察花瓣.mp4",
+  "source_sha256": "8adb414b47985b6caffb401140e55b3b4a9a66709d53790cfeb6392fa1bac24a",
+  "source_video_probe": {
+    "codec_name": "h264",
+    "width": 1344,
+    "height": 768,
+    "r_frame_rate": "24/1",
+    "avg_frame_rate": "24/1",
+    "duration": "10.125000",
+    "nb_frames": "243"
+  },
+  "native_frame_indices": [
+    0,
+    48,
+    96,
+    144,
+    192,
+    239
+  ],
+  "native_detail_frame_indices": [
+    0,
+    144,
+    239
+  ],
+  "pngs": [
+    {
+      "kind": "native_full_frame",
+      "native_frame_index": 0,
+      "file": "quality/evidence/u24-green80-firstpass/a069/attempt-1/f000-native.png",
+      "sha256": "47a92d6fbca01c5ab467af4154d97f8f9306ee8f3fdd74e23738cdad3a5c6594",
+      "size": [
+        1344,
+        768
+      ]
+    },
+    {
+      "kind": "face_native_pixels_2x",
+      "native_frame_index": 0,
+      "file": "quality/evidence/u24-green80-firstpass/a069/attempt-1/f000-face-native2x.png",
+      "sha256": "a8127f494216dcd945718c3ea5ba918a8e2771f5857ce129f31e63edd7d10769",
+      "source_crop_xyxy": [
+        336,
+        0,
+        1008,
+        499
+      ],
+      "size": [
+        1344,
+        998
+      ],
+      "resampler": "NEAREST exact2x repeated source pixels"
+    },
+    {
+      "kind": "lower_native_pixels_2x",
+      "native_frame_index": 0,
+      "file": "quality/evidence/u24-green80-firstpass/a069/attempt-1/f000-lower-native2x.png",
+      "sha256": "cfa67a81573567a4b6c78f52db3ff9206ce3ff4c08f85c039670817dcd699137",
+      "source_crop_xyxy": [
+        336,
+        346,
+        1008,
+        768
+      ],
+      "size": [
+        1344,
+        844
+      ],
+      "resampler": "NEAREST exact2x repeated source pixels"
+    },
+    {
+      "kind": "native_full_frame",
+      "native_frame_index": 48,
+      "file": "quality/evidence/u24-green80-firstpass/a069/attempt-1/f048-native.png",
+      "sha256": "88910a68d4e114c05285b684731421d89592ae9f4098759a82518cd6e5cc4fcc",
+      "size": [
+        1344,
+        768
+      ]
+    },
+    {
+      "kind": "native_full_frame",
+      "native_frame_index": 96,
+      "file": "quality/evidence/u24-green80-firstpass/a069/attempt-1/f096-native.png",
+      "sha256": "cf8ca06f8a4e11ab2c687bb4e5c497a0ab88757fc7e0ad61a0f8ef6e3b87f36a",
+      "size": [
+        1344,
+        768
+      ]
+    },
+    {
+      "kind": "native_full_frame",
+      "native_frame_index": 144,
+      "file": "quality/evidence/u24-green80-firstpass/a069/attempt-1/f144-native.png",
+      "sha256": "b42cd8fc084695ec3dcd3a4913b54a3816b9604d652465371d19d14496e02186",
+      "size": [
+        1344,
+        768
+      ]
+    },
+    {
+      "kind": "face_native_pixels_2x",
+      "native_frame_index": 144,
+      "file": "quality/evidence/u24-green80-firstpass/a069/attempt-1/f144-face-native2x.png",
+      "sha256": "53660e905a5be36145905e31620756f799f8eaf5252dfff57b405c26bc4f7432",
+      "source_crop_xyxy": [
+        336,
+        0,
+        1008,
+        499
+      ],
+      "size": [
+        1344,
+        998
+      ],
+      "resampler": "NEAREST exact2x repeated source pixels"
+    },
+    {
+      "kind": "lower_native_pixels_2x",
+      "native_frame_index": 144,
+      "file": "quality/evidence/u24-green80-firstpass/a069/attempt-1/f144-lower-native2x.png",
+      "sha256": "4adc2067e101f4b9f421a4d8acd004cfe5049efbe805955dc6bf80965a700528",
+      "source_crop_xyxy": [
+        336,
+        346,
+        1008,
+        768
+      ],
+      "size": [
+        1344,
+        844
+      ],
+      "resampler": "NEAREST exact2x repeated source pixels"
+    },
+    {
+      "kind": "native_full_frame",
+      "native_frame_index": 192,
+      "file": "quality/evidence/u24-green80-firstpass/a069/attempt-1/f192-native.png",
+      "sha256": "ec4833945dc8f4dbb8c977a7e1f55998c70e778494573bf00988cf92451b1c5f",
+      "size": [
+        1344,
+        768
+      ]
+    },
+    {
+      "kind": "native_full_frame",
+      "native_frame_index": 239,
+      "file": "quality/evidence/u24-green80-firstpass/a069/attempt-1/f239-native.png",
+      "sha256": "5117014f9194c55b4dd206374102896b3777128381c37be0daf4d4bee14183e2",
+      "size": [
+        1344,
+        768
+      ]
+    },
+    {
+      "kind": "face_native_pixels_2x",
+      "native_frame_index": 239,
+      "file": "quality/evidence/u24-green80-firstpass/a069/attempt-1/f239-face-native2x.png",
+      "sha256": "9da8c69e28fc3b7bfe6c6f814e7ef3e7af254e050fe113b4c6dfc1d954b0e2ff",
+      "source_crop_xyxy": [
+        336,
+        0,
+        1008,
+        499
+      ],
+      "size": [
+        1344,
+        998
+      ],
+      "resampler": "NEAREST exact2x repeated source pixels"
+    },
+    {
+      "kind": "lower_native_pixels_2x",
+      "native_frame_index": 239,
+      "file": "quality/evidence/u24-green80-firstpass/a069/attempt-1/f239-lower-native2x.png",
+      "sha256": "071cbd0b70fbea357f2e8a5229a4bc9d10e7f6bece9e2f572152e94631c45c67",
+      "source_crop_xyxy": [
+        336,
+        346,
+        1008,
+        768
+      ],
+      "size": [
+        1344,
+        844
+      ],
+      "resampler": "NEAREST exact2x repeated source pixels"
+    }
+  ],
+  "existing_source_background": {
+    "method": "all_frame_saturated_green_native_border_v2",
+    "passed": true,
+    "frames": 240,
+    "expected_frames": 240,
+    "failed_frame_count": 0,
+    "failed_frames": [],
+    "background_rgb_min": [
+      2.0,
+      232.0,
+      4.0
+    ],
+    "background_rgb_max": [
+      3.0,
+      233.0,
+      6.0
+    ],
+    "maximum_spatial_delta": 16.0,
+    "maximum_temporal_delta": 1.0,
+    "thresholds": {
+      "dominant_min": 180,
+      "other_channels_max": 100,
+      "dominance_min": 100,
+      "spatial_delta_max": 35,
+      "temporal_delta_max": 24
+    },
+    "expected_background": "#00FF00",
+    "white_matte_fallback": false,
+    "visual_foreground_review_required": true,
+    "enclosed_background_and_foreground_verified": false,
+    "native_size": [
+      1344,
+      768
+    ],
+    "boundary_pixels_per_frame": 4224,
+    "measurement": "native_one_pixel_outer_boundary_no_spatial_resampling",
+    "sampling": {
+      "duration_seconds": 10,
+      "fps": 24,
+      "expected_frames": 240
+    }
+  },
+  "background_metric_reused_not_rerun": true,
+  "extraction_command": [
+    "ffmpeg",
+    "-y",
+    "-v",
+    "error",
+    "-threads",
+    "1",
+    "-i",
+    "/Users/tonghao/Projects/dsh-pet/pet-packs/kurisu/source/library/a069/attempt-1/春日观察花瓣.mp4",
+    "-map",
+    "0:v:0",
+    "-vf",
+    "select=eq(n\\,0)+eq(n\\,48)+eq(n\\,96)+eq(n\\,144)+eq(n\\,192)+eq(n\\,239)",
+    "-frames:v",
+    "6",
+    "-fps_mode",
+    "passthrough",
+    "-pix_fmt",
+    "rgb24",
+    "-threads",
+    "1",
+    "-start_number",
+    "0",
+    "/Users/tonghao/Projects/dsh-pet/pet-packs/kurisu/quality/evidence/u24-green80-firstpass/a069/attempt-1/staging/frame-%02d.png"
+  ],
+  "source_RGB_unmodified": true,
+  "evidence_only_not_media_processing": true,
+  "color_or_alpha_repair_performed": false,
+  "new_model_calls": 0,
+  "final_media_approved": false,
+  "script_sha256": "1258a774d97f549a672874adb09f6d2c75c7032a059fe665154cde01b07c04b3"
+}

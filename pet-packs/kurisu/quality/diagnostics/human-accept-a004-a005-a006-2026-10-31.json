@@ -1,0 +1,130 @@
+{
+  "operation_id": "human-accept-a004-a005-a006-2026-10-31T04-48-51.392239+00-00",
+  "at": "2026-10-31T04:48:51.392239+00:00",
+  "user_quote": "04，05，06通过",
+  "approval_basis": "human",
+  "actions": [
+    {
+      "id": "a004",
+      "sha256": "2c3e714a9418d53395de459e89299233f823936a682ff50e64088f63754cb1d8",
+      "source_file": "source/library/withdrawn/a004/2c3e714a9418d533/点击回应-傲娇.webm",
+      "verification": {
+        "width": 640,
+        "height": 360,
+        "fps": 24,
+        "frames": 240,
+        "duration_seconds": 10.0,
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "first_box": [
+          217,
+          60,
+          431,
+          330
+        ],
+        "last_box": [
+          217,
+          60,
+          431,
+          329
+        ],
+        "audio_streams": 0,
+        "codec": "vp9",
+        "all_frames_have_alpha": true,
+        "endpoint_geometry": {
+          "feet_delta_px": -1,
+          "height_delta_px": -1
+        },
+        "background_clear": true,
+        "endpoint_rgba_mean_absolute_difference": 2.3051112829981535,
+        "transparent_fraction": 0.8230625180844907
+      }
+    },
+    {
+      "id": "a005",
+      "sha256": "bdf17c8b2df35991297ae1a998132cd9edaa38c48f9a900fa4e0b3d93c2401d0",
+      "source_file": "source/library/withdrawn/a005/bdf17c8b2df35991/点击回应-开心挥手.webm",
+      "verification": {
+        "width": 640,
+        "height": 360,
+        "fps": 24,
+        "frames": 240,
+        "duration_seconds": 10.0,
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "first_box": [
+          216,
+          58,
+          432,
+          330
+        ],
+        "last_box": [
+          217,
+          60,
+          432,
+          330
+        ],
+        "audio_streams": 0,
+        "codec": "vp9",
+        "all_frames_have_alpha": true,
+        "endpoint_geometry": {
+          "feet_delta_px": 0,
+          "height_delta_px": -2
+        },
+        "background_clear": true,
+        "endpoint_rgba_mean_absolute_difference": 24.184663056558364,
+        "transparent_fraction": 0.8177575412326389
+      }
+    },
+    {
+      "id": "a006",
+      "sha256": "2068984d756db5f177bd209675170168da56ee8c0b37ebbaba88f59c04167bb0",
+      "source_file": "source/library/withdrawn/a006/2068984d756db5f1/点击回应-害羞捂脸.webm",
+      "verification": {
+        "width": 640,
+        "height": 360,
+        "fps": 24,
+        "frames": 240,
+        "duration_seconds": 10.0,
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "first_box": [
+          217,
+          60,
+          431,
+          330
+        ],
+        "last_box": [
+          217,
+          60,
+          431,
+          330
+        ],
+        "audio_streams": 0,
+        "codec": "vp9",
+        "all_frames_have_alpha": true,
+        "endpoint_geometry": {
+          "feet_delta_px": 0,
+          "height_delta_px": 0
+        },
+        "background_clear": true,
+        "endpoint_rgba_mean_absolute_difference": 2.0981030577576445,
+        "transparent_fraction": 0.820160716869213
+      }
+    }
+  ],
+  "calls_unchanged": {
+    "calls": 112,
+    "repairs": 27,
+    "other_model_calls": 19
+  },
+  "approved_ids": [
+    "a001",
+    "a002",
+    "a004",
+    "a005",
+    "a006",
+    "a103"
+  ],
+  "historical_withdrawals_preserved": true
+}

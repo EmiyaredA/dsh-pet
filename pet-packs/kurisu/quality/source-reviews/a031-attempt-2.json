@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "action_id": "a031",
+  "attempt_index": 2,
+  "spec_revision_id": "programmer-research-v2-2026-10-31",
+  "spec_action_name": "伏案敲代码",
+  "source_file": "source/library/a031/attempt-2/伏案敲代码.mp4",
+  "source_sha256": "c4e95914b4a911dcc571b418c66d937ab6dad86f82dd2bb776fcf7e6530cac0b",
+  "source_task_id": "d0af125b-53b0-4995-bac4-b213d33b2b66",
+  "reviewer": "root independent source integration review",
+  "reviewed_at": "2026-10-31T10:00:14.802550+00:00",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "processing_clearance": "reject",
+  "final_media_approved": false,
+  "summary": "Uniform green and plain gray outward laptop lid are correct, but the large high lid obscures the mouth/nose throughout the sampled typing phase. Current prompt specifically asks a low waist-height lid and visible face. Record a first-pass composition failure and continue other actions; no pixel erase or inherited a052 user acceptance.",
+  "defects": [
+    {
+      "severity": "review",
+      "type": "high_laptop_occludes_lower_face",
+      "frames": [
+        96,
+        144
+      ],
+      "description": "The laptop top reaches directly below the eyes and hides mouth/nose. This is original-source composition, not a matting residue or color change. Known accepted a052 SHA is a separate explicit human exception."
+    }
+  ],
+  "inspection_scope": {
+    "native_original_frames_personally_viewed": [
+      0,
+      96,
+      144,
+      239
+    ],
+    "native_size": [
+      1344,
+      768
+    ],
+    "all240_background_metrics_reused": true,
+    "no_need_to_redecode_or_key_after_composition_rejection": true,
+    "continuous_source_playback_not_performed": true
+  },
+  "background_proof": {
+    "method": "all_frame_saturated_green_native_border_v2",
+    "passed": true,
+    "frames": 240,
+    "expected_frames": 240,
+    "failed_frame_count": 0,
+    "failed_frames": [],
+    "background_rgb_min": [
+      2.0,
+      229.0,
+      7.0
+    ],
+    "background_rgb_max": [
+      3.0,
+      234.0,
+      9.0
+    ],
+    "maximum_spatial_delta": 9.0,
+    "maximum_temporal_delta": 3.0,
+    "thresholds": {
+      "dominant_min": 180,
+      "other_channels_max": 100,
+      "dominance_min": 100,
+      "spatial_delta_max": 35,
+      "temporal_delta_max": 24
+    },
+    "expected_background": "#00FF00",
+    "white_matte_fallback": false,
+    "visual_foreground_review_required": true,
+    "enclosed_background_and_foreground_verified": false,
+    "native_size": [
+      1344,
+      768
+    ],
+    "boundary_pixels_per_frame": 4224,
+    "measurement": "native_one_pixel_outer_boundary_no_spatial_resampling",
+    "sampling": {
+      "duration_seconds": 10,
+      "fps": 24,
+      "expected_frames": 240
+    }
+  },
+  "evidence_manifest": "quality/evidence/batch30-firstpass/a031/attempt-2/manifest.json",
+  "no_new_paid_calls": true,
+  "no_local_repair": true,
+  "one_correction_may_be_considered_after_full30_firstpasses": true
+}

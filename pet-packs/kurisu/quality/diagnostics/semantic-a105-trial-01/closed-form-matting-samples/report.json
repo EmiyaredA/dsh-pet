@@ -1,0 +1,527 @@
+{
+  "created_at": "2026-10-31T01:39:51.962123+00:00",
+  "scope": "six frames only same authorized a105 semantic trial; no model inference",
+  "source_sha256": "5460f738fa8678600fc5d37fc4334e551deec03c013db41b0242c58059b13aac",
+  "parent_intersection_sha256": "f30d57062c1aa627d55a3f3585c8fd66b5f9c577d8d1eba6f780f314dd7c9b4f",
+  "method": "unchanged official rembg.bg.alpha_matting_cutout with cached original isnet-anime Alpha mask, CF alpha estimate+ML foreground; copy source RGB in known foreground/background, only unknown RGB estimated",
+  "parameters": {
+    "foreground_threshold_strict_greater_than": 240,
+    "background_threshold_strict_less_than": 10,
+    "erode_structure_size": 10,
+    "trimap_seed_structure": "10x10 ones square (official implementation, not final-alpha erosion)",
+    "foreground_seed_Alpha": 255,
+    "background_seed_Alpha": 0
+  },
+  "original_semantic_alpha_preserved_in_full": false,
+  "hard_foreground_alpha_fixed_to255_not_original_softmask": true,
+  "no_white_RGB_threshold_or_repainting": true,
+  "no_final_alpha_morphology": true,
+  "no_new_inference_or_model_download": true,
+  "records": [
+    {
+      "frame": 0,
+      "solver_seconds": 0.443,
+      "known_foreground_pixels": 119132,
+      "known_background_pixels": 880058,
+      "unknown_pixels": 33002,
+      "known_foreground_RGB_exact_original": true,
+      "known_foreground_alpha_exact255": true,
+      "known_background_RGB_exact_original": true,
+      "known_background_alpha_exact0": true,
+      "unknown_alpha_delta_vs_intersection_range": [
+        -65,
+        240
+      ],
+      "alpha_changed_pixels_vs_intersection": 143883,
+      "alpha_changed_pixels_inside_hard_FG_vs_intersection": 119131,
+      "RGB_delta_max": 253,
+      "visible_RGB_delta_p95": 20.0,
+      "alpha_weighted_RGB_delta_max": 76.98039215686273,
+      "wall_seconds": 0.621
+    },
+    {
+      "frame": 24,
+      "solver_seconds": 0.314,
+      "known_foreground_pixels": 120038,
+      "known_background_pixels": 879235,
+      "unknown_pixels": 32919,
+      "known_foreground_RGB_exact_original": true,
+      "known_foreground_alpha_exact255": true,
+      "known_background_RGB_exact_original": true,
+      "known_background_alpha_exact0": true,
+      "unknown_alpha_delta_vs_intersection_range": [
+        -225,
+        229
+      ],
+      "alpha_changed_pixels_vs_intersection": 147200,
+      "alpha_changed_pixels_inside_hard_FG_vs_intersection": 120036,
+      "RGB_delta_max": 255,
+      "visible_RGB_delta_p95": 71.0,
+      "alpha_weighted_RGB_delta_max": 74.96470588235294,
+      "wall_seconds": 0.483
+    },
+    {
+      "frame": 72,
+      "solver_seconds": 0.268,
+      "known_foreground_pixels": 121561,
+      "known_background_pixels": 876671,
+      "unknown_pixels": 33960,
+      "known_foreground_RGB_exact_original": true,
+      "known_foreground_alpha_exact255": true,
+      "known_background_RGB_exact_original": true,
+      "known_background_alpha_exact0": true,
+      "unknown_alpha_delta_vs_intersection_range": [
+        -196,
+        246
+      ],
+      "alpha_changed_pixels_vs_intersection": 149594,
+      "alpha_changed_pixels_inside_hard_FG_vs_intersection": 121560,
+      "RGB_delta_max": 255,
+      "visible_RGB_delta_p95": 61.0,
+      "alpha_weighted_RGB_delta_max": 70.35294117647058,
+      "wall_seconds": 0.457
+    },
+    {
+      "frame": 120,
+      "solver_seconds": 0.27,
+      "known_foreground_pixels": 119906,
+      "known_background_pixels": 878001,
+      "unknown_pixels": 34285,
+      "known_foreground_RGB_exact_original": true,
+      "known_foreground_alpha_exact255": true,
+      "known_background_RGB_exact_original": true,
+      "known_background_alpha_exact0": true,
+      "unknown_alpha_delta_vs_intersection_range": [
+        -183,
+        245
+      ],
+      "alpha_changed_pixels_vs_intersection": 149392,
+      "alpha_changed_pixels_inside_hard_FG_vs_intersection": 119905,
+      "RGB_delta_max": 255,
+      "visible_RGB_delta_p95": 121.0,
+      "alpha_weighted_RGB_delta_max": 71.52941176470588,
+      "wall_seconds": 0.459
+    },
+    {
+      "frame": 192,
+      "solver_seconds": 0.267,
+      "known_foreground_pixels": 121091,
+      "known_background_pixels": 877200,
+      "unknown_pixels": 33901,
+      "known_foreground_RGB_exact_original": true,
+      "known_foreground_alpha_exact255": true,
+      "known_background_RGB_exact_original": true,
+      "known_background_alpha_exact0": true,
+      "unknown_alpha_delta_vs_intersection_range": [
+        -142,
+        234
+      ],
+      "alpha_changed_pixels_vs_intersection": 149491,
+      "alpha_changed_pixels_inside_hard_FG_vs_intersection": 121089,
+      "RGB_delta_max": 255,
+      "visible_RGB_delta_p95": 70.0,
+      "alpha_weighted_RGB_delta_max": 72.7843137254902,
+      "wall_seconds": 0.454
+    },
+    {
+      "frame": 239,
+      "solver_seconds": 0.259,
+      "known_foreground_pixels": 121004,
+      "known_background_pixels": 876899,
+      "unknown_pixels": 34289,
+      "known_foreground_RGB_exact_original": true,
+      "known_foreground_alpha_exact255": true,
+      "known_background_RGB_exact_original": true,
+      "known_background_alpha_exact0": true,
+      "unknown_alpha_delta_vs_intersection_range": [
+        -150,
+        239
+      ],
+      "alpha_changed_pixels_vs_intersection": 149901,
+      "alpha_changed_pixels_inside_hard_FG_vs_intersection": 121002,
+      "RGB_delta_max": 255,
+      "visible_RGB_delta_p95": 72.0,
+      "alpha_weighted_RGB_delta_max": 73.05882352941177,
+      "wall_seconds": 0.455
+    }
+  ],
+  "failure": null,
+  "status": "STOP_VISUAL_REGRESSION_GREEN_NEGATIVE_SPACES",
+  "final_media_approved": false,
+  "counts_toward_106": false,
+  "script_sha256": "cbb4504cb19636ba8c376a8f01da0c61102509aa2f7156da790b0f3b73127548",
+  "visual_review": {
+    "frames_personally_compared": [
+      0,
+      24,
+      120
+    ],
+    "views": [
+      "native640 dark f0",
+      "native640 blue f24/f120"
+    ],
+    "finding": "f0 has conspicuous green filled hair negative spaces compared with intersection baseline; fail even though hard-core constraints hold",
+    "no_claim": "No all240 semantic safety or playback review. Do not infer that seed erosion is final foreground erosion."
+  },
+  "f0_green_reappearance": {
+    "predicate_for_measurement_only": "CF alpha>127, intersection alpha<64, CF G>max(R,B)+40",
+    "native_pixel_count": 913,
+    "components": [
+      {
+        "box_xywh": [
+          513,
+          314,
+          3,
+          6
+        ],
+        "area": 9,
+        "example_xy": [
+          514,
+          316
+        ],
+        "original_RGBA": [
+          87,
+          244,
+          94,
+          22
+        ],
+        "intersection_RGBA": [
+          87,
+          244,
+          94,
+          0
+        ],
+        "CF_RGBA": [
+          102,
+          180,
+          105,
+          146
+        ],
+        "trimap_value": 128
+      },
+      {
+        "box_xywh": [
+          512,
+          322,
+          2,
+          6
+        ],
+        "area": 6,
+        "example_xy": [
+          512,
+          325
+        ],
+        "original_RGBA": [
+          54,
+          195,
+          63,
+          15
+        ],
+        "intersection_RGBA": [
+          54,
+          195,
+          63,
+          0
+        ],
+        "CF_RGBA": [
+          60,
+          137,
+          63,
+          158
+        ],
+        "trimap_value": 128
+      },
+      {
+        "box_xywh": [
+          510,
+          332,
+          2,
+          4
+        ],
+        "area": 6,
+        "example_xy": [
+          511,
+          333
+        ],
+        "original_RGBA": [
+          0,
+          168,
+          0,
+          85
+        ],
+        "intersection_RGBA": [
+          0,
+          168,
+          0,
+          0
+        ],
+        "CF_RGBA": [
+          21,
+          62,
+          8,
+          139
+        ],
+        "trimap_value": 128
+      },
+      {
+        "box_xywh": [
+          504,
+          334,
+          2,
+          4
+        ],
+        "area": 5,
+        "example_xy": [
+          505,
+          336
+        ],
+        "original_RGBA": [
+          45,
+          227,
+          51,
+          0
+        ],
+        "intersection_RGBA": [
+          45,
+          227,
+          51,
+          0
+        ],
+        "CF_RGBA": [
+          63,
+          158,
+          62,
+          130
+        ],
+        "trimap_value": 128
+      },
+      {
+        "box_xywh": [
+          508,
+          339,
+          2,
+          5
+        ],
+        "area": 7,
+        "example_xy": [
+          508,
+          341
+        ],
+        "original_RGBA": [
+          54,
+          208,
+          64,
+          51
+        ],
+        "intersection_RGBA": [
+          54,
+          208,
+          64,
+          0
+        ],
+        "CF_RGBA": [
+          67,
+          163,
+          75,
+          149
+        ],
+        "trimap_value": 128
+      },
+      {
+        "box_xywh": [
+          506,
+          350,
+          2,
+          6
+        ],
+        "area": 8,
+        "example_xy": [
+          506,
+          352
+        ],
+        "original_RGBA": [
+          88,
+          175,
+          92,
+          18
+        ],
+        "intersection_RGBA": [
+          88,
+          175,
+          92,
+          18
+        ],
+        "CF_RGBA": [
+          87,
+          153,
+          83,
+          187
+        ],
+        "trimap_value": 128
+      },
+      {
+        "box_xywh": [
+          503,
+          358,
+          3,
+          6
+        ],
+        "area": 8,
+        "example_xy": [
+          504,
+          362
+        ],
+        "original_RGBA": [
+          66,
+          243,
+          73,
+          8
+        ],
+        "intersection_RGBA": [
+          66,
+          243,
+          73,
+          0
+        ],
+        "CF_RGBA": [
+          58,
+          128,
+          53,
+          131
+        ],
+        "trimap_value": 128
+      },
+      {
+        "box_xywh": [
+          816,
+          426,
+          26,
+          42
+        ],
+        "area": 381,
+        "example_xy": [
+          827,
+          448
+        ],
+        "original_RGBA": [
+          2,
+          249,
+          2,
+          1
+        ],
+        "intersection_RGBA": [
+          2,
+          249,
+          2,
+          0
+        ],
+        "CF_RGBA": [
+          4,
+          242,
+          3,
+          166
+        ],
+        "trimap_value": 128
+      },
+      {
+        "box_xywh": [
+          505,
+          447,
+          20,
+          25
+        ],
+        "area": 117,
+        "example_xy": [
+          517,
+          458
+        ],
+        "original_RGBA": [
+          8,
+          229,
+          22,
+          16
+        ],
+        "intersection_RGBA": [
+          8,
+          229,
+          22,
+          0
+        ],
+        "CF_RGBA": [
+          36,
+          181,
+          46,
+          139
+        ],
+        "trimap_value": 128
+      },
+      {
+        "box_xywh": [
+          840,
+          501,
+          10,
+          39
+        ],
+        "area": 222,
+        "example_xy": [
+          845,
+          522
+        ],
+        "original_RGBA": [
+          1,
+          255,
+          4,
+          2
+        ],
+        "intersection_RGBA": [
+          1,
+          255,
+          4,
+          0
+        ],
+        "CF_RGBA": [
+          1,
+          254,
+          4,
+          222
+        ],
+        "trimap_value": 128
+      },
+      {
+        "box_xywh": [
+          531,
+          534,
+          13,
+          30
+        ],
+        "area": 130,
+        "example_xy": [
+          533,
+          553
+        ],
+        "original_RGBA": [
+          61,
+          234,
+          60,
+          4
+        ],
+        "intersection_RGBA": [
+          61,
+          234,
+          60,
+          0
+        ],
+        "CF_RGBA": [
+          81,
+          203,
+          68,
+          159
+        ],
+        "trimap_value": 128
+      }
+    ]
+  },
+  "full_variant_created": false,
+  "decode_slot_released": true,
+  "completed_at": "2026-10-31T01:41:48.064485+00:00"
+}

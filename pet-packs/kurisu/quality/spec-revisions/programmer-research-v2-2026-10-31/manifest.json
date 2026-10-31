@@ -1,0 +1,691 @@
+{
+  "spec_revision_id": "programmer-research-v2-2026-10-31",
+  "at": "2026-10-31T06:35:34.165210+00:00",
+  "user_message_id": "01a1908d-f493-7621-b2ce-105402a4a118",
+  "user_quote_excerpt": "这 27 条状态重置为 planned 重新排队，不要动 a001–a029 和 a057 之后已通过验收的动作。",
+  "action_count": 27,
+  "actions": [
+    {
+      "action_id": "a030",
+      "name": "翻文档查资料",
+      "direction": "Turn a few pages of a tiny neutral-gray technical booklet, pause to compare two abstract diagrams and trace one line with a fingertip, then close and stow it. Keep the full figure centered at a fixed scale, with headwear and both shoes visible throughout. Perform compact upper-body gestures; only when this named action explicitly calls for sitting, a foot swing or an in-place gait may the legs move. No camera push/pull, tracking, framing change or travel toward or away from the viewer. All props are miniature, below the chin, then completely stowed; finish empty-handed in the reference stance. Any laptop screen and keyboard face HER; the camera sees only the plain matte gray exterior back lid and hinge. Any visible UI uses abstract marks/icons, no readable text or emitted light.",
+      "props": [
+        "tiny gray technical booklet with abstract diagrams"
+      ],
+      "framing_note": "全身固定镜头；括号中的半身/腰部以上指动作集中在上半身，不裁成半身景别。头饰、双手与双脚始终完整入画；不推拉、不跟拍，不离开画面。",
+      "baseline": {
+        "id": "programmer-research-v2-2026-10-31",
+        "authorized_at": "2026-10-31T06:30:24.932084+00:00",
+        "user_message_id": "01a1908d-f493-7621-b2ce-105402a4a118",
+        "baseline_attempt_count": 1,
+        "baseline_corrective_rounds_used": 0,
+        "max_corrective_rounds": 1,
+        "new_first_pass_required": true,
+        "current_paid_attempt_count": 0,
+        "current_corrective_rounds_used": 0,
+        "historical_usage_integrity": true
+      },
+      "old_spec_name": "翻阅论文",
+      "current_spec_calls": 0
+    },
+    {
+      "action_id": "a031",
+      "name": "伏案敲代码",
+      "direction": "Open a small gray laptop on a waist-high folding support, screen and keyboard facing her and back lid facing the viewer. Type two short focused bursts, pause to inspect her unseen screen, then close and stow the laptop and support. Keep the full figure centered at a fixed scale, with headwear and both shoes visible throughout. Perform compact upper-body gestures; only when this named action explicitly calls for sitting, a foot swing or an in-place gait may the legs move. No camera push/pull, tracking, framing change or travel toward or away from the viewer. All props are miniature, below the chin, then completely stowed; finish empty-handed in the reference stance. Any laptop screen and keyboard face HER; the camera sees only the plain matte gray exterior back lid and hinge. Any visible UI uses abstract marks/icons, no readable text or emitted light.",
+      "props": [
+        "gray laptop computer",
+        "waist-high folding support"
+      ],
+      "framing_note": "全身固定镜头；括号中的半身/腰部以上指动作集中在上半身，不裁成半身景别。头饰、双手与双脚始终完整入画；不推拉、不跟拍，不离开画面。",
+      "baseline": {
+        "id": "programmer-research-v2-2026-10-31",
+        "authorized_at": "2026-10-31T06:30:24.932084+00:00",
+        "user_message_id": "01a1908d-f493-7621-b2ce-105402a4a118",
+        "baseline_attempt_count": 1,
+        "baseline_corrective_rounds_used": 0,
+        "max_corrective_rounds": 1,
+        "new_first_pass_required": true,
+        "current_paid_attempt_count": 0,
+        "current_corrective_rounds_used": 0,
+        "historical_usage_integrity": true
+      },
+      "old_spec_name": "伏案敲代码",
+      "current_spec_calls": 0
+    },
+    {
+      "action_id": "a032",
+      "name": "检查试管（沿用原实验室镜头）",
+      "direction": "Take a small transparent test tube containing PALE AMBER liquid, hold it close to eye level without obscuring the face, tilt it gently to inspect, then lower and put it away. No green liquid.",
+      "props": [
+        "original miniature test tube laboratory cameo"
+      ],
+      "framing_note": "全身固定镜头；括号中的半身/腰部以上指动作集中在上半身，不裁成半身景别。头饰、双手与双脚始终完整入画；不推拉、不跟拍，不离开画面。",
+      "baseline": {
+        "id": "programmer-research-v2-2026-10-31",
+        "authorized_at": "2026-10-31T06:30:24.932084+00:00",
+        "user_message_id": "01a1908d-f493-7621-b2ce-105402a4a118",
+        "baseline_attempt_count": 1,
+        "baseline_corrective_rounds_used": 0,
+        "max_corrective_rounds": 1,
+        "new_first_pass_required": true,
+        "current_paid_attempt_count": 0,
+        "current_corrective_rounds_used": 0,
+        "historical_usage_integrity": true
+      },
+      "old_spec_name": "检查试管",
+      "current_spec_calls": 0
+    },
+    {
+      "action_id": "a033",
+      "name": "盯编译进度",
+      "direction": "Watch a small charcoal status card held at waist height as a row of static amber blocks fills once. Lean her head slightly with patient concentration, give a tiny relieved nod and stow the card. Keep the full figure centered at a fixed scale, with headwear and both shoes visible throughout. Perform compact upper-body gestures; only when this named action explicitly calls for sitting, a foot swing or an in-place gait may the legs move. No camera push/pull, tracking, framing change or travel toward or away from the viewer. All props are miniature, below the chin, then completely stowed; finish empty-handed in the reference stance. Any laptop screen and keyboard face HER; the camera sees only the plain matte gray exterior back lid and hinge. Any visible UI uses abstract marks/icons, no readable text or emitted light.",
+      "props": [
+        "charcoal compilation card with abstract amber progress blocks"
+      ],
+      "framing_note": "全身固定镜头；括号中的半身/腰部以上指动作集中在上半身，不裁成半身景别。头饰、双手与双脚始终完整入画；不推拉、不跟拍，不离开画面。",
+      "baseline": {
+        "id": "programmer-research-v2-2026-10-31",
+        "authorized_at": "2026-10-31T06:30:24.932084+00:00",
+        "user_message_id": "01a1908d-f493-7621-b2ce-105402a4a118",
+        "baseline_attempt_count": 1,
+        "baseline_corrective_rounds_used": 0,
+        "max_corrective_rounds": 1,
+        "new_first_pass_required": true,
+        "current_paid_attempt_count": 0,
+        "current_corrective_rounds_used": 0,
+        "historical_usage_integrity": true
+      },
+      "old_spec_name": "轻摇锥形瓶",
+      "current_spec_calls": 0
+    },
+    {
+      "action_id": "a034",
+      "name": "报错拍键盘（半身）",
+      "direction": "Set a tiny gray keyboard on a waist-high folding support. Notice one small static dark-red error square, frown briefly, give the keyboard one restrained palm tap using only her upper body, then exhale, compose herself and stow keyboard and support. Feet stay planted and the complete head and shoes stay in view. Keep the full figure centered at a fixed scale, with headwear and both shoes visible throughout. Perform compact upper-body gestures; only when this named action explicitly calls for sitting, a foot swing or an in-place gait may the legs move. No camera push/pull, tracking, framing change or travel toward or away from the viewer. All props are miniature, below the chin, then completely stowed; finish empty-handed in the reference stance. Any laptop screen and keyboard face HER; the camera sees only the plain matte gray exterior back lid and hinge. Any visible UI uses abstract marks/icons, no readable text or emitted light.",
+      "props": [
+        "small gray keyboard",
+        "waist-high folding support",
+        "static dark-red error square"
+      ],
+      "framing_note": "全身固定镜头；括号中的半身/腰部以上指动作集中在上半身，不裁成半身景别。头饰、双手与双脚始终完整入画；不推拉、不跟拍，不离开画面。",
+      "baseline": {
+        "id": "programmer-research-v2-2026-10-31",
+        "authorized_at": "2026-10-31T06:30:24.932084+00:00",
+        "user_message_id": "01a1908d-f493-7621-b2ce-105402a4a118",
+        "baseline_attempt_count": 1,
+        "baseline_corrective_rounds_used": 0,
+        "max_corrective_rounds": 1,
+        "new_first_pass_required": true,
+        "current_paid_attempt_count": 0,
+        "current_corrective_rounds_used": 0,
+        "historical_usage_integrity": true
+      },
+      "old_spec_name": "用移液器取样",
+      "current_spec_calls": 0
+    },
+    {
+      "action_id": "a035",
+      "name": "查看显微镜（沿用原实验室镜头）",
+      "direction": "Set a tiny ivory-and-gray microscope on a miniature compact support in front of her waist, lean her head a little toward the eyepiece to inspect, straighten, then put the compact equipment away.",
+      "props": [
+        "original miniature microscope laboratory cameo"
+      ],
+      "framing_note": "全身固定镜头；括号中的半身/腰部以上指动作集中在上半身，不裁成半身景别。头饰、双手与双脚始终完整入画；不推拉、不跟拍，不离开画面。",
+      "baseline": {
+        "id": "programmer-research-v2-2026-10-31",
+        "authorized_at": "2026-10-31T06:30:24.932084+00:00",
+        "user_message_id": "01a1908d-f493-7621-b2ce-105402a4a118",
+        "baseline_attempt_count": 1,
+        "baseline_corrective_rounds_used": 0,
+        "max_corrective_rounds": 1,
+        "new_first_pass_required": true,
+        "current_paid_attempt_count": 0,
+        "current_corrective_rounds_used": 0,
+        "historical_usage_integrity": true
+      },
+      "old_spec_name": "查看显微镜",
+      "current_spec_calls": 0
+    },
+    {
+      "action_id": "a036",
+      "name": "拿网兜追 bug",
+      "direction": "Hold a tiny gray mesh net and guide it through one short arc at waist height to catch a small amber mechanical bug toy moving only a few centimeters near her hands. Smile and stow toy and net without stepping away. Keep the full figure centered at a fixed scale, with headwear and both shoes visible throughout. Perform compact upper-body gestures; only when this named action explicitly calls for sitting, a foot swing or an in-place gait may the legs move. No camera push/pull, tracking, framing change or travel toward or away from the viewer. All props are miniature, below the chin, then completely stowed; finish empty-handed in the reference stance. Any laptop screen and keyboard face HER; the camera sees only the plain matte gray exterior back lid and hinge. Any visible UI uses abstract marks/icons, no readable text or emitted light.",
+      "props": [
+        "miniature gray mesh net",
+        "small amber mechanical bug toy"
+      ],
+      "framing_note": "全身固定镜头；括号中的半身/腰部以上指动作集中在上半身，不裁成半身景别。头饰、双手与双脚始终完整入画；不推拉、不跟拍，不离开画面。",
+      "baseline": {
+        "id": "programmer-research-v2-2026-10-31",
+        "authorized_at": "2026-10-31T06:30:24.932084+00:00",
+        "user_message_id": "01a1908d-f493-7621-b2ce-105402a4a118",
+        "baseline_attempt_count": 1,
+        "baseline_corrective_rounds_used": 0,
+        "max_corrective_rounds": 1,
+        "new_first_pass_required": true,
+        "current_paid_attempt_count": 0,
+        "current_corrective_rounds_used": 0,
+        "historical_usage_integrity": true
+      },
+      "old_spec_name": "调整迷你示波器",
+      "current_spec_calls": 0
+    },
+    {
+      "action_id": "a037",
+      "name": "对橡皮鸭讲代码",
+      "direction": "Hold a small yellow rubber duck below her chin, make two precise explanatory finger gestures toward it with a thoughtful expression, nod once as if understanding a solution, then stow it. Keep the full figure centered at a fixed scale, with headwear and both shoes visible throughout. Perform compact upper-body gestures; only when this named action explicitly calls for sitting, a foot swing or an in-place gait may the legs move. No camera push/pull, tracking, framing change or travel toward or away from the viewer. All props are miniature, below the chin, then completely stowed; finish empty-handed in the reference stance. Any laptop screen and keyboard face HER; the camera sees only the plain matte gray exterior back lid and hinge. Any visible UI uses abstract marks/icons, no readable text or emitted light.",
+      "props": [
+        "miniature yellow rubber duck"
+      ],
+      "framing_note": "全身固定镜头；括号中的半身/腰部以上指动作集中在上半身，不裁成半身景别。头饰、双手与双脚始终完整入画；不推拉、不跟拍，不离开画面。",
+      "baseline": {
+        "id": "programmer-research-v2-2026-10-31",
+        "authorized_at": "2026-10-31T06:30:24.932084+00:00",
+        "user_message_id": "01a1908d-f493-7621-b2ce-105402a4a118",
+        "baseline_attempt_count": 1,
+        "baseline_corrective_rounds_used": 0,
+        "max_corrective_rounds": 1,
+        "new_first_pass_required": true,
+        "current_paid_attempt_count": 0,
+        "current_corrective_rounds_used": 0,
+        "historical_usage_integrity": true
+      },
+      "old_spec_name": "拧紧实验旋钮",
+      "current_spec_calls": 0
+    },
+    {
+      "action_id": "a038",
+      "name": "翻 git log 找元凶",
+      "direction": "Scroll a tiny charcoal history card bearing stacked abstract amber lines, inspect one dark-red dot, point to it with a knowing expression and stow the card. Keep the full figure centered at a fixed scale, with headwear and both shoes visible throughout. Perform compact upper-body gestures; only when this named action explicitly calls for sitting, a foot swing or an in-place gait may the legs move. No camera push/pull, tracking, framing change or travel toward or away from the viewer. All props are miniature, below the chin, then completely stowed; finish empty-handed in the reference stance. Any laptop screen and keyboard face HER; the camera sees only the plain matte gray exterior back lid and hinge. Any visible UI uses abstract marks/icons, no readable text or emitted light.",
+      "props": [
+        "charcoal history card with abstract lines and a dark-red dot"
+      ],
+      "framing_note": "全身固定镜头；括号中的半身/腰部以上指动作集中在上半身，不裁成半身景别。头饰、双手与双脚始终完整入画；不推拉、不跟拍，不离开画面。",
+      "baseline": {
+        "id": "programmer-research-v2-2026-10-31",
+        "authorized_at": "2026-10-31T06:30:24.932084+00:00",
+        "user_message_id": "01a1908d-f493-7621-b2ce-105402a4a118",
+        "baseline_attempt_count": 1,
+        "baseline_corrective_rounds_used": 0,
+        "max_corrective_rounds": 1,
+        "new_first_pass_required": true,
+        "current_paid_attempt_count": 0,
+        "current_corrective_rounds_used": 0,
+        "historical_usage_integrity": true
+      },
+      "old_spec_name": "整理实验器材",
+      "current_spec_calls": 0
+    },
+    {
+      "action_id": "a039",
+      "name": "提交后松口气",
+      "direction": "Tap a miniature gray keyboard once on a waist-high folding support, pause, relax her shoulders and give a small closed-mouth sigh of relief, then stow keyboard and support. Keep the full figure centered at a fixed scale, with headwear and both shoes visible throughout. Perform compact upper-body gestures; only when this named action explicitly calls for sitting, a foot swing or an in-place gait may the legs move. No camera push/pull, tracking, framing change or travel toward or away from the viewer. All props are miniature, below the chin, then completely stowed; finish empty-handed in the reference stance. Any laptop screen and keyboard face HER; the camera sees only the plain matte gray exterior back lid and hinge. Any visible UI uses abstract marks/icons, no readable text or emitted light.",
+      "props": [
+        "small gray keyboard",
+        "waist-high folding support"
+      ],
+      "framing_note": "全身固定镜头；括号中的半身/腰部以上指动作集中在上半身，不裁成半身景别。头饰、双手与双脚始终完整入画；不推拉、不跟拍，不离开画面。",
+      "baseline": {
+        "id": "programmer-research-v2-2026-10-31",
+        "authorized_at": "2026-10-31T06:30:24.932084+00:00",
+        "user_message_id": "01a1908d-f493-7621-b2ce-105402a4a118",
+        "baseline_attempt_count": 1,
+        "baseline_corrective_rounds_used": 0,
+        "max_corrective_rounds": 1,
+        "new_first_pass_required": true,
+        "current_paid_attempt_count": 0,
+        "current_corrective_rounds_used": 0,
+        "historical_usage_integrity": true
+      },
+      "old_spec_name": "查看怀表",
+      "current_spec_calls": 0
+    },
+    {
+      "action_id": "a040",
+      "name": "合并冲突抱头",
+      "direction": "Inspect two small gray cards with crossing amber/red abstract strokes, place them low on a tiny waist support, briefly hold the sides of her head with an exasperated look, then calm down and stow all props. Keep the full figure centered at a fixed scale, with headwear and both shoes visible throughout. Perform compact upper-body gestures; only when this named action explicitly calls for sitting, a foot swing or an in-place gait may the legs move. No camera push/pull, tracking, framing change or travel toward or away from the viewer. All props are miniature, below the chin, then completely stowed; finish empty-handed in the reference stance. Any laptop screen and keyboard face HER; the camera sees only the plain matte gray exterior back lid and hinge. Any visible UI uses abstract marks/icons, no readable text or emitted light.",
+      "props": [
+        "two gray abstract conflict cards",
+        "waist-high support"
+      ],
+      "framing_note": "全身固定镜头；括号中的半身/腰部以上指动作集中在上半身，不裁成半身景别。头饰、双手与双脚始终完整入画；不推拉、不跟拍，不离开画面。",
+      "baseline": {
+        "id": "programmer-research-v2-2026-10-31",
+        "authorized_at": "2026-10-31T06:30:24.932084+00:00",
+        "user_message_id": "01a1908d-f493-7621-b2ce-105402a4a118",
+        "baseline_attempt_count": 1,
+        "baseline_corrective_rounds_used": 0,
+        "max_corrective_rounds": 1,
+        "new_first_pass_required": true,
+        "current_paid_attempt_count": 0,
+        "current_corrective_rounds_used": 0,
+        "historical_usage_integrity": true
+      },
+      "old_spec_name": "模拟时间旅行推演",
+      "current_spec_calls": 0
+    },
+    {
+      "action_id": "a041",
+      "name": "白板画架构图",
+      "direction": "Hold a tiny ivory diagram board below the chin and use a short dark marker to connect three charcoal boxes with two lines. Nod at the completed abstract architecture diagram, then stow board and marker. Keep the full figure centered at a fixed scale, with headwear and both shoes visible throughout. Perform compact upper-body gestures; only when this named action explicitly calls for sitting, a foot swing or an in-place gait may the legs move. No camera push/pull, tracking, framing change or travel toward or away from the viewer. All props are miniature, below the chin, then completely stowed; finish empty-handed in the reference stance. Any laptop screen and keyboard face HER; the camera sees only the plain matte gray exterior back lid and hinge. Any visible UI uses abstract marks/icons, no readable text or emitted light.",
+      "props": [
+        "small ivory diagram board",
+        "short dark marker"
+      ],
+      "framing_note": "全身固定镜头；括号中的半身/腰部以上指动作集中在上半身，不裁成半身景别。头饰、双手与双脚始终完整入画；不推拉、不跟拍，不离开画面。",
+      "baseline": {
+        "id": "programmer-research-v2-2026-10-31",
+        "authorized_at": "2026-10-31T06:30:24.932084+00:00",
+        "user_message_id": "01a1908d-f493-7621-b2ce-105402a4a118",
+        "baseline_attempt_count": 1,
+        "baseline_corrective_rounds_used": 0,
+        "max_corrective_rounds": 1,
+        "new_first_pass_required": true,
+        "current_paid_attempt_count": 0,
+        "current_corrective_rounds_used": 0,
+        "historical_usage_integrity": true
+      },
+      "old_spec_name": "摆弄迷你时钟",
+      "current_spec_calls": 0
+    },
+    {
+      "action_id": "a042",
+      "name": "左右核对 diff",
+      "direction": "Hold two small charcoal comparison cards at waist level, shift her gaze left then right between abstract amber/red line patterns, point once at a changed mark and stow both cards. Keep the full figure centered at a fixed scale, with headwear and both shoes visible throughout. Perform compact upper-body gestures; only when this named action explicitly calls for sitting, a foot swing or an in-place gait may the legs move. No camera push/pull, tracking, framing change or travel toward or away from the viewer. All props are miniature, below the chin, then completely stowed; finish empty-handed in the reference stance. Any laptop screen and keyboard face HER; the camera sees only the plain matte gray exterior back lid and hinge. Any visible UI uses abstract marks/icons, no readable text or emitted light.",
+      "props": [
+        "two charcoal diff cards with abstract amber/red lines"
+      ],
+      "framing_note": "全身固定镜头；括号中的半身/腰部以上指动作集中在上半身，不裁成半身景别。头饰、双手与双脚始终完整入画；不推拉、不跟拍，不离开画面。",
+      "baseline": {
+        "id": "programmer-research-v2-2026-10-31",
+        "authorized_at": "2026-10-31T06:30:24.932084+00:00",
+        "user_message_id": "01a1908d-f493-7621-b2ce-105402a4a118",
+        "baseline_attempt_count": 1,
+        "baseline_corrective_rounds_used": 0,
+        "max_corrective_rounds": 1,
+        "new_first_pass_required": true,
+        "current_paid_attempt_count": 0,
+        "current_corrective_rounds_used": 0,
+        "historical_usage_integrity": true
+      },
+      "old_spec_name": "画时间线草图",
+      "current_spec_calls": 0
+    },
+    {
+      "action_id": "a043",
+      "name": "往屏幕边贴便签",
+      "direction": "Set a tiny gray laptop below her chin with the screen facing her and plain back lid toward the viewer. Attach one pale-pink note to the edge of the lid, check it from her side, remove the note and stow the computer, note and support. Keep the full figure centered at a fixed scale, with headwear and both shoes visible throughout. Perform compact upper-body gestures; only when this named action explicitly calls for sitting, a foot swing or an in-place gait may the legs move. No camera push/pull, tracking, framing change or travel toward or away from the viewer. All props are miniature, below the chin, then completely stowed; finish empty-handed in the reference stance. Any laptop screen and keyboard face HER; the camera sees only the plain matte gray exterior back lid and hinge. Any visible UI uses abstract marks/icons, no readable text or emitted light.",
+      "props": [
+        "gray laptop computer",
+        "pale-pink blank note",
+        "waist-high support"
+      ],
+      "framing_note": "全身固定镜头；括号中的半身/腰部以上指动作集中在上半身，不裁成半身景别。头饰、双手与双脚始终完整入画；不推拉、不跟拍，不离开画面。",
+      "baseline": {
+        "id": "programmer-research-v2-2026-10-31",
+        "authorized_at": "2026-10-31T06:30:24.932084+00:00",
+        "user_message_id": "01a1908d-f493-7621-b2ce-105402a4a118",
+        "baseline_attempt_count": 1,
+        "baseline_corrective_rounds_used": 0,
+        "max_corrective_rounds": 1,
+        "new_first_pass_required": true,
+        "current_paid_attempt_count": 0,
+        "current_corrective_rounds_used": 0,
+        "historical_usage_integrity": true
+      },
+      "old_spec_name": "核对实验数据",
+      "current_spec_calls": 0
+    },
+    {
+      "action_id": "a044",
+      "name": "拆键盘换键帽（半身）",
+      "direction": "Place a tiny gray keyboard on a waist-high folding support, gently lift one amber keycap with a small gray puller, press the replacement into place, test it once and stow the keyboard, puller and support. All manipulation stays at waist height. Keep the full figure centered at a fixed scale, with headwear and both shoes visible throughout. Perform compact upper-body gestures; only when this named action explicitly calls for sitting, a foot swing or an in-place gait may the legs move. No camera push/pull, tracking, framing change or travel toward or away from the viewer. All props are miniature, below the chin, then completely stowed; finish empty-handed in the reference stance. Any laptop screen and keyboard face HER; the camera sees only the plain matte gray exterior back lid and hinge. Any visible UI uses abstract marks/icons, no readable text or emitted light.",
+      "props": [
+        "small gray keyboard",
+        "small gray keycap puller",
+        "one amber keycap",
+        "waist-high support"
+      ],
+      "framing_note": "全身固定镜头；括号中的半身/腰部以上指动作集中在上半身，不裁成半身景别。头饰、双手与双脚始终完整入画；不推拉、不跟拍，不离开画面。",
+      "baseline": {
+        "id": "programmer-research-v2-2026-10-31",
+        "authorized_at": "2026-10-31T06:30:24.932084+00:00",
+        "user_message_id": "01a1908d-f493-7621-b2ce-105402a4a118",
+        "baseline_attempt_count": 1,
+        "baseline_corrective_rounds_used": 0,
+        "max_corrective_rounds": 1,
+        "new_first_pass_required": true,
+        "current_paid_attempt_count": 0,
+        "current_corrective_rounds_used": 0,
+        "historical_usage_integrity": true
+      },
+      "old_spec_name": "用计算器验算",
+      "current_spec_calls": 0
+    },
+    {
+      "action_id": "a045",
+      "name": "戴耳机写码晃脚",
+      "direction": "Put on small charcoal headphones while sitting briefly on a compact gray stool at a tiny laptop support. Make a short typing gesture with the screen facing her, swing one foot gently without leaving the frame, then stand, remove headphones and stow every prop. Keep the full figure centered at a fixed scale, with headwear and both shoes visible throughout. Perform compact upper-body gestures; only when this named action explicitly calls for sitting, a foot swing or an in-place gait may the legs move. No camera push/pull, tracking, framing change or travel toward or away from the viewer. All props are miniature, below the chin, then completely stowed; finish empty-handed in the reference stance. Any laptop screen and keyboard face HER; the camera sees only the plain matte gray exterior back lid and hinge. Any visible UI uses abstract marks/icons, no readable text or emitted light.",
+      "props": [
+        "charcoal headphones",
+        "gray laptop computer",
+        "compact gray stool",
+        "waist-high support"
+      ],
+      "framing_note": "全身固定镜头；括号中的半身/腰部以上指动作集中在上半身，不裁成半身景别。头饰、双手与双脚始终完整入画；不推拉、不跟拍，不离开画面。",
+      "baseline": {
+        "id": "programmer-research-v2-2026-10-31",
+        "authorized_at": "2026-10-31T06:30:24.932084+00:00",
+        "user_message_id": "01a1908d-f493-7621-b2ce-105402a4a118",
+        "baseline_attempt_count": 1,
+        "baseline_corrective_rounds_used": 0,
+        "max_corrective_rounds": 1,
+        "new_first_pass_required": true,
+        "current_paid_attempt_count": 0,
+        "current_corrective_rounds_used": 0,
+        "historical_usage_integrity": true
+      },
+      "old_spec_name": "比对脑科学示意图",
+      "current_spec_calls": 0
+    },
+    {
+      "action_id": "a046",
+      "name": "凑近屏幕皱眉调试",
+      "direction": "Open a miniature gray laptop on a waist-high support, screen facing her. Lean only her head and shoulders slightly toward the unseen screen, frown in concentration, make one short touchpad adjustment, straighten and stow computer and support. Keep the full figure centered at a fixed scale, with headwear and both shoes visible throughout. Perform compact upper-body gestures; only when this named action explicitly calls for sitting, a foot swing or an in-place gait may the legs move. No camera push/pull, tracking, framing change or travel toward or away from the viewer. All props are miniature, below the chin, then completely stowed; finish empty-handed in the reference stance. Any laptop screen and keyboard face HER; the camera sees only the plain matte gray exterior back lid and hinge. Any visible UI uses abstract marks/icons, no readable text or emitted light.",
+      "props": [
+        "gray laptop computer",
+        "waist-high folding support"
+      ],
+      "framing_note": "全身固定镜头；括号中的半身/腰部以上指动作集中在上半身，不裁成半身景别。头饰、双手与双脚始终完整入画；不推拉、不跟拍，不离开画面。",
+      "baseline": {
+        "id": "programmer-research-v2-2026-10-31",
+        "authorized_at": "2026-10-31T06:30:24.932084+00:00",
+        "user_message_id": "01a1908d-f493-7621-b2ce-105402a4a118",
+        "baseline_attempt_count": 1,
+        "baseline_corrective_rounds_used": 0,
+        "max_corrective_rounds": 1,
+        "new_first_pass_required": true,
+        "current_paid_attempt_count": 0,
+        "current_corrective_rounds_used": 0,
+        "historical_usage_integrity": true
+      },
+      "old_spec_name": "观察原子模型",
+      "current_spec_calls": 0
+    },
+    {
+      "action_id": "a047",
+      "name": "插拔网线（腰部以上入画）",
+      "direction": "At waist height, connect a short muted-red network cable between a tiny gray laptop and a charcoal network box, disconnect it once and look satisfied. Keep both cable ends visible near her hands, then stow all props; head and shoes remain fully framed. Keep the full figure centered at a fixed scale, with headwear and both shoes visible throughout. Perform compact upper-body gestures; only when this named action explicitly calls for sitting, a foot swing or an in-place gait may the legs move. No camera push/pull, tracking, framing change or travel toward or away from the viewer. All props are miniature, below the chin, then completely stowed; finish empty-handed in the reference stance. Any laptop screen and keyboard face HER; the camera sees only the plain matte gray exterior back lid and hinge. Any visible UI uses abstract marks/icons, no readable text or emitted light.",
+      "props": [
+        "short muted-red network cable",
+        "tiny gray laptop computer",
+        "charcoal network box"
+      ],
+      "framing_note": "全身固定镜头；括号中的半身/腰部以上指动作集中在上半身，不裁成半身景别。头饰、双手与双脚始终完整入画；不推拉、不跟拍，不离开画面。",
+      "baseline": {
+        "id": "programmer-research-v2-2026-10-31",
+        "authorized_at": "2026-10-31T06:30:24.932084+00:00",
+        "user_message_id": "01a1908d-f493-7621-b2ce-105402a4a118",
+        "baseline_attempt_count": 1,
+        "baseline_corrective_rounds_used": 0,
+        "max_corrective_rounds": 1,
+        "new_first_pass_required": true,
+        "current_paid_attempt_count": 0,
+        "current_corrective_rounds_used": 0,
+        "historical_usage_integrity": true
+      },
+      "old_spec_name": "拼装小装置",
+      "current_spec_calls": 0
+    },
+    {
+      "action_id": "a048",
+      "name": "拍笔记本重启（半身）",
+      "direction": "Set a miniature gray laptop on a waist-high folding support, screen facing her and plain rear lid toward the viewer. Give the side of the laptop one small restrained palm pat, press one button near the hinge, wait briefly with a hopeful look, then close and stow computer and support. Keep the full figure centered at a fixed scale, with headwear and both shoes visible throughout. Perform compact upper-body gestures; only when this named action explicitly calls for sitting, a foot swing or an in-place gait may the legs move. No camera push/pull, tracking, framing change or travel toward or away from the viewer. All props are miniature, below the chin, then completely stowed; finish empty-handed in the reference stance. Any laptop screen and keyboard face HER; the camera sees only the plain matte gray exterior back lid and hinge. Any visible UI uses abstract marks/icons, no readable text or emitted light.",
+      "props": [
+        "gray laptop computer",
+        "waist-high folding support"
+      ],
+      "framing_note": "全身固定镜头；括号中的半身/腰部以上指动作集中在上半身，不裁成半身景别。头饰、双手与双脚始终完整入画；不推拉、不跟拍，不离开画面。",
+      "baseline": {
+        "id": "programmer-research-v2-2026-10-31",
+        "authorized_at": "2026-10-31T06:30:24.932084+00:00",
+        "user_message_id": "01a1908d-f493-7621-b2ce-105402a4a118",
+        "baseline_attempt_count": 1,
+        "baseline_corrective_rounds_used": 0,
+        "max_corrective_rounds": 1,
+        "new_first_pass_required": true,
+        "current_paid_attempt_count": 0,
+        "current_corrective_rounds_used": 0,
+        "historical_usage_integrity": true
+      },
+      "old_spec_name": "调试迷你机器人",
+      "current_spec_calls": 0
+    },
+    {
+      "action_id": "a049",
+      "name": "转笔想方案",
+      "direction": "Rotate a short gray pen once between her fingers at chest height, pause with a thoughtful head tilt, make a small idea nod and stow the pen. Keep the full figure centered at a fixed scale, with headwear and both shoes visible throughout. Perform compact upper-body gestures; only when this named action explicitly calls for sitting, a foot swing or an in-place gait may the legs move. No camera push/pull, tracking, framing change or travel toward or away from the viewer. All props are miniature, below the chin, then completely stowed; finish empty-handed in the reference stance. Any laptop screen and keyboard face HER; the camera sees only the plain matte gray exterior back lid and hinge. Any visible UI uses abstract marks/icons, no readable text or emitted light.",
+      "props": [
+        "short gray pen"
+      ],
+      "framing_note": "全身固定镜头；括号中的半身/腰部以上指动作集中在上半身，不裁成半身景别。头饰、双手与双脚始终完整入画；不推拉、不跟拍，不离开画面。",
+      "baseline": {
+        "id": "programmer-research-v2-2026-10-31",
+        "authorized_at": "2026-10-31T06:30:24.932084+00:00",
+        "user_message_id": "01a1908d-f493-7621-b2ce-105402a4a118",
+        "baseline_attempt_count": 1,
+        "baseline_corrective_rounds_used": 0,
+        "max_corrective_rounds": 1,
+        "new_first_pass_required": true,
+        "current_paid_attempt_count": 0,
+        "current_corrective_rounds_used": 0,
+        "historical_usage_integrity": true
+      },
+      "old_spec_name": "拆开实验器材盒",
+      "current_spec_calls": 0
+    },
+    {
+      "action_id": "a050",
+      "name": "被催进度看表",
+      "direction": "React to an imagined prompt with a brief guilty glance toward the viewer, inspect a small plain gray wristwatch, look back with a composed small nod and lower her hands. Keep the full figure centered at a fixed scale, with headwear and both shoes visible throughout. Perform compact upper-body gestures; only when this named action explicitly calls for sitting, a foot swing or an in-place gait may the legs move. No camera push/pull, tracking, framing change or travel toward or away from the viewer. All props are miniature, below the chin, then completely stowed; finish empty-handed in the reference stance. Any laptop screen and keyboard face HER; the camera sees only the plain matte gray exterior back lid and hinge. Any visible UI uses abstract marks/icons, no readable text or emitted light.",
+      "props": [
+        "small gray wristwatch with abstract face"
+      ],
+      "framing_note": "全身固定镜头；括号中的半身/腰部以上指动作集中在上半身，不裁成半身景别。头饰、双手与双脚始终完整入画；不推拉、不跟拍，不离开画面。",
+      "baseline": {
+        "id": "programmer-research-v2-2026-10-31",
+        "authorized_at": "2026-10-31T06:30:24.932084+00:00",
+        "user_message_id": "01a1908d-f493-7621-b2ce-105402a4a118",
+        "baseline_attempt_count": 1,
+        "baseline_corrective_rounds_used": 0,
+        "max_corrective_rounds": 1,
+        "new_first_pass_required": true,
+        "current_paid_attempt_count": 0,
+        "current_corrective_rounds_used": 0,
+        "historical_usage_integrity": true
+      },
+      "old_spec_name": "专心玩魔方",
+      "current_spec_calls": 0
+    },
+    {
+      "action_id": "a051",
+      "name": "摸鱼刷手机被抓",
+      "direction": "Hold a tiny charcoal phone low at the waist, make two small scrolling gestures, notice the viewer and freeze with a shy embarrassed look, then quickly stow the phone and return to a neutral stance. Keep the full figure centered at a fixed scale, with headwear and both shoes visible throughout. Perform compact upper-body gestures; only when this named action explicitly calls for sitting, a foot swing or an in-place gait may the legs move. No camera push/pull, tracking, framing change or travel toward or away from the viewer. All props are miniature, below the chin, then completely stowed; finish empty-handed in the reference stance. Any laptop screen and keyboard face HER; the camera sees only the plain matte gray exterior back lid and hinge. Any visible UI uses abstract marks/icons, no readable text or emitted light.",
+      "props": [
+        "small charcoal phone with abstract amber shapes"
+      ],
+      "framing_note": "全身固定镜头；括号中的半身/腰部以上指动作集中在上半身，不裁成半身景别。头饰、双手与双脚始终完整入画；不推拉、不跟拍，不离开画面。",
+      "baseline": {
+        "id": "programmer-research-v2-2026-10-31",
+        "authorized_at": "2026-10-31T06:30:24.932084+00:00",
+        "user_message_id": "01a1908d-f493-7621-b2ce-105402a4a118",
+        "baseline_attempt_count": 1,
+        "baseline_corrective_rounds_used": 0,
+        "max_corrective_rounds": 1,
+        "new_first_pass_required": true,
+        "current_paid_attempt_count": 0,
+        "current_corrective_rounds_used": 0,
+        "historical_usage_integrity": true
+      },
+      "old_spec_name": "下五子棋",
+      "current_spec_calls": 0
+    },
+    {
+      "action_id": "a052",
+      "name": "CI 绿灯比耶",
+      "direction": "Hold a small charcoal CI status card at waist height with one static GREEN painted check mark. Notice the successful check, smile and make a compact V sign with the other hand near her chest, then lower the hand and completely stow the card. The green check is flat ink, not light, and stays on the card. Keep the full figure centered at a fixed scale, with headwear and both shoes visible throughout. Perform compact upper-body gestures; only when this named action explicitly calls for sitting, a foot swing or an in-place gait may the legs move. No camera push/pull, tracking, framing change or travel toward or away from the viewer. All props are miniature, below the chin, then completely stowed; finish empty-handed in the reference stance. Any laptop screen and keyboard face HER; the camera sees only the plain matte gray exterior back lid and hinge. Any visible UI uses abstract marks/icons, no readable text or emitted light.",
+      "props": [
+        "small charcoal CI status card",
+        "static non-emissive GREEN check mark; BLUE background required"
+      ],
+      "framing_note": "全身固定镜头；括号中的半身/腰部以上指动作集中在上半身，不裁成半身景别。头饰、双手与双脚始终完整入画；不推拉、不跟拍，不离开画面。",
+      "baseline": {
+        "id": "programmer-research-v2-2026-10-31",
+        "authorized_at": "2026-10-31T06:30:24.932084+00:00",
+        "user_message_id": "01a1908d-f493-7621-b2ce-105402a4a118",
+        "baseline_attempt_count": 1,
+        "baseline_corrective_rounds_used": 0,
+        "max_corrective_rounds": 1,
+        "new_first_pass_required": true,
+        "current_paid_attempt_count": 0,
+        "current_corrective_rounds_used": 0,
+        "historical_usage_integrity": true
+      },
+      "old_spec_name": "玩掌机不服输",
+      "current_spec_calls": 0
+    },
+    {
+      "action_id": "a053",
+      "name": "CI 红了瘫椅子",
+      "direction": "Inspect a small charcoal status card with one static dark-red cross, sit briefly on a compact gray chair and slump her shoulders in comic disappointment while both shoes remain visible. Recover, stand, stow card and chair and restore the neutral stance. Keep the full figure centered at a fixed scale, with headwear and both shoes visible throughout. Perform compact upper-body gestures; only when this named action explicitly calls for sitting, a foot swing or an in-place gait may the legs move. No camera push/pull, tracking, framing change or travel toward or away from the viewer. All props are miniature, below the chin, then completely stowed; finish empty-handed in the reference stance. Any laptop screen and keyboard face HER; the camera sees only the plain matte gray exterior back lid and hinge. Any visible UI uses abstract marks/icons, no readable text or emitted light.",
+      "props": [
+        "charcoal CI card with static dark-red cross",
+        "compact gray chair"
+      ],
+      "framing_note": "全身固定镜头；括号中的半身/腰部以上指动作集中在上半身，不裁成半身景别。头饰、双手与双脚始终完整入画；不推拉、不跟拍，不离开画面。",
+      "baseline": {
+        "id": "programmer-research-v2-2026-10-31",
+        "authorized_at": "2026-10-31T06:30:24.932084+00:00",
+        "user_message_id": "01a1908d-f493-7621-b2ce-105402a4a118",
+        "baseline_attempt_count": 1,
+        "baseline_corrective_rounds_used": 0,
+        "max_corrective_rounds": 1,
+        "new_first_pass_required": true,
+        "current_paid_attempt_count": 0,
+        "current_corrective_rounds_used": 0,
+        "historical_usage_integrity": true
+      },
+      "old_spec_name": "逗灰猫",
+      "current_spec_calls": 0
+    },
+    {
+      "action_id": "a054",
+      "name": "上线成功举手",
+      "direction": "Check a small charcoal release card with one static amber confirmation circle, give one compact celebratory hand lift no higher than the existing ear tips, smile and stow the card before returning both hands to neutral. Keep the full figure centered at a fixed scale, with headwear and both shoes visible throughout. Perform compact upper-body gestures; only when this named action explicitly calls for sitting, a foot swing or an in-place gait may the legs move. No camera push/pull, tracking, framing change or travel toward or away from the viewer. All props are miniature, below the chin, then completely stowed; finish empty-handed in the reference stance. Any laptop screen and keyboard face HER; the camera sees only the plain matte gray exterior back lid and hinge. Any visible UI uses abstract marks/icons, no readable text or emitted light.",
+      "props": [
+        "charcoal release card with static amber icon"
+      ],
+      "framing_note": "全身固定镜头；括号中的半身/腰部以上指动作集中在上半身，不裁成半身景别。头饰、双手与双脚始终完整入画；不推拉、不跟拍，不离开画面。",
+      "baseline": {
+        "id": "programmer-research-v2-2026-10-31",
+        "authorized_at": "2026-10-31T06:30:24.932084+00:00",
+        "user_message_id": "01a1908d-f493-7621-b2ce-105402a4a118",
+        "baseline_attempt_count": 1,
+        "baseline_corrective_rounds_used": 0,
+        "max_corrective_rounds": 1,
+        "new_first_pass_required": true,
+        "current_paid_attempt_count": 0,
+        "current_corrective_rounds_used": 0,
+        "historical_usage_integrity": true
+      },
+      "old_spec_name": "指尖转笔",
+      "current_spec_calls": 0
+    },
+    {
+      "action_id": "a055",
+      "name": "打卡拎包跑",
+      "direction": "Tap a small gray attendance card to a tiny charcoal reader at waist height, stow the card and reader, pick up a small brown work bag and turn into a strict SCREEN-LEFT SIDE PROFILE, with nose, chest, hips, knees and shoe toes all pointing left and only the near eye visible. Take three tiny jogging steps LEFT IN PLACE, keeping full headwear and shoes in frame at a fixed center and scale. Rightward display is the runtime mirror of this left-facing gesture, never frontal marching or travel toward/away from the viewer. Stop, turn back to FRONT and stow the bag, restoring the planted neutral stance. Keep the full figure centered at a fixed scale, with headwear and both shoes visible throughout. Perform compact upper-body gestures; only when this named action explicitly calls for sitting, a foot swing or an in-place gait may the legs move. No camera push/pull, tracking, framing change or travel toward or away from the viewer. All props are miniature, below the chin, then completely stowed; finish empty-handed in the reference stance. Any laptop screen and keyboard face HER; the camera sees only the plain matte gray exterior back lid and hinge. Any visible UI uses abstract marks/icons, no readable text or emitted light.",
+      "props": [
+        "small gray attendance card",
+        "tiny charcoal reader",
+        "small brown work bag"
+      ],
+      "framing_note": "全身固定镜头；括号中的半身/腰部以上指动作集中在上半身，不裁成半身景别。头饰、双手与双脚始终完整入画；不推拉、不跟拍，不离开画面。",
+      "baseline": {
+        "id": "programmer-research-v2-2026-10-31",
+        "authorized_at": "2026-10-31T06:30:24.932084+00:00",
+        "user_message_id": "01a1908d-f493-7621-b2ce-105402a4a118",
+        "baseline_attempt_count": 1,
+        "baseline_corrective_rounds_used": 0,
+        "max_corrective_rounds": 1,
+        "new_first_pass_required": true,
+        "current_paid_attempt_count": 0,
+        "current_corrective_rounds_used": 0,
+        "historical_usage_integrity": true
+      },
+      "old_spec_name": "轻快女仆舞",
+      "current_spec_calls": 0
+    },
+    {
+      "action_id": "a056",
+      "name": "瘫着怀疑人生",
+      "direction": "Sit briefly on a compact gray chair, let her shoulders droop and stare ahead with a tiny deadpan expression. Blink slowly, straighten, stand up, stow the chair and return to the empty-handed neutral stance. Keep the full figure centered at a fixed scale, with headwear and both shoes visible throughout. Perform compact upper-body gestures; only when this named action explicitly calls for sitting, a foot swing or an in-place gait may the legs move. No camera push/pull, tracking, framing change or travel toward or away from the viewer. All props are miniature, below the chin, then completely stowed; finish empty-handed in the reference stance. Any laptop screen and keyboard face HER; the camera sees only the plain matte gray exterior back lid and hinge. Any visible UI uses abstract marks/icons, no readable text or emitted light.",
+      "props": [
+        "compact gray chair"
+      ],
+      "framing_note": "全身固定镜头；括号中的半身/腰部以上指动作集中在上半身，不裁成半身景别。头饰、双手与双脚始终完整入画；不推拉、不跟拍，不离开画面。",
+      "baseline": {
+        "id": "programmer-research-v2-2026-10-31",
+        "authorized_at": "2026-10-31T06:30:24.932084+00:00",
+        "user_message_id": "01a1908d-f493-7621-b2ce-105402a4a118",
+        "baseline_attempt_count": 1,
+        "baseline_corrective_rounds_used": 0,
+        "max_corrective_rounds": 1,
+        "new_first_pass_required": true,
+        "current_paid_attempt_count": 0,
+        "current_corrective_rounds_used": 0,
+        "historical_usage_integrity": true
+      },
+      "old_spec_name": "接住滑落的笔记本",
+      "current_spec_calls": 0
+    }
+  ],
+  "root_framing_clarifications": [],
+  "sample_gate": {
+    "spec_revision_id": "programmer-research-v2-2026-10-31",
+    "enabled": true,
+    "sample_action_ids": [
+      "a034",
+      "a052"
+    ],
+    "batch_released": false,
+    "sample_decisions": {},
+    "require_current_spec_sha_bound_user_and_assistant": true,
+    "created_at": "2026-10-31T06:30:24.932084+00:00",
+    "user_message_id": "01a1908d-f493-7621-b2ce-105402a4a118",
+    "reason": "Onlya034/a052samplesfirst; other25cannotqueueuntilbothareexplicitlyacceptedbyhumanandassistant"
+  },
+  "production_coverage": {
+    "source_action_count": 99,
+    "approved_count": 11,
+    "active_generation_count": 0,
+    "target": 106,
+    "historical_source_action_count": 99,
+    "current_spec_source_action_count": 72,
+    "superseded_only_source_action_count": 27,
+    "note": "Historical raw files remain; superseded research sources do not complete the new programmer specifications."
+  },
+  "counts_unchanged": {
+    "calls": 125,
+    "repairs": 27,
+    "other_model_calls": 32
+  },
+  "formal_pet_config_sha256_unchanged": "f90400ed93fdea10b700c0741c0b835bcb234c74377cd3bac01767104639cc54",
+  "physical_media_unchanged": true,
+  "all_other_actions_preserved": true,
+  "paid_calls_added": 0,
+  "global_budget_not_extended": true,
+  "only_per_action_paid_caps_audited": true,
+  "user_request_file": "quality/spec-revisions/programmer-research-v2-2026-10-31/user-request.json",
+  "user_request_file_sha256": "83b2c175cd46bd40bcada489350749f39caa514a6c10ecad9081750ebe38a583"
+}

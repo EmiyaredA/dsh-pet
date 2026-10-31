@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "status": "complete",
+  "action_id": "a042",
+  "attempt_index": 1,
+  "action_name": "画时间线草图",
+  "source_file": "source/library/a042/attempt-1/画时间线草图.mp4",
+  "source_sha256": "7d15b79bd770b9a53ee53244bbc0307f9c78abf24218f89519ec6b8dabd238e8",
+  "task_id": "97e36fc5-0e2f-41ef-bac4-53bebc2a87f5",
+  "native_dimensions": [
+    1344,
+    768
+  ],
+  "frames": [
+    {
+      "frame_index": 0,
+      "file": "f000-native.png",
+      "sha256": "12e334a35bd949cdb5adbc0649937aa064934a2babbe52391885615e6c4607ff"
+    },
+    {
+      "frame_index": 12,
+      "file": "f012-native.png",
+      "sha256": "2b7f26fbfdce3143361b6c67f907e001d5934898c27e50b3595438da8935ca61"
+    },
+    {
+      "frame_index": 24,
+      "file": "f024-native.png",
+      "sha256": "696fa937612fade5e9bfaecf1aa7211c6c8972b573eea24cfcc2756601e34e0f"
+    },
+    {
+      "frame_index": 48,
+      "file": "f048-native.png",
+      "sha256": "24bcdc4913208ac4efad0b2ea16f707602dadcafce7efef12ccb39182234ec58"
+    },
+    {
+      "frame_index": 72,
+      "file": "f072-native.png",
+      "sha256": "c966cbc0dd6dbe7bec6cab33f31f00b4f0241dafcd741d5acad06b8827283419"
+    },
+    {
+      "frame_index": 96,
+      "file": "f096-native.png",
+      "sha256": "c6a45572a8276d3a6b949fe221d9e61fdb437d60f9e133442b8661a53264ea20"
+    },
+    {
+      "frame_index": 120,
+      "file": "f120-native.png",
+      "sha256": "57df60bbd8aafd68501f7ea847069fa4465b569274f9b09edc47d20fe6765604"
+    },
+    {
+      "frame_index": 144,
+      "file": "f144-native.png",
+      "sha256": "389bfe7581f246568440ad58bd50a3887aa5ec28b458fc9c411bc9851ceb9919"
+    },
+    {
+      "frame_index": 168,
+      "file": "f168-native.png",
+      "sha256": "52e2941234414f5caa18cedf2c5f9def7fbcef1219ffdc53a3d363bcfd78d276"
+    },
+    {
+      "frame_index": 192,
+      "file": "f192-native.png",
+      "sha256": "54ea4678944a083e62e5b68da47720d5138639848ec7cc8f3c9583d09120354d"
+    },
+    {
+      "frame_index": 216,
+      "file": "f216-native.png",
+      "sha256": "16303fa6208860faa622639d4f263d5740d38eb68684a601ad96e6628beb4d76"
+    },
+    {
+      "frame_index": 239,
+      "file": "f239-native.png",
+      "sha256": "cb81382cb924485b22a86c228140e787f3d908cb7e2b112fcd995c647cd071eb"
+    }
+  ],
+  "decoder": "single ffmpeg, native size, RGB PNG; no scaling",
+  "created_at": "2026-10-31T03:53:31.843533+00:00"
+}

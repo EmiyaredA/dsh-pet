@@ -1,0 +1,95 @@
+{
+  "source": "\u6276\u989d\u65e0\u8bed.mp4",
+  "output": "\u6276\u989d\u65e0\u8bed.webm",
+  "source_size": [
+    1344,
+    768
+  ],
+  "key_thresholds": [
+    12,
+    110
+  ],
+  "matte_method": "green_difference",
+  "encoding_lossless": true,
+  "source_content_union": [
+    426,
+    68,
+    930,
+    692
+  ],
+  "alignment": {
+    "scaled_size": [
+      592,
+      338
+    ],
+    "offset": [
+      28,
+      25
+    ],
+    "content_box": [
+      215.64285714285714,
+      54.927083333333336,
+      437.6428571428571,
+      329.55208333333337
+    ],
+    "standing_height": 614.0,
+    "standing_center_x": 663.5,
+    "standing_feet_y": 692.0,
+    "target_height": 270,
+    "target_feet_y": 330
+  },
+  "verification": {
+    "width": 640,
+    "height": 360,
+    "fps": 24,
+    "frames": 240,
+    "duration_seconds": 10.0,
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "first_box": [
+      217,
+      59,
+      431,
+      330
+    ],
+    "last_box": [
+      217,
+      59,
+      431,
+      330
+    ],
+    "audio_streams": 0,
+    "codec": "vp9",
+    "all_frames_have_alpha": true,
+    "endpoint_geometry": {
+      "feet_delta_px": 0,
+      "height_delta_px": 0
+    },
+    "background_clear": true,
+    "endpoint_rgba_mean_absolute_difference": 5.557684685131051,
+    "transparent_fraction": 0.8221761429398148
+  },
+  "green_source_processing": {
+    "worker_version": "h3_u24_normal_green_key_no_palette_v1",
+    "processing_profile": "h3_u24_normal_green_key_no_palette",
+    "model_id": "418c676d-1a59-4b3e-a716-b99de8038c71",
+    "model_slug": "minimax_h3_zm_u24",
+    "source_sha256": "6923afe0a2baaecdcad52700321e3ccb5d215bf8005cc1f441206738561bd4d2",
+    "source_timing": {
+      "video_duration_seconds": 10.125,
+      "duration_basis": "video_stream_duration",
+      "short_source_policy": "reject_no_repeat_or_time_stretch",
+      "normalize_first_seconds": 10,
+      "target_fps": 24,
+      "target_frames": 240
+    },
+    "global_palette_fitting": false,
+    "white_classifier_used": false,
+    "semantic_segmentation_used": false,
+    "individual_skin_eye_edits": false,
+    "geometry_warped": false,
+    "short_phase_loop_used": false,
+    "new_model_calls": 0,
+    "final_visual_review_required": true
+  }
+}

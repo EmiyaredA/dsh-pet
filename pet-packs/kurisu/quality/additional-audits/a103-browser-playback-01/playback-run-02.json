@@ -1,0 +1,296 @@
+{
+  "started_at": "2026-10-30T23:26:22.940Z",
+  "url": "http://127.0.0.1:8768/preview.html",
+  "visible": "visible",
+  "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.7871.212 Electron/43.3.0 Safari/537.36",
+  "approved_count": 1,
+  "live_default_notice": "桌面临时默认声明：使用原图静态定稿占位。静态定稿占位 · 不计106条动画；不计入106条动画，也不代表缺失的待机已完成。此画廊只点播已通过的真实动作，不把静态占位列为合格动画。",
+  "human_continuous_visual_review": false,
+  "scope": "Browser decode/playback instrumentation, not source anatomy approval or native desktop runtime validation",
+  "clips": [
+    {
+      "action_id": "a103",
+      "name": "工作状态-整理实验记录",
+      "sha256": "615aa8f01c1fb16a5ecae0938a7d27a31caf7b409967f63bf9e4cb6377797072",
+      "src": "http://127.0.0.1:8768/pet/kurisu-animation/%E5%B7%A5%E4%BD%9C%E7%8A%B6%E6%80%81-%E6%95%B4%E7%90%86%E5%AE%9E%E9%AA%8C%E8%AE%B0%E5%BD%95.webm?v=615aa8f01c1fb16a5ecae0938a7d27a31caf7b409967f63bf9e4cb6377797072",
+      "duration": 10,
+      "dimensions": [
+        640,
+        360
+      ],
+      "events": [
+        {
+          "event": "waiting",
+          "time": 0,
+          "at_ms": 258
+        },
+        {
+          "event": "playing",
+          "time": 0.000083,
+          "at_ms": 262.59999990463257
+        },
+        {
+          "event": "waiting",
+          "time": 0.689577,
+          "at_ms": 956.7999999523163
+        },
+        {
+          "event": "playing",
+          "time": 0.689667,
+          "at_ms": 956.8999998569489
+        },
+        {
+          "event": "waiting",
+          "time": 0,
+          "at_ms": 10269.5
+        },
+        {
+          "event": "playing",
+          "time": 0.000105,
+          "at_ms": 10273.899999856949
+        },
+        {
+          "event": "pause",
+          "time": 0.55205,
+          "at_ms": 10827.299999952316
+        },
+        {
+          "event": "playing",
+          "time": 0.556742,
+          "at_ms": 11130
+        }
+      ],
+      "errors": [],
+      "frame_callbacks": 182,
+      "loops": 1,
+      "media_time_min": 0.042,
+      "media_time_max": 9.958,
+      "max_callback_gap_ms": 333.2999999999993,
+      "alpha_samples": [
+        {
+          "media_time": 0.5,
+          "transparent": 189437,
+          "partial": 1930,
+          "opaque": 39033,
+          "total": 230400
+        },
+        {
+          "media_time": 1.042,
+          "transparent": 188939,
+          "partial": 1911,
+          "opaque": 39550,
+          "total": 230400
+        },
+        {
+          "media_time": 1.542,
+          "transparent": 188786,
+          "partial": 2447,
+          "opaque": 39167,
+          "total": 230400
+        },
+        {
+          "media_time": 2.083,
+          "transparent": 187455,
+          "partial": 2579,
+          "opaque": 40366,
+          "total": 230400
+        },
+        {
+          "media_time": 2.583,
+          "transparent": 187893,
+          "partial": 2607,
+          "opaque": 39900,
+          "total": 230400
+        },
+        {
+          "media_time": 3.083,
+          "transparent": 188021,
+          "partial": 2571,
+          "opaque": 39808,
+          "total": 230400
+        },
+        {
+          "media_time": 3.583,
+          "transparent": 188037,
+          "partial": 2512,
+          "opaque": 39851,
+          "total": 230400
+        },
+        {
+          "media_time": 4.083,
+          "transparent": 187851,
+          "partial": 2549,
+          "opaque": 40000,
+          "total": 230400
+        },
+        {
+          "media_time": 4.583,
+          "transparent": 187964,
+          "partial": 2556,
+          "opaque": 39880,
+          "total": 230400
+        },
+        {
+          "media_time": 5.083,
+          "transparent": 188291,
+          "partial": 2516,
+          "opaque": 39593,
+          "total": 230400
+        },
+        {
+          "media_time": 5.625,
+          "transparent": 188228,
+          "partial": 2518,
+          "opaque": 39654,
+          "total": 230400
+        },
+        {
+          "media_time": 6.208,
+          "transparent": 188344,
+          "partial": 2522,
+          "opaque": 39534,
+          "total": 230400
+        },
+        {
+          "media_time": 6.75,
+          "transparent": 187583,
+          "partial": 2602,
+          "opaque": 40215,
+          "total": 230400
+        },
+        {
+          "media_time": 7.25,
+          "transparent": 187499,
+          "partial": 2569,
+          "opaque": 40332,
+          "total": 230400
+        },
+        {
+          "media_time": 7.75,
+          "transparent": 189621,
+          "partial": 2224,
+          "opaque": 38555,
+          "total": 230400
+        },
+        {
+          "media_time": 8.25,
+          "transparent": 189101,
+          "partial": 1984,
+          "opaque": 39315,
+          "total": 230400
+        },
+        {
+          "media_time": 8.792,
+          "transparent": 188947,
+          "partial": 1931,
+          "opaque": 39522,
+          "total": 230400
+        },
+        {
+          "media_time": 9.292,
+          "transparent": 188934,
+          "partial": 1930,
+          "opaque": 39536,
+          "total": 230400
+        },
+        {
+          "media_time": 9.792,
+          "transparent": 188932,
+          "partial": 1934,
+          "opaque": 39534,
+          "total": 230400
+        },
+        {
+          "media_time": 0.042,
+          "transparent": 188949,
+          "partial": 1936,
+          "opaque": 39515,
+          "total": 230400
+        },
+        {
+          "media_time": 0.5,
+          "transparent": 189464,
+          "partial": 1966,
+          "opaque": 38970,
+          "total": 230400
+        },
+        {
+          "media_time": 0.75,
+          "transparent": 189105,
+          "partial": 1935,
+          "opaque": 39360,
+          "total": 230400
+        }
+      ],
+      "pause_resume": {
+        "paused_time_stable": true,
+        "resumed": true
+      },
+      "last_presented_frames": 251,
+      "last_sample_at": 11290.1,
+      "after_loop_evidence": true,
+      "playback_quality": {
+        "totalVideoFrames": 270,
+        "droppedVideoFrames": 4,
+        "corruptedVideoFrames": 0
+      },
+      "alpha_confirmed": true,
+      "passed": false
+    }
+  ],
+  "switches": [],
+  "evidence": [
+    {
+      "name": "a103-sample-1.png",
+      "media_time": 0.5,
+      "loop": 0
+    },
+    {
+      "name": "a103-sample-10.png",
+      "media_time": 5.083,
+      "loop": 0
+    },
+    {
+      "name": "a103-sample-20.png",
+      "media_time": 0.042,
+      "loop": 1
+    }
+  ],
+  "switch_validation": "not_tested_fewer_than_two_selected_approved_clips",
+  "completed_at": "2026-10-30T23:26:34.271Z",
+  "passed": false,
+  "collector": {
+    "run": true,
+    "url": "http://127.0.0.1:8768/preview.html",
+    "output_dir": "/Users/tonghao/Projects/dsh-pet/temp/kurisu/playback-collector-run-02",
+    "user_data": "/Users/tonghao/Projects/dsh-pet/temp/kurisu/playback-collector-run-02/isolated-user-data",
+    "max_actions": 1,
+    "action_ids": [
+      "a103"
+    ],
+    "decode_slots_confirmed_by": "root: both additional video decode agents completed; run01 exactQA PID8648 terminated, service23711/live4605 preserved",
+    "decode_slots_confirmed_at": "2026-10-30T23:26:18.904768+00:00",
+    "mode": "real_playback",
+    "executable_hint": "/Users/tonghao/.dsh/electron/Electron.app/Contents/MacOS/Electron",
+    "constraints": {
+      "show_window": false,
+      "independent_profile": true,
+      "background_throttling": false,
+      "offscreen": true,
+      "network_origin": "http://127.0.0.1:8768",
+      "approved_only": true,
+      "one_video_decoder": true,
+      "no_real_profile_or_service_changes": true
+    },
+    "protocol": [
+      "Confirm one available video decoding slot before --run. Do not compete with the two FFmpeg slots.",
+      "Load the existing gallery; select up to three currently approved real clips via gallery buttons.",
+      "For each clip collect requestVideoFrameCallback and playback quality across one real loop (duration + margin).",
+      "Pause/resume through gallery control. If two distinct approved clips exist, observe real src changes between them.",
+      "Save small alpha/composite PNG evidence and statistics; never claim continuous human visual review."
+    ],
+    "electron_version": "43.3.0",
+    "chromium_version": "150.0.7871.212",
+    "top_errors": []
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "schema_version": 1,
+  "action_id": "a026",
+  "name": "晨间刷牙",
+  "driver_attempt": 1,
+  "source_file": "source/library/a026/attempt-1/晨间刷牙.mp4",
+  "source_sha256": "368a0fc8d7940b3b937405b1cf0d9f127f30d70a7abefd4cd0c7e71d45c32ecb",
+  "driver_asset_id": "e6198899-3f88-46c0-b8cb-d9fe349b989e",
+  "driver_sha256": "368a0fc8d7940b3b937405b1cf0d9f127f30d70a7abefd4cd0c7e71d45c32ecb",
+  "driver_official_download_sha256_matches": true,
+  "driver_source_task_id": "466c39c3-25c4-4fb0-a65e-c0f2742f763c",
+  "source_duration_seconds": 10.125,
+  "source_fps": "24/1",
+  "source_frame_count": 243,
+  "source_size": [
+    1344,
+    768
+  ],
+  "source_audio_present": true,
+  "expected_action": "Morning tooth-brushing: takes out ivory toothbrush and pink cup, brushes teeth, then stows both and returns empty-handed to standard front stance.",
+  "driver_motion_clearance": "allow_motion_driver_only",
+  "motion_clearance": "allow_motion_transfer_only",
+  "final_media_approved": false,
+  "source_original_final_quality_approved": false,
+  "publish_allowed": false,
+  "reviewer": "independent_animation_qa_agent",
+  "reviewed_at": "2026-10-30T19:46:42.453378+00:00",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "summary": "Recognizabletoothbrushingwithivorytoothbrushandpinkcup; propstakeout,brushatmouth,lowerandstowcompletely. Frontemptyhandedendpoints match. Suitableonlyas motioninput; sourcecolourandallfailedcandidateverdictsremainrejected.",
+  "motion_review": {
+    "action_recognizable": true,
+    "subject_complete_in_reviewed_frames": true,
+    "major_limb_or_appendage_defect_observed": false,
+    "props_and_hands": "Oneivorytoothbrush andonepinkcup are heldbythetwohands; brushingoccursatthemouth, thentoothbrushlowersandbothpropsarestowed. Bothhandsareemptyinframes0,216,239,242.",
+    "first_pose": "Emptyhandedneutralfrontstanding",
+    "last_pose": "Emptyhandedneutralfrontstanding",
+    "pose_endpoint_frames_reviewed": [
+      0,
+      239,
+      242
+    ],
+    "first_last_same_is_semantic_pose_not_byte_identity": true,
+    "last_frame_within_first10seconds": 239,
+    "actual_final_native_frame": 242,
+    "first10seconds_endpoint_acceptable_as_motion_input": true,
+    "retiming_or_proxy_required_for_this_endpoint_issue": false,
+    "two_pump_exact_count_or_allframe_motion_not_certified": false
+  },
+  "composition": {
+    "reference_asset_id": "c8e65934-8da3-4756-bfb4-ec41f8dde710",
+    "reference_sha256": "f3be325cb0fa1f5afdab90d5615487a3a92401eed054fc3d465f32cebd79ea22",
+    "matched_to_reference": true,
+    "first_last_same": true,
+    "interpretation": "Compositionandstandardposematchwithinordinaryanimationvariation; theseareNOTclaims ofbyteidenticalframesorfinaloutputgeometryacceptance.",
+    "reference_height_fraction": 0.6513888888888889,
+    "driver_first_height_fraction": 0.65234375,
+    "reference_feet_fraction": 0.85,
+    "driver_first_feet_fraction": 0.8515625,
+    "center_fraction_offset_from_reference": 0.01675967261904765,
+    "true_dark_shoe_endpoint_proof": [
+      {
+        "frame": 0,
+        "dark_shoe_bottom_y_inclusive": 653,
+        "dark_shoe_roi_xyxy": [
+          595,
+          585,
+          755,
+          690
+        ],
+        "criterion": "maxRGB<110, nativeRGB; greenellipseexcludedbyhighG",
+        "dark_core_bbox": [
+          596,
+          585,
+          755,
+          654
+        ]
+      },
+      {
+        "frame": 239,
+        "dark_shoe_bottom_y_inclusive": 653,
+        "dark_shoe_roi_xyxy": [
+          595,
+          585,
+          755,
+          690
+        ],
+        "criterion": "maxRGB<110, nativeRGB; greenellipseexcludedbyhighG",
+        "dark_core_bbox": [
+          599,
+          585,
+          755,
+          654
+        ]
+      },
+      {
+        "frame": 242,
+        "dark_shoe_bottom_y_inclusive": 653,
+        "dark_shoe_roi_xyxy": [
+          595,
+          585,
+          755,
+          690
+        ],
+        "criterion": "maxRGB<110, nativeRGB; greenellipseexcludedbyhighG",
+        "dark_core_bbox": [
+          599,
+          585,
+          755,
+          654
+        ]
+      }
+    ],
+    "misleading_geometry_measurement_note": "Originalgeometryfirst/f239/f242heightandfeetdelta0. Independentdarkshoecorey653forallthree; propertypositionsandemptyhandsconfirmedfromactualrawcrops.",
+    "source_comp_full_background_geometry_not_reused_as_anatomy": true
+  },
+  "known_source_defects": [
+    {
+      "type": "source_foreground_colour_and_failed_final_edge_candidates",
+      "status": "REJECTION_RETAINED",
+      "description": "Rawdiffusegreen/olivecast; experimentf74514c658e2stillhasvisibleolivehairringandwasREJECTED. Neitherprocessedcandidate norrawpaletteisapproved. Use ORIGINAL MP4 strictlyasmotion; canonicalsafeimageonlyappearanceconditioning."
+    }
+  ],
+  "prior_verdicts_not_modified": [
+    "quality/source-reviews/a026-attempt-1.json",
+    "quality/final-reviews/a026-experimental-bounded-edge-01-f74514c658e2.json"
+  ],
+  "allowed_use": "OneapprovedWanmotion-transferpilot, usingexistingoriginalMP4andcanonicalsafeimage; thisreviewitselfdoesnotsubmitanytask.",
+  "final_output_requires_independent_review": [
+    "Truegreen/bluebackgroundandnegativehairspacesinallframes; noinheritanceofdriverwhitebackground/greencast.",
+    "Identity,roundshortproportions,headwear2ears,eyes,lips,hands,andnoextrabodyparts.",
+    "Transferredactionremainsrecognizable; toothbrushandcupstowforthebrushingaction.",
+    "Neutralfirstlaststance; realAlpha,noresidualwhite/green,640x360/24fps/10s/noaudio; consistentstandingheightandbaseline.",
+    "No sourcecolourorfailedcandidatecanbecountedapprovedbasedonthismotionreview."
+  ],
+  "portable_evidence": [
+    "quality/evidence/a026-motion-driver-endpoints-native.png",
+    "quality/evidence/a026-motion-driver-action-native.png"
+  ],
+  "inspection_scope": {
+    "reviewed_source_frames": [
+      0,
+      24,
+      48,
+      72,
+      96,
+      120,
+      144,
+      168,
+      192,
+      216,
+      239,
+      242
+    ],
+    "endpoint_native_crops_reviewed": [
+      0,
+      239,
+      242
+    ],
+    "all_native_frames_visual": false,
+    "prior_source_motion_review_reused": true,
+    "new_paid_calls": 0,
+    "raw_modified": false,
+    "video_proxy_generated": false,
+    "ledger_modified": false,
+    "canonical_modified": false
+  }
+}

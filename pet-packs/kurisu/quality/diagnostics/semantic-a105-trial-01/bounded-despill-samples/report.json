@@ -1,0 +1,129 @@
+{
+  "created_at": "2026-10-31T01:28:56.320578+00:00",
+  "scope": "six representative frames only, same authorized a105 semantic trial",
+  "source_sha256": "5460f738fa8678600fc5d37fc4334e551deec03c013db41b0242c58059b13aac",
+  "parent_candidate_sha256": "f30d57062c1aa627d55a3f3585c8fd66b5f9c577d8d1eba6f780f314dd7c9b4f",
+  "function": "scripts/green_edge_despill.py:despill_auburn_collar, unchanged",
+  "function_sha256": "c735c74d3764d36240903ce8edd8ff9b55d9dde0c21ce3eb94c002946fee8d2d",
+  "opencv_version": "5.0.0",
+  "native_pixel_collar": 4,
+  "bounds_unchanged": true,
+  "no_inference": true,
+  "no_white_threshold_or_morphology_or_face_painting": true,
+  "records": [
+    {
+      "changed_pixels": 31,
+      "max_green_correction": 23.0,
+      "alpha_changed": false,
+      "per_face_or_eye_edits": false,
+      "frame": 0,
+      "integer_max_RGB_correction": 23,
+      "actual_changed_pixels": 31,
+      "changed_box": [
+        491,
+        242,
+        532,
+        566
+      ],
+      "native_alpha_exact": true,
+      "aligned_alpha_exact": true,
+      "RGB_deeper_than_4px_unchanged": true,
+      "R_B_exact": true
+    },
+    {
+      "changed_pixels": 1,
+      "max_green_correction": 8.5,
+      "alpha_changed": false,
+      "per_face_or_eye_edits": false,
+      "frame": 24,
+      "integer_max_RGB_correction": 8,
+      "actual_changed_pixels": 1,
+      "changed_box": [
+        778,
+        392,
+        779,
+        393
+      ],
+      "native_alpha_exact": true,
+      "aligned_alpha_exact": true,
+      "RGB_deeper_than_4px_unchanged": true,
+      "R_B_exact": true
+    },
+    {
+      "changed_pixels": 0,
+      "max_green_correction": 0,
+      "alpha_changed": false,
+      "per_face_or_eye_edits": false,
+      "frame": 72,
+      "integer_max_RGB_correction": 0,
+      "actual_changed_pixels": 0,
+      "changed_box": null,
+      "native_alpha_exact": true,
+      "aligned_alpha_exact": true,
+      "RGB_deeper_than_4px_unchanged": true,
+      "R_B_exact": true
+    },
+    {
+      "changed_pixels": 0,
+      "max_green_correction": 0,
+      "alpha_changed": false,
+      "per_face_or_eye_edits": false,
+      "frame": 120,
+      "integer_max_RGB_correction": 0,
+      "actual_changed_pixels": 0,
+      "changed_box": null,
+      "native_alpha_exact": true,
+      "aligned_alpha_exact": true,
+      "RGB_deeper_than_4px_unchanged": true,
+      "R_B_exact": true
+    },
+    {
+      "changed_pixels": 0,
+      "max_green_correction": 0,
+      "alpha_changed": false,
+      "per_face_or_eye_edits": false,
+      "frame": 192,
+      "integer_max_RGB_correction": 0,
+      "actual_changed_pixels": 0,
+      "changed_box": null,
+      "native_alpha_exact": true,
+      "aligned_alpha_exact": true,
+      "RGB_deeper_than_4px_unchanged": true,
+      "R_B_exact": true
+    },
+    {
+      "changed_pixels": 0,
+      "max_green_correction": 0,
+      "alpha_changed": false,
+      "per_face_or_eye_edits": false,
+      "frame": 239,
+      "integer_max_RGB_correction": 0,
+      "actual_changed_pixels": 0,
+      "changed_box": null,
+      "native_alpha_exact": true,
+      "aligned_alpha_exact": true,
+      "RGB_deeper_than_4px_unchanged": true,
+      "R_B_exact": true
+    }
+  ],
+  "failed": null,
+  "status": "STOP_NO_MATERIAL_VISUAL_IMPROVEMENT",
+  "final_media_approved": false,
+  "counts_toward_106": false,
+  "visual_review": {
+    "frames_personally_compared": [
+      0,
+      24
+    ],
+    "comparison": "native640 dark background side-by-side, no playback claim",
+    "other_four_frames": "existing function reports changed_pixels=0; identical RGB/Alpha makes previously viewed intersection samples unchanged",
+    "observations": [
+      "f0 and f24 still show fine green outer lines; the 31 and1 native-pixel G reductions have no material overall visible benefit.",
+      "No observed new eye/skin/white-clothing defect in the compared samples; no complete240 facial safety claim."
+    ],
+    "decision": "Do not run full240 despill or relax current material/collar/40-level conditions."
+  },
+  "full_variant_created": false,
+  "decode_slot_released": true,
+  "completed_at": "2026-10-31T01:31:09.842859+00:00"
+}

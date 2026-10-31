@@ -1,0 +1,56 @@
+{
+  "source": "Recorded CUA page facts after each actual completed video wrap, not inferred from FFmpeg frame count.",
+  "sessions": {
+    "a032": {
+      "src": "../../../source/library/a032/attempt-2/processing-0437ef61-7021-4c84-a200-462b2d38cac8/检查试管（沿用原实验室镜头）.webm",
+      "duration": 10,
+      "completedLoops": 1,
+      "callbacks": 241,
+      "time": 0,
+      "paused": true
+    },
+    "a033": {
+      "src": "../../../source/library/a033/attempt-2/processing-d93cdc10-375a-43bd-a279-723585e72c64/盯编译进度.webm",
+      "duration": 10,
+      "completedLoops": 1,
+      "callbacks": 241,
+      "time": 0,
+      "paused": true
+    },
+    "a039": {
+      "src": "../../../source/library/a039/attempt-2/processing-b5d5a6b3-91bc-4891-a1e7-f4beb97cb00c/提交后松口气.webm",
+      "duration": 10,
+      "completedLoops": 1,
+      "callbacks": 241,
+      "time": 0,
+      "paused": true
+    },
+    "a040": {
+      "src": "../../../source/library/a040/attempt-2/processing-7966f942-dcc2-4f12-91b7-bafe37e667a7/合并冲突抱头.webm",
+      "duration": 10,
+      "completedLoops": 1,
+      "callbacks": 241,
+      "time": 0,
+      "paused": true
+    },
+    "a041": {
+      "src": "../../../source/library/a041/attempt-2/processing-f050b784-7181-4ce7-96ca-9b626663ba34/白板画架构图.webm",
+      "duration": 10,
+      "completedLoops": 1,
+      "callbacks": 218,
+      "time": 0.042,
+      "paused": true
+    },
+    "a042": {
+      "src": "../../../source/library/a042/attempt-2/processing-5b9bb19c-3eae-4528-bbb1-f4dac485dcbf/左右核对 diff.webm",
+      "duration": 10,
+      "completedLoops": 1,
+      "callbacks": 241,
+      "time": 0,
+      "paused": true
+    }
+  },
+  "all_idle_switches_completed": true,
+  "tab_closed_after_last": true,
+  "dropped_frame_count_not_collected": true
+}

@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "action_id": "a083",
+  "attempt_index": 1,
+  "action_name": "围围巾暖手",
+  "source_file": "source/library/a083/attempt-1/围围巾暖手.mp4",
+  "source_sha256": "8e730c38e09b5118500c274171c7ef98076fac07541a36fb3414c501287ec74a",
+  "source_task_id": "8b43da2e-8441-40b6-8b92-3bf3902310e2",
+  "result_asset_id": "bd91aa17-f894-46c0-ab8f-6326f4028985",
+  "model_slug": "minimax_h3_zm_u24",
+  "reference_file": "references/kurisu-front-80-opaque-green.png",
+  "reference_sha256": "259edb632a5cf780e8259f2aac9b1c21fc7b80453708eda56ea2e6eb99501430",
+  "reference_asset_id": "b7b8ee8c-df7c-4cd9-91ab-176b1094f7c6",
+  "reviewer": "green_gate independent source visual reviewer",
+  "reviewed_at": "2026-10-31T06:19:55.751725+00:00",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "processing_clearance": "reject",
+  "final_media_approved": false,
+  "source_background": {
+    "method": "all_frame_saturated_green_native_border_v2",
+    "passed": true,
+    "frames": 240,
+    "expected_frames": 240,
+    "failed_frame_count": 0,
+    "failed_frames": [],
+    "background_rgb_min": [
+      3.0,
+      229.0,
+      4.0
+    ],
+    "background_rgb_max": [
+      4.0,
+      232.0,
+      6.0
+    ],
+    "maximum_spatial_delta": 26.0,
+    "maximum_temporal_delta": 3.0,
+    "thresholds": {
+      "dominant_min": 180,
+      "other_channels_max": 100,
+      "dominance_min": 100,
+      "spatial_delta_max": 35,
+      "temporal_delta_max": 24
+    },
+    "expected_background": "#00FF00",
+    "white_matte_fallback": false,
+    "visual_foreground_review_required": true,
+    "enclosed_background_and_foreground_verified": false,
+    "native_size": [
+      1344,
+      768
+    ],
+    "boundary_pixels_per_frame": 4224,
+    "measurement": "native_one_pixel_outer_boundary_no_spatial_resampling",
+    "sampling": {
+      "duration_seconds": 10,
+      "fps": 24,
+      "expected_frames": 240
+    }
+  },
+  "inspection_scope": {
+    "native_full_frames_personally_viewed": [
+      0,
+      72,
+      144,
+      239
+    ],
+    "native_nearest2x_detail_frames_personally_viewed": {
+      "face": [
+        144
+      ],
+      "lower": [
+        144
+      ]
+    },
+    "native_size": [
+      1344,
+      768
+    ],
+    "technical_scope": "Reused existing native first10s 240-frame GREEN background gate; not rescanned. Source SHA and evidence PNG hashes verified.",
+    "limitations": [
+      "Representative still inspection, not all243-frame manual visual review.",
+      "No continuous source playback performed.",
+      "Transparent output color edges/specifications/endpoint geometry have not been tested."
+    ]
+  },
+  "evidence_manifest": "quality/evidence/u24-green80-firstpass/a083/attempt-1/manifest.json",
+  "evidence_manifest_sha256": "1526b3a36636996d31206c59933c37fa0f46c8941e0edc6fe8ad446692dc4941",
+  "processing_performed": false,
+  "new_model_calls": 0,
+  "ledger_or_approval_modified": false,
+  "reason": "首帧右脚旁已有独立粉色围巾卷，末帧同位置为空绿底，违反空手且无道具的相同首尾基准；中段围巾暖手动作可辨但不能掩盖首尾道具不一致。仅此源拒收，不执行转码或返修。",
+  "defects": [
+    {
+      "severity": "hard",
+      "kind": "endpoint_prop_mismatch",
+      "frames": [
+        0,
+        239
+      ],
+      "description": "A separate rolled pink scarf is visible to the right of the feet at f0, absent at f239. Both frames otherwise show the front empty-hand stance; the prop would pop across a loop or transition.",
+      "evidence": [
+        "quality/evidence/u24-green80-firstpass/a083/attempt-1/f000-native.png",
+        "quality/evidence/u24-green80-firstpass/a083/attempt-1/f239-native.png"
+      ]
+    }
+  ],
+  "visual_findings": {
+    "action_and_props": "f72 shows the pink scarf wrapped around the neck; f144 shows hands together warming against it. f0 has an extra rolled scarf on the floor; f239 removes it.",
+    "identity_color_anatomy": "Reviewed native frames preserve two fabric headband ears, lace, pink bows, auburn hair and maid costume; no obvious strong moving colored light or confirmed extra limb was seen in these samples.",
+    "camera_and_scale": "Full figure and scarf stay inside the sampled frame; no obvious large camera zoom. This does not override the endpoint prop defect."
+  },
+  "next_step": "Reject this source and continue other actions under the current first-pass policy. No keying or new repair requested."
+}

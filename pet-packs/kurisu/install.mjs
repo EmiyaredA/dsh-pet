@@ -31,9 +31,17 @@ export function installPack({ packRoot, dshHome, update = false }) {
   if (existsSync(configPath)) {
     const old = JSON.parse(readFileSync(configPath, 'utf8'));
     if (Array.isArray(old.pets) && old.pets.length) {
-      const fields = ['id', 'name', 'size', 'position', 'display', 'whisperPrompt'];
+      // `facing` is not a persistent host Pet field today. Retain an existing
+      // raw compatibility value without inventing one; the live renderer keeps
+      // its actual session-facing state during animation hot updates.
+      const fields = ['id', 'name', 'size', 'position', 'display', 'whisperPrompt', 'facing'];
       config.pets = old.pets.map(pet => ({ ...config.pets[0],
         ...Object.fromEntries(fields.filter(key => key in pet).map(key => [key, pet[key]])) }));
+    }
+    // These supported species-level display preferences can be customized in
+    // this file. Behavior switches and animation pools come from the new pack.
+    for (const key of ['font', 'confineToScreen']) {
+      if (Object.hasOwn(old, key)) config[key] = old[key];
     }
   }
   mkdirSync(target, { recursive: true });

@@ -1,0 +1,16 @@
+{
+  "browser": "Codex in-app browser",
+  "candidate_file": "source/library/a039/attempt-2/processing-b5d5a6b3-91bc-4891-a1e7-f4beb97cb00c/\u63d0\u4ea4\u540e\u677e\u53e3\u6c14.webm",
+  "css_size": [
+    640,
+    360
+  ],
+  "duration": 10,
+  "completedLoops": 1,
+  "callbacks": 241,
+  "auto_pause_on_wrap": true,
+  "idle_switch_performed": true,
+  "playback_currently_paused": true,
+  "manual_scope": "Sampled browser screenshots, normal640 stills and enlarged640 face/hair; actual full loop execution is separate from manual all-frame perception.",
+  "dropped_frames": "Not measured, no zero-drop claim."
+}

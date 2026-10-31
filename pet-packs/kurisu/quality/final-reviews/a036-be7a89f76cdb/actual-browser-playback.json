@@ -1,0 +1,21 @@
+{
+  "browser": "Chrome dedicated a036 final QA tab",
+  "candidate_file": "source/library/a036/attempt-3/processing-08c11668-1a9c-4f07-8847-3a7fbf4a8d40/抱着乌帕玩偶晃.webm",
+  "candidate_sha256": "be7a89f76cdb13d85ceba9b5bccf415c2f3f274b5fced3b1c94f5368f3ed2311",
+  "css_size": [
+    640,
+    360
+  ],
+  "duration": 10,
+  "started_at": "2026-10-31T11:36:18.492Z",
+  "ended_at": "2026-10-31T11:36:28.495Z",
+  "completed_10s": true,
+  "frame_callbacks_before_idle_switch": 239,
+  "first_media_time": 0.042,
+  "last_media_time": 9.958,
+  "idle_switch_performed": true,
+  "paused_after_switch": true,
+  "continuous_human_gaze_claim": false,
+  "observation_scope": "Actual real-time complete playback executed. Human visual evidence consists of sampled browser screenshots at opening/complete/idle and selected native640 stills plus enlarged face/hair. No manual all-frame claim.",
+  "dropped_frames": "Not measured; callback count is not dropped-frame count."
+}

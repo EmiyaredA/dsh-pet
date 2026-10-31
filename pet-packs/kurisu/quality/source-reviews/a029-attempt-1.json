@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "action_id": "a029",
+  "attempt_index": 1,
+  "source_sha256": "d2ee32b60f3f482dd2a8c1bdbbca0cf7658396959dc113f066d0007e60d1805d",
+  "inspected_source_file": "/Users/tonghao/Projects/dsh-pet/pet-packs/kurisu/source/library/a029/attempt-1/认真记笔记.mp4",
+  "reviewed_at": "2026-10-30T16:16:56.659043+00:00",
+  "reviewer": "independent_animation_qa_agent",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "processing_clearance": "reject",
+  "final_media_approved": false,
+  "summary": "Palegreen backdrop contains many moving green and white bubbles across the entire shot, instead of flat saturated chroma. Mandatory source-background gate fails all240frames.",
+  "defects": [
+    {
+      "severity": "hard",
+      "type": "nonuniform_unsaturated_background_with_added_effects",
+      "time_seconds": [
+        0,
+        10
+      ],
+      "description": "Palegreen backdrop contains many moving green and white bubbles across the entire shot, instead of flat saturated chroma. Mandatory source-background gate fails all240frames."
+    },
+    {
+      "severity": "observation",
+      "type": "prop_performance_face_visibility",
+      "time_seconds": [
+        2.25,
+        7.5
+      ],
+      "description": "Cream notebook and darkpen are retrieved/stowed, but notebook is held vertically against the mouth/lowerface for~2.5–7s and pen overlaps the left-eye region during several samples. Focused writing on a low open notebook is not clearly demonstrated."
+    }
+  ],
+  "background_gate": {
+    "method": "all_frame_saturated_green_border_v1",
+    "frames": 240,
+    "failed_frame_count": 240,
+    "background_rgb_min": [
+      174.0,
+      250.0,
+      178.0
+    ],
+    "background_rgb_max": [
+      175.0,
+      251.0,
+      179.0
+    ]
+  },
+  "evidence": [
+    "source/library/a029/attempt-1/processing-6348070f-8f5e-4771-8324-6121685ebca8/source-contact.png",
+    "temp/kurisu/agent-qa/a029-pilot-hands-dense.png"
+  ],
+  "allowed_processing": [],
+  "new_model_calls": 0,
+  "portable_evidence": [
+    "quality/evidence/a029-latest-qa.png"
+  ],
+  "canonical_source_file": "source/library/a029/attempt-1/认真记笔记.mp4",
+  "source_task_id": "355d81a3-9673-4c08-a199-079d8d6b88ea",
+  "source_result_asset_id": "f4a7012b-eda6-4f49-9fc2-0e8499d41c7e"
+}

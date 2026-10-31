@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "action_id": "a075",
+  "attempt_index": 1,
+  "action_name": "中秋赏月吃月饼",
+  "spec_revision_id": null,
+  "source_file": "source/library/a075/attempt-1/中秋赏月吃月饼.mp4",
+  "source_sha256": "d031873ecbc863114f419cee6c5158b7680205641a946fb8cb2dcc2251e7ecbe",
+  "source_task_id": "88ea472c-5fac-448b-8569-20f81651e090",
+  "result_asset_id": "24b9c2f7-28f5-4a84-9b29-239e9946e1a6",
+  "model_slug": "minimax_h3_zm_u24",
+  "reviewer": "animation_qa independent agent",
+  "reviewed_at": "2026-10-31T12:21:31.059522+00:00",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "processing_clearance": "allow_mild_color_and_green_key",
+  "final_media_approved": false,
+  "reason": "Representative native frames show a recognizable mooncake taken from a small red box, one visible bite, and complete stowage back to the prop-free baseline. Complete headwear and shoes and stable character colors remain visible.",
+  "defects": [],
+  "source_background": {
+    "method": "all_frame_saturated_green_native_border_v2",
+    "passed": true,
+    "frames": 240,
+    "expected_frames": 240,
+    "failed_frame_count": 0,
+    "failed_frames": [],
+    "background_rgb_min": [
+      4.0,
+      229.0,
+      10.0
+    ],
+    "background_rgb_max": [
+      5.0,
+      231.0,
+      13.0
+    ],
+    "maximum_spatial_delta": 8.0,
+    "maximum_temporal_delta": 2.0,
+    "thresholds": {
+      "dominant_min": 180,
+      "other_channels_max": 100,
+      "dominance_min": 100,
+      "spatial_delta_max": 35,
+      "temporal_delta_max": 24
+    },
+    "expected_background": "#00FF00",
+    "white_matte_fallback": false,
+    "visual_foreground_review_required": true,
+    "enclosed_background_and_foreground_verified": false,
+    "native_size": [
+      1344,
+      768
+    ],
+    "boundary_pixels_per_frame": 4224,
+    "measurement": "native_one_pixel_outer_boundary_no_spatial_resampling",
+    "sampling": {
+      "duration_seconds": 10,
+      "fps": 24,
+      "expected_frames": 240
+    }
+  },
+  "inspection_scope": {
+    "existing_contact_personally_viewed": true,
+    "native_full_frames_personally_viewed": [
+      0,
+      96,
+      144,
+      239
+    ],
+    "native_face_nearest2x_frames_personally_viewed": [
+      144
+    ],
+    "native_size": [
+      1344,
+      768
+    ],
+    "technical_scope": "Existing native240 boundary gate reused, not rerun. Source and evidence manifest are SHA-bound.",
+    "limits": [
+      "Representative source stills only, not all243 manually inspected.",
+      "No continuous source video playback in this source stage; complete10s playback is reserved for final candidate QA.",
+      "No automatic final-media approval or repair."
+    ]
+  },
+  "visual_findings": [
+    "The ivory/red moon motif is confined to the box lid and is not an unrelated background light.",
+    "Both eyes are unobscured; holding the mooncake at the mouth is necessary for the named eating action and is not itself a defect.",
+    "No extra foreground appendage, moving colored light or white hair-gap island was identified in these source samples. Final continuous and alpha review remains required."
+  ],
+  "evidence_manifest": "quality/evidence/existing-sources7-firstpass/a075/attempt-1/manifest.json",
+  "evidence_manifest_sha256": "81dd361f75ef1eb0b64b407a36bf7e92f849b3c34ffbb44d9d74f2593388ac94",
+  "new_model_calls": 0,
+  "processing_performed": false,
+  "ledger_or_approval_modified": false
+}

@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "action_id": "a035",
+  "attempt_index": 2,
+  "action_name": "查看显微镜（沿用原实验室镜头）",
+  "spec_revision_id": "programmer-research-v2-2026-10-31",
+  "source_file": "source/library/a035/attempt-2/查看显微镜（沿用原实验室镜头）.mp4",
+  "source_sha256": "a1f440355ce3ce6df7379ac782437a8f0f5cf01a0e647fccc95eb402f852f513",
+  "source_task_id": "8d46a986-b1da-409c-8f61-bdd34e543262",
+  "result_asset_id": "0010af43-5bff-4578-8fd4-d4e64fa8f1af",
+  "model_slug": "minimax_h3_zm_u24",
+  "reviewer": "animation_qa independent agent",
+  "reviewed_at": "2026-10-31T10:02:14.744633+00:00",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "processing_clearance": "allow_mild_color_and_green_key",
+  "final_media_approved": false,
+  "reason": "显微镜观察动作及收回明确，完整人物和器材保持画内。目镜在使用阶段自然遮住一只眼，另一眼/口鼻可见，属于明确的显微镜表演而非脸部熔化；未见移动光斑或强绿染。仅准入初次普通key，成片另验。",
+  "defects": [],
+  "source_background": {
+    "method": "all_frame_saturated_green_native_border_v2",
+    "passed": true,
+    "frames": 240,
+    "expected_frames": 240,
+    "failed_frame_count": 0,
+    "failed_frames": [],
+    "background_rgb_min": [
+      5.0,
+      231.0,
+      9.0
+    ],
+    "background_rgb_max": [
+      7.0,
+      234.0,
+      11.0
+    ],
+    "maximum_spatial_delta": 17.0,
+    "maximum_temporal_delta": 2.0,
+    "thresholds": {
+      "dominant_min": 180,
+      "other_channels_max": 100,
+      "dominance_min": 100,
+      "spatial_delta_max": 35,
+      "temporal_delta_max": 24
+    },
+    "expected_background": "#00FF00",
+    "white_matte_fallback": false,
+    "visual_foreground_review_required": true,
+    "enclosed_background_and_foreground_verified": false,
+    "native_size": [
+      1344,
+      768
+    ],
+    "boundary_pixels_per_frame": 4224,
+    "measurement": "native_one_pixel_outer_boundary_no_spatial_resampling",
+    "sampling": {
+      "duration_seconds": 10,
+      "fps": 24,
+      "expected_frames": 240
+    }
+  },
+  "inspection_scope": {
+    "existing_contact_personally_viewed": false,
+    "native_full_frames_personally_viewed": [
+      0,
+      144,
+      239
+    ],
+    "native_face_nearest2x_frames_personally_viewed": [
+      144
+    ],
+    "native_size": null,
+    "technical_scope": "Existing native240 boundary gate reused, not rerun. Source and evidence manifest are SHA-bound.",
+    "limits": [
+      "Representative source stills only, not all243 manually inspected.",
+      "No continuous source video playback in this source stage; complete10s playback is reserved for final candidate QA.",
+      "No automatic final-media approval or repair."
+    ]
+  },
+  "visual_findings": {
+    "action": "Places an ivory/gray microscope at the side/front, looks into the eyepiece, then removes it; first and last reviewed frames are empty-handed.",
+    "occlusion_context": "The eyepiece naturally covers one eye while used, with other eye and mouth visible. This is recorded as action-specific instrument use, not generalized permission for tall laptops to cover the face.",
+    "identity_color": "No obvious added limb/tail or moving color wash in reviewed full/native-face samples. Props are relatively large but do not crop the body or leave the frame."
+  },
+  "evidence_manifest": "quality/evidence/batch30-firstpass/a035/attempt-2/manifest.json",
+  "evidence_manifest_sha256": "4da7b83004bdbc63e0fa1796afb4b8a2ef5d50e9bd1fc3da0ca2d07b399ad524",
+  "new_model_calls": 0,
+  "processing_performed": false,
+  "ledger_or_approval_modified": false
+}

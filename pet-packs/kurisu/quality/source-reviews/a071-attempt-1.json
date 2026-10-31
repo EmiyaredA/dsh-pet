@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "action_id": "a071",
+  "attempt_index": 1,
+  "action_name": "吃粉色樱花团子",
+  "source_file": "source/library/a071/attempt-1/吃粉色樱花团子.mp4",
+  "source_sha256": "c07bae1dbdb9213a9e6ce12d14881e95f46cdbcc760cc0e584120899c300d37c",
+  "source_task_id": "12f4bd46-52ed-4e2b-ae2f-5ed9a2738fce",
+  "result_asset_id": "106c3bec-959f-4507-89f5-775b3d23d62d",
+  "model_slug": "minimax_h3_zm_u24",
+  "reference_file": "references/kurisu-front-80-opaque-green.png",
+  "reference_sha256": "259edb632a5cf780e8259f2aac9b1c21fc7b80453708eda56ea2e6eb99501430",
+  "reference_asset_id": "b7b8ee8c-df7c-4cd9-91ab-176b1094f7c6",
+  "reviewer": "animation_qa independent agent",
+  "reviewed_at": "2026-10-31T05:09:53.113558+00:00",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "processing_clearance": "reject",
+  "final_media_approved": false,
+  "reason": "目标是吃粉色樱花团子，原生画面却明确呈现米白色尖顶褶皱蒸包/包子，盘中两个、手中另一个；樱花装饰不能替代错误食物。道具收回和背景通过不等于目标动作完成。",
+  "defects": [
+    {
+      "severity": "hard",
+      "type": "wrong_food_prop",
+      "frames": [
+        144
+      ],
+      "description": "The plate contains two cream-colored pointed, pleated steamed buns and another bitten bun is held in the hand. The requested pink sakura dango are absent. Floating pink flowers are decoration, not the specified food."
+    }
+  ],
+  "source_background": {
+    "method": "all_frame_saturated_green_native_border_v2",
+    "passed": true,
+    "frames": 240,
+    "expected_frames": 240,
+    "failed_frame_count": 0,
+    "failed_frames": [],
+    "background_rgb_min": [
+      2.0,
+      230.0,
+      4.0
+    ],
+    "background_rgb_max": [
+      3.0,
+      233.0,
+      5.0
+    ],
+    "maximum_spatial_delta": 11.0,
+    "maximum_temporal_delta": 3.0,
+    "thresholds": {
+      "dominant_min": 180,
+      "other_channels_max": 100,
+      "dominance_min": 100,
+      "spatial_delta_max": 35,
+      "temporal_delta_max": 24
+    },
+    "expected_background": "#00FF00",
+    "white_matte_fallback": false,
+    "visual_foreground_review_required": true,
+    "enclosed_background_and_foreground_verified": false,
+    "native_size": [
+      1344,
+      768
+    ],
+    "boundary_pixels_per_frame": 4224,
+    "measurement": "native_one_pixel_outer_boundary_no_spatial_resampling",
+    "sampling": {
+      "duration_seconds": 10,
+      "fps": 24,
+      "expected_frames": 240
+    }
+  },
+  "inspection_scope": {
+    "existing_contact": "Existing 11-sample full-body contact personally viewed.",
+    "native_full_frames_personally_viewed": [
+      0,
+      144,
+      239
+    ],
+    "native_nearest2x_detail_frames_personally_viewed": {
+      "face": [
+        144
+      ],
+      "lower": [
+        144
+      ]
+    },
+    "native_size": [
+      1344,
+      768
+    ],
+    "technical_scope": "Existing native first-10-second 240-frame green boundary gate reused; not rescanned. Source and all evidence PNG hashes verified.",
+    "limitations": [
+      "Representative source still review only; no all-243-frame manual visual claim.",
+      "No real-time source playback performed.",
+      "No alpha/output-edge/spec/final-media review yet."
+    ]
+  },
+  "visual_findings": {
+    "action_and_props": "Eating is recognizable and the plate/food are gone by the reviewed endpoint, but the actual food is steamed buns rather than pink sakura dango.",
+    "identity_color_anatomy": "Reviewed native views preserve two cat ears, lace headband, pink bows, auburn hair and the black/white maid outfit. No obvious added limb/tail, eye collapse, strong green wash or moving colored light was seen in these limited samples. This is not a claim of exhaustive full-frame temporal inspection.",
+    "camera_and_scale": "Whole character is visible in the reviewed full-body frames with no obvious large camera zoom/crop. Final key scale and endpoint metrics are untested."
+  },
+  "evidence_manifest": "quality/evidence/u24-green80-firstpass/a071/attempt-1/manifest.json",
+  "evidence_manifest_sha256": "79080e26a1b6d1b282fd36b7839933c43f836b8bc898c2c3e66eff94235f6ab3",
+  "processing_performed": false,
+  "new_model_calls": 0,
+  "ledger_or_approval_modified": false,
+  "next_step": "Retain this first-attempt failure and move on. No automatic repair or re-generation."
+}

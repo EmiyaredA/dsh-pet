@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "action_id": "a077",
+  "attempt_index": 1,
+  "action_name": "秋日捡枫叶",
+  "spec_revision_id": null,
+  "source_file": "source/library/a077/attempt-1/秋日捡枫叶.mp4",
+  "source_sha256": "d0b93cd82c2409f54d72f171483fbc5216466f9c20679e046107ef245e535dc3",
+  "source_task_id": "beabb1e2-097e-461e-afd4-810f9e1d13ae",
+  "result_asset_id": "27b1580c-b978-4318-b399-88b851474eb3",
+  "model_slug": "minimax_h3_zm_u24",
+  "reviewer": "animation_qa independent agent",
+  "reviewed_at": "2026-10-31T12:22:37.691003+00:00",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "processing_clearance": "reject",
+  "final_media_approved": false,
+  "reason": "The opening source frame already contains a separate maple leaf on the ground beside the right shoe, whereas the last baseline contains no leaf. This fails the required common prop-free opening/ending and would create a prop pop when entering the action from idle.",
+  "defects": [
+    {
+      "severity": "hard",
+      "type": "initial_prop_present_endpoint_mismatch",
+      "frames": [
+        0,
+        239
+      ],
+      "description": "A red/orange maple leaf lies beside the right shoe at frame0, but is absent at the end."
+    }
+  ],
+  "source_background": {
+    "method": "all_frame_saturated_green_native_border_v2",
+    "passed": true,
+    "frames": 240,
+    "expected_frames": 240,
+    "failed_frame_count": 0,
+    "failed_frames": [],
+    "background_rgb_min": [
+      2.0,
+      222.0,
+      6.0
+    ],
+    "background_rgb_max": [
+      3.0,
+      226.0,
+      8.0
+    ],
+    "maximum_spatial_delta": 11.0,
+    "maximum_temporal_delta": 2.0,
+    "thresholds": {
+      "dominant_min": 180,
+      "other_channels_max": 100,
+      "dominance_min": 100,
+      "spatial_delta_max": 35,
+      "temporal_delta_max": 24
+    },
+    "expected_background": "#00FF00",
+    "white_matte_fallback": false,
+    "visual_foreground_review_required": true,
+    "enclosed_background_and_foreground_verified": false,
+    "native_size": [
+      1344,
+      768
+    ],
+    "boundary_pixels_per_frame": 4224,
+    "measurement": "native_one_pixel_outer_boundary_no_spatial_resampling",
+    "sampling": {
+      "duration_seconds": 10,
+      "fps": 24,
+      "expected_frames": 240
+    }
+  },
+  "inspection_scope": {
+    "existing_contact_personally_viewed": true,
+    "native_full_frames_personally_viewed": [
+      0,
+      239
+    ],
+    "native_face_nearest2x_frames_personally_viewed": [],
+    "native_size": null,
+    "technical_scope": "Existing native240 boundary gate reused, not rerun. Source and evidence manifest are SHA-bound.",
+    "limits": [
+      "Representative source stills only, not all243 manually inspected.",
+      "No continuous source video playback in this source stage; complete10s playback is reserved for final candidate QA.",
+      "No automatic final-media approval or repair."
+    ]
+  },
+  "visual_findings": [
+    "The existing contact suggests a recognizable leaf-picking action, but a passing background gate and recognizable action do not remove the explicit opening prop mismatch.",
+    "The defect is in the original RGB source, not a transparency processing artifact. No local erasure, keying or regeneration was performed."
+  ],
+  "evidence_manifest": "quality/evidence/existing-sources7-firstpass/a077/attempt-1/manifest.json",
+  "evidence_manifest_sha256": "67813e5881e211e31a3f733115882f196287be0e891f67be18adcc68d0769d03",
+  "new_model_calls": 0,
+  "processing_performed": false,
+  "ledger_or_approval_modified": false
+}

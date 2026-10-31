@@ -1,0 +1,23 @@
+{
+  "browser": "Codex in-app browser",
+  "canvas_size": [
+    640,
+    360
+  ],
+  "before_any_source_switch": {
+    "time": 3.1757,
+    "duration": 10,
+    "paused": true,
+    "loops": 17,
+    "callbacks": 4158
+  },
+  "idle_switch_then_return": true,
+  "final_pause": {
+    "time": 0.2081,
+    "paused": true
+  },
+  "counter_limitation": "Only pre-switch loops count as source loops; source switches also increment the counter. Multiple loops elapsed while tool calls were being orchestrated; no repeated algorithm/repair or extra review pass was performed.",
+  "quality_counts": "Dropped/corrupted counts not collected; no zero-drop claim.",
+  "coverage": "Actual continuous playback occurred; manual visual observations were sampled browser screenshots and native still/crop checks, not all-frame manual perception.",
+  "tab_and_decoder_closed": true
+}

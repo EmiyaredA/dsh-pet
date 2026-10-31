@@ -1,0 +1,123 @@
+{
+  "created_at": "2026-10-31T01:17:16.306505+00:00",
+  "source_sha256": "5460f738fa8678600fc5d37fc4334e551deec03c013db41b0242c58059b13aac",
+  "semantic_baseline_sha256": "c96349e8adfce16dfe6ef9f081a88578f3ee3078bf71a38d6f0a2b23fd175320",
+  "method": "alpha=min(unmodified cached isnet-anime alpha, existing build_pet_pack.key_green source-RGB alpha only)",
+  "green_key_source_sha256": "20cb11cbde7b2a207f0630d326bb5a7221d6de232bbf97acc608478f77886083",
+  "green_parameters": {
+    "low": 12,
+    "high": 110,
+    "formula": "excess=G-max(R,B); alpha=255*(1-smoothstep(clamp((excess-12)/(110-12))))"
+  },
+  "native_rgb_unchanged": true,
+  "no_new_inference": true,
+  "no_white_threshold_or_erosion_or_color_correction": true,
+  "frames": [
+    {
+      "frame": 0,
+      "native_rgb_exact": true,
+      "native_changed_alpha_pixels": 9241,
+      "native_changed_box": [
+        470,
+        151,
+        1344,
+        768
+      ],
+      "native_semantic_opaque_to_below245_pixels": 233,
+      "native_semantic_opaque_to_below128_pixels": 29,
+      "max_alpha_reduction": 247,
+      "diagnostic_warm_skin_alpha_reduced": 0,
+      "diagnostic_blue_eye_alpha_reduced": 0,
+      "diagnostic_bright_fabric_alpha_reduced": 11
+    },
+    {
+      "frame": 24,
+      "native_rgb_exact": true,
+      "native_changed_alpha_pixels": 200,
+      "native_changed_box": [
+        497,
+        157,
+        814,
+        609
+      ],
+      "native_semantic_opaque_to_below245_pixels": 42,
+      "native_semantic_opaque_to_below128_pixels": 8,
+      "max_alpha_reduction": 177,
+      "diagnostic_warm_skin_alpha_reduced": 0,
+      "diagnostic_blue_eye_alpha_reduced": 0,
+      "diagnostic_bright_fabric_alpha_reduced": 3
+    },
+    {
+      "frame": 72,
+      "native_rgb_exact": true,
+      "native_changed_alpha_pixels": 1582,
+      "native_changed_box": [
+        514,
+        316,
+        854,
+        666
+      ],
+      "native_semantic_opaque_to_below245_pixels": 10,
+      "native_semantic_opaque_to_below128_pixels": 0,
+      "max_alpha_reduction": 198,
+      "diagnostic_warm_skin_alpha_reduced": 0,
+      "diagnostic_blue_eye_alpha_reduced": 0,
+      "diagnostic_bright_fabric_alpha_reduced": 0
+    },
+    {
+      "frame": 120,
+      "native_rgb_exact": true,
+      "native_changed_alpha_pixels": 2977,
+      "native_changed_box": [
+        497,
+        330,
+        854,
+        666
+      ],
+      "native_semantic_opaque_to_below245_pixels": 14,
+      "native_semantic_opaque_to_below128_pixels": 1,
+      "max_alpha_reduction": 201,
+      "diagnostic_warm_skin_alpha_reduced": 0,
+      "diagnostic_blue_eye_alpha_reduced": 0,
+      "diagnostic_bright_fabric_alpha_reduced": 0
+    },
+    {
+      "frame": 192,
+      "native_rgb_exact": true,
+      "native_changed_alpha_pixels": 5739,
+      "native_changed_box": [
+        481,
+        157,
+        854,
+        668
+      ],
+      "native_semantic_opaque_to_below245_pixels": 39,
+      "native_semantic_opaque_to_below128_pixels": 2,
+      "max_alpha_reduction": 223,
+      "diagnostic_warm_skin_alpha_reduced": 0,
+      "diagnostic_blue_eye_alpha_reduced": 0,
+      "diagnostic_bright_fabric_alpha_reduced": 0
+    },
+    {
+      "frame": 239,
+      "native_rgb_exact": true,
+      "native_changed_alpha_pixels": 7237,
+      "native_changed_box": [
+        471,
+        157,
+        865,
+        668
+      ],
+      "native_semantic_opaque_to_below245_pixels": 21,
+      "native_semantic_opaque_to_below128_pixels": 0,
+      "max_alpha_reduction": 210,
+      "diagnostic_warm_skin_alpha_reduced": 0,
+      "diagnostic_blue_eye_alpha_reduced": 0,
+      "diagnostic_bright_fabric_alpha_reduced": 0
+    }
+  ],
+  "status": "six_frames_only_awaiting_visual_comparison",
+  "full_variant_allowed_by_this_report": false,
+  "counts_toward_106": false,
+  "final_media_approved": false
+}

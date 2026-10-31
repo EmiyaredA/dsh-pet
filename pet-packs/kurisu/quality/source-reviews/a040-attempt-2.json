@@ -1,0 +1,85 @@
+{
+  "action_id": "a040",
+  "attempt_index": 2,
+  "spec_revision_id": "programmer-research-v2-2026-10-31",
+  "source_file": "source/library/a040/attempt-2/合并冲突抱头.mp4",
+  "source_sha256": "a7f5a4cc5269600e79da54b7d5e6c228c94f240360e660df2326ab1186c327fc",
+  "source_task_id": "0049c014-4b6e-4108-93ec-ecc505045979",
+  "schema_version": 1,
+  "reviewer": "batch30_source_qa_parallel independent source visual reviewer",
+  "reviewed_at": "2026-10-31T10:04:12.925737+00:00",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "processing_clearance": "allow_mild_color_and_green_key",
+  "final_media_approved": false,
+  "summary": "Native source samples show intact fully framed headband/ears, the specified amber/dark-red marked gray cards on support, and an exasperated hands-to-head pose at frame 144. Face remains visible and props are completely absent at frame 239. No sampled white islands, stray foreground or material illumination/palette change. Allow initial mild color/green key processing; continuous motion remains for final review.",
+  "defects": [],
+  "inspection_scope": {
+    "source_static_samples_only": true,
+    "native_original_frames_personally_viewed": [
+      0,
+      96,
+      144,
+      239
+    ],
+    "native_size": [
+      1344,
+      768
+    ],
+    "native2x_crops_personally_viewed": [
+      "f000-face-native2x.png",
+      "f144-face-native2x.png",
+      "f144-lower-native2x.png",
+      "f239-lower-native2x.png"
+    ],
+    "prompt_file_read": "prompts/library/a040-programmer-research-v2-firstpass-green-01.txt",
+    "all240_background_metrics_reused": true,
+    "continuous_source_playback_not_performed": true,
+    "final_stage_continuous_review_required": true
+  },
+  "background_proof": {
+    "method": "all_frame_saturated_green_native_border_v2",
+    "passed": true,
+    "frames": 240,
+    "expected_frames": 240,
+    "failed_frame_count": 0,
+    "failed_frames": [],
+    "background_rgb_min": [
+      5.0,
+      232.0,
+      8.0
+    ],
+    "background_rgb_max": [
+      7.0,
+      235.0,
+      10.0
+    ],
+    "maximum_spatial_delta": 27.0,
+    "maximum_temporal_delta": 2.0,
+    "thresholds": {
+      "dominant_min": 180,
+      "other_channels_max": 100,
+      "dominance_min": 100,
+      "spatial_delta_max": 35,
+      "temporal_delta_max": 24
+    },
+    "expected_background": "#00FF00",
+    "white_matte_fallback": false,
+    "visual_foreground_review_required": true,
+    "enclosed_background_and_foreground_verified": false,
+    "native_size": [
+      1344,
+      768
+    ],
+    "boundary_pixels_per_frame": 4224,
+    "measurement": "native_one_pixel_outer_boundary_no_spatial_resampling",
+    "sampling": {
+      "duration_seconds": 10,
+      "fps": 24,
+      "expected_frames": 240
+    }
+  },
+  "evidence_manifest": "quality/evidence/batch30-firstpass/a040/attempt-2/manifest.json",
+  "no_new_paid_calls": true,
+  "no_local_repair": true
+}

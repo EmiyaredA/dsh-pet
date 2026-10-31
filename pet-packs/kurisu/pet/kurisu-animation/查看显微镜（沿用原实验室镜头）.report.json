@@ -1,0 +1,138 @@
+{
+  "source": "查看显微镜（沿用原实验室镜头）.mp4",
+  "output": "查看显微镜（沿用原实验室镜头）.webm",
+  "source_size": [
+    1344,
+    768
+  ],
+  "key_thresholds": [
+    12,
+    110
+  ],
+  "matte_method": "green_difference",
+  "encoding_lossless": true,
+  "source_content_union": [
+    276,
+    63,
+    924,
+    742
+  ],
+  "alignment": {
+    "scaled_size": [
+      598,
+      342
+    ],
+    "offset": [
+      25,
+      24
+    ],
+    "content_box": [
+      147.80357142857142,
+      52.0546875,
+      436.125,
+      354.421875
+    ],
+    "standing_height": 607.0,
+    "standing_center_x": 664.0,
+    "standing_feet_y": 688.0,
+    "target_height": 270,
+    "target_feet_y": 330
+  },
+  "verification": {
+    "width": 640,
+    "height": 360,
+    "fps": 24,
+    "frames": 240,
+    "duration_seconds": 10.0,
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "first_box": [
+      215,
+      60,
+      435,
+      330
+    ],
+    "last_box": [
+      214,
+      61,
+      434,
+      331
+    ],
+    "audio_streams": 0,
+    "codec": "vp9",
+    "all_frames_have_alpha": true,
+    "endpoint_geometry": {
+      "feet_delta_px": 1,
+      "height_delta_px": 0
+    },
+    "background_clear": true,
+    "endpoint_rgba_mean_absolute_difference": 18.53423449196586,
+    "transparent_fraction": 0.7910419017650463
+  },
+  "green_source_processing": {
+    "worker_version": "h3_u24_a035_source_scoped_alignment5_v1",
+    "processing_profile": "h3_u24_normal_green_key_no_palette",
+    "model_id": "418c676d-1a59-4b3e-a716-b99de8038c71",
+    "model_slug": "minimax_h3_zm_u24",
+    "source_sha256": "a1f440355ce3ce6df7379ac782437a8f0f5cf01a0e647fccc95eb402f852f513",
+    "source_timing": {
+      "video_duration_seconds": 10.125,
+      "duration_basis": "video_stream_duration",
+      "short_source_policy": "reject_no_repeat_or_time_stretch",
+      "normalize_first_seconds": 10,
+      "target_fps": 24,
+      "target_frames": 240
+    },
+    "global_palette_fitting": false,
+    "white_classifier_used": false,
+    "semantic_segmentation_used": false,
+    "individual_skin_eye_edits": false,
+    "geometry_warped": false,
+    "short_phase_loop_used": false,
+    "new_model_calls": 0,
+    "final_visual_review_required": true
+  },
+  "source_scoped_alignment_exception": {
+    "original_error": "Animation would clip after alignment: [147.80357142857142, 52.0546875, 436.125, 354.421875]; inspect source",
+    "original_margin_px": 8,
+    "source_scoped_margin_px": 5,
+    "transform": {
+      "scaled_size": [
+        598,
+        342
+      ],
+      "offset": [
+        25,
+        24
+      ],
+      "content_box": [
+        147.80357142857142,
+        52.0546875,
+        436.125,
+        354.421875
+      ],
+      "standing_height": 607.0,
+      "standing_center_x": 664.0,
+      "standing_feet_y": 688.0,
+      "target_height": 270,
+      "target_feet_y": 330
+    },
+    "canvas_bottom_clearance_px": 5.578125,
+    "same_original_formula": true,
+    "union": [
+      276,
+      63,
+      924,
+      742
+    ],
+    "source_size": [
+      1344,
+      768
+    ],
+    "source_sha256": "a1f440355ce3ce6df7379ac782437a8f0f5cf01a0e647fccc95eb402f852f513",
+    "task_id": "8d46a986-b1da-409c-8f61-bdd34e543262",
+    "reason": "Root explicitly authorizes this sole current-spec LOCAL correction: only exact a035 source/error/box pre-alignment margin8→5; exact same formula/270height/330feet/key12,110/lossless; bottom354.421875 leaves5.578125px, final4px/strictAlpha and globalbuilder8 unchanged. No resize/footshift/crop/Paid; any further guard failure stops.",
+    "global_build_pet_pack_unchanged": true,
+    "final_4px_and_strict_alpha_guards_unchanged": true
+  }
+}

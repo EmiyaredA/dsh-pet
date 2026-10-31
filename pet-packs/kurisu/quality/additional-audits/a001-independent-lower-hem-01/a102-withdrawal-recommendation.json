@@ -1,0 +1,40 @@
+{
+  "action_id": "a102",
+  "canonical_file": "pet/kurisu-animation/工作状态-专注敲键盘.webm",
+  "canonical_sha256": "3b890f38928effc3b3be0823955daa19332f7f47b7d7bd34ff4d98a0611d494a",
+  "source_file": "source/library/a102/attempt-1/工作状态-专注敲键盘.mp4",
+  "source_sha256": "d3bc712a24dc0c600508de50450513177aff96d360e5de787750e23dc69aa5ec",
+  "reviewed_at": "2026-10-30T21:29:10.126265+00:00",
+  "reviewer": "green_gate_independent_lower_hem_recheck",
+  "canonical_native_samples": [
+    8,
+    32,
+    56,
+    80,
+    104,
+    128,
+    152,
+    176,
+    200,
+    224
+  ],
+  "scope": "Additional targeted8x lower-right hem crops made from original native640 blue evidence; not continuous fullclip playback",
+  "source_media_modified": false,
+  "ledger_modified": false,
+  "new_model_calls": 0,
+  "lower_hem_evidence": "quality/additional-audits/a001-independent-lower-hem-01/a102-lower-right10-native8x.png",
+  "classification": "unapproved_foreground_appendage",
+  "withdraw_recommended": true,
+  "original_source_defect_confirmed": true,
+  "source_native_frames_reviewed": [
+    56
+  ],
+  "reason": "A separate black-outlined rounded appendage is present below the right skirt edge in the original MP4, as well as the canonical output. It is not a green-background/palette artifact and is absent from approved character reference.",
+  "raw_native_crop": "quality/additional-audits/a001-independent-lower-hem-01/a102-raw-f56-native-crop.png",
+  "canonical_defect_frames": [
+    56,
+    152
+  ],
+  "green_background_only_fix_allowed": false,
+  "anatomical_subtype_not_asserted": true
+}

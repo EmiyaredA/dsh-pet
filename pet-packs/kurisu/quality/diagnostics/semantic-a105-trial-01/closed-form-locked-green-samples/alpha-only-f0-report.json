@@ -1,0 +1,10 @@
+{
+  "created_at": "2026-10-31T01:49:32.638378+00:00",
+  "frame": 0,
+  "CF_Alpha_exact_same": true,
+  "native_RGB_exact_original": true,
+  "new_solver_calls": 0,
+  "new_model_inference": false,
+  "purpose": "controlled f0 color-estimator ablation, no threshold/alpha changes",
+  "final_media_approved": false
+}

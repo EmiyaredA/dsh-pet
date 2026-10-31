@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "action_id": "a073",
+  "attempt_index": 1,
+  "action_name": "摇扇纳凉",
+  "spec_revision_id": null,
+  "source_file": "source/library/a073/attempt-1/摇扇纳凉.mp4",
+  "source_sha256": "1db27fdae1e75e8b1da776ddbc49f0dcba8ccbb587a544e4a00faabc8f77df66",
+  "source_task_id": "22a43f14-1b4f-446e-931e-7d342c324c1f",
+  "result_asset_id": "8dd2fd5b-35f8-4836-8cee-ba9432255905",
+  "model_slug": "minimax_h3_zm_u24",
+  "reviewer": "animation_qa independent agent",
+  "reviewed_at": "2026-10-31T12:19:15.882604+00:00",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "processing_clearance": "reject",
+  "final_media_approved": false,
+  "reason": "The folded ivory fan remains visibly protruding between the legs in the final frame after the hand moves behind the hip, unlike the prop-free opening. Prop stowage and common baseline restoration are incomplete.",
+  "defects": [
+    {
+      "severity": "hard",
+      "type": "prop_not_stowed",
+      "frames": [
+        239
+      ],
+      "description": "The folded ivory fan visibly protrudes between the legs in the final baseline, but is absent at frame0."
+    }
+  ],
+  "source_background": {
+    "method": "all_frame_saturated_green_native_border_v2",
+    "passed": true,
+    "frames": 240,
+    "expected_frames": 240,
+    "failed_frame_count": 0,
+    "failed_frames": [],
+    "background_rgb_min": [
+      1.0,
+      229.0,
+      3.0
+    ],
+    "background_rgb_max": [
+      3.0,
+      234.0,
+      5.0
+    ],
+    "maximum_spatial_delta": 34.0,
+    "maximum_temporal_delta": 4.0,
+    "thresholds": {
+      "dominant_min": 180,
+      "other_channels_max": 100,
+      "dominance_min": 100,
+      "spatial_delta_max": 35,
+      "temporal_delta_max": 24
+    },
+    "expected_background": "#00FF00",
+    "white_matte_fallback": false,
+    "visual_foreground_review_required": true,
+    "enclosed_background_and_foreground_verified": false,
+    "native_size": [
+      1344,
+      768
+    ],
+    "boundary_pixels_per_frame": 4224,
+    "measurement": "native_one_pixel_outer_boundary_no_spatial_resampling",
+    "sampling": {
+      "duration_seconds": 10,
+      "fps": 24,
+      "expected_frames": 240
+    }
+  },
+  "inspection_scope": {
+    "existing_contact_personally_viewed": true,
+    "native_full_frames_personally_viewed": [
+      0,
+      96,
+      144,
+      239
+    ],
+    "native_face_nearest2x_frames_personally_viewed": [],
+    "native_size": null,
+    "technical_scope": "Existing native240 boundary gate reused, not rerun. Source and evidence manifest are SHA-bound.",
+    "limits": [
+      "Representative source stills only, not all243 manually inspected.",
+      "No continuous source video playback in this source stage; complete10s playback is reserved for final candidate QA.",
+      "No automatic final-media approval or repair."
+    ]
+  },
+  "visual_findings": [
+    "The fanning action is recognizable with a single ivory fan, and complete headwear/shoes remain visible.",
+    "Frame239 retains a narrow ivory folded object below the skirt between the boots; this is not an alpha/key artifact because it is present in the original RGB source.",
+    "No attempt was made to erase the object or regenerate the action."
+  ],
+  "evidence_manifest": "quality/evidence/existing-sources7-firstpass/a073/attempt-1/manifest.json",
+  "evidence_manifest_sha256": "49db585d45590ac8c50c21834f9f715bad0e86fbc25f09447a0c71a261cbe7ac",
+  "new_model_calls": 0,
+  "processing_performed": false,
+  "ledger_or_approval_modified": false
+}

@@ -1,0 +1,36 @@
+{
+  "action_id": "a105",
+  "source_attempt_index": 3,
+  "source_sha256": "5460f738fa8678600fc5d37fc4334e551deec03c013db41b0242c58059b13aac",
+  "reviewed_at": "2026-10-31T01:59:52.823684+00:00",
+  "reviewer": "independent_animation_qa_agent",
+  "scope": "Frame 0 only. Original 640x360 compositing shown beside intersection baseline on dark and blue; original-pixel selected area enlarged 4x nearest-neighbor. No full-240 candidate exists for these sample variants.",
+  "visual_review_performed": true,
+  "decision": "REJECT_SAMPLE_DO_NOT_EXPAND_TO_FULL_240_ON_THIS_EVIDENCE",
+  "final_media_approved": false,
+  "sample_variants": [
+    {
+      "label": "closed-form Alpha plus ML foreground estimate",
+      "finding": "Against blue, the outer hair and ear contours become reddish/purple and soft; the original dark linework is visibly weakened relative to the intersection baseline. Preserving deep foreground face pixels does not establish that the foreground contour is preserved."
+    },
+    {
+      "label": "same closed-form Alpha plus unchanged original RGB",
+      "finding": "The red edge shift is reduced, but side hair loops and outer ear contours remain gray/soft and locally lose dark outline contrast. Blue background visibly bleeds through these contour regions. This is an Alpha/contour preservation problem, so unchanged RGB alone is not a pass."
+    }
+  ],
+  "limitations": [
+    "Only frame 0 was reviewed; no claim about temporal stability of this one-frame experiment.",
+    "No new 240-frame codec or Alpha inspection was performed for these non-final sample-only variants.",
+    "Face and lace core retention is a partial improvement, not whole-character edge approval."
+  ],
+  "evidence_sha256": {
+    "0000-dark-compare.png": "34388049f5b8607d1a02bc4010598095deede92318a8e7b2fcef70cc02fda62e",
+    "0000-blue-compare.png": "e448e963031b37a559804886a42160c185841d0ebb6b4c68d564121290089d8b",
+    "0000-alpha-only-compare-dark.png": "c2c77b95405f27c12c71df0a3274adb0023cf8c9e89142d511adee4e0a92ad55",
+    "0000-alpha-only-compare-blue.png": "8cdef3180ed56fc741f786fdfb2fc0a667e0dd81d5c9b16004038ab3cdbceeab",
+    "0000-blue-compare-native4x-independent.png": "67838b4520351b6f7f5d5648ddbb8065330e9900a1bcec81ac77d5da6570955d",
+    "0000-alpha-only-compare-blue-native4x-independent.png": "661ce571384521b1617208a1be76b5d4011e4ae05936237ad1d69e3ed9d0dd43"
+  },
+  "reviewer_modified_media_or_ledger": false,
+  "new_paid_model_calls": 0
+}

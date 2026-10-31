@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "action_id": "a038",
+  "attempt_index": 3,
+  "action_name": "戴上时间跳跃耳机",
+  "spec_revision_id": "steins-props-v3-2026-10-31",
+  "source_file": "source/library/a038/attempt-3/戴上时间跳跃耳机.mp4",
+  "source_sha256": "a1a80387dfd41b518467b3bc2acb1e9c0f068b4e422fc14a53f2f4fe76c35ae8",
+  "source_task_id": "8a985eda-805a-4944-ba4d-1c1a685db1cc",
+  "result_asset_id": "a4c4d7b1-c211-4da1-b87a-5ca48263be44",
+  "model_slug": "minimax_h3_zm_u24",
+  "reviewer": "animation_qa independent agent",
+  "reviewed_at": "2026-10-31T11:32:05.938389+00:00",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "processing_clearance": "allow_mild_color_and_green_key",
+  "final_media_approved": false,
+  "reason": "Representative native source frames show recognizable headphones being worn, complete head and shoes, stable character colors and clear eyes; endpoints return to an empty-handed baseline. Cleared only for initial ordinary green-key processing.",
+  "defects": [],
+  "source_background": {
+    "method": "all_frame_saturated_green_native_border_v2",
+    "passed": true,
+    "frames": 240,
+    "expected_frames": 240,
+    "failed_frame_count": 0,
+    "failed_frames": [],
+    "background_rgb_min": [
+      2.0,
+      224.0,
+      7.0
+    ],
+    "background_rgb_max": [
+      3.0,
+      226.0,
+      9.0
+    ],
+    "maximum_spatial_delta": 34.0,
+    "maximum_temporal_delta": 2.0,
+    "thresholds": {
+      "dominant_min": 180,
+      "other_channels_max": 100,
+      "dominance_min": 100,
+      "spatial_delta_max": 35,
+      "temporal_delta_max": 24
+    },
+    "expected_background": "#00FF00",
+    "white_matte_fallback": false,
+    "visual_foreground_review_required": true,
+    "enclosed_background_and_foreground_verified": false,
+    "native_size": [
+      1344,
+      768
+    ],
+    "boundary_pixels_per_frame": 4224,
+    "measurement": "native_one_pixel_outer_boundary_no_spatial_resampling",
+    "sampling": {
+      "duration_seconds": 10,
+      "fps": 24,
+      "expected_frames": 240
+    }
+  },
+  "inspection_scope": {
+    "existing_contact_personally_viewed": false,
+    "native_full_frames_personally_viewed": [
+      0,
+      96,
+      144,
+      239
+    ],
+    "native_face_nearest2x_frames_personally_viewed": [
+      144
+    ],
+    "native_size": [
+      1344,
+      768
+    ],
+    "technical_scope": "Existing native240 boundary gate reused, not rerun. Source and evidence manifest are SHA-bound.",
+    "limits": [
+      "Representative source stills only, not all243 manually inspected.",
+      "No continuous source video playback in this source stage; complete10s playback is reserved for final candidate QA.",
+      "No automatic final-media approval or repair."
+    ]
+  },
+  "visual_findings": [
+    "Headphones above chin are necessary for the named action and are an explicit interpretation of the frozen spec; not treated as a waist-height violation.",
+    "Both eyes remain structurally visible in open-eye frame96; frame144 is a normal closed-eye expression, not headphone occlusion.",
+    "No extra foreground appendage, moving colored light or white hair-gap island was identified in the reviewed representative frames. Full temporal/final-edge QA is still required."
+  ],
+  "evidence_manifest": "quality/evidence/steins-props-v3-firstpass/a038/attempt-3/manifest.json",
+  "evidence_manifest_sha256": "55ceed166b25d24a625785ef89f11a93c153d409aa7354811d11909b50668afb",
+  "new_model_calls": 0,
+  "processing_performed": false,
+  "ledger_or_approval_modified": false
+}

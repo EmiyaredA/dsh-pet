@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "action_id": "a036",
+  "attempt_index": 3,
+  "action_name": "抱着乌帕玩偶晃",
+  "spec_revision_id": "steins-props-v3-2026-10-31",
+  "source_file": "source/library/a036/attempt-3/抱着乌帕玩偶晃.mp4",
+  "source_sha256": "2388f9ba3ec861d98e17d9e3b02893e30574ed552791ab7f827b01e83156d5b2",
+  "source_task_id": "cb43436d-d398-4ce4-bee1-b4ba114e9751",
+  "result_asset_id": "0309bdad-d51a-4eb2-bd37-821fb236ff37",
+  "reviewer": "root source-content reviewer separate from initial media worker",
+  "reviewed_at": "2026-10-31T11:33:43.175578+00:00",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "processing_clearance": "allow_mild_color_and_green_key",
+  "final_media_approved": false,
+  "reason": "粉色独立小玩偶被双手抱持、轻晃后收回，人物头饰双鞋完整、双眼和口鼻可辨，首尾回到空手原站姿。抽样未见人物动光或额外肢体。仅允许初次普通绿幕处理；玩偶是抱在胸前的非显示设备，不将其脸朝观众等同于电脑/表盘方向错误；最终Alpha与连续播放另验。",
+  "defects": [],
+  "source_background": {
+    "method": "all_frame_saturated_green_native_border_v2",
+    "passed": true,
+    "frames": 240,
+    "expected_frames": 240,
+    "failed_frame_count": 0,
+    "failed_frames": [],
+    "background_rgb_min": [
+      3.0,
+      236.0,
+      5.0
+    ],
+    "background_rgb_max": [
+      4.0,
+      237.0,
+      7.0
+    ],
+    "maximum_spatial_delta": 7.0,
+    "maximum_temporal_delta": 1.0,
+    "thresholds": {
+      "dominant_min": 180,
+      "other_channels_max": 100,
+      "dominance_min": 100,
+      "spatial_delta_max": 35,
+      "temporal_delta_max": 24
+    },
+    "expected_background": "#00FF00",
+    "white_matte_fallback": false,
+    "visual_foreground_review_required": true,
+    "enclosed_background_and_foreground_verified": false,
+    "native_size": [
+      1344,
+      768
+    ],
+    "boundary_pixels_per_frame": 4224,
+    "measurement": "native_one_pixel_outer_boundary_no_spatial_resampling",
+    "sampling": {
+      "duration_seconds": 10,
+      "fps": 24,
+      "expected_frames": 240
+    }
+  },
+  "inspection_scope": {
+    "width640_full_frames_personally_viewed": [
+      0,
+      48,
+      96,
+      144,
+      192,
+      239
+    ],
+    "native_nearest2x_face_frames_personally_viewed": [
+      144
+    ],
+    "all240_native_background_metric_reused": true,
+    "source_video_continuous_playback_reviewed": false,
+    "limits": [
+      "Representative native-derived stills and one enlarged face reviewed; not all240 manually viewed. Final continuous playback and matting review remain independent."
+    ]
+  },
+  "evidence_manifest": "quality/evidence/steins-props-v3-firstpass/a036/attempt-3/manifest.json",
+  "new_model_calls": 0,
+  "new_local_repairs": 0
+}

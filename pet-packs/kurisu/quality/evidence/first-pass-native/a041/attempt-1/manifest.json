@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "status": "complete",
+  "action_id": "a041",
+  "attempt_index": 1,
+  "action_name": "摆弄迷你时钟",
+  "source_file": "source/library/a041/attempt-1/摆弄迷你时钟.mp4",
+  "source_sha256": "b4dc44893e29834745227f35b55e05f0c4cac11b3d6fce2cd800043567a1cf2e",
+  "task_id": "c8bcdbbe-f977-4fd2-85e3-220560aeb207",
+  "native_dimensions": [
+    1344,
+    768
+  ],
+  "frames": [
+    {
+      "frame_index": 0,
+      "file": "f000-native.png",
+      "sha256": "126089629a9f02dc8ddc33cc3fb5c3e2ce99736dff56afcef063dfde189acfee"
+    },
+    {
+      "frame_index": 12,
+      "file": "f012-native.png",
+      "sha256": "11b6078e18dc1c3dc02bf1160d4939c2c98537cc2412090db27a72c5fdd97ae1"
+    },
+    {
+      "frame_index": 24,
+      "file": "f024-native.png",
+      "sha256": "239c9d9ef87c635cd41e00438a477bf5c12ec37342bfad99b7433ac6e0775da1"
+    },
+    {
+      "frame_index": 48,
+      "file": "f048-native.png",
+      "sha256": "afd3faab08a41ce1b3428f5ddfe42b46913cd86ab0b294c161eb92c86ee29bf4"
+    },
+    {
+      "frame_index": 72,
+      "file": "f072-native.png",
+      "sha256": "e30930a734e66d02ed8730fcd356111cd9b6c382469b123aa44e177416f2ef4b"
+    },
+    {
+      "frame_index": 96,
+      "file": "f096-native.png",
+      "sha256": "6125cf11475f6ce2aa1d81dab10312361d666efe91c7c32c13ca6dfaebc4b284"
+    },
+    {
+      "frame_index": 120,
+      "file": "f120-native.png",
+      "sha256": "6c78aad089b6c0610f1089a39a2bbb35246359eb5b08f35ad6cba635956cc297"
+    },
+    {
+      "frame_index": 144,
+      "file": "f144-native.png",
+      "sha256": "bf46c3244302c397ff3724aa197204adb53046bbd8a126826527afeb2df5aaae"
+    },
+    {
+      "frame_index": 168,
+      "file": "f168-native.png",
+      "sha256": "7dca5e890a8fd6b12ddb30256fbc6daf773dce17494b412a5b497ad80f6c89c1"
+    },
+    {
+      "frame_index": 192,
+      "file": "f192-native.png",
+      "sha256": "5cbcb7161838feb99afc49172ada0b2ee76ab3bd9649baaf828c63f843e8d60d"
+    },
+    {
+      "frame_index": 216,
+      "file": "f216-native.png",
+      "sha256": "f52f9167ffa8d54b9a19e766329add1e0b98fd26eb478ad687e36a0ccd00f91d"
+    },
+    {
+      "frame_index": 239,
+      "file": "f239-native.png",
+      "sha256": "af34d35ee227135f923643bdd166428649af024a85e108e5717ecaa420007fd8"
+    }
+  ],
+  "decoder": "single ffmpeg, native size, RGB PNG; no scaling",
+  "created_at": "2026-10-31T03:53:31.314944+00:00"
+}

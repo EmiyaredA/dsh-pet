@@ -1,0 +1,52 @@
+{
+  "decision": {
+    "id": "human-accept-a008-2026-10-31T04-56-18.869837+00-00",
+    "source": "user",
+    "user_quote": "08，11通过",
+    "interpreted_action_id": "a008",
+    "accepted_at": "2026-10-31T04:56:18.869837+00:00",
+    "file": "pet/kurisu-animation/点击回应-认可点头.webm",
+    "source_archive_file": "source/library/withdrawn/a008/b228c8a9a101e472/点击回应-认可点头.webm",
+    "sha256": "b228c8a9a101e4727f0c3c65f1b9b8fb8cf962eff7821e15fde2111879324b82",
+    "basis": "Explicit human acceptance of latest archived preview version; historical concerns retained, not relabeled as independent QA pass.",
+    "technical240_verified": true,
+    "new_model_calls": 0,
+    "additional_processing_or_correction": false
+  },
+  "verification": {
+    "width": 640,
+    "height": 360,
+    "fps": 24,
+    "frames": 240,
+    "duration_seconds": 10.0,
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "first_box": [
+      217,
+      60,
+      431,
+      330
+    ],
+    "last_box": [
+      217,
+      60,
+      431,
+      330
+    ],
+    "audio_streams": 0,
+    "codec": "vp9",
+    "all_frames_have_alpha": true,
+    "endpoint_geometry": {
+      "feet_delta_px": 0,
+      "height_delta_px": 0
+    },
+    "background_clear": true,
+    "endpoint_rgba_mean_absolute_difference": 2.189161806859741,
+    "transparent_fraction": 0.8206385633680555
+  },
+  "calls_unchanged": {
+    "calls": 112,
+    "repairs": 27,
+    "other_model_calls": 19
+  }
+}

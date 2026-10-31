@@ -1,0 +1,329 @@
+{
+  "action_id": "a006",
+  "name": "点击回应-害羞捂脸",
+  "source_file": "pet/kurisu-animation/点击回应-害羞捂脸.webm",
+  "source_sha256": "2068984d756db5f177bd209675170168da56ee8c0b37ebbaba88f59c04167bb0",
+  "sampled_frames": [
+    8,
+    32,
+    56,
+    80,
+    104,
+    128,
+    152,
+    176,
+    200,
+    224
+  ],
+  "sample_count": 10,
+  "previous_base_scope": "quality/native-blue-audit/a006-2068984d756d-scope.json",
+  "new_scope_excludes_previous0_120_239": true,
+  "records": [
+    {
+      "frame": 8,
+      "time_seconds": 0.3333333333333333,
+      "native_frame_size": [
+        640,
+        360
+      ],
+      "background_rgb": [
+        0,
+        80,
+        255
+      ],
+      "bbox_alpha_gt127": [
+        217,
+        60,
+        430,
+        329
+      ],
+      "crop_box_at_native640": [
+        212,
+        55,
+        436,
+        300
+      ],
+      "magnification": 2,
+      "magnification_resampling": "nearest, crop made from unscaled native640 composite",
+      "native_blue_png": "quality/native-blue-audit/additional-samples-20261031/a006-2068984d756d/f8-native640-blue.png",
+      "visual_review": "manually inspected native640 full-body plus corresponding native hair-face crop2x"
+    },
+    {
+      "frame": 32,
+      "time_seconds": 1.3333333333333333,
+      "native_frame_size": [
+        640,
+        360
+      ],
+      "background_rgb": [
+        0,
+        80,
+        255
+      ],
+      "bbox_alpha_gt127": [
+        217,
+        65,
+        430,
+        329
+      ],
+      "crop_box_at_native640": [
+        212,
+        60,
+        436,
+        305
+      ],
+      "magnification": 2,
+      "magnification_resampling": "nearest, crop made from unscaled native640 composite",
+      "native_blue_png": "quality/native-blue-audit/additional-samples-20261031/a006-2068984d756d/f32-native640-blue.png",
+      "visual_review": "manually inspected native640 full-body plus corresponding native hair-face crop2x"
+    },
+    {
+      "frame": 56,
+      "time_seconds": 2.3333333333333335,
+      "native_frame_size": [
+        640,
+        360
+      ],
+      "background_rgb": [
+        0,
+        80,
+        255
+      ],
+      "bbox_alpha_gt127": [
+        215,
+        60,
+        429,
+        329
+      ],
+      "crop_box_at_native640": [
+        210,
+        55,
+        435,
+        300
+      ],
+      "magnification": 2,
+      "magnification_resampling": "nearest, crop made from unscaled native640 composite",
+      "native_blue_png": "quality/native-blue-audit/additional-samples-20261031/a006-2068984d756d/f56-native640-blue.png",
+      "visual_review": "manually inspected native640 full-body plus corresponding native hair-face crop2x"
+    },
+    {
+      "frame": 80,
+      "time_seconds": 3.3333333333333335,
+      "native_frame_size": [
+        640,
+        360
+      ],
+      "background_rgb": [
+        0,
+        80,
+        255
+      ],
+      "bbox_alpha_gt127": [
+        219,
+        56,
+        435,
+        329
+      ],
+      "crop_box_at_native640": [
+        214,
+        51,
+        441,
+        296
+      ],
+      "magnification": 2,
+      "magnification_resampling": "nearest, crop made from unscaled native640 composite",
+      "native_blue_png": "quality/native-blue-audit/additional-samples-20261031/a006-2068984d756d/f80-native640-blue.png",
+      "visual_review": "manually inspected native640 full-body plus corresponding native hair-face crop2x"
+    },
+    {
+      "frame": 104,
+      "time_seconds": 4.333333333333333,
+      "native_frame_size": [
+        640,
+        360
+      ],
+      "background_rgb": [
+        0,
+        80,
+        255
+      ],
+      "bbox_alpha_gt127": [
+        215,
+        60,
+        429,
+        329
+      ],
+      "crop_box_at_native640": [
+        210,
+        55,
+        435,
+        300
+      ],
+      "magnification": 2,
+      "magnification_resampling": "nearest, crop made from unscaled native640 composite",
+      "native_blue_png": "quality/native-blue-audit/additional-samples-20261031/a006-2068984d756d/f104-native640-blue.png",
+      "visual_review": "manually inspected native640 full-body plus corresponding native hair-face crop2x"
+    },
+    {
+      "frame": 128,
+      "time_seconds": 5.333333333333333,
+      "native_frame_size": [
+        640,
+        360
+      ],
+      "background_rgb": [
+        0,
+        80,
+        255
+      ],
+      "bbox_alpha_gt127": [
+        214,
+        58,
+        426,
+        329
+      ],
+      "crop_box_at_native640": [
+        209,
+        53,
+        432,
+        298
+      ],
+      "magnification": 2,
+      "magnification_resampling": "nearest, crop made from unscaled native640 composite",
+      "native_blue_png": "quality/native-blue-audit/additional-samples-20261031/a006-2068984d756d/f128-native640-blue.png",
+      "visual_review": "manually inspected native640 full-body plus corresponding native hair-face crop2x"
+    },
+    {
+      "frame": 152,
+      "time_seconds": 6.333333333333333,
+      "native_frame_size": [
+        640,
+        360
+      ],
+      "background_rgb": [
+        0,
+        80,
+        255
+      ],
+      "bbox_alpha_gt127": [
+        219,
+        58,
+        432,
+        329
+      ],
+      "crop_box_at_native640": [
+        214,
+        53,
+        438,
+        298
+      ],
+      "magnification": 2,
+      "magnification_resampling": "nearest, crop made from unscaled native640 composite",
+      "native_blue_png": "quality/native-blue-audit/additional-samples-20261031/a006-2068984d756d/f152-native640-blue.png",
+      "visual_review": "manually inspected native640 full-body plus corresponding native hair-face crop2x"
+    },
+    {
+      "frame": 176,
+      "time_seconds": 7.333333333333333,
+      "native_frame_size": [
+        640,
+        360
+      ],
+      "background_rgb": [
+        0,
+        80,
+        255
+      ],
+      "bbox_alpha_gt127": [
+        217,
+        60,
+        430,
+        329
+      ],
+      "crop_box_at_native640": [
+        212,
+        55,
+        436,
+        300
+      ],
+      "magnification": 2,
+      "magnification_resampling": "nearest, crop made from unscaled native640 composite",
+      "native_blue_png": "quality/native-blue-audit/additional-samples-20261031/a006-2068984d756d/f176-native640-blue.png",
+      "visual_review": "manually inspected native640 full-body plus corresponding native hair-face crop2x"
+    },
+    {
+      "frame": 200,
+      "time_seconds": 8.333333333333334,
+      "native_frame_size": [
+        640,
+        360
+      ],
+      "background_rgb": [
+        0,
+        80,
+        255
+      ],
+      "bbox_alpha_gt127": [
+        217,
+        60,
+        430,
+        329
+      ],
+      "crop_box_at_native640": [
+        212,
+        55,
+        436,
+        300
+      ],
+      "magnification": 2,
+      "magnification_resampling": "nearest, crop made from unscaled native640 composite",
+      "native_blue_png": "quality/native-blue-audit/additional-samples-20261031/a006-2068984d756d/f200-native640-blue.png",
+      "visual_review": "manually inspected native640 full-body plus corresponding native hair-face crop2x"
+    },
+    {
+      "frame": 224,
+      "time_seconds": 9.333333333333334,
+      "native_frame_size": [
+        640,
+        360
+      ],
+      "background_rgb": [
+        0,
+        80,
+        255
+      ],
+      "bbox_alpha_gt127": [
+        217,
+        60,
+        430,
+        329
+      ],
+      "crop_box_at_native640": [
+        212,
+        55,
+        436,
+        300
+      ],
+      "magnification": 2,
+      "magnification_resampling": "nearest, crop made from unscaled native640 composite",
+      "native_blue_png": "quality/native-blue-audit/additional-samples-20261031/a006-2068984d756d/f224-native640-blue.png",
+      "visual_review": "manually inspected native640 full-body plus corresponding native hair-face crop2x"
+    }
+  ],
+  "evidence": [
+    "quality/native-blue-audit/additional-samples-20261031/a006-2068984d756d/page1-full-native640.png",
+    "quality/native-blue-audit/additional-samples-20261031/a006-2068984d756d/page1-hair-face-native2x.png",
+    "quality/native-blue-audit/additional-samples-20261031/a006-2068984d756d/page2-full-native640.png",
+    "quality/native-blue-audit/additional-samples-20261031/a006-2068984d756d/page2-hair-face-native2x.png"
+  ],
+  "visual_verdict": "NO_NEW_VISIBLE_WHITE_GREEN_EDGE_HARD_DEFECT_IN_10_SAMPLES",
+  "sampled_not_continuous_playback": true,
+  "technical240frame_checks_repeated": false,
+  "source_modified": false,
+  "ledger_modified": false,
+  "visual_findings": "Ten sampled full native640 blue frames and hair/face native2x crops show intact face/ears/cuffs, visible blue negative space between outer hair locks, no same opaque-white hair island or green-light blot observed. Head tilt and hands-to-cheeks motion are consistent with the action; sampled feet stay on the standing baseline. No continuous playback claim.",
+  "visually_inspected_at": "2026-10-30T21:12:43.143213+00:00",
+  "reviewer": "green_gate_independent_visual_sampling",
+  "continuous_playback_reviewed": false,
+  "final_media_approval_changed": false
+}

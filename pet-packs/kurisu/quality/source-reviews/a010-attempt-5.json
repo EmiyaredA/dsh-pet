@@ -1,0 +1,47 @@
+{
+  "action_id": "a010",
+  "attempt_index": 5,
+  "processing_clearance": "reject",
+  "summary": "Strict screen-left gait is correct, but an unapproved animal tail appears under the rear skirt and moves independently of auburn hair. Regeneration required; no local anatomical erasure permitted.",
+  "defects": [
+    {
+      "severity": "hard",
+      "type": "identity_anatomy",
+      "time_seconds": [
+        1.0,
+        7.5
+      ],
+      "source_frames": [
+        36,
+        48,
+        60,
+        84,
+        108,
+        132,
+        156,
+        174
+      ],
+      "description": "Smooth dark/olive animal tail emerges from rear waist below skirt. Separate from flowing auburn hair; absent in approved human character."
+    }
+  ],
+  "evidence": [
+    "temp/kurisu/agent-qa/a010-attempt5-possible-tail.png",
+    "temp/kurisu/agent-qa/a010-new-motion-dense.png"
+  ],
+  "allowed_processing": [],
+  "schema_version": 1,
+  "source_sha256": "900eed0eeacf12137e4ce6c8556324274d7e9856524b08b5cb0e8ae06cebb304",
+  "inspected_source_file": "/Users/tonghao/Projects/dsh-pet/pet-packs/kurisu/source/library/a010/attempt-5/原地小跑.mp4",
+  "reviewed_at": "2026-10-30T14:02:25.079532+00:00",
+  "reviewer": "independent_animation_qa_agent",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "final_media_approved": false,
+  "new_model_calls": 0,
+  "portable_evidence": [
+    "quality/evidence/a010-latest-qa.png"
+  ],
+  "canonical_source_file": "source/library/a010/attempt-5/原地小跑.mp4",
+  "source_task_id": "59d7a170-e514-4646-998a-80bdefa5f70d",
+  "source_result_asset_id": "23e10214-91aa-484b-905b-33298eca721e"
+}

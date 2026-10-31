@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "status": "complete",
+  "action_id": "a053",
+  "attempt_index": 1,
+  "action_name": "逗灰猫",
+  "source_file": "source/library/a053/attempt-1/逗灰猫.mp4",
+  "source_sha256": "89169467bd127003a190c15ec9872bbdf63c26ee596421eaa72a5e963f1b80ca",
+  "task_id": "6fcfe044-b129-4f65-860b-fac64d21371f",
+  "native_dimensions": [
+    1344,
+    768
+  ],
+  "frames": [
+    {
+      "frame_index": 0,
+      "file": "f000-native.png",
+      "sha256": "8306678cf106645c338deae37ab6df2163a2794ffc5c91a0c8fc33a2f4a03419"
+    },
+    {
+      "frame_index": 12,
+      "file": "f012-native.png",
+      "sha256": "5b75e88468b7569cb8e80bf3282d959ce3f3b90fc0e68302bf7cef0473cb62ea"
+    },
+    {
+      "frame_index": 24,
+      "file": "f024-native.png",
+      "sha256": "92d50279c886dd752fefff63a68eaa29310ea35a23f5cdfb49c8fc109155f810"
+    },
+    {
+      "frame_index": 48,
+      "file": "f048-native.png",
+      "sha256": "df075f35dfd28cbfe7881ae790c892d019de03dfd3d73821507675d4bfb34af7"
+    },
+    {
+      "frame_index": 72,
+      "file": "f072-native.png",
+      "sha256": "a9b5ae06a83ee2577a25dd56137a9cede080da8a152709c0aafe641bcc4ab388"
+    },
+    {
+      "frame_index": 96,
+      "file": "f096-native.png",
+      "sha256": "3ebd604966953278fc69511b6b823dcb6aaaadbb6e23488b89348f2ca9e000a6"
+    },
+    {
+      "frame_index": 120,
+      "file": "f120-native.png",
+      "sha256": "eaf647172cc7210d9b40c30e3f4ddefea02f5faba8d93f9c35621b2f016dfd0e"
+    },
+    {
+      "frame_index": 144,
+      "file": "f144-native.png",
+      "sha256": "e9152fb3ce3f48c207c5a338b055c0e57d04a2f872dc5b50dfcc3a8578cb4654"
+    },
+    {
+      "frame_index": 168,
+      "file": "f168-native.png",
+      "sha256": "40f34e16f8737eb526d7eac5c1ef183f2c561bb7a1e1aee708d5648e0a29fb5b"
+    },
+    {
+      "frame_index": 192,
+      "file": "f192-native.png",
+      "sha256": "7a92cda79b03de5640c6a27f92c3f62a25ac7c6a79ffd333d09697fa774ec610"
+    },
+    {
+      "frame_index": 216,
+      "file": "f216-native.png",
+      "sha256": "79c70d25bf185645c33e2ae9883568fc304948ad182445356b1feba4b23aac27"
+    },
+    {
+      "frame_index": 239,
+      "file": "f239-native.png",
+      "sha256": "4e56c60b0870a25ce1331b6e5921d04fc53b067c57b32524a638c5292a8978b9"
+    }
+  ],
+  "decoder": "single ffmpeg, native size, RGB PNG; no scaling",
+  "created_at": "2026-10-31T03:53:36.638741+00:00"
+}

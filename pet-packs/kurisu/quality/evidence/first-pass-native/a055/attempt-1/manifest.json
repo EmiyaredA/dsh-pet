@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "status": "complete",
+  "action_id": "a055",
+  "attempt_index": 1,
+  "action_name": "轻快女仆舞",
+  "source_file": "source/library/a055/attempt-1/轻快女仆舞.mp4",
+  "source_sha256": "726a7d34042e63dbce0af9fee3b79d77889b0527d92716b054faeaeca084d25d",
+  "task_id": "710050a2-0ab3-4e21-b3d0-dcbd2aabe970",
+  "native_dimensions": [
+    1344,
+    768
+  ],
+  "frames": [
+    {
+      "frame_index": 0,
+      "file": "f000-native.png",
+      "sha256": "28c656584301c3f7397a4ea54b9976b88003ccef710d313b597dd0c1dd18cd18"
+    },
+    {
+      "frame_index": 12,
+      "file": "f012-native.png",
+      "sha256": "f14296e20123e76961a61bfa8f95a22737da6974c65206ad7607137284d75636"
+    },
+    {
+      "frame_index": 24,
+      "file": "f024-native.png",
+      "sha256": "987172f609bf595c193fccdc83bbf6afbddc29d05ddc0ee5a36e208bcd08a0ff"
+    },
+    {
+      "frame_index": 48,
+      "file": "f048-native.png",
+      "sha256": "974583d964a36b0f9c3f40658d9b1f18a397aa0e92cd6899a631ea3f0ccd9336"
+    },
+    {
+      "frame_index": 72,
+      "file": "f072-native.png",
+      "sha256": "471d4c66d5b159d5d039eae2695db432f2eef3d38d4b823cd37a6f728dfaccdd"
+    },
+    {
+      "frame_index": 96,
+      "file": "f096-native.png",
+      "sha256": "6ea2d95a46e4caf819d21e7b46963805d463fd587edba1bcc898fd1331576d48"
+    },
+    {
+      "frame_index": 120,
+      "file": "f120-native.png",
+      "sha256": "386e3aed78415a40e8539fc0d62763352d8af56b8d6eafb9417a4a28829ff9a4"
+    },
+    {
+      "frame_index": 144,
+      "file": "f144-native.png",
+      "sha256": "4a6e7b5305ac6e87a5e28b11870886e7effba2c68463699c502d65eb4fc80d8e"
+    },
+    {
+      "frame_index": 168,
+      "file": "f168-native.png",
+      "sha256": "f2f5a89c6b2f3ec9dea08d8df01610df5d90addfee5183c51b9a72d357f15962"
+    },
+    {
+      "frame_index": 192,
+      "file": "f192-native.png",
+      "sha256": "1cf4efdf440d56b02fa3cc77bec45128434fea68ee2ce6a44498dbb371a6e1a3"
+    },
+    {
+      "frame_index": 216,
+      "file": "f216-native.png",
+      "sha256": "be02ef59cb154aeec0b7c38713e288e6f39f88a07c9ed96fededf23df57a9497"
+    },
+    {
+      "frame_index": 239,
+      "file": "f239-native.png",
+      "sha256": "b01b6db3ab66c744e7cbddff353cf9ba41b506b659265391668f960bd2fb6f12"
+    }
+  ],
+  "decoder": "single ffmpeg, native size, RGB PNG; no scaling",
+  "created_at": "2026-10-31T03:53:37.568272+00:00"
+}

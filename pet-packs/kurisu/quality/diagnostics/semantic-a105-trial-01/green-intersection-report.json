@@ -1,0 +1,70 @@
+{
+  "created_at": "2026-10-31T01:21:56.641618+00:00",
+  "status": "candidate_ready_for_independent_review",
+  "source_file": "/Users/tonghao/Projects/dsh-pet/pet-packs/kurisu/source/library/a105/attempt-3/工作状态-实验成功庆祝.mp4",
+  "source_sha256": "5460f738fa8678600fc5d37fc4334e551deec03c013db41b0242c58059b13aac",
+  "candidate_file": "/Users/tonghao/Projects/dsh-pet/pet-packs/kurisu/quality/diagnostics/semantic-a105-trial-01/a105-semantic-green-intersection.webm",
+  "candidate_sha256": "f30d57062c1aa627d55a3f3585c8fd66b5f9c577d8d1eba6f780f314dd7c9b4f",
+  "baseline_candidate_file": "/Users/tonghao/Projects/dsh-pet/pet-packs/kurisu/quality/diagnostics/semantic-a105-trial-01/a105-semantic-isnet-anime.webm",
+  "baseline_candidate_sha256": "c96349e8adfce16dfe6ef9f081a88578f3ee3078bf71a38d6f0a2b23fd175320",
+  "recipe": {
+    "model_inference": "NONE; reused fixed original isnet-anime240 mask cache",
+    "source_sha256": "5460f738fa8678600fc5d37fc4334e551deec03c013db41b0242c58059b13aac",
+    "semantic_baseline_sha256": "c96349e8adfce16dfe6ef9f081a88578f3ee3078bf71a38d6f0a2b23fd175320",
+    "native_rgb": "exact cached decoded original RGB preserved, including hiddenRGB",
+    "alpha": "min(cached semantic alpha, build_pet_pack.key_green(originalRGB,low=12,high=110).alpha)",
+    "green_key_only_alpha_used": "RGB returned by key_green is discarded; no color correction",
+    "key_green_code_sha256": "20cb11cbde7b2a207f0630d326bb5a7221d6de232bbf97acc608478f77886083",
+    "transform": {
+      "source_box_frame0": [
+        474,
+        154,
+        870,
+        653
+      ],
+      "scale": 0.5410821643286573,
+      "scaled_size": [
+        727,
+        416
+      ],
+      "offset": [
+        -44,
+        -23
+      ],
+      "constant_for_all_frames": true,
+      "target_height": 270,
+      "target_feet": 330,
+      "resampler": "Pillow RGBA Lanczos internal associated RGBa sampling; no foreground RGB correction"
+    },
+    "resample": "Pillow RGBA.resize Lanczos associated RGBa",
+    "no_white_threshold": true,
+    "no_morphology_or_anatomy_repair": true,
+    "script_sha256": "54f983646fed2db2d919d04bb86a0619d30b4da4812df8a0d178ba0afc9ac3f1",
+    "code_scope": "single authorized a105 diagnostic; no production recipe/ledger/live change"
+  },
+  "recipe_sha256": "dabd18aa2df2422661ad6fcba1886ea9a57704e23fd3665511bba600d754f78f",
+  "native_rgb_exact_all_240": true,
+  "native_masks": "/Users/tonghao/Projects/dsh-pet/temp/kurisu/semantic-a105-trial-01/green-alpha-intersection/native-masks",
+  "native_rgba": "/Users/tonghao/Projects/dsh-pet/temp/kurisu/semantic-a105-trial-01/green-alpha-intersection/native-rgba",
+  "aligned_rgba": "/Users/tonghao/Projects/dsh-pet/temp/kurisu/semantic-a105-trial-01/green-alpha-intersection/aligned-rgba",
+  "frame_stats": "/Users/tonghao/Projects/dsh-pet/temp/kurisu/semantic-a105-trial-01/green-alpha-intersection/decoded-alpha-stats.json",
+  "spec": {
+    "width": 640,
+    "height": 360,
+    "fps": 24,
+    "frames": 240,
+    "duration_seconds": 10,
+    "codec": "vp9",
+    "audio_streams": 0,
+    "all_frames_true_alpha": true,
+    "alpha_max_abs_difference_from_png": 1
+  },
+  "final_media_approved": false,
+  "counts_toward_106": false,
+  "raw_background_rejection_unchanged": true,
+  "no_model_calls": true,
+  "notes": [
+    "Six-frame comparison shows obvious f0 green-outline reduction, but residual original RGB green cast may remain.",
+    "No claim that segmentation/key identifies all anatomy or is temporally stable; independent visual QA required."
+  ]
+}

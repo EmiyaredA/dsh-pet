@@ -1,0 +1,328 @@
+{
+  "scope_id": "steins-props-v3-12-firstpass-01",
+  "spec_revision_id": "steins-props-v3-2026-10-31",
+  "updated_at": "2026-10-31T12:43:01.849306+00:00",
+  "total": 12,
+  "passed": 1,
+  "failed": 11,
+  "in_progress": 0,
+  "awaiting_review": 0,
+  "not_submitted": 0,
+  "status": "completed",
+  "source_received": 12,
+  "rows": [
+    {
+      "id": "a032",
+      "name": "从电话微波炉里端出凝胶香蕉",
+      "phase": "failed",
+      "ledger_status": "processing_failed",
+      "spec_revision_id": "steins-props-v3-2026-10-31",
+      "absolute_attempt_index": 3,
+      "task_id": "26f2d8ba-96e5-442e-ae15-3e2b3bc3de74",
+      "source_received": true,
+      "source_file": "source/library/a032/attempt-3/从电话微波炉里端出凝胶香蕉.mp4",
+      "source_sha256": "b547135ce6026cf0cba6920dd9d69a66a89c71cfe60178a10bfb6a678cfe4e5f",
+      "candidate_file": null,
+      "candidate_sha256": null,
+      "source_verdict": "pending",
+      "failure_reason": "OriginalGREENsourcefailednative_border_v2; no key/color/semantic attempted"
+    },
+    {
+      "id": "a035",
+      "name": "盯着发散计看世界线数字",
+      "phase": "failed",
+      "ledger_status": "rejected",
+      "spec_revision_id": "steins-props-v3-2026-10-31",
+      "absolute_attempt_index": 3,
+      "task_id": "b4e2193f-35f5-4e12-8296-6305c2fccbae",
+      "source_received": true,
+      "source_file": "source/library/a035/attempt-3/盯着发散计看世界线数字.mp4",
+      "source_sha256": "5797ac5a09ea298dc9412e7f1037c3fac499b4aa2cfa03e36342dbb498afb47f",
+      "candidate_file": null,
+      "candidate_sha256": null,
+      "source_verdict": "reject",
+      "failure_reason": "发散计数字管与操作旋钮整面朝向镜头，角色站在道具背后看背壳；f096/f144明确未实现用户要求的道具朝向角色。本轮首片留档，不抠像、不重提或本地改道具。"
+    },
+    {
+      "id": "a036",
+      "name": "抱着乌帕玩偶晃",
+      "phase": "passed",
+      "ledger_status": "approved",
+      "spec_revision_id": "steins-props-v3-2026-10-31",
+      "absolute_attempt_index": 3,
+      "task_id": "cb43436d-d398-4ce4-bee1-b4ba114e9751",
+      "source_received": true,
+      "source_file": "source/library/a036/attempt-3/抱着乌帕玩偶晃.mp4",
+      "source_sha256": "2388f9ba3ec861d98e17d9e3b02893e30574ed552791ab7f827b01e83156d5b2",
+      "candidate_file": "source/library/a036/attempt-3/processing-08c11668-1a9c-4f07-8847-3a7fbf4a8d40/抱着乌帕玩偶晃.webm",
+      "candidate_sha256": "be7a89f76cdb13d85ceba9b5bccf415c2f3f274b5fced3b1c94f5368f3ed2311",
+      "source_verdict": "allow_mild_color_and_green_key",
+      "failure_reason": null
+    },
+    {
+      "id": "a037",
+      "name": "按下微波炉按钮发 D-mail",
+      "phase": "failed",
+      "ledger_status": "processing_failed",
+      "spec_revision_id": "steins-props-v3-2026-10-31",
+      "absolute_attempt_index": 3,
+      "task_id": "9a895132-1aee-4eb0-82d5-36484709ce6e",
+      "source_received": true,
+      "source_file": "source/library/a037/attempt-3/按下微波炉按钮发 D-mail.mp4",
+      "source_sha256": "5aa2fbee19a089d696d5cce5615bdcce69056cf8eff2c59d01b692a16f0e5bb5",
+      "candidate_file": null,
+      "candidate_sha256": null,
+      "source_verdict": "pending",
+      "failure_reason": "OriginalGREENsourcefailednative_border_v2; no key/color/semantic attempted"
+    },
+    {
+      "id": "a038",
+      "name": "戴上时间跳跃耳机",
+      "phase": "failed",
+      "ledger_status": "processing_failed",
+      "spec_revision_id": "steins-props-v3-2026-10-31",
+      "absolute_attempt_index": 3,
+      "task_id": "8a985eda-805a-4944-ba4d-1c1a685db1cc",
+      "source_received": true,
+      "source_file": "source/library/a038/attempt-3/戴上时间跳跃耳机.mp4",
+      "source_sha256": "a1a80387dfd41b518467b3bc2acb1e9c0f068b4e422fc14a53f2f4fe76c35ae8",
+      "candidate_file": null,
+      "candidate_sha256": null,
+      "source_verdict": "allow_mild_color_and_green_key",
+      "failure_reason": "ValueError: Residual translucent background outside the foreground bounds"
+    },
+    {
+      "id": "a043",
+      "name": "别上 LabMem 徽章",
+      "phase": "failed",
+      "ledger_status": "rejected",
+      "spec_revision_id": "steins-props-v3-2026-10-31",
+      "absolute_attempt_index": 3,
+      "task_id": "5cd058a1-c334-4859-a533-fc997de4b8a4",
+      "source_received": true,
+      "source_file": "source/library/a043/attempt-3/别上 LabMem 徽章.mp4",
+      "source_sha256": "cce89b81cc042b31d06147594e30ed84704903d62159a54f1105f7bc60c8a5f8",
+      "candidate_file": null,
+      "candidate_sha256": null,
+      "source_verdict": "reject",
+      "failure_reason": "The badge becomes an oversized handheld medallion rather than a pinned LabMem badge, and a long pin/rod remains across the apron in the final baseline frame. This fails prop stowage and baseline restoration despite a passing green boundary gate."
+    },
+    {
+      "id": "a044",
+      "name": "擦拭 IBN 5100 老电脑",
+      "phase": "failed",
+      "ledger_status": "processing_failed",
+      "spec_revision_id": "steins-props-v3-2026-10-31",
+      "absolute_attempt_index": 3,
+      "task_id": "bb9fb5ea-19df-4b60-ae00-7013b4edad4f",
+      "source_received": true,
+      "source_file": "source/library/a044/attempt-3/擦拭 IBN 5100 老电脑.mp4",
+      "source_sha256": "5240448289a1502803fb862c9828b74c0a7908e41d6af66a23de6c5dca7ba4fd",
+      "candidate_file": null,
+      "candidate_sha256": null,
+      "source_verdict": "pending",
+      "failure_reason": "OriginalGREENsourcefailednative_border_v2; no key/color/semantic attempted"
+    },
+    {
+      "id": "a047",
+      "name": "调整时间机器天线",
+      "phase": "failed",
+      "ledger_status": "rejected",
+      "spec_revision_id": "steins-props-v3-2026-10-31",
+      "absolute_attempt_index": 3,
+      "task_id": "66bc0b8f-7b05-4098-9030-3438aca1a63e",
+      "source_received": true,
+      "source_file": "source/library/a047/attempt-3/调整时间机器天线.mp4",
+      "source_sha256": "058196568399b26713044821e5d16bc83deb2f2158863198b285f686c3643fce",
+      "candidate_file": null,
+      "candidate_sha256": null,
+      "source_verdict": "reject",
+      "failure_reason": "The time-machine console display and operating controls face the viewer while the character stands behind it, violating the explicit prop-facing-character requirement. This is a source direction defect, not a keying issue."
+    },
+    {
+      "id": "a049",
+      "name": "端详怀表",
+      "phase": "failed",
+      "ledger_status": "exhausted",
+      "spec_revision_id": "steins-props-v3-2026-10-31",
+      "absolute_attempt_index": 3,
+      "task_id": "0d99a8ff-f590-4bb2-b28e-4c714b284aa7",
+      "source_received": true,
+      "source_file": "source/library/a049/attempt-3/端详怀表.mp4",
+      "source_sha256": "93887c9764e743c2084fc260e22e9e31ee5eecdd2caee49aadc38f9cc959e3b6",
+      "candidate_file": "source/library/a049/attempt-3/processing-c1c7fe69-4b0e-48f8-bd82-b9c5974224e6/端详怀表.webm",
+      "candidate_sha256": "347ea802c3f87eabd9a4671dc275b9eb993d93f03c6a346085274fe53d2593db",
+      "source_verdict": "allow_mild_color_and_green_key",
+      "failure_reason": "Independent current12 final visual rejection: 独立最终REJECT：240帧技术alpha/边界/残余背景筛查虽通过，但约2.5–3.75秒出现两枚独立怀表：手持一枚带顶环的封闭金色表壳，另一枚带独立顶环与完整表盘的怀表挂在左下链端；f060/f066/f078/f084/f090可见，属于道具重复与时序结构改变，不是同一怀表的正常铰链开盖，也不是抗锯齿。后段才恢复单枚开盖表并最终收回。实际完整10秒播放/idle切换已完成；本SHA不接收，不自动修补。"
+    },
+    {
+      "id": "a050",
+      "name": "盯着手机等 D-mail 回信",
+      "phase": "failed",
+      "ledger_status": "rejected",
+      "spec_revision_id": "steins-props-v3-2026-10-31",
+      "absolute_attempt_index": 3,
+      "task_id": "2248980a-251e-4e85-8437-096370c14cd1",
+      "source_received": true,
+      "source_file": "source/library/a050/attempt-3/盯着手机等 D-mail 回信.mp4",
+      "source_sha256": "935549f787e252d911d21b616c990a1ac3110d5cf52905b47322d777f37b6711",
+      "candidate_file": null,
+      "candidate_sha256": null,
+      "source_verdict": "reject",
+      "failure_reason": "手机最初明确以后置摄像头背壳朝镜头，但f144/f192信封UI却出现在同一后盖摄像头这一面，成为背盖显示屏幕信息，违背屏幕朝角色及背面不显示UI要求。本轮留原片，不key、不画掉图标或重提。"
+    },
+    {
+      "id": "a055",
+      "name": "披上白大褂",
+      "phase": "failed",
+      "ledger_status": "processing_failed",
+      "spec_revision_id": "steins-props-v3-2026-10-31",
+      "absolute_attempt_index": 3,
+      "task_id": "eb6de1a9-8698-439e-954c-984c19bee2a1",
+      "source_received": true,
+      "source_file": "source/library/a055/attempt-3/披上白大褂.mp4",
+      "source_sha256": "07bd512cef324f5de8ba6ec846d17e38928d272327bff4f112d2e61bdbb8d432",
+      "candidate_file": null,
+      "candidate_sha256": null,
+      "source_verdict": "pending",
+      "failure_reason": "OriginalGREENsourcefailednative_border_v2; no key/color/semantic attempted"
+    },
+    {
+      "id": "a057",
+      "name": "喝 Dr Pepper",
+      "phase": "failed",
+      "ledger_status": "rejected",
+      "spec_revision_id": "steins-props-v3-2026-10-31",
+      "absolute_attempt_index": 2,
+      "task_id": "cca8e401-6024-4c4e-8138-0a36fac797fd",
+      "source_received": true,
+      "source_file": "source/library/a057/attempt-2/喝 Dr Pepper.mp4",
+      "source_sha256": "86d2672a96fb817640782cc7513c4b52c2603cd319b0203af684843e5b16cae4",
+      "candidate_file": null,
+      "candidate_sha256": null,
+      "source_verdict": "reject",
+      "failure_reason": "The first frame already contains a large Dr Pepper can standing separately beside the left shoe, while the final baseline has no can. This breaks the required prop-free common start/end stance and would pop the can into the idle transition."
+    }
+  ],
+  "calls": {
+    "calls": 172,
+    "repairs": 67,
+    "other_model_calls": 79
+  },
+  "effective_limits": {
+    "total_calls": 172,
+    "repair_calls": 67,
+    "attempts_per_action": 2,
+    "other_model_calls": 79,
+    "concurrent_tasks": 6,
+    "local_processing": 2
+  },
+  "all_approved": 29,
+  "all_current_spec_sources": 106,
+  "all_historical_sources": 106,
+  "research_current_spec_sources": 27,
+  "research_current_spec_approved": 9,
+  "research_total": 27,
+  "prior30_snapshot": {
+    "passed": 10,
+    "failed": 20,
+    "archived_before_spec_change": true
+  },
+  "new_model_calls_from_script": 0,
+  "human_review_does_not_pause_generation": true,
+  "continuation_firstpass_two": {
+    "scope_id": "remaining-firstpass-a090-a091-01",
+    "controller": {
+      "pid": 75310,
+      "status": "stopped",
+      "started_at": "2026-10-31T11:41:57.359077+00:00",
+      "script": "temp/kurisu/remaining-firstpass-a090-a091-01/controller.py",
+      "log": "temp/kurisu/remaining-firstpass-a090-a091-01/controller.log",
+      "max_model_concurrency": 2,
+      "max_source_decoders": 1,
+      "last_check_at": "2026-10-31T11:50:43.109692+00:00",
+      "submitted": 2,
+      "sources": 2,
+      "finished_at": "2026-10-31T11:50:43.152115+00:00",
+      "stop_reason": "all2originals_recovered"
+    },
+    "actions": [
+      {
+        "id": "a090",
+        "name": "扶额无语",
+        "status": "approved",
+        "task_id": "e0c548de-702c-41eb-b5da-358f14b2bb18",
+        "source_received": true
+      },
+      {
+        "id": "a091",
+        "name": "认真反驳",
+        "status": "approved",
+        "task_id": "1e5fc728-6516-4289-ad49-01d7107c28d3",
+        "source_received": true
+      }
+    ],
+    "independent_from_completed_twelve_human_review": true
+  },
+  "existing_source_seven": {
+    "action_ids": [
+      "a073",
+      "a075",
+      "a077",
+      "a078",
+      "a079",
+      "a082",
+      "a084"
+    ],
+    "rows": [
+      {
+        "id": "a073",
+        "name": "摇扇纳凉",
+        "status": "rejected"
+      },
+      {
+        "id": "a075",
+        "name": "中秋赏月吃月饼",
+        "status": "approved"
+      },
+      {
+        "id": "a077",
+        "name": "秋日捡枫叶",
+        "status": "rejected"
+      },
+      {
+        "id": "a078",
+        "name": "讨糖南瓜灯",
+        "status": "exhausted"
+      },
+      {
+        "id": "a079",
+        "name": "萌化小幽灵",
+        "status": "approved"
+      },
+      {
+        "id": "a082",
+        "name": "拆圣诞礼物",
+        "status": "rejected"
+      },
+      {
+        "id": "a084",
+        "name": "吃汤圆",
+        "status": "approved"
+      }
+    ],
+    "media_owner": {
+      "pid": 77809,
+      "script": "/Users/tonghao/Projects/dsh-pet/temp/kurisu/existing-sources7-initial-media-01/media/watch_media.py",
+      "log": "/Users/tonghao/Projects/dsh-pet/temp/kurisu/existing-sources7-initial-media-01/media/media-watch.log",
+      "handoff": "/Users/tonghao/Projects/dsh-pet/temp/kurisu/existing-sources7-initial-media-01/media/handoff.json",
+      "manifest_sha256": "d5b053f0ae6deb1ecf0218e8a48a7d259cbe76832c1598c2440053afa3d7e61c",
+      "max_local_decoders": 1,
+      "maximum_total_local_decoders": 2,
+      "no_model_submission": true,
+      "python_unresolved_path": "/Users/tonghao/Projects/dsh-pet/temp/kurisu/video-matte-env/bin/python"
+    },
+    "new_model_calls": 0,
+    "initial_processing_only": true
+  }
+}

@@ -1,0 +1,2285 @@
+{
+  "schema_version": 1,
+  "audited_at": "2026-10-30T17:11:24.170157+00:00",
+  "reviewer": "independent_animation_qa_agent",
+  "audit_mode": "Read-only media/ledger audit; only QA artifacts written",
+  "verdict": "SUPERSEDED_DO_NOT_USE_FOR_RELEASE",
+  "scope": "Only11currentlyapproved canonical media files. This is not approval of the full106-animation target or failedrecentgenerations.",
+  "approved_count": 11,
+  "approved_ids": [
+    "a001",
+    "a002",
+    "a004",
+    "a005",
+    "a006",
+    "a008",
+    "a092",
+    "a101",
+    "a102",
+    "a103",
+    "a105"
+  ],
+  "all_current_hashes_match_ledger": true,
+  "unique_video_sha_count": 11,
+  "runtime_directory": "pet/kurisu-animation",
+  "runtime_directory_count": 11,
+  "runtime_directory_matches_exactly_approved": true,
+  "unapproved_runtime_files": [],
+  "withdrawn_candidate_exclusion": {
+    "passed": true,
+    "checked_withdrawn_digest_count": 20,
+    "current_digest_intersections": [],
+    "checked_sources": [
+      "ledger withdrawn_approvals",
+      "source/library/withdrawn-unapproved/*.webm"
+    ],
+    "excluded_stale_runtime_candidates": [
+      {
+        "id": "a012",
+        "sha256": "772e8bfc82628e61f1fe06833c77d99dbe02f3141e617b2ea69de6591b47920e",
+        "reason": "Unapproved stale runtime candidate archived by root",
+        "archive_file": "source/library/withdrawn-unapproved/a012/772e8bfc82628e61/伸懒腰.webm"
+      },
+      {
+        "id": "a010",
+        "sha256": "3fcd10bfba973c90ee144883978332ceb0632a8bb248f5de7b52fafb3c419377",
+        "reason": "Unapproved stale runtime candidate archived by root",
+        "archive_file": "source/library/withdrawn-unapproved/a010/3fcd10bfba973c90/原地小跑.webm"
+      },
+      {
+        "id": "a003",
+        "sha256": "f06392da2f05ccc120a2a0a3fd7c58b61d5bf7c17c02c52c347c0f3a161f1c75",
+        "reason": "Unapproved stale runtime candidate archived by root",
+        "archive_file": "source/library/withdrawn-unapproved/a003/f06392da2f05ccc1/被提起悬空.webm"
+      }
+    ],
+    "note": "No withdrawn/rejected white-background drag/run/stretch candidate is included among current11runtimefiles. Legacyqualified a092/a105 nearwhite/green-transition processing is separately disclosed, not misrepresented as newpuregreenraw."
+  },
+  "media_technical_coverage": {
+    "all11_fresh_hash_and_ffprobe": true,
+    "required_spec": "640x360,24fps,10s,240frames,VP9with realAlpha,noaudio",
+    "frames_total": 2640,
+    "frames_reused_by_identical_sha": 1920,
+    "frames_newly_decoded": 720,
+    "freshly_decoded_ids": [
+      "a092",
+      "a103",
+      "a105"
+    ],
+    "portable_reused_proof": "quality/processing-history/canonical-eight-neutral-v3.json",
+    "fresh_decodes": "quality/partial-audit/*-decode.json",
+    "alpha_reference_scope": "Eightclipbyte-exactAlpha proof is against immediatepre-neutral input recorded bypriorreview, not every older lossyarchive. Historical raw/referencearchives are not includedinZIP; current output technical decode remains reproducible."
+  },
+  "visual_coverage": {
+    "fresh_current_sha_atlases": 11,
+    "distinct_time_samples_per_clip": 6,
+    "distinct_time_samples_total": 66,
+    "composites_total": 198,
+    "backgrounds": [
+      "light",
+      "dark",
+      "checker"
+    ],
+    "sample_frames": [
+      0,
+      48,
+      96,
+      144,
+      192,
+      239
+    ],
+    "independently_viewed": true,
+    "verdict": "No newblocking defect observed in scoped samples",
+    "full240frame_temporal_visual_review_repeated_here": false,
+    "technical_metrics_are_not_visual_approval": true
+  },
+  "legacy_edit_provenance": {
+    "a092": "Earlier accepted nearwhite/green-transition connectedmatte +wholefigureuniformstationaryscale alignment. CurrentoutputSHA independentlydecoded; do notclaimsourcewaspuregreenall240frames.",
+    "a103": "Earlieruserauthorized same-source graybacklid reconstruction over140frames; oldpaperandwrongUIbacklid hashes explicitlywithdrawn and notselected.",
+    "a105": "Earlier accepted nearwhite/green-transition matte/despill +wholefigureuniformstationaryscale alignment. No newgeometryedits in thisaudit."
+  },
+  "limitations": [
+    "Static six-timepoint visual sampling does not prove absence of every brief eye/body flicker, subtle intermediate anatomy defect or all transition issues. Eightclipall-framecolor/Alpha evidence is reused onlywherecurrentSHA matches.",
+    "Freshall-frameAlpha/format/bounds checks for a092/a103/a105 do not constitute newall-framecolor/motion visual approval; their earlierreviewand current sixsampleviews remain the visual evidence.",
+    "Thisauditdoesnotrepeat desktopdrag/click/menu/roaming/event transitions, installerupdate or packageZIPbytevalidation; root validates packaging/runtime separately.",
+    "No withdrawnsource/history is certifiedforrelease; full106completion is notclaimed.",
+    "Archivedinputs referencedinsideoldproof are excludedfromZIP; the copiedproof preserves measurements/hashbindings butreproducing historical Alpha comparisons requires thosearchives."
+  ],
+  "records": [
+    {
+      "id": "a001",
+      "name": "待机呼吸",
+      "file": "pet/kurisu-animation/待机呼吸.webm",
+      "sha256": "10717cdea36065ed9e6a0360a7174ff1a79b7dea9523939376980b5f74219132",
+      "ledger_sha_matches": true,
+      "ffprobe": {
+        "codec": "vp9",
+        "size": [
+          640,
+          360
+        ],
+        "fps": "24/1",
+        "audio_streams": 0,
+        "duration_seconds": 10.0
+      },
+      "companion_report": "pet/kurisu-animation/待机呼吸.report.json",
+      "companion_report_sha256": "32b3bac8be9ee54c335ddb1c774d7d4b21e55624721d79c4ae2b9d3eef0026ed",
+      "companion_matte_method": "original_source_temporal_palette_with_unchanged_geometry",
+      "companion_verification": {
+        "width": 640,
+        "height": 360,
+        "fps": 24,
+        "frames": 240,
+        "duration_seconds": 10.0,
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "first_box": [
+          217,
+          59,
+          430,
+          330
+        ],
+        "last_box": [
+          217,
+          60,
+          430,
+          330
+        ],
+        "audio_streams": 0,
+        "codec": "vp9",
+        "all_frames_have_alpha": true,
+        "endpoint_geometry": {
+          "feet_delta_px": 0,
+          "height_delta_px": -1
+        },
+        "background_clear": true,
+        "endpoint_rgba_mean_absolute_difference": 3.801094482912665,
+        "transparent_fraction": 0.8216754738136574
+      },
+      "alignment": {
+        "scaled_size": [
+          506,
+          290
+        ],
+        "offset": [
+          66,
+          51
+        ],
+        "content_box": [
+          212.07738095238096,
+          57.041666666666664,
+          434.9583333333333,
+          329.671875
+        ],
+        "standing_height": 716.0,
+        "standing_center_x": 674.0,
+        "standing_feet_y": 738.0,
+        "target_height": 270,
+        "target_feet_y": 330
+      },
+      "decode_coverage": {
+        "method": "Reuse prior all240decodedframe proof, matched to current actualSHA",
+        "proof_file": "quality/processing-history/canonical-eight-neutral-v3.json",
+        "frames": 240,
+        "all_frames_have_alpha": true,
+        "alpha_byte_exact_to_immediate_pre_neutral_input": true,
+        "summary": {
+          "id": "a001",
+          "file": "pet/kurisu-animation/待机呼吸.webm",
+          "sha256": "10717cdea36065ed9e6a0360a7174ff1a79b7dea9523939376980b5f74219132",
+          "handoff_sha_matches": true,
+          "frames": 240,
+          "size": [
+            640,
+            360
+          ],
+          "fps": 24,
+          "duration": 10,
+          "audio": false,
+          "alpha_byte_exact_240_frames": true,
+          "alpha_reference": "/Users/tonghao/Projects/dsh-pet/pet-packs/kurisu/source/library/media-revisions/a001/f75e3adf52c9b042/待机呼吸.webm",
+          "archive_alpha_max_deviation": 0,
+          "archive_opaque_mask_changed_pixels": 0,
+          "archive_lost_core_pixels": 0,
+          "edge_green_max_pixels_perframe": 0,
+          "edge_green_total_pixels": 0,
+          "visible_green_max_pixels_perframe": 0,
+          "visible_green_total_pixels": 0,
+          "white_green_max_pixels_perframe": 22,
+          "dark_green_max_pixels_perframe": 474,
+          "outer_hair_white_island_flags": [],
+          "temporal_palette": {
+            "hair": {
+              "rgb_median_min": [
+                143.0,
+                64.0,
+                51.0
+              ],
+              "rgb_median_max": [
+                144.0,
+                66.0,
+                52.0
+              ],
+              "max_consecutive_channel_delta": 1.0,
+              "largest_delta_frame": 7
+            },
+            "skin": {
+              "rgb_median_min": [
+                249.0,
+                222.0,
+                208.0
+              ],
+              "rgb_median_max": [
+                252.0,
+                226.0,
+                215.0
+              ],
+              "max_consecutive_channel_delta": 2.0,
+              "largest_delta_frame": 13
+            },
+            "headband": {
+              "rgb_median_min": [
+                239.0,
+                240.0,
+                239.0
+              ],
+              "rgb_median_max": [
+                243.0,
+                242.0,
+                242.0
+              ],
+              "max_consecutive_channel_delta": 1.0,
+              "largest_delta_frame": 1
+            }
+          },
+          "visual_release_verdict": "PASS_SCOPED_CANONICAL8_PALETTE_AND_EDGE_REVIEW",
+          "live_version_sha_matches": true,
+          "review_scope": "Actual canonical8clips,all240frames each;6sampleframesonblack/gray/light backgrounds; no white-hole classifier; Alpha byte-exact toimmediatepre-neutral-stage input, notoldlossyarchive",
+          "source_archive_note": "Older pre-palette archive comparison separatelyreported; seven re-renderedgreen-source clips differ mostly at antialias masks. Do notclaimbyte-exacttooldarchive. No large skin/eye/cuff deletion seen."
+        }
+      },
+      "fresh_sample_atlas": "quality/partial-audit/a001-10717cdea360-three-backgrounds.png",
+      "fresh_atlas_frames": [
+        0,
+        48,
+        96,
+        144,
+        192,
+        239
+      ],
+      "withdrawn_approval_digest_collision": false,
+      "local_edits": null,
+      "visual_review": {
+        "scope": "Actual currentSHA media,6sampleframes composited on3backgrounds; independently viewed in finalaudit",
+        "sample_frames": [
+          0,
+          48,
+          96,
+          144,
+          192,
+          239
+        ],
+        "backgrounds": [
+          "light",
+          "dark",
+          "checker"
+        ],
+        "verdict": "NO_NEW_BLOCKING_DEFECT_OBSERVED_IN_SCOPED_SAMPLES",
+        "observation": "六帧呼吸待机抽样中造型、脸部及整体色调稳定，头饰和鞋完整。",
+        "not_all_frames_visually_judged": true
+      },
+      "standing_endpoint_geometry": {
+        "first_box": [
+          217,
+          59,
+          430,
+          330
+        ],
+        "last_box": [
+          217,
+          60,
+          430,
+          330
+        ],
+        "first_height_px": 271,
+        "last_height_px": 270,
+        "first_feet_y_px": 330,
+        "last_feet_y_px": 330
+      }
+    },
+    {
+      "id": "a002",
+      "name": "左右张望",
+      "file": "pet/kurisu-animation/左右张望.webm",
+      "sha256": "831d80bef0ff2dd03a35c6490fd67615f3ee99b152efcb00f448c84032f2ed15",
+      "ledger_sha_matches": true,
+      "ffprobe": {
+        "codec": "vp9",
+        "size": [
+          640,
+          360
+        ],
+        "fps": "24/1",
+        "audio_streams": 0,
+        "duration_seconds": 10.0
+      },
+      "companion_report": "pet/kurisu-animation/左右张望.report.json",
+      "companion_report_sha256": "4c7d3718eed22561c91b3360bbeb921fafe4ecbd94d806a458c76a9bb21ba1de",
+      "companion_matte_method": "original_source_temporal_palette_with_unchanged_geometry",
+      "companion_verification": {
+        "width": 640,
+        "height": 360,
+        "fps": 24,
+        "frames": 240,
+        "duration_seconds": 10.0,
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "first_box": [
+          217,
+          60,
+          430,
+          330
+        ],
+        "last_box": [
+          217,
+          60,
+          430,
+          330
+        ],
+        "audio_streams": 0,
+        "codec": "vp9",
+        "all_frames_have_alpha": true,
+        "endpoint_geometry": {
+          "feet_delta_px": 0,
+          "height_delta_px": 0
+        },
+        "background_clear": true,
+        "endpoint_rgba_mean_absolute_difference": 3.188470424564629,
+        "transparent_fraction": 0.8231174045138889
+      },
+      "alignment": {
+        "scaled_size": [
+          506,
+          290
+        ],
+        "offset": [
+          66,
+          52
+        ],
+        "content_box": [
+          201.53571428571428,
+          52.755208333333336,
+          441.73511904761904,
+          329.9166666666667
+        ],
+        "standing_height": 716.0,
+        "standing_center_x": 674.0,
+        "standing_feet_y": 736.0,
+        "target_height": 270,
+        "target_feet_y": 330
+      },
+      "decode_coverage": {
+        "method": "Reuse prior all240decodedframe proof, matched to current actualSHA",
+        "proof_file": "quality/processing-history/canonical-eight-neutral-v3.json",
+        "frames": 240,
+        "all_frames_have_alpha": true,
+        "alpha_byte_exact_to_immediate_pre_neutral_input": true,
+        "summary": {
+          "id": "a002",
+          "file": "pet/kurisu-animation/左右张望.webm",
+          "sha256": "831d80bef0ff2dd03a35c6490fd67615f3ee99b152efcb00f448c84032f2ed15",
+          "handoff_sha_matches": true,
+          "frames": 240,
+          "size": [
+            640,
+            360
+          ],
+          "fps": 24,
+          "duration": 10,
+          "audio": false,
+          "alpha_byte_exact_240_frames": true,
+          "alpha_reference": "/Users/tonghao/Projects/dsh-pet/temp/kurisu/agent-palette-batch/neutral-v2/a002-palette.webm",
+          "archive_alpha_max_deviation": 63,
+          "archive_opaque_mask_changed_pixels": 9587,
+          "archive_lost_core_pixels": 1,
+          "edge_green_max_pixels_perframe": 0,
+          "edge_green_total_pixels": 0,
+          "visible_green_max_pixels_perframe": 0,
+          "visible_green_total_pixels": 0,
+          "white_green_max_pixels_perframe": 6,
+          "dark_green_max_pixels_perframe": 401,
+          "outer_hair_white_island_flags": [],
+          "temporal_palette": {
+            "hair": {
+              "rgb_median_min": [
+                145.0,
+                61.0,
+                49.0
+              ],
+              "rgb_median_max": [
+                147.0,
+                62.0,
+                50.0
+              ],
+              "max_consecutive_channel_delta": 1.0,
+              "largest_delta_frame": 1
+            },
+            "skin": {
+              "rgb_median_min": [
+                250.0,
+                222.0,
+                210.0
+              ],
+              "rgb_median_max": [
+                251.0,
+                225.0,
+                213.0
+              ],
+              "max_consecutive_channel_delta": 2.0,
+              "largest_delta_frame": 5
+            },
+            "headband": {
+              "rgb_median_min": [
+                240.0,
+                242.0,
+                242.0
+              ],
+              "rgb_median_max": [
+                243.0,
+                244.0,
+                244.0
+              ],
+              "max_consecutive_channel_delta": 2.0,
+              "largest_delta_frame": 205
+            }
+          },
+          "visual_release_verdict": "PASS_SCOPED_CANONICAL8_PALETTE_AND_EDGE_REVIEW",
+          "live_version_sha_matches": true,
+          "review_scope": "Actual canonical8clips,all240frames each;6sampleframesonblack/gray/light backgrounds; no white-hole classifier; Alpha byte-exact toimmediatepre-neutral-stage input, notoldlossyarchive",
+          "source_archive_note": "Older pre-palette archive comparison separatelyreported; seven re-renderedgreen-source clips differ mostly at antialias masks. Do notclaimbyte-exacttooldarchive. No large skin/eye/cuff deletion seen."
+        }
+      },
+      "fresh_sample_atlas": "quality/partial-audit/a002-831d80bef0ff-three-backgrounds.png",
+      "fresh_atlas_frames": [
+        0,
+        48,
+        96,
+        144,
+        192,
+        239
+      ],
+      "withdrawn_approval_digest_collision": false,
+      "local_edits": null,
+      "visual_review": {
+        "scope": "Actual currentSHA media,6sampleframes composited on3backgrounds; independently viewed in finalaudit",
+        "sample_frames": [
+          0,
+          48,
+          96,
+          144,
+          192,
+          239
+        ],
+        "backgrounds": [
+          "light",
+          "dark",
+          "checker"
+        ],
+        "verdict": "NO_NEW_BLOCKING_DEFECT_OBSERVED_IN_SCOPED_SAMPLES",
+        "observation": "抽样可见左右张望，回到正面；未见原跑步候选的尾巴或额头透明三角缺损。",
+        "not_all_frames_visually_judged": true
+      },
+      "standing_endpoint_geometry": {
+        "first_box": [
+          217,
+          60,
+          430,
+          330
+        ],
+        "last_box": [
+          217,
+          60,
+          430,
+          330
+        ],
+        "first_height_px": 270,
+        "last_height_px": 270,
+        "first_feet_y_px": 330,
+        "last_feet_y_px": 330
+      }
+    },
+    {
+      "id": "a004",
+      "name": "点击回应-傲娇",
+      "file": "pet/kurisu-animation/点击回应-傲娇.webm",
+      "sha256": "2c3e714a9418d53395de459e89299233f823936a682ff50e64088f63754cb1d8",
+      "ledger_sha_matches": true,
+      "ffprobe": {
+        "codec": "vp9",
+        "size": [
+          640,
+          360
+        ],
+        "fps": "24/1",
+        "audio_streams": 0,
+        "duration_seconds": 10.0
+      },
+      "companion_report": "pet/kurisu-animation/点击回应-傲娇.report.json",
+      "companion_report_sha256": "674cd6f3c7d61202c7d7568f6ff66e3e36043e7910c71a641f355decc0589c2e",
+      "companion_matte_method": "original_source_temporal_palette_with_unchanged_geometry",
+      "companion_verification": {
+        "width": 640,
+        "height": 360,
+        "fps": 24,
+        "frames": 240,
+        "duration_seconds": 10.0,
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "first_box": [
+          217,
+          60,
+          431,
+          330
+        ],
+        "last_box": [
+          217,
+          60,
+          431,
+          329
+        ],
+        "audio_streams": 0,
+        "codec": "vp9",
+        "all_frames_have_alpha": true,
+        "endpoint_geometry": {
+          "feet_delta_px": -1,
+          "height_delta_px": -1
+        },
+        "background_clear": true,
+        "endpoint_rgba_mean_absolute_difference": 2.3051112829981535,
+        "transparent_fraction": 0.8230625180844907
+      },
+      "alignment": {
+        "scaled_size": [
+          508,
+          290
+        ],
+        "offset": [
+          65,
+          52
+        ],
+        "content_box": [
+          212.41071428571428,
+          58.041666666666664,
+          442.2202380952381,
+          329.9166666666667
+        ],
+        "standing_height": 714.0,
+        "standing_center_x": 675.0,
+        "standing_feet_y": 735.0,
+        "target_height": 270,
+        "target_feet_y": 330
+      },
+      "decode_coverage": {
+        "method": "Reuse prior all240decodedframe proof, matched to current actualSHA",
+        "proof_file": "quality/processing-history/canonical-eight-neutral-v3.json",
+        "frames": 240,
+        "all_frames_have_alpha": true,
+        "alpha_byte_exact_to_immediate_pre_neutral_input": true,
+        "summary": {
+          "id": "a004",
+          "file": "pet/kurisu-animation/点击回应-傲娇.webm",
+          "sha256": "2c3e714a9418d53395de459e89299233f823936a682ff50e64088f63754cb1d8",
+          "handoff_sha_matches": true,
+          "frames": 240,
+          "size": [
+            640,
+            360
+          ],
+          "fps": 24,
+          "duration": 10,
+          "audio": false,
+          "alpha_byte_exact_240_frames": true,
+          "alpha_reference": "/Users/tonghao/Projects/dsh-pet/temp/kurisu/agent-palette-batch/neutral-v2/a004-palette.webm",
+          "archive_alpha_max_deviation": 47,
+          "archive_opaque_mask_changed_pixels": 9189,
+          "archive_lost_core_pixels": 0,
+          "edge_green_max_pixels_perframe": 0,
+          "edge_green_total_pixels": 0,
+          "visible_green_max_pixels_perframe": 0,
+          "visible_green_total_pixels": 0,
+          "white_green_max_pixels_perframe": 22,
+          "dark_green_max_pixels_perframe": 796,
+          "outer_hair_white_island_flags": [],
+          "temporal_palette": {
+            "hair": {
+              "rgb_median_min": [
+                142.0,
+                65.0,
+                50.0
+              ],
+              "rgb_median_max": [
+                144.0,
+                66.0,
+                51.0
+              ],
+              "max_consecutive_channel_delta": 1.0,
+              "largest_delta_frame": 1
+            },
+            "skin": {
+              "rgb_median_min": [
+                248.0,
+                223.0,
+                208.0
+              ],
+              "rgb_median_max": [
+                251.0,
+                226.0,
+                211.0
+              ],
+              "max_consecutive_channel_delta": 1.0,
+              "largest_delta_frame": 9
+            },
+            "headband": {
+              "rgb_median_min": [
+                241.0,
+                242.0,
+                239.0
+              ],
+              "rgb_median_max": [
+                244.0,
+                243.0,
+                240.0
+              ],
+              "max_consecutive_channel_delta": 1.0,
+              "largest_delta_frame": 30
+            }
+          },
+          "visual_release_verdict": "PASS_SCOPED_CANONICAL8_PALETTE_AND_EDGE_REVIEW",
+          "live_version_sha_matches": true,
+          "review_scope": "Actual canonical8clips,all240frames each;6sampleframesonblack/gray/light backgrounds; no white-hole classifier; Alpha byte-exact toimmediatepre-neutral-stage input, notoldlossyarchive",
+          "source_archive_note": "Older pre-palette archive comparison separatelyreported; seven re-renderedgreen-source clips differ mostly at antialias masks. Do notclaimbyte-exacttooldarchive. No large skin/eye/cuff deletion seen."
+        }
+      },
+      "fresh_sample_atlas": "quality/partial-audit/a004-2c3e714a9418-three-backgrounds.png",
+      "fresh_atlas_frames": [
+        0,
+        48,
+        96,
+        144,
+        192,
+        239
+      ],
+      "withdrawn_approval_digest_collision": false,
+      "local_edits": null,
+      "visual_review": {
+        "scope": "Actual currentSHA media,6sampleframes composited on3backgrounds; independently viewed in finalaudit",
+        "sample_frames": [
+          0,
+          48,
+          96,
+          144,
+          192,
+          239
+        ],
+        "backgrounds": [
+          "light",
+          "dark",
+          "checker"
+        ],
+        "verdict": "NO_NEW_BLOCKING_DEFECT_OBSERVED_IN_SCOPED_SAMPLES",
+        "observation": "抽样可见傲娇表情与侧身姿态，末帧回正面；未见新增彩色光斑。",
+        "not_all_frames_visually_judged": true
+      },
+      "standing_endpoint_geometry": {
+        "first_box": [
+          217,
+          60,
+          431,
+          330
+        ],
+        "last_box": [
+          217,
+          60,
+          431,
+          329
+        ],
+        "first_height_px": 270,
+        "last_height_px": 269,
+        "first_feet_y_px": 330,
+        "last_feet_y_px": 329
+      }
+    },
+    {
+      "id": "a005",
+      "name": "点击回应-开心挥手",
+      "file": "pet/kurisu-animation/点击回应-开心挥手.webm",
+      "sha256": "bdf17c8b2df35991297ae1a998132cd9edaa38c48f9a900fa4e0b3d93c2401d0",
+      "ledger_sha_matches": true,
+      "ffprobe": {
+        "codec": "vp9",
+        "size": [
+          640,
+          360
+        ],
+        "fps": "24/1",
+        "audio_streams": 0,
+        "duration_seconds": 10.0
+      },
+      "companion_report": "pet/kurisu-animation/点击回应-开心挥手.report.json",
+      "companion_report_sha256": "732f468d7a011a976c3e4ffbb128814403c6ed929aeb3b2337eebe5bcb205233",
+      "companion_matte_method": "original_source_temporal_palette_with_unchanged_geometry",
+      "companion_verification": {
+        "width": 640,
+        "height": 360,
+        "fps": 24,
+        "frames": 240,
+        "duration_seconds": 10.0,
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "first_box": [
+          216,
+          58,
+          432,
+          330
+        ],
+        "last_box": [
+          217,
+          60,
+          432,
+          330
+        ],
+        "audio_streams": 0,
+        "codec": "vp9",
+        "all_frames_have_alpha": true,
+        "endpoint_geometry": {
+          "feet_delta_px": 0,
+          "height_delta_px": -2
+        },
+        "background_clear": true,
+        "endpoint_rgba_mean_absolute_difference": 24.184663056558364,
+        "transparent_fraction": 0.8177575412326389
+      },
+      "alignment": {
+        "scaled_size": [
+          510,
+          292
+        ],
+        "offset": [
+          64,
+          50
+        ],
+        "content_box": [
+          215.0267857142857,
+          52.28125,
+          437.3928571428571,
+          329.8333333333333
+        ],
+        "standing_height": 712.0,
+        "standing_center_x": 675.0,
+        "standing_feet_y": 736.0,
+        "target_height": 270,
+        "target_feet_y": 330
+      },
+      "decode_coverage": {
+        "method": "Reuse prior all240decodedframe proof, matched to current actualSHA",
+        "proof_file": "quality/processing-history/canonical-eight-neutral-v3.json",
+        "frames": 240,
+        "all_frames_have_alpha": true,
+        "alpha_byte_exact_to_immediate_pre_neutral_input": true,
+        "summary": {
+          "id": "a005",
+          "file": "pet/kurisu-animation/点击回应-开心挥手.webm",
+          "sha256": "bdf17c8b2df35991297ae1a998132cd9edaa38c48f9a900fa4e0b3d93c2401d0",
+          "handoff_sha_matches": true,
+          "frames": 240,
+          "size": [
+            640,
+            360
+          ],
+          "fps": 24,
+          "duration": 10,
+          "audio": false,
+          "alpha_byte_exact_240_frames": true,
+          "alpha_reference": "/Users/tonghao/Projects/dsh-pet/temp/kurisu/agent-palette-batch/neutral-v2/a005-palette.webm",
+          "archive_alpha_max_deviation": 59,
+          "archive_opaque_mask_changed_pixels": 8630,
+          "archive_lost_core_pixels": 0,
+          "edge_green_max_pixels_perframe": 0,
+          "edge_green_total_pixels": 0,
+          "visible_green_max_pixels_perframe": 0,
+          "visible_green_total_pixels": 0,
+          "white_green_max_pixels_perframe": 2,
+          "dark_green_max_pixels_perframe": 270,
+          "outer_hair_white_island_flags": [],
+          "temporal_palette": {
+            "hair": {
+              "rgb_median_min": [
+                143.0,
+                62.0,
+                51.0
+              ],
+              "rgb_median_max": [
+                144.0,
+                63.0,
+                51.0
+              ],
+              "max_consecutive_channel_delta": 1.0,
+              "largest_delta_frame": 13
+            },
+            "skin": {
+              "rgb_median_min": [
+                249.0,
+                224.0,
+                210.0
+              ],
+              "rgb_median_max": [
+                251.0,
+                226.0,
+                214.0
+              ],
+              "max_consecutive_channel_delta": 2.0,
+              "largest_delta_frame": 208
+            },
+            "headband": {
+              "rgb_median_min": [
+                243.0,
+                239.0,
+                241.0
+              ],
+              "rgb_median_max": [
+                245.0,
+                242.0,
+                243.0
+              ],
+              "max_consecutive_channel_delta": 1.0,
+              "largest_delta_frame": 4
+            }
+          },
+          "visual_release_verdict": "PASS_SCOPED_CANONICAL8_PALETTE_AND_EDGE_REVIEW",
+          "live_version_sha_matches": true,
+          "review_scope": "Actual canonical8clips,all240frames each;6sampleframesonblack/gray/light backgrounds; no white-hole classifier; Alpha byte-exact toimmediatepre-neutral-stage input, notoldlossyarchive",
+          "source_archive_note": "Older pre-palette archive comparison separatelyreported; seven re-renderedgreen-source clips differ mostly at antialias masks. Do notclaimbyte-exacttooldarchive. No large skin/eye/cuff deletion seen."
+        }
+      },
+      "fresh_sample_atlas": "quality/partial-audit/a005-bdf17c8b2df3-three-backgrounds.png",
+      "fresh_atlas_frames": [
+        0,
+        48,
+        96,
+        144,
+        192,
+        239
+      ],
+      "withdrawn_approval_digest_collision": false,
+      "local_edits": {
+        "type": "hold_clean_opening_frame",
+        "frames": 10,
+        "reason": "Observed model-generated leading brightness fade during neutral opening only",
+        "edited_at": "2026-10-30T05:23:02.957549+00:00",
+        "source_file": "source/library/a005/attempt-2/点击回应-开心挥手-opening-repaired.mp4"
+      },
+      "visual_review": {
+        "scope": "Actual currentSHA media,6sampleframes composited on3backgrounds; independently viewed in finalaudit",
+        "sample_frames": [
+          0,
+          48,
+          96,
+          144,
+          192,
+          239
+        ],
+        "backgrounds": [
+          "light",
+          "dark",
+          "checker"
+        ],
+        "verdict": "NO_NEW_BLOCKING_DEFECT_OBSERVED_IN_SCOPED_SAMPLES",
+        "observation": "抽样可见挥手/回应动作，首末均空手正面；此前较高首尾像素MAD不等于残留挥手，道具与手势无明显残留。",
+        "not_all_frames_visually_judged": true
+      },
+      "standing_endpoint_geometry": {
+        "first_box": [
+          216,
+          58,
+          432,
+          330
+        ],
+        "last_box": [
+          217,
+          60,
+          432,
+          330
+        ],
+        "first_height_px": 272,
+        "last_height_px": 270,
+        "first_feet_y_px": 330,
+        "last_feet_y_px": 330
+      }
+    },
+    {
+      "id": "a006",
+      "name": "点击回应-害羞捂脸",
+      "file": "pet/kurisu-animation/点击回应-害羞捂脸.webm",
+      "sha256": "2068984d756db5f177bd209675170168da56ee8c0b37ebbaba88f59c04167bb0",
+      "ledger_sha_matches": true,
+      "ffprobe": {
+        "codec": "vp9",
+        "size": [
+          640,
+          360
+        ],
+        "fps": "24/1",
+        "audio_streams": 0,
+        "duration_seconds": 10.0
+      },
+      "companion_report": "pet/kurisu-animation/点击回应-害羞捂脸.report.json",
+      "companion_report_sha256": "3bf798ae250d6f5f3f48b134bfd44ee40dfee4f02febf98a76f2266bdc4be1a7",
+      "companion_matte_method": "original_source_temporal_palette_with_unchanged_geometry",
+      "companion_verification": {
+        "width": 640,
+        "height": 360,
+        "fps": 24,
+        "frames": 240,
+        "duration_seconds": 10.0,
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "first_box": [
+          217,
+          60,
+          431,
+          330
+        ],
+        "last_box": [
+          217,
+          60,
+          431,
+          330
+        ],
+        "audio_streams": 0,
+        "codec": "vp9",
+        "all_frames_have_alpha": true,
+        "endpoint_geometry": {
+          "feet_delta_px": 0,
+          "height_delta_px": 0
+        },
+        "background_clear": true,
+        "endpoint_rgba_mean_absolute_difference": 2.0981030577576445,
+        "transparent_fraction": 0.820160716869213
+      },
+      "alignment": {
+        "scaled_size": [
+          506,
+          290
+        ],
+        "offset": [
+          66,
+          52
+        ],
+        "content_box": [
+          210.57142857142856,
+          55.020833333333336,
+          437.9702380952381,
+          329.9166666666667
+        ],
+        "standing_height": 716.0,
+        "standing_center_x": 675.0,
+        "standing_feet_y": 736.0,
+        "target_height": 270,
+        "target_feet_y": 330
+      },
+      "decode_coverage": {
+        "method": "Reuse prior all240decodedframe proof, matched to current actualSHA",
+        "proof_file": "quality/processing-history/canonical-eight-neutral-v3.json",
+        "frames": 240,
+        "all_frames_have_alpha": true,
+        "alpha_byte_exact_to_immediate_pre_neutral_input": true,
+        "summary": {
+          "id": "a006",
+          "file": "pet/kurisu-animation/点击回应-害羞捂脸.webm",
+          "sha256": "2068984d756db5f177bd209675170168da56ee8c0b37ebbaba88f59c04167bb0",
+          "handoff_sha_matches": true,
+          "frames": 240,
+          "size": [
+            640,
+            360
+          ],
+          "fps": 24,
+          "duration": 10,
+          "audio": false,
+          "alpha_byte_exact_240_frames": true,
+          "alpha_reference": "/Users/tonghao/Projects/dsh-pet/temp/kurisu/agent-palette-batch/neutral-v2/a006-palette.webm",
+          "archive_alpha_max_deviation": 63,
+          "archive_opaque_mask_changed_pixels": 8175,
+          "archive_lost_core_pixels": 1,
+          "edge_green_max_pixels_perframe": 0,
+          "edge_green_total_pixels": 0,
+          "visible_green_max_pixels_perframe": 0,
+          "visible_green_total_pixels": 0,
+          "white_green_max_pixels_perframe": 7,
+          "dark_green_max_pixels_perframe": 515,
+          "outer_hair_white_island_flags": [],
+          "temporal_palette": {
+            "hair": {
+              "rgb_median_min": [
+                143.0,
+                63.0,
+                50.0
+              ],
+              "rgb_median_max": [
+                145.0,
+                64.0,
+                51.0
+              ],
+              "max_consecutive_channel_delta": 1.0,
+              "largest_delta_frame": 8
+            },
+            "skin": {
+              "rgb_median_min": [
+                248.0,
+                224.0,
+                210.0
+              ],
+              "rgb_median_max": [
+                250.0,
+                226.0,
+                214.0
+              ],
+              "max_consecutive_channel_delta": 2.0,
+              "largest_delta_frame": 125
+            },
+            "headband": {
+              "rgb_median_min": [
+                241.0,
+                242.0,
+                240.0
+              ],
+              "rgb_median_max": [
+                244.0,
+                244.0,
+                242.0
+              ],
+              "max_consecutive_channel_delta": 2.0,
+              "largest_delta_frame": 33
+            }
+          },
+          "visual_release_verdict": "PASS_SCOPED_CANONICAL8_PALETTE_AND_EDGE_REVIEW",
+          "live_version_sha_matches": true,
+          "review_scope": "Actual canonical8clips,all240frames each;6sampleframesonblack/gray/light backgrounds; no white-hole classifier; Alpha byte-exact toimmediatepre-neutral-stage input, notoldlossyarchive",
+          "source_archive_note": "Older pre-palette archive comparison separatelyreported; seven re-renderedgreen-source clips differ mostly at antialias masks. Do notclaimbyte-exacttooldarchive. No large skin/eye/cuff deletion seen."
+        }
+      },
+      "fresh_sample_atlas": "quality/partial-audit/a006-2068984d756d-three-backgrounds.png",
+      "fresh_atlas_frames": [
+        0,
+        48,
+        96,
+        144,
+        192,
+        239
+      ],
+      "withdrawn_approval_digest_collision": false,
+      "local_edits": null,
+      "visual_review": {
+        "scope": "Actual currentSHA media,6sampleframes composited on3backgrounds; independently viewed in finalaudit",
+        "sample_frames": [
+          0,
+          48,
+          96,
+          144,
+          192,
+          239
+        ],
+        "backgrounds": [
+          "light",
+          "dark",
+          "checker"
+        ],
+        "verdict": "NO_NEW_BLOCKING_DEFECT_OBSERVED_IN_SCOPED_SAMPLES",
+        "observation": "抽样可见害羞表情及手部动作；捂脸是该动作预期内容，不作为其他动作的非预期遮脸标准。",
+        "not_all_frames_visually_judged": true
+      },
+      "standing_endpoint_geometry": {
+        "first_box": [
+          217,
+          60,
+          431,
+          330
+        ],
+        "last_box": [
+          217,
+          60,
+          431,
+          330
+        ],
+        "first_height_px": 270,
+        "last_height_px": 270,
+        "first_feet_y_px": 330,
+        "last_feet_y_px": 330
+      }
+    },
+    {
+      "id": "a008",
+      "name": "点击回应-认可点头",
+      "file": "pet/kurisu-animation/点击回应-认可点头.webm",
+      "sha256": "b228c8a9a101e4727f0c3c65f1b9b8fb8cf962eff7821e15fde2111879324b82",
+      "ledger_sha_matches": true,
+      "ffprobe": {
+        "codec": "vp9",
+        "size": [
+          640,
+          360
+        ],
+        "fps": "24/1",
+        "audio_streams": 0,
+        "duration_seconds": 10.0
+      },
+      "companion_report": "pet/kurisu-animation/点击回应-认可点头.report.json",
+      "companion_report_sha256": "a40c651c36bf46b5173af83fbd123fecc79bfee8646bb141ef2672f8da66db50",
+      "companion_matte_method": "original_source_temporal_palette_with_unchanged_geometry",
+      "companion_verification": {
+        "width": 640,
+        "height": 360,
+        "fps": 24,
+        "frames": 240,
+        "duration_seconds": 10.0,
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "first_box": [
+          217,
+          60,
+          431,
+          330
+        ],
+        "last_box": [
+          217,
+          60,
+          431,
+          330
+        ],
+        "audio_streams": 0,
+        "codec": "vp9",
+        "all_frames_have_alpha": true,
+        "endpoint_geometry": {
+          "feet_delta_px": 0,
+          "height_delta_px": 0
+        },
+        "background_clear": true,
+        "endpoint_rgba_mean_absolute_difference": 2.189161806859741,
+        "transparent_fraction": 0.8206385633680555
+      },
+      "alignment": {
+        "scaled_size": [
+          506,
+          290
+        ],
+        "offset": [
+          66,
+          52
+        ],
+        "content_box": [
+          212.07738095238096,
+          54.265625,
+          435.7113095238095,
+          329.9166666666667
+        ],
+        "standing_height": 716.0,
+        "standing_center_x": 675.0,
+        "standing_feet_y": 736.0,
+        "target_height": 270,
+        "target_feet_y": 330
+      },
+      "decode_coverage": {
+        "method": "Reuse prior all240decodedframe proof, matched to current actualSHA",
+        "proof_file": "quality/processing-history/canonical-eight-neutral-v3.json",
+        "frames": 240,
+        "all_frames_have_alpha": true,
+        "alpha_byte_exact_to_immediate_pre_neutral_input": true,
+        "summary": {
+          "id": "a008",
+          "file": "pet/kurisu-animation/点击回应-认可点头.webm",
+          "sha256": "b228c8a9a101e4727f0c3c65f1b9b8fb8cf962eff7821e15fde2111879324b82",
+          "handoff_sha_matches": true,
+          "frames": 240,
+          "size": [
+            640,
+            360
+          ],
+          "fps": 24,
+          "duration": 10,
+          "audio": false,
+          "alpha_byte_exact_240_frames": true,
+          "alpha_reference": "/Users/tonghao/Projects/dsh-pet/temp/kurisu/agent-palette-batch/neutral-v2/a008-palette.webm",
+          "archive_alpha_max_deviation": 55,
+          "archive_opaque_mask_changed_pixels": 8540,
+          "archive_lost_core_pixels": 1,
+          "edge_green_max_pixels_perframe": 0,
+          "edge_green_total_pixels": 0,
+          "visible_green_max_pixels_perframe": 0,
+          "visible_green_total_pixels": 0,
+          "white_green_max_pixels_perframe": 7,
+          "dark_green_max_pixels_perframe": 323,
+          "outer_hair_white_island_flags": [],
+          "temporal_palette": {
+            "hair": {
+              "rgb_median_min": [
+                143.0,
+                65.0,
+                51.0
+              ],
+              "rgb_median_max": [
+                145.0,
+                65.0,
+                52.0
+              ],
+              "max_consecutive_channel_delta": 1.0,
+              "largest_delta_frame": 7
+            },
+            "skin": {
+              "rgb_median_min": [
+                249.0,
+                223.0,
+                210.0
+              ],
+              "rgb_median_max": [
+                250.0,
+                226.0,
+                214.0
+              ],
+              "max_consecutive_channel_delta": 1.0,
+              "largest_delta_frame": 3
+            },
+            "headband": {
+              "rgb_median_min": [
+                241.0,
+                242.0,
+                240.0
+              ],
+              "rgb_median_max": [
+                244.0,
+                244.0,
+                242.0
+              ],
+              "max_consecutive_channel_delta": 2.0,
+              "largest_delta_frame": 90
+            }
+          },
+          "visual_release_verdict": "PASS_SCOPED_CANONICAL8_PALETTE_AND_EDGE_REVIEW",
+          "live_version_sha_matches": true,
+          "review_scope": "Actual canonical8clips,all240frames each;6sampleframesonblack/gray/light backgrounds; no white-hole classifier; Alpha byte-exact toimmediatepre-neutral-stage input, notoldlossyarchive",
+          "source_archive_note": "Older pre-palette archive comparison separatelyreported; seven re-renderedgreen-source clips differ mostly at antialias masks. Do notclaimbyte-exacttooldarchive. No large skin/eye/cuff deletion seen."
+        }
+      },
+      "fresh_sample_atlas": "quality/partial-audit/a008-b228c8a9a101-three-backgrounds.png",
+      "fresh_atlas_frames": [
+        0,
+        48,
+        96,
+        144,
+        192,
+        239
+      ],
+      "withdrawn_approval_digest_collision": false,
+      "local_edits": null,
+      "visual_review": {
+        "scope": "Actual currentSHA media,6sampleframes composited on3backgrounds; independently viewed in finalaudit",
+        "sample_frames": [
+          0,
+          48,
+          96,
+          144,
+          192,
+          239
+        ],
+        "backgrounds": [
+          "light",
+          "dark",
+          "checker"
+        ],
+        "verdict": "NO_NEW_BLOCKING_DEFECT_OBSERVED_IN_SCOPED_SAMPLES",
+        "observation": "抽样可见紧凑点头回应；未见明显尺度跳变或局部脸部透明缺失。",
+        "not_all_frames_visually_judged": true
+      },
+      "standing_endpoint_geometry": {
+        "first_box": [
+          217,
+          60,
+          431,
+          330
+        ],
+        "last_box": [
+          217,
+          60,
+          431,
+          330
+        ],
+        "first_height_px": 270,
+        "last_height_px": 270,
+        "first_feet_y_px": 330,
+        "last_feet_y_px": 330
+      }
+    },
+    {
+      "id": "a092",
+      "name": "余额-预算充足",
+      "file": "pet/kurisu-animation/余额-预算充足.webm",
+      "sha256": "5ad4737b5d55cd056e5da7a4c27faa76082110bc414f42a0b3c36ae9d9855437",
+      "ledger_sha_matches": true,
+      "ffprobe": {
+        "codec": "vp9",
+        "size": [
+          640,
+          360
+        ],
+        "fps": "24/1",
+        "audio_streams": 0,
+        "duration_seconds": 10.0
+      },
+      "companion_report": "pet/kurisu-animation/余额-预算充足.report.json",
+      "companion_report_sha256": "708c07435ad703b58df1fc87050b806af69454a71efc82c415f58be8dc0d0f53",
+      "companion_matte_method": "edge_connected_matte_and_stationary_scale_alignment",
+      "companion_verification": {
+        "width": 640,
+        "height": 360,
+        "fps": 24,
+        "frames": 240,
+        "duration_seconds": 10.0,
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "first_box": [
+          214,
+          59,
+          435,
+          329
+        ],
+        "last_box": [
+          214,
+          59,
+          435,
+          329
+        ],
+        "audio_streams": 0,
+        "codec": "vp9",
+        "all_frames_have_alpha": true,
+        "endpoint_geometry": {
+          "feet_delta_px": 0,
+          "height_delta_px": 0
+        },
+        "background_clear": true,
+        "endpoint_rgba_mean_absolute_difference": 5.736237553342817,
+        "transparent_fraction": 0.8158807508680556
+      },
+      "alignment": {
+        "scaled_size": [
+          722,
+          414
+        ],
+        "offset": [
+          -48,
+          -23
+        ],
+        "content_box": [
+          205.02232142857142,
+          58.9375,
+          439.2425595238095,
+          329.546875
+        ],
+        "standing_height": 502.0,
+        "standing_center_x": 685.0,
+        "standing_feet_y": 654.0,
+        "target_height": 270,
+        "target_feet_y": 330
+      },
+      "decode_coverage": {
+        "method": "Fresh independent all240frame libvpx-vp9 RGBA decode in finalpartialaudit",
+        "verification": {
+          "width": 640,
+          "height": 360,
+          "fps": 24,
+          "frames": 240,
+          "duration_seconds": 10.0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "first_box": [
+            214,
+            59,
+            435,
+            329
+          ],
+          "last_box": [
+            214,
+            59,
+            435,
+            329
+          ],
+          "audio_streams": 0,
+          "codec": "vp9",
+          "all_frames_have_alpha": true,
+          "endpoint_geometry": {
+            "feet_delta_px": 0,
+            "height_delta_px": 0
+          },
+          "background_clear": true,
+          "endpoint_rgba_mean_absolute_difference": 5.736237553342817,
+          "transparent_fraction": 0.8158807508680556
+        },
+        "frames": 240,
+        "all_frames_have_alpha": true
+      },
+      "fresh_sample_atlas": "quality/partial-audit/a092-5ad4737b5d55-three-backgrounds.png",
+      "fresh_atlas_frames": [
+        0,
+        48,
+        96,
+        144,
+        192,
+        239
+      ],
+      "withdrawn_approval_digest_collision": false,
+      "local_edits": {
+        "type": "edge_connected_matte_and_stationary_scale_alignment",
+        "removed_gray_tail_pixels": 0,
+        "tail_roi": null,
+        "background_samples": [
+          [
+            240.0,
+            252.0,
+            241.0
+          ],
+          [
+            240.0,
+            253.0,
+            241.0
+          ],
+          [
+            240.0,
+            252.0,
+            241.0
+          ]
+        ],
+        "edited_at": "2026-10-30T09:06:46.774422+00:00",
+        "reason": "Use edge-connected matting with enclosed white costume protection for the observed flat green/near-white transition",
+        "standing_stabilization": {
+          "scale_range": [
+            0.8202614379084967,
+            1.004
+          ],
+          "anchor": {
+            "box": [
+              488,
+              152,
+              899,
+              654
+            ],
+            "center_x": 685.0,
+            "height": 502,
+            "feet_y": 654
+          },
+          "reason": "Stationary standing shot with props confined below the head contains supplier whole-figure zoom drift; uniform scaling and baseline translation only"
+        }
+      },
+      "visual_review": {
+        "scope": "Actual currentSHA media,6sampleframes composited on3backgrounds; independently viewed in finalaudit",
+        "sample_frames": [
+          0,
+          48,
+          96,
+          144,
+          192,
+          239
+        ],
+        "backgrounds": [
+          "light",
+          "dark",
+          "checker"
+        ],
+        "verdict": "NO_NEW_BLOCKING_DEFECT_OBSERVED_IN_SCOPED_SAMPLES",
+        "observation": "抽样可见预算本、金色硬币小钱袋及满意表情，后段已收回；当前SHA不是撤回候选。保留旧流程近白/绿幕与等比稳像来源记录。",
+        "not_all_frames_visually_judged": true
+      },
+      "standing_endpoint_geometry": {
+        "first_box": [
+          214,
+          59,
+          435,
+          329
+        ],
+        "last_box": [
+          214,
+          59,
+          435,
+          329
+        ],
+        "first_height_px": 270,
+        "last_height_px": 270,
+        "first_feet_y_px": 329,
+        "last_feet_y_px": 329
+      }
+    },
+    {
+      "id": "a101",
+      "name": "工作状态-托腮推理",
+      "file": "pet/kurisu-animation/工作状态-托腮推理.webm",
+      "sha256": "06ebc0e33ac8ecd63b407f061e8196442f76eb9f1a583750896e3a81883f4ff4",
+      "ledger_sha_matches": true,
+      "ffprobe": {
+        "codec": "vp9",
+        "size": [
+          640,
+          360
+        ],
+        "fps": "24/1",
+        "audio_streams": 0,
+        "duration_seconds": 10.0
+      },
+      "companion_report": "pet/kurisu-animation/工作状态-托腮推理.report.json",
+      "companion_report_sha256": "2ae19dc8d207c768da74a4ca032e8279f851f4e82078ee41ca2f8a6ea53c5f0d",
+      "companion_matte_method": "original_source_temporal_palette_with_unchanged_geometry",
+      "companion_verification": {
+        "width": 640,
+        "height": 360,
+        "fps": 24,
+        "frames": 240,
+        "duration_seconds": 10.0,
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "first_box": [
+          217,
+          60,
+          431,
+          330
+        ],
+        "last_box": [
+          217,
+          60,
+          431,
+          329
+        ],
+        "audio_streams": 0,
+        "codec": "vp9",
+        "all_frames_have_alpha": true,
+        "endpoint_geometry": {
+          "feet_delta_px": -1,
+          "height_delta_px": -1
+        },
+        "background_clear": true,
+        "endpoint_rgba_mean_absolute_difference": 2.1965974353896427,
+        "transparent_fraction": 0.820663646556713
+      },
+      "alignment": {
+        "scaled_size": [
+          508,
+          290
+        ],
+        "offset": [
+          65,
+          52
+        ],
+        "content_box": [
+          216.19047619047618,
+          55.020833333333336,
+          436.92857142857144,
+          329.9166666666667
+        ],
+        "standing_height": 715.0,
+        "standing_center_x": 675.0,
+        "standing_feet_y": 735.0,
+        "target_height": 270,
+        "target_feet_y": 330
+      },
+      "decode_coverage": {
+        "method": "Reuse prior all240decodedframe proof, matched to current actualSHA",
+        "proof_file": "quality/processing-history/canonical-eight-neutral-v3.json",
+        "frames": 240,
+        "all_frames_have_alpha": true,
+        "alpha_byte_exact_to_immediate_pre_neutral_input": true,
+        "summary": {
+          "id": "a101",
+          "file": "pet/kurisu-animation/工作状态-托腮推理.webm",
+          "sha256": "06ebc0e33ac8ecd63b407f061e8196442f76eb9f1a583750896e3a81883f4ff4",
+          "handoff_sha_matches": true,
+          "frames": 240,
+          "size": [
+            640,
+            360
+          ],
+          "fps": 24,
+          "duration": 10,
+          "audio": false,
+          "alpha_byte_exact_240_frames": true,
+          "alpha_reference": "/Users/tonghao/Projects/dsh-pet/temp/kurisu/agent-palette-batch/neutral-v2/a101-palette.webm",
+          "archive_alpha_max_deviation": 61,
+          "archive_opaque_mask_changed_pixels": 8607,
+          "archive_lost_core_pixels": 0,
+          "edge_green_max_pixels_perframe": 0,
+          "edge_green_total_pixels": 0,
+          "visible_green_max_pixels_perframe": 0,
+          "visible_green_total_pixels": 0,
+          "white_green_max_pixels_perframe": 12,
+          "dark_green_max_pixels_perframe": 793,
+          "outer_hair_white_island_flags": [],
+          "temporal_palette": {
+            "hair": {
+              "rgb_median_min": [
+                143.0,
+                65.0,
+                51.0
+              ],
+              "rgb_median_max": [
+                144.0,
+                66.0,
+                52.0
+              ],
+              "max_consecutive_channel_delta": 1.0,
+              "largest_delta_frame": 6
+            },
+            "skin": {
+              "rgb_median_min": [
+                249.0,
+                224.0,
+                209.0
+              ],
+              "rgb_median_max": [
+                251.0,
+                226.0,
+                212.0
+              ],
+              "max_consecutive_channel_delta": 1.0,
+              "largest_delta_frame": 3
+            },
+            "headband": {
+              "rgb_median_min": [
+                240.0,
+                242.0,
+                239.0
+              ],
+              "rgb_median_max": [
+                242.0,
+                243.0,
+                240.0
+              ],
+              "max_consecutive_channel_delta": 1.5,
+              "largest_delta_frame": 163
+            }
+          },
+          "visual_release_verdict": "PASS_SCOPED_CANONICAL8_PALETTE_AND_EDGE_REVIEW",
+          "live_version_sha_matches": true,
+          "review_scope": "Actual canonical8clips,all240frames each;6sampleframesonblack/gray/light backgrounds; no white-hole classifier; Alpha byte-exact toimmediatepre-neutral-stage input, notoldlossyarchive",
+          "source_archive_note": "Older pre-palette archive comparison separatelyreported; seven re-renderedgreen-source clips differ mostly at antialias masks. Do notclaimbyte-exacttooldarchive. No large skin/eye/cuff deletion seen."
+        }
+      },
+      "fresh_sample_atlas": "quality/partial-audit/a101-06ebc0e33ac8-three-backgrounds.png",
+      "fresh_atlas_frames": [
+        0,
+        48,
+        96,
+        144,
+        192,
+        239
+      ],
+      "withdrawn_approval_digest_collision": false,
+      "local_edits": null,
+      "visual_review": {
+        "scope": "Actual currentSHA media,6sampleframes composited on3backgrounds; independently viewed in finalaudit",
+        "sample_frames": [
+          0,
+          48,
+          96,
+          144,
+          192,
+          239
+        ],
+        "backgrounds": [
+          "light",
+          "dark",
+          "checker"
+        ],
+        "verdict": "NO_NEW_BLOCKING_DEFECT_OBSERVED_IN_SCOPED_SAMPLES",
+        "observation": "抽样可见托腮思考手势，末段恢复；头部、发色及外轮廓在三背景中协调。",
+        "not_all_frames_visually_judged": true
+      },
+      "standing_endpoint_geometry": {
+        "first_box": [
+          217,
+          60,
+          431,
+          330
+        ],
+        "last_box": [
+          217,
+          60,
+          431,
+          329
+        ],
+        "first_height_px": 270,
+        "last_height_px": 269,
+        "first_feet_y_px": 330,
+        "last_feet_y_px": 329
+      }
+    },
+    {
+      "id": "a102",
+      "name": "工作状态-专注敲键盘",
+      "file": "pet/kurisu-animation/工作状态-专注敲键盘.webm",
+      "sha256": "3b890f38928effc3b3be0823955daa19332f7f47b7d7bd34ff4d98a0611d494a",
+      "ledger_sha_matches": true,
+      "ffprobe": {
+        "codec": "vp9",
+        "size": [
+          640,
+          360
+        ],
+        "fps": "24/1",
+        "audio_streams": 0,
+        "duration_seconds": 10.0
+      },
+      "companion_report": "pet/kurisu-animation/工作状态-专注敲键盘.report.json",
+      "companion_report_sha256": "507048da7ca8999fc86bb604279dfa5cda6f68e55b920db9aa156ad9b56bbe4f",
+      "companion_matte_method": "original_source_temporal_palette_with_unchanged_geometry",
+      "companion_verification": {
+        "width": 640,
+        "height": 360,
+        "fps": 24,
+        "frames": 240,
+        "duration_seconds": 10.0,
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "first_box": [
+          217,
+          59,
+          431,
+          330
+        ],
+        "last_box": [
+          217,
+          60,
+          431,
+          330
+        ],
+        "audio_streams": 0,
+        "codec": "vp9",
+        "all_frames_have_alpha": true,
+        "endpoint_geometry": {
+          "feet_delta_px": 0,
+          "height_delta_px": -1
+        },
+        "background_clear": true,
+        "endpoint_rgba_mean_absolute_difference": 2.101008362026562,
+        "transparent_fraction": 0.8211237160011574
+      },
+      "alignment": {
+        "scaled_size": [
+          506,
+          290
+        ],
+        "offset": [
+          66,
+          52
+        ],
+        "content_box": [
+          210.57142857142856,
+          58.796875,
+          436.4642857142857,
+          329.9166666666667
+        ],
+        "standing_height": 716.0,
+        "standing_center_x": 675.0,
+        "standing_feet_y": 736.0,
+        "target_height": 270,
+        "target_feet_y": 330
+      },
+      "decode_coverage": {
+        "method": "Reuse prior all240decodedframe proof, matched to current actualSHA",
+        "proof_file": "quality/processing-history/canonical-eight-neutral-v3.json",
+        "frames": 240,
+        "all_frames_have_alpha": true,
+        "alpha_byte_exact_to_immediate_pre_neutral_input": true,
+        "summary": {
+          "id": "a102",
+          "file": "pet/kurisu-animation/工作状态-专注敲键盘.webm",
+          "sha256": "3b890f38928effc3b3be0823955daa19332f7f47b7d7bd34ff4d98a0611d494a",
+          "handoff_sha_matches": true,
+          "frames": 240,
+          "size": [
+            640,
+            360
+          ],
+          "fps": 24,
+          "duration": 10,
+          "audio": false,
+          "alpha_byte_exact_240_frames": true,
+          "alpha_reference": "/Users/tonghao/Projects/dsh-pet/temp/kurisu/agent-palette-batch/neutral-v2/a102-palette.webm",
+          "archive_alpha_max_deviation": 57,
+          "archive_opaque_mask_changed_pixels": 7901,
+          "archive_lost_core_pixels": 1,
+          "edge_green_max_pixels_perframe": 0,
+          "edge_green_total_pixels": 0,
+          "visible_green_max_pixels_perframe": 0,
+          "visible_green_total_pixels": 0,
+          "white_green_max_pixels_perframe": 14,
+          "dark_green_max_pixels_perframe": 405,
+          "outer_hair_white_island_flags": [],
+          "temporal_palette": {
+            "hair": {
+              "rgb_median_min": [
+                143.0,
+                63.0,
+                51.0
+              ],
+              "rgb_median_max": [
+                145.0,
+                64.0,
+                52.0
+              ],
+              "max_consecutive_channel_delta": 1.0,
+              "largest_delta_frame": 5
+            },
+            "skin": {
+              "rgb_median_min": [
+                248.0,
+                222.0,
+                210.0
+              ],
+              "rgb_median_max": [
+                251.0,
+                225.0,
+                213.0
+              ],
+              "max_consecutive_channel_delta": 1.0,
+              "largest_delta_frame": 5
+            },
+            "headband": {
+              "rgb_median_min": [
+                240.0,
+                241.0,
+                239.0
+              ],
+              "rgb_median_max": [
+                243.0,
+                242.0,
+                240.5
+              ],
+              "max_consecutive_channel_delta": 1.0,
+              "largest_delta_frame": 1
+            }
+          },
+          "visual_release_verdict": "PASS_SCOPED_CANONICAL8_PALETTE_AND_EDGE_REVIEW",
+          "live_version_sha_matches": true,
+          "review_scope": "Actual canonical8clips,all240frames each;6sampleframesonblack/gray/light backgrounds; no white-hole classifier; Alpha byte-exact toimmediatepre-neutral-stage input, notoldlossyarchive",
+          "source_archive_note": "Older pre-palette archive comparison separatelyreported; seven re-renderedgreen-source clips differ mostly at antialias masks. Do notclaimbyte-exacttooldarchive. No large skin/eye/cuff deletion seen."
+        }
+      },
+      "fresh_sample_atlas": "quality/partial-audit/a102-3b890f38928e-three-backgrounds.png",
+      "fresh_atlas_frames": [
+        0,
+        48,
+        96,
+        144,
+        192,
+        239
+      ],
+      "withdrawn_approval_digest_collision": false,
+      "local_edits": null,
+      "visual_review": {
+        "scope": "Actual currentSHA media,6sampleframes composited on3backgrounds; independently viewed in finalaudit",
+        "sample_frames": [
+          0,
+          48,
+          96,
+          144,
+          192,
+          239
+        ],
+        "backgrounds": [
+          "light",
+          "dark",
+          "checker"
+        ],
+        "verdict": "NO_NEW_BLOCKING_DEFECT_OBSERVED_IN_SCOPED_SAMPLES",
+        "observation": "抽样可见灰色电脑，朝观众一侧为朴素背盖；没有把屏幕UI画在背盖上的旧问题。末段道具收起。",
+        "not_all_frames_visually_judged": true
+      },
+      "standing_endpoint_geometry": {
+        "first_box": [
+          217,
+          59,
+          431,
+          330
+        ],
+        "last_box": [
+          217,
+          60,
+          431,
+          330
+        ],
+        "first_height_px": 271,
+        "last_height_px": 270,
+        "first_feet_y_px": 330,
+        "last_feet_y_px": 330
+      }
+    },
+    {
+      "id": "a103",
+      "name": "工作状态-整理实验记录",
+      "file": "pet/kurisu-animation/工作状态-整理实验记录.webm",
+      "sha256": "615aa8f01c1fb16a5ecae0938a7d27a31caf7b409967f63bf9e4cb6377797072",
+      "ledger_sha_matches": true,
+      "ffprobe": {
+        "codec": "vp9",
+        "size": [
+          640,
+          360
+        ],
+        "fps": "24/1",
+        "audio_streams": 0,
+        "duration_seconds": 10.0
+      },
+      "companion_report": "pet/kurisu-animation/工作状态-整理实验记录.report.json",
+      "companion_report_sha256": "e3958c350868995fb13497e3e2e2de8e5b1d7a7d0f8c74335578a16ad9cdb639",
+      "companion_matte_method": "green_difference_with_tracked_plain_rear_lid",
+      "companion_verification": {
+        "width": 640,
+        "height": 360,
+        "fps": 24,
+        "frames": 240,
+        "duration_seconds": 10.0,
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "first_box": [
+          217,
+          60,
+          431,
+          330
+        ],
+        "last_box": [
+          217,
+          60,
+          431,
+          330
+        ],
+        "audio_streams": 0,
+        "codec": "vp9",
+        "all_frames_have_alpha": true,
+        "endpoint_geometry": {
+          "feet_delta_px": 0,
+          "height_delta_px": 0
+        },
+        "background_clear": true,
+        "endpoint_rgba_mean_absolute_difference": 2.3536863518678337,
+        "transparent_fraction": 0.81793701171875
+      },
+      "alignment": {
+        "scaled_size": [
+          506,
+          290
+        ],
+        "offset": [
+          66,
+          52
+        ],
+        "content_box": [
+          207.5595238095238,
+          56.53125,
+          434.2053571428571,
+          336.7135416666667
+        ],
+        "standing_height": 716.0,
+        "standing_center_x": 675.0,
+        "standing_feet_y": 736.0,
+        "target_height": 270,
+        "target_feet_y": 330
+      },
+      "decode_coverage": {
+        "method": "Fresh independent all240frame libvpx-vp9 RGBA decode in finalpartialaudit",
+        "verification": {
+          "width": 640,
+          "height": 360,
+          "fps": 24,
+          "frames": 240,
+          "duration_seconds": 10.0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "first_box": [
+            217,
+            60,
+            431,
+            330
+          ],
+          "last_box": [
+            217,
+            60,
+            431,
+            330
+          ],
+          "audio_streams": 0,
+          "codec": "vp9",
+          "all_frames_have_alpha": true,
+          "endpoint_geometry": {
+            "feet_delta_px": 0,
+            "height_delta_px": 0
+          },
+          "background_clear": true,
+          "endpoint_rgba_mean_absolute_difference": 2.3536863518678337,
+          "transparent_fraction": 0.81793701171875
+        },
+        "frames": 240,
+        "all_frames_have_alpha": true
+      },
+      "fresh_sample_atlas": "quality/partial-audit/a103-615aa8f01c1f-three-backgrounds.png",
+      "fresh_atlas_frames": [
+        0,
+        48,
+        96,
+        144,
+        192,
+        239
+      ],
+      "withdrawn_approval_digest_collision": false,
+      "local_edits": {
+        "type": "green_difference_with_tracked_plain_rear_lid",
+        "reference_source_frame": 48,
+        "reference_time_seconds": 2,
+        "frames_repaired": 140,
+        "pixels_repaired": 4794719,
+        "tracking_file": "source/library/a103/attempt-2/rear-lid-tracking.json",
+        "reason": "User identified impossible screen information on the rear lid; reconstruct only the same-video gray exterior surface, preserving hands, outline and hinge",
+        "edited_at": "2026-10-30T09:46:12.300959+00:00",
+        "new_model_calls": 0
+      },
+      "visual_review": {
+        "scope": "Actual currentSHA media,6sampleframes composited on3backgrounds; independently viewed in finalaudit",
+        "sample_frames": [
+          0,
+          48,
+          96,
+          144,
+          192,
+          239
+        ],
+        "backgrounds": [
+          "light",
+          "dark",
+          "checker"
+        ],
+        "verdict": "NO_NEW_BLOCKING_DEFECT_OBSERVED_IN_SCOPED_SAMPLES",
+        "observation": "2/4/6秒抽样中电脑朝观众一侧为纯灰背盖，无旧数据UI；8秒收道具、末帧回空手。已授权的背盖局部修复140帧记录保留。",
+        "not_all_frames_visually_judged": true
+      },
+      "standing_endpoint_geometry": {
+        "first_box": [
+          217,
+          60,
+          431,
+          330
+        ],
+        "last_box": [
+          217,
+          60,
+          431,
+          330
+        ],
+        "first_height_px": 270,
+        "last_height_px": 270,
+        "first_feet_y_px": 330,
+        "last_feet_y_px": 330
+      }
+    },
+    {
+      "id": "a105",
+      "name": "工作状态-实验成功庆祝",
+      "file": "pet/kurisu-animation/工作状态-实验成功庆祝.webm",
+      "sha256": "74b47ba9bf4d1363993906c3f54e1454bf8c651fbdda295f562d050327bca5e1",
+      "ledger_sha_matches": true,
+      "ffprobe": {
+        "codec": "vp9",
+        "size": [
+          640,
+          360
+        ],
+        "fps": "24/1",
+        "audio_streams": 0,
+        "duration_seconds": 10.0
+      },
+      "companion_report": "pet/kurisu-animation/工作状态-实验成功庆祝.report.json",
+      "companion_report_sha256": "a7c5a988b53351741e41ca4067b04ff5fddd999f0868fd59bdcb6e285d447eb0",
+      "companion_matte_method": "edge_connected_matte_and_stationary_scale_alignment",
+      "companion_verification": {
+        "width": 640,
+        "height": 360,
+        "fps": 24,
+        "frames": 240,
+        "duration_seconds": 10.0,
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "first_box": [
+          213,
+          59,
+          433,
+          329
+        ],
+        "last_box": [
+          213,
+          59,
+          434,
+          330
+        ],
+        "audio_streams": 0,
+        "codec": "vp9",
+        "all_frames_have_alpha": true,
+        "background_clear": true,
+        "endpoint_rgba_mean_absolute_difference": 8.632493675719536,
+        "transparent_fraction": 0.81640234375
+      },
+      "alignment": {
+        "scaled_size": [
+          722,
+          414
+        ],
+        "offset": [
+          -49,
+          -24
+        ],
+        "content_box": [
+          207.78273809523807,
+          59.015625,
+          439.3169642857143,
+          329.625
+        ],
+        "standing_height": 502.0,
+        "standing_center_x": 686.0,
+        "standing_feet_y": 656.0,
+        "target_height": 270,
+        "target_feet_y": 330
+      },
+      "decode_coverage": {
+        "method": "Fresh independent all240frame libvpx-vp9 RGBA decode in finalpartialaudit",
+        "verification": {
+          "width": 640,
+          "height": 360,
+          "fps": 24,
+          "frames": 240,
+          "duration_seconds": 10.0,
+          "alpha_min": 0,
+          "alpha_max": 255,
+          "first_box": [
+            213,
+            59,
+            433,
+            329
+          ],
+          "last_box": [
+            213,
+            59,
+            434,
+            330
+          ],
+          "audio_streams": 0,
+          "codec": "vp9",
+          "all_frames_have_alpha": true,
+          "endpoint_geometry": {
+            "feet_delta_px": 1,
+            "height_delta_px": 1
+          },
+          "background_clear": true,
+          "endpoint_rgba_mean_absolute_difference": 8.632493675719536,
+          "transparent_fraction": 0.81640234375
+        },
+        "frames": 240,
+        "all_frames_have_alpha": true
+      },
+      "fresh_sample_atlas": "quality/partial-audit/a105-74b47ba9bf4d-three-backgrounds.png",
+      "fresh_atlas_frames": [
+        0,
+        48,
+        96,
+        144,
+        192,
+        239
+      ],
+      "withdrawn_approval_digest_collision": false,
+      "local_edits": {
+        "type": "edge_connected_matte_and_stationary_scale_alignment",
+        "removed_gray_tail_pixels": 0,
+        "tail_roi": null,
+        "background_samples": [
+          [
+            91.0,
+            242.0,
+            99.0
+          ],
+          [
+            119.0,
+            244.0,
+            124.0
+          ],
+          [
+            161.0,
+            243.0,
+            163.0
+          ]
+        ],
+        "edited_at": "2026-10-30T08:57:32.647427+00:00",
+        "reason": "Use edge-connected matting with enclosed white costume protection for the observed flat green/near-white transition",
+        "standing_stabilization": {
+          "scale_range": [
+            0.7560240963855421,
+            1.001996007984032
+          ],
+          "anchor": {
+            "box": [
+              488,
+              154,
+              898,
+              656
+            ],
+            "center_x": 686.0,
+            "height": 502,
+            "feet_y": 656
+          },
+          "reason": "Inspected empty-handed stationary arm-crossing shot contains supplier whole-figure zoom drift; uniform scaling and baseline translation only"
+        }
+      },
+      "visual_review": {
+        "scope": "Actual currentSHA media,6sampleframes composited on3backgrounds; independently viewed in finalaudit",
+        "sample_frames": [
+          0,
+          48,
+          96,
+          144,
+          192,
+          239
+        ],
+        "backgrounds": [
+          "light",
+          "dark",
+          "checker"
+        ],
+        "verdict": "NO_NEW_BLOCKING_DEFECT_OBSERVED_IN_SCOPED_SAMPLES",
+        "observation": "抽样可见小装置与庆祝手势，后段道具已收回；未见新一轮失败素材的移动绿色光点。保留旧流程近白/绿幕与等比稳像来源记录。",
+        "not_all_frames_visually_judged": true
+      },
+      "standing_endpoint_geometry": {
+        "first_box": [
+          213,
+          59,
+          433,
+          329
+        ],
+        "last_box": [
+          213,
+          59,
+          434,
+          330
+        ],
+        "first_height_px": 270,
+        "last_height_px": 271,
+        "first_feet_y_px": 329,
+        "last_feet_y_px": 330
+      }
+    }
+  ],
+  "new_model_calls": 0,
+  "media_or_ledger_mutated": false,
+  "superseded_at": "2026-10-30T17:52:57.814237+00:00",
+  "superseded_reason": "User confirmed opaque white islands in a092/a105 hair. Earlier thumbnail visual statement missed those defects. Both are withdrawn; current release scope is9 only.",
+  "superseded_by": "quality/FINAL_PARTIAL_AUDIT.json"
+}

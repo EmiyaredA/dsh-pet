@@ -1,0 +1,96 @@
+{
+  "action_id": "a055",
+  "attempt_index": 2,
+  "spec_revision_id": "programmer-research-v2-2026-10-31",
+  "source_file": "source/library/a055/attempt-2/打卡拎包跑.mp4",
+  "source_sha256": "a7b199f1447646561c847e4e02418670c0196cccf7840a4891cd38aebb269f63",
+  "source_task_id": "0cb94250-67cb-4886-b92c-4a816b3b8524",
+  "schema_version": 1,
+  "reviewer": "batch30_source_qa_parallel independent source visual reviewer",
+  "reviewed_at": "2026-10-31T10:28:52.459023+00:00",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "processing_clearance": "reject",
+  "final_media_approved": false,
+  "summary": "Native frame 96 remains front-facing during the specified left-profile jogging phase; frame 144 is a three-quarter left turn with a second far eyelid still visible, rather than strict left side profile with nose/chest/hips/knees/shoe tips all left. This material direction/action mismatch is an original-source failure; no key or pixel repair can turn it into the required profile.",
+  "defects": [
+    {
+      "severity": "hard",
+      "type": "required_left_profile_not_achieved",
+      "frames": [
+        96,
+        144
+      ],
+      "description": "Jogging-phase samples are front and three-quarter views, not the explicitly required strict SCREEN-LEFT side profile. Full figure and props are otherwise framed, with bag absent at frame 239."
+    }
+  ],
+  "inspection_scope": {
+    "source_static_samples_only": true,
+    "native_original_frames_personally_viewed": [
+      0,
+      96,
+      144,
+      239
+    ],
+    "native_size": [
+      1344,
+      768
+    ],
+    "native2x_crops_personally_viewed": [
+      "f000-face-native2x.png",
+      "f144-face-native2x.png",
+      "f144-lower-native2x.png",
+      "f239-lower-native2x.png"
+    ],
+    "prompt_file_read": "prompts/library/a055-programmer-research-v2-firstpass-green-01.txt",
+    "all240_background_metrics_reused": true,
+    "continuous_source_playback_not_performed": true,
+    "final_stage_continuous_review_required": true
+  },
+  "background_proof": {
+    "method": "all_frame_saturated_green_native_border_v2",
+    "passed": true,
+    "frames": 240,
+    "expected_frames": 240,
+    "failed_frame_count": 0,
+    "failed_frames": [],
+    "background_rgb_min": [
+      2.0,
+      228.0,
+      9.0
+    ],
+    "background_rgb_max": [
+      4.0,
+      231.0,
+      10.0
+    ],
+    "maximum_spatial_delta": 17.0,
+    "maximum_temporal_delta": 2.0,
+    "thresholds": {
+      "dominant_min": 180,
+      "other_channels_max": 100,
+      "dominance_min": 100,
+      "spatial_delta_max": 35,
+      "temporal_delta_max": 24
+    },
+    "expected_background": "#00FF00",
+    "white_matte_fallback": false,
+    "visual_foreground_review_required": true,
+    "enclosed_background_and_foreground_verified": false,
+    "native_size": [
+      1344,
+      768
+    ],
+    "boundary_pixels_per_frame": 4224,
+    "measurement": "native_one_pixel_outer_boundary_no_spatial_resampling",
+    "sampling": {
+      "duration_seconds": 10,
+      "fps": 24,
+      "expected_frames": 240
+    }
+  },
+  "evidence_manifest": "quality/evidence/batch30-firstpass/a055/attempt-2/manifest.json",
+  "no_new_paid_calls": true,
+  "no_local_repair": true,
+  "processing_constraint": "Plain green key only; no global palette remapping or semantic pixel repair authorized."
+}

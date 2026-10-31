@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "action_id": "a052",
+  "attempt_index": 3,
+  "spec_revision_id": "programmer-research-v2-2026-10-31",
+  "spec_action_name": "CI 绿灯比耶",
+  "source_file": "source/library/a052/attempt-3/CI 绿灯比耶.mp4",
+  "source_sha256": "0de34e7b955ce395fadcdb21c5432c891357e09f4049f01bf27da9d2a3dc3e7b",
+  "task_id": "92035aa3-edfa-4a5e-b19d-5a7ad0ec7e6a",
+  "reviewed_at": "2026-10-31T07:24:38.112222+00:00",
+  "reviewer": "root independent of prompt author and generation queue",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "processing_clearance": "allow_mild_color_and_green_key",
+  "final_media_approved": false,
+  "summary": "Allow one initial ordinary green extraction for the requested human sample review. Raw native frames and contact show a solid green plate, plain exterior laptop rear lid, prop removal, compact two-finger V and empty neutral ending. This is not final composition acceptance.",
+  "defects": [
+    {
+      "severity": "review",
+      "type": "laptop_height_composition_concern",
+      "frame": 96,
+      "description": "Laptop lid is higher than the below-chin prompt target and briefly obscures the mouth/lower face; eyes remain visible. Show this honestly to the human rather than claiming perfect framing. No local height correction, foreground edit or further generation is authorized."
+    }
+  ],
+  "inspection_scope": {
+    "native_frames_personally_viewed": [
+      96,
+      204,
+      239
+    ],
+    "whole_clip_contact_1s_steps_personally_viewed": true,
+    "native_background_240_metrics_reused": true,
+    "continuous_final_playback_required": true,
+    "source_review_not_claiming_all240_manual_perception": true
+  },
+  "background_proof": {
+    "method": "all_frame_saturated_green_native_border_v2",
+    "passed": true,
+    "frames": 240,
+    "expected_frames": 240,
+    "failed_frame_count": 0,
+    "failed_frames": [],
+    "background_rgb_min": [
+      4.0,
+      231.0,
+      8.0
+    ],
+    "background_rgb_max": [
+      6.0,
+      232.0,
+      10.0
+    ],
+    "maximum_spatial_delta": 14.0,
+    "maximum_temporal_delta": 2.0,
+    "thresholds": {
+      "dominant_min": 180,
+      "other_channels_max": 100,
+      "dominance_min": 100,
+      "spatial_delta_max": 35,
+      "temporal_delta_max": 24
+    },
+    "expected_background": "#00FF00",
+    "white_matte_fallback": false,
+    "visual_foreground_review_required": true,
+    "enclosed_background_and_foreground_verified": false,
+    "native_size": [
+      1344,
+      768
+    ],
+    "boundary_pixels_per_frame": 4224,
+    "measurement": "native_one_pixel_outer_boundary_no_spatial_resampling",
+    "sampling": {
+      "duration_seconds": 10,
+      "fps": 24,
+      "expected_frames": 240
+    }
+  },
+  "evidence_directory": "quality/evidence/programmer-research-v2-samples/a052/attempt-3",
+  "recipe_limits": "Only first necessary ordinary GREEN key, no palette fitting/white threshold/redraw or extra local repair. Current-spec one correction already consumed by this paid source.",
+  "sample_human_decision_required": true,
+  "no_new_paid_calls": true
+}

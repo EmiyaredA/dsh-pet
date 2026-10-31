@@ -1,0 +1,24 @@
+subject_definitions:
+<Subject 1> is the human Kurisu cosplayer in <Picture 1>, preserving her large round head, short plump human body, auburn hair, blue-violet eyes and existing maid costume. Her headband has white lace, pink bows and two black triangular fabric ornaments with pink lining sewn to the band. Her rear contour consists of her long hair and the existing skirt; her body has two arms and two legs.
+<Picture 1> is the sole appearance and composition reference: the approved front drawing uniformly resized with transparent margins, with the complete figure occupying about 80% of the frame height.
+
+summary:
+[reference generation] A single 10-second full-body 2D animation of <Subject 1> gently smoothing her apron, using the appearance and composition of <Picture 1> over a uniform digital green canvas.
+
+retention_analysis:
+<Subject 1> ([Shot 1]): fully_preserved face, human anatomy, clothing, proportions, outlines and painted colors.
+<Picture 1> ([Shot 1]): fully_preserved character design, scale, placement and standard standing pose as the opening and ending composition targets.
+
+detailed_description:
+[Shot 1] 00:00.000 to 00:10.000. One stationary eye-level orthographic view. The complete figure stays centered at a constant scale: headband tips near 10% of frame height and standing soles near 90%. Both shoes stay planted at the same positions. The character retains the reference's painted colors and soft cel shading under steady neutral frontal illumination. The empty background is an independent flat saturated green digital canvas, RGB(0,255,0), identical across the whole frame and throughout the shot, including the spaces between hair locks and beside the shoes. Only the small hand gesture and one natural blink animate; the camera, framing, figure scale and painted highlights stay fixed.
+
+00:00.000 to 00:02.000: hold the exact empty-handed front standing pose of <Picture 1>.
+00:02.000 to 00:06.000: glance gently down and glide both palms a short distance downward across the existing white apron panels, neatly smoothing their surface while keeping the skirt silhouette and all clothing intact.
+00:06.000 to 00:08.000: return the gaze forward and lower both hands to the reference positions.
+00:08.000 to 00:10.000: remain still in the same empty-handed front standing pose as the opening, with the same scale, position and colors.
+
+overall_soundscape:
+Silence.
+
+non_diegetic_music:
+N/A.

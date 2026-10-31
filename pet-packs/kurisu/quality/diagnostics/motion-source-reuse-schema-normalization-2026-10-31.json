@@ -1,0 +1,45 @@
+{
+  "at": "2026-10-30T23:07:05.075177+00:00",
+  "checks": [
+    {
+      "action_id": "a001",
+      "review_file": "quality/additional-audits/a001-independent-lower-hem-01/a001-withdrawal-recommendation.json",
+      "review_sha256": "7dd8a07d2a4ee3317cfec040248cb8d954207a6cbe84d5c593637988a347a68b",
+      "original_source_sha256": "52354f1b03a5d287531a2cfa3043a5b198843bb27831c19da635f9cb2ca4e183",
+      "schema": "green_top_classification",
+      "new_motion_input_preflight": "blocked"
+    },
+    {
+      "action_id": "a004",
+      "review_file": "quality/additional-audits/approved-four-new-times-01/a004-withdrawal-recommendation.json",
+      "review_sha256": "91bf86e245fc8d2186b97a6dcc87e0e4015d132a400fe452bb164ae25d7c53c0",
+      "original_source_sha256": "333f1ba6acda858ecc8be5a24630e1d7d414a3988048a49f1ca5e7262dfddee4",
+      "schema": "qa_hard_defects_with_withdraw_recommendation",
+      "new_motion_input_preflight": "blocked"
+    },
+    {
+      "action_id": "a005",
+      "review_file": "quality/additional-audits/approved-four-new-times-01/a005-withdrawal-recommendation.json",
+      "review_sha256": "efcfe4a2551544c690937b5885ea114eb5744c350519a10e54184b55cecd5b91",
+      "original_source_sha256": "58af767edf36e9811cd4ebf66ab1cc5a5a6672cb96b6acfaf6a110f41ca6dd6b",
+      "schema": "qa_hard_defects_with_withdraw_recommendation",
+      "new_motion_input_preflight": "blocked"
+    },
+    {
+      "action_id": "a101",
+      "review_file": "quality/additional-audits/a101-appendage-trace-01/withdrawal-recommendation.json",
+      "review_sha256": "0e761348468be95545198baf086c0f186c09cd11144a4bb357272dbf52029f01",
+      "original_source_sha256": "a3b3fe86f1d5edd85b8fa4ce0f24efaff506d65aa684e5d98737188bdd9ba3e7",
+      "schema": "qa_hard_defects_with_withdraw_recommendation",
+      "new_motion_input_preflight": "blocked"
+    }
+  ],
+  "scope": "Only existing ledger-linked fixed-review-SHA-bound green/QA anatomy withdrawal schemas; background-only and soft-only reports do not revoke motion-only permits.",
+  "test_result": "38 motion reuse/Wan diagnostic/Wan production tests pass, including new QA schema before any canvas/create/reservation, wrong action and 64-nonhex source failure.",
+  "module_sha256": "50c3f6cf0b64eb1af61fa8d257bdb1fd0ef701f29a161d7e78b5a734df3b7b39",
+  "model_calls": 0,
+  "sdk_calls": 0,
+  "ledger_modified": false,
+  "historical_reports_modified": false,
+  "live_modified": false
+}

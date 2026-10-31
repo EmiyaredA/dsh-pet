@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "action_id": "a026",
+  "attempt_index": 1,
+  "candidate": "/Users/tonghao/Projects/dsh-pet/pet-packs/kurisu/source/library/a026/attempt-1/processing-500b896f-7305-46c6-b725-becc82d62139/晨间刷牙.webm",
+  "candidate_sha256": "ce7d64d4db8fd9a9e725dc78f8a99997a080e013bfd901004c05d0b4b9dea228",
+  "source_sha256": "368a0fc8d7940b3b937405b1cf0d9f127f30d70a7abefd4cd0c7e71d45c32ecb",
+  "reviewer": "independent_animation_qa_agent",
+  "reviewed_at": "2026-10-30T15:37:39.254992+00:00",
+  "verdict": "hold_for_color_refinement",
+  "final_media_approved": false,
+  "motion": {
+    "passed": true,
+    "notes": "Recognizable brushing with explicitlypermitted ivorybrush/pinkcup; no extra prop or limb anomaly. Both items stowed by9s, neutral open-eye end. No short phase loop used."
+  },
+  "alpha_identity": {
+    "passed": true,
+    "all240decoded_frames_checked": true,
+    "skin_core_samples": 361926,
+    "skin_alpha_min": 255,
+    "iris_core_samples": 116529,
+    "iris_alpha_min": 255,
+    "eight_white_class_flags": "Confined to scalloped headband outer antialiasnotches; enlargedcheck confirmsnotanatomicalholes. Approximate sourceprojection used differentresampler, so these were false semanticflags."
+  },
+  "scale": {
+    "passed": true,
+    "standing_height": 270,
+    "feet_y": 330,
+    "first_last_boxes_identical": true,
+    "reference_face_width_over_height": 0.3474285714,
+    "candidate_face_width_over_height": 0.3481481481,
+    "reference_face_height_over_height": 0.224,
+    "candidate_face_height_over_height": 0.2185185185
+  },
+  "color": {
+    "passed": false,
+    "reason": "Visible olive/yellowgreen auburn-hair border and cyan-tinted lace shadows compared with approved reference. Must improve bounded color/despill before qualification.",
+    "opaque4px_hair_collar_frame0_bad_pixels": 1496,
+    "frame0_median_excess_G": 20.4,
+    "frame0_max_excess_G": 52.7,
+    "aligned_approved_reference_bad_pixels": 0,
+    "metric": "G > B+.30*(R-B)+8 onreddishopaquehair in4pxsilhouettecollar; diagnostic not automaticrejectionalone"
+  },
+  "evidence": [
+    "temp/kurisu/agent-qa/a026-final-alpha-identity.json",
+    "temp/kurisu/agent-qa/a026-final-props-stowed.png",
+    "temp/kurisu/agent-qa/a026-final-scale.json",
+    "temp/kurisu/agent-qa/a026-final-border.png",
+    "temp/kurisu/agent-qa/a026-headband-aa-check.png",
+    "temp/kurisu/agent-qa/a026-final-border-metrics.json"
+  ],
+  "new_model_calls": 0,
+  "ledger_modified": false
+}

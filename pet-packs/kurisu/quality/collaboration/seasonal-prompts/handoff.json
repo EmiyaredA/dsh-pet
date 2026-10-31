@@ -1,0 +1,198 @@
+{
+  "scope": "a069–a089",
+  "library_total": 106,
+  "reference": "sole approved 80% RGBA front reference",
+  "generation_owner": "main chat",
+  "policy": "first pass followed by at most one correction; move on after failure; further correction only when specifically requested by human",
+  "entries": [
+    {
+      "id": "a069",
+      "name": "春日观察花瓣",
+      "file": "prompts/library/a069-firstpass-seasonal-v1.txt",
+      "sha256": "eb9ed1bd8f989dd0c68fd61b0e862a37ff501cbe85d82699851643c8b152fd07",
+      "status": "prepared",
+      "timeline": "00:00.000 to 00:02.000: hold the empty-handed reference front stance. 00:02.000 to 00:07.000: Take a small brown twig with two pale-pink blossoms in her left hand at waist height. Lean slightly toward one petal, then gently turn the twig once and study it with curious eyes. 00:07.000 to 00:09.000: lower and stow every prop behind her hip; any transient effect is completely gone. 00:09.000 to 00:10.000: hold the same empty-handed reference front stance.",
+      "prop_composition_notes": "Two blossoms only, no loose petals; keep twig below chin."
+    },
+    {
+      "id": "a070",
+      "name": "放风筝",
+      "file": "prompts/library/a070-firstpass-seasonal-v1.txt",
+      "sha256": "1f4d2327a0a1e0897ed795ec6cf243b896fbd7bfa1d3d36ea5f94cca049ca67b",
+      "status": "prepared",
+      "timeline": "00:00.000 to 00:02.000: hold the empty-handed reference front stance. 00:02.000 to 00:07.000: Hold a miniature red-and-ivory kite on a very short string. Let it hover just in front of one shoulder, well inside the frame, while guiding the string with two small hand movements. Reel it back into her hand. 00:07.000 to 00:09.000: lower and stow every prop behind her hip; any transient effect is completely gone. 00:09.000 to 00:10.000: hold the same empty-handed reference front stance.",
+      "prop_composition_notes": "Keep kite clear of face and ear tips, with a visibly short tether."
+    },
+    {
+      "id": "a071",
+      "name": "吃粉色樱花团子",
+      "file": "prompts/library/a071-firstpass-seasonal-v1.txt",
+      "sha256": "9ecc9bedf18d80985fb6f96646210f2c29435f492e292e168aadeb5632015158",
+      "status": "prepared",
+      "timeline": "00:00.000 to 00:02.000: hold the empty-handed reference front stance. 00:02.000 to 00:07.000: Hold a small cream dish with three pink rice dumplings in one hand. Lift one dumpling with the other, take one tiny bite, then lower it back to the dish with a pleased smile. 00:07.000 to 00:09.000: lower and stow every prop behind her hip; any transient effect is completely gone. 00:09.000 to 00:10.000: hold the same empty-handed reference front stance.",
+      "prop_composition_notes": "No leaves; dish and food stay below chin except for the brief bite."
+    },
+    {
+      "id": "a072",
+      "name": "吃粽子",
+      "file": "prompts/library/a072-firstpass-seasonal-v1.txt",
+      "sha256": "5cf2f9e3ac2e8added005868739e71c832548879d6f409ae5d9f644d3b9db957",
+      "status": "prepared",
+      "timeline": "00:00.000 to 00:02.000: hold the empty-handed reference front stance. 00:02.000 to 00:07.000: Hold a compact cream plate with an already unwrapped beige rice dumpling. Use a short gray fork to take one tiny bite, then lower the fork and smile. 00:07.000 to 00:09.000: lower and stow every prop behind her hip; any transient effect is completely gone. 00:09.000 to 00:10.000: hold the same empty-handed reference front stance.",
+      "prop_composition_notes": "No wrapping leaves; plate below chin, fork approaches mouth briefly."
+    },
+    {
+      "id": "a073",
+      "name": "摇扇纳凉",
+      "file": "prompts/library/a073-firstpass-seasonal-v1.txt",
+      "sha256": "2e2dde204f179705f22c3ceabf89529a05067e0540be1f16f9777e654cb4c16a",
+      "status": "prepared",
+      "timeline": "00:00.000 to 00:02.000: hold the empty-handed reference front stance. 00:02.000 to 00:07.000: Hold a small ivory folding fan at chest level, open it and give herself three gentle fanning strokes beside her shoulder. Fold the fan again. 00:07.000 to 00:09.000: lower and stow every prop behind her hip; any transient effect is completely gone. 00:09.000 to 00:10.000: hold the same empty-handed reference front stance.",
+      "prop_composition_notes": "Fan stays to the side of the face; avoid covering facial features."
+    },
+    {
+      "id": "a074",
+      "name": "夏日观察萤火虫",
+      "file": "prompts/library/a074-firstpass-seasonal-v1.txt",
+      "sha256": "00d580786396e3f21b17597dd3cdd3627b689362e48e2981c3c7f3bb5e7f7e87",
+      "status": "prepared",
+      "timeline": "00:00.000 to 00:02.000: hold the empty-handed reference front stance. 00:02.000 to 00:07.000: Watch two tiny amber fireflies hover close above her cupped hands at waist level. Follow their small movements with curious eyes; they fly behind her shoulder and disappear completely. 00:07.000 to 00:09.000: lower and stow every prop behind her hip; any transient effect is completely gone. 00:09.000 to 00:10.000: hold the same empty-handed reference front stance.",
+      "prop_composition_notes": "Only two tiny amber dots; no glow or illumination on the character."
+    },
+    {
+      "id": "a075",
+      "name": "中秋赏月吃月饼",
+      "file": "prompts/library/a075-firstpass-seasonal-v1.txt",
+      "sha256": "288f38e1c81b25bb75b82972cc896f5205a9f760c1809d80a4ad94885d98e7a8",
+      "status": "prepared",
+      "timeline": "00:00.000 to 00:02.000: hold the empty-handed reference front stance. 00:02.000 to 00:07.000: Hold a little red-and-cream mooncake tin at waist height. Open it, lift one small mooncake, glance upward thoughtfully, then return the cake and close the tin. 00:07.000 to 00:09.000: lower and stow every prop behind her hip; any transient effect is completely gone. 00:09.000 to 00:10.000: hold the same empty-handed reference front stance.",
+      "prop_composition_notes": "No moon or scenery; tin and cake below chin."
+    },
+    {
+      "id": "a076",
+      "name": "被落叶淹没",
+      "file": "prompts/library/a076-firstpass-seasonal-v1.txt",
+      "sha256": "0927c15023824aa945cd3129b6855620d3f1003ab1ab14d9060a8e2f92da598f",
+      "status": "prepared",
+      "timeline": "00:00.000 to 00:02.000: hold the empty-handed reference front stance. 00:02.000 to 00:07.000: Several small muted amber and brown leaves flutter down close around her skirt and collect in a tiny pile at her feet. She looks surprised, then brushes the leaves behind her hip until all are gone. 00:07.000 to 00:09.000: lower and stow every prop behind her hip; any transient effect is completely gone. 00:09.000 to 00:10.000: hold the same empty-handed reference front stance.",
+      "prop_composition_notes": "All leaves stay inside the frame and away from the face; retain visible feet."
+    },
+    {
+      "id": "a077",
+      "name": "秋日捡枫叶",
+      "file": "prompts/library/a077-firstpass-seasonal-v1.txt",
+      "sha256": "d7e408cddb80da6651f78c3ca4e9beee2a6b3f717c9b0bf5e9e857a9587b923c",
+      "status": "prepared",
+      "timeline": "00:00.000 to 00:02.000: hold the empty-handed reference front stance. 00:02.000 to 00:07.000: Pick up one small red-orange maple leaf from beside her foot, raise it to chest height, turn it once and inspect its veins with a curious smile. 00:07.000 to 00:09.000: lower and stow every prop behind her hip; any transient effect is completely gone. 00:09.000 to 00:10.000: hold the same empty-handed reference front stance.",
+      "prop_composition_notes": "Keep leaf below chin and clear of face."
+    },
+    {
+      "id": "a078",
+      "name": "讨糖南瓜灯",
+      "file": "prompts/library/a078-firstpass-seasonal-v1.txt",
+      "sha256": "fc29f99168c37d3895b3565ab74b7bb5c39ba4626eb7db892dc89489491b5ae4",
+      "status": "prepared",
+      "timeline": "00:00.000 to 00:02.000: hold the empty-handed reference front stance. 00:02.000 to 00:07.000: Hold a small orange pumpkin candy bucket at waist height, open it and select one wrapped pink candy. Smile shyly, return the candy to the bucket and close it. 00:07.000 to 00:09.000: lower and stow every prop behind her hip; any transient effect is completely gone. 00:09.000 to 00:10.000: hold the same empty-handed reference front stance.",
+      "prop_composition_notes": "No glow; bucket and candy below chin."
+    },
+    {
+      "id": "a079",
+      "name": "萌化小幽灵",
+      "file": "prompts/library/a079-firstpass-seasonal-v1.txt",
+      "sha256": "746f35178a029eb48a72a11173df31b63acb1fb19ad4ff5068cec931d7179f17",
+      "status": "prepared",
+      "timeline": "00:00.000 to 00:02.000: hold the empty-handed reference front stance. 00:02.000 to 00:07.000: Slip one hand into a tiny white ghost-shaped fabric hand puppet and hold it at chest height beside her face. Make the puppet bob once playfully, then take it off. 00:07.000 to 00:09.000: lower and stow every prop behind her hip; any transient effect is completely gone. 00:09.000 to 00:10.000: hold the same empty-handed reference front stance.",
+      "prop_composition_notes": "Puppet is clearly a hand prop; the human character and costume stay unchanged."
+    },
+    {
+      "id": "a080",
+      "name": "堆雪人",
+      "file": "prompts/library/a080-firstpass-seasonal-v1.txt",
+      "sha256": "ae1350c0fc9c7936768a778b82106222d4f363fd745405afd88dad985e86fe89",
+      "status": "prepared",
+      "timeline": "00:00.000 to 00:02.000: hold the empty-handed reference front stance. 00:02.000 to 00:07.000: On a miniature cream tray at waist height, stack two tiny white snowballs, add a little charcoal hat and a red scarf, and admire the completed snowman. 00:07.000 to 00:09.000: lower and stow every prop behind her hip; any transient effect is completely gone. 00:09.000 to 00:10.000: hold the same empty-handed reference front stance.",
+      "prop_composition_notes": "No snowfall or landscape; tray and snowman below chin."
+    },
+    {
+      "id": "a081",
+      "name": "装点迷你圣诞树",
+      "file": "prompts/library/a081-firstpass-seasonal-v1.txt",
+      "sha256": "eb9041af5719ac418cc4b3a159fe08ec8fa606a3e0668e4b5a0f2453942e993f",
+      "status": "prepared",
+      "timeline": "00:00.000 to 00:02.000: hold the empty-handed reference front stance. 00:02.000 to 00:07.000: Hold a miniature natural green tabletop Christmas tree with muted red-and-pink ornaments at waist height. Place one small red ornament on a branch, then admire the tree. 00:07.000 to 00:09.000: lower and stow every prop behind her hip; any transient effect is completely gone. 00:09.000 to 00:10.000: hold the same empty-handed reference front stance.",
+      "prop_composition_notes": "Natural green tree is allowed against BLUE; no flashing lights; tree stays below chin."
+    },
+    {
+      "id": "a082",
+      "name": "拆圣诞礼物",
+      "file": "prompts/library/a082-firstpass-seasonal-v1.txt",
+      "sha256": "1b1a575fef8a014fdf481a79f33cc58c0c26811fd677c77c149ed10af22d19b8",
+      "status": "prepared",
+      "timeline": "00:00.000 to 00:02.000: hold the empty-handed reference front stance. 00:02.000 to 00:07.000: Hold a tiny cream gift box with a red ribbon at waist height. Untie the ribbon, open the box and peek inside with a delighted small smile, then close it and gather the ribbon. 00:07.000 to 00:09.000: lower and stow every prop behind her hip; any transient effect is completely gone. 00:09.000 to 00:10.000: hold the same empty-handed reference front stance.",
+      "prop_composition_notes": "Box and ribbon below chin; no readable writing."
+    },
+    {
+      "id": "a083",
+      "name": "围围巾暖手",
+      "file": "prompts/library/a083-firstpass-seasonal-v1.txt",
+      "sha256": "aab5639b6464973e5de323babbc269f6d5f11f184434e5060bba764d758374d7",
+      "status": "prepared",
+      "timeline": "00:00.000 to 00:02.000: hold the empty-handed reference front stance. 00:02.000 to 00:07.000: Take a small pale-pink scarf and loosely wrap it over her existing maid collar. Cup both hands together at chest height and smile warmly, then unwrap the scarf. 00:07.000 to 00:09.000: lower and stow every prop behind her hip; any transient effect is completely gone. 00:09.000 to 00:10.000: hold the same empty-handed reference front stance.",
+      "prop_composition_notes": "Scarf never covers face or replaces the original collar; no costume change."
+    },
+    {
+      "id": "a084",
+      "name": "吃汤圆",
+      "file": "prompts/library/a084-firstpass-seasonal-v1.txt",
+      "sha256": "134fb17eb70213824a5b88d83529f90ec3e912cd00645b954f3c2664cbf0d7bb",
+      "status": "prepared",
+      "timeline": "00:00.000 to 00:02.000: hold the empty-handed reference front stance. 00:02.000 to 00:07.000: Hold a small cream bowl of white rice balls in pale liquid at waist height. Lift one tiny spoonful with a short spoon, eat it neatly and lower the spoon with a soft smile. 00:07.000 to 00:09.000: lower and stow every prop behind her hip; any transient effect is completely gone. 00:09.000 to 00:10.000: hold the same empty-handed reference front stance.",
+      "prop_composition_notes": "Bowl stays below chin; spoon approaches mouth only for the bite."
+    },
+    {
+      "id": "a085",
+      "name": "吃饺子",
+      "file": "prompts/library/a085-firstpass-seasonal-v1.txt",
+      "sha256": "2546e40aa218d82710de58247626d8f180595b3b6b365d59f075c73608238a7a",
+      "status": "prepared",
+      "timeline": "00:00.000 to 00:02.000: hold the empty-handed reference front stance. 00:02.000 to 00:07.000: Hold a small cream plate of beige dumplings at waist height. Lift one tiny dumpling with short gray chopsticks, take a neat bite, then lower the chopsticks and smile. 00:07.000 to 00:09.000: lower and stow every prop behind her hip; any transient effect is completely gone. 00:09.000 to 00:10.000: hold the same empty-handed reference front stance.",
+      "prop_composition_notes": "Plate below chin; chopsticks approach mouth only for the bite."
+    },
+    {
+      "id": "a086",
+      "name": "挥毫画新年图案",
+      "file": "prompts/library/a086-firstpass-seasonal-v1.txt",
+      "sha256": "9ecedeb3b23b6d7615f78935deb5e09fdd81cfe78aefcce5981cbb9ddc7e1213",
+      "status": "prepared",
+      "timeline": "00:00.000 to 00:02.000: hold the empty-handed reference front stance. 00:02.000 to 00:07.000: Hold a small red square of paper at waist height and use a short dark brush to paint two careful strokes forming a simple black abstract festive motif. Pause to admire it. 00:07.000 to 00:09.000: lower and stow every prop behind her hip; any transient effect is completely gone. 00:09.000 to 00:10.000: hold the same empty-handed reference front stance.",
+      "prop_composition_notes": "Abstract marks only, no readable text; paper and brush below chin."
+    },
+    {
+      "id": "a087",
+      "name": "收红包",
+      "file": "prompts/library/a087-firstpass-seasonal-v1.txt",
+      "sha256": "3ad873c7c0d2524eb171f0372d7e9c8da8de5be074b5f86b1bf506c79164fa48",
+      "status": "prepared",
+      "timeline": "00:00.000 to 00:02.000: hold the empty-handed reference front stance. 00:02.000 to 00:07.000: Hold a small plain red envelope with a gold circular decorative seal at chest height. Open it, look pleasantly surprised, then close it. 00:07.000 to 00:09.000: lower and stow every prop behind her hip; any transient effect is completely gone. 00:09.000 to 00:10.000: hold the same empty-handed reference front stance.",
+      "prop_composition_notes": "No lettering or money shown; envelope below chin."
+    },
+    {
+      "id": "a088",
+      "name": "放迷你烟花",
+      "file": "prompts/library/a088-firstpass-seasonal-v1.txt",
+      "sha256": "2707c8bcb1ac359af4022e075319101a7ca2149604c4aba0ced92db1f06dead2",
+      "status": "prepared",
+      "timeline": "00:00.000 to 00:02.000: hold the empty-handed reference front stance. 00:02.000 to 00:07.000: Hold a tiny red toy firework cylinder at waist height. One very small amber-and-white spark pattern appears directly above the cylinder, fades completely, and she smiles. 00:07.000 to 00:09.000: lower and stow every prop behind her hip; any transient effect is completely gone. 00:09.000 to 00:10.000: hold the same empty-handed reference front stance.",
+      "prop_composition_notes": "Sparks confined to the cylinder area, well below the face; no light on character."
+    },
+    {
+      "id": "a089",
+      "name": "放孔明灯",
+      "file": "prompts/library/a089-firstpass-seasonal-v1.txt",
+      "sha256": "0e62189650ed2e860ed5a7d9d067d178cc0712df436e04dc685b03edb803fbcd",
+      "status": "prepared",
+      "timeline": "00:00.000 to 00:02.000: hold the empty-handed reference front stance. 00:02.000 to 00:07.000: Hold a miniature warm ivory paper sky lantern with a red rim on a short tether. Let it rise only a few centimeters in front of her shoulder, watch calmly, then draw it back into her hands. 00:07.000 to 00:09.000: lower and stow every prop behind her hip; any transient effect is completely gone. 00:09.000 to 00:10.000: hold the same empty-handed reference front stance.",
+      "prop_composition_notes": "Lantern stays inside frame and clear of face; no glow or character illumination."
+    }
+  ]
+}

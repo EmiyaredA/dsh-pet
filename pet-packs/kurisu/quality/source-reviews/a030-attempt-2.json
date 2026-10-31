@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "action_id": "a030",
+  "attempt_index": 2,
+  "action_name": "翻文档查资料",
+  "spec_revision_id": "programmer-research-v2-2026-10-31",
+  "source_file": "source/library/a030/attempt-2/翻文档查资料.mp4",
+  "source_sha256": "265415860ff233c1cd0942d3f279a5c7f9b50bcee4a66b96a9323296bf6ba6a1",
+  "source_task_id": "b740d5b7-61d5-453c-97cd-167f4030f548",
+  "result_asset_id": "7710ac37-819a-4583-9301-53cfa37d9770",
+  "model_slug": "minimax_h3_zm_u24",
+  "reviewer": "animation_qa independent agent",
+  "reviewed_at": "2026-10-31T10:02:58.734427+00:00",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "processing_clearance": "reject",
+  "final_media_approved": false,
+  "reason": "技术资料书变得接近半身宽高，闭合/收回阶段原生f192书脊和书页遮住口鼻并贴到眼下沿，违反小道具低于下巴且保持脸部可见的要求。不是沿用052已有人类接受的例外；本次首轮记录失败，不自动返修。",
+  "defects": [
+    {
+      "severity": "hard",
+      "type": "oversized_book_face_occlusion",
+      "frames": [
+        192
+      ],
+      "description": "Native frame192 shows the closing book extending from near the knees up into the lower face/eye line, covering mouth/nose. It is not a miniature waist-height booklet."
+    }
+  ],
+  "source_background": {
+    "method": "all_frame_saturated_green_native_border_v2",
+    "passed": true,
+    "frames": 240,
+    "expected_frames": 240,
+    "failed_frame_count": 0,
+    "failed_frames": [],
+    "background_rgb_min": [
+      0.0,
+      232.0,
+      3.0
+    ],
+    "background_rgb_max": [
+      2.0,
+      234.0,
+      4.0
+    ],
+    "maximum_spatial_delta": 11.0,
+    "maximum_temporal_delta": 2.0,
+    "thresholds": {
+      "dominant_min": 180,
+      "other_channels_max": 100,
+      "dominance_min": 100,
+      "spatial_delta_max": 35,
+      "temporal_delta_max": 24
+    },
+    "expected_background": "#00FF00",
+    "white_matte_fallback": false,
+    "visual_foreground_review_required": true,
+    "enclosed_background_and_foreground_verified": false,
+    "native_size": [
+      1344,
+      768
+    ],
+    "boundary_pixels_per_frame": 4224,
+    "measurement": "native_one_pixel_outer_boundary_no_spatial_resampling",
+    "sampling": {
+      "duration_seconds": 10,
+      "fps": 24,
+      "expected_frames": 240
+    }
+  },
+  "inspection_scope": {
+    "existing_contact_personally_viewed": true,
+    "native_full_frames_personally_viewed": [
+      144,
+      192,
+      239
+    ],
+    "native_face_nearest2x_frames_personally_viewed": [
+      144
+    ],
+    "native_size": null,
+    "technical_scope": "Existing native240 boundary gate reused, not rerun. Source and evidence manifest are SHA-bound.",
+    "limits": [
+      "Representative source stills only, not all243 manually inspected.",
+      "No continuous source video playback in this source stage; complete10s playback is reserved for final candidate QA.",
+      "No automatic final-media approval or repair."
+    ]
+  },
+  "visual_findings": {
+    "action": "Technical diagrams/page turning are recognizable and the booklet is absent at the endpoint, but the oversized closing book obscures the face.",
+    "color": "No major moving light or green wash was seen in the sampled views; the rejection is specifically prop size/occlusion, not background failure."
+  },
+  "evidence_manifest": "quality/evidence/batch30-firstpass/a030/attempt-2/manifest.json",
+  "evidence_manifest_sha256": "b22c9e47aeeff38ad1cd358b13c309ab18f9a2b672046fddccc9df3fa8b518a4",
+  "new_model_calls": 0,
+  "processing_performed": false,
+  "ledger_or_approval_modified": false
+}

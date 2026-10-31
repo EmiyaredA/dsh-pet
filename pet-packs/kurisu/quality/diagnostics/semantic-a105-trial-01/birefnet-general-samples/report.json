@@ -1,0 +1,197 @@
+{
+  "created_at": "2026-10-31T01:58:18.450572+00:00",
+  "source_file": "/Users/tonghao/Projects/dsh-pet/pet-packs/kurisu/source/library/a105/attempt-3/工作状态-实验成功庆祝.mp4",
+  "source_sha256": "5460f738fa8678600fc5d37fc4334e551deec03c013db41b0242c58059b13aac",
+  "requested_frames": [
+    0,
+    24,
+    72,
+    120,
+    192,
+    239
+  ],
+  "records": [
+    {
+      "frame": 0,
+      "seconds": 9.875,
+      "reused_cached_result": false,
+      "native_rgb_exact_original": true,
+      "native_alpha_range": [
+        0,
+        255
+      ],
+      "native_alpha127_box": [
+        473,
+        153,
+        871,
+        653
+      ],
+      "opaque_green_dominance_pixels_diagnostic_only": 2200,
+      "native_mask_sha256": "0b293ac759d36d85d928e2c73e0471ea3ebd4a5a86c23ac855991582dff2ed08",
+      "native_rgba_sha256": "5440f6d71c9d02c92031c1289c337f788d5596475a7d5f628e111e654355c54f",
+      "aligned_rgba_sha256": "32e7ef41f1596a34c7d7ad418a6d4c1db3f032da1fd424b4d97a1ca10eef5f0c"
+    },
+    {
+      "frame": 24,
+      "seconds": 9.329,
+      "reused_cached_result": false,
+      "native_rgb_exact_original": true,
+      "native_alpha_range": [
+        0,
+        255
+      ],
+      "native_alpha127_box": [
+        472,
+        153,
+        872,
+        653
+      ],
+      "opaque_green_dominance_pixels_diagnostic_only": 1342,
+      "native_mask_sha256": "a1266ecbfd4899c99d4780ef0f021989537f0edc1dce5bb54e7259fe9872299e",
+      "native_rgba_sha256": "b94df2045bdedd59ebb07cbceb588b7e5607a485a61d73323e9832cd6f9fda98",
+      "aligned_rgba_sha256": "bc9696d314438467875548da2c75667d39085bf2c05de13bfe48a2924f44f78c"
+    },
+    {
+      "frame": 72,
+      "seconds": 8.293,
+      "reused_cached_result": false,
+      "native_rgb_exact_original": true,
+      "native_alpha_range": [
+        0,
+        255
+      ],
+      "native_alpha127_box": [
+        458,
+        152,
+        871,
+        668
+      ],
+      "opaque_green_dominance_pixels_diagnostic_only": 9132,
+      "native_mask_sha256": "1d39e662e118780d20327fb230176d49012fe03467a5fd5c843ab244e2a2af87",
+      "native_rgba_sha256": "2f80fa7541213981b3c3b4197bc9ced3934381f8901d390d9160ec3b45b6c480",
+      "aligned_rgba_sha256": "dd55e976319004f04794c28b886f9ab0434fdeb79b955ce4aed583a5944900c6"
+    },
+    {
+      "frame": 120,
+      "seconds": 8.013,
+      "reused_cached_result": false,
+      "native_rgb_exact_original": true,
+      "native_alpha_range": [
+        0,
+        255
+      ],
+      "native_alpha127_box": [
+        474,
+        145,
+        881,
+        667
+      ],
+      "opaque_green_dominance_pixels_diagnostic_only": 9159,
+      "native_mask_sha256": "2402bafddddb6fe49c3fd7fba913a1670c8eaacfe68d7f3abfa44083051badac",
+      "native_rgba_sha256": "9589d2eab37b135f439a92a2fbfa40c112d93abde327036eef77e376f3143d17",
+      "aligned_rgba_sha256": "c4909b91850a3c05026f975d0a688c665aaacbca9ac9d7cf4bb85a93a90e8d2e"
+    },
+    {
+      "frame": 192,
+      "seconds": 8.819,
+      "reused_cached_result": false,
+      "native_rgb_exact_original": true,
+      "native_alpha_range": [
+        0,
+        255
+      ],
+      "native_alpha127_box": [
+        469,
+        153,
+        873,
+        668
+      ],
+      "opaque_green_dominance_pixels_diagnostic_only": 10289,
+      "native_mask_sha256": "b573323079b2505fe602b1776007782efdc47a0b0cd41f5a9591dcd977fd1686",
+      "native_rgba_sha256": "e870b79b45b80114a46b772ca3916f2b69f8511518a5c94b0deb73db23e5b4ba",
+      "aligned_rgba_sha256": "ce3337e191b773dddd3f94251406376ba1db053b163bde45c676561aab853fd2"
+    },
+    {
+      "frame": 239,
+      "seconds": 8.155,
+      "reused_cached_result": false,
+      "native_rgb_exact_original": true,
+      "native_alpha_range": [
+        0,
+        255
+      ],
+      "native_alpha127_box": [
+        469,
+        153,
+        874,
+        668
+      ],
+      "opaque_green_dominance_pixels_diagnostic_only": 11090,
+      "native_mask_sha256": "f6dde41448d19db5e30a2616e909e91c0d4a02dc88ecf64488ad92806f04f5f0",
+      "native_rgba_sha256": "35c3a5f608d52ae2cd8fb574e0749bfe20fef8c5606ef0a4da997bcf8ed431c6",
+      "aligned_rgba_sha256": "7de7f7286c07869c8da7e7d1d38dc0bc30c9273a388fec0bffcaf6550d080c8d"
+    }
+  ],
+  "model": {
+    "model": "birefnet-general",
+    "upstream_filename": "BiRefNet-general-epoch_244.onnx",
+    "url": "https://github.com/danielgatis/rembg/releases/download/v0.0.0/BiRefNet-general-epoch_244.onnx",
+    "expected_bytes": 972666916,
+    "actual_bytes": 972666916,
+    "official_rembg_2_0_86_md5": "7a35a0141cbbc80de11d9c9a28f52697",
+    "actual_md5": "7a35a0141cbbc80de11d9c9a28f52697",
+    "sha256": "58f621f00f5d756097615970a88a791584600dcf7c45b18a0a6267535a1ebd3c",
+    "local_path": "/Users/tonghao/Projects/dsh-pet/temp/kurisu/semantic-a105-trial-01/model-cache/models/birefnet-general/birefnet-general.onnx",
+    "completed_at": "2026-10-31T01:57:06.178341+00:00",
+    "single_new_model": true
+  },
+  "model_package": "rembg2.0.86",
+  "model_input": "original decoded native RGB only; previous isnet/green/CF alpha not fed to new model",
+  "session_init_seconds": 1.973,
+  "model_native_predict": "official rembg BiRefNet-general1024x1024 normalize/predict -> returned original-sized raw Alpha; no threshold/key/matting/color changes",
+  "same_fixed_alignment_as_prior_samples": {
+    "source_box_frame0": [
+      474,
+      154,
+      870,
+      653
+    ],
+    "scale": 0.5410821643286573,
+    "scaled_size": [
+      727,
+      416
+    ],
+    "offset": [
+      -44,
+      -23
+    ],
+    "constant_for_all_frames": true,
+    "target_height": 270,
+    "target_feet": 330,
+    "resampler": "Pillow RGBA Lanczos internal associated RGBa sampling; no foreground RGB correction"
+  },
+  "resampling": "Pillow13 RGBA Lanczos internal RGBa associated-alpha",
+  "peak_process_rss_bytes_macos": 9634709504,
+  "status": "RAW_SEMANTIC_VISUAL_REGRESSION",
+  "final_media_approved": false,
+  "counts_toward_106": false,
+  "script_sha256": "68633e4876e2b882949b157fb1454819f87ca60a83767fcf51599a2324644d04",
+  "visual_review": {
+    "frames": [
+      0,
+      24,
+      72,
+      120,
+      192,
+      239
+    ],
+    "views": "all six native640 dark comparisons plus f24blue",
+    "findings": [
+      "f0 green outline is broader than isnet baseline.",
+      "f72/120/192/239 retains bright green ground oval as foreground."
+    ],
+    "full240_allowed": false
+  },
+  "full240_created": false,
+  "decode_slot_released": true
+}

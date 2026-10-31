@@ -1,0 +1,222 @@
+{
+  "started_at": "2026-10-30T23:34:30.712Z",
+  "url": "http://127.0.0.1:8768/preview.html",
+  "visible": "visible",
+  "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.7871.212 Electron/43.3.0 Safari/537.36",
+  "approved_count": 1,
+  "live_default_notice": "桌面临时默认声明：使用原图静态定稿占位。静态定稿占位 · 不计106条动画；不计入106条动画，也不代表缺失的待机已完成。此画廊只点播已通过的真实动作，不把静态占位列为合格动画。",
+  "human_continuous_visual_review": false,
+  "scope": "Browser decode/playback instrumentation, not source anatomy approval or native desktop runtime validation",
+  "measurement_version": "prebuffer_rvfc_low_sampling_v3",
+  "instrumentation_sources": [
+    "https://wicg.github.io/video-rvfc/",
+    "https://www.electronjs.org/docs/latest/tutorial/offscreen-rendering"
+  ],
+  "clips": [
+    {
+      "action_id": "a103",
+      "name": "工作状态-整理实验记录",
+      "sha256": "615aa8f01c1fb16a5ecae0938a7d27a31caf7b409967f63bf9e4cb6377797072",
+      "src": "http://127.0.0.1:8768/pet/kurisu-animation/%E5%B7%A5%E4%BD%9C%E7%8A%B6%E6%80%81-%E6%95%B4%E7%90%86%E5%AE%9E%E9%AA%8C%E8%AE%B0%E5%BD%95.webm?v=615aa8f01c1fb16a5ecae0938a7d27a31caf7b409967f63bf9e4cb6377797072",
+      "duration": 10,
+      "dimensions": [
+        640,
+        360
+      ],
+      "events": [
+        {
+          "event": "pause",
+          "time": 0,
+          "at_ms": 127.39999985694885,
+          "phase": "prebuffer_seek"
+        },
+        {
+          "event": "playing",
+          "time": 0.000084,
+          "at_ms": 180.39999985694885,
+          "phase": "measured_playback"
+        },
+        {
+          "event": "waiting",
+          "time": 0,
+          "at_ms": 10182.599999904633,
+          "phase": "measured_playback"
+        },
+        {
+          "event": "playing",
+          "time": 0.01209,
+          "at_ms": 10202.5,
+          "phase": "measured_playback"
+        },
+        {
+          "event": "pause",
+          "time": 0.543315,
+          "at_ms": 10734.099999904633,
+          "phase": "measured_playback"
+        },
+        {
+          "event": "playing",
+          "time": 0.544271,
+          "at_ms": 11036.399999856949,
+          "phase": "measured_playback"
+        }
+      ],
+      "errors": [],
+      "frame_callbacks": 260,
+      "loops": 1,
+      "media_time_min": 0,
+      "media_time_max": 9.958,
+      "max_callback_gap_ms": 333.2999999999993,
+      "alpha_samples": [
+        {
+          "media_time": 0.024747,
+          "transparent": 188949,
+          "partial": 1936,
+          "opaque": 39515,
+          "total": 230400
+        },
+        {
+          "media_time": 2.502768,
+          "transparent": 187858,
+          "partial": 2597,
+          "opaque": 39945,
+          "total": 230400
+        },
+        {
+          "media_time": 5.000955,
+          "transparent": 188300,
+          "partial": 2520,
+          "opaque": 39580,
+          "total": 230400
+        },
+        {
+          "media_time": 7.501489,
+          "transparent": 188042,
+          "partial": 2548,
+          "opaque": 39810,
+          "total": 230400
+        },
+        {
+          "media_time": 0,
+          "transparent": 188938,
+          "partial": 1942,
+          "opaque": 39520,
+          "total": 230400
+        },
+        {
+          "media_time": 0,
+          "transparent": 188938,
+          "partial": 1942,
+          "opaque": 39520,
+          "total": 230400
+        }
+      ],
+      "pause_resume": {
+        "paused_time_stable": true,
+        "resumed": true
+      },
+      "firstPresented": 4,
+      "lastPresented": 263,
+      "missedCallbackCount": 0,
+      "presentedCounterResets": 0,
+      "prebuffer": {
+        "ready_state": 4,
+        "buffered_end": 10,
+        "seek_complete": true
+      },
+      "qualityBefore": {
+        "totalVideoFrames": 9,
+        "droppedVideoFrames": 0,
+        "corruptedVideoFrames": 0
+      },
+      "measurement_started_at_ms": 180.29999995231628,
+      "last_presented_frames": 263,
+      "qualityAfter": {
+        "totalVideoFrames": 270,
+        "droppedVideoFrames": 0,
+        "corruptedVideoFrames": 0
+      },
+      "playback_quality": {
+        "totalVideoFrames": 270,
+        "droppedVideoFrames": 0,
+        "corruptedVideoFrames": 0
+      },
+      "qualityDelta": {
+        "totalVideoFrames": 261,
+        "droppedVideoFrames": 0,
+        "corruptedVideoFrames": 0
+      },
+      "measurement_elapsed_ms": 11156,
+      "criteria": {
+        "minimum_rvfc_callbacks": 200,
+        "minimum_real_loops": 1,
+        "media_errors": 0,
+        "alpha_required": true,
+        "pause_resume_required": true
+      },
+      "metric_note": "RVFC callbacks are best-effort compositor notifications; missedCallbackCount is not a decoded-frame or dropped-frame count. qualityDelta excludes counters accumulated before prebuffer/seek.",
+      "alpha_confirmed": true,
+      "passed": true
+    }
+  ],
+  "switches": [],
+  "evidence": [
+    {
+      "name": "a103-sample-1.png",
+      "media_time": 0.024747,
+      "loop": 0,
+      "evidence_slot": "opening"
+    },
+    {
+      "name": "a103-sample-3.png",
+      "media_time": 5.000955,
+      "loop": 0,
+      "evidence_slot": "middle"
+    },
+    {
+      "name": "a103-sample-6.png",
+      "media_time": 0,
+      "loop": 1,
+      "evidence_slot": "after-loop"
+    }
+  ],
+  "switch_validation": "not_tested_fewer_than_two_selected_approved_clips",
+  "completed_at": "2026-10-30T23:34:41.974Z",
+  "passed": true,
+  "collector": {
+    "run": true,
+    "url": "http://127.0.0.1:8768/preview.html",
+    "output_dir": "/Users/tonghao/Projects/dsh-pet/temp/kurisu/playback-collector-run-03",
+    "user_data": "/Users/tonghao/Projects/dsh-pet/temp/kurisu/playback-collector-run-03/isolated-user-data",
+    "max_actions": 1,
+    "action_ids": [
+      "a103"
+    ],
+    "frame_rate": 60,
+    "alpha_sample_interval_ms": 2500,
+    "decode_slots_confirmed_by": "root: prior isolated run02 exited; face-review decoder finished; green_gate may use one read-only source decoder, this is the second slot",
+    "decode_slots_confirmed_at": "2026-10-30T23:34:27.187826+00:00",
+    "mode": "real_playback",
+    "executable_hint": "/Users/tonghao/.dsh/electron/Electron.app/Contents/MacOS/Electron",
+    "constraints": {
+      "show_window": false,
+      "independent_profile": true,
+      "background_throttling": false,
+      "offscreen": true,
+      "network_origin": "http://127.0.0.1:8768",
+      "approved_only": true,
+      "one_video_decoder": true,
+      "no_real_profile_or_service_changes": true
+    },
+    "protocol": [
+      "Confirm one available video decoding slot before --run. Do not compete with the two FFmpeg slots.",
+      "Load the existing gallery; select up to three currently approved real clips via gallery buttons.",
+      "For each clip collect requestVideoFrameCallback and playback quality across one real loop (duration + margin).",
+      "Pause/resume through gallery control. If two distinct approved clips exist, observe real src changes between them.",
+      "Save small alpha/composite PNG evidence and statistics; never claim continuous human visual review."
+    ],
+    "electron_version": "43.3.0",
+    "chromium_version": "150.0.7871.212",
+    "top_errors": []
+  }
+}

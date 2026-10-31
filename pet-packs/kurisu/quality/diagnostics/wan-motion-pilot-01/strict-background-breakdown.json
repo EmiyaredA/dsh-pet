@@ -1,0 +1,77 @@
+{
+  "saturation": {
+    "failed_count": 0,
+    "failed_indices": []
+  },
+  "spatial_uniformity": {
+    "failed_count": 41,
+    "failed_indices": [
+      21,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      82,
+      83,
+      111,
+      112,
+      113,
+      114,
+      115,
+      191,
+      192,
+      193,
+      194,
+      195,
+      196,
+      197,
+      198,
+      199
+    ]
+  },
+  "temporal_median_stability": {
+    "failed_count": 0,
+    "failed_indices": []
+  },
+  "worst_border_rgb": [
+    30,
+    254,
+    53
+  ],
+  "worst_spatial_delta": 65,
+  "worst_spatial_frame_borderidx_channel": [
+    62,
+    97,
+    1
+  ],
+  "worst_pixel_RGB": [
+    0,
+    186,
+    9
+  ],
+  "worst_frame_median_RGB": [
+    2.0,
+    251.0,
+    22.0
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "action_id": "a047",
+  "attempt_index": 2,
+  "spec_revision_id": "programmer-research-v2-2026-10-31",
+  "source_file": "source/library/a047/attempt-2/插拔网线（腰部以上入画）.mp4",
+  "source_sha256": "077d273a7352c43f57017a0375771dc5d8b54f91009f8ca99f10891009fbb4b7",
+  "source_task_id": "e8983674-03f7-4246-98b7-f1912ad68121",
+  "schema_version": 1,
+  "reviewer": "batch30_source_qa_parallel independent source visual reviewer",
+  "reviewed_at": "2026-10-31T10:08:26.416211+00:00",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "processing_clearance": "reject",
+  "final_media_approved": false,
+  "summary": "Laptop lid reaches the lower eyes and hides mouth/nose in frame 144; the requested short network cable is rendered as oversized power-style plugs and a large external box beside the character. These original-source composition/prop errors require rejection, not keying or repainting.",
+  "defects": [
+    {
+      "severity": "hard",
+      "type": "high_laptop_occludes_lower_face",
+      "frames": [
+        144
+      ],
+      "description": "Laptop is too high for the explicit waist-height lid and visible-face requirement."
+    },
+    {
+      "severity": "hard",
+      "type": "wrong_oversized_cable_prop",
+      "frames": [
+        96,
+        144
+      ],
+      "description": "Visible pronged power-style plugs and large floor-level box replace the miniature network cable/box at waist height."
+    }
+  ],
+  "inspection_scope": {
+    "source_static_samples_only": true,
+    "native_original_frames_personally_viewed": [
+      0,
+      96,
+      144,
+      239
+    ],
+    "native_size": [
+      1344,
+      768
+    ],
+    "native2x_crops_personally_viewed": [
+      "f000-face-native2x.png",
+      "f144-face-native2x.png",
+      "f144-lower-native2x.png",
+      "f239-lower-native2x.png"
+    ],
+    "prompt_file_read": "prompts/library/a047-programmer-research-v2-firstpass-green-01.txt",
+    "all240_background_metrics_reused": true,
+    "continuous_source_playback_not_performed": true,
+    "final_stage_continuous_review_required": true
+  },
+  "background_proof": {
+    "method": "all_frame_saturated_green_native_border_v2",
+    "passed": true,
+    "frames": 240,
+    "expected_frames": 240,
+    "failed_frame_count": 0,
+    "failed_frames": [],
+    "background_rgb_min": [
+      2.0,
+      232.0,
+      4.0
+    ],
+    "background_rgb_max": [
+      3.0,
+      233.0,
+      6.0
+    ],
+    "maximum_spatial_delta": 11.0,
+    "maximum_temporal_delta": 1.0,
+    "thresholds": {
+      "dominant_min": 180,
+      "other_channels_max": 100,
+      "dominance_min": 100,
+      "spatial_delta_max": 35,
+      "temporal_delta_max": 24
+    },
+    "expected_background": "#00FF00",
+    "white_matte_fallback": false,
+    "visual_foreground_review_required": true,
+    "enclosed_background_and_foreground_verified": false,
+    "native_size": [
+      1344,
+      768
+    ],
+    "boundary_pixels_per_frame": 4224,
+    "measurement": "native_one_pixel_outer_boundary_no_spatial_resampling",
+    "sampling": {
+      "duration_seconds": 10,
+      "fps": 24,
+      "expected_frames": 240
+    }
+  },
+  "evidence_manifest": "quality/evidence/batch30-firstpass/a047/attempt-2/manifest.json",
+  "no_new_paid_calls": true,
+  "no_local_repair": true,
+  "processing_constraint": "Plain green key only; no global palette remapping or semantic pixel repair authorized."
+}

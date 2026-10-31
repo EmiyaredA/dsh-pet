@@ -66,9 +66,39 @@ class IndependentEdgeReviewTests(unittest.TestCase):
 
     def test_peach_skin_component_is_protected_without_visible_open_eyes(self):
         rgba=self.figure()
-        rgba[148:168,225:231]=[252,244,234,255]
+        rgba[148:168,252:258]=[252,244,234,255]
         result,_=clear_hair_islands(rgba)
-        np.testing.assert_array_equal(result[148:168,225:231],rgba[148:168,225:231])
+        np.testing.assert_array_equal(result[148:168,252:258],rgba[148:168,252:258])
+
+    def test_warmed_white_outer_back_hair_gap_is_not_mistaken_for_peach_skin(self):
+        rgba=self.figure()
+        rgba[215:230,405:410]=[239,232,228,255]
+        result,_=clear_hair_islands(rgba)
+        self.assertEqual(int(result[222,407,3]),0)
+
+    def test_frontal_pale_ear_outside_iris_span_stays_opaque(self):
+        rgba=self.figure()
+        rgba[175:190,278:290]=[80,105,180,255]
+        rgba[175:190,345:357]=[80,105,180,255]
+        rgba[166:188,385:391]=[250,250,238,255]
+        # A real hair gap farther out remains removable.
+        rgba[150:175,405:410]=[250,250,250,255]
+        result,_=clear_hair_islands(rgba)
+        np.testing.assert_array_equal(result[166:188,385:391],rgba[166:188,385:391])
+        self.assertEqual(int(result[160,407,3]),0)
+
+    def test_raised_peach_hand_outside_face_and_normal_wrist_region_survives(self):
+        rgba=self.figure()
+        rgba[195:215,405:410]=[252,243,231,255]
+        result,_=clear_hair_islands(rgba)
+        np.testing.assert_array_equal(result[195:215,405:410],rgba[195:215,405:410])
+
+    def test_small_lower_outer_hair_gap_with_warm_antialias_ring_still_clears(self):
+        rgba=self.figure()
+        rgba[218:223,400:404]=[255,247,240,255]
+        rgba[218:223,397:400]=[230,210,204,255]
+        result,_=clear_hair_islands(rgba)
+        self.assertEqual(int(result[220,402,3]),0)
 
 
 if __name__=='__main__':unittest.main()

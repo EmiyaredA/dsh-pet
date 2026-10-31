@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "action_id": "a034",
+  "source_attempt_index": 2,
+  "spec_revision_id": "programmer-research-v2-2026-10-31",
+  "candidate_file": "source/library/a034/attempt-2/processing-475666d8-b372-453d-996d-3305c88ed256/报错拍键盘（半身）.webm",
+  "candidate_sha256": "e7a63c9ca2bddb6f6ef39779569a0bc2ffed0894637a34a2693b2ca02a1a99fc",
+  "source_sha256": "52323b20de6ad7c3199df622accc48241110ceeafec16894dacd0eaea9b03c71",
+  "source_task_id": "48326df6-b573-4d1f-94bb-827cce7afcbf",
+  "verdict": "pass_for_human_preview",
+  "processing_quality_verdict": "pass",
+  "content_approval": "human_sample_gate_pending",
+  "reviewer": "animation_qa independent agent",
+  "reviewed_at": "2026-10-31T08:00:14.612744+00:00",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "approval_mutation_performed": false,
+  "reason": "普通抠像与240帧技术通过，四底和脸发抽查未见明显残白、绿晕或处理新增缺失。键盘/报错图标/短拍及道具收回可辨，支架底完整留在画内。此为供人类看两条先导样片的质量结论，未批准或热更。",
+  "technical": {
+    "decoded_frames": 240,
+    "width": 640,
+    "height": 360,
+    "fps": 24,
+    "duration_seconds": 10,
+    "codec": "vp9",
+    "audio_streams": 0,
+    "all240_alpha_min0_max255": true,
+    "all240_outer_boundary_alpha_zero": true,
+    "first_bbox_alpha127": [
+      217,
+      61,
+      431,
+      331
+    ],
+    "last_bbox_alpha127": [
+      218,
+      60,
+      432,
+      331
+    ],
+    "feet_delta_px": 0,
+    "height_delta_px": 1,
+    "worker_strict_background_clear": true,
+    "worker_endpoint_rgba_mad": 5.186464703988907,
+    "idle_scale": {
+      "idle_sha256": "10717cdea36065ed9e6a0360a7174ff1a79b7dea9523939376980b5f74219132",
+      "idle_first_bbox_alpha127": [
+        217,
+        59,
+        430,
+        330
+      ],
+      "current_first_bbox_alpha127": [
+        217,
+        61,
+        431,
+        331
+      ],
+      "current_last_bbox_alpha127": [
+        218,
+        60,
+        432,
+        331
+      ]
+    },
+    "technical_proof": "quality/final-reviews/a034-e7a63c9ca2bd/decoded-technical240.json"
+  },
+  "inspection_scope": {
+    "normal640_stills_personally_viewed": [
+      {
+        "frame": 0,
+        "background": "blue"
+      },
+      {
+        "frame": 96,
+        "background": "dark"
+      },
+      {
+        "frame": 144,
+        "background": "light"
+      },
+      {
+        "frame": 239,
+        "background": "checker"
+      }
+    ],
+    "face_hair_nearest3x_from640_personally_viewed": [
+      0,
+      120,
+      239
+    ],
+    "source_review": "quality/source-reviews/a034-attempt-2.json",
+    "actual_playback_proof": "quality/final-reviews/a034-e7a63c9ca2bd/actual-browser-playback.json",
+    "limits": [
+      "All240 technical frames decoded is not all240 manual perceptual review.",
+      "No zero-drop playback assertion.",
+      "No autonomous release or action approval: both new programmer samples are behind the human sample gate."
+    ]
+  },
+  "visual_findings": {
+    "matte_and_color": "Reviewed negative hair spaces reveal each compositing background, without conspicuous white islands or detached background patch. No evident green light wash or new color drift from processing was seen. Ordinary3x AA softness is not counted as body damage.",
+    "face_and_anatomy": "Headwear, eyes, hair, skirt and shoes retain recognizable shape in reviewed samples. No obvious processing-added appendage or punched-out face/costume was seen. Laptop occlusion for a052 is separately retained rather than called a matte deletion.",
+    "action": "Gray keyboard on folding support and a static red error symbol remain clear; frown/short keyboard tap and complete stowing are recognizable. The action uses upper body while the shoes remain visible.",
+    "scale_and_seam": "Initial/final feet drift is0–1px, height drift1–2px, consistent with the existing final guard. Same640 idle/current switches were executed. Old accepted idle is a bit warmer in hue; no pixel-identical palette claim.",
+    "source_concern": null
+  },
+  "concerns": [],
+  "defects": [],
+  "alignment_correction_note": {
+    "original_error": "Animation would clip after alignment: [207.32142857142856, 57.760416666666664, 434.4910714285714, 353.046875]; inspect source",
+    "original_margin_px": 8,
+    "source_scoped_margin_px": 6,
+    "transform": {
+      "scaled_size": [
+        594,
+        340
+      ],
+      "offset": [
+        27,
+        25
+      ],
+      "content_box": [
+        207.32142857142856,
+        57.760416666666664,
+        434.4910714285714,
+        353.046875
+      ],
+      "standing_height": 610.0,
+      "standing_center_x": 663.0,
+      "standing_feet_y": 690.0,
+      "target_height": 270,
+      "target_feet_y": 330
+    },
+    "canvas_bottom_clearance_px": 6.953125,
+    "same_original_formula": true,
+    "union": [
+      408,
+      74,
+      922,
+      741
+    ],
+    "source_size": [
+      1344,
+      768
+    ],
+    "source_sha256": "52323b20de6ad7c3199df622accc48241110ceeafec16894dacd0eaea9b03c71",
+    "task_id": "48326df6-b573-4d1f-94bb-827cce7afcbf",
+    "reason": "Root explicitly authorizes consuming this current-spec action sole local correction: exact same source, original formula/key12,110/270height/330feet/lossless, only pre-alignment margin6px instead of8 because exact bottom353.046875 leaves6.953125px inside360. Global margin8 and final240-frame4px/strictAlpha guards unchanged. No new paid/redraw/foreground erase/palette/semantic/threshold tuning/size or foot movement. Any further failure stops this action.",
+    "global_build_pet_pack_unchanged": true,
+    "final_4px_and_strict_alpha_guards_unchanged": true
+  },
+  "evidence_directory": "quality/final-reviews/a034-e7a63c9ca2bd",
+  "new_paid_calls": 0,
+  "new_local_corrections_by_reviewer": 0,
+  "ledger_or_runtime_changed": false
+}

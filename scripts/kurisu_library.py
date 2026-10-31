@@ -20,6 +20,11 @@ from uuid import uuid4
 from contextlib import contextmanager
 
 from build_pet_pack import convert
+from kurisu_quotas import (effective_limits, attempt_limit, counts as quota_counts,
+                           record_standing_authorization, extend_quota, ensure_quota)
+from kurisu_background import evaluate_native_frames, scan_source_background
+from kurisu_iteration_policy import submission_allowed,correction_usage
+from kurisu_spec_revisions import has_source,current_spec_attempts,attempt_is_current,spec_iteration_decision
 
 ROOT = Path(__file__).resolve().parents[1]
 PACK = ROOT / 'pet-packs/kurisu'
@@ -33,6 +38,24 @@ def now():
 
 def save(state):
     state['updated_at'] = now()
+    state['production_coverage']={
+        'source_action_count':sum(bool(a.get('reused') or a.get('reused_origin_history')
+            or any(t.get('source_file') for t in a.get('attempts',[]))) for a in state['actions']),
+        'approved_count':sum(a.get('status')=='approved' for a in state['actions']),
+        'active_generation_count':sum(a.get('status') in {'generating','submission_uncertain'} for a in state['actions']),
+        'target':106}
+    if any(a.get('spec_revision_id') for a in state['actions']):
+        for action in state['actions']:
+            if not action.get('spec_revision_id'):continue
+            decision=spec_iteration_decision(action,correction_usage(action),'submit')
+            action.setdefault('spec_revision',{}).update(current_paid_attempt_count=len(current_spec_attempts(action)),
+                current_corrective_rounds_used=decision.get('current_spec_corrective_rounds'),
+                historical_usage_integrity=decision.get('current_spec_corrective_rounds') is not None)
+        historical=state['production_coverage']['source_action_count']
+        current=sum(has_source(a,current=True) for a in state['actions'])
+        state['production_coverage'].update(historical_source_action_count=historical,
+            current_spec_source_action_count=current,superseded_only_source_action_count=historical-current,
+            note='Historical raw files remain; superseded research sources do not complete the new programmer specifications.')
     temp = STATE.with_suffix('.next.json')
     temp.write_text(json.dumps(state, ensure_ascii=False, indent=2) + '\n')
     temp.replace(STATE)
@@ -41,8 +64,11 @@ def save(state):
                  f"新调用：{calls(state)} / {state['limits']['total_calls']}。状态以 library.json 为准。", '',
                  '| ID | 分类 | 动作 | 批次 | 状态 | 调用 | 任务 |', '|---|---|---|---|---|---|---|']
         for a in state['actions']:
-            tasks = '<br>'.join(t.get('task_id','提交待核对') for t in a['attempts']) or '复用'
-            lines.append(f"| {a['id']} | {a['group']} | {a['name']} | {a.get('batch','—')} | {a['status']} | {len(a['attempts'])} | {tasks} |")
+            tasks = '<br>'.join((t.get('task_id') or '提交待核对')+('（旧规格：'+t.get('spec_action_name',a['name'])+'）' if not attempt_is_current(a,t) else '') for t in a['attempts'])
+            if not tasks:
+                tasks = ('早期样片已撤回，见 production.json' if a.get('reused_origin_history') else
+                         '复用早期样片' if a.get('reused') else '尚未调用')
+            lines.append(f"| {a['id']} | {a['group']} | {a['name']} | {a.get('batch','—')} | {a['status']} | {len(a['attempts'])}"+('（当前规格'+str(len(current_spec_attempts(a)))+'）' if a.get('spec_revision_id') else '')+f" | {tasks} |")
         (PACK/'ACTIONS.md').write_text('\n'.join(lines)+'\n')
 
 
@@ -51,18 +77,18 @@ def load():
 
 
 def calls(state):
-    return sum(len(a['attempts']) for a in state['actions'])
+    return quota_counts(state)['calls']
 
 
 def can_submit(state, action):
     model = action.get('next_model_id', state.get('model_id'))
-    other_calls = sum(t.get('model_id', state.get('model_id')) != state.get('model_id')
-                      for a in state['actions'] for t in a['attempts'])
-    attempt_limit = state.get('action_attempt_limits',{}).get(action.get('id'),2)
-    return (calls(state) < state['limits']['total_calls'] and len(action['attempts']) < attempt_limit
-            and (model == state.get('model_id') or other_calls < state['limits'].get('other_model_calls', 2))
-            and (not action['attempts'] or sum(max(0, len(a['attempts']) - 1)
-                 for a in state['actions']) < state['limits']['repair_calls']))
+    limits, used = effective_limits(state), quota_counts(state)
+    return (submission_allowed(state,action)
+            and used['calls'] < limits['total_calls']
+            and len(action['attempts']) < attempt_limit(state, action.get('id'))
+            and (model == state.get('model_id') or used['other_model_calls'] < limits['other_model_calls'])
+            and (not (action['attempts'] or action.get('reused_origin_history'))
+                 or used['repairs'] < limits['repair_calls']))
 
 
 @contextmanager
@@ -89,84 +115,7 @@ def production_lock():
         path.unlink(missing_ok=True)
 
 
-def prompt_for(action, direction, prepared_reference=False):
-    moving = action['group'] == '移动'
-    no_props = action['group'] in {'待机', '转向', '拖拽', '点击回应'} or action['name'] in {
-        '原地轻步行走', '原地小跑', '伸懒腰', '打哈欠', '原地打盹', '打盹被惊醒',
-        '整理围裙', '整理猫耳发箍', '屈膝女仆礼', '抱臂轻哼', '歪头疑惑',
-        '原地转圈展示', '惊讶后整理仪态', '捧脸发呆', '轻快女仆舞',
-        '扶额无语', '认真反驳', '工作状态-托腮推理', '工作状态-抱臂等确认',
-        }
-    timing = ('From 00:00.000 to 00:00.500 hold the neutral FRONT stance, then pivot into a strict '
-              'SCREEN-LEFT side profile by 00:02.000, preparing only an expressly named prop. '
-              'From 00:02.000 to 00:08.000 perform the following SIDE-VIEW treadmill gait, accelerating gently '
-              'at the start and stopping by 00:08.000: ' if moving else
-              'From 00:00.000 to 00:01.000 hold the exact calm front standing pose. '
-              'From 00:01.000 to 00:02.000 prepare the small gesture or take the compact prop '
-              'from behind the body. From 00:02.000 to 00:07.000 perform this clear action: ')
-    if no_props and not moving:
-        timing = ('From 00:00.000 to 00:02.000 hold the neutral empty-handed stance. '
-                  'From 00:02.000 to 00:07.000 perform ONLY this body gesture: ')
-    prop = ('Both hands remain EMPTY throughout. There are NO props, cards, signs, books, '
-            'notebooks, badges, tools or other objects in this shot.' if no_props else
-            'Only props expressly named in the action are allowed. '
-            'Props use ivory, gray, muted red, pink, amber or blue; never green. Keep them miniature '
-            'and centered in front of the waist, below the face where possible. The face, both ears '
-            'and shoes stay visible. Confine any expressly requested spark effect to the tiny prop; '
-            'it never lights the character. Do not invent other effects, animals or objects.')
-    finish = ('From 00:08.000 to 00:09.000 stop the side-view steps, pivot from SCREEN-LEFT profile '
-              'back to the original FRONT standing stance, stow any explicitly named prop and lower both hands.'
-              if moving else 'From 00:07.000 to 00:09.000 smoothly finish the gesture, lower the hands and face forward. '
-              'Any explicitly requested props are completely stowed; no new object is introduced.')
-    reference_description = (
-        '<Picture 1> is the sole character and body-proportion reference, prepared by proportional '
-        'scaling of the approved original onto a green canvas, without changing any character detail. '
-        'PRESERVE THIS EXACT WIDE FRAMING: the ear tips are at 20% frame height, the soles at 85%, '
-        'and the body center at 50% frame width. Keep the broad empty green margins throughout. '
-        'Do not crop the image, enlarge the figure to fill the frame or elongate the body. '
-        'The neutral FRONT posture in this image is the beginning and ending pose.'
-        if prepared_reference else
-        '<Picture 1> is the sole character and body-proportion reference, defining the neutral FRONT '
-        'standing posture for the beginning and end. Use it for identity and relative anatomical '
-        'proportions; its tight framing is NOT the target composition. Draw the same complete figure '
-        'smaller within a wider uniform digital #00FF00 matte. Do not reference a character sheet or elongate the body.')
-    laptop_geometry=('PHYSICAL LAPTOP ORIENTATION: whenever she uses the laptop, its screen and keyboard face HER. '
-        'The camera sees only the plain matte gray EXTERIOR BACK LID and rear hinge. Never render a screen, '
-        'data, interface, keyboard, webcam or glowing logo on that outward-facing back cover. '
-        'When she carries the closed laptop, show a rigid gray metal clamshell with hinge and side vents, never paper pages.'
-        if 'laptop' in direction.lower() else '')
-    return f'''subject_definitions:
-<Subject 1> is the SINGLE approved HUMAN chibi girl Kurisu wearing a maid costume and a detachable cat-ear HEADBAND in <Picture 1>. Her anatomy is entirely HUMAN; the two black fabric triangles with pink interiors are costume accessories on the white lace headband, not animal body parts. Preserve the exact large round head, short slightly plump body and limbs, chestnut-auburn long hair, blue-violet eyes and two pink bows. Preserve the black-and-white frilled maid dress, white puff sleeves and bib, pink neck ribbon and zigzag trim, gray belt and silver buckle, dark stockings and black shoes. The back ends at the skirt and hair; NO animal tail or other appendage exists. NO silver hair clips.
-{reference_description}
-
-summary:
-[reference generation] A single locked-off full-body 10-second 2D desktop-pet sprite shot of <Subject 1>. The specific action is: {direction} {prop} Return to the identical clean front standing pose, with a fixed palette on a solid digital green matte.
-
-retention_analysis:
-<Subject 1> (appears in [Shot 1]): fully_preserved - retain the exact approved identity, rounded squat proportions, hair and eye colors, complete headwear, costume layers and shoes. Only the specified gesture, expression and temporary props change.
-<Picture 1> ([Shot 1] opening and ending pose target): fully_preserved - same neutral front posture, relaxed hands, open eyes and small closed smile, and relative body proportions. Place the whole figure at the smaller target scale with ear tips at 20% and soles at 85% of frame height; extend the empty digital green area around it.
-
-detailed_description:
-Match the delicate dark outlines and soft 2D cel shading in <Picture 1>, like a clean game animation sprite. [Shot 1] A single fixed eye-level orthographic full-body view lasts exactly 10 seconds. Keep the character centered with ear tips near 20% frame height and soles near 85%, leaving generous empty margins for hands, hair and props. Maintain the approved large head and short round body. Do not translate the entire figure horizontally, travel toward the camera, zoom, pan, cut, reframe or change body scale. Turning and stepping happen in place around the same body axis; the runtime will move the desktop window separately.
-
-BACKGROUND THROUGHOUT [Shot 1], 00:00.000–00:10.000: a perfectly flat, fully saturated digital RGB (0,255,0), #00FF00 chroma-key green matte occupies EVERY background pixel in EVERY frame. Preserve this green behind the figure AND inside all visible negative spaces between hair locks, arms, body, props and skirt. These empty gaps remain green when they open or close. The first frame, all action frames and the final frame have exactly the same green. Never replace it with white, off-white, gray, black, blue, transparency, a checkerboard, a floor or a studio backdrop. No fade, background transition, gradient, cast shadow or background texture. The green is a digital compositing layer; it does not illuminate the subject.
-
-Use FIXED PALETTE COLORS and constant neutral even frontal illumination on the CHARACTER ONLY in every frame. Chestnut hair, pale skin, neutral white lace, charcoal clothes, pink bows and blue-violet eyes keep their original hues and brightness. Existing painted highlights stay attached to surfaces. No colored illumination, green reflection, green edge spill, moving light, rainbow wash, animated highlights, body glow, lens flare, bokeh, floating hearts, symbols or unsolicited particles. White lace remains opaque neutral white and is distinct from the saturated green in the surrounding hair gaps. Neutral subject lighting must never become a white background.
-
-{timing}{direction}
-
-{prop}
-
-{laptop_geometry}
-
-{finish} From 00:09.000 through 00:10.000 hold EXACTLY the opening calm FRONT standing pose: eyes open, tiny closed smile, arms relaxed, hands empty and both shoes level on the original baseline. Hair, frills and headwear settle to their opening outlines. No prop, animal, particle or extra object remains. Use smooth natural easing, structurally correct hands and stable costume details. All content remains inside the central safe area, at least 10% from every frame edge. Do not draw any readable text, labels, digits, logos, captions or watermarks.
-
-overall_soundscape:
-Silent. No speech, breath, footsteps, ambient sound or sound effects.
-
-non_diegetic_music:
-N/A. No music.
-'''
+from kurisu_short_prompts import prompt_for
 
 
 def initialize():
@@ -222,6 +171,9 @@ def status(state):
         counts[a['status']] = counts.get(a['status'], 0) + 1
     return {'stage':state.get('stage'),'blocker':state.get('blocker'),
             'states': counts, 'calls': calls(state), 'limit': state['limits']['total_calls'],
+            'quota_usage': quota_counts(state), 'effective_limits': effective_limits(state),
+            'standing_authorization_id': state.get('standing_authorization',{}).get('id'),
+            'diagnostic_attempt_count': len(state.get('diagnostic_attempts', [])),
             'awaiting_review': [{'id': a['id'], 'name': a['name'], 'contact': a['attempts'][-1].get('contact')}
                                 for a in state['actions'] if a['status'] == 'awaiting_review']}
 
@@ -270,16 +222,19 @@ def prepare_result(client, state, action, attempt):
     # Inspect every decoded frame BEFORE any conversion or acceptance; never
     # hide a failed background behind the former white-matte fallback.
     try:
-        background = source_green_background(raw)
+        background = source_green_background(raw,attempt.get('chroma_background','green'))
     except (ValueError, RuntimeError, subprocess.CalledProcessError) as exc:
         attempt['processing_error'] = 'Green-background validation could not finish: ' + str(exc)
         action['status'] = 'awaiting_review'; save(state); return
     attempt['source_background'] = background
     if not background['passed']:
-        attempt['processing_error'] = ('Source must use uniform saturated green in every frame; '
+        attempt['processing_error'] = ('Source must use uniform saturated '+attempt.get('chroma_background','green')+' in every frame; '
             f"background failed on {background['failed_frame_count']} of {background['frames']} frames")
         action['status'] = 'awaiting_review'; save(state); return
     attempt.pop('processing_error', None)
+    if attempt.get('chroma_background')=='blue':
+        attempt['processing_error']='Blue source validated; dedicated eye-preserving blue matte must be reviewed before acceptance'
+        action['status']='awaiting_review';save(state);return
     clip = folder / (action['name'] + '.webm')
     if not clip.exists():
         try:
@@ -304,128 +259,64 @@ def write_alpha_contact(action,attempt,clip):
 
 
 def green_background_frames(frames):
-    """Every frame must retain one flat saturated green border, with codec tolerance.
-
-    The reduced outer border is outside the mandated 10% content-safe area.
-    This is a source-background gate, separate from silhouette/edge visual QA.
-    """
-    if frames.ndim != 4 or frames.shape[-1] != 3 or not len(frames):
-        raise ValueError('No complete RGB source frames')
-    rgb=frames.astype(np.int16)
-    border=np.concatenate([rgb[:,0],rgb[:,-1],rgb[:,:,0],rgb[:,:,-1]],axis=1)
-    bg=np.median(border,axis=1)
-    saturated=(border[...,1]>=180)&(border[...,0]<=100)&(border[...,2]<=100)&(
-        border[...,1]-np.maximum(border[...,0],border[...,2])>=100)
-    flat=np.abs(border-bg[:,None,:]).max(axis=(1,2))<=35
-    stable=np.abs(bg-bg[0]).max(axis=1)<=24
-    good=saturated.all(axis=1)&flat&stable
-    bad=np.flatnonzero(~good)
-    return {'method':'all_frame_saturated_green_border_v1','passed':bool(len(frames)==240 and good.all()),
-        'frames':len(frames),'failed_frame_count':len(bad),'failed_frames':bad.tolist(),
-        'background_rgb_min':bg.min(axis=0).tolist(),'background_rgb_max':bg.max(axis=0).tolist(),
-        'expected_frames':240,'expected_background':'#00FF00','white_matte_fallback':False}
+    """Check the actual pixel boundary; semantic/foreground QA remains separate."""
+    return evaluate_native_frames(frames)
 
 
-def source_green_background(raw):
-    # H3 may include a few extra encoder tail frames. Match the existing
-    # converter's first ten seconds, then inspect every one of its 240 frames.
-    data=subprocess.check_output(['ffmpeg','-v','error','-i',str(raw),'-t','10','-an',
-        '-vf','fps=24,scale=64:36:flags=area','-f','rawvideo','-pix_fmt','rgb24','-'])
-    frame_size=64*36*3
-    if not data or len(data)%frame_size:raise ValueError('Incomplete source background scan')
-    return green_background_frames(np.frombuffer(data,np.uint8).reshape(-1,36,64,3))
+def source_green_background(raw,color='green'):
+    return scan_source_background(raw,color)
 
 
-def tick(client, state, submit=True, skip_actions=()):
-    pid = state['project_id']
-    for a in state['actions']:
-        if a['id'] in skip_actions or a['status'] != 'generating':
-            continue
-        attempt = a['attempts'][-1]
-        if not attempt.get('task_id'):
-            known = set(attempt['previous_task_ids'])
-            found = [t for t in client.generation.list_generation_tasks(project_id=pid, canvas_node_id=a['node_id']).items if t.id not in known]
-            if len(found) != 1:
-                raise RuntimeError(f"{a['id']} uncertain submission; do not resubmit")
-            attempt['task_id'] = found[0].id; save(state)
-        task = client.generation.get_generation_task(task_id=attempt['task_id'])
-        attempt.update({'status': task.status, 'provider_task_id': task.provider_task_id,
-                        'result_asset_id': task.result_asset_id, 'error': task.error_message})
-        save(state)
-        if task.status == 'completed':
-            prepare_result(client, state, a, attempt)
-        elif task.status in {'failed', 'cancelled'}:
-            a['status'] = 'generation_failed'; save(state)
-    uncertain = [a for a in state['actions'] if a['status']=='generation_failed' and a['attempts']
-                 and a['attempts'][-1].get('provider_task_id')
-                 and 'ConnectError' in (a['attempts'][-1].get('error') or '')]
-    if uncertain:
-        state['stage']='blocked_task_reconciliation'
-        state['blocker']={'reason':'Provider accepted tasks but FPL polling failed with ConnectError. Remote outcomes unknown; no new submissions until reconciled.',
-                          'actions':[a['id'] for a in uncertain], 'updated_at':now()}
-        save(state)
-        return
-    if not submit:
-        return
-    if state.get('production_hold'):
-        raise RuntimeError('Production is held for a recorded quality problem; resolve the hold before new paid submissions')
-    if state.get('stage')=='blocked_task_reconciliation':
-        raise RuntimeError('Reconcile remote task outcomes and explicitly resume before submitting new work')
-    live = client.generation.list_generation_tasks(project_id=pid, page_size=100).items
-    active = sum(t.status in ACTIVE for t in live)
-    unsettled = [a for a in state['actions'] if a['id'] not in skip_actions and not a['reused'] and a['status'] not in {'approved', 'exhausted'}]
-    if not unsettled:
-        return
-    priority = {aid:i for i,aid in enumerate(state.get('priority_ids',[]))}
-    candidates = sorted([a for a in unsettled if a['status'] == 'planned'],
-                        key=lambda a:(a['batch'],priority.get(a['id'],len(priority)+a['queue_order'])))
-    for a in candidates:
-        if active >= state['limits'].get('concurrent_tasks',2) or not can_submit(state, a):
-            break
-        prompt = (PACK / a['prompt_file']).read_text()
-        if a['attempts']:
-            prompt += '\nAdditional correction: ' + a['repair_instruction'] + '\n'
-        canvas = client.visual.get_canvas(project_id=pid)
-        previous = client.generation.list_generation_tasks(project_id=pid, canvas_node_id=a['node_id']).items
-        model_id = a.get('next_model_id', state['model_id'])
-        model = next(m for m in client.generation.generation_options().models if m.id == model_id)
-        if model.slug in state['excluded_models']:
-            raise ValueError('Excluded model cannot be used')
-        caps = model.video_capabilities
-        if not (caps and 'reference' in caps.supported_modes and caps.reference_limits.get('image', 0) >= 1
-                and caps.supports_prompt and caps.duration_min <= 10 <= caps.duration_max
-                and '16:9' in caps.resolution_ratios.get('768p', [])):
-            raise ValueError('Selected model cannot satisfy the approved video specification')
-        attempt = {'started_at': now(), 'status': 'submission_started', 'model_id': model_id, 'model_slug': model.slug,
-                   'reference_asset_id':state['reference_asset_id'],'reference_sha256':state['reference_sha256'],
-                   'prompt_sha256': hashlib.sha256(prompt.encode()).hexdigest(), 'previous_task_ids': [t.id for t in previous]}
-        a['attempts'].append(attempt); a['status'] = 'generating'; save(state)
-        snapshot = PACK / 'prompts/library' / (a['id'] + '-attempt-' + str(len(a['attempts'])) + '.txt')
-        snapshot.write_text(prompt); attempt['prompt_file'] = str(snapshot.relative_to(PACK)); save(state)
-        task = client.generation.create_generation_task(project_id=pid, body={'kind': 'video',
-            'model_id': model_id, 'mode': 'reference', 'prompt': prompt,
-            'duration': 10, 'ratio': '16:9', 'resolution': '768p', 'reference_asset_ids': [state['reference_asset_id']],
-            'canvas_node_id': a['node_id'], 'expected_canvas_revision': canvas.revision})
-        attempt.update({'task_id': task.id, 'status': task.status}); save(state); active += 1
-        print(json.dumps({'submitted': a['id'], 'name': a['name'], 'task': task.id, 'calls': calls(state)}, ensure_ascii=False), flush=True)
+def tick(client, state=None, submit=True, skip_actions=()):
+    """Poll/refill metadata only; local media work belongs to QueueRunner."""
+    from kurisu_queue import poll_originals,submit_one
+    poll_originals(client,skip_actions)
+    if submit:
+        for _ in range(6):
+            if not submit_one(client,skip_actions):break
+    fresh=load()
+    if state is not None:
+        state.clear();state.update(fresh)
+    return status(fresh)
 
 
-def review(state, action_id, verdict, reason):
+def review(state, action_id, verdict, reason, motion_mode=None, prepared=None):
     a = next(a for a in state['actions'] if a['id'] == action_id)
-    assert a['status'] in {'awaiting_review', 'generation_failed'}
+    if a.get('human_action_hold',{}).get('active') is True:
+        raise PermissionError('Human deferred this action/version; do not replace or re-review it automatically')
+    if a.get('spec_revision_id') and (not a['attempts'] or not attempt_is_current(a,a['attempts'][-1])):
+        raise ValueError('Old specification media cannot satisfy the current specification review')
+    allowed = {'awaiting_review', 'generation_failed', 'processing_failed'}
+    if verdict == 'reject':
+        allowed.add('awaiting_source_review')
+    assert a['status'] in allowed
     attempt = a['attempts'][-1]
     attempt['review'] = {'verdict': verdict, 'reason': reason, 'reviewed_at': now()}
     if verdict == 'pass':
         assert attempt.get('candidate_file') and not attempt.get('processing_error')
         if attempt.get('source_background') is not None:
             assert attempt['source_background']['passed'], 'Source background failed the all-frame green gate'
+        if attempt.get('processing_claim_history'):
+            assert attempt.get('source_quality',{}).get('processing_clearance')=='allow_mild_color_and_green_key', 'Independent source clearance is required'
+            assert attempt['source_quality'].get('source_sha256')==attempt.get('source_sha256'), 'Independent source clearance hash changed'
+            media=attempt.get('report',{}).get('verification',{})
+            assert (media.get('width'),media.get('height'),media.get('fps'),media.get('frames'),media.get('audio_streams'))==(640,360,24,240,0), 'Local media specification failed'
+            assert media.get('all_frames_have_alpha') and media.get('background_clear'), 'Alpha/background verification is required'
+        if motion_mode is not None:
+            assert a['group']=='移动' and motion_mode in {'front-left-front','continuous-left-profile'}
+            a['motion_mode']=motion_mode;attempt['review']['motion_mode']=motion_mode
+        for key in ['quality_hold','automatic_playback_hold']:
+            if key in a:a.setdefault('resolved_quality_holds',[]).append({'kind':key,**a.pop(key),'resolved_at':now(),'resolution':'Operator passed the reviewed replacement'})
         source = PACK / attempt['candidate_file']; target = PACK / 'pet/kurisu-animation' / (a['name'] + '.webm')
-        shutil.copy2(source, target); shutil.copy2(source.with_suffix('.report.json'), target.with_suffix('.report.json'))
-        a.update({'status': 'approved', 'file': str(target.relative_to(PACK)), 'sha256': hashlib.sha256(target.read_bytes()).hexdigest()})
-        write_alpha_contact(a,attempt,target)
         poster = PACK / 'previews/library' / (a['id'] + '.png'); poster.parent.mkdir(exist_ok=True)
-        subprocess.run(['ffmpeg', '-y', '-v', 'error', '-c:v', 'libvpx-vp9', '-i', str(target), '-frames:v', '1', str(poster)], check=True)
-        a['poster'] = str(poster.relative_to(PACK))
+        if prepared:
+            Path(prepared['media']).replace(target);Path(prepared['report']).replace(target.with_suffix('.report.json'))
+            Path(prepared['poster']).replace(poster);attempt['alpha_contact']=prepared['alpha_contact'];digest=prepared['sha256']
+        else:
+            shutil.copy2(source,target);shutil.copy2(source.with_suffix('.report.json'),target.with_suffix('.report.json'))
+            digest=hashlib.sha256(target.read_bytes()).hexdigest();write_alpha_contact(a,attempt,target)
+            subprocess.run(['ffmpeg','-y','-v','error','-c:v','libvpx-vp9','-i',str(target),'-frames:v','1',str(poster)],check=True)
+        a.update({'status':'approved','file':str(target.relative_to(PACK)),'sha256':digest,'poster':str(poster.relative_to(PACK))})
     else:
         a['status'] = 'rejected' if can_submit(state,a) else 'exhausted'
     save(state)
@@ -433,11 +324,20 @@ def review(state, action_id, verdict, reason):
 
 def withdraw(state, action_id, reason):
     a = next(a for a in state['actions'] if a['id'] == action_id)
-    assert a['status'] == 'approved' and not a.get('reused')
+    assert a['status'] == 'approved'
+    assert a.get('attempts') or a.get('reused'), 'An approval must have a campaign attempt or a recorded reused origin'
+    reused = bool(a.get('reused'))
+    previous_review = a['attempts'][-1].get('review') if a['attempts'] else None
     record = {k:a.get(k) for k in ['file','sha256','poster','delivery_asset_id','delivery_node_id']}
-    record.update({'withdrawn_at':now(),'reason':reason,'review':a['attempts'][-1].get('review')})
+    record.update({'withdrawn_at':now(),'reason':reason,'review':previous_review,'reused_origin':reused})
     a.setdefault('withdrawn_approvals',[]).append(record)
-    a['attempts'][-1]['review']={'verdict':'withdrawn','reason':reason,'reviewed_at':now()}
+    if a['attempts']:
+        a['attempts'][-1]['review']={'verdict':'withdrawn','reason':reason,'reviewed_at':now()}
+    if reused:
+        # The original sample calls remain in production.json, outside the
+        # later106-action campaign. Do not invent an attempt to revoke reuse.
+        a.setdefault('reused_origin_history',[]).append({**record,'origin_record':'production.json'})
+        a['reused']=False
     a['status'] = 'rejected' if can_submit(state,a) else 'exhausted'
     save(state)
     old=PACK/record['file']
@@ -453,7 +353,7 @@ def withdraw(state, action_id, reason):
 
 def retry(state, action_id, instruction):
     a = next(a for a in state['actions'] if a['id'] == action_id)
-    assert a['status'] in {'rejected', 'generation_failed', 'exhausted'} and can_submit(state, a)
+    assert a['status'] in {'rejected', 'generation_failed', 'exhausted', 'processing_failed'} and can_submit(state, a)
     a['repair_instruction'] = instruction; a['status'] = 'planned'; save(state)
 
 
@@ -486,15 +386,44 @@ def recover(client, state):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('command', choices=['init', 'setup', 'tick', 'watch', 'status', 'recover', 'review', 'withdraw', 'retry'])
+    parser.add_argument('command', choices=['init', 'setup', 'tick', 'watch', 'status', 'recover', 'process-local', 'review', 'withdraw', 'retry', 'quota-extend', 'quota-ensure'])
     parser.add_argument('--action'); parser.add_argument('--verdict', choices=['pass', 'reject'])
     parser.add_argument('--reason')
     parser.add_argument('--no-submit', action='store_true', help='Only recover/poll existing tasks')
     parser.add_argument('--skip-action',action='append',default=[],help='Leave another operator action untouched; its calls and active tasks still count toward every global limit')
     parser.add_argument('--model-id', help='Optional alternate model for one authorized retry')
+    parser.add_argument('--interval',type=int,default=5)
+    parser.add_argument('--stop-when-idle',action='store_true')
+    parser.add_argument('--motion-mode',choices=['front-left-front','continuous-left-profile'])
+    parser.add_argument('--worker-version')
+    parser.add_argument('--request-id', help='Stable, replay-safe quota adjustment ID')
+    parser.add_argument('--total-add', type=int, default=0)
+    parser.add_argument('--repair-add', type=int, default=0)
+    parser.add_argument('--other-model-add', type=int, default=0)
+    parser.add_argument('--quota-action', action='append', default=[], help='Add/ensure one further attempt for this named action')
+    parser.add_argument('--calls-needed', type=int, default=0)
+    parser.add_argument('--repairs-needed', type=int, default=0)
+    parser.add_argument('--other-model-calls-needed', type=int, default=0)
     args = parser.parse_args()
     if args.command == 'status':
         print(json.dumps(status(load()), ensure_ascii=False)); return
+    if args.command=='review':
+        from kurisu_queue import review_media
+        assert args.action and args.verdict and args.reason
+        review_media(args.action,args.verdict,args.reason,args.motion_mode);return
+    if args.command=='process-local':
+        from kurisu_queue import request_local
+        assert args.action and args.reason
+        request_local(args.action,args.reason,args.worker_version)
+    if args.command in {'tick','watch','recover','process-local'}:
+        # The queue owns short reservation/CAS locks. Downloads, FFmpeg and
+        # per-task SDK waits run outside them, including while quality is held.
+        from kurisu_queue import run
+        skip=set(args.skip_action)
+        if args.action:skip.update(a['id'] for a in load()['actions'] if a['id']!=args.action)
+        result=run(once=args.command!='watch',no_submit=args.no_submit or args.command in {'recover','process-local'},
+            interval=args.interval,skip_actions=skip,stop_when_idle=args.stop_when_idle)
+        print(json.dumps(result,ensure_ascii=False));return
     with production_lock():
         execute(args)
 
@@ -503,9 +432,20 @@ def execute(args):
     if args.command == 'init':
         initialize(); return
     state = load()
+    if args.command in {'quota-extend', 'quota-ensure'}:
+        if args.command == 'quota-extend':
+            event = extend_quota(state, request_id=args.request_id, reason=args.reason,
+                total_calls=args.total_add, repair_calls=args.repair_add,
+                action_ids=args.quota_action, other_model_calls=args.other_model_add)
+        else:
+            event = ensure_quota(state, request_id=args.request_id, reason=args.reason,
+                calls_needed=args.calls_needed, repairs_needed=args.repairs_needed,
+                action_ids=args.quota_action, other_model_calls_needed=args.other_model_calls_needed)
+        save(state)
+        print(json.dumps(event, ensure_ascii=False)); return
     if args.command == 'review':
         assert args.action and args.verdict and args.reason
-        review(state, args.action, args.verdict, args.reason)
+        review(state, args.action, args.verdict, args.reason, motion_mode=args.motion_mode)
     elif args.command == 'withdraw':
         assert args.action and args.reason
         withdraw(state,args.action,args.reason)
@@ -515,29 +455,13 @@ def execute(args):
             action = next(a for a in state['actions'] if a['id'] == args.action)
             action['next_model_id'] = args.model_id
         retry(state, args.action, args.reason)
-    else:
+    elif args.command=='setup':
         from future_props_lab.desktop import desktop_client
-        from future_props_lab.cli import capability
         with desktop_client() as client:
-            caps = capability(client)
-            required = ['visual.get_canvas', 'visual.put_canvas', 'visual.apply_canvas_operations',
-                        'generation.create_generation_task', 'generation.list_generation_tasks',
-                        'generation.get_generation_task', 'files.download_file', 'files.upload_file']
-            assert all(x in caps['operations'] for x in required)
-            if args.command == 'setup':
-                assert not state.get('canvas_setup_complete'); setup(client, state)
-            elif args.command == 'recover':
-                assert 'generation.retry_materialization' in caps['operations']
-                recover(client,state)
-            else:
-                assert state.get('canvas_setup_complete')
-                while True:
-                    tick(client, state, submit=not args.no_submit,skip_actions=args.skip_action)
-                    if (args.command != 'watch' or any(a['id'] not in args.skip_action and a['status'] in {'awaiting_review','generation_failed'} for a in state['actions'])
-                            or not any(a['id'] not in args.skip_action and a['status']=='generating' for a in state['actions'])):
-                        break
-                    time.sleep(30)
-    print(json.dumps(status(state), ensure_ascii=False))
+            assert not state.get('canvas_setup_complete');setup(client,state)
+    else:
+        raise ValueError('Pipeline commands must run through the short-lock queue')
+    print(json.dumps(status(state),ensure_ascii=False))
 
 
 if __name__ == '__main__':

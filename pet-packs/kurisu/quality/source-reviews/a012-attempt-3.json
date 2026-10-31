@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "action_id": "a012",
+  "attempt_index": 3,
+  "source_sha256": "356d74a739a0f9b5917b0ae1a8210c29c90c214b464d28cc521a698d0dfd9be9",
+  "source_task_id": "d73b665f-bf92-4cf6-adde-9677602e4471",
+  "source_result_asset_id": "0b970e6e-9e3f-4761-aa99-ac8f462dc005",
+  "canonical_source_file": "source/library/a012/attempt-3/伸懒腰.mp4",
+  "inspected_source_file": "/Users/tonghao/Projects/dsh-pet/pet-packs/kurisu/source/library/a012/attempt-3/伸懒腰.mp4",
+  "model_slug": "minimax_h3_zm_nono",
+  "source_generation_mode": "reference",
+  "reference_asset_id": "31857508-4eca-4ef3-9d42-a8fd52c37cc3",
+  "reference_sha256": "13c6f712b98a45637e2b5f34aad4dc6c506538229771ce9bc034b61611583340",
+  "conditioning_experiment": "Transparent RGBA background instead of RGB green; same 65% framing and unchanged historical prompt bytes.",
+  "historical_prompt_bytes_unchanged_verified": true,
+  "reviewed_at": "2026-10-30T20:56:18.697850+00:00",
+  "reviewer": "independent_animation_qa_agent",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "processing_clearance": "reject",
+  "final_media_approved": false,
+  "summary": "HARD REJECT despite the native green border PASS. Bright moving green circles visibly paint the forehead, face, headband, ears, hair and dress at 2–3 seconds. These spots are foreground color content, not empty background. A transparent input did not prevent invented lighting effects.",
+  "defects": [
+    {
+      "severity": "hard",
+      "type": "foreground_lighting",
+      "source_frames": [
+        48,
+        72
+      ],
+      "time_seconds": [
+        2,
+        3
+      ],
+      "description": "Bright lime-green round spots cross the real forehead, cheek, headband, ears, hair, chest and apron. Their positions differ between frames 48 and 72. Normal green keying would make holes in the character. Global color correction or semantic background separation cannot restore the original painted materials underneath these spots."
+    },
+    {
+      "severity": "hard",
+      "type": "diffuse_green_olive_character_cast",
+      "source_frames": [
+        0,
+        48,
+        72
+      ],
+      "description": "Hair, ear interiors and white fabric already carry a diffuse olive/green wash at frame 0, in addition to the animated green spots. No local recoloring or reconstruction is approved."
+    }
+  ],
+  "background_gate": {
+    "method": "all_frame_saturated_green_native_border_v2",
+    "passed": true,
+    "frames": 240,
+    "expected_frames": 240,
+    "failed_frame_count": 0,
+    "failed_frames": [],
+    "background_rgb_min": [
+      45.0,
+      242.0,
+      29.0
+    ],
+    "background_rgb_max": [
+      48.0,
+      243.0,
+      31.0
+    ],
+    "maximum_spatial_delta": 12.0,
+    "maximum_temporal_delta": 3.0,
+    "thresholds": {
+      "dominant_min": 180,
+      "other_channels_max": 100,
+      "dominance_min": 100,
+      "spatial_delta_max": 35,
+      "temporal_delta_max": 24
+    },
+    "expected_background": "#00FF00",
+    "white_matte_fallback": false,
+    "visual_foreground_review_required": true,
+    "enclosed_background_and_foreground_verified": false,
+    "native_size": [
+      1344,
+      768
+    ],
+    "boundary_pixels_per_frame": 4224,
+    "measurement": "native_one_pixel_outer_boundary_no_spatial_resampling",
+    "sampling": {
+      "duration_seconds": 10,
+      "fps": 24,
+      "expected_frames": 240
+    }
+  },
+  "background_gate_not_visual_approval": true,
+  "visual_action_notes": {
+    "action": "She raises and spreads her arms with closed eyes and a small head tilt, then lowers them. A gentle stretch is recognizable in the samples. The foreground lighting defect overrides that otherwise usable motion.",
+    "subject_complete_in_samples": true,
+    "extra_ear_tail_or_melt_observed_in_samples": false,
+    "first_last_standard_pose_appears_similar_in_samples": true,
+    "fullframegeometry_or_fineeyecontinuity_not_certified": true,
+    "source_not_approved_for_final_output": true
+  },
+  "portable_evidence": [
+    "quality/evidence/a012-transparent-probe-attempt3-source-contact.png",
+    "quality/evidence/a012-transparent-probe-f48-green-FX-native2x.png",
+    "quality/evidence/a012-transparent-probe-f72-green-FX-native2x.png"
+  ],
+  "inspection_scope": {
+    "contact_frames": [
+      0,
+      24,
+      48,
+      72,
+      96,
+      120,
+      144,
+      168,
+      192,
+      216,
+      239
+    ],
+    "native_head_torso_2x_personally_inspected_frames": [
+      0,
+      48,
+      72
+    ],
+    "all_native_frames_visual": false,
+    "background_gate_frames": 240,
+    "source_sha_verified": true,
+    "new_model_calls": 0,
+    "ledger_modified": false,
+    "source_modified": false,
+    "candidate_generated": false,
+    "green_key_or_colour_processing_performed": false,
+    "semantic_processing_or_model_download_performed": false,
+    "quantitative_scope": "First 10 seconds sampled at 24 fps: all 240 frames measured on their native one-pixel outer boundary, without spatial resizing. This is a boundary metric, not an all-pixel semantic review.",
+    "manual_visual_scope": "Personally inspected the listed contact frames and original-pixel native crops enlarged 2x. These are sampled source-image inspections, not full-frame-by-frame playback.",
+    "finished_transparent_video_playback_performed": false,
+    "source_real_time_playback_performed": false,
+    "technical_metrics_do_not_imply_visual_approval": true
+  },
+  "allowed_processing": [],
+  "semantic_alpha_authorization": "The human reply is still pending. No semantic processing or model download was performed.",
+  "new_model_calls": 0,
+  "reason": "原片虽然通过240帧原生边框绿幕指标，但第48、72帧的明亮绿色移动光斑覆盖了额头、脸、头箍、头发和服装，属于人物本体污染，不能通过普通抠绿或语义背景分离恢复。"
+}

@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "action_id": "a041",
+  "action_name": "白板画架构图",
+  "source_attempt_index": 2,
+  "spec_revision_id": "programmer-research-v2-2026-10-31",
+  "source_sha256": "f9ddf7e2eb4497107e8f26a1e9a530429e26ea975b0606664f0352bb57c77c67",
+  "source_task_id": "58d394c9-f4c2-43f1-bd37-4f3bed7e842b",
+  "candidate_file": "source/library/a041/attempt-2/processing-f050b784-7181-4ce7-96ca-9b626663ba34/白板画架构图.webm",
+  "candidate_sha256": "4e2fb1ea7316e143625769725000fa5dfdd975114f82521e00aafaaca8e93a1f",
+  "verdict": "pass",
+  "reviewer": "animation_qa independent agent",
+  "reviewed_at": "2026-10-31T10:41:28.979690+00:00",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "defects": [],
+  "reason": "独立240帧技术通过；正常640四底、原640脸发2×及实际完整10秒回环/待机切换抽查未见明显残白、绿晕、人物缺失或新动光。目标动作及道具收回可辨，仅对绑定SHA给出质量结论。",
+  "technical": {
+    "frames": 240,
+    "width": 640,
+    "height": 360,
+    "fps": 24,
+    "duration_seconds": 10,
+    "codec": "vp9",
+    "audio_streams": 0,
+    "all240_alpha0to255": true,
+    "all240_outer_boundary_alpha_zero": true,
+    "outside6_alpha_gt8_bad_frames": [],
+    "first_bbox_alpha127": [
+      218,
+      61,
+      430,
+      330
+    ],
+    "last_bbox_alpha127": [
+      218,
+      60,
+      430,
+      330
+    ],
+    "feet_delta_px": 0,
+    "height_delta_px": 1
+  },
+  "technical_proof": "quality/final-reviews/a041-4e2fb1ea7316/decoded-technical240.json",
+  "frame0_rgba_file": "quality/final-reviews/a041-4e2fb1ea7316/f000-rgba.png",
+  "evidence_directory": "quality/final-reviews/a041-4e2fb1ea7316",
+  "inspection_scope": {
+    "normal640_four_backgrounds": [
+      {
+        "frame": 0,
+        "background": "blue"
+      },
+      {
+        "frame": 96,
+        "background": "dark"
+      },
+      {
+        "frame": 144,
+        "background": "light"
+      },
+      {
+        "frame": 239,
+        "background": "checker"
+      }
+    ],
+    "face_hair_native640_ROI_nearest2x_frames": [
+      0,
+      120,
+      239
+    ],
+    "grid_resolution_note": "Each full-body cell remains640x360 in1280x760 layout; face cells are original240x220 pixels expanded nearest2x. No100px thumbnails were used for this conclusion.",
+    "actual_playback": "quality/final-reviews/a041-4e2fb1ea7316/actual-browser-playback.json",
+    "limits": [
+      "All240 technical coverage is not all240 manual visual coverage.",
+      "Actual playback ran a full10sec loop; human observations are intermittent screenshots and selected stills, not an exhaustive continuous gaze claim.",
+      "Older accepted idle is somewhat warmer; scale comparison does not claim pixel-identical RGB."
+    ]
+  },
+  "visual_findings": {
+    "action": "A small whiteboard with three block nodes is held in front of the body. Marker gesture adds a connecting line between nodes; board and marker are stowed by the ending. Face remains visible above the board.",
+    "matte_face_color": "Reviewed normal640 composites and2x face/hair show background through hair gaps, no conspicuous white island/green halo, no obvious face collapse or added limb/tail. OrdinaryAA at2x is not treated as deformation.",
+    "additional": "Actual10sec loop recorded218 compositor callbacks rather than241; no zero-drop/per-frame browser-presentation guarantee is made. Independent raw RGBA decode still covers all240 frames. Normal640 hair/white fabric/board edges show no conspicuous residual background or missing subject detail.",
+    "scale_switch": "Actual same640 idle switch performed. Endpoints remain close to target270px height/foot330; quantitative values retained above. No obvious normal-size scale snap was perceived."
+  },
+  "new_paid_calls": 0,
+  "reviewer_pixel_or_recipe_changes": 0,
+  "approval_or_runtime_mutations": false
+}

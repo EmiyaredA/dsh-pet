@@ -1,0 +1,148 @@
+{
+  "created_at": "2026-10-31T01:14:21.945060+00:00",
+  "status": "candidate_ready_for_independent_review",
+  "source_file": "/Users/tonghao/Projects/dsh-pet/pet-packs/kurisu/source/library/a105/attempt-3/工作状态-实验成功庆祝.mp4",
+  "source_sha256": "5460f738fa8678600fc5d37fc4334e551deec03c013db41b0242c58059b13aac",
+  "candidate_file": "/Users/tonghao/Projects/dsh-pet/pet-packs/kurisu/quality/diagnostics/semantic-a105-trial-01/a105-semantic-isnet-anime.webm",
+  "candidate_sha256": "c96349e8adfce16dfe6ef9f081a88578f3ee3078bf71a38d6f0a2b23fd175320",
+  "recipe": {
+    "source_file": "/Users/tonghao/Projects/dsh-pet/pet-packs/kurisu/source/library/a105/attempt-3/工作状态-实验成功庆祝.mp4",
+    "source_sha256": "5460f738fa8678600fc5d37fc4334e551deec03c013db41b0242c58059b13aac",
+    "model": "isnet-anime",
+    "model_sha256": "f15622d853e8260172812b657053460e20806f04b9e05147d49af7bed31a6e99",
+    "model_url": "https://github.com/danielgatis/rembg/releases/download/v0.0.0/isnet-anime.onnx",
+    "model_md5_expected": "6f184e756bb3bd901c8849220a83e38e",
+    "package_versions": {
+      "rembg": "2.0.86",
+      "onnxruntime": "1.31.1",
+      "numpy": "2.4.6",
+      "pillow": "13.0.0"
+    },
+    "script_sha256": "8f82e1fab08bc13af2cca3bfc2429ffc4de80ff6296aa1dba77b7d83af9c3266",
+    "native_mask": "unmodified rembg isnet-anime session.predict 8-bit L output; no threshold, morphology, matting, temporal smoothing or white/green key",
+    "native_rgb": "exact FFmpeg decoded RGB24 copied unchanged into every native RGBA, including hidden RGB",
+    "frames": 240,
+    "fps": 24,
+    "time_range": "first 240 source frames, source has 243 at24fps; no repeat or stretch",
+    "final_transform": "one constant uniform scale from frame0 alpha>127 bbox height270, centered bbox and feet330, transparent pad; associated-alpha Pillow RGBA Lanczos resized (internal RGBa premultiplication), native RGB/mask unchanged; integer raster rounding",
+    "output_scope": "diagnostic only, not approved, not counted toward106, no live installation"
+  },
+  "transform": {
+    "source_box_frame0": [
+      474,
+      154,
+      870,
+      653
+    ],
+    "scale": 0.5410821643286573,
+    "scaled_size": [
+      727,
+      416
+    ],
+    "offset": [
+      -44,
+      -23
+    ],
+    "constant_for_all_frames": true,
+    "target_height": 270,
+    "target_feet": 330,
+    "resampler": "Pillow RGBA Lanczos internal associated RGBa sampling; no foreground RGB correction"
+  },
+  "native_rgb_exact_all_240": true,
+  "native_alpha_method": "unmodified isnet-anime prediction, per-frame no temporal repair",
+  "spec": {
+    "width": 640,
+    "height": 360,
+    "fps": 24,
+    "frames": 240,
+    "duration_seconds": 10,
+    "codec": "vp9",
+    "audio_streams": 0,
+    "all_frames_true_alpha": true,
+    "alpha_plane_matches_intermediate_exact": false,
+    "alpha_plane_max_abs_difference": 1
+  },
+  "probe": {
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "vp9",
+        "codec_long_name": "Google VP9",
+        "profile": "Profile 0",
+        "codec_type": "video",
+        "codec_tag_string": "[0][0][0][0]",
+        "codec_tag": "0x0000",
+        "mime_codec_string": "vp09.00.21.08",
+        "width": 640,
+        "height": 360,
+        "coded_width": 640,
+        "coded_height": 360,
+        "has_b_frames": 0,
+        "sample_aspect_ratio": "1:1",
+        "display_aspect_ratio": "16:9",
+        "pix_fmt": "yuv420p",
+        "level": -99,
+        "color_range": "tv",
+        "field_order": "progressive",
+        "r_frame_rate": "24/1",
+        "avg_frame_rate": "24/1",
+        "time_base": "1/1000",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "disposition": {
+          "default": 0,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "alpha_mode": "1",
+          "ENCODER": "Lavc63.1.102 libvpx-vp9",
+          "DURATION": "00:00:10.000000000"
+        }
+      }
+    ],
+    "format": {
+      "filename": "/Users/tonghao/Projects/dsh-pet/pet-packs/kurisu/quality/diagnostics/semantic-a105-trial-01/a105-semantic-isnet-anime.webm",
+      "nb_streams": 1,
+      "nb_programs": 0,
+      "nb_stream_groups": 0,
+      "format_name": "matroska,webm",
+      "format_long_name": "Matroska / WebM",
+      "start_time": "0.000000",
+      "duration": "10.000000",
+      "size": "6808604",
+      "bit_rate": "5446883",
+      "probe_score": 100,
+      "tags": {
+        "ENCODER": "Lavf63.1.102"
+      }
+    }
+  },
+  "per_frame_stats": "/Users/tonghao/Projects/dsh-pet/temp/kurisu/semantic-a105-trial-01/decoded-alpha-stats.json",
+  "native_masks": "/Users/tonghao/Projects/dsh-pet/temp/kurisu/semantic-a105-trial-01/native-masks",
+  "native_rgba": "/Users/tonghao/Projects/dsh-pet/temp/kurisu/semantic-a105-trial-01/native-rgba",
+  "aligned_rgba": "/Users/tonghao/Projects/dsh-pet/temp/kurisu/semantic-a105-trial-01/aligned-rgba",
+  "final_media_approved": false,
+  "counts_toward_106": false,
+  "notes": [
+    "No RGB cleanup, threshold keying, erosion, face repainting, anatomy removal, palette transform or temporal smoothing.",
+    "Segmentation itself can omit foreground or flicker; must independently review, including white costume/skin/eyes/props and hair negative spaces.",
+    "Raw source BG rejection remains valid. Candidate is only authorized semantic diagnostic."
+  ]
+}

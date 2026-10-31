@@ -1,0 +1,18 @@
+{
+  "audio_asset_ids": [],
+  "canvas_node_id": "kurisu-a026-wan-production-01",
+  "expected_canvas_revision": 224,
+  "kind": "video",
+  "mode": "reference",
+  "model_id": "b217e3cd-884d-4015-a3fa-98ab7608a67e",
+  "reference_asset_ids": [
+    "c8e65934-8da3-4756-bfb4-ec41f8dde710"
+  ],
+  "resolution": "832x464",
+  "video_asset_ids": [
+    "e6198899-3f88-46c0-b8cb-d9fe349b989e"
+  ],
+  "workflow_parameters": {
+    "seed": 314159
+  }
+}

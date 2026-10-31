@@ -1,0 +1,198 @@
+[
+  {
+    "frame": 0,
+    "xy": [
+      703,
+      169
+    ],
+    "rgb": [
+      216,
+      253,
+      216
+    ],
+    "semantic_alpha": 251,
+    "combined_alpha": 214
+  },
+  {
+    "frame": 0,
+    "xy": [
+      770,
+      236
+    ],
+    "rgb": [
+      211,
+      233,
+      216
+    ],
+    "semantic_alpha": 254,
+    "combined_alpha": 253
+  },
+  {
+    "frame": 0,
+    "xy": [
+      548,
+      580
+    ],
+    "rgb": [
+      203,
+      229,
+      196
+    ],
+    "semantic_alpha": 253,
+    "combined_alpha": 241
+  },
+  {
+    "frame": 0,
+    "xy": [
+      549,
+      580
+    ],
+    "rgb": [
+      228,
+      253,
+      220
+    ],
+    "semantic_alpha": 254,
+    "combined_alpha": 243
+  },
+  {
+    "frame": 0,
+    "xy": [
+      548,
+      581
+    ],
+    "rgb": [
+      228,
+      253,
+      220
+    ],
+    "semantic_alpha": 253,
+    "combined_alpha": 243
+  },
+  {
+    "frame": 0,
+    "xy": [
+      549,
+      581
+    ],
+    "rgb": [
+      213,
+      238,
+      205
+    ],
+    "semantic_alpha": 254,
+    "combined_alpha": 243
+  },
+  {
+    "frame": 0,
+    "xy": [
+      548,
+      582
+    ],
+    "rgb": [
+      213,
+      250,
+      198
+    ],
+    "semantic_alpha": 253,
+    "combined_alpha": 214
+  },
+  {
+    "frame": 0,
+    "xy": [
+      549,
+      584
+    ],
+    "rgb": [
+      200,
+      236,
+      192
+    ],
+    "semantic_alpha": 252,
+    "combined_alpha": 217
+  },
+  {
+    "frame": 0,
+    "xy": [
+      550,
+      586
+    ],
+    "rgb": [
+      198,
+      229,
+      195
+    ],
+    "semantic_alpha": 252,
+    "combined_alpha": 230
+  },
+  {
+    "frame": 0,
+    "xy": [
+      551,
+      587
+    ],
+    "rgb": [
+      197,
+      227,
+      193
+    ],
+    "semantic_alpha": 250,
+    "combined_alpha": 232
+  },
+  {
+    "frame": 0,
+    "xy": [
+      593,
+      602
+    ],
+    "rgb": [
+      193,
+      217,
+      191
+    ],
+    "semantic_alpha": 250,
+    "combined_alpha": 244
+  },
+  {
+    "frame": 24,
+    "xy": [
+      547,
+      582
+    ],
+    "rgb": [
+      218,
+      247,
+      220
+    ],
+    "semantic_alpha": 250,
+    "combined_alpha": 239
+  },
+  {
+    "frame": 24,
+    "xy": [
+      547,
+      583
+    ],
+    "rgb": [
+      218,
+      247,
+      220
+    ],
+    "semantic_alpha": 250,
+    "combined_alpha": 239
+  },
+  {
+    "frame": 24,
+    "xy": [
+      547,
+      584
+    ],
+    "rgb": [
+      199,
+      224,
+      195
+    ],
+    "semantic_alpha": 248,
+    "combined_alpha": 243
+  }
+]

@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "status": "complete",
+  "action_id": "a056",
+  "attempt_index": 1,
+  "action_name": "接住滑落的笔记本",
+  "source_file": "source/library/a056/attempt-1/接住滑落的笔记本.mp4",
+  "source_sha256": "39c54e140f4aa38be49f985db67195ee04f3c42e776871691a78dc88732530df",
+  "task_id": "d56eacdd-a297-4147-945a-0b4247f64fe1",
+  "native_dimensions": [
+    1344,
+    768
+  ],
+  "frames": [
+    {
+      "frame_index": 0,
+      "file": "f000-native.png",
+      "sha256": "c4264c6d647625e235a829fe75dc3dc567de188663e00acfa28761d3dee362e9"
+    },
+    {
+      "frame_index": 12,
+      "file": "f012-native.png",
+      "sha256": "2a61d9f0e98743b62b33e957653b75119f4fa968c13474bec032a488995c3972"
+    },
+    {
+      "frame_index": 24,
+      "file": "f024-native.png",
+      "sha256": "3b0f06b1da1aaa83213ac5d74e35ead66e4658dfea7d54fb2a25ecd6a11063d7"
+    },
+    {
+      "frame_index": 48,
+      "file": "f048-native.png",
+      "sha256": "042a04ee9062165caa489d6812a60acde90b4bcb9a57b16abc2fd7fd3113cfe2"
+    },
+    {
+      "frame_index": 72,
+      "file": "f072-native.png",
+      "sha256": "8029c38d8d1da85be0b84f67a51bcb4abf46e655d1f901c87c4e96e0e2516782"
+    },
+    {
+      "frame_index": 96,
+      "file": "f096-native.png",
+      "sha256": "1360b8642972fdd1e17898c32c8409bb8317e24147deafeb8eecada526bc6d2d"
+    },
+    {
+      "frame_index": 120,
+      "file": "f120-native.png",
+      "sha256": "bd31f7a16e9ca3b45ee3433192c62b69fc5d8e8c1b41205e87414fb2d0f3be0c"
+    },
+    {
+      "frame_index": 144,
+      "file": "f144-native.png",
+      "sha256": "cc0c0c61c0300a9c412ff28fa904094cd0af51c2f8b7aa06abaadf308dd6280e"
+    },
+    {
+      "frame_index": 168,
+      "file": "f168-native.png",
+      "sha256": "f386ac32c5cb5b523f8321a892556e3ca5646c20bc60cd933f46b760f8bef008"
+    },
+    {
+      "frame_index": 192,
+      "file": "f192-native.png",
+      "sha256": "07f3c01e27695f268ed423790cae5bb3901a4fe84135ebbcae98233a7ef5f07c"
+    },
+    {
+      "frame_index": 216,
+      "file": "f216-native.png",
+      "sha256": "ec0a0d09d41fba65a055f05270db4fa3de551f83e1c38931a09b70a84b5f735e"
+    },
+    {
+      "frame_index": 239,
+      "file": "f239-native.png",
+      "sha256": "49aaae6c7757d191c3b2ed438423f36219702e210dcc834acc2e6d6194b5a288"
+    }
+  ],
+  "decoder": "single ffmpeg, native size, RGB PNG; no scaling",
+  "created_at": "2026-10-31T03:53:37.952161+00:00"
+}

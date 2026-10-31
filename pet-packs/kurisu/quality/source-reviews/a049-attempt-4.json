@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "action_id": "a049",
+  "attempt_index": 4,
+  "action_name": "端详怀表",
+  "spec_revision_id": "steins-props-v3-2026-10-31",
+  "source_file": "source/library/a049/attempt-4/端详怀表.mp4",
+  "source_sha256": "8f1b8cc4eb748debdcf28d82f34bff1af47c0535c60188814f244cd737b32049",
+  "source_task_id": "f33cf11d-266f-45a2-a88f-bb84ae79c13f",
+  "result_asset_id": "01ba519f-dff4-408c-bf79-ebc3645a2822",
+  "model_slug": "minimax_h3_zm_u24",
+  "reviewer": "animation_qa independent agent",
+  "reviewed_at": "2026-10-31T13:30:12.385627+00:00",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "processing_clearance": "reject",
+  "final_media_approved": false,
+  "reason": "The source adds unrequested black wired headphones during the pocket-watch action and leaves them on the character with a dangling cable at frame239, whereas frame0 has no headphones. This changes the approved headwear/baseline and fails complete prop stowage.",
+  "defects": [
+    {
+      "severity": "hard",
+      "type": "unrequested_prop_and_endpoint_mismatch",
+      "frames": [
+        96,
+        144,
+        239
+      ],
+      "description": "Black wired headphones appear without being a named pocket-watch prop and remain at frame239 with a cable dangling below the skirt; absent at frame0."
+    }
+  ],
+  "source_background": {
+    "method": "all_frame_saturated_green_native_border_v2",
+    "passed": true,
+    "frames": 240,
+    "expected_frames": 240,
+    "failed_frame_count": 0,
+    "failed_frames": [],
+    "background_rgb_min": [
+      3.0,
+      233.0,
+      4.0
+    ],
+    "background_rgb_max": [
+      4.0,
+      236.0,
+      5.0
+    ],
+    "maximum_spatial_delta": 18.0,
+    "maximum_temporal_delta": 3.0,
+    "thresholds": {
+      "dominant_min": 180,
+      "other_channels_max": 100,
+      "dominance_min": 100,
+      "spatial_delta_max": 35,
+      "temporal_delta_max": 24
+    },
+    "expected_background": "#00FF00",
+    "white_matte_fallback": false,
+    "visual_foreground_review_required": true,
+    "enclosed_background_and_foreground_verified": false,
+    "native_size": [
+      1344,
+      768
+    ],
+    "boundary_pixels_per_frame": 4224,
+    "measurement": "native_one_pixel_outer_boundary_no_spatial_resampling",
+    "sampling": {
+      "duration_seconds": 10,
+      "fps": 24,
+      "expected_frames": 240
+    }
+  },
+  "inspection_scope": {
+    "existing_contact_personally_viewed": false,
+    "native_full_frames_personally_viewed": [
+      0,
+      96,
+      144,
+      239
+    ],
+    "native_face_nearest2x_frames_personally_viewed": [],
+    "native_size": null,
+    "technical_scope": "Existing native240 boundary gate reused, not rerun. Source and evidence manifest are SHA-bound.",
+    "limits": [
+      "Representative source stills only, not all243 manually inspected.",
+      "No continuous source video playback in this source stage; complete10s playback is reserved for final candidate QA.",
+      "No automatic final-media approval or repair."
+    ]
+  },
+  "visual_findings": [
+    "A single gold watch is visible in the representative middle frames, but the new extra headphone/cable defect is independently sufficient to reject.",
+    "The opening is correctly empty-handed. The final watch is stowed, but the unrequested headphones and cable remain.",
+    "No keying, erasure, further paid submission or local correction is authorized by this review."
+  ],
+  "evidence_manifest": "quality/evidence/user240-retry-wave01/a049/attempt-4/manifest.json",
+  "evidence_manifest_sha256": "6c1f70bc1143b0e7747fda0e6a455241a743c7058f37f9f8b3cfb84d97067fa0",
+  "new_model_calls": 0,
+  "processing_performed": false,
+  "ledger_or_approval_modified": false
+}

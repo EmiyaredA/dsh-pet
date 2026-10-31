@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "action_id": "a032",
+  "attempt_index": 2,
+  "action_name": "检查试管（沿用原实验室镜头）",
+  "spec_revision_id": "programmer-research-v2-2026-10-31",
+  "source_file": "source/library/a032/attempt-2/检查试管（沿用原实验室镜头）.mp4",
+  "source_sha256": "d7b590d2151064cd3afbfe7c153f4a80bd0db8de0eaffeab84ba94f975f305aa",
+  "source_task_id": "2fba03fb-1683-40d0-8e60-c8ddef79369d",
+  "result_asset_id": "38578800-5ad1-40ab-aa7b-a8732c8b7c49",
+  "model_slug": "minimax_h3_zm_u24",
+  "reviewer": "animation_qa independent agent",
+  "reviewed_at": "2026-10-31T10:02:14.724855+00:00",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "processing_clearance": "allow_mild_color_and_green_key",
+  "final_media_approved": false,
+  "reason": "琥珀液体试管举到脸侧观察，未挡住眼口；全身/猫耳/鞋完整，末239空手。原生及脸发2×抽查未见移动光斑、强染绿、追加肢尾或明显形变。仅准入初次普通key，成片另验。",
+  "defects": [],
+  "source_background": {
+    "method": "all_frame_saturated_green_native_border_v2",
+    "passed": true,
+    "frames": 240,
+    "expected_frames": 240,
+    "failed_frame_count": 0,
+    "failed_frames": [],
+    "background_rgb_min": [
+      2.0,
+      230.0,
+      6.0
+    ],
+    "background_rgb_max": [
+      4.0,
+      233.0,
+      7.0
+    ],
+    "maximum_spatial_delta": 11.0,
+    "maximum_temporal_delta": 3.0,
+    "thresholds": {
+      "dominant_min": 180,
+      "other_channels_max": 100,
+      "dominance_min": 100,
+      "spatial_delta_max": 35,
+      "temporal_delta_max": 24
+    },
+    "expected_background": "#00FF00",
+    "white_matte_fallback": false,
+    "visual_foreground_review_required": true,
+    "enclosed_background_and_foreground_verified": false,
+    "native_size": [
+      1344,
+      768
+    ],
+    "boundary_pixels_per_frame": 4224,
+    "measurement": "native_one_pixel_outer_boundary_no_spatial_resampling",
+    "sampling": {
+      "duration_seconds": 10,
+      "fps": 24,
+      "expected_frames": 240
+    }
+  },
+  "inspection_scope": {
+    "existing_contact_personally_viewed": true,
+    "native_full_frames_personally_viewed": [
+      144,
+      239
+    ],
+    "native_face_nearest2x_frames_personally_viewed": [
+      144
+    ],
+    "native_size": null,
+    "technical_scope": "Existing native240 boundary gate reused, not rerun. Source and evidence manifest are SHA-bound.",
+    "limits": [
+      "Representative source stills only, not all243 manually inspected.",
+      "No continuous source video playback in this source stage; complete10s playback is reserved for final candidate QA.",
+      "No automatic final-media approval or repair."
+    ]
+  },
+  "visual_findings": {
+    "action": "Tilts an amber-filled test tube beside the face; eyes/mouth remain visible in reviewed views. Tube is stowed by the endpoint.",
+    "identity_color": "Two headband ears, pink bows, auburn hair, pale costume and blue-violet eyes remain coherent; no obvious foreground light wash in the reviewed samples."
+  },
+  "evidence_manifest": "quality/evidence/batch30-firstpass/a032/attempt-2/manifest.json",
+  "evidence_manifest_sha256": "a1c11421e8b286097fc4852193a85e9d9bf338e829df901c6c5a251268addf29",
+  "new_model_calls": 0,
+  "processing_performed": false,
+  "ledger_or_approval_modified": false
+}

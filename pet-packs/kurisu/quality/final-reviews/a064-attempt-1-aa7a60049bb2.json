@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "action_id": "a064",
+  "source_attempt_index": 1,
+  "verdict": "pass",
+  "candidate_file": "source/library/a064/attempt-1/processing-f4285ab5-729e-4fe0-bc9b-16c4e97a6652/偷吃布丁被发现.webm",
+  "candidate_sha256": "aa7a60049bb2760e6bbe32d089a1be1d2d77ddd78b8a5d7cc1852baf3337d181",
+  "source_sha256": "a07cb39966908122079a6193f5ec6393ea4df06e58834d6a49669a00bf48309c",
+  "source_task_id": "09bbe2ff-f888-4ecf-8445-9b58700322c3",
+  "reviewer": "animation_qa independent agent",
+  "reviewed_at": "2026-10-31T04:51:08.571187+00:00",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "approval_mutation_performed": false,
+  "reason": "正常640显示与原尺寸脸发放大抽查未见明显残白、绿晕、人物缺失或新增附肢；布丁动作可辨、道具收回。实际播放器完成多次10秒回环，抽样观察未见明显闪色或首尾尺寸跳变。此结论仅针对绑定SHA，不代表全帧人工逐像素审阅。",
+  "technical": {
+    "decoded_frames": 240,
+    "size": [
+      640,
+      360
+    ],
+    "fps": 24,
+    "duration_seconds": 10,
+    "codec": "VP9",
+    "audio_streams": 0,
+    "all240_alpha_min0_max255": true,
+    "all240_native_output_outer_boundary_alpha0": true,
+    "first_bbox_alpha127": [
+      214,
+      59,
+      435,
+      330
+    ],
+    "last_bbox_alpha127": [
+      215,
+      59,
+      435,
+      330
+    ],
+    "feet_delta": 0,
+    "height_delta": 0,
+    "worker_endpoint_rgba_mad": 4.208453583453584,
+    "technical_proof": "quality/final-reviews/a064-aa7a60049bb2/decoded-technical240.json"
+  },
+  "inspection_scope": {
+    "final_native640_still_samples_personally_viewed": [
+      {
+        "frame": 0,
+        "background": "blue"
+      },
+      {
+        "frame": 72,
+        "background": "dark"
+      },
+      {
+        "frame": 120,
+        "background": "light"
+      },
+      {
+        "frame": 216,
+        "background": "checker"
+      }
+    ],
+    "final_face_hair_roi_from640_then_nearest3x_personally_viewed": [
+      {
+        "frame": 0,
+        "background": "dark"
+      },
+      {
+        "frame": 120,
+        "background": "blue"
+      },
+      {
+        "frame": 239,
+        "background": "dark"
+      }
+    ],
+    "source_visual_review": "quality/source-reviews/a064-attempt-1.json",
+    "actual_playback_proof": "quality/final-reviews/a064-aa7a60049bb2/actual-browser-playback.json",
+    "technical_all_frame_coverage": "240/240 RGBA decoded and measured; not 240/240 manual visual coverage.",
+    "limitations": [
+      "Human visual observations during playback were sampled screenshots; actual continuous playback and callback progression were recorded separately.",
+      "No claim of zero dropped frames or exhaustive per-pixel temporal face review.",
+      "This review does not change ledger, formal config, runtime assets or approvals."
+    ]
+  },
+  "visual_findings": {
+    "matte": "Hair negative spaces reveal the chosen background. Reviewed normal-size views have no visible white islands or detached background strip. No conspicuous green halo was seen in reviewed samples. Subpixel antialiasing and loss of detail from 640 output remain normal resolution limitations.",
+    "face_and_palette": "Pink ear interiors and bows, auburn hair, blue-violet eyes and pale neutral/lavender white fabric remain coherent. Sampled blinks and blush/caught expression do not look like eye geometry collapse or moving green light.",
+    "anatomy": "No extra tail, third limb or detached foreground appendage was seen in reviewed full-body/source-lower samples. Head/ears, two shoes and costume remain complete.",
+    "action": "Small pudding plate and spoon appear below the face, eating/caught blush is recognizable, and props are gone in the ending front empty-hand posture.",
+    "scale_and_endpoint": "Canonical height about270px and feet330 align with worker proof; independent first/last bbox has0px feet/height delta. Last/first pose differs slightly in artwork (worker MAD4.208), without an obvious normal-size scale snap in the sampled loop observations."
+  },
+  "defects": [],
+  "evidence_directory": "quality/final-reviews/a064-aa7a60049bb2/",
+  "processing_reviewed": "Initial ordinary green key only; no semantic matte, white classifier, global palette fit, phase loop or individual face edits."
+}

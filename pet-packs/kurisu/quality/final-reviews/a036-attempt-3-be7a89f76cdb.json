@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "action_id": "a036",
+  "action_name": "抱着乌帕玩偶晃",
+  "source_attempt_index": 3,
+  "spec_revision_id": "steins-props-v3-2026-10-31",
+  "scope_id": "steins-props-v3-12-firstpass-01",
+  "scope_manifest_sha256": "2efe81323d72cdccc1f0ffb4ede4202cc3a461a1aa49ad2d48f0d224360ed9a5",
+  "source_sha256": "2388f9ba3ec861d98e17d9e3b02893e30574ed552791ab7f827b01e83156d5b2",
+  "source_task_id": "cb43436d-d398-4ce4-bee1-b4ba114e9751",
+  "source_review_file": "quality/source-reviews/a036-attempt-3.json",
+  "source_review_sha256": "2bfbaffd38957dc08947e4c6aef68b9015e4f21145adeb04c4efd903c9d48e7b",
+  "candidate_file": "source/library/a036/attempt-3/processing-08c11668-1a9c-4f07-8847-3a7fbf4a8d40/抱着乌帕玩偶晃.webm",
+  "candidate_sha256": "be7a89f76cdb13d85ceba9b5bccf415c2f3f274b5fced3b1c94f5368f3ed2311",
+  "verdict": "pass",
+  "reviewer": "steins-props-v3-final-qa-parallel independent agent",
+  "reviewed_at": "2026-10-31T11:38:04.669777+00:00",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "defects": [],
+  "summary": "独立最终PASS：240帧640×360/24fps/10秒VP9 Alpha无音轨、逐帧透明边界及残余背景筛查通过。原640四底与脸发3倍抽样未见残白、绿边、眼色跳变、额外前景或裁切；粉色玩偶为独立道具，抱持左右轻晃及微笑可辨，口鼻与双眼可见，8秒阶段已收回并空手结束。实际完整10秒播放及同尺寸idle切换完成，首末脚位均330。仅绑定本新规格/本源/本候选SHA，人工抽样与全240技术指标分别记录。",
+  "reason": "独立最终PASS：240帧640×360/24fps/10秒VP9 Alpha无音轨、逐帧透明边界及残余背景筛查通过。原640四底与脸发3倍抽样未见残白、绿边、眼色跳变、额外前景或裁切；粉色玩偶为独立道具，抱持左右轻晃及微笑可辨，口鼻与双眼可见，8秒阶段已收回并空手结束。实际完整10秒播放及同尺寸idle切换完成，首末脚位均330。仅绑定本新规格/本源/本候选SHA，人工抽样与全240技术指标分别记录。",
+  "technical": {
+    "frames": 240,
+    "width": 640,
+    "height": 360,
+    "fps": 24,
+    "duration_seconds": 10.0,
+    "codec": "vp9",
+    "alpha_mode": "1",
+    "audio_streams": 0,
+    "all240_alpha0to255": true,
+    "all240_outer_boundary_alpha_zero": true,
+    "outside6_alpha_gt8_bad_frames": [],
+    "residual_metric_definition": "Alpha >8 pixels outside a fixed six-pixel square dilation of alpha>127 foreground; screening only, no matte changes.",
+    "first_bbox_alpha127": [
+      218,
+      60,
+      431,
+      330
+    ],
+    "last_bbox_alpha127": [
+      217,
+      60,
+      431,
+      330
+    ],
+    "feet_delta_px": 0,
+    "height_delta_px": 0
+  },
+  "technical_proof": "quality/final-reviews/a036-be7a89f76cdb/decoded-technical240.json",
+  "frame0_rgba_file": "quality/final-reviews/a036-be7a89f76cdb/f000-rgba.png",
+  "evidence_directory": "quality/final-reviews/a036-be7a89f76cdb",
+  "inspection_scope": {
+    "all240_automated_metrics": [
+      "decoded RGBA alpha range",
+      "outermost boundary alpha",
+      "fixed residual-background screening",
+      "foreground bounding boxes"
+    ],
+    "manual_native640_four_background_frames": [
+      0,
+      96,
+      168,
+      239
+    ],
+    "manual_additional_native640_blue_frames": [
+      72,
+      144,
+      192
+    ],
+    "manual_face_hair_native640_ROI_nearest3x_frames": [
+      120,
+      216
+    ],
+    "actual_playback": "quality/final-reviews/a036-be7a89f76cdb/actual-browser-playback.json",
+    "limits": [
+      "All240 technical coverage is not all240 manual visual coverage.",
+      "Native full-body cells remain640x360. Enlarged face/hair uses original decoded pixels with nearest-neighbor; no100px thumbnail conclusion.",
+      "Actual full10sec execution and sampled visual perception are separate evidence.",
+      "Idle comparison supports scale/position; old accepted idle is slightly warmer, no exact RGB match claim."
+    ]
+  },
+  "visual_findings": {
+    "action": "Separate pale-pink plush held with two hands; head/forearm/plush sway and shy smile visible in reviewed phase frames. Toy fully absent by f192 and f239.",
+    "identity": "Full lace headband/ear tips, original maid costume, both shoes intact; eyes stay blue-violet in reviewed samples.",
+    "matte": "Reviewed native640 four backgrounds and3x face/hair show clear hair gaps, no conspicuous residual white/green edge, missing limb, extra particle burst or facial collapse. Ordinary anti-aliasing is not classified as deformation.",
+    "idle_switch": "Same640 stage switched after completed10sec candidate playback; endpoints remain270px tall with sole line330, without obvious size snap."
+  },
+  "new_paid_calls": 0,
+  "reviewer_pixel_or_recipe_changes": 0,
+  "approval_or_runtime_mutations": false
+}

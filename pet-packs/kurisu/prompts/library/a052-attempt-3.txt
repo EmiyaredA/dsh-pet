@@ -1,0 +1,21 @@
+subject_definitions:
+<Subject 1> is the one human chibi Kurisu maid in <Picture 1> and <Picture 2>, with two arms and two legs. The triangular fabric ornaments belong to her existing lace headband; the rear outline is long hair and skirt.
+<Picture 1> is the approved opaque GREEN80 full-body character and empty-handed baseline. <Picture 2> is byte-identical to <Picture 1>, anchoring the same single girl, scale and composition.
+
+summary:
+[reference generation] One 10-second 2D desktop sticker: <Subject 1> checks a miniature laptop, puts it away, then makes one small V sign.
+
+retention_analysis:
+<Subject 1> ([Shot 1]): fully_preserved - reference identity, costume, compact proportions and painted colors.
+<Picture 1> and <Picture 2> ([Shot 1]): fully_preserved - one complete figure, fixed scale, solid GREEN field and neutral endpoints.
+
+detailed_description:
+[Shot 1] 00:00.000 to 00:10.000. Static eye-level orthographic FULL-BODY shot, centered girl, ear tips at 10% and soles at 90% of image height. She stands before a seamless, evenly lit solid GREEN chroma-key backdrop, RGB(0,255,0); this same plain color fills the entire image, hair/limb gaps and area beneath her feet for all 10 seconds. Keep auburn hair, blue-violet eyes and costume palette under constant neutral illumination; painted highlights stay fixed. Only the described small gestures and props move.
+
+00:00.000 to 00:02.000: hold the empty-handed baseline. 00:02.000 to 00:04.000: open a tiny matte-gray laptop on a waist-high folding support, both below her chin. The screen and keyboard face HER. The camera sees only the plain gray exterior back lid and hinge, without interface or light on that cover. 00:04.000 to 00:05.000: glance down at her own unseen screen, make one small touchpad gesture and nod once. 00:05.000 to 00:07.000: close the laptop, fold the support and stow both completely behind her hip. 00:07.000 to 00:08.500: with empty hands, make one compact right-hand V sign near her chest and a tiny smile. 00:08.500 to 00:09.000: lower the hand. 00:09.000 to 00:10.000: hold the exact original empty-handed baseline. Headwear, face and both shoes stay fully inside the fixed frame throughout.
+
+overall_soundscape:
+N/A.
+
+non_diegetic_music:
+N/A.

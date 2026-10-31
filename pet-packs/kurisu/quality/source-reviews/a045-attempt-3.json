@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "action_id": "a045",
+  "attempt_index": 3,
+  "action_name": "戴耳机写码晃脚",
+  "spec_revision_id": "programmer-research-v2-2026-10-31",
+  "source_file": "source/library/a045/attempt-3/戴耳机写码晃脚.mp4",
+  "source_sha256": "e66b0ecca3ba6a715ec5c21271d539cb71a2d2a1fa4e1c4938e232f63472bfcc",
+  "source_task_id": "d7322fdf-a57c-4043-a906-ed251e9ec378",
+  "result_asset_id": "400c477e-6f13-49ff-8089-5f49efe2d8e9",
+  "model_slug": "minimax_h3_zm_u24",
+  "reviewer": "animation_qa independent agent",
+  "reviewed_at": "2026-10-31T13:40:44.767516+00:00",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "processing_clearance": "reject",
+  "final_media_approved": false,
+  "reason": "The final baseline leaves the headphones and a long cable on the ground at camera right, although frame0 has no props. During coding the laptop is also above the chin and blocks the mouth/lower face rather than staying low. These source defects fail complete stowage and unobscured face requirements.",
+  "defects": [
+    {
+      "severity": "hard",
+      "type": "prop_not_stowed",
+      "frames": [
+        239
+      ],
+      "description": "Headphones and a long cable remain separately on the ground beside the character at the final baseline; absent at frame0."
+    },
+    {
+      "severity": "hard",
+      "type": "prop_face_occlusion",
+      "frames": [
+        96,
+        144
+      ],
+      "description": "Laptop lid rises above chin and blocks mouth/lower face during the action."
+    }
+  ],
+  "source_background": {
+    "method": "all_frame_saturated_green_native_border_v2",
+    "passed": true,
+    "frames": 240,
+    "expected_frames": 240,
+    "failed_frame_count": 0,
+    "failed_frames": [],
+    "background_rgb_min": [
+      4.0,
+      230.0,
+      9.0
+    ],
+    "background_rgb_max": [
+      6.0,
+      232.0,
+      10.0
+    ],
+    "maximum_spatial_delta": 17.0,
+    "maximum_temporal_delta": 2.0,
+    "thresholds": {
+      "dominant_min": 180,
+      "other_channels_max": 100,
+      "dominance_min": 100,
+      "spatial_delta_max": 35,
+      "temporal_delta_max": 24
+    },
+    "expected_background": "#00FF00",
+    "white_matte_fallback": false,
+    "visual_foreground_review_required": true,
+    "enclosed_background_and_foreground_verified": false,
+    "native_size": [
+      1344,
+      768
+    ],
+    "boundary_pixels_per_frame": 4224,
+    "measurement": "native_one_pixel_outer_boundary_no_spatial_resampling",
+    "sampling": {
+      "duration_seconds": 10,
+      "fps": 24,
+      "expected_frames": 240
+    }
+  },
+  "inspection_scope": {
+    "existing_contact_personally_viewed": false,
+    "native_full_frames_personally_viewed": [
+      0,
+      96,
+      144,
+      239
+    ],
+    "native_face_nearest2x_frames_personally_viewed": [],
+    "native_size": null,
+    "technical_scope": "Existing native240 boundary gate reused, not rerun. Source and evidence manifest are SHA-bound.",
+    "limits": [
+      "Representative source stills only, not all243 manually inspected.",
+      "No continuous source video playback in this source stage; complete10s playback is reserved for final candidate QA.",
+      "No automatic final-media approval or repair."
+    ]
+  },
+  "visual_findings": [
+    "The headphones and laptop coding action are recognizable, and the screen correctly faces the character with its plain rear toward camera.",
+    "The seated shot introduces a large desk and wheeled office chair instead of the requested compact stool/support; no need to infer a tail from the ambiguous brown skirt-side strip because the endpoint and face obstruction already suffice.",
+    "No keying, local repair or additional paid attempt is authorized by this review."
+  ],
+  "evidence_manifest": "quality/evidence/user240-retry-wave01/a045/attempt-3/manifest.json",
+  "evidence_manifest_sha256": "961a7e1cdef71469ee4a42f6a8acae336a3ca01994ce4237149ccd43c334a996",
+  "new_model_calls": 0,
+  "processing_performed": false,
+  "ledger_or_approval_modified": false
+}

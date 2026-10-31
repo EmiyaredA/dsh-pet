@@ -1,0 +1,67 @@
+{
+  "asset_kind": "explicit_static_reference_preview_only",
+  "label": "静态定稿占位 · 不计106条动画",
+  "source_file": "references/kurisu-front.png",
+  "source_reference_sha256": "78e84345c8c876360c628310498484c3146e4da5ceae314b3b87e9de8f4c4725",
+  "file": "previews/static-preview/静态定稿占位_不计106.webm",
+  "sha256": "fb91cd81f82eef4e7a8f97a245f98ad61b7f1a56f541983fd7b9f23f99836d31",
+  "new_model_calls": 0,
+  "creative_image_generation": false,
+  "method": "Uniform aspect-preserving scale with integer raster rounding, transparent pad; original approved RGBA pixels only. No keying, segmentation, white threshold, recoloring or face edits.",
+  "scale_output_wh": [
+    516,
+    290
+  ],
+  "padding_xy": [
+    62,
+    54
+  ],
+  "verification": {
+    "width": 640,
+    "height": 360,
+    "fps": 24,
+    "duration": 10,
+    "decoded_frames": 240,
+    "all240_rgba_frames_identical": true,
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "audio_streams": 0,
+    "alpha_bbox_gt127": [
+      216,
+      62,
+      433,
+      330
+    ],
+    "standing_height": 269,
+    "standing_feet_y": 330
+  },
+  "counts_as_106_animation": false,
+  "deliverable_animation": false,
+  "scale_filter": "scale=516:-1:flags=lanczos,pad=640:360:62:54:color=black@0,setsar=1,format=yuva420p",
+  "ffmpeg_arguments": [
+    "-loop",
+    "1",
+    "-framerate",
+    "24",
+    "-i",
+    "references/kurisu-front.png",
+    "-t",
+    "10",
+    "-vf",
+    "scale=516:-1:flags=lanczos,pad=640:360:62:54:color=black@0,setsar=1,format=yuva420p",
+    "-an",
+    "-c:v",
+    "libvpx-vp9",
+    "-lossless",
+    "1",
+    "-b:v",
+    "0",
+    "-row-mt",
+    "1",
+    "-threads",
+    "2",
+    "-auto-alt-ref",
+    "0",
+    "previews/static-preview/静态定稿占位_不计106.webm"
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "status": "complete",
+  "action_id": "a039",
+  "attempt_index": 1,
+  "action_name": "查看怀表",
+  "source_file": "source/library/a039/attempt-1/查看怀表.mp4",
+  "source_sha256": "89fe8dcb4d679276d29255920fdbfa1a9b92311c9ce0717bb8c5fc2c30ac476d",
+  "task_id": "6f3deadd-9638-43db-b557-debbd589037e",
+  "native_dimensions": [
+    1344,
+    768
+  ],
+  "frames": [
+    {
+      "frame_index": 0,
+      "file": "f000-native.png",
+      "sha256": "5a2c9d8384b6a0ccd34ce767eceae6f20a52552381816c0a691d70dcea769719"
+    },
+    {
+      "frame_index": 12,
+      "file": "f012-native.png",
+      "sha256": "bb9f7245a6fca9a69df803790b3a2667eafc1d0654029cedaada7fe63c897db9"
+    },
+    {
+      "frame_index": 24,
+      "file": "f024-native.png",
+      "sha256": "b9e9be6c27371de77ade9736eafdc6ce174caa5e8b501dc36a42db583ffbb541"
+    },
+    {
+      "frame_index": 48,
+      "file": "f048-native.png",
+      "sha256": "d54b53fea5c2097bb8d4db06a887c369cf098699fed9b45d9a1a65d0f1521d11"
+    },
+    {
+      "frame_index": 72,
+      "file": "f072-native.png",
+      "sha256": "77bad8a158cdddf39d53510712b73ff473fc1f15842b27d056dc9cc74e74dd64"
+    },
+    {
+      "frame_index": 96,
+      "file": "f096-native.png",
+      "sha256": "bb1151159250b47ff33754e4c7de9eecb0db4e8036938fe4a94db134cf8e8284"
+    },
+    {
+      "frame_index": 120,
+      "file": "f120-native.png",
+      "sha256": "404984f6c204dee35abf7505da920d6a05458432cb818501134a9727f164bd74"
+    },
+    {
+      "frame_index": 144,
+      "file": "f144-native.png",
+      "sha256": "9326655f567a780485462ac4e3ab21b5e59af66fac3af96a96582a4812cc4a1a"
+    },
+    {
+      "frame_index": 168,
+      "file": "f168-native.png",
+      "sha256": "89a31f1bdf5a3ecdc9f5e172f9ab35bc0e8a91a05080eda157882e03816cbb00"
+    },
+    {
+      "frame_index": 192,
+      "file": "f192-native.png",
+      "sha256": "4029ce6240744af1678de16c56aea6015d33cbb5b0682393ce1cc131288d6eff"
+    },
+    {
+      "frame_index": 216,
+      "file": "f216-native.png",
+      "sha256": "ae5a9765bd1a006674e8ea52ce363c7c9b99f201cd996dc5cd4fe71d4f12281d"
+    },
+    {
+      "frame_index": 239,
+      "file": "f239-native.png",
+      "sha256": "30b981d54686812f01106d81440e279f001912a80994ebf7a7062833b7cf1da7"
+    }
+  ],
+  "decoder": "single ffmpeg, native size, RGB PNG; no scaling",
+  "created_at": "2026-10-31T03:53:30.462950+00:00"
+}

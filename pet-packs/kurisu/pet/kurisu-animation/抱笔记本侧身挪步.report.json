@@ -1,0 +1,94 @@
+{
+  "source": "background-only-padding.mkv",
+  "output": "抱笔记本侧身挪步.webm",
+  "matte_method": "green_difference",
+  "key_thresholds": [
+    12,
+    110
+  ],
+  "encoding_lossless": true,
+  "alignment": {
+    "scaled_size": [
+      530,
+      298
+    ],
+    "offset": [
+      54,
+      49
+    ],
+    "content_box": [
+      213.60227272727272,
+      53.515151515151516,
+      447.73579545454544,
+      332.7020202020202
+    ],
+    "standing_height": 718.0,
+    "standing_center_x": 706.0,
+    "standing_feet_y": 748.0,
+    "target_height": 270,
+    "target_feet_y": 330
+  },
+  "verification": {
+    "width": 640,
+    "height": 360,
+    "fps": 24,
+    "frames": 240,
+    "duration_seconds": 10,
+    "audio_streams": 0,
+    "codec": "vp9",
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "all_frames_have_alpha": true,
+    "first_box": [
+      217,
+      60,
+      431,
+      330
+    ],
+    "last_box": [
+      217,
+      60,
+      431,
+      330
+    ],
+    "endpoint_geometry": {
+      "feet_delta_px": 0,
+      "height_delta_px": 0
+    },
+    "output_bounds_all240_clear": true,
+    "background_clear": false,
+    "background_status": "Legacy strict failure retained; exact-SHA independent visual release under documented bounded Alpha exception."
+  },
+  "legacy_strict_background_failure": "Residual translucent background outside the foreground bounds",
+  "low_opacity_outlier_diagnostics": {
+    "frames_affected": 22,
+    "maximum_pixels_per_frame": 4,
+    "maximum_alpha": 10,
+    "full_report": "retained-preview-evidence/review.json"
+  },
+  "human_source_selection": {
+    "action_id": "a011",
+    "attempt_index": 2,
+    "raw_sha256": "87ca1b756c1a5c2afb7d131e67d25d6c4c7b032626e5b885452d9b83a6a670c3",
+    "known_paper_prop_and_source_ear_crop_accepted": true
+  },
+  "processing_audit_file": "user-selected-processing-audit.json",
+  "same_recipe_recovery_not_additional_correction": true,
+  "new_model_calls": 0,
+  "final_approval": true,
+  "final_review_file": "quality/final-reviews/a011-attempt-2-758938975742.json",
+  "bounded_alpha_exception": {
+    "candidate_sha256": "758938975742b90ab855b49c8cecfba43e5aeb8fd8c2021929373684899f0c6b",
+    "source_sha256": "87ca1b756c1a5c2afb7d131e67d25d6c4c7b032626e5b885452d9b83a6a670c3",
+    "independent_review_file": "quality/final-reviews/a011-attempt-2-758938975742.json",
+    "legacy_strict_background_passed": false,
+    "max_outlier_pixels_per_frame": 4,
+    "max_alpha": 10,
+    "affected_frames": 22,
+    "normal640_visual_background_clear": true,
+    "reason": "Independent normal-size four-background review found these sparse <=3.922% opacity pixels visually imperceptible; no pixel modification.",
+    "no_global_threshold_change": true,
+    "applies_only_to_this_sha256": true
+  },
+  "approval_basis": "Human-selected original content plus independent final Alpha/scale/playback review"
+}

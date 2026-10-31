@@ -1,0 +1,191 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-10-30T16:16:56.659043+00:00",
+  "reviewer": "independent_animation_qa_agent",
+  "scope": "Latest generations for IDs3,10,12,26–30 only. Historical materials and other qualified library entries are outside this release summary.",
+  "campaign_calls_snapshot": 61,
+  "new_model_calls_by_this_qa_agent": 0,
+  "ledger_or_canonical_mutations_by_this_qa_agent": false,
+  "latest_scope_qualified_count": 0,
+  "critical_style_stop": "Root stopped paidgeneration at61 under approved stop policy after the two finalV2pilots still failed mandatorybackground. No extra model calls or localtuning authorized by this summary.",
+  "final_route": "No complete new source→bounded processing→independent finalPASS route achieved for these8IDs. SourceALLOW never equaled finalapproval.",
+  "historical_unreleased_local_candidates": "All a010continuous-left V4/V5 files in temp/kurisu/agent-qa remain unreleased proof only; V4 forehead erasure/flicker documented. No white-hole classifier, facepatch or shortloop used to approve latest greensources.",
+  "records": [
+    {
+      "action_id": "a003",
+      "name": "被提起悬空",
+      "attempt_index": 4,
+      "task_id": "15553ffe-a0f7-49b7-8cc9-2fed7162d9cf",
+      "source_sha256": "c101fff022705d795a872a0c88310bb1e73f4ca1cc00966b14e4f93835648c25",
+      "source_review": "quality/source-reviews/a003-attempt-4.json",
+      "source_processing_clearance": "reject",
+      "latest_ledger_status_snapshot": "exhausted",
+      "release_decision": "DO_NOT_RELEASE_LATEST_ATTEMPT",
+      "independent_final_media_approved": false,
+      "reason": "Localized moving green lights cross irises/forehead/clothing; source hardreject.",
+      "source_evidence": [
+        "temp/kurisu/agent-qa/a003-green-regen-face-spots.png",
+        "temp/kurisu/agent-qa/a003-green-regen-motion-metrics.json"
+      ],
+      "packaged_evidence": [
+        "quality/evidence/a003-latest-qa.png"
+      ]
+    },
+    {
+      "action_id": "a010",
+      "name": "原地小跑",
+      "attempt_index": 5,
+      "task_id": "59d7a170-e514-4646-998a-80bdefa5f70d",
+      "source_sha256": "900eed0eeacf12137e4ce6c8556324274d7e9856524b08b5cb0e8ae06cebb304",
+      "source_review": "quality/source-reviews/a010-attempt-5.json",
+      "source_processing_clearance": "reject",
+      "latest_ledger_status_snapshot": "awaiting_review",
+      "release_decision": "DO_NOT_RELEASE_LATEST_ATTEMPT",
+      "independent_final_media_approved": false,
+      "reason": "Unapproved animal tail beneath rear skirt in the otherwisecorrectleft run; source hardreject.",
+      "source_evidence": [
+        "temp/kurisu/agent-qa/a010-attempt5-possible-tail.png",
+        "temp/kurisu/agent-qa/a010-new-motion-dense.png"
+      ],
+      "packaged_evidence": [
+        "quality/evidence/a010-latest-qa.png"
+      ]
+    },
+    {
+      "action_id": "a012",
+      "name": "伸懒腰",
+      "attempt_index": 2,
+      "task_id": "3a10e9f5-9381-495c-aea8-f9823c2a8b8e",
+      "source_sha256": "0e9af7b81059a82dae58fd68fbf3c4c34980d4d73f9f2b6b1f6d75edda518d5f",
+      "source_review": "quality/source-reviews/a012-attempt-2.json",
+      "source_processing_clearance": "allow_mild_color_and_green_key",
+      "latest_ledger_status_snapshot": "processing_failed",
+      "release_decision": "DO_NOT_RELEASE_LATEST_ATTEMPT",
+      "independent_final_media_approved": false,
+      "reason": "Source motion anatomicallyacceptable with diffusewash, but fixedcanonicalpalette recipe exceeds matrix/offsetbounds; no eligible finalcandidate.",
+      "source_evidence": [
+        "temp/kurisu/library/review/a012-attempt-2.png",
+        "temp/kurisu/agent-qa/a012-new-motion-dense.png",
+        "temp/kurisu/agent-qa/a012-green-regen-face-spots.png",
+        "temp/kurisu/agent-qa/a012-green-regen-motion-metrics.json"
+      ],
+      "packaged_evidence": [
+        "quality/evidence/a012-latest-qa.png"
+      ]
+    },
+    {
+      "action_id": "a026",
+      "name": "晨间刷牙",
+      "attempt_index": 1,
+      "task_id": "466c39c3-25c4-4fb0-a65e-c0f2742f763c",
+      "source_sha256": "368a0fc8d7940b3b937405b1cf0d9f127f30d70a7abefd4cd0c7e71d45c32ecb",
+      "source_review": "quality/source-reviews/a026-attempt-1.json",
+      "source_processing_clearance": "allow_mild_color_and_green_key",
+      "latest_ledger_status_snapshot": "processing_failed",
+      "release_decision": "DO_NOT_RELEASE_LATEST_ATTEMPT",
+      "independent_final_media_approved": false,
+      "reason": "Source motion anatomicallyacceptable; old self-anchor candidate passesmotion/Alpha/scale but retains olivehairrim/cyanlace. One canonical+boundededge reprocess exceeds40RGBbound; no eligible finalcandidate.",
+      "source_evidence": [
+        "/private/tmp/kurisu-plan-inspection/a026.png",
+        "temp/kurisu/agent-qa/a026-new-motion-dense.png",
+        "temp/kurisu/agent-qa/a026-green-regen-motion-metrics.json"
+      ],
+      "packaged_evidence": [
+        "quality/evidence/a026-latest-qa.png"
+      ]
+    },
+    {
+      "action_id": "a027",
+      "name": "给桌面除尘",
+      "attempt_index": 1,
+      "task_id": "8adef38a-a703-48db-873f-b1ff2ddba6b5",
+      "source_sha256": "081a2da669bb85d8bed267fbb5d9ab2a16916fef7b7b335c5a505cab6f9618c6",
+      "source_review": "quality/source-reviews/a027-attempt-1.json",
+      "source_processing_clearance": "reject",
+      "latest_ledger_status_snapshot": "awaiting_source_review",
+      "release_decision": "DO_NOT_RELEASE_LATEST_ATTEMPT",
+      "independent_final_media_approved": false,
+      "reason": "Featherduster covers lefteye near2.6s; strictfacevisibility hardreject. Groundhalo separately may bekeyable.",
+      "source_evidence": [
+        "/private/tmp/kurisu-plan-inspection/a027.png",
+        "temp/kurisu/agent-qa/a027-face-prop-dense.png",
+        "temp/kurisu/agent-qa/a027-new-motion-dense.png",
+        "temp/kurisu/agent-qa/a027-green-regen-motion-metrics.json"
+      ],
+      "packaged_evidence": [
+        "quality/evidence/a027-latest-qa.png"
+      ]
+    },
+    {
+      "action_id": "a028",
+      "name": "捧脸发呆",
+      "attempt_index": 1,
+      "task_id": "5678e777-8a56-4382-a8c0-46835240ec15",
+      "source_sha256": "acc113bc707e5e3ed523a43a1d069942749ad33917085ffa1dbaf3bd564e0ec7",
+      "source_review": "quality/source-reviews/a028-attempt-1.json",
+      "source_processing_clearance": "reject",
+      "latest_ledger_status_snapshot": "processing_failed",
+      "release_decision": "DO_NOT_RELEASE_LATEST_ATTEMPT",
+      "independent_final_media_approved": false,
+      "reason": "Localized moving green bubbles cross face/irises; source hardreject.",
+      "source_evidence": [
+        "/private/tmp/kurisu-plan-inspection/a028.png",
+        "temp/kurisu/agent-qa/a028-green-regen-face-spots.png",
+        "temp/kurisu/agent-qa/a028-green-regen-motion-metrics.json"
+      ],
+      "packaged_evidence": [
+        "quality/evidence/a028-latest-qa.png"
+      ]
+    },
+    {
+      "action_id": "a029",
+      "name": "认真记笔记",
+      "attempt_index": 1,
+      "task_id": "355d81a3-9673-4c08-a199-079d8d6b88ea",
+      "source_sha256": "d2ee32b60f3f482dd2a8c1bdbbca0cf7658396959dc113f066d0007e60d1805d",
+      "source_review": "quality/source-reviews/a029-attempt-1.json",
+      "source_processing_clearance": "reject",
+      "latest_ledger_status_snapshot": "processing_failed",
+      "release_decision": "DO_NOT_RELEASE_LATEST_ATTEMPT",
+      "independent_final_media_approved": false,
+      "reason": "Palegreen/white bubblebackground; all240frames failmandatoryflat saturatedchroma.",
+      "source_evidence": [
+        "source/library/a029/attempt-1/processing-6348070f-8f5e-4771-8324-6121685ebca8/source-contact.png",
+        "temp/kurisu/agent-qa/a029-pilot-hands-dense.png"
+      ],
+      "packaged_evidence": [
+        "quality/evidence/a029-latest-qa.png"
+      ]
+    },
+    {
+      "action_id": "a030",
+      "name": "翻阅论文",
+      "attempt_index": 1,
+      "task_id": "97044106-c67b-4600-9520-a31ec1082a56",
+      "source_sha256": "47f503a957a629ac697613135e98125e94f29a75690b72f6fe0c1b461d7fd235",
+      "source_review": "quality/source-reviews/a030-attempt-1.json",
+      "source_processing_clearance": "reject",
+      "latest_ledger_status_snapshot": "processing_failed",
+      "release_decision": "DO_NOT_RELEASE_LATEST_ATTEMPT",
+      "independent_final_media_approved": false,
+      "reason": "Radial halo/gradientbackground;237frames failmandatorychroma. Oversizedbookobscureslowerface.",
+      "source_evidence": [
+        "source/library/a030/attempt-1/processing-84893697-9a70-4205-990b-3e570646bfe8/source-contact.png",
+        "temp/kurisu/agent-qa/a030-pilot-hands-dense.png"
+      ],
+      "packaged_evidence": [
+        "quality/evidence/a030-latest-qa.png"
+      ]
+    }
+  ],
+  "additional_final_evidence": [
+    "quality/final-reviews/a026-attempt-1-ce7d64d4db8f.json",
+    "temp/kurisu/agent-qa/a026-final-alpha-identity.json",
+    "temp/kurisu/agent-qa/a026-final-scale.json",
+    "temp/kurisu/agent-qa/a026-final-props-stowed.png",
+    "temp/kurisu/agent-qa/a026-final-border.png"
+  ],
+  "current_release_status": "superseded_do_not_release",
+  "superseded_by": "quality/LATEST_QUALITY_STATUS.json",
+  "superseded_reason": "Later original-source lower-hem review found unauthorized foreground appendages; old ZIP quarantined. Existing numeric/test observations retained as historical scope only."
+}

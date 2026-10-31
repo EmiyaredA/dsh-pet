@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "action_id": "a030",
+  "attempt_index": 1,
+  "source_sha256": "47f503a957a629ac697613135e98125e94f29a75690b72f6fe0c1b461d7fd235",
+  "inspected_source_file": "/Users/tonghao/Projects/dsh-pet/pet-packs/kurisu/source/library/a030/attempt-1/翻阅论文.mp4",
+  "reviewed_at": "2026-10-30T16:16:56.659043+00:00",
+  "reviewer": "independent_animation_qa_agent",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "processing_clearance": "reject",
+  "final_media_approved": false,
+  "summary": "Large moving radial palegreen/white halo behind the character makes the digital plate nonuniform. Mandatory source-background gate fails237/240frames, beginning atframe3.",
+  "defects": [
+    {
+      "severity": "hard",
+      "type": "nonuniform_unsaturated_background_with_added_effects",
+      "time_seconds": [
+        0.125,
+        10
+      ],
+      "description": "Large moving radial palegreen/white halo behind the character makes the digital plate nonuniform. Mandatory source-background gate fails237/240frames, beginning atframe3."
+    },
+    {
+      "severity": "observation",
+      "type": "prop_performance_face_visibility",
+      "time_seconds": [
+        2.25,
+        7.5
+      ],
+      "description": "Book opens and pages move, then it is closed/stowed, but upright openbook is oversized and obscures mouth/lowerface during~2.25–7s. Page-facing-camera reading orientation is ambiguous. No extra limbs or severe facial deformation observed in overview/dense samples."
+    }
+  ],
+  "background_gate": {
+    "method": "all_frame_saturated_green_border_v1",
+    "frames": 240,
+    "failed_frame_count": 237,
+    "background_rgb_min": [
+      12.0,
+      246.0,
+      15.0
+    ],
+    "background_rgb_max": [
+      51.0,
+      252.0,
+      53.5
+    ]
+  },
+  "evidence": [
+    "source/library/a030/attempt-1/processing-84893697-9a70-4205-990b-3e570646bfe8/source-contact.png",
+    "temp/kurisu/agent-qa/a030-pilot-hands-dense.png"
+  ],
+  "allowed_processing": [],
+  "new_model_calls": 0,
+  "portable_evidence": [
+    "quality/evidence/a030-latest-qa.png"
+  ],
+  "canonical_source_file": "source/library/a030/attempt-1/翻阅论文.mp4",
+  "source_task_id": "97044106-c67b-4600-9520-a31ec1082a56",
+  "source_result_asset_id": "3aceabbc-cbc0-4a68-90e2-c964c552416f"
+}

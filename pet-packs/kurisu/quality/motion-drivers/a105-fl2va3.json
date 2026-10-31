@@ -1,0 +1,166 @@
+{
+  "schema_version": 1,
+  "action_id": "a105",
+  "name": "工作状态-实验成功庆祝",
+  "driver_attempt": 3,
+  "source_file": "source/library/a105/attempt-3/工作状态-实验成功庆祝.mp4",
+  "source_sha256": "5460f738fa8678600fc5d37fc4334e551deec03c013db41b0242c58059b13aac",
+  "driver_asset_id": "4d89f9c7-a53a-4462-adf2-4aa00902d02b",
+  "driver_sha256": "5460f738fa8678600fc5d37fc4334e551deec03c013db41b0242c58059b13aac",
+  "driver_official_download_sha256_matches": true,
+  "driver_source_task_id": "791f2f42-8d0c-4f5e-96e1-6daebb3f4930",
+  "source_duration_seconds": 10.125,
+  "source_fps": "24/1",
+  "source_frame_count": 243,
+  "source_size": [
+    1344,
+    768
+  ],
+  "source_audio_present": true,
+  "expected_action": "Small success celebration: short pleased fist-pump and confident nod, then empty-handed standard front stance.",
+  "driver_motion_clearance": "allow_motion_driver_only",
+  "motion_clearance": "allow_motion_transfer_only",
+  "final_media_approved": false,
+  "source_original_final_quality_approved": false,
+  "publish_allowed": false,
+  "reviewer": "independent_animation_qa_agent",
+  "reviewed_at": "2026-10-30T19:46:42.453378+00:00",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "summary": "Recognizable pleasedsmallcelebration withbentelbows,fistpumps/closedeyesmile,thenemptyhandedfrontstance; suitable onlyas motioninput. Greenellipsecausedspuriousendpointbboxdelta, notactualshoe/bodyscalingfailure.",
+  "motion_review": {
+    "action_recognizable": true,
+    "subject_complete_in_reviewed_frames": true,
+    "major_limb_or_appendage_defect_observed": false,
+    "props_and_hands": "Noprops. Twohandsremainattachedtobentforearms nearchestandlaterrelax. Noextraear/tailtypea092defectseenintheestablishedcontactandendpointreview.",
+    "first_pose": "Emptyhandedneutralfrontstanding",
+    "last_pose": "Emptyhandedneutralfrontstanding",
+    "pose_endpoint_frames_reviewed": [
+      0,
+      239,
+      242
+    ],
+    "first_last_same_is_semantic_pose_not_byte_identity": true,
+    "last_frame_within_first10seconds": 239,
+    "actual_final_native_frame": 242,
+    "first10seconds_endpoint_acceptable_as_motion_input": true,
+    "retiming_or_proxy_required_for_this_endpoint_issue": false,
+    "two_pump_exact_count_or_allframe_motion_not_certified": true
+  },
+  "composition": {
+    "reference_asset_id": "c8e65934-8da3-4756-bfb4-ec41f8dde710",
+    "reference_sha256": "f3be325cb0fa1f5afdab90d5615487a3a92401eed054fc3d465f32cebd79ea22",
+    "matched_to_reference": true,
+    "first_last_same": true,
+    "interpretation": "Compositionandstandardposematchwithinordinaryanimationvariation; theseareNOTclaims ofbyteidenticalframesorfinaloutputgeometryacceptance.",
+    "reference_height_fraction": 0.6513888888888889,
+    "driver_first_height_fraction": 0.6536458333333334,
+    "reference_feet_fraction": 0.85,
+    "driver_first_feet_fraction": 0.8502604166666666,
+    "center_fraction_offset_from_reference": 0.0003906249999999778,
+    "true_dark_shoe_endpoint_proof": [
+      {
+        "frame": 0,
+        "dark_shoe_bottom_y_inclusive": 652,
+        "dark_shoe_roi_xyxy": [
+          595,
+          585,
+          755,
+          690
+        ],
+        "criterion": "maxRGB<110, nativeRGB; greenellipseexcludedbyhighG",
+        "dark_core_bbox": [
+          595,
+          585,
+          755,
+          653
+        ]
+      },
+      {
+        "frame": 239,
+        "dark_shoe_bottom_y_inclusive": 652,
+        "dark_shoe_roi_xyxy": [
+          595,
+          585,
+          755,
+          690
+        ],
+        "criterion": "maxRGB<110, nativeRGB; greenellipseexcludedbyhighG",
+        "dark_core_bbox": [
+          595,
+          585,
+          755,
+          653
+        ]
+      },
+      {
+        "frame": 242,
+        "dark_shoe_bottom_y_inclusive": 652,
+        "dark_shoe_roi_xyxy": [
+          595,
+          585,
+          755,
+          690
+        ],
+        "criterion": "maxRGB<110, nativeRGB; greenellipseexcludedbyhighG",
+        "dark_core_bbox": [
+          595,
+          585,
+          755,
+          653
+        ]
+      }
+    ],
+    "misleading_geometry_measurement_note": "Originalf239color-distancecomponentincludedthegreenfootellipseandreportedfeet+14/height+13. ActualRGBmax<110shoecorehasy652 in0,239,242 andpersonallyinspectednativefigure/3xfootcropconfirmsstandardstance. Thus no timewarp/proxyrequested.",
+    "source_comp_full_background_geometry_not_reused_as_anatomy": true
+  },
+  "known_source_defects": [
+    {
+      "type": "background",
+      "status": "REJECT_RETAINED",
+      "description": "FL2VAoriginalnearwhite/gray+greencirclesandfootellipse;236/240strictbackgroundfailed. Itisnotasafechromaoutputorappearanceanchor. Motiononlyrolemustnotapprovewhitematte."
+    }
+  ],
+  "prior_verdicts_not_modified": [
+    "quality/source-reviews/a105-attempt-3.json"
+  ],
+  "allowed_use": "OneapprovedWanmotion-transferpilot, usingexistingoriginalMP4andcanonicalsafeimage; thisreviewitselfdoesnotsubmitanytask.",
+  "final_output_requires_independent_review": [
+    "Truegreen/bluebackgroundandnegativehairspacesinallframes; noinheritanceofdriverwhitebackground/greencast.",
+    "Identity,roundshortproportions,headwear2ears,eyes,lips,hands,andnoextrabodyparts.",
+    "Transferredactionremainsrecognizable; toothbrushandcupstowforthebrushingaction.",
+    "Neutralfirstlaststance; realAlpha,noresidualwhite/green,640x360/24fps/10s/noaudio; consistentstandingheightandbaseline.",
+    "No sourcecolourorfailedcandidatecanbecountedapprovedbasedonthismotionreview."
+  ],
+  "portable_evidence": [
+    "quality/evidence/a105-motion-driver-endpoints-native.png"
+  ],
+  "inspection_scope": {
+    "reviewed_source_frames": [
+      0,
+      24,
+      48,
+      72,
+      96,
+      120,
+      144,
+      168,
+      192,
+      216,
+      239,
+      242
+    ],
+    "endpoint_native_crops_reviewed": [
+      0,
+      239,
+      242
+    ],
+    "all_native_frames_visual": false,
+    "prior_source_motion_review_reused": false,
+    "new_paid_calls": 0,
+    "raw_modified": false,
+    "video_proxy_generated": false,
+    "ledger_modified": false,
+    "canonical_modified": false
+  }
+}

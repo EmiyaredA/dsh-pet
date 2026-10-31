@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "action_id": "a047",
+  "attempt_index": 3,
+  "action_name": "调整时间机器天线",
+  "spec_revision_id": "steins-props-v3-2026-10-31",
+  "source_file": "source/library/a047/attempt-3/调整时间机器天线.mp4",
+  "source_sha256": "058196568399b26713044821e5d16bc83deb2f2158863198b285f686c3643fce",
+  "source_task_id": "66bc0b8f-7b05-4098-9030-3438aca1a63e",
+  "result_asset_id": "e5f9b555-5f9e-417c-bf21-4807721601ef",
+  "model_slug": "minimax_h3_zm_u24",
+  "reviewer": "animation_qa independent agent",
+  "reviewed_at": "2026-10-31T11:36:08.864104+00:00",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "processing_clearance": "reject",
+  "final_media_approved": false,
+  "reason": "The time-machine console display and operating controls face the viewer while the character stands behind it, violating the explicit prop-facing-character requirement. This is a source direction defect, not a keying issue.",
+  "defects": [
+    {
+      "severity": "hard",
+      "type": "prop_orientation_wrong",
+      "frames": [
+        96,
+        144
+      ],
+      "description": "The screen and buttons are presented toward camera; the character behind the unit would look at its back instead of the console face."
+    }
+  ],
+  "source_background": {
+    "method": "all_frame_saturated_green_native_border_v2",
+    "passed": true,
+    "frames": 240,
+    "expected_frames": 240,
+    "failed_frame_count": 0,
+    "failed_frames": [],
+    "background_rgb_min": [
+      2.0,
+      229.0,
+      7.0
+    ],
+    "background_rgb_max": [
+      3.0,
+      232.0,
+      8.0
+    ],
+    "maximum_spatial_delta": 7.0,
+    "maximum_temporal_delta": 3.0,
+    "thresholds": {
+      "dominant_min": 180,
+      "other_channels_max": 100,
+      "dominance_min": 100,
+      "spatial_delta_max": 35,
+      "temporal_delta_max": 24
+    },
+    "expected_background": "#00FF00",
+    "white_matte_fallback": false,
+    "visual_foreground_review_required": true,
+    "enclosed_background_and_foreground_verified": false,
+    "native_size": [
+      1344,
+      768
+    ],
+    "boundary_pixels_per_frame": 4224,
+    "measurement": "native_one_pixel_outer_boundary_no_spatial_resampling",
+    "sampling": {
+      "duration_seconds": 10,
+      "fps": 24,
+      "expected_frames": 240
+    }
+  },
+  "inspection_scope": {
+    "existing_contact_personally_viewed": false,
+    "native_full_frames_personally_viewed": [
+      96,
+      144,
+      239
+    ],
+    "native_face_nearest2x_frames_personally_viewed": [],
+    "native_size": [
+      1344,
+      768
+    ],
+    "technical_scope": "Existing native240 boundary gate reused, not rerun. Source and evidence manifest are SHA-bound.",
+    "limits": [
+      "Representative source stills only, not all243 manually inspected.",
+      "No continuous source video playback in this source stage; complete10s playback is reserved for final candidate QA.",
+      "No automatic final-media approval or repair."
+    ]
+  },
+  "visual_findings": [
+    "Complete headwear and shoes remain visible in representative frames.",
+    "The tiny red antenna is visibly handled, but the control face and screen are on the camera-facing side. Named upper-body performance does not waive the prop orientation requirement.",
+    "No attempt was made to rotate, repaint or erase the generated console."
+  ],
+  "evidence_manifest": "quality/evidence/steins-props-v3-firstpass/a047/attempt-3/manifest.json",
+  "evidence_manifest_sha256": "e7edb16544ee076d24187b2a2040ad99c9898483abf9315b4c48b05adf7c498a",
+  "new_model_calls": 0,
+  "processing_performed": false,
+  "ledger_or_approval_modified": false
+}

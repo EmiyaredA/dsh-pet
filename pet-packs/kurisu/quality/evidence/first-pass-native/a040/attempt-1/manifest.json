@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "status": "complete",
+  "action_id": "a040",
+  "attempt_index": 1,
+  "action_name": "模拟时间旅行推演",
+  "source_file": "source/library/a040/attempt-1/模拟时间旅行推演.mp4",
+  "source_sha256": "2affb565707cb468abe1dd2f3442ff0a00655aabdf762dc9a81f72121e9aa86e",
+  "task_id": "bf5a9811-956c-4a8b-9128-8e311cd28ac2",
+  "native_dimensions": [
+    1344,
+    768
+  ],
+  "frames": [
+    {
+      "frame_index": 0,
+      "file": "f000-native.png",
+      "sha256": "e57688d35780acc2a2e4872fa47c3a0c9a02be45557c6db10205aad816c7c5c0"
+    },
+    {
+      "frame_index": 12,
+      "file": "f012-native.png",
+      "sha256": "756340b399234899f8daf4da43c3cc9ef5484ec2f93937df43a32fe193bde155"
+    },
+    {
+      "frame_index": 24,
+      "file": "f024-native.png",
+      "sha256": "e06ff187a89f1bea7c204f7de98231123f67fbc63730321dd1c48a3245340086"
+    },
+    {
+      "frame_index": 48,
+      "file": "f048-native.png",
+      "sha256": "626eba53f177049c43c461b17ec7e756af695f971e4ba8f731cd6f8b35ddb882"
+    },
+    {
+      "frame_index": 72,
+      "file": "f072-native.png",
+      "sha256": "99297b178413186bbffc1b66c85727a90235988420545bb47ea58a7d02bb6e8b"
+    },
+    {
+      "frame_index": 96,
+      "file": "f096-native.png",
+      "sha256": "f888d46a2dc59f13273840235e4a55c67e5d2cfb1f82a3b206bcf7aa7ba52259"
+    },
+    {
+      "frame_index": 120,
+      "file": "f120-native.png",
+      "sha256": "ac35d7be8f7f069e422853128366c1a673babc26a860a200efbc0d6af567b7c7"
+    },
+    {
+      "frame_index": 144,
+      "file": "f144-native.png",
+      "sha256": "98cc95ac6f8fac7cc0a4d92fad86bbdfbe57fe65982216a840688e4f60c89a70"
+    },
+    {
+      "frame_index": 168,
+      "file": "f168-native.png",
+      "sha256": "55e218345795dd3247ed5699796dd6d6e054b60e7b8426e08ec132320229e73c"
+    },
+    {
+      "frame_index": 192,
+      "file": "f192-native.png",
+      "sha256": "2186cba3b51bcf99739ed28bd696d912c4dd21c7d597e2375d0d7ccb47e9a765"
+    },
+    {
+      "frame_index": 216,
+      "file": "f216-native.png",
+      "sha256": "c60e3662b2e008fc41dae0ca6cbe95800f37a7ff5e8617cd993e6f01bfe216d0"
+    },
+    {
+      "frame_index": 239,
+      "file": "f239-native.png",
+      "sha256": "e549267222fcf6954a6f8cb10615de8fd2f59c1ba2f26200088bbed9817204fc"
+    }
+  ],
+  "decoder": "single ffmpeg, native size, RGB PNG; no scaling",
+  "created_at": "2026-10-31T03:53:30.867694+00:00"
+}

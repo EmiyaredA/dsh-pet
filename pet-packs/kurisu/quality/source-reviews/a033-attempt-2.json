@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "action_id": "a033",
+  "attempt_index": 2,
+  "action_name": "盯编译进度",
+  "spec_revision_id": "programmer-research-v2-2026-10-31",
+  "source_file": "source/library/a033/attempt-2/盯编译进度.mp4",
+  "source_sha256": "eb5cc7fe6569d596f98e258a9e5a8af2e0676a7c710429e77606c0830d85147f",
+  "source_task_id": "d5869577-af4c-4fea-a82c-9b3f283de5ef",
+  "result_asset_id": "96da2ac2-711b-4343-a840-4191d1e598e2",
+  "model_slug": "minimax_h3_zm_u24",
+  "reviewer": "animation_qa independent agent",
+  "reviewed_at": "2026-10-31T10:02:14.735062+00:00",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "processing_clearance": "allow_mild_color_and_green_key",
+  "final_media_approved": false,
+  "reason": "小型进度卡显示琥珀色方块，手持观察/末尾收回可辨；原生脸部口鼻可见，未见强染绿、动光或额外结构。卡片有无意义伪文字，不将其当有效可读文案；最终按640显示再查。",
+  "defects": [],
+  "source_background": {
+    "method": "all_frame_saturated_green_native_border_v2",
+    "passed": true,
+    "frames": 240,
+    "expected_frames": 240,
+    "failed_frame_count": 0,
+    "failed_frames": [],
+    "background_rgb_min": [
+      2.0,
+      233.0,
+      5.0
+    ],
+    "background_rgb_max": [
+      3.0,
+      234.0,
+      7.0
+    ],
+    "maximum_spatial_delta": 21.0,
+    "maximum_temporal_delta": 1.0,
+    "thresholds": {
+      "dominant_min": 180,
+      "other_channels_max": 100,
+      "dominance_min": 100,
+      "spatial_delta_max": 35,
+      "temporal_delta_max": 24
+    },
+    "expected_background": "#00FF00",
+    "white_matte_fallback": false,
+    "visual_foreground_review_required": true,
+    "enclosed_background_and_foreground_verified": false,
+    "native_size": [
+      1344,
+      768
+    ],
+    "boundary_pixels_per_frame": 4224,
+    "measurement": "native_one_pixel_outer_boundary_no_spatial_resampling",
+    "sampling": {
+      "duration_seconds": 10,
+      "fps": 24,
+      "expected_frames": 240
+    }
+  },
+  "inspection_scope": {
+    "existing_contact_personally_viewed": true,
+    "native_full_frames_personally_viewed": [
+      239
+    ],
+    "native_face_nearest2x_frames_personally_viewed": [
+      144
+    ],
+    "native_size": null,
+    "technical_scope": "Existing native240 boundary gate reused, not rerun. Source and evidence manifest are SHA-bound.",
+    "limits": [
+      "Representative source stills only, not all243 manually inspected.",
+      "No continuous source video playback in this source stage; complete10s playback is reserved for final candidate QA.",
+      "No automatic final-media approval or repair."
+    ]
+  },
+  "visual_findings": {
+    "action": "A charcoal card with amber progress blocks is watched and then stowed. The reviewed endpoint is empty-handed.",
+    "face_color": "Mouth and eyes remain visible above the card in native2x; no obvious new limb/tail or moving colored light was seen.",
+    "label_note": "The card contains an incidental pseudo-label/percentage-like marks. No meaningful readable wording is certified or required for the action."
+  },
+  "evidence_manifest": "quality/evidence/batch30-firstpass/a033/attempt-2/manifest.json",
+  "evidence_manifest_sha256": "03e469b0f1bfa6c3df8abbe05e8437ff0f136fcc3f7255c5e7367efff1d8cece",
+  "new_model_calls": 0,
+  "processing_performed": false,
+  "ledger_or_approval_modified": false
+}

@@ -1,0 +1,37 @@
+{
+  "action_id": "a002",
+  "current_status": "quality_recheck_hold",
+  "canonical_archive_file": "source/library/quality-recheck-hold/a002/831d80bef0ff2dd0/左右张望.webm",
+  "canonical_sha256": "831d80bef0ff2dd03a35c6490fd67615f3ee99b152efcb00f448c84032f2ed15",
+  "original_canonical_file": "pet/kurisu-animation/左右张望.webm",
+  "source_file": "source/library/a002/attempt-2/左右张望.mp4",
+  "source_sha256": "d59da78241126412e94fb746b347b0fd99104d9847000d4dcf478278769050f4",
+  "canonical_frames": 240,
+  "canonical_native_size": [
+    640,
+    360
+  ],
+  "roi_native_xyxy": [
+    254,
+    280,
+    274,
+    314
+  ],
+  "direct_existing_rgba_no_keying": true,
+  "all240_rgba_roi_chronological_pages": [
+    "quality/additional-audits/a002-rgba-small-point-independent-01/rgba-point-8x-f0-39.png",
+    "quality/additional-audits/a002-rgba-small-point-independent-01/rgba-point-8x-f40-79.png",
+    "quality/additional-audits/a002-rgba-small-point-independent-01/rgba-point-8x-f80-119.png",
+    "quality/additional-audits/a002-rgba-small-point-independent-01/rgba-point-8x-f120-159.png",
+    "quality/additional-audits/a002-rgba-small-point-independent-01/rgba-point-8x-f160-199.png",
+    "quality/additional-audits/a002-rgba-small-point-independent-01/rgba-point-8x-f200-239.png"
+  ],
+  "selected_rgb_alpha_comparison": "quality/additional-audits/a002-rgba-small-point-independent-01/selected-point-rgb-and-alpha8x.png",
+  "existing_source243_review": "quality/additional-audits/a002-all-native-lower-body-01/all-native-lower-body-review.json",
+  "method": "Decode existing archived final VP9 with libvpx-vp9 to true RGBA; crop native20x34 then nearest8x for inspection. RGB previews composite original alpha onto blue. No media repair/key/recolor.",
+  "scope": "Physical classification of tiny left hem point only, not new full technical/continuous playback review",
+  "visual_status": "pending",
+  "library_modified": false,
+  "live_modified": false,
+  "model_calls": 0
+}

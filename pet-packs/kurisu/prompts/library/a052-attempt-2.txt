@@ -1,0 +1,22 @@
+subject_definitions:
+<Subject 1> is the single human chibi Kurisu maid shown in both <Picture 1> and <Picture 2>, with two arms and two legs. Two black triangular fabric ornaments with pink lining and bows are sewn to her white lace headband. Her rear silhouette consists solely of long hair and skirt.
+<Picture 1> is the approved opaque BLUE80 front-view character, complete composition and empty-handed neutral baseline.
+<Picture 2> is byte-identical to <Picture 1>: the same single human, exact figure scale, composition, solid BLUE background and empty-handed neutral baseline. Both pictures anchor one character throughout this shot.
+
+summary:
+[reference generation] One 10-second 16:9 768p 2D animated desktop sticker of <Subject 1> celebrating a successful CI check with a small V sign, standing on a solid BLUE chroma-key background.
+
+retention_analysis:
+<Subject 1> ([Shot 1]): fully_preserved - human identity, reference costume and painted palette.
+<Picture 1> and <Picture 2> ([Shot 1]): fully_preserved - identical compact proportions, neutral baseline, full-body scale and opaque BLUE background; one character, one unchanged camera.
+
+detailed_description:
+[Shot 1] 00:00.000 to 00:10.000. A single animated sticker begins directly in the reference front stance. Fixed eye-level orthographic camera, one centered complete figure, ear tips at 10% and standing soles at 90% of image height. She stands centered in front of a seamless, evenly lit solid BLUE chroma-key backdrop, RGB(0,0,255), whose one plain color fills the entire image and all visible hair/limb gaps, including beneath her feet, unchanged for the full 10 seconds. Maintain the reference auburn hair, blue-violet eyes and costume colors under constant neutral illumination; painted highlights stay fixed. Delicate outlines and soft cel shading remain consistent. Only her compact upper-body gesture and the named miniature props move. Entire frame contains only this single girl on the uniform BLUE field. This single uninterrupted sticker begins immediately in the empty-handed reference stance and returns to that same stance. No establishing shot, extra characters or spotlight. Any visible interface consists of abstract shapes, never readable text. Painted colors and highlights remain fixed.
+
+00:00.000 to 00:02.000: hold the empty-handed reference front stance. 00:02.000 to 00:04.000: take a tiny charcoal-gray CI status card in her left hand at waist height, below the chin. One clear static GREEN check mark is painted flat on the card. 00:04.000 to 00:07.000: notice the successful check, smile and give one compact V sign with her right hand near her chest, keeping the whole face and headwear unobstructed. The green check remains ink on the card, non-emissive and steady; it never lights her skin, hair or dress. 00:07.000 to 00:09.000: lower the right hand and completely stow the card behind her hip. 00:09.000 to 00:10.000: hold the same empty-handed reference front stance.
+
+overall_soundscape:
+N/A.
+
+non_diegetic_music:
+N/A.

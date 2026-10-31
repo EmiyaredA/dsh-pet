@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "diagnostic_id": "wan-motion-pilot-01",
+  "diagnostic_only": true,
+  "counts_toward_106": false,
+  "animation_action_id": null,
+  "source_task_id": "3bf821b0-dbd5-4887-a059-197137e79418",
+  "source_sha256": "7f282cb54d6fbf6703cd2695883732e99908914d2483ad109a58464f4ef7d241",
+  "canonical_source_file": "source/diagnostics/wan-motion-pilot-01/original.mp4",
+  "model_slug": "wan2.2animate-v4-motion_retargeting",
+  "source_mode": "one referenceimage plus existingidle video driver, no textprompt",
+  "input_reference_asset_id": "c8e65934-8da3-4756-bfb4-ec41f8dde710",
+  "input_reference_sha256": "f3be325cb0fa1f5afdab90d5615487a3a92401eed054fc3d465f32cebd79ea22",
+  "input_driver_asset_id": "da2e3ea6-158f-4f7a-a843-2dea89a0401f",
+  "input_driver_sha256": "52354f1b03a5d287531a2cfa3043a5b198843bb27831c19da635f9cb2ca4e183",
+  "reviewed_at": "2026-10-30T19:28:00.756296+00:00",
+  "reviewer": "independent_animation_qa_agent",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "processing_clearance": "allow_diagnostic_green_key_only",
+  "production_processing_clearance": "not_authorized",
+  "final_media_approved": false,
+  "publish_allowed": false,
+  "summary": "Promisinggreen-conditioned chibi diagnostic, suitable only for an isolated normalgreen-key feasibility experiment. No white/circle backgroundreplacement was seen. Strict64x36flat gate remainsfailed, but native1pxperimeter is saturated/uniform inall303frames and64AREA lastrow mixesnearbyshoes. Costume blacktab and moreactive idle mean no animationapproval, no replacementa001 and no new106count.",
+  "source_metadata": {
+    "width": 832,
+    "height": 464,
+    "fps": 30,
+    "frames": 303,
+    "duration_seconds": 10.1,
+    "audio": "AACpresent; muststrip inanydiagnostic output"
+  },
+  "strict_flat_result": {
+    "raw64x36_303frames_passed": false,
+    "raw64x36_failed_frames": 41,
+    "normalized24fps_first10seconds_passed": false,
+    "normalized240_failed_frames": 31,
+    "metrics_unchanged": true,
+    "proof_file": "quality/diagnostics/wan-motion-pilot-01/strict-background-inspection.json",
+    "breakdown_file": "quality/diagnostics/wan-motion-pilot-01/strict-background-breakdown.json"
+  },
+  "chroma_safe_diagnostic": {
+    "normal_green_key_feasibility": true,
+    "white_or_black_backgroundreplacement_observed": false,
+    "native_1px_perimeter_saturated_green_frames": 303,
+    "native_1px_perimeter_uniformity_within35_frames": 303,
+    "minimum_native_shoe_bottom_margin_px": 8,
+    "background_aliasing_evidence": "Worst64x36index97atf62 isbottomrowcolumn33; originalshoesreachy455withonly8pxgreenmargin, whereasAREA lastrowintegratesabout12.89nativepixels. Thus thecoarseborder sample canmixshoecolors. Native1pxedge allframespasses, soG186 samplecannotbeassertedasanactualedgewhite/blackreplacement. Theoldstrictgatehasnotbeenchanged.",
+    "proof_file": "quality/diagnostics/wan-motion-pilot-01/native-border-303.json",
+    "limits": "Nativeperimeterpassdoesnotcertifyallbackgroundpixelsorfinalalphamatte. Diagnosticcandidate mustbeindependentlychecked."
+  },
+  "visual_findings": [
+    {
+      "severity": "observation",
+      "type": "identity_and_style",
+      "description": "Twelve nativeface/headcrops2x retainroundlargehead,shortbody,auburnhair,bluevioleteyes,twoheadbandears andmaidcostume. No pinkextraearlikea092,majorfacegeometrytwist ormovinggreenlightspotwasobserved inthesesamples. Notall303frameswerevisuallyapproved."
+    },
+    {
+      "severity": "review_required",
+      "type": "costume_detail_deviation",
+      "source_frames": [
+        0,
+        30,
+        60,
+        90,
+        120,
+        150,
+        180,
+        210
+      ],
+      "description": "A shortblackrectangularcloth/tab hangsbelowtherightskirtfrill, notpresentintheapprovedfrontreference. It varieswithmotionandlatermergeswithskirt. Itreadsasclothstripratherthananobviousanimaltail, butisacostumedetaildeviationrequiringfinalreview; thisdiagnosticdoesnotapproveit andnormalkeymustnoteraseit."
+    },
+    {
+      "severity": "observation",
+      "type": "motion_not_approved_idle",
+      "description": "Sourcecontacts showalternatingfootlifts/bodybobandsmallopenmouthchanges, moreactive thangenericbreathing. Do notautomaticallyreuseasexistingidleorclaimmotionfidelitytoalldriverframes. No still/frozenframe reconstructionallowed."
+    }
+  ],
+  "allowed_processing": [
+    "Isolateddiagnostic normalgreenkey only; preserveeverycharacterpixelandtiming; nosurgicalface/hair/costumechanges.",
+    "Optional ordinaryRGBdespill atgreenboundary maybetested andfullydocumented, butno white-thresholdmattingorappendagedeletion.",
+    "StripAAC,normalizeformatonlyifneededforisolatedQA; do notpublish or count106."
+  ],
+  "forbidden_processing": [
+    "Do not alterstrictflatgateorrecordrawstrictpass.",
+    "Do notreplacea001/canonicalmedia orapprove anynew106action.",
+    "Do noteraseblacktab,paintface/eyes,hairwhiteholesorreconstructmotion."
+  ],
+  "portable_evidence": [
+    "quality/diagnostics/wan-motion-pilot-01/source-contact.png",
+    "quality/diagnostics/wan-motion-pilot-01/face-native-crops-2x.png",
+    "quality/diagnostics/wan-motion-pilot-01/skirt-black-tab-4x.png",
+    "quality/diagnostics/wan-motion-pilot-01/reference-skirt-4x.png"
+  ],
+  "inspection_scope": {
+    "visually_inspected_native_frames": [
+      0,
+      30,
+      60,
+      90,
+      120,
+      150,
+      180,
+      210,
+      240,
+      270,
+      300,
+      302
+    ],
+    "headface_crop_native_then_2x": true,
+    "skirtcrop_native_then_4x": true,
+    "native_perimeter_geometry_measurement_frames": 303,
+    "allframes_visual": false,
+    "new_model_calls": 0,
+    "ledger_modified": false,
+    "source_media_modified": false,
+    "candidate_generated_by_this_reviewer": false
+  }
+}

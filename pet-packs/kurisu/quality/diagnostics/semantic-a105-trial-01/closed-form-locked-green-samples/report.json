@@ -1,0 +1,73 @@
+{
+  "created_at": "2026-10-31T01:47:06.353783+00:00",
+  "scope": "requested representative frames only same authorized a105 semantic trial; no model inference",
+  "requested_frames": [
+    0
+  ],
+  "source_sha256": "5460f738fa8678600fc5d37fc4334e551deec03c013db41b0242c58059b13aac",
+  "parent_intersection_sha256": "f30d57062c1aa627d55a3f3585c8fd66b5f9c577d8d1eba6f780f314dd7c9b4f",
+  "method": "official pymatting CF alpha+ML foreground solvers, official rembg trimap from cached min(isnet-anime Alpha, existing green-key12/110 Alpha), plus originalRGB key_green12/110==0 reliable-green hard BG seeds retained without erosion; hard green Alpha forced0; original RGB retained in known FG/BG",
+  "parameters": {
+    "foreground_threshold_strict_greater_than": 240,
+    "background_threshold_strict_less_than": 10,
+    "erode_structure_size": 10,
+    "trimap_seed_structure": "10x10 ones square (official implementation, not final-alpha erosion)",
+    "foreground_seed_Alpha": 255,
+    "background_seed_Alpha": 0
+  },
+  "original_semantic_alpha_preserved_in_full": false,
+  "hard_foreground_alpha_fixed_to255_not_original_softmask": true,
+  "reliable_green_rule": "existing key_green(originalRGB,12,110).Alpha==0; no white or neutral RGB predicate",
+  "no_white_RGB_threshold_or_repainting": true,
+  "no_final_alpha_morphology": true,
+  "no_new_inference_or_model_download": true,
+  "records": [
+    {
+      "frame": 0,
+      "solver_seconds": 0.216,
+      "reliable_green_background_pixels": 893630,
+      "all_reliable_green_final_alpha_zero": true,
+      "known_foreground_pixels": 118761,
+      "known_background_pixels": 893630,
+      "unknown_pixels": 19801,
+      "known_foreground_RGB_exact_original": true,
+      "known_foreground_alpha_exact255": true,
+      "known_background_RGB_exact_original": true,
+      "known_background_alpha_exact0": true,
+      "unknown_alpha_delta_vs_intersection_range": [
+        -255,
+        168
+      ],
+      "alpha_changed_pixels_vs_intersection": 137515,
+      "alpha_changed_pixels_inside_hard_FG_vs_intersection": 118760,
+      "RGB_delta_max": 254,
+      "visible_RGB_delta_p95": 21.0,
+      "alpha_weighted_RGB_delta_max": 76.09411764705882,
+      "wall_seconds": 0.429
+    }
+  ],
+  "failure": null,
+  "status": "STOP_F0_VISIBLE_COLOR_AND_BOUNDARY_REGRESSION",
+  "final_media_approved": false,
+  "counts_toward_106": false,
+  "script_sha256": "2e6d312fdb3c3824bc4f52cd7426d14155a27d8bab5a9d82c5b1625ace98c7a3",
+  "visual_review": {
+    "frames": [
+      0
+    ],
+    "views": [
+      "ML dark/blue native640",
+      "same CFAlpha+originalRGB dark/blue native640"
+    ],
+    "observations": [
+      "Locking reliable key-zero BG prevents green negative-space resurrection.",
+      "ML estimated unknown-edge RGB shifts toward red/magenta and weakens the source dark hair outline.",
+      "Keeping original RGB with the same CF alpha avoids much of the red estimate but still produces soft/gray weakened outer hair boundaries."
+    ],
+    "decision": "Do not expand this CF configuration to six frames or full240. Source/core constraints alone are not a visual pass."
+  },
+  "alpha_only_ablation_report": "alpha-only-f0-report.json",
+  "full_variant_created": false,
+  "completed_at": "2026-10-31T01:52:18.917909+00:00",
+  "decode_slot_released": true
+}

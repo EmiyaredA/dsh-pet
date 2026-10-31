@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "action_id": "a078",
+  "action_name": "讨糖南瓜灯",
+  "source_attempt_index": 1,
+  "spec_revision_id": null,
+  "source_sha256": "4c2759f07b7f94af5271bf52fc19a43a3608a82a1257b610e4c3c4397e976c71",
+  "source_task_id": "99441cfb-46e9-4d0e-a1ff-651a14e6f0a2",
+  "candidate_file": "source/library/a078/attempt-1/processing-2ce8cc88-1cc0-4f2c-9be6-1baabc32b819/讨糖南瓜灯.webm",
+  "candidate_sha256": "0a65d14733808ac88e68c518a67a094f165aba363a62a7fde8853e1f0cf20c57",
+  "verdict": "reject",
+  "reviewer": "animation_qa independent agent",
+  "reviewed_at": "2026-10-31T12:40:22.217175+00:00",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "defects": [
+    {
+      "severity": "hard",
+      "type": "foreground_prop_transparency_loss",
+      "frames": [
+        96
+      ],
+      "description": "A pale green candy wrapper at the top of the bucket becomes a visibly background-colored crescent after ordinary keying; source RGB has an actual filled wrapper there. Final frame96 ROI x312..327/y248..254 contains24 pixels with alpha<128, including alpha0."
+    }
+  ],
+  "reason": "Frame96 blue composite shows a blue crescent through the candy wrapper on top of the orange bucket. This is foreground loss inside the prop, not background antialiasing.",
+  "technical": {
+    "frames": 240,
+    "width": 640,
+    "height": 360,
+    "fps": 24,
+    "duration_seconds": 10,
+    "codec": "vp9",
+    "audio_streams": 0,
+    "all240_alpha0to255": true,
+    "all240_outer_boundary_alpha_zero": true,
+    "outside6_alpha_gt8_bad_frames": [],
+    "first_bbox_alpha127": [
+      218,
+      58,
+      432,
+      330
+    ],
+    "last_bbox_alpha127": [
+      217,
+      59,
+      431,
+      330
+    ],
+    "feet_delta_px": 0,
+    "height_delta_px": -1
+  },
+  "technical_proof": "quality/final-reviews/a078-0a65d1473380/decoded-technical240.json",
+  "frame0_rgba_file": "quality/final-reviews/a078-0a65d1473380/f000-rgba.png",
+  "evidence_directory": "quality/final-reviews/a078-0a65d1473380",
+  "inspection_scope": {
+    "normal640_four_backgrounds": [
+      {
+        "frame": 0,
+        "background": "blue"
+      },
+      {
+        "frame": 96,
+        "background": "dark"
+      },
+      {
+        "frame": 144,
+        "background": "light"
+      },
+      {
+        "frame": 239,
+        "background": "checker"
+      }
+    ],
+    "face_hair_native640_ROI_nearest2x_frames": [
+      0,
+      120,
+      239
+    ],
+    "grid_resolution_note": "Each full-body cell remains640x360 in1280x760 layout; face cells are original240x220 pixels expanded nearest2x. No100px thumbnails were used for this conclusion.",
+    "actual_playback": "quality/final-reviews/a078-0a65d1473380/actual-browser-playback.json",
+    "limits": [
+      "All240 technical coverage is not all240 manual visual coverage.",
+      "Actual playback ran a full10sec loop; human observations are intermittent screenshots and selected stills, not an exhaustive continuous gaze claim.",
+      "Older accepted idle is somewhat warmer; scale comparison does not claim pixel-identical RGB."
+    ],
+    "extra_prop_crop": "quality/final-reviews/a078-0a65d1473380/f096-candy-blue4x.png"
+  },
+  "visual_findings": {
+    "action": "The pumpkin candy bucket and candy handling are recognizable and stowed; however a green candy wrapper is mis-keyed into a transparent hole.",
+    "matte_face_color": "Face/hair and body edges look clean in representative four-background/2x samples, but the green candy wrapper inside the bucket is visibly lost. Technical alpha validity does not imply semantic completeness.",
+    "additional": "Frame96 blue composite shows a blue crescent through the candy wrapper on top of the orange bucket. This is foreground loss inside the prop, not background antialiasing.",
+    "scale_switch": "The shared640 idle was observed between075 and078; no release is recommended because of the prop hole. No claim of all240 manual coverage."
+  },
+  "new_paid_calls": 0,
+  "reviewer_pixel_or_recipe_changes": 0,
+  "approval_or_runtime_mutations": false
+}

@@ -1,0 +1,22 @@
+subject_definitions:
+<Subject 1> is the single human chibi Kurisu maid shown in both <Picture 1> and <Picture 2>, with two arms and two legs. Two black triangular fabric ornaments with pink lining and bows are sewn to her white lace headband. Her rear silhouette consists solely of long hair and skirt.
+<Picture 1> is the approved opaque GREEN80 front-view character, complete composition and empty-handed neutral baseline.
+<Picture 2> is byte-identical to <Picture 1>: the same single human, exact figure scale, composition, solid GREEN background and empty-handed neutral baseline. Both pictures anchor one character throughout this shot.
+
+summary:
+[reference generation] One 10-second 16:9 768p 2D animated desktop sticker of <Subject 1> setting off a miniature toy firework, standing on a solid GREEN chroma-key background.
+
+retention_analysis:
+<Subject 1> ([Shot 1]): fully_preserved - human identity, reference costume and painted palette.
+<Picture 1> and <Picture 2> ([Shot 1]): fully_preserved - identical compact proportions, neutral baseline, full-body scale and opaque GREEN background; one character, one unchanged camera.
+
+detailed_description:
+[Shot 1] 00:00.000 to 00:10.000. A single animated sticker begins directly in the reference front stance. Fixed eye-level orthographic camera, one centered complete figure, ear tips at 10% and standing soles at 90% of image height. She stands centered in front of a seamless, evenly lit solid GREEN chroma-key backdrop, RGB(0,255,0), whose one plain color fills the entire image and all visible hair/limb gaps, including beneath her feet, unchanged for the full 10 seconds. Maintain the reference auburn hair, blue-violet eyes and costume colors under constant neutral illumination; painted highlights stay fixed. Delicate outlines and soft cel shading remain consistent. Only her compact gesture and any named miniature prop move. Entire frame contains only this single girl on the uniform GREEN field. This single uninterrupted sticker begins immediately in the empty-handed reference stance and returns to that same stance. No establishing shot, extra characters or spotlight. Sparks confined to the cylinder area, well below the face; no light on character.
+
+00:00.000 to 00:02.000: hold the empty-handed reference front stance. 00:02.000 to 00:07.000: Hold a tiny red toy firework cylinder at waist height. One very small amber-and-white spark pattern appears directly above the cylinder, fades completely, and she smiles. 00:07.000 to 00:09.000: lower and stow every prop behind her hip; any transient effect is completely gone. 00:09.000 to 00:10.000: hold the same empty-handed reference front stance.
+
+overall_soundscape:
+N/A.
+
+non_diegetic_music:
+N/A.

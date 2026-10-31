@@ -1,0 +1,263 @@
+{
+  "created_at": "2026-10-31T01:34:21.791702+00:00",
+  "scope": "six representative frames only, same authorized a105 semantic trial",
+  "source_sha256": "5460f738fa8678600fc5d37fc4334e551deec03c013db41b0242c58059b13aac",
+  "parent_candidate_sha256": "f30d57062c1aa627d55a3f3585c8fd66b5f9c577d8d1eba6f780f314dd7c9b4f",
+  "method": "official rembg.bg.decontaminate_cutout(originalRGB,current intersection Alpha) -> pymatting.estimate_foreground_ml; copy estimated RGB ONLY where 1<=Alpha<=249 AND distance_to_alpha127_silhouette<=4 native pixels on either side",
+  "official_source": "https://github.com/danielgatis/rembg/blob/main/rembg/bg.py",
+  "no_alpha_matting_or_trimap": true,
+  "no_erosion_or_white_key_or_generated_repaint": true,
+  "no_new_model_inference": true,
+  "alpha_unmodified": true,
+  "opaque_core_and_nonband_RGB_unchanged": true,
+  "records": [
+    {
+      "frame": 0,
+      "seconds": 0.219,
+      "selected_pixels": 7939,
+      "changed_pixels": 7932,
+      "RGB_abs_max": 223,
+      "RGB_abs_p95_changed": 95.0,
+      "alpha_weighted_RGB_delta_max": 68.8156862745098,
+      "alpha_weighted_RGB_delta_p95_changed": 32.72941176470589,
+      "native_alpha_exact": true,
+      "alpha_ge250_RGBA_exact": true,
+      "outside_4px_RGBA_exact": true,
+      "outside_selected_RGBA_exact": true,
+      "changed_alpha_range": [
+        1,
+        249
+      ]
+    },
+    {
+      "frame": 24,
+      "seconds": 0.196,
+      "selected_pixels": 13972,
+      "changed_pixels": 13933,
+      "RGB_abs_max": 255,
+      "RGB_abs_p95_changed": 246.0,
+      "alpha_weighted_RGB_delta_max": 78.68235294117648,
+      "alpha_weighted_RGB_delta_p95_changed": 40.04705882352941,
+      "native_alpha_exact": true,
+      "alpha_ge250_RGBA_exact": true,
+      "outside_4px_RGBA_exact": true,
+      "outside_selected_RGBA_exact": true,
+      "changed_alpha_range": [
+        1,
+        249
+      ]
+    },
+    {
+      "frame": 72,
+      "seconds": 0.18,
+      "selected_pixels": 14210,
+      "changed_pixels": 14175,
+      "RGB_abs_max": 255,
+      "RGB_abs_p95_changed": 243.0,
+      "alpha_weighted_RGB_delta_max": 73.6,
+      "alpha_weighted_RGB_delta_p95_changed": 41.15294117647059,
+      "native_alpha_exact": true,
+      "alpha_ge250_RGBA_exact": true,
+      "outside_4px_RGBA_exact": true,
+      "outside_selected_RGBA_exact": true,
+      "changed_alpha_range": [
+        1,
+        249
+      ]
+    },
+    {
+      "frame": 120,
+      "seconds": 0.185,
+      "selected_pixels": 14344,
+      "changed_pixels": 14307,
+      "RGB_abs_max": 255,
+      "RGB_abs_p95_changed": 244.0,
+      "alpha_weighted_RGB_delta_max": 74.22745098039215,
+      "alpha_weighted_RGB_delta_p95_changed": 41.48627450980392,
+      "native_alpha_exact": true,
+      "alpha_ge250_RGBA_exact": true,
+      "outside_4px_RGBA_exact": true,
+      "outside_selected_RGBA_exact": true,
+      "changed_alpha_range": [
+        1,
+        249
+      ]
+    },
+    {
+      "frame": 192,
+      "seconds": 0.188,
+      "selected_pixels": 14561,
+      "changed_pixels": 14549,
+      "RGB_abs_max": 255,
+      "RGB_abs_p95_changed": 243.0,
+      "alpha_weighted_RGB_delta_max": 79.87450980392157,
+      "alpha_weighted_RGB_delta_p95_changed": 40.75647058823522,
+      "native_alpha_exact": true,
+      "alpha_ge250_RGBA_exact": true,
+      "outside_4px_RGBA_exact": true,
+      "outside_selected_RGBA_exact": true,
+      "changed_alpha_range": [
+        1,
+        249
+      ]
+    },
+    {
+      "frame": 239,
+      "seconds": 0.19,
+      "selected_pixels": 14729,
+      "changed_pixels": 14704,
+      "RGB_abs_max": 255,
+      "RGB_abs_p95_changed": 241.0,
+      "alpha_weighted_RGB_delta_max": 76.70588235294117,
+      "alpha_weighted_RGB_delta_p95_changed": 39.2,
+      "native_alpha_exact": true,
+      "alpha_ge250_RGBA_exact": true,
+      "outside_4px_RGBA_exact": true,
+      "outside_selected_RGBA_exact": true,
+      "changed_alpha_range": [
+        1,
+        249
+      ]
+    }
+  ],
+  "status": "STOP_RESIDUAL_GREEN_NO_SUFFICIENT_VISUAL_IMPROVEMENT",
+  "final_media_approved": false,
+  "counts_toward_106": false,
+  "script_sha256": "6a15bc5111f07cba3fc9a51b5b65146aa2427e567120663adc5eac6417c8cba9",
+  "human_visual_review": {
+    "frames": [
+      0,
+      24,
+      72,
+      120,
+      192,
+      239
+    ],
+    "viewed": "native640 dark side-by-side all six; additional f120 blue; no realtime or full240 claim",
+    "observations": [
+      "Semi-transparent outside hair edges are subtly smoother/darker in some frames.",
+      "Fine green ear/hair/hem edges remain; the protected opaque color cannot be corrected by this AA-only foreground estimate.",
+      "No new obvious face/white-costume deformation in these six samples, but no independent all240 approval."
+    ],
+    "decision": "Do not derive full240 variant because this constrained pass has not solved the visible green-edge problem. Do not relax alpha/core or band constraints."
+  },
+  "residual_opaque_green_diagnostics": [
+    {
+      "frame": 0,
+      "opaque_green_dominance_diagnostic_pixels": 525,
+      "all_these_RGB_unchanged": true,
+      "not_a_semantic_material_classifier": true,
+      "example": {
+        "xy": [
+          602,
+          172
+        ],
+        "RGBA": [
+          45,
+          65,
+          36,
+          250
+        ],
+        "G_excess": 20
+      }
+    },
+    {
+      "frame": 24,
+      "opaque_green_dominance_diagnostic_pixels": 224,
+      "all_these_RGB_unchanged": true,
+      "not_a_semantic_material_classifier": true,
+      "example": {
+        "xy": [
+          532,
+          157
+        ],
+        "RGBA": [
+          0,
+          36,
+          16,
+          250
+        ],
+        "G_excess": 20
+      }
+    },
+    {
+      "frame": 72,
+      "opaque_green_dominance_diagnostic_pixels": 111,
+      "all_these_RGB_unchanged": true,
+      "not_a_semantic_material_classifier": true,
+      "example": {
+        "xy": [
+          794,
+          169
+        ],
+        "RGBA": [
+          11,
+          26,
+          7,
+          253
+        ],
+        "G_excess": 15
+      }
+    },
+    {
+      "frame": 120,
+      "opaque_green_dominance_diagnostic_pixels": 85,
+      "all_these_RGB_unchanged": true,
+      "not_a_semantic_material_classifier": true,
+      "example": {
+        "xy": [
+          497,
+          370
+        ],
+        "RGBA": [
+          0,
+          18,
+          0,
+          252
+        ],
+        "G_excess": 18
+      }
+    },
+    {
+      "frame": 192,
+      "opaque_green_dominance_diagnostic_pixels": 223,
+      "all_these_RGB_unchanged": true,
+      "not_a_semantic_material_classifier": true,
+      "example": {
+        "xy": [
+          690,
+          161
+        ],
+        "RGBA": [
+          101,
+          121,
+          98,
+          250
+        ],
+        "G_excess": 20
+      }
+    },
+    {
+      "frame": 239,
+      "opaque_green_dominance_diagnostic_pixels": 287,
+      "all_these_RGB_unchanged": true,
+      "not_a_semantic_material_classifier": true,
+      "example": {
+        "xy": [
+          777,
+          157
+        ],
+        "RGBA": [
+          10,
+          30,
+          3,
+          250
+        ],
+        "G_excess": 20
+      }
+    }
+  ],
+  "full_variant_created": false,
+  "completed_at": "2026-10-31T01:37:00.103854+00:00",
+  "decode_slot_released": true
+}

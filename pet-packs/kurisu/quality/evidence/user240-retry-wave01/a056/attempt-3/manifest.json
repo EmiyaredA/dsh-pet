@@ -1,0 +1,273 @@
+{
+  "schema_version": 1,
+  "action_id": "a056",
+  "attempt_index": 3,
+  "spec_revision_id": "programmer-research-v2-2026-10-31",
+  "source_file": "source/library/a056/attempt-3/瘫着怀疑人生.mp4",
+  "source_sha256": "42972446b750c37bea7d798fa5c506a2b1c456175a04779089de80f1caf3818f",
+  "source_task_id": "329d65d3-eabd-4063-ad73-7204fc22d045",
+  "source_background_reused": {
+    "method": "all_frame_saturated_green_native_border_v2",
+    "passed": true,
+    "frames": 240,
+    "expected_frames": 240,
+    "failed_frame_count": 0,
+    "failed_frames": [],
+    "background_rgb_min": [
+      2.0,
+      229.0,
+      4.0
+    ],
+    "background_rgb_max": [
+      3.0,
+      231.0,
+      6.0
+    ],
+    "maximum_spatial_delta": 8.0,
+    "maximum_temporal_delta": 2.0,
+    "thresholds": {
+      "dominant_min": 180,
+      "other_channels_max": 100,
+      "dominance_min": 100,
+      "spatial_delta_max": 35,
+      "temporal_delta_max": 24
+    },
+    "expected_background": "#00FF00",
+    "white_matte_fallback": false,
+    "visual_foreground_review_required": true,
+    "enclosed_background_and_foreground_verified": false,
+    "native_size": [
+      1344,
+      768
+    ],
+    "boundary_pixels_per_frame": 4224,
+    "measurement": "native_one_pixel_outer_boundary_no_spatial_resampling",
+    "sampling": {
+      "duration_seconds": 10,
+      "fps": 24,
+      "expected_frames": 240
+    }
+  },
+  "source_background_rescanned": false,
+  "created_at": "2026-10-31T13:36:41.452643+00:00",
+  "decoder_command": [
+    "ffmpeg",
+    "-y",
+    "-v",
+    "error",
+    "-threads",
+    "1",
+    "-i",
+    "/Users/tonghao/Projects/dsh-pet/pet-packs/kurisu/source/library/a056/attempt-3/瘫着怀疑人生.mp4",
+    "-vf",
+    "select=eq(n\\,0)+eq(n\\,48)+eq(n\\,96)+eq(n\\,144)+eq(n\\,192)+eq(n\\,239)",
+    "-frames:v",
+    "6",
+    "-fps_mode",
+    "passthrough",
+    "-pix_fmt",
+    "rgb24",
+    "-threads",
+    "1",
+    "-start_number",
+    "0",
+    "/Users/tonghao/Projects/dsh-pet/pet-packs/kurisu/quality/evidence/user240-retry-wave01/a056/attempt-3/extract-%02d.png"
+  ],
+  "evidence": [
+    {
+      "file": "quality/evidence/user240-retry-wave01/a056/attempt-3/f000-native.png",
+      "sha256": "c7640a19d9d48c4c6ef1a2a2e721a9b834f686c8c0f13be4780c466c17abc517",
+      "frame_index": 0,
+      "kind": "native",
+      "size": [
+        1344,
+        768
+      ]
+    },
+    {
+      "file": "quality/evidence/user240-retry-wave01/a056/attempt-3/f000-full-width640.png",
+      "sha256": "27b4f26fdfd73d686b5551ae7b9830f3cb6097cace3d165b0e21cfa3dc4fe8a4",
+      "frame_index": 0,
+      "kind": "full_frame_proportional_width640",
+      "resampler": "lanczos",
+      "source_rgb_not_changed": true
+    },
+    {
+      "file": "quality/evidence/user240-retry-wave01/a056/attempt-3/f000-face-native2x.png",
+      "sha256": "8c2b4fd6b5eac6e89fef032a33d58d45adce0b1db951fc9e36567a98f2e79019",
+      "frame_index": 0,
+      "kind": "face",
+      "crop_xyxy": [
+        336,
+        0,
+        1008,
+        499
+      ],
+      "resampler": "nearest_exact_pixel_replication",
+      "scale": 2
+    },
+    {
+      "file": "quality/evidence/user240-retry-wave01/a056/attempt-3/f000-lower-native2x.png",
+      "sha256": "c9e0d198d12a8cdf014d2bc17f9abba601c774dbce8fecb182a3505365d74da3",
+      "frame_index": 0,
+      "kind": "lower",
+      "crop_xyxy": [
+        336,
+        346,
+        1008,
+        768
+      ],
+      "resampler": "nearest_exact_pixel_replication",
+      "scale": 2
+    },
+    {
+      "file": "quality/evidence/user240-retry-wave01/a056/attempt-3/f048-native.png",
+      "sha256": "3dd61832629c266acdf9d06868ee3785f15739ccab4b338d3ce3a9f10672a975",
+      "frame_index": 48,
+      "kind": "native",
+      "size": [
+        1344,
+        768
+      ]
+    },
+    {
+      "file": "quality/evidence/user240-retry-wave01/a056/attempt-3/f048-full-width640.png",
+      "sha256": "83659bdf22aa9050d5919038723c3183179864c2c3f6b77f23886e710910b846",
+      "frame_index": 48,
+      "kind": "full_frame_proportional_width640",
+      "resampler": "lanczos",
+      "source_rgb_not_changed": true
+    },
+    {
+      "file": "quality/evidence/user240-retry-wave01/a056/attempt-3/f096-native.png",
+      "sha256": "b5cf2766048b6572c9d8ce9528c167254edba3825fdfe79115415f6da9edf584",
+      "frame_index": 96,
+      "kind": "native",
+      "size": [
+        1344,
+        768
+      ]
+    },
+    {
+      "file": "quality/evidence/user240-retry-wave01/a056/attempt-3/f096-full-width640.png",
+      "sha256": "8978cf251b766a93daa80076b3c738d27b48f04994776dd9291b8493fd91b4c0",
+      "frame_index": 96,
+      "kind": "full_frame_proportional_width640",
+      "resampler": "lanczos",
+      "source_rgb_not_changed": true
+    },
+    {
+      "file": "quality/evidence/user240-retry-wave01/a056/attempt-3/f144-native.png",
+      "sha256": "7e9de64c525f141de44516f5716a8e3e08d0ce413ab6462929935f19c20b9a0d",
+      "frame_index": 144,
+      "kind": "native",
+      "size": [
+        1344,
+        768
+      ]
+    },
+    {
+      "file": "quality/evidence/user240-retry-wave01/a056/attempt-3/f144-full-width640.png",
+      "sha256": "33495289d1134d4854efb5f16b48e12812a4875a1ddeca2d396a77b7f477725b",
+      "frame_index": 144,
+      "kind": "full_frame_proportional_width640",
+      "resampler": "lanczos",
+      "source_rgb_not_changed": true
+    },
+    {
+      "file": "quality/evidence/user240-retry-wave01/a056/attempt-3/f144-face-native2x.png",
+      "sha256": "e0260227bf10ca247c05e1103f69756a831f9a6e03ce7fd7c26bda0f3f52c036",
+      "frame_index": 144,
+      "kind": "face",
+      "crop_xyxy": [
+        336,
+        0,
+        1008,
+        499
+      ],
+      "resampler": "nearest_exact_pixel_replication",
+      "scale": 2
+    },
+    {
+      "file": "quality/evidence/user240-retry-wave01/a056/attempt-3/f144-lower-native2x.png",
+      "sha256": "c2b133b977bb5bcb8d9610e1375f271f32ec0ba76fe0bb7216793754d87dd3b3",
+      "frame_index": 144,
+      "kind": "lower",
+      "crop_xyxy": [
+        336,
+        346,
+        1008,
+        768
+      ],
+      "resampler": "nearest_exact_pixel_replication",
+      "scale": 2
+    },
+    {
+      "file": "quality/evidence/user240-retry-wave01/a056/attempt-3/f192-native.png",
+      "sha256": "b384f79655f268429aef86ff83be2a55557fc63e997d1b80f2015338519eeacc",
+      "frame_index": 192,
+      "kind": "native",
+      "size": [
+        1344,
+        768
+      ]
+    },
+    {
+      "file": "quality/evidence/user240-retry-wave01/a056/attempt-3/f192-full-width640.png",
+      "sha256": "3d42a36880bedac5f265c2c4c04ae7f166c55abe71cda1303e04f2a32d1513f1",
+      "frame_index": 192,
+      "kind": "full_frame_proportional_width640",
+      "resampler": "lanczos",
+      "source_rgb_not_changed": true
+    },
+    {
+      "file": "quality/evidence/user240-retry-wave01/a056/attempt-3/f239-native.png",
+      "sha256": "4fd5e5196b3fd94d9ca52c66909c762a2fef00148962f5f8ea3b7c01984f03ac",
+      "frame_index": 239,
+      "kind": "native",
+      "size": [
+        1344,
+        768
+      ]
+    },
+    {
+      "file": "quality/evidence/user240-retry-wave01/a056/attempt-3/f239-full-width640.png",
+      "sha256": "26cb053c38a5642d53a885476090f75e0a8b0fbc6acbbee0f82eeddae4e54665",
+      "frame_index": 239,
+      "kind": "full_frame_proportional_width640",
+      "resampler": "lanczos",
+      "source_rgb_not_changed": true
+    },
+    {
+      "file": "quality/evidence/user240-retry-wave01/a056/attempt-3/f239-face-native2x.png",
+      "sha256": "f78fb49dd1b4f4f0feb1a42c14c246f842fa252ec9ee8558c681639d8eee633e",
+      "frame_index": 239,
+      "kind": "face",
+      "crop_xyxy": [
+        336,
+        0,
+        1008,
+        499
+      ],
+      "resampler": "nearest_exact_pixel_replication",
+      "scale": 2
+    },
+    {
+      "file": "quality/evidence/user240-retry-wave01/a056/attempt-3/f239-lower-native2x.png",
+      "sha256": "ef598cc9105f7d4a5ea5e9a3aa3b6953636758f55d92d940ea169eb36b3486cc",
+      "frame_index": 239,
+      "kind": "lower",
+      "crop_xyxy": [
+        336,
+        346,
+        1008,
+        768
+      ],
+      "resampler": "nearest_exact_pixel_replication",
+      "scale": 2
+    }
+  ],
+  "pixel_operations": "Only native select, proportional evidence thumbnails and nearest2x crop replication; no key/palette/semantic/foreground modification.",
+  "final_media_approved": false,
+  "new_model_calls": 0
+}

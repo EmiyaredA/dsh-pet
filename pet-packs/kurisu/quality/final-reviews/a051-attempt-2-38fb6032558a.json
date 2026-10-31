@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "action_id": "a051",
+  "source_attempt_index": 2,
+  "spec_revision_id": "programmer-research-v2-2026-10-31",
+  "candidate_sha256": "38fb6032558a01a0d582bba7024e4b4ea45871676bf08d29e700ff63e5adaab1",
+  "source_sha256": "0847d96d16b26969b11fb74856629926a1b0efc7620cb27f19374abc82ec13de",
+  "candidate_file": "source/library/a051/attempt-2/processing-55be22c9-c7e1-44ca-a268-181f96fe7ed8/摸鱼刷手机被抓.webm",
+  "source_task_id": "dfa91b6d-3d33-4109-ac01-d2021e38e606",
+  "verdict": "reject",
+  "reviewer": "batch30_final_qa_parallel independent agent",
+  "reviewed_at": "2026-10-31T10:37:50.307997+00:00",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "defects": [
+    {
+      "severity": "major",
+      "type": "eye_color_change",
+      "frame": 168,
+      "evidence": "quality/final-reviews/a051-38fb6032558a/f168-dark-facehair3x.png",
+      "detail": "Both irises change from blue to flat pink/magenta during caught reaction and return blue by f216."
+    }
+  ],
+  "summary": "技术240帧通过，但f168被抓反应时两眼虹膜从蓝色变为大面积粉紫色；640四底和3倍原像素脸部均清楚，不是抗锯齿或亚像素。f216又回蓝，属于真实时序眼色改变。手机最终已收回，完整10秒播放及idle切换完成；本SHA最终不通过。",
+  "reason": "技术240帧通过，但f168被抓反应时两眼虹膜从蓝色变为大面积粉紫色；640四底和3倍原像素脸部均清楚，不是抗锯齿或亚像素。f216又回蓝，属于真实时序眼色改变。手机最终已收回，完整10秒播放及idle切换完成；本SHA最终不通过。",
+  "technical": {
+    "frames": 240,
+    "width": 640,
+    "height": 360,
+    "fps": "24/1",
+    "duration_seconds": 10.0,
+    "codec": "vp9",
+    "alpha_mode": "1",
+    "audio_streams": 0,
+    "all240_alpha0to255": true,
+    "all240_outer_boundary_alpha_zero": true,
+    "outside6_alpha_gt8_bad_frames": [],
+    "residual_metric_definition": "Alpha >8 pixels outside the 6-pixel square dilation of alpha>127 foreground; fixed screening metric, no matte changes.",
+    "first_bbox_alpha127": [
+      217,
+      60,
+      431,
+      330
+    ],
+    "last_bbox_alpha127": [
+      217,
+      60,
+      431,
+      330
+    ],
+    "feet_delta_px": 0
+  },
+  "technical_proof": "quality/final-reviews/a051-38fb6032558a/decoded-technical240.json",
+  "frame0_rgba_file": "quality/final-reviews/a051-38fb6032558a/f000-rgba.png",
+  "evidence_directory": "quality/final-reviews/a051-38fb6032558a",
+  "inspection_scope": {
+    "all240_automated_metrics": [
+      "decoded RGBA alpha range",
+      "outermost boundary alpha",
+      "residual-background fixed screening metric",
+      "foreground bounding boxes"
+    ],
+    "manual_native640_four_background_frames": [
+      0,
+      96,
+      168,
+      239
+    ],
+    "manual_native640_additional_blue_frames": [],
+    "manual_face_hair_native640_ROI_nearest3x_frames": [
+      120,
+      168,
+      216
+    ],
+    "actual_playback": "quality/final-reviews/a051-38fb6032558a/actual-browser-playback.json",
+    "limits": [
+      "All240 technical coverage is not all240 manual visual coverage.",
+      "Native full-body cells stay640x360; face/hair crops enlarge original decoded pixels with nearest-neighbor; no100px thumbnail conclusion.",
+      "Actual playback completion and sampled human observations are separate evidence.",
+      "Accepted idle is slightly warmer; comparison supports scale/position only, not exact RGB matching."
+    ]
+  },
+  "new_paid_calls": 0,
+  "reviewer_pixel_or_recipe_changes": 0,
+  "approval_or_runtime_mutations": false
+}

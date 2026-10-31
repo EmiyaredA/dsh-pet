@@ -1,0 +1,20 @@
+subject_definitions:
+<Subject 1> is the human chibi Kurisu maid in <Picture 1>, with fabric costume ears on her headband. Preserve her auburn hair, blue-violet eyes, costume, large round head and short plump body. Her rear silhouette consists solely of long hair and skirt. NO tail.
+
+summary:
+[reference generation] One 10-second full-body animation of <Subject 1> against a flat saturated GREEN digital matte, RGB(0,255,0).
+
+retention_analysis:
+<Subject 1> ([Shot 1]): fully_preserved identity, proportions and painted palette.
+<Picture 1> ([Shot 1]): fully_preserved character, wide framing, opening and ending posture.
+
+detailed_description:
+[Shot 1] 00:00.000 to 00:10.000. Fixed eye-level orthographic camera; center the complete figure at reference scale: ear tips at 20%, standing soles at 85% of frame height. Character colors remain exactly the reference under uniform neutral illumination. Painted highlights stay fixed. Only the named action is animated; NO added light effects or symbols. Every background pixel stays the same flat saturated GREEN RGB(0,255,0) throughout, including spaces between hair locks and around hands and shoes. Wide green margins surround the figure and props. A separate digital matte, delicate outlines and soft 2D cel shading. Named miniature props stay below her eyes, retrieved and stowed behind her body.
+
+00:00.000 to 00:02.000: reference front stance; prepare the gesture or prop. 00:02.000 to 00:07.000: Take a small cream dish with three pink cherry-blossom rice dumplings without leaves, eat one tiny bite and put the dish away. 00:07.000 to 00:09.000: lower hands and stow each prop smoothly. 00:09.000 to 00:10.000: hold the reference front stance with empty hands.
+
+overall_soundscape:
+Silence.
+
+non_diegetic_music:
+N/A.

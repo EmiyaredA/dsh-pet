@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "action_id": "a092",
+  "attempt_index": 2,
+  "source_sha256": "4bb5fac7b5d9ab23b17e6d523493c2150631f463ef1e4685996664a740644645",
+  "source_task_id": "3cbf9545-fb69-45ee-b6c8-9743ecf85181",
+  "source_result_asset_id": "1d94dc43-ee9f-4a92-92cf-8cefc81b3d30",
+  "canonical_source_file": "source/library/a092/attempt-2/余额-预算充足.mp4",
+  "inspected_source_file": "/Users/tonghao/Projects/dsh-pet/pet-packs/kurisu/source/library/a092/attempt-2/余额-预算充足.mp4",
+  "reviewed_at": "2026-10-30T17:48:21.581628+00:00",
+  "reviewer": "independent_green_gate_agent",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "processing_clearance": "reject",
+  "final_media_approved": false,
+  "summary": "Rejected after personally inspecting all eleven source-contact samples: the backdrop is pale mint rather than saturated green, and visible green contamination remains on the outer auburn hair and cat-ear/headband edges. All 240 frames fail the mandatory source-background gate.",
+  "defects": [
+    {
+      "severity": "hard",
+      "type": "unsaturated_pale_green_background",
+      "time_seconds": [
+        0,
+        10
+      ],
+      "description": "The source plate is visibly pale mint throughout. Recorded border RGB is [138..139,251..252,152..153]; all240frames fail the fixed saturated-green specification."
+    },
+    {
+      "severity": "hard",
+      "type": "foreground_palette_green_contamination",
+      "time_seconds": [
+        0,
+        10
+      ],
+      "source_frames": [
+        0,
+        24,
+        48,
+        72,
+        96,
+        120,
+        144,
+        168,
+        192,
+        216,
+        239
+      ],
+      "description": "Outer hair strands and headwear/ear boundaries visibly retain yellow-green/green contamination across the sampled source frames. This reproduces the user-reported edge/color problem; no local recoloring or white-threshold repair is authorized."
+    }
+  ],
+  "background_gate": {
+    "method": "all_frame_saturated_green_border_v1",
+    "passed": false,
+    "frames": 240,
+    "expected_frames": 240,
+    "failed_frame_count": 240,
+    "background_rgb_min": [
+      138.0,
+      251.0,
+      152.0
+    ],
+    "background_rgb_max": [
+      139.0,
+      252.0,
+      153.0
+    ]
+  },
+  "background_metrics_origin": "source-only queue report; independently verified source SHA and visually inspected contact samples",
+  "evidence": [
+    "quality/evidence/a092-limited-repair-attempt2-source.png"
+  ],
+  "portable_evidence": [
+    "quality/evidence/a092-limited-repair-attempt2-source.png"
+  ],
+  "inspection_scope": {
+    "contact_frames": [
+      0,
+      24,
+      48,
+      72,
+      96,
+      120,
+      144,
+      168,
+      192,
+      216,
+      239
+    ],
+    "source_sha_verified": true,
+    "new_model_calls": 0,
+    "video_transcode_performed": false,
+    "color_or_matte_repair_performed": false,
+    "ledger_modified": false
+  },
+  "allowed_processing": [],
+  "new_model_calls": 0
+}

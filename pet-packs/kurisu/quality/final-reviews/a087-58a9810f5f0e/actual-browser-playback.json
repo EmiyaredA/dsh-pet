@@ -1,0 +1,21 @@
+{
+  "browser": "Codex in-app browser",
+  "candidate_file": "source/library/a087/attempt-1/processing-a4b0edcb-2160-4c28-974e-9812154a3287/收红包.webm",
+  "candidate_sha256": "58a9810f5f0e392ad589d179dbbc5c0b7a8f74a877acab7800ad757d27063458",
+  "css_size": [
+    640,
+    360
+  ],
+  "duration": 10,
+  "started_at": "2026-10-31T10:41:00.705Z",
+  "ended_at": "2026-10-31T10:41:10.708Z",
+  "completed_10s": true,
+  "frame_callbacks_before_idle_switch": 239,
+  "first_media_time": 0.042,
+  "last_media_time": 9.958,
+  "idle_switch_performed": true,
+  "paused_after_switch": true,
+  "continuous_human_gaze_claim": false,
+  "observation_scope": "Actual real-time complete playback executed; visual perception uses sampled browser screenshots plus named native640 frames and enlarged face/hair. No all-frame manual inspection claim.",
+  "dropped_frames": "Not measured; callback count is not dropped-frame count."
+}

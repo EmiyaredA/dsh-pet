@@ -1,0 +1,50 @@
+{
+  "action_id": "a053",
+  "action_name": "逗灰猫",
+  "attempt": 1,
+  "source_file": "source/library/a053/attempt-1/逗灰猫.mp4",
+  "source_sha256": "89169467bd127003a190c15ec9872bbdf63c26ee596421eaa72a5e963f1b80ca",
+  "task_id": "6fcfe044-b129-4f65-860b-fac64d21371f",
+  "manifest": "quality/evidence/first-pass-native/a053/attempt-1/manifest.json",
+  "source_and_png_sha256_verified": true,
+  "actual_visual_frames": [
+    0,
+    12,
+    24,
+    48,
+    72,
+    96,
+    120,
+    144,
+    168,
+    192,
+    216,
+    239
+  ],
+  "inspection": "查看12张原生PNG按原像素裁切人物区域并拼排；对a056 f144另查看完整原生画面。",
+  "background": {
+    "result": "fail",
+    "method": "all_frame_saturated_blue_native_border_v2",
+    "failed_frame_count": 240,
+    "frames": 240,
+    "source": "library.json 中既有 native BLUE 边框指标；未重新扫描"
+  },
+  "foreground": {
+    "action_props": "f48灰猫出现，f96–144人物抚猫，f168猫被裙及人物遮挡，f192不见；猫尾是独立灰猫的尾巴，不能当人物多余尾巴；f239空手。",
+    "anatomy": "抽样中角色、短圆比例、双猫耳和可见双鞋保留；未见明确额外人体肢体或尾巴、明显脸眼扭曲、人物明显彩色光斑。道具与身体重叠或遮挡处、抽样之外时刻无法判定。",
+    "endpoint": "f0与f239均为大致相同正面站姿及尺度，f239空手；f239是否源片最终帧未验证。",
+    "assessment": "动作与道具观察见上；抽样不构成前景通过",
+    "evidence_frames": [
+      72,
+      120,
+      144,
+      168,
+      192,
+      239
+    ]
+  },
+  "verdict": "reject_source",
+  "reason": "既有蓝幕边界指标 240/240 帧失败。前景抽样不改变背景拒收。",
+  "limitations": "12帧离散样本，未做全时刻人工观察或连续播放；画面裁切拼排之外、道具遮挡区域及未抽样帧未验证；未审透明成片或安装表现。",
+  "reviewed_at": "2026-10-31T04:17:02.233503+00:00"
+}

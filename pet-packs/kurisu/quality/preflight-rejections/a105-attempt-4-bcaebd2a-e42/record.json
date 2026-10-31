@@ -1,0 +1,74 @@
+{
+  "at": "2026-10-30T20:04:02.004579+00:00",
+  "action_id": "a105",
+  "attempt_index_before_release": 4,
+  "canvas_node_id": "kurisu-a105",
+  "classification": "confirmed_not_enqueued_preflight_reservation",
+  "reason": "Official resolver reproduced self_asset_reference before task insertion; two original-node/project SDK snapshots show no new task. Root explicitly authorized audit release; original ApiError was not captured.",
+  "attempt": {
+    "started_at": "2026-10-30T19:50:22.777736+00:00",
+    "status": "submission_started",
+    "reservation_token": "bcaebd2a-e421-442e-ad2b-0b03210c48a4",
+    "submission_pid": 94880,
+    "model_id": "b217e3cd-884d-4015-a3fa-98ab7608a67e",
+    "model_slug": "wan2.2animate-v4-motion_retargeting",
+    "generation_mode": "reference",
+    "strategy": "wan_motion_reference_v1",
+    "resolution": "832x464",
+    "reference_asset_id": "c8e65934-8da3-4756-bfb4-ec41f8dde710",
+    "reference_sha256": "f3be325cb0fa1f5afdab90d5615487a3a92401eed054fc3d465f32cebd79ea22",
+    "driver_asset_id": "4d89f9c7-a53a-4462-adf2-4aa00902d02b",
+    "driver_sha256": "5460f738fa8678600fc5d37fc4334e551deec03c013db41b0242c58059b13aac",
+    "driver_source_file": "source/library/a105/attempt-3/工作状态-实验成功庆祝.mp4",
+    "driver_review_file": "quality/motion-drivers/a105-fl2va3.json",
+    "driver_review_sha256": "6ced636284e7a09fabdb0be51dc71fdf44c2ef89616b3de1f8f769e61c268f8e",
+    "expected_action": "Small success celebration: short pleased fist-pump and confident nod, then empty-handed standard front stance.",
+    "workflow_parameters": {
+      "seed": 314159
+    },
+    "raw_duration_controlled_by_request": false,
+    "processing_profile": "wan_normal_green_key_no_palette",
+    "expected_output": {
+      "duration_seconds": 10,
+      "fps": 24,
+      "frames": 240,
+      "width": 640,
+      "height": 360,
+      "codec": "vp9",
+      "alpha": true,
+      "audio_streams": 0,
+      "short_source_policy": "reject_no_repeat_or_time_stretch"
+    },
+    "normalized_prompt_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "previous_task_ids": [
+      "791f2f42-8d0c-4f5e-96e1-6daebb3f4930",
+      "b3e9757f-19cd-4f6d-bf77-b238e73ef2eb",
+      "8b8d3846-94b9-4a96-88aa-534a4d12500b"
+    ],
+    "chroma_background": "green",
+    "release_epoch": "heartbeat106-wan-production-01",
+    "request_file": "quality/generation-requests/a105-attempt-4.json",
+    "request_sha256": "2cdc8e6fa7b6e8ede4f3df933d8d04c2542fafd376ae7cc46d93201fdac9aa86",
+    "submission_error_type": "ApiError"
+  },
+  "original_request_file": "quality/generation-requests/a105-attempt-4.json",
+  "archived_request_file": "quality/preflight-rejections/a105-attempt-4-bcaebd2a-e42/request.json",
+  "archived_request_sha256": "2cdc8e6fa7b6e8ede4f3df933d8d04c2542fafd376ae7cc46d93201fdac9aa86",
+  "reconciliation_file": "quality/preflight-rejections/a105-attempt-4-bcaebd2a-e42/reconciliation.json",
+  "reconciliation_sha256": "42e56eaba359f3616e3dcf98d510de8901dc1900cae99f8bed3b234932969cc5",
+  "observed_original_http_error": null,
+  "inferred_official_code": "self_asset_reference",
+  "offline_mapped_status": 422,
+  "counts_before": {
+    "calls": 67,
+    "repairs": 23,
+    "other_model_calls": 8
+  },
+  "released_reservations": 1,
+  "actual_model_calls_removed": 0,
+  "counts_after": {
+    "calls": 66,
+    "repairs": 22,
+    "other_model_calls": 7
+  }
+}

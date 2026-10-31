@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "action_id": "a087",
+  "source_attempt_index": 1,
+  "spec_revision_id": null,
+  "candidate_sha256": "58a9810f5f0e392ad589d179dbbc5c0b7a8f74a877acab7800ad757d27063458",
+  "source_sha256": "9d955d1fea84f263fe047fdaf314308f40f0e77415ee6bd12235f7acb48bb59e",
+  "candidate_file": "source/library/a087/attempt-1/processing-a4b0edcb-2160-4c28-974e-9812154a3287/收红包.webm",
+  "source_task_id": "8e185c0a-ae96-4cfe-9077-d75a75ab183d",
+  "verdict": "reject",
+  "reviewer": "batch30_final_qa_parallel independent agent",
+  "reviewed_at": "2026-10-31T10:41:27.841587+00:00",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "defects": [
+    {
+      "severity": "major",
+      "type": "extra_foreground_particles",
+      "frames": [
+        132,
+        136
+      ],
+      "evidence": "quality/final-reviews/a087-58a9810f5f0e/alert-01-blue-native640.png",
+      "detail": "Numerous cream/gold teardrop sparkle particles burst around head, hair and feet; not residual alpha antialiasing."
+    },
+    {
+      "severity": "major",
+      "type": "prop_obscures_face",
+      "frame": 120,
+      "evidence": "quality/final-reviews/a087-58a9810f5f0e/f120-blue-facehair3x.png",
+      "detail": "Opened envelope triangular flap reaches nose bridge and covers mouth/nose instead of remaining below chin."
+    }
+  ],
+  "summary": "240帧VP9 Alpha格式和边界成立，但两项重大视觉缺陷：f120开红包三角翻盖高至鼻梁，遮住口鼻；f132/136全身四周新增多枚米黄/金色泪滴状装饰颗粒/光斑，固定outside6筛查在132,133,135至143命中，已实际640解码确认。红包最终收回，完整10秒播放和idle切换完成。本SHA最终拒绝。",
+  "reason": "240帧VP9 Alpha格式和边界成立，但两项重大视觉缺陷：f120开红包三角翻盖高至鼻梁，遮住口鼻；f132/136全身四周新增多枚米黄/金色泪滴状装饰颗粒/光斑，固定outside6筛查在132,133,135至143命中，已实际640解码确认。红包最终收回，完整10秒播放和idle切换完成。本SHA最终拒绝。",
+  "technical": {
+    "frames": 240,
+    "width": 640,
+    "height": 360,
+    "fps": "24/1",
+    "duration_seconds": 10.0,
+    "codec": "vp9",
+    "alpha_mode": "1",
+    "audio_streams": 0,
+    "all240_alpha0to255": true,
+    "all240_outer_boundary_alpha_zero": true,
+    "outside6_alpha_gt8_bad_frames": [
+      132,
+      133,
+      135,
+      136,
+      137,
+      138,
+      139,
+      140,
+      141,
+      142,
+      143
+    ],
+    "residual_metric_definition": "Alpha >8 pixels outside the 6-pixel square dilation of alpha>127 foreground; fixed screening metric, no matte changes.",
+    "first_bbox_alpha127": [
+      216,
+      60,
+      434,
+      330
+    ],
+    "last_bbox_alpha127": [
+      216,
+      61,
+      434,
+      330
+    ],
+    "feet_delta_px": 0
+  },
+  "technical_proof": "quality/final-reviews/a087-58a9810f5f0e/decoded-technical240.json",
+  "frame0_rgba_file": "quality/final-reviews/a087-58a9810f5f0e/f000-rgba.png",
+  "evidence_directory": "quality/final-reviews/a087-58a9810f5f0e",
+  "inspection_scope": {
+    "all240_automated_metrics": [
+      "decoded RGBA alpha range",
+      "outermost boundary alpha",
+      "residual-background fixed screening metric",
+      "foreground bounding boxes"
+    ],
+    "manual_native640_four_background_frames": [
+      0,
+      96,
+      168,
+      239
+    ],
+    "manual_native640_additional_blue_frames": [],
+    "manual_face_hair_native640_ROI_nearest3x_frames": [
+      120,
+      168
+    ],
+    "actual_playback": "quality/final-reviews/a087-58a9810f5f0e/actual-browser-playback.json",
+    "limits": [
+      "All240 technical coverage is not all240 manual visual coverage.",
+      "Native full-body cells stay640x360; face/hair crops enlarge original decoded pixels with nearest-neighbor; no100px thumbnail conclusion.",
+      "Actual playback completion and sampled human observations are separate evidence.",
+      "Accepted idle is slightly warmer; comparison supports scale/position only, not exact RGB matching."
+    ]
+  },
+  "new_paid_calls": 0,
+  "reviewer_pixel_or_recipe_changes": 0,
+  "approval_or_runtime_mutations": false
+}

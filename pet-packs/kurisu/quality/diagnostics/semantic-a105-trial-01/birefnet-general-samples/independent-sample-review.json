@@ -1,0 +1,46 @@
+{
+  "action_id": "a105",
+  "source_attempt_index": 3,
+  "source_sha256": "5460f738fa8678600fc5d37fc4334e551deec03c013db41b0242c58059b13aac",
+  "reviewer": "independent_animation_qa_agent",
+  "reviewed_at": "2026-10-31T02:05:56.077752+00:00",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "decision": "REJECT_SAMPLES_DO_NOT_EXPAND_TO_240",
+  "final_media_approved": false,
+  "counts_toward_106": false,
+  "personally_viewed_frames": [
+    0,
+    120
+  ],
+  "personally_viewed_backgrounds": [
+    "dark",
+    "blue"
+  ],
+  "scope": "Two representative native 640x360 side-by-side composites were personally reviewed; not all six samples, not a complete video or full-frame visual scan.",
+  "defects": [
+    {
+      "severity": "hard",
+      "type": "opaque_background_retained",
+      "frame": 120,
+      "description": "BiRefNet retains the bright green floor ellipse as visible opaque foreground beneath both shoes. It is a wide background object clearly visible on both dark and blue composites, not an uncertain one-pixel antialiasing detail."
+    },
+    {
+      "severity": "hard",
+      "type": "visible_green_halo",
+      "frame": 0,
+      "description": "Green outlines around the cat ears and long hair are visibly thicker than the isnet baseline in the native dark-background comparison. The replacement semantic Alpha has not solved source edge contamination."
+    }
+  ],
+  "partial_improvement_not_approval": "Face and white costume remain present in these samples, but retention of foreground anatomy does not offset a wide opaque green background object.",
+  "evidence_sha256": {
+    "0000-dark-compare.png": "d2a0cb8865f2c7c439ac0968fd3492d97a0dd57f3a6aca40b746b0c4b2ed5b83",
+    "0120-dark-compare.png": "f80bca2f5e68fb9f03c0b4d71f0619b547fc15d6c4cc761caf9ab4090f8e6d8e",
+    "0120-blue-compare.png": "dd777a25155fa32501c24eba2d0558c4b1705f4cb4e38ec7a91c254e0b2fbe48"
+  },
+  "reference_processing_report": "report.json",
+  "native_rgb_changed_by_reviewer": false,
+  "approval_or_ledger_changed": false,
+  "new_paid_model_calls": 0,
+  "reason": "f120把鲜绿地面椭圆完整保留为前景，f0猫耳和长发绿圈更厚；同一小样第二语义路线未解决背景与边缘，不扩整段。"
+}

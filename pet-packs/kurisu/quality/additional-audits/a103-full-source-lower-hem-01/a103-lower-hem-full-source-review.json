@@ -1,0 +1,66 @@
+{
+  "action_id": "a103",
+  "canonical_file": "pet/kurisu-animation/工作状态-整理实验记录.webm",
+  "canonical_sha256": "615aa8f01c1fb16a5ecae0938a7d27a31caf7b409967f63bf9e4cb6377797072",
+  "source_file": "source/library/a103/attempt-2/工作状态-整理实验记录.mp4",
+  "source_sha256": "d960b0af0314a2746ddf04f4eb720ac3aea215a856a471db55e89fed446ffe94",
+  "source_frames": 243,
+  "source_fps": 24,
+  "source_native_size": [
+    1344,
+    768
+  ],
+  "roi_source_coordinates": [
+    520,
+    550,
+    900,
+    760
+  ],
+  "all_raw_frames_chronological_contact_pages": [
+    "quality/additional-audits/a103-full-source-lower-hem-01/raw-lower-body-contiguous-0-29.png",
+    "quality/additional-audits/a103-full-source-lower-hem-01/raw-lower-body-contiguous-30-59.png",
+    "quality/additional-audits/a103-full-source-lower-hem-01/raw-lower-body-contiguous-60-89.png",
+    "quality/additional-audits/a103-full-source-lower-hem-01/raw-lower-body-contiguous-90-119.png",
+    "quality/additional-audits/a103-full-source-lower-hem-01/raw-lower-body-contiguous-120-149.png",
+    "quality/additional-audits/a103-full-source-lower-hem-01/raw-lower-body-contiguous-150-179.png",
+    "quality/additional-audits/a103-full-source-lower-hem-01/raw-lower-body-contiguous-180-209.png",
+    "quality/additional-audits/a103-full-source-lower-hem-01/raw-lower-body-contiguous-210-239.png",
+    "quality/additional-audits/a103-full-source-lower-hem-01/raw-lower-body-contiguous-240-242.png"
+  ],
+  "source_pixel_scale_relative_to_canonical": "Native1344 source crop, not downscaled: original source character is approximately2.65times current640 output size.",
+  "props_phase_frames": [
+    0,
+    24,
+    56,
+    128,
+    176,
+    200,
+    239,
+    242
+  ],
+  "props_phase_context": "quality/additional-audits/a103-full-source-lower-hem-01/raw-props-phase-context-native.png",
+  "technical240_checks_repeated": false,
+  "source_media_modified": false,
+  "ledger_modified": false,
+  "framewise_visual_review": "Completed: personally inspected all243 chronological original native lower-body ROI frames on9contact pages, plus8native props/hands/feet context frames. This is framewise chronological image review, not continuous real-time playback.",
+  "reviewed_at": "2026-10-30T21:37:31.692993+00:00",
+  "reviewer": "green_gate_independent_source_tracking",
+  "scoped_result": "NO_SAME_UNAPPROVED_LOWER_HEM_APPENDAGE_OBSERVED_IN_EXPOSED_REGIONS",
+  "withdrawal_recommended_for_this_defect": false,
+  "exposed_region_findings": {
+    "opening_frames": "0–17: two normal stocking legs/boots, reference lace hem; no extra rounded piece observed outside the skirt/stockings.",
+    "props_setup": "18–34: folding computer/stand comes from hand area and descends; no additional separate fleshy/black limb-like piece observed in exposed hem/foot regions.",
+    "props_held": "35–182: stand bars occlude narrow parts of hem/foot region. The open areas between bars, legs, hem and outer sides show no same extra rounded piece. Occluded anatomy is not certified invisible-safe.",
+    "props_stowed": "183–193: folding/lifting stand reveals hem and feet; no extra appendage observed during reveal.",
+    "clear_end_frames": "194–242: props fully absent, both hands at waist, two feet normal, right/left skirt/stocking boundaries exposed and no same pink/brown/black separate piece observed."
+  },
+  "occlusion_caveat": "Stand bars and computer overlap some pixels in the middle section. This report does not assert what hidden pixels contain; it certifies only the exposed rendered regions actually inspected.",
+  "props_source_note": "Original MP4 has front-facing laptop-screen information on rear lid in middle phase. Existing canonical report explicitly records matte_method=green_difference_with_tracked_plain_rear_lid; the current canonical blue-frame evidence shows a plain physical rear lid. This source-ROI review does not undo or newly approve that historical user-requested correction.",
+  "not_an_idle_relabel": true,
+  "does_not_count_as_a001": true,
+  "does_not_replace_existing_full_technical_checks": true,
+  "new_media_approval": false,
+  "no_new_model_calls": true,
+  "no_media_edits": true,
+  "no_ledger_edits": true
+}

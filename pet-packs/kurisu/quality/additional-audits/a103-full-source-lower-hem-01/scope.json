@@ -1,0 +1,46 @@
+{
+  "action_id": "a103",
+  "canonical_file": "pet/kurisu-animation/工作状态-整理实验记录.webm",
+  "canonical_sha256": "615aa8f01c1fb16a5ecae0938a7d27a31caf7b409967f63bf9e4cb6377797072",
+  "source_file": "source/library/a103/attempt-2/工作状态-整理实验记录.mp4",
+  "source_sha256": "d960b0af0314a2746ddf04f4eb720ac3aea215a856a471db55e89fed446ffe94",
+  "source_frames": 243,
+  "source_fps": 24,
+  "source_native_size": [
+    1344,
+    768
+  ],
+  "roi_source_coordinates": [
+    520,
+    550,
+    900,
+    760
+  ],
+  "all_raw_frames_chronological_contact_pages": [
+    "quality/additional-audits/a103-full-source-lower-hem-01/raw-lower-body-contiguous-0-29.png",
+    "quality/additional-audits/a103-full-source-lower-hem-01/raw-lower-body-contiguous-30-59.png",
+    "quality/additional-audits/a103-full-source-lower-hem-01/raw-lower-body-contiguous-60-89.png",
+    "quality/additional-audits/a103-full-source-lower-hem-01/raw-lower-body-contiguous-90-119.png",
+    "quality/additional-audits/a103-full-source-lower-hem-01/raw-lower-body-contiguous-120-149.png",
+    "quality/additional-audits/a103-full-source-lower-hem-01/raw-lower-body-contiguous-150-179.png",
+    "quality/additional-audits/a103-full-source-lower-hem-01/raw-lower-body-contiguous-180-209.png",
+    "quality/additional-audits/a103-full-source-lower-hem-01/raw-lower-body-contiguous-210-239.png",
+    "quality/additional-audits/a103-full-source-lower-hem-01/raw-lower-body-contiguous-240-242.png"
+  ],
+  "source_pixel_scale_relative_to_canonical": "Native1344 source crop, not downscaled: original source character is approximately2.65times current640 output size.",
+  "props_phase_frames": [
+    0,
+    24,
+    56,
+    128,
+    176,
+    200,
+    239,
+    242
+  ],
+  "props_phase_context": "quality/additional-audits/a103-full-source-lower-hem-01/raw-props-phase-context-native.png",
+  "technical240_checks_repeated": false,
+  "source_media_modified": false,
+  "ledger_modified": false,
+  "framewise_visual_review": "pending"
+}

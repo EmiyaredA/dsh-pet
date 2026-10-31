@@ -1,0 +1,25 @@
+{
+  "updated_at": "2026-10-31T05:18:39.867157+00:00",
+  "state": "reviewed",
+  "items": [
+    {
+      "action_id": "a066",
+      "source_sha256": "2c3a3e65221c39c03b78f25a6aff668edee37dc1c7d2744ecd821f7abd00b13b",
+      "processing_clearance": "allow_mild_color_and_green_key",
+      "report": "quality/source-reviews/a066-attempt-1.json"
+    },
+    {
+      "action_id": "a067",
+      "source_sha256": "66ae186206167b4dfb94a0f9e43936e81b5d78437733313d77c9dd6c84d961e5",
+      "processing_clearance": "reject",
+      "report": "quality/source-reviews/a067-attempt-1.json"
+    },
+    {
+      "action_id": "a068",
+      "source_sha256": "fd7f01b10b709f1cf5f7303629fe8c5ccc1f725a6a1f12d9519ae9a2fb25eb70",
+      "processing_clearance": "allow_mild_color_and_green_key",
+      "report": "quality/source-reviews/a068-attempt-1.json"
+    }
+  ],
+  "limitations": "6个源帧视觉抽样；允许仅限初次普通绿幕和轻微色偏，非透明成片验收。"
+}

@@ -1,0 +1,23 @@
+subject_definitions:
+<Subject 1> is the single human chibi Kurisu maid in <Picture 1>: the same auburn hair, blue-violet eyes, fabric cat-ear lace headband, compact proportions and maid outfit.
+<Picture 1> is the sole full-body character, color, scale and plain GREEN background reference.
+
+summary:
+[reference generation] One continuous 10-second desktop sticker showing the compact action below, then the same neutral stance.
+
+retention_analysis:
+<Subject 1> ([Shot 1]): fully_preserved - identity, painted colors, outfit and body proportions.
+<Picture 1> ([Shot 1]): fully_preserved - fixed composition and flat GREEN field throughout.
+
+detailed_description:
+[Shot 1] 00:00.000 to 00:10.000. Fixed eye-level full-body camera. Standing figure occupies about80% image height, upper ear tips near10% and soles near90%; keep both ear tips, hands and shoes fully in frame. Maintain the same scale and center. A solid GREEN chroma backdrop RGB(0,255,0) fills every background pixel, hair gap and floor region continuously. Constant neutral white illumination, unchanged auburn and blue-violet paint; no colored illumination, moving light, halo, gradient or background shape. Only this named action and its named small props move. No camera motion or scene transition.
+00:00.000 to 00:02.000: hold the front reference stance, hands empty; the whole surrounding field and floor are clear.
+00:02.000 to 00:07.000: Take ONE miniature warm-ivory paper sky lantern with a red rim. On a short tether let it rise only a few centimeters in front of her shoulder; watch it calmly. No glow on her body.
+00:07.000 to 00:09.000: Draw the same lantern back and put away lantern and tether completely.
+00:09.000 to 00:10.000: hold the exact empty-handed reference stance; the entire field and floor are clear.
+
+overall_soundscape:
+N/A.
+
+non_diegetic_music:
+N/A.

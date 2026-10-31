@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "action_id": "a049",
+  "attempt_index": 3,
+  "action_name": "端详怀表",
+  "spec_revision_id": "steins-props-v3-2026-10-31",
+  "source_file": "source/library/a049/attempt-3/端详怀表.mp4",
+  "source_sha256": "93887c9764e743c2084fc260e22e9e31ee5eecdd2caee49aadc38f9cc959e3b6",
+  "source_task_id": "0d99a8ff-f590-4bb2-b28e-4c714b284aa7",
+  "result_asset_id": "bfafde25-c68a-466c-8ae5-327753a68046",
+  "model_slug": "minimax_h3_zm_u24",
+  "reviewer": "animation_qa independent agent",
+  "reviewed_at": "2026-10-31T11:39:38.265267+00:00",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "processing_clearance": "allow_mild_color_and_green_key",
+  "final_media_approved": false,
+  "reason": "Representative native frames show a recognizable pocket watch opened and inspected with its face tilted upward toward the character, then fully stowed by frame239. Complete headwear, shoes and stable neutral character colors are retained in these samples.",
+  "defects": [],
+  "source_background": {
+    "method": "all_frame_saturated_green_native_border_v2",
+    "passed": true,
+    "frames": 240,
+    "expected_frames": 240,
+    "failed_frame_count": 0,
+    "failed_frames": [],
+    "background_rgb_min": [
+      1.0,
+      226.0,
+      5.0
+    ],
+    "background_rgb_max": [
+      2.0,
+      229.0,
+      9.0
+    ],
+    "maximum_spatial_delta": 21.0,
+    "maximum_temporal_delta": 3.0,
+    "thresholds": {
+      "dominant_min": 180,
+      "other_channels_max": 100,
+      "dominance_min": 100,
+      "spatial_delta_max": 35,
+      "temporal_delta_max": 24
+    },
+    "expected_background": "#00FF00",
+    "white_matte_fallback": false,
+    "visual_foreground_review_required": true,
+    "enclosed_background_and_foreground_verified": false,
+    "native_size": [
+      1344,
+      768
+    ],
+    "boundary_pixels_per_frame": 4224,
+    "measurement": "native_one_pixel_outer_boundary_no_spatial_resampling",
+    "sampling": {
+      "duration_seconds": 10,
+      "fps": 24,
+      "expected_frames": 240
+    }
+  },
+  "inspection_scope": {
+    "existing_contact_personally_viewed": false,
+    "native_full_frames_personally_viewed": [
+      0,
+      96,
+      144,
+      239
+    ],
+    "native_face_nearest2x_frames_personally_viewed": [
+      144
+    ],
+    "native_size": [
+      1344,
+      768
+    ],
+    "technical_scope": "Existing native240 boundary gate reused, not rerun. Source and evidence manifest are SHA-bound.",
+    "limits": [
+      "Representative source stills only, not all243 manually inspected.",
+      "No continuous source video playback in this source stage; complete10s playback is reserved for final candidate QA.",
+      "No automatic final-media approval or repair."
+    ]
+  },
+  "visual_findings": [
+    "Frame144 shows the lid raised and the watch face lying upward where she can inspect it; frame96 is an intermediate hinge rotation and is not treated as a fixed screen-facing-camera error.",
+    "No readable clock digits are required. The gold chain remains below the face and within the frame.",
+    "Two black angular strips visible behind the side-facing skirt are compatible with garment bow/ribbon tails in these stills; this is not a claim of full temporal anatomy clearance. Final playback must check their motion and silhouette.",
+    "Initial and final sampled frames are empty-handed. Final technical/temporal/edge review is required before release."
+  ],
+  "evidence_manifest": "quality/evidence/steins-props-v3-firstpass/a049/attempt-3/manifest.json",
+  "evidence_manifest_sha256": "21d44b2843cf1781e276d8696471501e266feefcc88a5ff5e9c49f67b9b6b86a",
+  "new_model_calls": 0,
+  "processing_performed": false,
+  "ledger_or_approval_modified": false
+}

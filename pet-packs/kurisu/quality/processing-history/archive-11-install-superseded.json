@@ -1,0 +1,110 @@
+{
+  "verified_at": "2026-10-30T17:09:39.373Z",
+  "zip": "temp/kurisu/kurisu-pet-partial-2026-10-31.zip",
+  "extracted_installer_sha256": "efdf1f218119771b6ad13142020c4cc02a2dc0e3fdfe39b8dc199098d37c2f78",
+  "configured_animation_count": 2,
+  "shipped_webm_count": 11,
+  "approved_animation_count": 11,
+  "backup_count": 2,
+  "old_config_backup_byte_exact": true,
+  "old_animation_backups_hash_exact": true,
+  "preserved_instance_fields": [
+    "id",
+    "name",
+    "size",
+    "position",
+    "display",
+    "whisperPrompt",
+    "existing raw facing metadata"
+  ],
+  "preserved_display_preferences": [
+    "font",
+    "confineToScreen"
+  ],
+  "hot_update_preserved_facing_and_actual_position": true,
+  "cold_restart_facing_persistence_supported": false,
+  "main_fish_and_global_settings_untouched": true,
+  "missing_media_update_rejected_before_mutation": true,
+  "model_calls": 0,
+  "live_8770_accessed": false,
+  "production_ledger_modified": false,
+  "verified_archive_content": "Installer, runtime configuration and all 11 WebM hashes; report-only archive additions do not invalidate these checks",
+  "isolated_test_directory": "temp/kurisu/install-verification-2026-10-31",
+  "actual_host_loader_preserved_font_and_confinement": true,
+  "actual_host_loader_preserved_both_instances": true,
+  "tests": {
+    "installer_passed": 4,
+    "runtime_and_hot_update_passed": 3
+  },
+  "runtime_configuration_sha256": "f90400ed93fdea10b700c0741c0b835bcb234c74377cd3bac01767104639cc54",
+  "runtime_webm_sha256": [
+    {
+      "id": "a001",
+      "name": "待机呼吸",
+      "file": "pet/kurisu-animation/待机呼吸.webm",
+      "sha256": "10717cdea36065ed9e6a0360a7174ff1a79b7dea9523939376980b5f74219132"
+    },
+    {
+      "id": "a002",
+      "name": "左右张望",
+      "file": "pet/kurisu-animation/左右张望.webm",
+      "sha256": "831d80bef0ff2dd03a35c6490fd67615f3ee99b152efcb00f448c84032f2ed15"
+    },
+    {
+      "id": "a004",
+      "name": "点击回应-傲娇",
+      "file": "pet/kurisu-animation/点击回应-傲娇.webm",
+      "sha256": "2c3e714a9418d53395de459e89299233f823936a682ff50e64088f63754cb1d8"
+    },
+    {
+      "id": "a005",
+      "name": "点击回应-开心挥手",
+      "file": "pet/kurisu-animation/点击回应-开心挥手.webm",
+      "sha256": "bdf17c8b2df35991297ae1a998132cd9edaa38c48f9a900fa4e0b3d93c2401d0"
+    },
+    {
+      "id": "a006",
+      "name": "点击回应-害羞捂脸",
+      "file": "pet/kurisu-animation/点击回应-害羞捂脸.webm",
+      "sha256": "2068984d756db5f177bd209675170168da56ee8c0b37ebbaba88f59c04167bb0"
+    },
+    {
+      "id": "a008",
+      "name": "点击回应-认可点头",
+      "file": "pet/kurisu-animation/点击回应-认可点头.webm",
+      "sha256": "b228c8a9a101e4727f0c3c65f1b9b8fb8cf962eff7821e15fde2111879324b82"
+    },
+    {
+      "id": "a092",
+      "name": "余额-预算充足",
+      "file": "pet/kurisu-animation/余额-预算充足.webm",
+      "sha256": "5ad4737b5d55cd056e5da7a4c27faa76082110bc414f42a0b3c36ae9d9855437"
+    },
+    {
+      "id": "a101",
+      "name": "工作状态-托腮推理",
+      "file": "pet/kurisu-animation/工作状态-托腮推理.webm",
+      "sha256": "06ebc0e33ac8ecd63b407f061e8196442f76eb9f1a583750896e3a81883f4ff4"
+    },
+    {
+      "id": "a102",
+      "name": "工作状态-专注敲键盘",
+      "file": "pet/kurisu-animation/工作状态-专注敲键盘.webm",
+      "sha256": "3b890f38928effc3b3be0823955daa19332f7f47b7d7bd34ff4d98a0611d494a"
+    },
+    {
+      "id": "a103",
+      "name": "工作状态-整理实验记录",
+      "file": "pet/kurisu-animation/工作状态-整理实验记录.webm",
+      "sha256": "615aa8f01c1fb16a5ecae0938a7d27a31caf7b409967f63bf9e4cb6377797072"
+    },
+    {
+      "id": "a105",
+      "name": "工作状态-实验成功庆祝",
+      "file": "pet/kurisu-animation/工作状态-实验成功庆祝.webm",
+      "sha256": "74b47ba9bf4d1363993906c3f54e1454bf8c651fbdda295f562d050327bca5e1"
+    }
+  ],
+  "superseded": true,
+  "superseded_reason": "11-clip archive withdrawn after user found white hair islands in a092/a105; this verifies installation mechanics only, not media quality."
+}

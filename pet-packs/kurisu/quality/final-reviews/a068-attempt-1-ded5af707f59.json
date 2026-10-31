@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "action_id": "a068",
+  "source_attempt_index": 1,
+  "candidate_sha256": "ded5af707f59df8710d532442ed17fb18d6db77b2ace0e38133a860aaba7177d",
+  "source_sha256": "fd7f01b10b709f1cf5f7303629fe8c5ccc1f725a6a1f12d9519ae9a2fb25eb70",
+  "source_task_id": "ae27a2ff-44df-417b-b26e-bb58ec950404",
+  "candidate_file": "source/library/a068/attempt-1/processing-65f8e135-ca35-4e4a-873f-a392222109ca/吃甜甜圈.webm",
+  "verdict": "pass",
+  "reviewer": "animation_qa independent agent",
+  "reviewed_at": "2026-10-31T06:04:02.679821+00:00",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "approval_mutation_performed": false,
+  "reason": "正常640四底及脸发原尺寸3×抽查未见明显残白、绿晕、主体缺失或新增附肢；目标食物与吃食动作可辨，末尾道具收回。实际10秒循环和待机切换已执行，身高/脚底差在1–2px内，未见明显大小跳变。",
+  "technical": {
+    "decoded_frames": 240,
+    "width": 640,
+    "height": 360,
+    "fps": 24,
+    "duration_seconds": 10,
+    "codec": "vp9",
+    "audio_streams": 0,
+    "all240_alpha_min0_max255": true,
+    "all240_outer_boundary_alpha_zero": true,
+    "first_bbox_alpha127": [
+      217,
+      60,
+      433,
+      330
+    ],
+    "last_bbox_alpha127": [
+      216,
+      60,
+      432,
+      330
+    ],
+    "feet_delta_px": 0,
+    "height_delta_px": 0,
+    "idle_scale_reference": {
+      "idle_sha256": "10717cdea36065ed9e6a0360a7174ff1a79b7dea9523939376980b5f74219132",
+      "idle_first_bbox_alpha127": [
+        217,
+        59,
+        430,
+        330
+      ],
+      "current_first_bbox_alpha127": [
+        217,
+        60,
+        433,
+        330
+      ],
+      "current_last_bbox_alpha127": [
+        216,
+        60,
+        432,
+        330
+      ]
+    },
+    "proof": "quality/final-reviews/a068-ded5af707f59/decoded-technical240.json"
+  },
+  "inspection_scope": {
+    "normal640_stills_personally_viewed": [
+      {
+        "frame": 0,
+        "background": "blue"
+      },
+      {
+        "frame": 72,
+        "background": "dark"
+      },
+      {
+        "frame": 120,
+        "background": "light"
+      },
+      {
+        "frame": 239,
+        "background": "checker"
+      }
+    ],
+    "face_hair_from640_nearest3x_personally_viewed": [
+      {
+        "frame": 0,
+        "background": "dark"
+      },
+      {
+        "frame": 120,
+        "background": "blue"
+      },
+      {
+        "frame": 239,
+        "background": "dark"
+      }
+    ],
+    "source_qa": "quality/source-reviews/a068-attempt-1.json",
+    "actual_playback_proof": "quality/final-reviews/a068-ded5af707f59/actual-browser-playback.json",
+    "limits": [
+      "240-frame technical coverage is not a claim of240 frames manually examined.",
+      "No zero-drop playback claim; no claim of pixel-identical palette to the accepted older idle.",
+      "This is a quality verdict on the exact candidate SHA, not a ledger/approval/config mutation."
+    ]
+  },
+  "visual_findings": {
+    "action": "Pink ring doughnuts and a small plate/utensil are recognizable. Hand-to-mouth eating is shown; all props are stowed for the empty-hand ending.",
+    "matte": "Reviewed hair negative spaces reveal the chosen background. No conspicuous white island, green halo, detached background strip or obvious missing white costume detail was seen in the native640 samples. Ordinary subpixel antialiasing at3x was not classified as a deformation.",
+    "face_and_body": "Two cat ears, lace headband, pink bows, auburn hair and blue-violet eyes remain recognizable; no obvious moving light spots, eye collapse or added limb/tail was seen in reviewed views.",
+    "scale_and_endpoint": "Initial/final empty-hand stance is retained, with0–1px own endpoint height/feet drift. Relative to accepted idle, first-frame top/feet differ by at most1px and total height by at most2px; sampled same-canvas switching showed no obvious scale snap. Older idle is a little warmer in color.",
+    "temporal": "Actual loop playback and pause/source switches functioned. No obvious temporal defect was observed in sampled playback screenshots; exhaustive per-frame face/color inspection was not performed."
+  },
+  "defects": [],
+  "evidence_directory": "quality/final-reviews/a068-ded5af707f59",
+  "new_paid_calls": 0,
+  "repair_iterations": 0
+}

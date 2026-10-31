@@ -1,0 +1,21 @@
+{
+  "browser": "Chrome dedicated final QA tab",
+  "candidate_file": "source/library/a049/attempt-3/processing-c1c7fe69-4b0e-48f8-bd82-b9c5974224e6/端详怀表.webm",
+  "candidate_sha256": "347ea802c3f87eabd9a4671dc275b9eb993d93f03c6a346085274fe53d2593db",
+  "css_size": [
+    640,
+    360
+  ],
+  "duration": 10,
+  "started_at": "2026-10-31T11:40:29.343Z",
+  "ended_at": "2026-10-31T11:40:39.347Z",
+  "completed_10s": true,
+  "frame_callbacks_before_idle_switch": 239,
+  "first_media_time": 0.042,
+  "last_media_time": 9.958,
+  "idle_switch_performed": true,
+  "paused_after_switch": true,
+  "continuous_human_gaze_claim": false,
+  "observation_scope": "Actual full real-time playback executed; human evidence consists of sampled browser screenshots and native640 phase/anomaly stills plus original-pixel enlarged face/hair and watch ROIs. No all-frame manual claim.",
+  "dropped_frames": "Not measured; callback count is not dropped-frame count."
+}

@@ -1,0 +1,27 @@
+{
+  "evidence_type": "Actual CUA DOM facts personally observed",
+  "candidate": {
+    "active": "a091",
+    "time": 0,
+    "paused": true,
+    "loops": 1,
+    "callbacks": 241,
+    "session": {
+      "src": "../../../source/library/a091/attempt-1/processing-1855fcdf-b906-4e2e-aba0-6d2a8782a718/认真反驳.webm",
+      "duration": 10,
+      "completedLoops": 1,
+      "callbacks": 241,
+      "time": 0,
+      "paused": true
+    }
+  },
+  "idle_comparison": {
+    "active": "idle",
+    "time": 1.3852,
+    "paused": true,
+    "loops": 3,
+    "callbacks": 754
+  },
+  "browser_tab_closed": true,
+  "manual_all_frame_claim": false
+}

@@ -1,0 +1,48 @@
+{
+  "action_id": "a003",
+  "attempt_index": 4,
+  "processing_clearance": "reject",
+  "summary": "Previously confirmed moving green light spots cross both eyes, forehead, hair and clothing. Green border alone does not make source acceptable.",
+  "defects": [
+    {
+      "severity": "hard",
+      "type": "localized_moving_green_face_light",
+      "time_seconds": [
+        2.3,
+        4.6
+      ],
+      "source_frames": [
+        57,
+        58,
+        59,
+        72,
+        83,
+        106,
+        107,
+        108,
+        109
+      ],
+      "description": "Headcore424green-dominant pixels atframe58 and429at106; bright spots turn irises green as they cross. No local facial patching or anatomical hole cleanup allowed."
+    }
+  ],
+  "evidence": [
+    "temp/kurisu/agent-qa/a003-green-regen-face-spots.png",
+    "temp/kurisu/agent-qa/a003-green-regen-motion-metrics.json"
+  ],
+  "allowed_processing": [],
+  "schema_version": 1,
+  "source_sha256": "c101fff022705d795a872a0c88310bb1e73f4ca1cc00966b14e4f93835648c25",
+  "inspected_source_file": "/Users/tonghao/Projects/dsh-pet/pet-packs/kurisu/source/library/a003/attempt-4/被提起悬空.mp4",
+  "reviewed_at": "2026-10-30T14:15:26.097626+00:00",
+  "reviewer": "independent_animation_qa_agent",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "final_media_approved": false,
+  "new_model_calls": 0,
+  "portable_evidence": [
+    "quality/evidence/a003-latest-qa.png"
+  ],
+  "canonical_source_file": "source/library/a003/attempt-4/被提起悬空.mp4",
+  "source_task_id": "15553ffe-a0f7-49b7-8cc9-2fed7162d9cf",
+  "source_result_asset_id": "8cbe6ee0-48c8-4bdf-a4a3-c5a318de48fb"
+}

@@ -1,0 +1,38 @@
+{
+  "at": "2026-10-31T12:08:37.024079+00:00",
+  "scope_id": "remaining-firstpass-a090-a091-01",
+  "total": 2,
+  "passed": 2,
+  "failed": 0,
+  "in_progress": 0,
+  "source_received": 2,
+  "rows": [
+    {
+      "id": "a090",
+      "name": "扶额无语",
+      "status": "approved",
+      "sha256": "f8fceced7d545f6332d72473f3d164130bd709358ecc49cac64664e2ba740f82",
+      "file": "pet/kurisu-animation/扶额无语.webm",
+      "delivery_asset_id": "187d67dc-5085-41ea-bb17-abffdf20d412"
+    },
+    {
+      "id": "a091",
+      "name": "认真反驳",
+      "status": "approved",
+      "sha256": "0a71470a93e09f80cbc8d6daa092147930b841a938975da5cc46edfb2a293f89",
+      "file": "pet/kurisu-animation/认真反驳.webm",
+      "delivery_asset_id": "11b2745e-41ec-4567-abdf-1863c10f130d"
+    }
+  ],
+  "new_firstpass_model_calls": 2,
+  "corrective_calls": 0,
+  "original_spec_none": true,
+  "all_current_spec_sources": 106,
+  "all_approved": 26,
+  "calls": {
+    "calls": 172,
+    "repairs": 67,
+    "other_model_calls": 79
+  },
+  "generation_not_blocked_by_prior_twelve_review": true
+}

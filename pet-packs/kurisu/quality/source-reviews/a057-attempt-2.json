@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "action_id": "a057",
+  "attempt_index": 2,
+  "action_name": "喝 Dr Pepper",
+  "spec_revision_id": "steins-props-v3-2026-10-31",
+  "source_file": "source/library/a057/attempt-2/喝 Dr Pepper.mp4",
+  "source_sha256": "86d2672a96fb817640782cc7513c4b52c2603cd319b0203af684843e5b16cae4",
+  "source_task_id": "cca8e401-6024-4c4e-8138-0a36fac797fd",
+  "result_asset_id": "6a13f324-35e9-4245-a61d-5f760030f2bb",
+  "model_slug": "minimax_h3_zm_u24",
+  "reviewer": "animation_qa independent agent",
+  "reviewed_at": "2026-10-31T11:41:34.786030+00:00",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "processing_clearance": "reject",
+  "final_media_approved": false,
+  "reason": "The first frame already contains a large Dr Pepper can standing separately beside the left shoe, while the final baseline has no can. This breaks the required prop-free common start/end stance and would pop the can into the idle transition.",
+  "defects": [
+    {
+      "severity": "hard",
+      "type": "initial_prop_present_endpoint_mismatch",
+      "frames": [
+        0,
+        239
+      ],
+      "description": "A large can is already on the ground beside the character in the opening frame, but absent in the final prop-free baseline."
+    }
+  ],
+  "source_background": {
+    "method": "all_frame_saturated_green_native_border_v2",
+    "passed": true,
+    "frames": 240,
+    "expected_frames": 240,
+    "failed_frame_count": 0,
+    "failed_frames": [],
+    "background_rgb_min": [
+      3.0,
+      231.0,
+      5.0
+    ],
+    "background_rgb_max": [
+      4.0,
+      234.0,
+      7.0
+    ],
+    "maximum_spatial_delta": 8.0,
+    "maximum_temporal_delta": 2.0,
+    "thresholds": {
+      "dominant_min": 180,
+      "other_channels_max": 100,
+      "dominance_min": 100,
+      "spatial_delta_max": 35,
+      "temporal_delta_max": 24
+    },
+    "expected_background": "#00FF00",
+    "white_matte_fallback": false,
+    "visual_foreground_review_required": true,
+    "enclosed_background_and_foreground_verified": false,
+    "native_size": [
+      1344,
+      768
+    ],
+    "boundary_pixels_per_frame": 4224,
+    "measurement": "native_one_pixel_outer_boundary_no_spatial_resampling",
+    "sampling": {
+      "duration_seconds": 10,
+      "fps": 24,
+      "expected_frames": 240
+    }
+  },
+  "inspection_scope": {
+    "existing_contact_personally_viewed": false,
+    "native_full_frames_personally_viewed": [
+      0,
+      96,
+      144,
+      239
+    ],
+    "native_face_nearest2x_frames_personally_viewed": [],
+    "native_size": [
+      1344,
+      768
+    ],
+    "technical_scope": "Existing native240 boundary gate reused, not rerun. Source and evidence manifest are SHA-bound.",
+    "limits": [
+      "Representative source stills only, not all243 manually inspected.",
+      "No continuous source video playback in this source stage; complete10s playback is reserved for final candidate QA.",
+      "No automatic final-media approval or repair."
+    ]
+  },
+  "visual_findings": [
+    "The named drinking action is recognizable and the raised can at the mouth is a necessary drinking exception, not itself a waist-height failure. Both eyes remain visible at frame96.",
+    "The dark maroon/ivory can and character palette look stable in the reviewed samples, and all headwear and shoes remain in frame.",
+    "Rejection is specifically the pre-existing can in frame0 and endpoint prop mismatch, not readable branding or normal sip occlusion."
+  ],
+  "evidence_manifest": "quality/evidence/steins-props-v3-firstpass/a057/attempt-2/manifest.json",
+  "evidence_manifest_sha256": "4873e7a370b09c83f759162254ee8bfebb3a9c01af4471df9679421e208d2181",
+  "new_model_calls": 0,
+  "processing_performed": false,
+  "ledger_or_approval_modified": false
+}

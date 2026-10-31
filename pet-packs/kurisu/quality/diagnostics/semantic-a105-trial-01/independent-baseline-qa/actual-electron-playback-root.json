@@ -1,0 +1,79 @@
+{
+  "scope": "one unapproved a105 semantic diagnostic, actual isolated browser playback; no human continuous review",
+  "duration": 10,
+  "dimensions": [
+    640,
+    360
+  ],
+  "callbacks": 251,
+  "loops": 1,
+  "errors": [],
+  "qualityBefore": {
+    "total": 4,
+    "dropped": 0,
+    "corrupted": 0
+  },
+  "alphaSamples": [
+    {
+      "time": 0.517152,
+      "transparent": 187281,
+      "partial": 6451,
+      "opaque": 36668
+    },
+    {
+      "time": 5.02188,
+      "transparent": 186257,
+      "partial": 7680,
+      "opaque": 36463
+    },
+    {
+      "time": 0.61446,
+      "transparent": 187272,
+      "partial": 6439,
+      "opaque": 36689
+    }
+  ],
+  "eventLog": [
+    {
+      "e": "playing",
+      "t": 0.000119
+    },
+    {
+      "e": "waiting",
+      "t": 0
+    },
+    {
+      "e": "playing",
+      "t": 0.000247
+    },
+    {
+      "e": "pause",
+      "t": 0.614492
+    },
+    {
+      "e": "playing",
+      "t": 0.616379
+    }
+  ],
+  "pauseResume": {
+    "stable": true,
+    "resumed": true
+  },
+  "qualityAfter": {
+    "total": 265,
+    "dropped": 10,
+    "corrupted": 0
+  },
+  "qualityDelta": {
+    "total": 261,
+    "dropped": 10,
+    "corrupted": 0
+  },
+  "passed": true,
+  "candidate_sha256": "c96349e8adfce16dfe6ef9f081a88578f3ee3078bf71a38d6f0a2b23fd175320",
+  "media_unchanged": true,
+  "electron": "43.3.0",
+  "chromium": "150.0.7871.212",
+  "completed_at": "2026-10-31T01:23:58.680Z",
+  "approved": false
+}

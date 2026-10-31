@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "action_id": "a050",
+  "attempt_index": 3,
+  "action_name": "盯着手机等 D-mail 回信",
+  "spec_revision_id": "steins-props-v3-2026-10-31",
+  "source_file": "source/library/a050/attempt-3/盯着手机等 D-mail 回信.mp4",
+  "source_sha256": "935549f787e252d911d21b616c990a1ac3110d5cf52905b47322d777f37b6711",
+  "source_task_id": "2248980a-251e-4e85-8437-096370c14cd1",
+  "result_asset_id": "a4fa7fc0-a792-43e1-8179-eb171755c44d",
+  "reviewer": "root source-content reviewer separate from media processing",
+  "reviewed_at": "2026-10-31T11:39:32.164761+00:00",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "processing_clearance": "reject",
+  "final_media_approved": false,
+  "reason": "手机最初明确以后置摄像头背壳朝镜头，但f144/f192信封UI却出现在同一后盖摄像头这一面，成为背盖显示屏幕信息，违背屏幕朝角色及背面不显示UI要求。本轮留原片，不key、不画掉图标或重提。",
+  "defects": [
+    {
+      "severity": "hard",
+      "type": "screen_UI_on_rear_phone_cover",
+      "frames": [
+        144,
+        192
+      ],
+      "description": "Amber envelope appears on the exterior panel that also has the rear camera lens; the initial plain rear cover becomes a UI display while facing viewer."
+    }
+  ],
+  "source_background": {
+    "method": "all_frame_saturated_green_native_border_v2",
+    "passed": true,
+    "frames": 240,
+    "expected_frames": 240,
+    "failed_frame_count": 0,
+    "failed_frames": [],
+    "background_rgb_min": [
+      2.0,
+      228.0,
+      4.0
+    ],
+    "background_rgb_max": [
+      3.0,
+      233.0,
+      6.0
+    ],
+    "maximum_spatial_delta": 10.0,
+    "maximum_temporal_delta": 3.0,
+    "thresholds": {
+      "dominant_min": 180,
+      "other_channels_max": 100,
+      "dominance_min": 100,
+      "spatial_delta_max": 35,
+      "temporal_delta_max": 24
+    },
+    "expected_background": "#00FF00",
+    "white_matte_fallback": false,
+    "visual_foreground_review_required": true,
+    "enclosed_background_and_foreground_verified": false,
+    "native_size": [
+      1344,
+      768
+    ],
+    "boundary_pixels_per_frame": 4224,
+    "measurement": "native_one_pixel_outer_boundary_no_spatial_resampling",
+    "sampling": {
+      "duration_seconds": 10,
+      "fps": 24,
+      "expected_frames": 240
+    }
+  },
+  "inspection_scope": {
+    "width640_full_frames_personally_viewed": [
+      0,
+      48,
+      96,
+      144,
+      192,
+      239
+    ],
+    "native_nearest2x_face_frames_personally_viewed": [
+      144
+    ],
+    "all240_native_background_metric_reused": true,
+    "source_video_continuous_playback_reviewed": false,
+    "limits": [
+      "Representative stills sufficient for the rear-cover UI failure; no claim of manual all240 review."
+    ]
+  },
+  "evidence_manifest": "quality/evidence/steins-props-v3-firstpass/a050/attempt-3/manifest.json",
+  "new_model_calls": 0,
+  "new_local_repairs": 0
+}

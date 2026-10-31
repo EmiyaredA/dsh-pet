@@ -1,0 +1,196 @@
+{
+  "schema_version": 1,
+  "action_id": "a052",
+  "attempt_index": 2,
+  "action_name": "CI 绿灯比耶",
+  "spec_revision_id": "programmer-research-v2-2026-10-31",
+  "source_file": "source/library/a052/attempt-2/CI 绿灯比耶.mp4",
+  "source_sha256": "7d84b29a6864b65949898954757d2ab051618382f9fc208144f85d7163af7da6",
+  "source_task_id": "f060e780-8813-44e6-b473-71aa448ed6b4",
+  "result_asset_id": "7370dfa0-1220-469f-86af-8f93e31b63e5",
+  "model_slug": "minimax_h3_zm_u24",
+  "reference_file": "references/kurisu-front-80-opaque-blue.png",
+  "reference_sha256": "4e9014ec508cd4a3abb803013f656f953d724bca9d1edff273d49c9cdab3506d",
+  "reviewer": "green_gate independent source visual reviewer",
+  "reviewed_at": "2026-10-31T06:57:24.346941+00:00",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "processing_clearance": "reject",
+  "final_media_approved": false,
+  "reason": "原片6秒处出现强烈鲜绿色放射光，覆盖双眼、面部、头发和衣服；原蓝底同时明显变暗。绿色标记没有停留为卡片上的平面油墨。因此不能以普通key修复或把人物绿光当背景删除。",
+  "defects": [
+    {
+      "severity": "hard",
+      "kind": "foreground_lighting",
+      "frame": 144,
+      "timestamp_seconds": 6.0,
+      "description": "Bright green radial starburst and luminous blobs cross both irises/face, hair strands and upper dress, far beyond the charcoal CI card. This is baked foreground lighting, not ordinary boundary spill."
+    },
+    {
+      "severity": "hard",
+      "kind": "background",
+      "description": "Reused exact native BLUE gate:79/240 failed; maximum spatial delta209, temporal106. Blue background darkens during the effect."
+    }
+  ],
+  "source_background": {
+    "method": "all_frame_saturated_blue_native_border_v2",
+    "passed": false,
+    "frames": 240,
+    "expected_frames": 240,
+    "failed_frame_count": 79,
+    "failed_frames": [
+      55,
+      56,
+      57,
+      138,
+      139,
+      140,
+      141,
+      142,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      149,
+      150,
+      151,
+      152,
+      153,
+      154,
+      155,
+      156,
+      157,
+      158,
+      159,
+      160,
+      161,
+      162,
+      163,
+      164,
+      165,
+      166,
+      167,
+      168,
+      169,
+      170,
+      171,
+      172,
+      173,
+      174,
+      175,
+      176,
+      177,
+      178,
+      179,
+      180,
+      181,
+      182,
+      183,
+      184,
+      185,
+      186,
+      187,
+      188,
+      189,
+      190,
+      191,
+      192,
+      193,
+      194,
+      195,
+      196,
+      197,
+      198,
+      199,
+      200,
+      201,
+      202,
+      203,
+      204,
+      205,
+      206,
+      207,
+      208,
+      209,
+      210,
+      211,
+      212,
+      213
+    ],
+    "background_rgb_min": [
+      0.0,
+      3.0,
+      103.0
+    ],
+    "background_rgb_max": [
+      4.0,
+      14.0,
+      211.0
+    ],
+    "maximum_spatial_delta": 209.0,
+    "maximum_temporal_delta": 106.0,
+    "thresholds": {
+      "dominant_min": 180,
+      "other_channels_max": 100,
+      "dominance_min": 100,
+      "spatial_delta_max": 35,
+      "temporal_delta_max": 24
+    },
+    "expected_background": "#0000FF",
+    "white_matte_fallback": false,
+    "visual_foreground_review_required": true,
+    "enclosed_background_and_foreground_verified": false,
+    "native_size": [
+      1344,
+      768
+    ],
+    "boundary_pixels_per_frame": 4224,
+    "measurement": "native_one_pixel_outer_boundary_no_spatial_resampling",
+    "sampling": {
+      "duration_seconds": 10,
+      "fps": 24,
+      "expected_frames": 240
+    }
+  },
+  "inspection_scope": {
+    "existing_contact_personally_viewed": "source/library/a052/attempt-2/source-only-0c87cfd1-f411-4f73-95a1-91dcf5e584db/source-contact.png",
+    "native_frames_personally_viewed": [
+      144
+    ],
+    "normal640_fullframe_personally_viewed": [
+      144
+    ],
+    "native_face_nearest2x_personally_viewed": [
+      144
+    ],
+    "native_size": [
+      1344,
+      768
+    ],
+    "technical_scope": "Original source SHA verified; existing all240 native background gate reused, not rescanned. Only one additional native frame decoded.",
+    "limitations": [
+      "Single representative native frame plus existing contact, not all-frame manual review or continuous playback.",
+      "Foreground hard failure is already sufficient; no exhaustive action/anatomy qualification performed."
+    ]
+  },
+  "evidence": [
+    {
+      "file": "quality/evidence/programmer-research-v2-samples/a052/attempt-2/f144-face-native2x.png",
+      "sha256": "ccdc8ff76eba8ff175f4408bd591abceeef36cc2daaa81be9aabf2c89ca9c313"
+    },
+    {
+      "file": "quality/evidence/programmer-research-v2-samples/a052/attempt-2/f144-full-640-proportional.png",
+      "sha256": "a2faa964b7ee11dc167c9bed9b3295477673f7f1930283cdf68104b34466d35f"
+    },
+    {
+      "file": "quality/evidence/programmer-research-v2-samples/a052/attempt-2/f144-native.png",
+      "sha256": "6950f68d11fc869a06353ab94086d879324c015282d4e3ef4dede6b8780e7ac5"
+    }
+  ],
+  "processing_performed": false,
+  "new_model_calls": 0,
+  "ledger_or_approval_modified": false,
+  "next_step": "Keep original paid task/source and all failed gate data. No key/palette/semantic repair; only root may authorize the single current-spec correction after a specific changed hypothesis."
+}

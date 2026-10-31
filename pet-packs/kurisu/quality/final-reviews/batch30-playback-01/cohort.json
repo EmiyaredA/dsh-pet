@@ -1,0 +1,56 @@
+[
+  {
+    "id": "a032",
+    "name": "检查试管（沿用原实验室镜头）",
+    "attempt": 2,
+    "candidate_file": "source/library/a032/attempt-2/processing-0437ef61-7021-4c84-a200-462b2d38cac8/检查试管（沿用原实验室镜头）.webm",
+    "candidate_sha256": "d598c5aeb9cdacf93493d4cc0e7ca14806ae8c55cf8217e7df445f6b7e80ea68",
+    "source_sha256": "d7b590d2151064cd3afbfe7c153f4a80bd0db8de0eaffeab84ba94f975f305aa",
+    "evidence_dir": "quality/final-reviews/a032-d598c5aeb9cd"
+  },
+  {
+    "id": "a033",
+    "name": "盯编译进度",
+    "attempt": 2,
+    "candidate_file": "source/library/a033/attempt-2/processing-d93cdc10-375a-43bd-a279-723585e72c64/盯编译进度.webm",
+    "candidate_sha256": "114feb03b0a3394726065f82da47df7c57b5bfcf3779e54386276d18079aef70",
+    "source_sha256": "eb5cc7fe6569d596f98e258a9e5a8af2e0676a7c710429e77606c0830d85147f",
+    "evidence_dir": "quality/final-reviews/a033-114feb03b0a3"
+  },
+  {
+    "id": "a039",
+    "name": "提交后松口气",
+    "attempt": 2,
+    "candidate_file": "source/library/a039/attempt-2/processing-b5d5a6b3-91bc-4891-a1e7-f4beb97cb00c/提交后松口气.webm",
+    "candidate_sha256": "e44d9027536a6a9e41ed68e1c104d552f83eeb915d6db8c44cd658f2a51783d1",
+    "source_sha256": "455adca3c1773c4278bdc6fce7ebf013a240b00b542b83bc4031a3492120cd13",
+    "evidence_dir": "quality/final-reviews/a039-e44d9027536a"
+  },
+  {
+    "id": "a040",
+    "name": "合并冲突抱头",
+    "attempt": 2,
+    "candidate_file": "source/library/a040/attempt-2/processing-7966f942-dcc2-4f12-91b7-bafe37e667a7/合并冲突抱头.webm",
+    "candidate_sha256": "1d39624aab6fee9ced1b907cf049425237f0d74bfd4d09b5cf405888a1d0b53d",
+    "source_sha256": "a7f5a4cc5269600e79da54b7d5e6c228c94f240360e660df2326ab1186c327fc",
+    "evidence_dir": "quality/final-reviews/a040-1d39624aab6f"
+  },
+  {
+    "id": "a041",
+    "name": "白板画架构图",
+    "attempt": 2,
+    "candidate_file": "source/library/a041/attempt-2/processing-f050b784-7181-4ce7-96ca-9b626663ba34/白板画架构图.webm",
+    "candidate_sha256": "4e2fb1ea7316e143625769725000fa5dfdd975114f82521e00aafaaca8e93a1f",
+    "source_sha256": "f9ddf7e2eb4497107e8f26a1e9a530429e26ea975b0606664f0352bb57c77c67",
+    "evidence_dir": "quality/final-reviews/a041-4e2fb1ea7316"
+  },
+  {
+    "id": "a042",
+    "name": "左右核对 diff",
+    "attempt": 2,
+    "candidate_file": "source/library/a042/attempt-2/processing-5b9bb19c-3eae-4528-bbb1-f4dac485dcbf/左右核对 diff.webm",
+    "candidate_sha256": "848cdaad1ecbd1637d535b30b1cdd8c57421ed322306cf64485c17824398cde5",
+    "source_sha256": "9354c5beb816f50100d8dbc36762a5ccbc7fd2038674291a7291ff4987af1a38",
+    "evidence_dir": "quality/final-reviews/a042-848cdaad1ecb"
+  }
+]

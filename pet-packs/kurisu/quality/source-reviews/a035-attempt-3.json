@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "action_id": "a035",
+  "attempt_index": 3,
+  "action_name": "盯着发散计看世界线数字",
+  "spec_revision_id": "steins-props-v3-2026-10-31",
+  "source_file": "source/library/a035/attempt-3/盯着发散计看世界线数字.mp4",
+  "source_sha256": "5797ac5a09ea298dc9412e7f1037c3fac499b4aa2cfa03e36342dbb498afb47f",
+  "source_task_id": "b4e2193f-35f5-4e12-8296-6305c2fccbae",
+  "result_asset_id": "090256bc-3358-493d-b8e3-4f970f876c46",
+  "reviewer": "root source-content review separate from media processing",
+  "reviewed_at": "2026-10-31T11:32:47.286577+00:00",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "processing_clearance": "reject",
+  "final_media_approved": false,
+  "reason": "发散计数字管与操作旋钮整面朝向镜头，角色站在道具背后看背壳；f096/f144明确未实现用户要求的道具朝向角色。本轮首片留档，不抠像、不重提或本地改道具。",
+  "defects": [
+    {
+      "severity": "hard",
+      "type": "prop_display_faces_camera_instead_of_character",
+      "frames": [
+        96,
+        144
+      ],
+      "description": "The entire numeric tube face and lower control knobs face the viewer while her head is behind the meter; the display is not angled toward the character."
+    }
+  ],
+  "source_background": {
+    "method": "all_frame_saturated_green_native_border_v2",
+    "passed": true,
+    "frames": 240,
+    "expected_frames": 240,
+    "failed_frame_count": 0,
+    "failed_frames": [],
+    "background_rgb_min": [
+      0.0,
+      221.0,
+      3.0
+    ],
+    "background_rgb_max": [
+      2.0,
+      227.0,
+      8.0
+    ],
+    "maximum_spatial_delta": 27.0,
+    "maximum_temporal_delta": 4.0,
+    "thresholds": {
+      "dominant_min": 180,
+      "other_channels_max": 100,
+      "dominance_min": 100,
+      "spatial_delta_max": 35,
+      "temporal_delta_max": 24
+    },
+    "expected_background": "#00FF00",
+    "white_matte_fallback": false,
+    "visual_foreground_review_required": true,
+    "enclosed_background_and_foreground_verified": false,
+    "native_size": [
+      1344,
+      768
+    ],
+    "boundary_pixels_per_frame": 4224,
+    "measurement": "native_one_pixel_outer_boundary_no_spatial_resampling",
+    "sampling": {
+      "duration_seconds": 10,
+      "fps": 24,
+      "expected_frames": 240
+    }
+  },
+  "inspection_scope": {
+    "width640_full_frames_personally_viewed": [
+      0,
+      48,
+      96,
+      144,
+      192,
+      239
+    ],
+    "native_nearest2x_face_frames_personally_viewed": [
+      144
+    ],
+    "all240_native_background_metric_reused": true,
+    "source_video_continuous_playback_reviewed": false,
+    "limits": [
+      "Representative stills sufficient for the visible orientation failure; not a claim that all source frames were manually reviewed."
+    ]
+  },
+  "evidence_manifest": "quality/evidence/steins-props-v3-firstpass/a035/attempt-3/manifest.json",
+  "new_model_calls": 0,
+  "new_local_repairs": 0
+}

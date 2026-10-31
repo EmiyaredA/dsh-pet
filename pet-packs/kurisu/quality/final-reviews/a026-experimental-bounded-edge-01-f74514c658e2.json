@@ -1,0 +1,176 @@
+{
+  "schema_version": 1,
+  "action_id": "a026",
+  "attempt_index": 1,
+  "candidate_file": "source/library/a026/attempt-1/experimental-bounded-edge-01/晨间刷牙-限幅实验.webm",
+  "candidate_sha256": "f74514c658e26f6affb25704f95308284f79fa6dffc76b7a04ff2c1bfb692e74",
+  "source_sha256": "368a0fc8d7940b3b937405b1cf0d9f127f30d70a7abefd4cd0c7e71d45c32ecb",
+  "recipe_sha256": "e9fede1cb0da512c042ea564d47c85f9326013bb7bbb7d430536dc56fd460779",
+  "reviewed_at": "2026-10-30T19:38:10.845700+00:00",
+  "reviewer": "independent_animation_qa_agent",
+  "visual_review_performed": true,
+  "final_media_approved": false,
+  "release_decision": "REJECT",
+  "summary": "Thefixedmatrix/anchorand±40RGBclampstillleaveanolive/yellowgreen ringontheouterrighthairstrand. Itisvisibleonnative640compositesandnativepixelcropsenlarged8xondark,light,blueandcheckerbackgrounds. ConservativeRGBlimitsandvalidAlphaaretechnicalproperties,notvisualclearance.",
+  "defects": [
+    {
+      "severity": "hard",
+      "type": "residual_green_olive_hair_edge",
+      "first_demonstrated_frame": 0,
+      "first_demonstrated_time_seconds": 0,
+      "output_roi_xyxy": [
+        390,
+        140,
+        425,
+        185
+      ],
+      "original_source_roi_approximately": [
+        839,
+        332,
+        847,
+        349
+      ],
+      "description": "Persistentolive/yellowgreen thinring remainsin theinside/outsideedgeof thethinrighthairlock. It isnotjustbluebackgroundcontrast: dark/light/checkercompositesshowthecolouranddecodedopaqueRGBAcontainsgreen-dominantpixels. Theclampcannotfullyrecoverrawgreenspillwithin40RGBbounds.",
+      "direct_decoded_examples": [
+        {
+          "frame": 0,
+          "xy": [
+            405,
+            162
+          ],
+          "RGBA": [
+            35,
+            47,
+            29,
+            255
+          ],
+          "green_excess": 12
+        },
+        {
+          "frame": 1,
+          "xy": [
+            405,
+            162
+          ],
+          "RGBA": [
+            34,
+            51,
+            30,
+            255
+          ],
+          "green_excess": 17
+        },
+        {
+          "frame": 144,
+          "xy": [
+            403,
+            167
+          ],
+          "RGBA": [
+            29,
+            51,
+            16,
+            255
+          ],
+          "green_excess": 22
+        }
+      ]
+    }
+  ],
+  "technical_context": {
+    "decoded_with": "ffmpeg libvpx-vp9 -> native640x360 RGBA",
+    "decoded_frames": 240,
+    "recipe_claims": "Fixedrecorded240matrices+canonicalanchor, nofit; RGBmaxdelta40,opaquep95<=20, alphapreserved. Thisreviewdoesnotchangeboundsorrecipe.",
+    "technical_verification_not_substitute_for_visual": true,
+    "all240_descriptive_RGB_metrics": "quality/final-reviews/a026-bounded-edge-f74514c658e2-metrics240.json",
+    "raw_RGBA_points": "quality/final-reviews/a026-bounded-edge-f74514c658e2-RGBA-proof.json"
+  },
+  "inspection_scope": {
+    "native640_composites_personally_inspected": [
+      0
+    ],
+    "worst_native_roi_8x_four_backgrounds_personally_inspected": [
+      0
+    ],
+    "dense_native_roi_4x_personally_inspected_frames": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      210,
+      211,
+      212,
+      213,
+      214,
+      215,
+      216,
+      217,
+      218,
+      219,
+      220,
+      221,
+      222,
+      223,
+      224,
+      225,
+      226,
+      227,
+      228,
+      229,
+      230,
+      231,
+      232,
+      233,
+      234,
+      235,
+      236,
+      237,
+      238,
+      239
+    ],
+    "all240_frames_decoded_and_measured": true,
+    "all240_fullframes_visually_examined": false,
+    "full_eye_anatomy_prop_stow_scale_motion_reverification_completed": false,
+    "reason_for_bounded_scope": "Knowncriticalhair-edgefailurepersistsalreadyinframe0. No needtoexpandorclaimremainingfullvalidationaspass. Underlyingmotion/Alpha/scalepriorproofsarenotwithdrawnbythiscolourreview,butthecandidateisnotreleased.",
+    "flicker_conclusion": "Persistentresidualcolourconfirmed. Thisreviewdoesnotclaimnewfullbodyorfaceflickerorallframeabsenceofflicker.",
+    "new_model_calls": 0,
+    "ledger_modified": false,
+    "canonical_modified": false,
+    "candidate_modified": false,
+    "new_candidate_generated": false
+  },
+  "portable_evidence": [
+    "quality/evidence/a026-bounded-edge-f0-right-hair-four-backgrounds8x.png",
+    "quality/evidence/a026-bounded-edge-f0-blue-native640.png",
+    "quality/evidence/a026-bounded-edge-right-hair-f0-29-4x.png",
+    "quality/evidence/a026-bounded-edge-right-hair-f210-239-4x.png"
+  ],
+  "additional_repair_requested": false,
+  "recommended_next_step": "Keepthiscandidateandproofashistory; donotpublishorcountit asapproved. Noextrarefit/thresholdadjustmentauthorizedbythisreview."
+}

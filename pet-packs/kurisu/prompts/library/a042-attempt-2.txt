@@ -1,0 +1,21 @@
+subject_definitions:
+<Subject 1> is the one human chibi Kurisu maid in <Picture 1> and <Picture 2>, with two arms and two legs. The triangular fabric ornaments belong to her existing lace headband; the rear outline is long hair and skirt.
+<Picture 1> is the approved opaque GREEN80 full-body character and empty-handed baseline. <Picture 2> is byte-identical to <Picture 1>, anchoring the same single girl, scale and composition.
+
+summary:
+[reference generation] One 10-second 2D desktop sticker: <Subject 1> shift her gaze left then right between the cards and point once at a changed mark.
+
+retention_analysis:
+<Subject 1> ([Shot 1]): fully_preserved - reference identity, costume, compact proportions and painted colors.
+<Picture 1> and <Picture 2> ([Shot 1]): fully_preserved - one complete figure, fixed scale, solid GREEN field and neutral endpoints.
+
+detailed_description:
+[Shot 1] 00:00.000 to 00:10.000. Static eye-level orthographic FULL-BODY shot, centered girl, ear tips at 10% and soles at 90% of image height. She stands before a seamless, evenly lit solid GREEN chroma-key backdrop, RGB(0,255,0); this same plain color fills the entire image, hair/limb gaps and area beneath her feet for all 10 seconds. Keep auburn hair, blue-violet eyes and costume palette under constant neutral illumination; painted highlights stay fixed. Only the described compact gestures and miniature props move. The complete headwear, face and both shoes stay inside the fixed frame throughout, with no zoom or camera tracking. 
+
+00:00.000 to 00:02.000: hold the empty-handed reference stance. 00:02.000 to 00:03.500: hold two small charcoal comparison cards at waist level with abstract amber and dark-red lines. 00:03.500 to 00:06.500: shift her gaze left then right between the cards and point once at a changed mark. 00:06.500 to 00:09.000: stow both cards completely and lower both hands. 00:09.000 to 00:10.000: hold the exact original empty-handed reference stance.
+
+overall_soundscape:
+N/A.
+
+non_diegetic_music:
+N/A.

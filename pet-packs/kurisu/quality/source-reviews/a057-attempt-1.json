@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "action_id": "a057",
+  "attempt_index": 1,
+  "source_sha256": "8cb5facb8e21a5e2f73863c2bfe8b2228486ad1f14411dd1c8c8d26ca9420dac",
+  "source_task_id": "99aa0521-4af1-430b-b9c4-67305c0bc3be",
+  "canonical_source_file": "source/library/a057/attempt-1/喝红罐碳酸饮料.mp4",
+  "reviewer": "independent_source_qa_chat_01a18fe5-d4ac-7b53-bb13-e731fb9e855f",
+  "reviewed_at": "2026-10-31T04:17:02.233503+00:00",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "processing_clearance": "reject",
+  "final_media_approved": false,
+  "reason": "既有蓝幕边界指标 240/240 帧失败。前景抽样不改变背景拒收。",
+  "defects": [
+    {
+      "severity": "hard",
+      "type": "background_contract_failure",
+      "description": {
+        "result": "fail",
+        "method": "all_frame_saturated_blue_native_border_v2",
+        "failed_frame_count": 240,
+        "frames": 240,
+        "source": "library.json 中既有 native BLUE 边框指标；未重新扫描"
+      }
+    }
+  ],
+  "visual_action_notes": {
+    "action_props": "f48–192红罐由手中升至嘴边并倾斜，喝饮料动作可辨；f216罐不见，f239空手。",
+    "anatomy": "抽样中角色、短圆比例、双猫耳和可见双鞋保留；未见明确额外人体肢体或尾巴、明显脸眼扭曲、人物明显彩色光斑。道具与身体重叠或遮挡处、抽样之外时刻无法判定。",
+    "endpoint": "f0与f239均为大致相同正面站姿及尺度，f239空手；f239是否源片最终帧未验证。",
+    "assessment": "动作与道具观察见上；抽样不构成前景通过",
+    "evidence_frames": [
+      72,
+      120,
+      144,
+      168,
+      192,
+      239
+    ]
+  },
+  "inspection_scope": {
+    "actual_visual_frames": [
+      0,
+      12,
+      24,
+      48,
+      72,
+      96,
+      120,
+      144,
+      168,
+      192,
+      216,
+      239
+    ],
+    "method": "查看12张原生PNG按原像素裁切人物区域并拼排；对a056 f144另查看完整原生画面。",
+    "all_frames_visual": false,
+    "continuous_playback_performed": false,
+    "limitations": "12帧离散样本，未做全时刻人工观察或连续播放；画面裁切拼排之外、道具遮挡区域及未抽样帧未验证；未审透明成片或安装表现。"
+  },
+  "independent_report_file": "quality/collaboration/source-qa/a057-attempt-1.json",
+  "independent_report_sha256": "ef82a13ea008302761120500aead5fae132140dd225fff07648c3b76563b9073",
+  "canonicalization_at": "2026-10-31T04:28:46.738027+00:00",
+  "canonicalization_changes": "Identity/loader schema only; original review and raw metrics unchanged; rejection only, never approval.",
+  "new_paid_model_calls": 0,
+  "source_modified": false,
+  "allowed_processing": []
+}

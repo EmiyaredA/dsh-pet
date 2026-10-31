@@ -1,0 +1,21 @@
+{
+  "browser": "Codex in-app browser",
+  "candidate_file": "source/library/a053/attempt-2/processing-bb47db5d-554b-4118-82e1-c469feb94d95/CI 红了瘫椅子.webm",
+  "candidate_sha256": "de2c6e5103b33487174bb57c026c84ccb5b77462b73fdb60a16b7b1db6fe843a",
+  "css_size": [
+    640,
+    360
+  ],
+  "duration": 10,
+  "started_at": "2026-10-31T10:38:15.010Z",
+  "ended_at": "2026-10-31T10:38:25.012Z",
+  "completed_10s": true,
+  "frame_callbacks_before_idle_switch": 239,
+  "first_media_time": 0.042,
+  "last_media_time": 9.958,
+  "idle_switch_performed": true,
+  "paused_after_switch": true,
+  "continuous_human_gaze_claim": false,
+  "observation_scope": "Actual real-time complete playback executed; visual perception uses sampled browser screenshots plus named native640 frames and enlarged face/hair. No all-frame manual inspection claim.",
+  "dropped_frames": "Not measured; callback count is not dropped-frame count."
+}

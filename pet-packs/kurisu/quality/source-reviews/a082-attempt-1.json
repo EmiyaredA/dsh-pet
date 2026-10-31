@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "action_id": "a082",
+  "action_name": "拆圣诞礼物",
+  "attempt_index": 1,
+  "spec_revision_id": null,
+  "source_file": "source/library/a082/attempt-1/拆圣诞礼物.mp4",
+  "source_sha256": "2b4db4250555900cc21ad9f2eb396e18c5a90cd12281247689643446daa9f096",
+  "source_task_id": "4cc70f8e-159a-4b72-ae2a-de5a710d0215",
+  "provider_task_id": "29fca29c-e614-4fd7-8d15-a1f08002dae5",
+  "result_asset_id": "c8d0dff3-73f9-4151-8792-9becbed7dfec",
+  "model_slug": "minimax_h3_zm_u24",
+  "reviewer": "existing-sources7-source-qa-parallel independent agent",
+  "reviewed_at": "2026-10-31T12:20:47.022598+00:00",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "processing_clearance": "reject",
+  "final_media_approved": false,
+  "summary": "新增原生f168及其2倍脸部证据明确：开礼盒的竖起盒盖高至鼻梁下方，遮住口鼻，不符合本提示词Box and ribbon below chin。f144两侧盖板已抬至下颊，f168中央遮脸实际成立；非AA或小图误判。完整头脚和GREEN边界虽通过、末帧盒/红带虽收回，也不能抵消本帧的道具遮脸。本原片拒绝初次key，不修补、不重生。",
+  "reason": "新增原生f168及其2倍脸部证据明确：开礼盒的竖起盒盖高至鼻梁下方，遮住口鼻，不符合本提示词Box and ribbon below chin。f144两侧盖板已抬至下颊，f168中央遮脸实际成立；非AA或小图误判。完整头脚和GREEN边界虽通过、末帧盒/红带虽收回，也不能抵消本帧的道具遮脸。本原片拒绝初次key，不修补、不重生。",
+  "defects": [
+    {
+      "severity": "hard",
+      "type": "prop_obscures_face",
+      "frames": [
+        168
+      ],
+      "description": "Raised gift-box flap covers mouth and nose during peek; the prop must remain below chin. This is not a generic exception inferred from opening a box.",
+      "evidence": "quality/evidence/existing-sources7-firstpass/a082/attempt-1/f168-native.png",
+      "detail_evidence": "quality/evidence/existing-sources7-firstpass/a082/attempt-1/f168-face-native2x.png"
+    }
+  ],
+  "source_background": {
+    "method": "all_frame_saturated_green_native_border_v2",
+    "passed": true,
+    "frames": 240,
+    "expected_frames": 240,
+    "failed_frame_count": 0,
+    "failed_frames": [],
+    "background_rgb_min": [
+      2.0,
+      229.0,
+      7.0
+    ],
+    "background_rgb_max": [
+      3.0,
+      232.0,
+      9.0
+    ],
+    "maximum_spatial_delta": 9.0,
+    "maximum_temporal_delta": 2.0,
+    "thresholds": {
+      "dominant_min": 180,
+      "other_channels_max": 100,
+      "dominance_min": 100,
+      "spatial_delta_max": 35,
+      "temporal_delta_max": 24
+    },
+    "expected_background": "#00FF00",
+    "white_matte_fallback": false,
+    "visual_foreground_review_required": true,
+    "enclosed_background_and_foreground_verified": false,
+    "native_size": [
+      1344,
+      768
+    ],
+    "boundary_pixels_per_frame": 4224,
+    "measurement": "native_one_pixel_outer_boundary_no_spatial_resampling",
+    "sampling": {
+      "duration_seconds": 10,
+      "fps": 24,
+      "expected_frames": 240
+    }
+  },
+  "inspection_scope": {
+    "existing_contact_personally_viewed": true,
+    "contact_only_conclusion": false,
+    "native_original_full_frames_personally_viewed": [
+      0,
+      96,
+      144,
+      168,
+      239
+    ],
+    "native_face_nearest2x_frames_personally_viewed": [
+      144,
+      168
+    ],
+    "native_size": [
+      1344,
+      768
+    ],
+    "prompt_file_read": "prompts/library/a082-attempt-1.txt",
+    "all240_background_metrics_reused": true,
+    "source_background_rescanned": false,
+    "continuous_source_playback_performed": false,
+    "limits": [
+      "Representative original stills and native-pixel magnifications were reviewed; this is not all240 manual visual review.",
+      "Existing all240 GREEN boundary metrics were reused, without another source decode.",
+      "Source ALLOW authorizes one initial ordinary green key only; final transparent animation and full10sec playback remain independently required."
+    ]
+  },
+  "visual_findings": {
+    "action": "Cream box and red ribbon are recognizable; lid is opened, ribbon loosened, and both are fully gone at final frame.",
+    "rejection_focus": "f168 closes the face-to-box gap by bringing a tall flap over the mouth/nose instead of keeping the opened box below chin.",
+    "other_observations": "Headwear and shoes remain fully in frame, sampled eye color remains blue-violet, and no additional background particle effect was seen. These positives do not override the face occlusion."
+  },
+  "evidence_manifest": "quality/evidence/existing-sources7-firstpass/a082/attempt-1/manifest.json",
+  "evidence_manifest_sha256": "c034adc1fe25744d25b4a27cf935d06dd7a1339751750de135a5476168bf7296",
+  "additional_evidence_manifest": "quality/evidence/existing-sources7-firstpass/a082/attempt-1/additional-f168-manifest.json",
+  "additional_evidence_manifest_sha256": "1f5e7891cdb2fc927b430e9ef49c11629f0018906e4f702b0b627a150210af27",
+  "new_model_calls": 0,
+  "reviewer_video_decoders_started": 0,
+  "processing_performed": false,
+  "ledger_or_approval_modified": false
+}

@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "action_id": "a079",
+  "action_name": "萌化小幽灵",
+  "source_attempt_index": 1,
+  "spec_revision_id": null,
+  "scope_id": "existing-sources7-initial-media-01",
+  "scope_manifest_sha256": "d5b053f0ae6deb1ecf0218e8a48a7d259cbe76832c1598c2440053afa3d7e61c",
+  "source_sha256": "201be64b8297242ca56c7084e80b2017771f109a78e550b064c1e0155e5a3e54",
+  "source_task_id": "40fd0e68-401f-465f-9dc4-ded385731564",
+  "source_review_file": "quality/source-reviews/a079-attempt-1.json",
+  "source_review_sha256": "da02f7756fcdd094e7b8d6050e01352a7000b81c49942b05adc90e4cbec7f04a",
+  "candidate_file": "source/library/a079/attempt-1/processing-5a1030ce-0eca-4ae7-a53d-87a367e2e286/萌化小幽灵.webm",
+  "candidate_sha256": "896fcd6d6378f8ee5c1585c60c8bf00ef0f0e51353f0f4ae897e5f2efd53fc93",
+  "verdict": "pass",
+  "reviewer": "existing-sources7-final-qa-parallel independent final QA agent",
+  "reviewed_at": "2026-10-31T12:30:57.358405+00:00",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "defects": [],
+  "summary": "独立最终PASS：specNone/绝对attempt1与源/候选SHA绑定，240帧640×360/24fps/10秒VP9 Alpha无音轨，透明边界及固定残余背景筛查全通过。原640四底和脸发3倍抽样显示幽灵为独立白布手偶，升至脸侧轻摆后下降收回，角色未变身、服装不变、完整头饰双鞋保留；白布边缘无明显绿晕或漏抠、脸未塌陷、眼色稳定，无多余前景/光斑。实际完整10秒播放和640 idle切换完成，末帧手偶全部消失、首末脚位330。人工抽样与全240技术指标分别列明。",
+  "reason": "独立最终PASS：specNone/绝对attempt1与源/候选SHA绑定，240帧640×360/24fps/10秒VP9 Alpha无音轨，透明边界及固定残余背景筛查全通过。原640四底和脸发3倍抽样显示幽灵为独立白布手偶，升至脸侧轻摆后下降收回，角色未变身、服装不变、完整头饰双鞋保留；白布边缘无明显绿晕或漏抠、脸未塌陷、眼色稳定，无多余前景/光斑。实际完整10秒播放和640 idle切换完成，末帧手偶全部消失、首末脚位330。人工抽样与全240技术指标分别列明。",
+  "technical": {
+    "frames": 240,
+    "width": 640,
+    "height": 360,
+    "fps": 24,
+    "duration_seconds": 10.0,
+    "codec": "vp9",
+    "alpha_mode": "1",
+    "audio_streams": 0,
+    "all240_alpha0to255": true,
+    "all240_outer_boundary_alpha_zero": true,
+    "outside6_alpha_gt8_bad_frames": [],
+    "residual_metric_definition": "Alpha >8 pixels outside a fixed six-pixel square dilation of alpha>127 foreground; screening only, no matte changes.",
+    "first_bbox_alpha127": [
+      215,
+      61,
+      434,
+      330
+    ],
+    "last_bbox_alpha127": [
+      215,
+      61,
+      434,
+      330
+    ],
+    "feet_delta_px": 0,
+    "height_delta_px": 0
+  },
+  "technical_proof": "quality/final-reviews/a079-896fcd6d6378/decoded-technical240.json",
+  "frame0_rgba_file": "quality/final-reviews/a079-896fcd6d6378/f000-rgba.png",
+  "evidence_directory": "quality/final-reviews/a079-896fcd6d6378",
+  "inspection_scope": {
+    "all240_automated_metrics": [
+      "decoded RGBA alpha range",
+      "outermost boundary alpha",
+      "fixed residual-background screening",
+      "foreground bounding boxes"
+    ],
+    "manual_native640_four_background_frames": [
+      0,
+      96,
+      168,
+      239
+    ],
+    "manual_additional_native640_blue_frames": [
+      72,
+      144,
+      192
+    ],
+    "manual_face_hair_native640_ROI_nearest3x_frames": [
+      120,
+      216
+    ],
+    "actual_playback": "quality/final-reviews/a079-896fcd6d6378/actual-browser-playback.json",
+    "limits": [
+      "All240 technical coverage is not all240 manual visual coverage.",
+      "Native full-body cells remain640x360. Enlarged face/hair uses original decoded pixels with nearest-neighbor; no100px thumbnail conclusion.",
+      "Actual full10sec execution and sampled visual perception are separate evidence.",
+      "Idle comparison supports scale/position; old accepted idle is slightly warmer, no exact RGB match claim."
+    ]
+  },
+  "visual_findings": {
+    "action": "Separate white cloth ghost puppet rises beside the face/chest, bobs with the hand and is lowered to the side, then fully stowed by f192/f239. Kurisu herself and her maid costume remain unchanged.",
+    "identity": "Full headwear and both shoes remain inside the canvas. Sampled eyes retain blue-violet color; no extra limb/tail or particle burst.",
+    "matte": "White puppet cloth and hair gaps remain clean against native640 blue/dark/light/checker backgrounds. No conspicuous green fringe, white-background island or missing foreground region was seen; named white cloth is intended foreground.",
+    "idle_switch": "Actual full10s at640 CSS size followed by idle switch. First/last alpha127 full-body height269 and footline330; no obvious normal-size scale snap."
+  },
+  "new_paid_calls": 0,
+  "reviewer_pixel_or_recipe_changes": 0,
+  "approval_or_runtime_mutations": false,
+  "scope_manifest_file": "temp/kurisu/existing-sources7-initial-media-01/media/manifest.json"
+}

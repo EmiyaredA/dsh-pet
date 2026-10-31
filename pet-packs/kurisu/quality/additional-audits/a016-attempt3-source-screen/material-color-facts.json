@@ -1,0 +1,77 @@
+[
+  {
+    "material": "left inner ear",
+    "label": "reference",
+    "native_roi_xyxy": [
+      490,
+      106,
+      505,
+      121
+    ],
+    "median_rgb": [
+      197.0,
+      110.0,
+      130.0
+    ]
+  },
+  {
+    "material": "left inner ear",
+    "label": "source f0",
+    "native_roi_xyxy": [
+      518,
+      115,
+      533,
+      130
+    ],
+    "median_rgb": [
+      181.0,
+      150.0,
+      123.0
+    ]
+  },
+  {
+    "material": "left inner ear",
+    "label": "source f48",
+    "native_roi_xyxy": [
+      518,
+      115,
+      533,
+      130
+    ],
+    "median_rgb": [
+      175.0,
+      174.0,
+      120.0
+    ]
+  },
+  {
+    "material": "left inner ear",
+    "label": "source f120",
+    "native_roi_xyxy": [
+      518,
+      115,
+      533,
+      130
+    ],
+    "median_rgb": [
+      176.0,
+      174.0,
+      120.0
+    ]
+  },
+  {
+    "material": "left inner ear",
+    "label": "source f239",
+    "native_roi_xyxy": [
+      518,
+      115,
+      533,
+      130
+    ],
+    "median_rgb": [
+      175.0,
+      173.0,
+      120.0
+    ]
+  }
+]

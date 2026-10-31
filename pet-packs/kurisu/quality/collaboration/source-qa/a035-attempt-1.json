@@ -1,0 +1,58 @@
+{
+  "action_id": "a035",
+  "action_name": "查看显微镜",
+  "attempt": 1,
+  "source_file": "source/library/a035/attempt-1/查看显微镜.mp4",
+  "source_sha256": "2815edee587a336329d1388843c05edaf842e8fd75f602d771e95f7f3e6ede98",
+  "task_id": "b3d252d5-d515-403f-bdb2-ad233255141d",
+  "manifest": "quality/evidence/first-pass-native/a035/attempt-1/manifest.json",
+  "source_and_all_png_hashes_verified": true,
+  "actual_visual_frames": [
+    0,
+    12,
+    24,
+    48,
+    72,
+    96,
+    120,
+    144,
+    168,
+    192,
+    216,
+    239
+  ],
+  "inspection": "人工查看由原生PNG以原像素裁切、拼排的角色区域及该区域背景；未看完整画面外侧、连续播放或逐帧人工验收。",
+  "background": {
+    "result": "fail",
+    "method": "all_frame_saturated_blue_native_border_v2",
+    "failed_frame_count": 240,
+    "frames": 240,
+    "source": "library.json attempt.source_background，既有指标，未重跑",
+    "visual": "f0为蓝色但非合格纯蓝背景；f12起抽样大部近白。"
+  },
+  "foreground": {
+    "action": "f72–168显微镜可辨且f96–144眼睛靠近目镜；f48仪器倾斜，f192整个显微镜接近横倒并悬在身前，缺少合理支撑，属于道具物理/收回硬伤；f216/239仪器消失并恢复空手。",
+    "anatomy": "所看样本角色、短圆比例、猫耳和可见双鞋保留；显微镜遮住一侧手及局部裙脚。未见明确额外肢体/尾巴、明显脸眼扭曲或人物彩色光斑；遮挡区域不能判断。",
+    "evidence_frames": [
+      48,
+      72,
+      120,
+      192,
+      216,
+      239
+    ],
+    "foreground_assessment": "拒收：显微镜收回时大幅横倒且悬空，f192原生证据。"
+  },
+  "verdict": "reject_source",
+  "reason": "已有原生蓝幕边界指标240/240帧失败；另有显微镜收回物理硬伤。前景抽样观察不改变背景拒收。",
+  "limitations": "仅12个离散帧；未验证243源帧中其余时刻、连续动作、透明成片、全部被遮挡区域或安装表现。f239并非243帧源文件的最后一帧。",
+  "reviewed_at": "2026-10-31T03:12:13.225506+00:00",
+  "evidence_files": [
+    "quality/evidence/first-pass-native/a035/attempt-1/f048-native.png",
+    "quality/evidence/first-pass-native/a035/attempt-1/f072-native.png",
+    "quality/evidence/first-pass-native/a035/attempt-1/f120-native.png",
+    "quality/evidence/first-pass-native/a035/attempt-1/f192-native.png",
+    "quality/evidence/first-pass-native/a035/attempt-1/f216-native.png",
+    "quality/evidence/first-pass-native/a035/attempt-1/f239-native.png"
+  ]
+}

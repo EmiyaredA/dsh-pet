@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "action_id": "a053",
+  "attempt_index": 3,
+  "action_name": "CI 红了瘫椅子",
+  "spec_revision_id": "programmer-research-v2-2026-10-31",
+  "source_file": "source/library/a053/attempt-3/CI 红了瘫椅子.mp4",
+  "source_sha256": "275f6d95bc4a6cfb0f2d133693e99995a8d01723fa1b9eac3069f5c96bad3cad",
+  "source_task_id": "bf16bdd9-2c76-4485-bbbd-defb8902bcd0",
+  "result_asset_id": "1ceb79ae-27d6-427a-add4-bc895069fba7",
+  "model_slug": "minimax_h3_zm_u24",
+  "reviewer": "animation_qa independent agent",
+  "reviewed_at": "2026-10-31T13:54:53.404401+00:00",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "processing_clearance": "reject",
+  "final_media_approved": false,
+  "reason": "The source adds an unrequested desk, laptop, takeaway cup and headphones to the named CI-card/chair action. The cross-bearing card face points toward the viewer rather than the character. These are original source content defects, not transparency issues. The folded chair also remains beside her at the final baseline.",
+  "defects": [
+    {
+      "severity": "hard",
+      "type": "unrequested_prop_set",
+      "frames": [
+        96,
+        144
+      ],
+      "description": "A desk, laptop, takeaway cup and wired headphones are added beyond the frozen card/chair props."
+    },
+    {
+      "severity": "hard",
+      "type": "prop_orientation_wrong",
+      "frames": [
+        96,
+        144
+      ],
+      "description": "The dark-red cross-bearing face of the card is presented to the camera while the character sees the rear, contrary to the revised pose instruction."
+    },
+    {
+      "severity": "hard",
+      "type": "prop_not_stowed",
+      "frames": [
+        239
+      ],
+      "description": "The folded chair remains visibly standing beside the character at the final baseline."
+    }
+  ],
+  "source_background": {
+    "method": "all_frame_saturated_green_native_border_v2",
+    "passed": true,
+    "frames": 240,
+    "expected_frames": 240,
+    "failed_frame_count": 0,
+    "failed_frames": [],
+    "background_rgb_min": [
+      2.0,
+      224.0,
+      7.0
+    ],
+    "background_rgb_max": [
+      3.0,
+      227.0,
+      7.0
+    ],
+    "maximum_spatial_delta": 13.0,
+    "maximum_temporal_delta": 2.0,
+    "thresholds": {
+      "dominant_min": 180,
+      "other_channels_max": 100,
+      "dominance_min": 100,
+      "spatial_delta_max": 35,
+      "temporal_delta_max": 24
+    },
+    "expected_background": "#00FF00",
+    "white_matte_fallback": false,
+    "visual_foreground_review_required": true,
+    "enclosed_background_and_foreground_verified": false,
+    "native_size": [
+      1344,
+      768
+    ],
+    "boundary_pixels_per_frame": 4224,
+    "measurement": "native_one_pixel_outer_boundary_no_spatial_resampling",
+    "sampling": {
+      "duration_seconds": 10,
+      "fps": 24,
+      "expected_frames": 240
+    }
+  },
+  "inspection_scope": {
+    "existing_contact_personally_viewed": false,
+    "native_full_frames_personally_viewed": [
+      96,
+      144,
+      239
+    ],
+    "native_face_nearest2x_frames_personally_viewed": [],
+    "native_size": null,
+    "technical_scope": "Existing native240 boundary gate reused, not rerun. Source and evidence manifest are SHA-bound.",
+    "limits": [
+      "Representative source stills only, not all243 manually inspected.",
+      "No continuous source video playback in this source stage; complete10s playback is reserved for final candidate QA.",
+      "No automatic final-media approval or repair."
+    ]
+  },
+  "visual_findings": [
+    "The middle seated posture uses an actual chair and is recognizable as disappointed sitting.",
+    "The allowed props were one small CI card and one compact chair; the added desk/computer/cup/headphones do not belong to this action.",
+    "No keying, deletion or additional model retry is authorized by this review.",
+    "Frame239 has no desk/headphones but leaves the folded chair at camera right."
+  ],
+  "evidence_manifest": "quality/evidence/user240-retry-wave01/a053/attempt-3/manifest.json",
+  "evidence_manifest_sha256": "f816b2da8557c0fb59be75c3d22af644dcf8d0f5bb8568557ca0632e7d371ee5",
+  "new_model_calls": 0,
+  "processing_performed": false,
+  "ledger_or_approval_modified": false
+}

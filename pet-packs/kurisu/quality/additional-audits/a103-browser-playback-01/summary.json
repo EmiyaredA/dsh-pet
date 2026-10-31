@@ -1,0 +1,60 @@
+{
+  "checked_at": "2026-10-30T23:53:57.853352+00:00",
+  "action_id": "a103",
+  "canonical_sha256": "615aa8f01c1fb16a5ecae0938a7d27a31caf7b409967f63bf9e4cb6377797072",
+  "new_model_calls": 0,
+  "media_modified": false,
+  "approved_count_changed": false,
+  "real_browser_playback_passed": true,
+  "loops": 1,
+  "frame_callbacks": 260,
+  "measured_quality_delta": {
+    "totalVideoFrames": 261,
+    "droppedVideoFrames": 0,
+    "corruptedVideoFrames": 0
+  },
+  "alpha_samples_passed": true,
+  "pause_resume": {
+    "paused_time_stable": true,
+    "resumed": true
+  },
+  "distinct_action_switches": "not_tested_only_one_approved_action",
+  "human_continuous_visual_review": false,
+  "native_pet_runtime_performance_validated": false,
+  "earlier_attempts_preserved": [
+    "launch-attempt-01.json",
+    "playback-run-02.json"
+  ],
+  "collector_conditions_changed_jointly": [
+    "60fps offscreen rendering",
+    "prebuffer and seek before baseline",
+    "sparse Canvas sampling outside RVFC"
+  ],
+  "causal_claim": "No single-variable causal claim; source bytes and minimum200 callbacks unchanged.",
+  "evidence": [
+    {
+      "file": "launch-attempt-01.json",
+      "sha256": "3647e43e38b30826007e45f873ed111d77ea0f4c1d2d3b66cc00889cf1447991"
+    },
+    {
+      "file": "playback-run-02.json",
+      "sha256": "ea807cfbd73bcf6eacb358808beeec2b4b9438861e28b6dc881d06a880349635"
+    },
+    {
+      "file": "playback-run-03.json",
+      "sha256": "67e23d2bc4e5e083954f1b9c7bf34da81d39a4d442e7f7ac98f78f2b7597599b"
+    },
+    {
+      "file": "a103-sample-1.png",
+      "sha256": "3f1e12d7ed94c079c1a8cda6686c414ef97f8d8a54e58d6d9c0c2c4d1fb25c39"
+    },
+    {
+      "file": "a103-sample-3.png",
+      "sha256": "35afc0da44f979d98ba80a0c15eebdeac31600e1732c97b022b884dc255fc975"
+    },
+    {
+      "file": "a103-sample-6.png",
+      "sha256": "ff3c26fde3989f58e0c35197083a299d6d10d32c3f84732756fd701cb8e71e81"
+    }
+  ]
+}

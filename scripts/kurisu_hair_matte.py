@@ -22,7 +22,11 @@ def face_protection(rgb,alpha,bounds):
     blue=upper&(yy<top+.56*height)&(rgb[...,2]>rgb[...,0]+15)&(rgb[...,2]>rgb[...,1]+5)&(rgb[...,2]>75)
     by,bx=np.where(blue)
     if len(bx)>=3:
-        mx=max(12,round(height*.085));mt=max(20,round(height*.17));mb=max(12,round(height*.10))
+        # Frontal ears extend beyond the two irises. Side views need a narrower
+        # face region so the far-right negative spaces in flowing hair stay keyable.
+        frontal=bx.max()-bx.min()>width*.18
+        mx=max(12,round(height*(.135 if frontal else .085)))
+        mt=max(20,round(height*.17));mb=max(12,round(height*.10))
         mask[max(0,by.min()-mt):min(alpha.shape[0],by.max()+mb+1),
              max(0,bx.min()-mx):min(alpha.shape[1],bx.max()+mx+1)]=True
     warm=upper&(rgb[...,1]>160)&(rgb[...,2]>140)&(rgb[...,0]-rgb[...,1]>=3)&(rgb[...,0]-rgb[...,1]<=55)&(rgb[...,0]-rgb[...,2]>=5)&(rgb[...,0]-rgb[...,2]<=100)
@@ -31,7 +35,10 @@ def face_protection(rgb,alpha,bounds):
         stat=stats[1+np.argmax(stats[1:,cv2.CC_STAT_AREA])]
         x,y,w,h,area=stat
         if area>=max(30,width*height*.001):
-            mask[max(0,y-5):min(alpha.shape[0],y+h+5),max(0,x-5):min(alpha.shape[1],x+w+5)]=True
+            # The ear can be disconnected from the main cheek by a hair lock.
+            # Preserve that separate pale patch, including during closed-eye blinks.
+            mx=max(10,round(height*.07))
+            mask[max(0,y-5):min(alpha.shape[0],y+h+5),max(0,x-mx):min(alpha.shape[1],x+w+mx)]=True
     return mask
 
 
@@ -80,6 +87,7 @@ def clear_hair_islands(rgba,details=None):
     white=(rgb.min(2)>220)&(np.ptp(rgb,axis=2)<35)&(alpha>240)
     hair=(rgb[...,0]-rgb[...,1]>20)&(rgb[...,0]-rgb[...,2]>15)&(rgb[...,0]>60)&(rgb[...,0]<240)
     skin=(rgb[...,0]>175)&(rgb[...,1]>125)&(rgb[...,2]>100)&(rgb[...,0]-rgb[...,1]<75)&(np.abs(rgb[...,1]-rgb[...,2])<50)
+    strong_skin=(rgb[...,0]>200)&(rgb[...,1]>150)&(rgb[...,2]>130)&(rgb[...,0]-rgb[...,1]>=10)&(rgb[...,0]-rgb[...,1]<=55)&(rgb[...,0]-rgb[...,2]>=18)&(rgb[...,0]-rgb[...,2]<=100)&(rgb.min(2)<215)
     count,labels,stats,centers=cv2.connectedComponentsWithStats(white.astype(np.uint8))
     holes=np.zeros(alpha.shape,np.uint8)
     radius=max(2,round(height/90))
@@ -92,7 +100,7 @@ def clear_hair_islands(rgba,details=None):
         component=(labels==i).astype(np.uint8)
         ring=(cv2.dilate(component,kernel)>0)&(~component.astype(bool))&(alpha>200)&(~white)
         if not ring.any():continue
-        hair_fraction=float(hair[ring].mean());skin_fraction=float(skin[ring].mean())
+        hair_fraction=float(hair[ring].mean());skin_fraction=float(skin[ring].mean());strong_skin_fraction=float(strong_skin[ring].mean())
         narrow=w<=1.05*h and w<=width*.075
         # Side-facing flowing hair has horizontal negative spaces too. Allow
         # these only at the outer 20% with strong hair enclosure. White apron
@@ -103,14 +111,23 @@ def clear_hair_islands(rgba,details=None):
         # peach-color test, so do not treat that as an ear outside the upper
         # central 60% of the figure. This preserves ears without leaving the
         # adjacent outer temple hair gap opaque white.
-        skin_protected=skin_fraction>=.12 and (ny>=.58 or .20<=nx<=.80)
-        median=np.median(rgb[component>0],axis=0)
-        peach_protected=median[0]-median[1]>=4 and median[0]-median[2]>=8
+        # Warm antialiasing on outer red hair is not evidence of a wrist.
+        # Only a dense, darker peach hand patch protects an outer white cuff.
+        skin_protected=(skin_fraction>=.12 and .20<=nx<=.80) or strong_skin_fraction>=.20
         face_protected=bool((face&(component>0)).any())
+        median=np.median(rgb[component>0],axis=0)
+        # Red-hair antialiasing also warms true white background holes. A peach
+        # median is anatomical evidence only in the face ROI or near the inner
+        # lower hands/props, never in an outer flowing-hair gap.
+        anatomical_region=face_protected or (.20<=nx<=.80 and ny>=.58)
+        # Raised hands can be above the normal wrist region. Strong peach is
+        # skin anywhere; only the weak warm antialias tint needs a face/hand ROI.
+        strong_peach=median[0]-median[1]>=6 and median[0]-median[2]>=18
+        peach_protected=strong_peach or (anatomical_region and median[0]-median[1]>=4 and median[0]-median[2]>=8)
         accepted=hair_fraction>=.55 and not (skin_protected or peach_protected or face_protected) and (narrow or outer_horizontal)
         if details is not None:
             details.append({'box':[int(x),int(y),int(w),int(h)],'area':int(area),
-                'position':[float(nx),float(ny)],'hair_fraction':hair_fraction,'skin_fraction':skin_fraction,
+                'position':[float(nx),float(ny)],'hair_fraction':hair_fraction,'skin_fraction':skin_fraction,'strong_skin_fraction':strong_skin_fraction,
                 'skin_protected':bool(skin_protected),'peach_protected':bool(peach_protected),'face_protected':face_protected,
                 'median_rgb':median.tolist(),'narrow':bool(narrow),'outer_horizontal':bool(outer_horizontal),'accepted':bool(accepted)})
         if not accepted:continue

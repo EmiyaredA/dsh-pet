@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "action_id": "a090",
+  "action_name": "扶额无语",
+  "source_attempt_index": 1,
+  "spec_revision_id": null,
+  "scope_id": "remaining-firstpass-a090-a091-01",
+  "scope_manifest_sha256": "00a4fedc9b88fae6945bdc1b1b61eff818517239911274d04bc47ea13b29d336",
+  "source_sha256": "6923afe0a2baaecdcad52700321e3ccb5d215bf8005cc1f441206738561bd4d2",
+  "source_task_id": "e0c548de-702c-41eb-b5da-358f14b2bb18",
+  "source_review_file": "quality/source-reviews/a090-attempt-1.json",
+  "source_review_sha256": "29c54efe9531d6802ebefbba2304b7d5256f08a52c07f090c747310452ec58b9",
+  "candidate_file": "source/library/a090/attempt-1/processing-39c80bcf-c160-4f11-a452-c1df801f3e8a/扶额无语.webm",
+  "candidate_sha256": "f8fceced7d545f6332d72473f3d164130bd709358ecc49cac64664e2ba740f82",
+  "verdict": "pass",
+  "reviewer": "remaining-firstpass-a090 independent final QA agent",
+  "reviewed_at": "2026-10-31T11:56:08.666930+00:00",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "defects": [],
+  "summary": "独立最终PASS：原规格specNone/绝对attempt1和本候选SHA已绑定；240帧640×360/24fps/10秒VP9 Alpha无音轨，逐帧alpha/边界/固定残余背景筛查通过。原640四底与脸发3倍抽样可见单手扶额、无语表情后放下回到空手原姿态；未见眼色改变、残白绿边、额外前景、明显脸手变形或头脚裁切。实际完整10秒播放及同尺寸idle切换完成，首末脚位均330，尺度未见明显跳变。人工抽样与全240技术检查分别列明。",
+  "reason": "独立最终PASS：原规格specNone/绝对attempt1和本候选SHA已绑定；240帧640×360/24fps/10秒VP9 Alpha无音轨，逐帧alpha/边界/固定残余背景筛查通过。原640四底与脸发3倍抽样可见单手扶额、无语表情后放下回到空手原姿态；未见眼色改变、残白绿边、额外前景、明显脸手变形或头脚裁切。实际完整10秒播放及同尺寸idle切换完成，首末脚位均330，尺度未见明显跳变。人工抽样与全240技术检查分别列明。",
+  "technical": {
+    "frames": 240,
+    "width": 640,
+    "height": 360,
+    "fps": 24,
+    "duration_seconds": 10.0,
+    "codec": "vp9",
+    "alpha_mode": "1",
+    "audio_streams": 0,
+    "all240_alpha0to255": true,
+    "all240_outer_boundary_alpha_zero": true,
+    "outside6_alpha_gt8_bad_frames": [],
+    "residual_metric_definition": "Alpha >8 pixels outside a fixed six-pixel square dilation of alpha>127 foreground; screening only, no matte changes.",
+    "first_bbox_alpha127": [
+      217,
+      59,
+      431,
+      330
+    ],
+    "last_bbox_alpha127": [
+      217,
+      59,
+      431,
+      330
+    ],
+    "feet_delta_px": 0,
+    "height_delta_px": 0
+  },
+  "technical_proof": "quality/final-reviews/a090-f8fceced7d54/decoded-technical240.json",
+  "frame0_rgba_file": "quality/final-reviews/a090-f8fceced7d54/f000-rgba.png",
+  "evidence_directory": "quality/final-reviews/a090-f8fceced7d54",
+  "inspection_scope": {
+    "all240_automated_metrics": [
+      "decoded RGBA alpha range",
+      "outermost boundary alpha",
+      "fixed residual-background screening",
+      "foreground bounding boxes"
+    ],
+    "manual_native640_four_background_frames": [
+      0,
+      96,
+      168,
+      239
+    ],
+    "manual_additional_native640_blue_frames": [
+      72,
+      144,
+      192
+    ],
+    "manual_face_hair_native640_ROI_nearest3x_frames": [
+      120,
+      216
+    ],
+    "actual_playback": "quality/final-reviews/a090-f8fceced7d54/actual-browser-playback.json",
+    "limits": [
+      "All240 technical coverage is not all240 manual visual coverage.",
+      "Native full-body cells remain640x360. Enlarged face/hair uses original decoded pixels with nearest-neighbor; no100px thumbnail conclusion.",
+      "Actual full10sec execution and sampled visual perception are separate evidence.",
+      "Idle comparison supports scale/position; old accepted idle is slightly warmer, no exact RGB match claim."
+    ]
+  },
+  "visual_findings": {
+    "action": "Raises one hand to forehead with a restrained exasperated expression, then lowers the hand and restores the neutral stance. Temporary hand overlap near one eye is natural to the named facepalm action; no facial collapse or double-eye masking observed.",
+    "identity": "Original full lace headband/ear tips and both shoes remain intact; sampled eyes stay blue-violet and hair auburn. No props, extra limbs or particles added.",
+    "matte": "Native640 blue/dark/light/checker samples plus3x face/hair show transparent hair gaps without conspicuous green fringe, white islands or missing painted regions. Ordinary anti-aliasing is not classified as deformation.",
+    "idle_switch": "Full ten-second candidate execution followed by same640 stage idle switch. First/last sole line330, full-body alpha127 height271; no obvious scale snap."
+  },
+  "new_paid_calls": 0,
+  "reviewer_pixel_or_recipe_changes": 0,
+  "approval_or_runtime_mutations": false
+}

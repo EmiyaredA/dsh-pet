@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "action_id": "a049",
+  "source_attempt_index": 2,
+  "spec_revision_id": "programmer-research-v2-2026-10-31",
+  "candidate_sha256": "a06d9ef717858f9343740d6ae4339b6621b0bdf1c31f911612430d051838a824",
+  "source_sha256": "4b1d02ebfe67ecedbb8c298d279e1f54e428649fd15c2b68e11e6a07069ced38",
+  "candidate_file": "source/library/a049/attempt-2/processing-4babbfec-d2b7-46c0-8528-81b9f7ac8005/转笔想方案.webm",
+  "source_task_id": "c84a90da-950b-405a-9069-176e3650261d",
+  "verdict": "pass",
+  "reviewer": "batch30_final_qa_parallel independent agent",
+  "reviewed_at": "2026-10-31T10:37:07.009928+00:00",
+  "visual_review_performed": true,
+  "automated_metrics_only": false,
+  "defects": [],
+  "summary": "240帧技术通过。原尺寸四底和脸发放大未见残余背景、额外前景、眼色跳变或裁切；笔由胸前变换朝向再靠近脸颊，头部思考倾斜可辨，最终空手回到待机姿势。实际完整10秒播放和同尺寸idle切换已执行，尺度/脚位一致。人工为抽样观察，不宣称逐帧连续凝视。",
+  "reason": "240帧技术通过。原尺寸四底和脸发放大未见残余背景、额外前景、眼色跳变或裁切；笔由胸前变换朝向再靠近脸颊，头部思考倾斜可辨，最终空手回到待机姿势。实际完整10秒播放和同尺寸idle切换已执行，尺度/脚位一致。人工为抽样观察，不宣称逐帧连续凝视。",
+  "technical": {
+    "frames": 240,
+    "width": 640,
+    "height": 360,
+    "fps": "24/1",
+    "duration_seconds": 10.0,
+    "codec": "vp9",
+    "alpha_mode": "1",
+    "audio_streams": 0,
+    "all240_alpha0to255": true,
+    "all240_outer_boundary_alpha_zero": true,
+    "outside6_alpha_gt8_bad_frames": [],
+    "residual_metric_definition": "Alpha >8 pixels outside the 6-pixel square dilation of alpha>127 foreground; fixed screening metric, no matte changes.",
+    "first_bbox_alpha127": [
+      215,
+      60,
+      432,
+      330
+    ],
+    "last_bbox_alpha127": [
+      215,
+      60,
+      432,
+      330
+    ],
+    "feet_delta_px": 0
+  },
+  "technical_proof": "quality/final-reviews/a049-a06d9ef71785/decoded-technical240.json",
+  "frame0_rgba_file": "quality/final-reviews/a049-a06d9ef71785/f000-rgba.png",
+  "evidence_directory": "quality/final-reviews/a049-a06d9ef71785",
+  "inspection_scope": {
+    "all240_automated_metrics": [
+      "decoded RGBA alpha range",
+      "outermost boundary alpha",
+      "residual-background fixed screening metric",
+      "foreground bounding boxes"
+    ],
+    "manual_native640_four_background_frames": [
+      0,
+      96,
+      168,
+      239
+    ],
+    "manual_native640_additional_blue_frames": [
+      48,
+      72,
+      144
+    ],
+    "manual_face_hair_native640_ROI_nearest3x_frames": [
+      120,
+      216
+    ],
+    "actual_playback": "quality/final-reviews/a049-a06d9ef71785/actual-browser-playback.json",
+    "limits": [
+      "All240 technical coverage is not all240 manual visual coverage.",
+      "Native full-body cells stay640x360; face/hair crops enlarge original decoded pixels with nearest-neighbor; no100px thumbnail conclusion.",
+      "Actual playback completion and sampled human observations are separate evidence.",
+      "Accepted idle is slightly warmer; comparison supports scale/position only, not exact RGB matching."
+    ]
+  },
+  "new_paid_calls": 0,
+  "reviewer_pixel_or_recipe_changes": 0,
+  "approval_or_runtime_mutations": false
+}

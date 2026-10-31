@@ -1,0 +1,25 @@
+{
+  "browser": "Codex in-app browser",
+  "source_attribute": "../../source/library/a034/attempt-2/报错拍键盘（半身）.mp4",
+  "native_source_duration": 10.125,
+  "css_size": [
+    640,
+    360
+  ],
+  "initial": {
+    "time": 0.012105,
+    "paused": false,
+    "loops": 0,
+    "callbacks": 2
+  },
+  "after_full_source_loop": {
+    "time": 0,
+    "duration": 10.125,
+    "paused": true,
+    "loops": 1,
+    "callbacks": 245
+  },
+  "auto_pause_on_first_wrap": true,
+  "tab_closed_and_decoder_released": true,
+  "limits": "Actual playback occurred; manual viewing is representative screenshots/native stills, not all243 perceptual frames. No dropped-frame claim."
+}

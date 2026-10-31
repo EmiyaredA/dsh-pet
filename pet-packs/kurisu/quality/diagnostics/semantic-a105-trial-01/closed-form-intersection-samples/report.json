@@ -1,0 +1,246 @@
+{
+  "created_at": "2026-10-31T01:43:28.902447+00:00",
+  "scope": "requested representative frames only same authorized a105 semantic trial; no model inference",
+  "requested_frames": [
+    0
+  ],
+  "source_sha256": "5460f738fa8678600fc5d37fc4334e551deec03c013db41b0242c58059b13aac",
+  "parent_intersection_sha256": "f30d57062c1aa627d55a3f3585c8fd66b5f9c577d8d1eba6f780f314dd7c9b4f",
+  "method": "unchanged official rembg.bg.alpha_matting_cutout with cached min(isnet-anime Alpha, existing green-key12/110 Alpha) input mask, CF alpha estimate+ML foreground; copy source RGB in known foreground/background, only unknown RGB estimated",
+  "parameters": {
+    "foreground_threshold_strict_greater_than": 240,
+    "background_threshold_strict_less_than": 10,
+    "erode_structure_size": 10,
+    "trimap_seed_structure": "10x10 ones square (official implementation, not final-alpha erosion)",
+    "foreground_seed_Alpha": 255,
+    "background_seed_Alpha": 0
+  },
+  "original_semantic_alpha_preserved_in_full": false,
+  "hard_foreground_alpha_fixed_to255_not_original_softmask": true,
+  "no_white_RGB_threshold_or_repainting": true,
+  "no_final_alpha_morphology": true,
+  "no_new_inference_or_model_download": true,
+  "records": [
+    {
+      "frame": 0,
+      "solver_seconds": 0.397,
+      "known_foreground_pixels": 118761,
+      "known_background_pixels": 882381,
+      "unknown_pixels": 31050,
+      "known_foreground_RGB_exact_original": true,
+      "known_foreground_alpha_exact255": true,
+      "known_background_RGB_exact_original": true,
+      "known_background_alpha_exact0": true,
+      "unknown_alpha_delta_vs_intersection_range": [
+        -63,
+        239
+      ],
+      "alpha_changed_pixels_vs_intersection": 143015,
+      "alpha_changed_pixels_inside_hard_FG_vs_intersection": 118760,
+      "RGB_delta_max": 253,
+      "visible_RGB_delta_p95": 16.0,
+      "alpha_weighted_RGB_delta_max": 75.05882352941177,
+      "wall_seconds": 0.593
+    }
+  ],
+  "failure": null,
+  "status": "STOP_F0_VISUAL_REGRESSION_GREEN_NEGATIVE_SPACES",
+  "final_media_approved": false,
+  "counts_toward_106": false,
+  "script_sha256": "7d097aaa3b6b02e28fff5b59652d7da375ca788965c6e8681e3fe64206d9b135",
+  "human_visual_review": {
+    "frames": [
+      0
+    ],
+    "views": [
+      "native640 dark and blue side-by-side"
+    ],
+    "finding": "Bright green returns in hair negative spaces; does not solve original problem. Stop this CF line, no six/full variant."
+  },
+  "green_reappearance": {
+    "native_pixels": 881,
+    "trimap_values": [
+      128
+    ],
+    "largest_components": [
+      {
+        "box_xywh": [
+          816,
+          426,
+          26,
+          42
+        ],
+        "area": 381,
+        "example_xy": [
+          827,
+          448
+        ],
+        "input_intersection_RGBA": [
+          2,
+          249,
+          2,
+          0
+        ],
+        "CF_RGBA": [
+          4,
+          242,
+          3,
+          167
+        ],
+        "trimap_value": 128,
+        "all_component_trimap_values": [
+          128
+        ]
+      },
+      {
+        "box_xywh": [
+          840,
+          501,
+          10,
+          39
+        ],
+        "area": 222,
+        "example_xy": [
+          845,
+          522
+        ],
+        "input_intersection_RGBA": [
+          1,
+          255,
+          4,
+          0
+        ],
+        "CF_RGBA": [
+          1,
+          254,
+          4,
+          220
+        ],
+        "trimap_value": 128,
+        "all_component_trimap_values": [
+          128
+        ]
+      },
+      {
+        "box_xywh": [
+          505,
+          447,
+          20,
+          25
+        ],
+        "area": 133,
+        "example_xy": [
+          516,
+          459
+        ],
+        "input_intersection_RGBA": [
+          17,
+          238,
+          31,
+          0
+        ],
+        "CF_RGBA": [
+          36,
+          211,
+          48,
+          140
+        ],
+        "trimap_value": 128,
+        "all_component_trimap_values": [
+          128
+        ]
+      },
+      {
+        "box_xywh": [
+          532,
+          545,
+          11,
+          18
+        ],
+        "area": 71,
+        "example_xy": [
+          540,
+          557
+        ],
+        "input_intersection_RGBA": [
+          71,
+          224,
+          70,
+          0
+        ],
+        "CF_RGBA": [
+          91,
+          206,
+          84,
+          159
+        ],
+        "trimap_value": 128,
+        "all_component_trimap_values": [
+          128
+        ]
+      },
+      {
+        "box_xywh": [
+          532,
+          535,
+          4,
+          9
+        ],
+        "area": 15,
+        "example_xy": [
+          532,
+          539
+        ],
+        "input_intersection_RGBA": [
+          18,
+          240,
+          44,
+          0
+        ],
+        "CF_RGBA": [
+          53,
+          136,
+          66,
+          128
+        ],
+        "trimap_value": 128,
+        "all_component_trimap_values": [
+          128
+        ]
+      },
+      {
+        "box_xywh": [
+          513,
+          315,
+          3,
+          5
+        ],
+        "area": 8,
+        "example_xy": [
+          513,
+          317
+        ],
+        "input_intersection_RGBA": [
+          81,
+          233,
+          87,
+          0
+        ],
+        "CF_RGBA": [
+          86,
+          162,
+          84,
+          147
+        ],
+        "trimap_value": 128,
+        "all_component_trimap_values": [
+          128
+        ]
+      }
+    ]
+  },
+  "next_hypothesis_not_executed": "10x10 erosion of known BG removes reliable chroma-zero seeds in narrow hair gaps, leaving unknown regions that CF can resurrect. A reliable-green BG constraint or monotone no-resurrection alpha cap is a separate hypothesis; not blanket narrow key, which damages white fabric.",
+  "full_variant_created": false,
+  "decode_slot_released": true,
+  "completed_at": "2026-10-31T01:45:43.574216+00:00"
+}

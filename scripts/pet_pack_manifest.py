@@ -30,6 +30,25 @@ def validate_pack(root: Path, config, library=None, allow_partial=False):
         path = root / 'pet/kurisu-animation' / (name + '.webm')
         if not path.is_file() or path.stat().st_size == 0:
             raise ValueError(f'Missing or empty animation: {name}')
+    if library is not None and allow_partial:
+        by_name={a['name']:a for a in library['actions']}
+        for name in names:
+            a=by_name.get(name)
+            if not a or a['status']!='approved':
+                raise ValueError(f'Partial runtime references an unapproved animation: {name}')
+            path=root/'pet/kurisu-animation'/(name+'.webm')
+            if hashlib.sha256(path.read_bytes()).hexdigest()!=a['sha256']:
+                raise ValueError(f'Altered partial runtime animation: {name}')
+        hashes=set()
+        for action in library['actions']:
+            if action['status']!='approved':continue
+            path=root/'pet/kurisu-animation'/(action['name']+'.webm')
+            if not path.is_file() or not path.stat().st_size:
+                raise ValueError(f"Missing approved partial animation: {action['id']}")
+            digest=hashlib.sha256(path.read_bytes()).hexdigest()
+            if digest!=action['sha256'] or digest in hashes:
+                raise ValueError(f"Duplicate or altered approved partial animation: {action['id']}")
+            hashes.add(digest)
     if library is not None and not allow_partial:
         actions = library['actions']
         if len(actions) != 106 or len({a['name'] for a in actions}) != 106:
